@@ -404,3 +404,45 @@ def test_A16_counterexample_numbers_match():
     text = _status_text()
     assert f"{ce['wrong_support_sensitivity_pct']:+.2f} %" in text
     assert f"{ce['O_vs_M_pct']:.2f} %" in text
+
+
+# ------------------------------------------- A17 unit control and CSV-only rerun
+
+
+def test_A17_sum_mean_unit_control_still_holds():
+    """Section 31: SUM stays a unit control and never becomes a performance arm."""
+    u = load("unit_contract_recheck.json")
+    assert u["status"] == "UNIT_CONTRACT_HOLDS"
+    assert u["n_models_checked"] == 12
+    assert u["max_abs_representation_difference"] == 0.0
+    assert u["max_abs_prediction_difference"] == 0.0
+    assert "never scored as a performance arm" in _status_text()
+
+
+def test_A17_intervals_regenerate_from_the_committed_csv_alone():
+    """Section 33: the repository reproduces the intervals without the raw arrays."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location(
+        "audit_mod", REPO / "scripts" / "audit_oa_resolution_pilot_v1.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    stats = pd.read_csv(AUDIT / "bootstrap_block_sufficient_stats.csv")
+    stored = load("bootstrap_revalidation.json")["O_vs_M_unseen_interpolation"]["stored"]
+    got = mod.bootstrap_from_stats(stats[stats["r"].isin((3, 6))], "O", "M")
+    for k in ("mean", "lower95", "upper95"):
+        assert got[k] == pytest.approx(stored[k], abs=1e-9)
+
+
+def test_A17_per_seed_effects_cover_every_condition():
+    """Section 6: per (dataset, operation, r, seed), plus macros, no seed interval."""
+    d = pd.read_csv(AUDIT / "paired_seed_effects.csv")
+    cells = d[d["dataset"] != "MACRO"]
+    assert len(cells) == 2 * 2 * 6 * 2                 # dataset x op x r x seed
+    assert set(cells["seed"]) == {2026090601, 2026090602}
+    assert set(cells["r"]) == {2, 3, 4, 6, 8, 12}
+    macros = d[d["dataset"] == "MACRO"]
+    assert len(macros) == 6                            # 2 seeds x 3 roles
+    for col in d.columns:
+        assert "std" not in col and "ci" not in col.lower() and "se" != col

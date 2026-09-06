@@ -152,6 +152,20 @@ base bins and forecasts from that grid; M reads the coarse tokens directly. The
 metadata contribution and the tokenisation-path contribution are not separated by
 this pilot, so `M > R` on UCI is not evidence that "metadata alone is sufficient".
 
+The R contrasts are also unstable across seeds, not only across datasets. At unseen
+interpolation the per-seed macros are:
+
+| seed | O vs M | O vs R | M vs R |
+|---|---|---|---|
+| 2026090601 | -0.300 % | -0.225 % | +0.088 % |
+| 2026090602 | +0.202 % | +1.338 % | +1.135 % |
+
+Every one of the three contrasts changes sign or size substantially between two
+seeds. With two seeds this is not a sample to build an interval from, and no
+standard error is computed from it; it is reported because it bounds how much weight
+any single pooled R comparison can carry. Full per (dataset, operation, r, seed)
+values are in `paired_seed_effects.csv`.
+
 ## 13. Reconstruction diagnostic and causal limits
 
 `reconstruction_quality.json` covers **one channel per dataset and 200 test windows**
@@ -279,6 +293,14 @@ than scored. No new metric was invented for END_BIN.
 - The r = 12 effect is concentrated in one Jena INTERVAL_MEAN cell.
 - The current interval-integrated Fourier representation does not justify Phase-2
   scaling.
+- The SUM = r x MEAN unit control holds across all twelve models: forming the
+  discrete total by an independent sum over base bins and dividing by the report
+  width reproduces the INTERVAL_MEAN observation exactly (difference 0.0) and the
+  arms forecast identically from it (difference 0.0). SUM is a unit control here and
+  was never scored as a performance arm.
+- The committed `bootstrap_block_sufficient_stats.csv` regenerates every interval in
+  section 7 on its own, with no raw error arrays present
+  (`python scripts/audit_oa_resolution_pilot_v1.py --from-stats-only`).
 
 ## 20. Claims weakened or withdrawn
 

@@ -266,6 +266,68 @@ def bootstrap_from_stats(stats: pd.DataFrame, arm_a: str, arm_b: str,
 # -------------------------------------------------------- 16/17/19. r = 12 table
 
 
+def unit_contract_recheck() -> dict:
+    """Section 31.  The SUM = r x MEAN control, re-read rather than re-run.
+
+    This is a unit check, not a performance arm: it asks whether routing the same
+    observation through the discrete-total representation and back changes anything.
+    """
+    uc = json.loads((ORIG / "unit_contract.json").read_text(encoding="utf-8"))
+    rows = [{"model": k, **v} for k, v in uc.items()]
+    worst_repr = max(r["max_abs_representation_difference"] for r in rows)
+    worst_pred = max(r["max_abs_prediction_difference"] for r in rows)
+    worst_rel = max(r["relative_prediction_difference"] for r in rows)
+    tol = 1e-4
+    return {
+        "role": "unit control only; SUM is never scored as a performance arm",
+        "n_models_checked": len(rows),
+        "max_abs_representation_difference": worst_repr,
+        "max_abs_prediction_difference": worst_pred,
+        "max_relative_prediction_difference": worst_rel,
+        "tolerance_relative": tol,
+        "status": "UNIT_CONTRACT_HOLDS" if worst_rel <= tol else "UNIT_REPRESENTATION_BUG",
+        "reading": ("Forming the discrete total by an independent sum over base bins and dividing "
+                    "by the report width reproduces the INTERVAL_MEAN observation exactly, and the "
+                    "arms forecast identically from it.  Nothing here is a model result."),
+        "per_model": rows,
+    }
+
+
+def paired_seed_effects(per_seed: pd.DataFrame) -> pd.DataFrame:
+    """Section 6.  O vs M per (dataset, operation, r, seed), plus the per-seed macros.
+
+    Two seeds is not a sample to build an interval from, so no standard error or seed
+    CI is computed here -- only the paired values themselves.
+    """
+    rows = []
+    for seed in SEEDS:
+        sub = per_seed[per_seed["seed"] == seed]
+        piv = sub.pivot_table(index=["dataset", "operation", "r"], columns="arm", values="primary")
+        for idx, row in piv.iterrows():
+            rows.append({
+                "dataset": idx[0], "operation": idx[1], "r": int(idx[2]), "seed": seed,
+                "role": ("SEEN" if idx[2] in SEEN_R else
+                         "UNSEEN_INTERPOLATION" if idx[2] in INTERP_R else
+                         "UNSEEN_EXTRAPOLATION"),
+                "M": row["M"], "O": row["O"], "R": row["R"],
+                "O_vs_M_pct": relative_improvement(row["O"], row["M"]),
+                "O_vs_R_pct": relative_improvement(row["O"], row["R"]),
+                "M_vs_R_pct": relative_improvement(row["M"], row["R"]),
+            })
+    df = pd.DataFrame(rows)
+    macros = []
+    for seed in SEEDS:
+        for role, rs in (("SEEN", SEEN_R), ("UNSEEN_INTERPOLATION", INTERP_R),
+                         ("UNSEEN_EXTRAPOLATION", EXTRAP_R)):
+            sub = df[(df["seed"] == seed) & (df["r"].isin(rs))]
+            macros.append({"dataset": "MACRO", "operation": "MACRO", "r": -1, "seed": seed,
+                           "role": role, "M": np.nan, "O": np.nan, "R": np.nan,
+                           "O_vs_M_pct": sub["O_vs_M_pct"].mean(),
+                           "O_vs_R_pct": sub["O_vs_R_pct"].mean(),
+                           "M_vs_R_pct": sub["M_vs_R_pct"].mean()})
+    return pd.concat([df, pd.DataFrame(macros)], ignore_index=True)
+
+
 def per_seed_cells(sa_or_full: pd.DataFrame) -> pd.DataFrame:
     """Mean primary per (dataset, operation, r, seed, arm) on the test split.
 
@@ -682,15 +744,7 @@ def main() -> int:
     full["primary"] = 0.5 * (full["SE10"] / full["count10"]) + 0.5 * (full["SE60"] / full["count60"])
     per_seed = per_seed_cells(full)
 
-    seed_rows = []
-    for seed in SEEDS:
-        sub = per_seed[per_seed["seed"] == seed]
-        piv = sub[sub["r"].isin(INTERP_R)].pivot_table(
-            index=["dataset", "operation", "r"], columns="arm", values="primary")
-        seed_rows.append({"seed": seed, "role": "unseen_interpolation",
-                          "macro_O_vs_M_pct": float(np.mean(
-                              [relative_improvement(r["O"], r["M"]) for _, r in piv.iterrows()]))})
-    pd.DataFrame(seed_rows).to_csv(OUT / "paired_seed_effects.csv", index=False)
+    paired_seed_effects(per_seed).to_csv(OUT / "paired_seed_effects.csv", index=False)
 
     r12 = r12_seed_table(per_seed)
     r12.to_csv(OUT / "r12_seed_table_corrected.csv", index=False)
@@ -709,6 +763,11 @@ def main() -> int:
 
     print("loss components", flush=True)
     write("loss_component_audit.json", loss_component_audit(sa))
+
+    print("unit contract recheck", flush=True)
+    unit = unit_contract_recheck()
+    write("unit_contract_recheck.json", unit)
+    print(f"   {unit['status']}", flush=True)
 
     print("checkpoint selection", flush=True)
     ck = checkpoint_selection_audit()
@@ -751,6 +810,7 @@ def main() -> int:
         "train_schedule_fairness": "OK" if schedule_ok else "TRAIN_SCHEDULE_FAIRNESS_FAIL",
         "original_artifacts_unchanged": not changed,
         "bootstrap_name_correction": "paired 7-day time-block (cluster) bootstrap",
+        "unit_contract_status": unit["status"],
     }
     write("audit_verdict.json", verdict)
 
@@ -764,5 +824,23 @@ def main() -> int:
     return 0
 
 
+def from_stats_only() -> int:
+    """Section 33.  Regenerate every interval from the committed CSV alone, with no
+    raw error arrays present.  This is what makes the audit reproducible from the
+    repository."""
+    stats = pd.read_csv(OUT / "bootstrap_block_sufficient_stats.csv")
+    out = {"source": "audit_closure_v1/bootstrap_block_sufficient_stats.csv",
+           "raw_errors_needed": False, "contrasts": {}}
+    for a, b in (("O", "M"), ("O", "R"), ("M", "R")):
+        out["contrasts"][f"{a}_vs_{b}_unseen_interpolation"] = bootstrap_from_stats(
+            stats[stats["r"].isin(INTERP_R)], a, b)
+    out["contrasts"]["O_vs_M_unseen_extrapolation_exploratory"] = bootstrap_from_stats(
+        stats[stats["r"].isin(EXTRAP_R)], "O", "M")
+    write("bootstrap_from_committed_stats.json", out)
+    for k, v in out["contrasts"].items():
+        print(f"  {k}: {v['mean']:+.4f} [{v['lower95']:+.4f}, {v['upper95']:+.4f}]", flush=True)
+    return 0
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(from_stats_only() if "--from-stats-only" in sys.argv else main())

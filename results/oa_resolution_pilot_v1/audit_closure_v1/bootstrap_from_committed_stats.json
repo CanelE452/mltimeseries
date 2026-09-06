@@ -1,0 +1,54 @@
+{
+  "source": "audit_closure_v1/bootstrap_block_sufficient_stats.csv",
+  "raw_errors_needed": false,
+  "contrasts": {
+    "O_vs_M_unseen_interpolation": {
+      "arm_a": "O",
+      "arm_b": "M",
+      "draws": 1000,
+      "mean": -0.05442376761547198,
+      "lower95": -0.2792679731531351,
+      "upper95": 0.174614006198434,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "O_vs_R_unseen_interpolation": {
+      "arm_a": "O",
+      "arm_b": "R",
+      "draws": 1000,
+      "mean": 0.5317799062334434,
+      "lower95": -0.7881975409922644,
+      "upper95": 1.7356783901602808,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "M_vs_R_unseen_interpolation": {
+      "arm_a": "M",
+      "arm_b": "R",
+      "draws": 1000,
+      "mean": 0.5876688968094688,
+      "lower95": -0.6210446126277275,
+      "upper95": 1.7196987385530174,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "O_vs_M_unseen_extrapolation_exploratory": {
+      "arm_a": "O",
+      "arm_b": "M",
+      "draws": 1000,
+      "mean": 1.7968433323423065,
+      "lower95": 1.1930169468844312,
+      "upper95": 2.430166821021102,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    }
+  }
+}
