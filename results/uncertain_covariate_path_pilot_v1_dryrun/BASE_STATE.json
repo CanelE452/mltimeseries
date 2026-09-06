@@ -1,0 +1,31 @@
+{
+  "experiment_id": "UCP-PATH-PILOT-v1",
+  "timestamp_utc": "2026-09-06T12:49:49.259043+00:00",
+  "timestamp_local": "2026-09-06T21:49:49.259043+09:00",
+  "repo": "https://github.com/CanelE452/mltimeseries.git",
+  "repo_path": "E:\\CODING\\proj\\mltimeseries",
+  "base_sha": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "branch": "uncertain-covariate-path-pilot-v1",
+  "origin_main_sha": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "dirty_before_start": {
+    "porcelain": [
+      "?? _docs/history/.pending.md",
+      "?? results/hq_token_pilot_v1_dryrun/",
+      "?? results/oa_resolution_pilot_v1_dryrun/"
+    ],
+    "tracked_modified": [],
+    "note": "only pre-existing untracked dry-run outputs from earlier pilots; no tracked file modified"
+  },
+  "python_version": "3.11.16",
+  "python_executable": "C:\\Users\\User\\anaconda3\\envs\\mlts\\python.exe",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4070",
+  "gpu_total_memory_gb": 12.88,
+  "free_disk_gb": 889.9,
+  "free_disk_mount": "E:/",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "repo_choice_note": "Instruction section 1 named CanelE452/covariate-trust-pilot. The prior state it references (OA-RESOLUTION-PILOT-v1) and this topic's prior note live in CanelE452/mltimeseries instead; user confirmed mltimeseries on 2026-09-06.",
+  "oa_artifact_isolation": "origin/main does not contain results/oa_resolution_pilot_v1; the OA pilot lives only on the unmerged branch oa-resolution-pilot-v1-audit-closure-v1. Branching from origin/main means no OA artifact is present in this working tree at all."
+}

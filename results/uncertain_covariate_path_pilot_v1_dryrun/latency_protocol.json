@@ -1,0 +1,10 @@
+{
+  "device": "NVIDIA GeForce RTX 4070",
+  "warmup": 20,
+  "timed_adapter": 100,
+  "timed_end_to_end": 10,
+  "synchronised": true,
+  "adapter_only": "arm forward pass given cached Chronos features",
+  "end_to_end": "one Chronos-2-synth forward per example plus the arm forward",
+  "mc": "every scenario call and the mixture construction are inside the timed region"
+}

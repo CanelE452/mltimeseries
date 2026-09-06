@@ -1,0 +1,93 @@
+{
+  "split": "test",
+  "block_days": 7,
+  "n_blocks": 13,
+  "n_replicates": 2000,
+  "bootstrap_seed": 20260906,
+  "resampling": "clusters of 7 consecutive days; a drawn block contributes every origin, farm, lead and arm inside it, so contrasts stay paired",
+  "estimand": "farm equal-weight macro of the per-example mean scaled CRPS, 3-seed mean",
+  "reading": "2000 resamples of one test year, not 2000 independent samples",
+  "point_estimates": {
+    "D": 0.8277673125267029,
+    "H": 0.8712341785430908,
+    "M": 0.8278888463973999,
+    "MC": 0.8198480606079102,
+    "P": 0.8286693096160889,
+    "P_BROKEN": 0.8286018371582031,
+    "S": 0.8114065527915955
+  },
+  "contrasts": [
+    {
+      "kind": "primary",
+      "contrast": "P over D",
+      "arm_a": "P",
+      "arm_b": "D",
+      "loss_a": 0.8286693096160889,
+      "loss_b": 0.8277673125267029,
+      "ri_percent": -0.10896746896572929,
+      "ci_lower": -0.18634520397540158,
+      "ci_upper": -0.046877919556141824,
+      "share_positive": 0.0
+    },
+    {
+      "kind": "primary",
+      "contrast": "P over S",
+      "arm_a": "P",
+      "arm_b": "S",
+      "loss_a": 0.8286693096160889,
+      "loss_b": 0.8114065527915955,
+      "ri_percent": -2.127510156912331,
+      "ci_lower": -2.853634289182775,
+      "ci_upper": -1.4904963554852715,
+      "share_positive": 0.0
+    },
+    {
+      "kind": "secondary",
+      "contrast": "P over P_BROKEN",
+      "arm_a": "P",
+      "arm_b": "P_BROKEN",
+      "loss_a": 0.8286693096160889,
+      "loss_b": 0.8286018371582031,
+      "ri_percent": -0.008142928830226551,
+      "ci_lower": -0.013859476951139618,
+      "ci_upper": -0.004164239618965352,
+      "share_positive": 0.0
+    },
+    {
+      "kind": "secondary",
+      "contrast": "S over M",
+      "arm_a": "S",
+      "arm_b": "M",
+      "loss_a": 0.8114065527915955,
+      "loss_b": 0.8278888463973999,
+      "ri_percent": 1.990882432771981,
+      "ci_lower": 1.3658145683019771,
+      "ci_upper": 2.6715078238907206,
+      "share_positive": 1.0
+    },
+    {
+      "kind": "secondary",
+      "contrast": "M over H",
+      "arm_a": "M",
+      "arm_b": "H",
+      "loss_a": 0.8278888463973999,
+      "loss_b": 0.8712341785430908,
+      "ri_percent": 4.975164337351244,
+      "ci_lower": 4.366282830197272,
+      "ci_upper": 5.683373558833131,
+      "share_positive": 1.0
+    },
+    {
+      "kind": "secondary",
+      "contrast": "P over MC",
+      "arm_a": "P",
+      "arm_b": "MC",
+      "loss_a": 0.8286693096160889,
+      "loss_b": 0.8198480606079102,
+      "ri_percent": -1.0759614411526244,
+      "ci_lower": -1.3044942848315362,
+      "ci_upper": -0.8650313732910717,
+      "share_positive": 0.0
+    }
+  ]
+}

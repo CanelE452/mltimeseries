@@ -162,15 +162,21 @@ def extract(key: str) -> Path:
     return out
 
 
+# The ENS archives are consumed as gzip/tar streams by extract_ens.py, so unpacking
+# them would write about 38 GB of .nc files that nothing reads.
+STREAM_ONLY = {"ens_2019_2020", "ens_2021"}
+
+
 def main(keys: list[str]) -> int:
     manifest = {}
     for key in keys:
         path = download(key)
-        out = extract(key)
+        out = None if key in STREAM_ONLY else extract(key)
         manifest[key] = {
             **{k: v for k, v in SOURCES[key].items()},
             "raw_path": str(path),
-            "extracted_path": str(out),
+            "extracted_path": None if out is None else str(out),
+            "consumed_as_stream": key in STREAM_ONLY,
             "verified_md5": True,
         }
     RES = ROOT / "results" / "uncertain_covariate_path_pilot_v1"

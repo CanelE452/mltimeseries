@@ -1,0 +1,15 @@
+{
+  "per_lead_marginals_identical": true,
+  "test_crps": {
+    "H": 0.7453163862228394,
+    "M": 0.9934076070785522,
+    "S": 0.9760819673538208,
+    "D": 0.9893117547035217,
+    "P": 0.05694097653031349
+  },
+  "p_better_than_d_percent": 94.24438492117405,
+  "p_better_than_s_percent": 94.1663734773544,
+  "d_close_to_h_percent": 32.73715337418211,
+  "implementation_control_passed": true,
+  "scope": "Implementation check for the D and P encoders only. Not evidence about wind power or about any real forecasting gain."
+}

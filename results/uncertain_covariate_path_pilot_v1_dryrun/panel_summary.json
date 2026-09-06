@@ -1,0 +1,117 @@
+{
+  "leads_h": [
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48,
+    54,
+    60,
+    66,
+    72
+  ],
+  "history_steps": 1344,
+  "history_rule": "strictly before the origin; max 10% missing",
+  "target": "BMRA_data.parquet metered power in MW, exact timestamp join",
+  "splits": {
+    "train": {
+      "year": [
+        "2019-01-01",
+        "2019-04-30"
+      ],
+      "n_examples": 191,
+      "n_origins": 24,
+      "per_farm": {
+        "E_BURBO": 24,
+        "T_BEATO-1": 24,
+        "T_GANW-13": 24,
+        "T_RMPNO-1": 24,
+        "E_GFLDW-1": 24,
+        "E_BNWKW-1": 23,
+        "T_COUWW-1": 24,
+        "T_AKGLW-2": 24
+      },
+      "dropped": {
+        "future_crosses_split": 0,
+        "target_missing": 9,
+        "history_short": 0,
+        "history_missing": 0
+      }
+    },
+    "val": {
+      "year": [
+        "2019-05-01",
+        "2019-08-31"
+      ],
+      "n_examples": 206,
+      "n_origins": 26,
+      "per_farm": {
+        "E_BURBO": 26,
+        "T_BEATO-1": 26,
+        "T_GANW-13": 26,
+        "T_RMPNO-1": 26,
+        "E_GFLDW-1": 26,
+        "E_BNWKW-1": 24,
+        "T_COUWW-1": 26,
+        "T_AKGLW-2": 26
+      },
+      "dropped": {
+        "future_crosses_split": 8,
+        "target_missing": 2,
+        "history_short": 0,
+        "history_missing": 0
+      }
+    },
+    "test": {
+      "year": [
+        "2019-09-01",
+        "2019-12-31"
+      ],
+      "n_examples": 181,
+      "n_origins": 24,
+      "per_farm": {
+        "E_BURBO": 24,
+        "T_BEATO-1": 21,
+        "T_GANW-13": 22,
+        "T_RMPNO-1": 24,
+        "E_GFLDW-1": 24,
+        "E_BNWKW-1": 20,
+        "T_COUWW-1": 24,
+        "T_AKGLW-2": 22
+      },
+      "dropped": {
+        "future_crosses_split": 0,
+        "target_missing": 11,
+        "history_short": 0,
+        "history_missing": 0
+      }
+    }
+  },
+  "normalisation": {
+    "target": "per farm, mean and std of the 2019 training targets",
+    "weather": "global per feature, 2019 training only",
+    "target_mean_mw": {
+      "E_BURBO": 32.74131393432617,
+      "T_BEATO-1": 72.14256286621094,
+      "T_GANW-13": 40.73868179321289,
+      "T_RMPNO-1": 83.09437561035156,
+      "E_GFLDW-1": 9.691667556762695,
+      "E_BNWKW-1": 8.149029731750488,
+      "T_COUWW-1": 9.51565933227539,
+      "T_AKGLW-2": 32.50711441040039
+    },
+    "target_std_mw": {
+      "E_BURBO": 30.14539909362793,
+      "T_BEATO-1": 45.48619842529297,
+      "T_GANW-13": 31.295177459716797,
+      "T_RMPNO-1": 72.90586853027344,
+      "E_GFLDW-1": 9.22725772857666,
+      "E_BNWKW-1": 6.477632522583008,
+      "T_COUWW-1": 7.410005569458008,
+      "T_AKGLW-2": 21.875913619995117
+    }
+  }
+}

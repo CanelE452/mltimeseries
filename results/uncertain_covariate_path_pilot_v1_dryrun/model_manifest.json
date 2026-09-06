@@ -1,0 +1,1334 @@
+{
+  "config": {
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "dropout": 0.1,
+    "batch_size": 256,
+    "max_epochs": 10,
+    "patience": 10,
+    "n_particles": 32,
+    "hidden": 64
+  },
+  "arms": [
+    "H",
+    "M",
+    "S",
+    "D",
+    "P",
+    "P_BROKEN",
+    "MC"
+  ],
+  "seeds": [
+    2026090601,
+    2026090602,
+    2026090603
+  ],
+  "mc_train_members": 8,
+  "device": "cuda",
+  "fits": [
+    {
+      "arm": "H",
+      "seed": 2026090601,
+      "n_parameters": 36481,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.86121666431427,
+      "train_seconds": 0.3,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\H_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8936812281608582,
+          "val_macro_scaled_crps": 0.895212709903717
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8929060101509094,
+          "val_macro_scaled_crps": 0.8915157318115234
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8922097086906433,
+          "val_macro_scaled_crps": 0.8878313302993774
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8914031386375427,
+          "val_macro_scaled_crps": 0.8841772675514221
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8907599449157715,
+          "val_macro_scaled_crps": 0.8805238008499146
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.890023946762085,
+          "val_macro_scaled_crps": 0.8768184185028076
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8893195390701294,
+          "val_macro_scaled_crps": 0.87305748462677
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8884570598602295,
+          "val_macro_scaled_crps": 0.869235634803772
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8878509998321533,
+          "val_macro_scaled_crps": 0.8653075695037842
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8869332075119019,
+          "val_macro_scaled_crps": 0.86121666431427
+        }
+      ]
+    },
+    {
+      "arm": "H",
+      "seed": 2026090602,
+      "n_parameters": 36481,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.9076731204986572,
+      "train_seconds": 0.1,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\H_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.9025474190711975,
+          "val_macro_scaled_crps": 0.9431145191192627
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.9017282128334045,
+          "val_macro_scaled_crps": 0.939351499080658
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.9007779359817505,
+          "val_macro_scaled_crps": 0.9355852603912354
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8999993801116943,
+          "val_macro_scaled_crps": 0.9317848682403564
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8991249799728394,
+          "val_macro_scaled_crps": 0.9279451966285706
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.898247480392456,
+          "val_macro_scaled_crps": 0.9240512847900391
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8975772857666016,
+          "val_macro_scaled_crps": 0.9200937747955322
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8964741826057434,
+          "val_macro_scaled_crps": 0.9160504341125488
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8957073092460632,
+          "val_macro_scaled_crps": 0.9119259715080261
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8947063684463501,
+          "val_macro_scaled_crps": 0.9076731204986572
+        }
+      ]
+    },
+    {
+      "arm": "H",
+      "seed": 2026090603,
+      "n_parameters": 36481,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8537039756774902,
+      "train_seconds": 0.1,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\H_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8930183053016663,
+          "val_macro_scaled_crps": 0.8889119625091553
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.892366349697113,
+          "val_macro_scaled_crps": 0.8851959109306335
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8916412591934204,
+          "val_macro_scaled_crps": 0.8814975023269653
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8907651901245117,
+          "val_macro_scaled_crps": 0.8777775764465332
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8901352882385254,
+          "val_macro_scaled_crps": 0.8740065693855286
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8894129991531372,
+          "val_macro_scaled_crps": 0.8701826333999634
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8886237144470215,
+          "val_macro_scaled_crps": 0.8662745356559753
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8879024982452393,
+          "val_macro_scaled_crps": 0.8622444868087769
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8870573043823242,
+          "val_macro_scaled_crps": 0.8580613136291504
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.886218786239624,
+          "val_macro_scaled_crps": 0.8537039756774902
+        }
+      ]
+    },
+    {
+      "arm": "M",
+      "seed": 2026090601,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8311306834220886,
+      "train_seconds": 0.3,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\M_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8981271982192993,
+          "val_macro_scaled_crps": 0.9189736843109131
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8930865526199341,
+          "val_macro_scaled_crps": 0.9125157594680786
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8874260783195496,
+          "val_macro_scaled_crps": 0.905773401260376
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.882104218006134,
+          "val_macro_scaled_crps": 0.8985005617141724
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.876242458820343,
+          "val_macro_scaled_crps": 0.8904580473899841
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8692619204521179,
+          "val_macro_scaled_crps": 0.8814701437950134
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8615165948867798,
+          "val_macro_scaled_crps": 0.8712481260299683
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.853386402130127,
+          "val_macro_scaled_crps": 0.8595937490463257
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8431418538093567,
+          "val_macro_scaled_crps": 0.8462780714035034
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8315030932426453,
+          "val_macro_scaled_crps": 0.8311306834220886
+        }
+      ]
+    },
+    {
+      "arm": "M",
+      "seed": 2026090602,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8464869260787964,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\M_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8965862393379211,
+          "val_macro_scaled_crps": 0.9041786193847656
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.892488420009613,
+          "val_macro_scaled_crps": 0.8996556997299194
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8881649971008301,
+          "val_macro_scaled_crps": 0.8950062990188599
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.883745014667511,
+          "val_macro_scaled_crps": 0.8900630474090576
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8786467909812927,
+          "val_macro_scaled_crps": 0.8847239017486572
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8731366395950317,
+          "val_macro_scaled_crps": 0.8787939548492432
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8675726056098938,
+          "val_macro_scaled_crps": 0.8721718788146973
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8608226776123047,
+          "val_macro_scaled_crps": 0.8646848201751709
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8532276153564453,
+          "val_macro_scaled_crps": 0.8561766147613525
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8439921140670776,
+          "val_macro_scaled_crps": 0.8464869260787964
+        }
+      ]
+    },
+    {
+      "arm": "M",
+      "seed": 2026090603,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8215077519416809,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\M_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.889946699142456,
+          "val_macro_scaled_crps": 0.8706161975860596
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8863326907157898,
+          "val_macro_scaled_crps": 0.8666590452194214
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8827778697013855,
+          "val_macro_scaled_crps": 0.8624934554100037
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8786877989768982,
+          "val_macro_scaled_crps": 0.8581014275550842
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8747648596763611,
+          "val_macro_scaled_crps": 0.8533467054367065
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.86970454454422,
+          "val_macro_scaled_crps": 0.8481500148773193
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8640955090522766,
+          "val_macro_scaled_crps": 0.8424803614616394
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.857751190662384,
+          "val_macro_scaled_crps": 0.8362225890159607
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8506634831428528,
+          "val_macro_scaled_crps": 0.8292696475982666
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.841477632522583,
+          "val_macro_scaled_crps": 0.8215077519416809
+        }
+      ]
+    },
+    {
+      "arm": "S",
+      "seed": 2026090601,
+      "n_parameters": 67457,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8015568256378174,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\S_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.9002280831336975,
+          "val_macro_scaled_crps": 0.9168909788131714
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.89505535364151,
+          "val_macro_scaled_crps": 0.9086831212043762
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.890230655670166,
+          "val_macro_scaled_crps": 0.899876594543457
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8842556476593018,
+          "val_macro_scaled_crps": 0.8901925683021545
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8781030774116516,
+          "val_macro_scaled_crps": 0.8794940710067749
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8709821105003357,
+          "val_macro_scaled_crps": 0.867549479007721
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8627359867095947,
+          "val_macro_scaled_crps": 0.8540418148040771
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8524488210678101,
+          "val_macro_scaled_crps": 0.8387556076049805
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8422126173973083,
+          "val_macro_scaled_crps": 0.8213772773742676
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8288052082061768,
+          "val_macro_scaled_crps": 0.8015568256378174
+        }
+      ]
+    },
+    {
+      "arm": "S",
+      "seed": 2026090602,
+      "n_parameters": 67457,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8099329471588135,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\S_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8885160684585571,
+          "val_macro_scaled_crps": 0.8651415109634399
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8852414488792419,
+          "val_macro_scaled_crps": 0.8611491918563843
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8817257285118103,
+          "val_macro_scaled_crps": 0.8569185733795166
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8777729868888855,
+          "val_macro_scaled_crps": 0.8523037433624268
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8734248876571655,
+          "val_macro_scaled_crps": 0.8472107648849487
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8685712814331055,
+          "val_macro_scaled_crps": 0.8415128588676453
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8626722097396851,
+          "val_macro_scaled_crps": 0.8350600004196167
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8563992977142334,
+          "val_macro_scaled_crps": 0.8277280330657959
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8483009934425354,
+          "val_macro_scaled_crps": 0.81939697265625
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8393944501876831,
+          "val_macro_scaled_crps": 0.8099329471588135
+        }
+      ]
+    },
+    {
+      "arm": "S",
+      "seed": 2026090603,
+      "n_parameters": 67457,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.7875524759292603,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\S_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8829159140586853,
+          "val_macro_scaled_crps": 0.8465589284896851
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8778295516967773,
+          "val_macro_scaled_crps": 0.8424301147460938
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.872165858745575,
+          "val_macro_scaled_crps": 0.8378763198852539
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8659253716468811,
+          "val_macro_scaled_crps": 0.8327680230140686
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8590138554573059,
+          "val_macro_scaled_crps": 0.8270307779312134
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8502671718597412,
+          "val_macro_scaled_crps": 0.8206464052200317
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8410936594009399,
+          "val_macro_scaled_crps": 0.813569962978363
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8304115533828735,
+          "val_macro_scaled_crps": 0.8057910203933716
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8173439502716064,
+          "val_macro_scaled_crps": 0.7971192598342896
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8034987449645996,
+          "val_macro_scaled_crps": 0.7875524759292603
+        }
+      ]
+    },
+    {
+      "arm": "D",
+      "seed": 2026090601,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8306121826171875,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\D_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8978108763694763,
+          "val_macro_scaled_crps": 0.919055700302124
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8926147222518921,
+          "val_macro_scaled_crps": 0.9126651287078857
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8870192766189575,
+          "val_macro_scaled_crps": 0.905916154384613
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8812094330787659,
+          "val_macro_scaled_crps": 0.8986146450042725
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8750863075256348,
+          "val_macro_scaled_crps": 0.890521764755249
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8674944639205933,
+          "val_macro_scaled_crps": 0.8814249634742737
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.859422504901886,
+          "val_macro_scaled_crps": 0.8711006045341492
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8509694933891296,
+          "val_macro_scaled_crps": 0.8593286275863647
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8395784497261047,
+          "val_macro_scaled_crps": 0.8458794355392456
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8287009596824646,
+          "val_macro_scaled_crps": 0.8306121826171875
+        }
+      ]
+    },
+    {
+      "arm": "D",
+      "seed": 2026090602,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.847283124923706,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\D_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8968709111213684,
+          "val_macro_scaled_crps": 0.9042158126831055
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.892191469669342,
+          "val_macro_scaled_crps": 0.8997855186462402
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8877109885215759,
+          "val_macro_scaled_crps": 0.8952199816703796
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8828140497207642,
+          "val_macro_scaled_crps": 0.8903535604476929
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8778674602508545,
+          "val_macro_scaled_crps": 0.8850425481796265
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8722992539405823,
+          "val_macro_scaled_crps": 0.8791676163673401
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.866367518901825,
+          "val_macro_scaled_crps": 0.8726130127906799
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8590253591537476,
+          "val_macro_scaled_crps": 0.865200400352478
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8514127135276794,
+          "val_macro_scaled_crps": 0.8568058609962463
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8414034843444824,
+          "val_macro_scaled_crps": 0.847283124923706
+        }
+      ]
+    },
+    {
+      "arm": "D",
+      "seed": 2026090603,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8219234943389893,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\D_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8897759318351746,
+          "val_macro_scaled_crps": 0.8706800937652588
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8861774802207947,
+          "val_macro_scaled_crps": 0.8667399287223816
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.882358729839325,
+          "val_macro_scaled_crps": 0.862626314163208
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8782287836074829,
+          "val_macro_scaled_crps": 0.8582633137702942
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8738616704940796,
+          "val_macro_scaled_crps": 0.8535478711128235
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8686659932136536,
+          "val_macro_scaled_crps": 0.8484117984771729
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.862805187702179,
+          "val_macro_scaled_crps": 0.8427767157554626
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8559874296188354,
+          "val_macro_scaled_crps": 0.8365518450737
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8478721976280212,
+          "val_macro_scaled_crps": 0.8296297788619995
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8388338685035706,
+          "val_macro_scaled_crps": 0.8219234943389893
+        }
+      ]
+    },
+    {
+      "arm": "P",
+      "seed": 2026090601,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8310702443122864,
+      "train_seconds": 0.3,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8981491923332214,
+          "val_macro_scaled_crps": 0.9189868569374084
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8932179808616638,
+          "val_macro_scaled_crps": 0.9124963879585266
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8881611824035645,
+          "val_macro_scaled_crps": 0.9057097434997559
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8827263116836548,
+          "val_macro_scaled_crps": 0.8984103202819824
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8770496249198914,
+          "val_macro_scaled_crps": 0.8903501629829407
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8706188201904297,
+          "val_macro_scaled_crps": 0.8813350796699524
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8635419011116028,
+          "val_macro_scaled_crps": 0.8710930943489075
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8546136617660522,
+          "val_macro_scaled_crps": 0.8594434857368469
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8450930118560791,
+          "val_macro_scaled_crps": 0.8461428880691528
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8341950178146362,
+          "val_macro_scaled_crps": 0.8310702443122864
+        }
+      ]
+    },
+    {
+      "arm": "P",
+      "seed": 2026090602,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8468509912490845,
+      "train_seconds": 0.3,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8968625068664551,
+          "val_macro_scaled_crps": 0.9041290283203125
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8925414085388184,
+          "val_macro_scaled_crps": 0.8996838331222534
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8884110450744629,
+          "val_macro_scaled_crps": 0.8951119184494019
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8839947581291199,
+          "val_macro_scaled_crps": 0.8902430534362793
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8793832063674927,
+          "val_macro_scaled_crps": 0.8849374651908875
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8742098808288574,
+          "val_macro_scaled_crps": 0.8790492415428162
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8684104084968567,
+          "val_macro_scaled_crps": 0.8724490404129028
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8620168566703796,
+          "val_macro_scaled_crps": 0.8649766445159912
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8545604944229126,
+          "val_macro_scaled_crps": 0.8564876317977905
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8458734750747681,
+          "val_macro_scaled_crps": 0.8468509912490845
+        }
+      ]
+    },
+    {
+      "arm": "P",
+      "seed": 2026090603,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8219915628433228,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8900015354156494,
+          "val_macro_scaled_crps": 0.8707132935523987
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8865163326263428,
+          "val_macro_scaled_crps": 0.8667949438095093
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.883055567741394,
+          "val_macro_scaled_crps": 0.8627002835273743
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8793838024139404,
+          "val_macro_scaled_crps": 0.8583383560180664
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8751345276832581,
+          "val_macro_scaled_crps": 0.8536267280578613
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8704884648323059,
+          "val_macro_scaled_crps": 0.8484864830970764
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8653622269630432,
+          "val_macro_scaled_crps": 0.8428477048873901
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8591670989990234,
+          "val_macro_scaled_crps": 0.8366212844848633
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8518595695495605,
+          "val_macro_scaled_crps": 0.8297072052955627
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8436342477798462,
+          "val_macro_scaled_crps": 0.8219915628433228
+        }
+      ]
+    },
+    {
+      "arm": "P_BROKEN",
+      "seed": 2026090601,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8309419751167297,
+      "train_seconds": 0.3,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_BROKEN_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.898147463798523,
+          "val_macro_scaled_crps": 0.9189890623092651
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8932134509086609,
+          "val_macro_scaled_crps": 0.9124870896339417
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8881428241729736,
+          "val_macro_scaled_crps": 0.9056909680366516
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8827022910118103,
+          "val_macro_scaled_crps": 0.8983815908432007
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8770102262496948,
+          "val_macro_scaled_crps": 0.8903110027313232
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8705694079399109,
+          "val_macro_scaled_crps": 0.8812832832336426
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8634706735610962,
+          "val_macro_scaled_crps": 0.8710264563560486
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.85455322265625,
+          "val_macro_scaled_crps": 0.8593584299087524
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8449885249137878,
+          "val_macro_scaled_crps": 0.8460389375686646
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8340258598327637,
+          "val_macro_scaled_crps": 0.8309419751167297
+        }
+      ]
+    },
+    {
+      "arm": "P_BROKEN",
+      "seed": 2026090602,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8467674255371094,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_BROKEN_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8968743681907654,
+          "val_macro_scaled_crps": 0.9041286706924438
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.892544150352478,
+          "val_macro_scaled_crps": 0.8996745347976685
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.888415515422821,
+          "val_macro_scaled_crps": 0.895094633102417
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.884005606174469,
+          "val_macro_scaled_crps": 0.8902196288108826
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8793891668319702,
+          "val_macro_scaled_crps": 0.8849076628684998
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8742097616195679,
+          "val_macro_scaled_crps": 0.879011869430542
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8684206604957581,
+          "val_macro_scaled_crps": 0.8724038600921631
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8620100021362305,
+          "val_macro_scaled_crps": 0.8649214506149292
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8545259833335876,
+          "val_macro_scaled_crps": 0.8564199209213257
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8458311557769775,
+          "val_macro_scaled_crps": 0.8467674255371094
+        }
+      ]
+    },
+    {
+      "arm": "P_BROKEN",
+      "seed": 2026090603,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8219935894012451,
+      "train_seconds": 0.2,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\P_BROKEN_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8900125026702881,
+          "val_macro_scaled_crps": 0.8707031011581421
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8865119814872742,
+          "val_macro_scaled_crps": 0.8667899966239929
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8830544948577881,
+          "val_macro_scaled_crps": 0.8626981973648071
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8793783187866211,
+          "val_macro_scaled_crps": 0.8583381175994873
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8751260638237,
+          "val_macro_scaled_crps": 0.853628396987915
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8704792857170105,
+          "val_macro_scaled_crps": 0.8484885692596436
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8653382658958435,
+          "val_macro_scaled_crps": 0.8428508043289185
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8591521978378296,
+          "val_macro_scaled_crps": 0.8366252183914185
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8518134355545044,
+          "val_macro_scaled_crps": 0.8297115564346313
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8435651063919067,
+          "val_macro_scaled_crps": 0.8219935894012451
+        }
+      ]
+    },
+    {
+      "arm": "MC",
+      "seed": 2026090601,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.822771430015564,
+      "train_seconds": 0.9,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\MC_seed2026090601.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8981316089630127,
+          "val_macro_scaled_crps": 0.9182929992675781
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8932366371154785,
+          "val_macro_scaled_crps": 0.9114828109741211
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.887832760810852,
+          "val_macro_scaled_crps": 0.9042664766311646
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8828789591789246,
+          "val_macro_scaled_crps": 0.8964122533798218
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8775659203529358,
+          "val_macro_scaled_crps": 0.8876792192459106
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8700650930404663,
+          "val_macro_scaled_crps": 0.8779045343399048
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8630917072296143,
+          "val_macro_scaled_crps": 0.8667622804641724
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8547313213348389,
+          "val_macro_scaled_crps": 0.8540217280387878
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8462873101234436,
+          "val_macro_scaled_crps": 0.8394249677658081
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.833773136138916,
+          "val_macro_scaled_crps": 0.822771430015564
+        }
+      ]
+    },
+    {
+      "arm": "MC",
+      "seed": 2026090602,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.838970422744751,
+      "train_seconds": 1.0,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\MC_seed2026090602.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8965326547622681,
+          "val_macro_scaled_crps": 0.903660774230957
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8925931453704834,
+          "val_macro_scaled_crps": 0.8989704847335815
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8884756565093994,
+          "val_macro_scaled_crps": 0.8939032554626465
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8841001987457275,
+          "val_macro_scaled_crps": 0.8884458541870117
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8794794082641602,
+          "val_macro_scaled_crps": 0.8824993371963501
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8737088441848755,
+          "val_macro_scaled_crps": 0.8758604526519775
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8689786195755005,
+          "val_macro_scaled_crps": 0.8683643341064453
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8625727295875549,
+          "val_macro_scaled_crps": 0.8598547577857971
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.854666531085968,
+          "val_macro_scaled_crps": 0.8501183986663818
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8467040061950684,
+          "val_macro_scaled_crps": 0.838970422744751
+        }
+      ]
+    },
+    {
+      "arm": "MC",
+      "seed": 2026090603,
+      "n_parameters": 65921,
+      "best_epoch": 9,
+      "epochs_run": 10,
+      "best_val_macro_scaled_crps": 0.8144510388374329,
+      "train_seconds": 1.0,
+      "checkpoint": "E:\\CODING\\proj\\mltimeseries\\runs\\uncertain_covariate_path_pilot_v1\\MC_seed2026090603.pt",
+      "history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8900200128555298,
+          "val_macro_scaled_crps": 0.8699817657470703
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.8864808082580566,
+          "val_macro_scaled_crps": 0.8657282590866089
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8830104470252991,
+          "val_macro_scaled_crps": 0.8611671924591064
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.878914475440979,
+          "val_macro_scaled_crps": 0.8563153743743896
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8753513693809509,
+          "val_macro_scaled_crps": 0.851014256477356
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8706696629524231,
+          "val_macro_scaled_crps": 0.8451496362686157
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8651688694953918,
+          "val_macro_scaled_crps": 0.8386974930763245
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8591507077217102,
+          "val_macro_scaled_crps": 0.8315359354019165
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8522780537605286,
+          "val_macro_scaled_crps": 0.8235032558441162
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8433355689048767,
+          "val_macro_scaled_crps": 0.8144510388374329
+        }
+      ]
+    }
+  ],
+  "total_train_seconds": 6.8
+}

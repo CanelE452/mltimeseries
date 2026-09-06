@@ -1,0 +1,111 @@
+{
+  "final_token": "NO_INCREMENTAL_PATH_VALUE",
+  "screens": {
+    "PATH_VALUE_GO": false,
+    "ACCURACY_SCREEN_GO": false,
+    "EFFICIENCY_SCREEN_GO": false,
+    "NO_INCREMENTAL_PATH_VALUE": true
+  },
+  "thresholds": {
+    "path_value_ri_percent": 2.0,
+    "accuracy_mc_ri_percent": 1.0,
+    "efficiency_crps_ratio": 1.005,
+    "efficiency_latency_ratio": 0.5,
+    "rmse_tolerance_percent": 1.0,
+    "no_value_ri_percent": 0.5
+  },
+  "primary_contrasts": {
+    "P over D": {
+      "ri_percent": -0.10896746896572929,
+      "ci_lower": -0.18634520397540158,
+      "ci_upper": -0.046877919556141824,
+      "meets_ri_threshold": false,
+      "ci_lower_above_zero": false,
+      "seeds_positive": {
+        "n_seeds": 3,
+        "n_positive": 0
+      },
+      "seed_majority_positive": false
+    },
+    "P over S": {
+      "ri_percent": -2.127510156912331,
+      "ci_lower": -2.853634289182775,
+      "ci_upper": -1.4904963554852715,
+      "meets_ri_threshold": false,
+      "ci_lower_above_zero": false,
+      "seeds_positive": {
+        "n_seeds": 3,
+        "n_positive": 0
+      },
+      "seed_majority_positive": false
+    }
+  },
+  "rmse_guard": {
+    "passed": true,
+    "detail": {
+      "D": {
+        "rmse_mw": 37.82477951049805,
+        "p_worse_by_percent": 0.05930086100210992
+      },
+      "S": {
+        "rmse_mw": 37.525262196858726,
+        "p_worse_by_percent": 0.8579493245703319
+      }
+    }
+  },
+  "mc_contrast": {
+    "kind": "secondary",
+    "contrast": "P over MC",
+    "arm_a": "P",
+    "arm_b": "MC",
+    "loss_a": 0.8286693096160889,
+    "loss_b": 0.8198480606079102,
+    "ri_percent": -1.0759614411526244,
+    "ci_lower": -1.3044942848315362,
+    "ci_upper": -0.8650313732910717,
+    "share_positive": 0.0
+  },
+  "efficiency_detail": {
+    "p_over_mc_crps_ratio": 1.0107594927199308,
+    "p_over_mc_latency_ratio_batch1_adapter_only": 0.020078419384027067
+  },
+  "secondary_contrasts": {
+    "P over P_BROKEN": {
+      "kind": "secondary",
+      "contrast": "P over P_BROKEN",
+      "arm_a": "P",
+      "arm_b": "P_BROKEN",
+      "loss_a": 0.8286693096160889,
+      "loss_b": 0.8286018371582031,
+      "ri_percent": -0.008142928830226551,
+      "ci_lower": -0.013859476951139618,
+      "ci_upper": -0.004164239618965352,
+      "share_positive": 0.0
+    },
+    "S over M": {
+      "kind": "secondary",
+      "contrast": "S over M",
+      "arm_a": "S",
+      "arm_b": "M",
+      "loss_a": 0.8114065527915955,
+      "loss_b": 0.8278888463973999,
+      "ri_percent": 1.990882432771981,
+      "ci_lower": 1.3658145683019771,
+      "ci_upper": 2.6715078238907206,
+      "share_positive": 1.0
+    },
+    "M over H": {
+      "kind": "secondary",
+      "contrast": "M over H",
+      "arm_a": "M",
+      "arm_b": "H",
+      "loss_a": 0.8278888463973999,
+      "loss_b": 0.8712341785430908,
+      "ri_percent": 4.975164337351244,
+      "ci_lower": 4.366282830197272,
+      "ci_upper": 5.683373558833131,
+      "share_positive": 1.0
+    }
+  },
+  "reading": "This is a decision about whether to invest in the next step, not an acceptance bar. A GO says the path representation earned its keep on this pilot; it says nothing about novelty, and nothing causal about why."
+}
