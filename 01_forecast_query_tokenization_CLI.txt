@@ -1,0 +1,696 @@
+현재 작업할 연구는 1번, ‘예측 목표 조건부 토큰화’뿐이다.
+2번 관측 방식 인지형 모델과 3번 불확실한 미래 보조변수 모델은 노트 보존만 하고 실행하지 않는다.
+
+실험 ID: HQ-TOKEN-PILOT-v1
+목적: 같은 토큰 예산에서, 입력만 보는 학습형 압축기보다 horizon을 함께 보는 압축기가 더 정확한가?
+이번 산출물: 실행 가능한 최소 비교실험, 재현 가능한 관찰값, 다음 단계로 갈 근거의 유무.
+
+이 문서는 새 CLI 세션에 처음 주는 전체 지시문이다. 사용자는 이 범위의 준비·실행을 요청했다.
+성능을 좋게 만들기 위해 새 주제를 붙이지 않는다. 실제로 실행하지 않은 단계는 완료라고 하지 않는다.
+아래 모델명·파일명·키는 새 실험을 위해 제안하는 계약이다. 기존 저장소 내부에 이미 있다고 가정하지 않는다.
+
+==============================================================================
+0. 이번에 검증하는 것 / 검증하지 않는 것
+==============================================================================
+
+[가설·미검증]
+같은 과거 입력이라도 제한된 token budget에서는 짧은 미래와 긴 미래에 유리한 압축이 다를 수 있다.
+
+주요 contrast:
+C = content + true horizon conditioned pooling
+I = content-only learned pooling
+
+모든 arm의 decoder에는 true horizon을 준다.
+따라서 C가 I보다 좋을 때 ‘decoder가 horizon을 알아서’라는 설명과 구분할 수 있다.
+
+초기 구현은 fixed-neighborhood weighted pooling이다.
+경계를 움직이는 dynamic segmentation이나 완성된 foundation model tokenizer라고 부르지 않는다.
+이 최소 구현이 실패했다고 전체 목표 조건부 토큰화의 불가능성을 주장하지 않는다.
+
+초기에는 다음을 하지 않는다:
+- 기존 Point/Hurdle, G/X/F, 확률 head 실험 재개.
+- 새로운 사전학습 corpus 구축.
+- Chronos-2/TiRex-2 본체 tokenizer 즉시 교체.
+- 새 diffusion loss, retrieval, surgery, teacher distillation.
+- 3개 토큰 예산 × 모든 arm × 모든 seed를 처음부터 전수 학습.
+- source code가 없는 논문을 초록만 보고 ‘재현’이라고 구현.
+
+예상 결과는 미확정이다. C와 I가 비슷하면 목적 조건화의 추가 가치가 약한 것으로 해석한다.
+성능 이득 없이 설명 그림만 그럴듯하다고 GO를 만들지 않는다.
+
+==============================================================================
+1. 저장소·노트·작업공간
+==============================================================================
+
+사용자 저장소: CanelE452/covariate-trust-pilot
+
+현재 shell에서 repo/root/branch/status를 먼저 읽는다. origin URL을 확인한다.
+git fetch 후 origin/main에서 새 worktree와 branch를 만들되, 기존 작업은 reset하지 않는다.
+
+제안 branch: hq-token-pilot-v1
+제안 worktree 이름: covariate-trust-pilot-hq-token-pilot-v1
+Windows 예시 상위 경로: E:/CODING/worktrees/
+실제 root는 현재 환경을 읽어 결정한다. 경로 예시를 실제 존재한다고 단정하지 않는다.
+
+새 경로:
+- experiments/hq_token_pilot_v1/
+- tests/hq_token_pilot_v1/
+- results/hq_token_pilot_v1/
+- runs/hq_token_pilot_v1/  (데이터·가중치·대형 예측, gitignore)
+- _docs/notes/tsfm_topics/
+
+제공된 노트 3개가 로컬에 있으면 원문을 다음 이름으로 복사한다.
+- 01_forecast_query_tokenization.md
+- 02_observation_aware_resolution.md
+- 03_uncertain_future_covariates.md
+
+이미 같은 이름이 있으면 hash를 확인하고 다르면 덮어쓰지 말고 새 revision으로 보존한다.
+노트 파일이 CLI 환경에 없으면 notes 설치만 PENDING으로 기록한다. 본 지시문은 실험 부분에 대해 self-contained다.
+2·3번 내용을 추측해서 다시 작성하거나 그 주제 학습을 시작하지 않는다.
+main worktree의 다른 세션 변경에는 손대지 않는다.
+
+==============================================================================
+2. 출처와 공개 구현 확인 — 길게 끌지 않는다
+==============================================================================
+
+필수 기준 자료:
+1) PatchTST 공식 코드
+   https://github.com/yuqinie98/PatchTST
+   데이터 loader:
+   PatchTST_supervised/data_provider/data_loader.py
+2) Local Token Merging 논문(2025/ICML)
+   https://proceedings.mlr.press/v267/gotz25a.html
+3) Byte Pair Encoding 논문
+   https://arxiv.org/abs/2505.14411
+   2026 ICML 채택 공지:
+   https://www.cs.cit.tum.de/en/daml/all-news/article/nine-papers-accepted-at-icml2026/
+4) TimeSqueeze
+   https://arxiv.org/abs/2603.11352
+   https://neurips.cc/virtual/2025/130454
+   NeurIPS 메인이 아니라 워크숍/공개본으로 구분.
+5) Dynamic Semantic Tokenization / PATK(2026/AAAI)
+   https://ojs.aaai.org/index.php/AAAI/article/view/39517
+6) TokenLearner / Perceiver IO
+   https://research.google/blog/improving-vision-transformer-efficiency-and-accuracy-by-learning-to-tokenize/
+   https://iclr.cc/virtual/2022/spotlight/6270
+
+네이티브 foundation reference:
+- https://github.com/amazon-science/chronos-forecasting
+- https://github.com/NX-AI/tirex-2
+
+위 자료에서 공식 구현 URL이 실제로 연결되는지 확인한다.
+임의의 GitHub owner/repo를 만들지 않는다. 처음엔 문헌 대조와 라이선스·공개 구현 확인에 최대 45분만 쓴다.
+실행할 외부 코드의 commit·license·사용 파일을 저장한다.
+논문의 코드 공개를 찾지 못하면 MISSING_OFFICIAL_BASELINE으로 남긴다.
+단순 유사 휴리스틱을 TimeSqueeze/PATK/Local Merging ‘재현’이라고 부르지 않는다.
+
+추가 문헌에서 같은 ‘horizon-conditioned compression’이 발견되면 중복 위험을 적는다.
+주제를 자동으로 다른 이름으로 바꾸지 않는다. 최소 검증을 계속한다면 replication/diagnostic 역할로 명시한다.
+
+==============================================================================
+3. 첫 결과 전에 고정할 최소 계약
+==============================================================================
+
+파일:
+results/hq_token_pilot_v1/execution_spec.json
+results/hq_token_pilot_v1/execution_spec.sha256
+
+JSON과 자기 hash를 같은 객체에 넣는 자기참조를 만들지 않는다. companion 파일에 hash를 둔다.
+
+고정 항목:
+- 데이터 source와 SHA, column order, split boundaries, normalization.
+- 모델 구조와 각 arm switch.
+- L=1024, P=16, stride=16, N=64, H=[96,336], primary B=32.
+- batch=64개의 단변량 window, train origin·channel·H sampling seed.
+- seed0=2026090601, seed1=2026090602.
+- 가짜 query seed=2026090671, bootstrap seed=2026090699.
+- max_updates와 checkpoint 평가 시점.
+- test origin grid와 지표 정의.
+- 결과 판정 기준 및 resource cap.
+
+하드웨어 시간 측정을 위한 smoke는 별도로 표시하고 과학적 결과에 포함하지 않는다.
+smoke의 정확도나 validation 결과로 architecture/L/H/B를 고르지 않는다.
+공식 split·source를 확인한 뒤 한 번만 freeze한다. 기존 실험의 v1/v2/v3 권위 구조를 가져오지 않는다.
+
+==============================================================================
+4. 데이터 3개와 split
+==============================================================================
+
+데이터:
+- ETTm2.csv
+- weather.csv
+- electricity.csv
+
+PatchTST README가 연결하는 원본 또는 동일 데이터임을 검증할 수 있는 기존 로컬 사본을 사용한다.
+출처가 다른 파일을 이름만 같다고 같은 데이터로 취급하지 않는다.
+GDrive 인증/다운로드가 막히면 기존 로컬의 출처·hash를 확인한다. 불가능하면 해당 dataset은 BLOCKED_SOURCE.
+다른 데이터셋으로 몰래 교체하지 않는다.
+
+ETTm2 target split:
+train [0,34560)
+validation [34560,46080)
+test [46080,57600)
+공식 코드가 더 긴 CSV의 뒷부분을 사용하지 않는 경우도 그대로 기록한다.
+
+Weather/Electricity target split:
+T = 실제 행 수
+n_train = floor(0.7*T)
+n_test = floor(0.2*T)
+n_val = T-n_train-n_test
+train [0,n_train)
+validation [n_train,n_train+n_val)
+test [n_train+n_val,T)
+
+참조 시점 o:
+input = values[o-1024:o]
+target = values[o:o+H]
+반열린 구간으로 구현한다.
+
+training origin은 o>=1024 및 o+336<=train_end 조건을 만족해야 한다.
+H=96이어도 같은 eligible origin을 사용한다.
+validation/test target은 해당 split 안에 완전히 들어가야 한다.
+입력 history에 직전 split의 관측이 들어오는 것은 rolling forecasting에서 허용한다.
+이것을 target split leakage와 혼동해 앞 구간 history를 잘라 버리지 않는다.
+
+전체 numeric target 채널을 사용한다. date/timestamp는 숫자 target에 포함하지 않는다.
+파일 내부의 실제 target·time column을 먼저 읽는다. 사전 가정한 열 이름으로 다른 열을 누락하지 않는다.
+
+각 channel의 train 평균·표준편차로 표준화한다(ddof=0).
+train에서 constant인 channel은 std=1로 두고 기록한다.
+미래 target을 이용한 보간·전체기간 scaling은 금지한다.
+NaN/Inf가 있으면 source policy를 확인한다. 테스트 target을 결과 보고 제거하지 않는다.
+지원되지 않는 결측 계약은 BLOCKED_DATA로 기록한다.
+
+시간 단위와 원래 채널 수는 실제 timestamp/헤더에서 확인해 기록한다.
+ETT/Weather/Electricity는 개발 benchmark다. 새로운 외부확증 데이터라고 부르지 않는다.
+
+==============================================================================
+5. 학습·평가 index와 메모리
+==============================================================================
+
+큰 [모든 origin, 모든 channel, 1024] window tensor를 미리 만들지 않는다.
+원본 [time,channel] 배열을 memmap 또는 한 번 로드한 작은 배열로 유지하고 batch 단위로 slice한다.
+
+training은 channel-independent이다.
+각 update에서 모든 channel에 동일 확률을 주고, eligible origin을 균일 추출한다.
+seed별 (update, channel, origin) schedule을 재현할 수 있게 저장한다.
+모든 arm은 같은 seed에서 같은 schedule을 사용한다.
+
+실제 H는 update마다 96/336을 교대로 사용한다. total update 수는 짝수다.
+하나의 모델이 두 horizon을 모두 배운다. horizon별 모델을 따로 학습하지 않는다.
+
+validation/test origin:
+start = 해당 target split 시작
+end = 해당 target split 끝 - 336
+o = start, start+96, start+192, ... <= end
+모든 channel·두 horizon을 동일 grid에서 평가한다.
+
+이 sparse origin grid는 빠른 개발 screen용이며 공식 stride-1 전체 benchmark와 같다고 하지 않는다.
+점추정치·bootstrap·reference 비교는 전부 이 grid의 같은 ordered key를 사용한다.
+
+논리 키:
+(dataset_id, split, origin, channel_id, horizon, model_seed)
+최종 예측의 step은 별도 축으로 보존한다.
+중간 파일에서 행 순서만 보고 join하지 않는다.
+
+==============================================================================
+6. 공통 소형 모델 — 공식 PatchTST라고 이름 붙이지 않는다
+==============================================================================
+
+공식 PatchTST의 patch 및 channel-independent 아이디어를 참고한 최소 실험 모델이다.
+구현이 쉬운 표준 PyTorch 모듈을 사용한다. 별도 CUDA kernel을 쓰지 않는다.
+
+input: [batch,1024]
+patch: [batch,64,16]
+embedding: Linear(16,128)
+position: 원래 64 patch의 center index에 대한 고정 sinusoidal encoding
+
+raw content embedding과 위치 encoding을 더한 것을 e_i라고 한다.
+
+horizon embedding:
+u_H = [log1p(H)/log1p(336), H/1024]
+e_H = Linear(2,32) -> GELU -> Linear(32,128)
+
+e_H는 모든 arm의 decoder에서 항상 사용한다.
+C/R은 pool score에서도 사용한다. I는 pool score에 zero vector를 넣는다.
+
+encoder:
+3 Transformer encoder layers
+128 hidden size, 4 attention heads, FFN 256, GELU, dropout=0.1
+pre-layernorm, batch_first
+역사 입력만 처리하는 encoder이므로 history 내부 bidirectional attention은 허용한다.
+미래 target token은 encoder에 입력하지 않는다.
+
+compressed encoder output [batch,B,128]은 고정 그룹 대응으로 64개 위치에 반복 배치한다.
+B=32이면 각 token을 2번, B=16이면 4번 반복한다.
+이 unmerge는 새로운 정보를 복원한 것으로 해석하지 않는다.
+원래 e_i를 residual bypass로 다시 decoder에 제공하지 않는다.
+
+공통 readout:
+flatten [64,128] -> Linear(8192,128) -> GELU -> dropout(0.1)
+위 128벡터와 true e_H를 concatenate -> Linear(256,336)
+예측은 항상 336개를 만들고 loss/evaluation에서는 앞 H개만 사용한다.
+
+따라서 B를 바꿔도 decoder parameter count가 바뀌지 않는다.
+모델은 normalized target을 예측한다. mean인지 median인지 혼동하지 말고 MSE-trained point forecast로 표시한다.
+
+참고로 이는 사전학습 모델의 tokenizer를 바꾼 것이 아니다.
+이 구조를 ‘foundation model을 개선했다’고 보고하지 않는다.
+
+==============================================================================
+7. pooling 연산과 arm
+==============================================================================
+
+N=64를 B개의 인접 동일 크기 그룹으로 나눈다.
+primary B=32이므로 group size r=2.
+
+전역 입력 summary는 e_i의 평균이다. 미래값은 사용하지 않는다.
+score network:
+concat(e_i, mean_i e_i, query_embedding) [384]
+-> Linear(384,64) -> GELU -> Linear(64,1)
+scorer dropout은 0.
+
+각 그룹 내 softmax로 weights를 만든다. temperature=1, 별도 튜닝 없음.
+합은 1이어야 한다. weighted sum으로 e_i를 압축한다.
+가중 중심과 그룹 시작/끝 위치를 진단용으로 기록한다.
+
+U:
+weights=1/r, scorer를 실행하지 않음.
+
+I:
+query_embedding=zeros(128). 다른 score·encoder·decoder 구조는 C와 동일.
+
+C:
+query_embedding=true e_H.
+
+R:
+pooling에 들어갈 H_fake를 각 sample마다 {96,336}에서 true H와 독립적으로 추출.
+decoder와 loss는 true H를 사용.
+validation/test의 H_fake도 key 기반 RNG로 고정해 재현 가능하게 한다.
+
+H_STATIC:
+trainable logits [2,B,r]를 horizon과 bin ID로 조회. input content는 score에 사용하지 않음.
+softmax 뒤 같은 e_i를 pooling. 다른 encoder/decoder는 동일.
+초기 logits=0. I/C와 parameter count가 다름을 솔직히 보고.
+
+DENSE:
+pooling하지 않고 [batch,64,128]을 encoder에 제공. 같은 decoder.
+
+I/C/R의 초기 state와 optimizer config는 동일하게 생성한다.
+다른 dropout 난수 소비가 생기지 않게 scorer에 dropout을 넣지 않는다.
+U/DENSE의 unused scorer를 parameter count 맞추기 위한 dummy parameter로 세지 않는다.
+
+‘g_i + horizon별 scalar’처럼 horizon 항이 그룹 softmax에서 사라지는 구현 금지.
+C의 scorer에는 content와 horizon 사이 비선형 interaction이 있어야 한다.
+
+==============================================================================
+8. 반드시 먼저 할 연산 검증
+==============================================================================
+
+실제 성능을 보기 전에 다음을 통과시킨다.
+
+- weights가 finite·nonnegative이고 그룹별 합이 1.
+- hook으로 encoder 입력 길이가 정말 B인지 확인. N길이 tensor에 mask만 씌우면 압축 아님.
+- output shape은 [batch,336], loss mask는 H에 대응.
+- I/C/R은 같은 구조와 초기화이며, decoder는 모두 true H 사용.
+- B=64에서 동일 state를 복사한 I/C의 eval output은 허용오차 내 동일.
+- 모든 그룹 size=1이면 score가 예측에 영향을 주지 않음.
+- I의 입력 history와 decoder H를 고정하고 pool-only query를 바꿔도 결과 동일.
+- C의 score parameter에 loss gradient가 전달되는지 작은 수치 fixture로 확인.
+- history와 H가 고정된 예측에서 timestamp>=o의 y를 바꿔도 output/token weights 동일.
+- row order를 섞었다가 key join으로 복원해도 평가값 동일.
+- 전체 336 예측 중 뒤 부분을 바꿔도 H=96 loss는 변하지 않음.
+
+C의 학습 결과가 반드시 H마다 다른 weight를 가져야 한다고 test를 작성하지 않는다.
+그것은 실험 결과이지 구현 불변식이 아니다.
+
+==============================================================================
+9. 학습 recipe
+==============================================================================
+
+이는 새 pilot을 위한 [미검증 설계]이며 공식 PatchTST full benchmark recipe와 동일하지 않다.
+
+optimizer: AdamW
+learning_rate: 0.0002
+weight_decay: 0.01
+effective batch: 64개의 univariate windows
+max_updates: 기본 3000
+warmup: 첫 150 update
+scheduler: warmup 후 cosine decay, 마지막 lr은 initial의 10%
+gradient clip global norm: 1.0
+loss: 현재 H의 전체 sample·lead time 평균 squared error
+
+실험 결과를 보고 한 arm만 learning rate/step을 변경하지 않는다.
+모든 arm은 같은 수의 optimizer update를 수행한다. early stopping은 사용하지 않는다.
+
+매 600 update마다 validation 두 horizon을 모두 평가한다.
+한 모델의 checkpoint는 두 horizon validation MSE 평균이 최소인 **하나**만 선택한다.
+horizon마다 별도 best checkpoint를 고르지 않는다.
+
+초기 모델·최종 모델·선택 checkpoint·train loss curve·validation curve를 저장한다.
+모델이 constant forecast로 붕괴하거나 모든 arm이 학습하지 못하면 BASELINE_UNRESOLVED로 보고한다.
+이때 optimizer를 결과 보고 바꾸어 현재 결과를 같은 실행으로 대체하지 않는다.
+
+==============================================================================
+10. 정확한 기본 실행 수
+==============================================================================
+
+우선 B=32 한 조건만 중심으로 실행한다.
+
+seed0, 데이터셋 3개:
+U / I / H_STATIC / C / R = 15 fits
+
+seed0, 데이터셋 3개:
+DENSE B=64 = 3 fits
+
+seed1, 데이터셋 3개:
+I / H_STATIC / C = 9 fits
+
+기본 최대 27 fits다.
+각 fit이 H=96과 H=336을 함께 학습한다. 27에 horizon 수를 다시 곱하지 않는다.
+
+seed1은 seed0 test 결과를 보고 고르는 것이 아니라 처음부터 실행 목록에 포함한다.
+마지막 test 결과까지 처리한 뒤 seed/arm을 추가하는 선택적 재시도 금지.
+
+90분 내 최초 real-data smoke checkpoint를 만들지 못하면 framework 구축을 더 늘리지 않는다.
+어디가 막혔는지 기록하고 모델/data adapter 범위를 줄이지 않은 채 BLOCKED_IMPLEMENTATION으로 보고한다.
+외부 baseline 설치 때문에 core PyTorch pilot이 멈추게 하지 않는다.
+
+==============================================================================
+11. runtime / resource 상한
+==============================================================================
+
+smoke는 train-only 64 sample로 20~50 update와 inference를 측정한다.
+그 정확도는 gate에 넣지 않는다. 모든 필수 arm 실행시간을 추정한다.
+
+3000 update schedule의 예상 전체 core 시간이 10시간을 넘으면,
+freeze 전에 모든 arm에 동일하게 max_updates=1200, warmup=60, validation every240으로 변경한다.
+표시는 REDUCED_BUDGET_SCREEN이다. 이를 3000 update 결과처럼 보고하지 않는다.
+1200 update로도 초과하면 time cap 안에서 가능한 stage만 수행하고 PARTIAL로 끝낸다.
+데이터셋·horizon·token budget·비교군을 결과에 따라 바꾸지는 않는다.
+
+전체 wall cap: 12시간 (dependency preparation·reference를 포함).
+GPU fit concurrency=1. unrelated process를 죽이지 않는다.
+DataLoader workers=0으로 시작하고 최대 2.
+
+5초마다 작업 process tree RSS·system available RAM·system commit 사용량·GPU allocated memory를 측정한다.
+장비를 읽어 한도를 정한다:
+- process RSS upper=min(10 GiB, physical RAM*0.35)
+- available RAM floor=max(4 GiB, physical RAM*0.20)
+- system commit이 조회되면 사용률 85%를 넘지 않게 함
+- GPU allocated upper=총 VRAM*0.80
+
+2회 연속 초과하면 batch 경계에서 checkpoint 후 resource 종료.
+응답 없는 본 작업 child를 supervisor가 종료할 수 있지만 다른 사용자 process에는 손대지 않는다.
+이 guard로 PC 전체 안전이 보장된다고 말하지 않는다.
+
+OOM은 1회만 microbatch 절반·gradient accumulation 두 배로 effective batch를 유지해 재개.
+둘째 OOM이면 해당 run BLOCKED_RESOURCE. 같은 model seed를 바꾸어 재시도하지 않는다.
+
+==============================================================================
+12. 지표와 bootstrap — 같은 관측값에 적용
+==============================================================================
+
+각 모델/seed에 대해 validation/test의 모든 frozen key에서:
+- MSE of MSE-trained point prediction
+- MAE
+- 원래 단위 값은 보조. primary는 train-only 표준화 공간.
+
+per-origin, per-channel, per-horizon squared/absolute error sums와 counts를 저장한다.
+가능하면 raw yhat도 float32 npz/parquet로 저장하되 배치 단위 write를 사용한다.
+
+E[m,d,H] = seed 평균을 낸 뒤 해당 dataset/horizon의 모든 origin·channel·lead error 평균.
+
+RI[d,H](C vs I) = 100*(1-E[C,d,H]/E[I,d,H])
+macro_RI = 6개 dataset×horizon RI의 동일 가중 평균.
+데이터를 모두 한꺼번에 pooling하여 Electricity가 지배하게 하지 않는다.
+ratio의 분모가 0이면 NULL + ZERO_BASELINE_LOSS. epsilon으로 극적 gain을 만들지 않는다.
+
+주요 비교는 C vs I 하나다.
+C vs H_STATIC, C vs R, C vs U, C vs DENSE는 설명·범위 확인용 비교다.
+
+bootstrap:
+1000 draws, seed 2026090699.
+각 dataset에서 chronological origin의 circular moving blocks를 paired resample.
+block length = ceil((1024+336)/96)=15 origins.
+같은 origin에 속한 모든 channel·horizon·model seed를 함께 가져온다.
+데이터셋마다 독립적으로 resample하고 6개 RI를 동일 가중 평균한다.
+seed는 bootstrap하지 않는다. CI는 관측한 2개 seed에 조건부인 시간 표본 불확실성이다.
+
+원점수와 CI 모두 같은 frozen evaluation grid를 사용한다.
+full-grid point estimate 옆에 8-origin CI를 붙이는 등 평가 대상을 바꾸지 않는다.
+유효 block 수가 작거나 분모가 불안정하면 LOW_EFFECTIVE_TIME_BLOCKS를 기록하고 결론을 약하게 둔다.
+반복 bootstrap 수를 늘려 독립 시기·dataset 수가 늘어난 것처럼 말하지 않는다.
+
+==============================================================================
+13. 실제 query 기여 진단
+==============================================================================
+
+학습 완료 후 C에만 다음 inference-only 진단을 한다.
+
+A. decoder true H 유지, pooling query만 96<->336으로 교체.
+B. 같은 input에서 H=96/336의 pooling weights·token center 차이 기록.
+C. B=64 identity control은 새 학습 없이 동일 state로 비교.
+
+A에서 성능이 나빠져도 그것만으로 방법 기여를 증명하지 않는다.
+학습 때 없던 query mismatch라서 나쁠 수 있다. 핵심은 별도로 학습한 I/H_STATIC/R 비교다.
+
+Weight 그림은 설명용이다. horizon별로 예쁜 차이가 난다고 예측 효과를 대신할 수 없다.
+
+==============================================================================
+14. 결과 상태와 진척 판단
+==============================================================================
+
+서로 독립된 필드로 기록:
+execution_status = COMPLETE / PARTIAL / BLOCKED / INVALID
+evidence_level = DEVELOPMENT_SCREEN / REPLICATED_SCREEN / DIAGNOSTIC / REFERENCE
+scientific_decision = NOT_EVALUATED / INCONCLUSIVE / SCREEN_NEGATIVE /
+                      MECHANISM_PROMISING_NOT_SOTA / HORIZON_PRIOR_SUFFICIENT
+
+아래 수치는 문헌의 법칙이 아니라 이번 pilot의 [설계상 최소 실용효과]다.
+
+MECHANISM_PROMISING_NOT_SOTA 조건:
+- 3 dataset의 I/H_STATIC/C 두 seed가 모두 유효하게 완료.
+- C vs I macro_RI >= 1.0%.
+- dataset별 horizon 평균 RI가 2개 이상에서 >0.
+- 어떤 dataset도 C vs I가 -1.0%보다 나쁘지 않음.
+- seed별 macro RI가 둘 다 >0.
+- 동일 관측값의 paired bootstrap macro lower95 >0.
+- C vs H_STATIC macro_RI >=0.3%.
+- seed0 C vs R macro_RI >0 (단일 seed 보조 근거임을 명시).
+
+C vs I가 유망해도 H_STATIC과 같거나 뒤처지면 HORIZON_PRIOR_SUFFICIENT.
+효과가 작고 CI가 양·음을 넓게 포함하면 INCONCLUSIVE.
+충분히 완료된 core에서 두 seed macro가 <=0이면 SCREEN_NEGATIVE.
+missing dataset, broken baseline, resource shortage는 NO_GO가 아니라 NOT_EVALUATED/PARTIAL.
+
+이 판정은 fixed-neighborhood pooling pilot에 대한 것이다.
+METHOD_SOTA, 학회 채택 가능성 수치, foundation 개선 확정이라는 표현은 쓰지 않는다.
+강한 동적 토큰화 baseline이 아직 없으면 MISSING_STRONG_DYNAMIC_BASELINE을 별도로 기록.
+
+==============================================================================
+15. 효율 평가
+==============================================================================
+
+tokenizer + encoder + unmerge + decoder까지 전체 latency를 잰다.
+파라미터 수, active parameter 수, N/B, peak allocated memory, throughput을 분리한다.
+
+동일 device, dtype, batch, L,H에서:
+batch=1 및 batch=64
+warmup 20회, timed 100회
+GPU는 각 timed region 앞뒤 synchronize
+median 및 p90을 기록
+
+순수 model-call latency와 host->device transfer 포함 end-to-end latency를 구분.
+설치/최초 compile 시간은 따로 표시.
+
+DENSE와 C의 전체 실행시간을 비교한다.
+‘attention FLOPs가 줄었다’와 ‘전체 추론이 빨라졌다’를 혼동하지 않는다.
+C가 I보다 비싸면 그 차이를 반드시 보고한다.
+BPE·FM·다른 backbone의 token 수는 한 token의 의미가 다르므로 숫자만 직접 비교하지 않는다.
+
+==============================================================================
+16. 기존 동적 토큰화 baseline
+==============================================================================
+
+첫 core가 종료된 뒤, 결과와 별도로 문헌 비교표를 완성한다.
+Local Merging, TimeSqueeze, BPE, PATK를 다음 필드로 정리:
+- 공식 code와 license를 찾았는가?
+- multi-horizon 및 같은 token budget 적용이 실제로 가능한가?
+- 원래 목적과 구현을 유지했는가?
+- 같은 입력·학습·평가 계약으로 비교한 결과가 있는가?
+
+Local Merging 공식 구현을 같은 encoder에 무리 없이 연결할 수 있으면 별도 reference run을 수행한다.
+선정은 성능을 보고 하지 않는다. integration timebox=45분.
+시간 내 불가능하면 MISSING_REFERENCE_IMPLEMENTATION으로 남긴다.
+자체 인접 cosine merge heuristic을 만들면 LOCAL_HEURISTIC으로만 명명한다.
+논문의 결과와 같은 것으로 표시하지 않는다.
+
+이전 단계 core를 거짓으로 ‘모든 최신 baseline을 이겼다’고 승격하지 않는다.
+반대로 reference 설치 실패 때문에 core 가설이 과학적으로 실패했다고 하지 않는다.
+
+==============================================================================
+17. Foundation reference — inference만, 별도 환경
+==============================================================================
+
+가능하면 core 후 다음 두 모델을 동일 frozen test key의 **참고 비교**로 평가한다.
+
+Chronos-2:
+repo amazon-science/chronos-forecasting
+weight amazon/chronos-2
+기준일 README는 120M 모델 및 Chronos2Pipeline 사용 예시를 제공.
+
+TiRex-2:
+repo NX-AI/tirex-2
+weight NX-AI/TiRex-2
+기준일 README는 TimeseriesType/load_model/forecast 예시를 제공.
+
+실제 package/model revision과 output contract를 직접 읽는다.
+없는 함수명·인자를 추측하지 않는다.
+이름이 같은 최신 mutable weight를 자동 업데이트하지 말고 revision을 기록한다.
+
+primary-information reference는 각 channel을 독립된 series로 예측.
+L=1024의 같은 raw history와 H만 제공. 미래 실측 covariate 금지.
+native multivariate reference를 추가하면 더 많은 채널 정보를 사용하는 별도 행으로 표시한다.
+
+출력에 mean이 있는지 median만 있는지 실제로 확인한다.
+median의 MSE를 mean-MSE라고 표시하지 않는다.
+q0.5만 있으면 point_forecast_type=median으로 보고하고 reference 의미를 명시한다.
+없는 mean을 quantile 평균으로 만들어 내지 않는다.
+
+모델은 raw target 단위로 예측하고, 반환값을 공통 train scaler로 변환해 같은 평가와 연결한다.
+TFM 자체 내장 scaling을 core model train scaler와 이중 적용하지 않는다.
+
+TiRex-2는 Linux/macOS 중심 설치 테스트·CUDA Toolkit/compiler 요건이 있다.
+이미 지원되는 Linux/WSL/환경을 쓸 수 있으면 이용하되,
+새 Docker/WSL 설치, 드라이버 교체, 타 환경 파괴, Pro 접근 우회는 하지 않는다.
+각 모델 setup timebox=30분. 초과하면 BLOCKED_ENV로 기록하고 종료한다.
+
+이 reference는 target fine-tuned core와 학습 조건이 다르다.
+pretraining overlap을 확인하지 못했으면 ‘unseen zero-shot SOTA’를 주장하지 않는다.
+pretrained 모델과 좋은 비교가 나오더라도 adaptation/tokenizer 개조 실험을 이번 run에서 자동으로 추가하지 않는다.
+
+==============================================================================
+18. 조건부 token-budget 확장
+==============================================================================
+
+기본 core 완료 후 MECHANISM_PROMISING_NOT_SOTA이고 resource cap 안에 2시간 이상 남는 경우에만 실행.
+이 분기는 사전등록하지만, 결과 선택을 거친 후속 exploratory 분석으로 표시한다.
+
+B=16에서 I/C/H_STATIC만 seed0로 3 dataset 실행: 최대 9 fits.
+모델·학습 설정·split은 그대로 유지. 그룹 크기만 4로 바뀐다.
+이 결과를 B=32 primary verdict의 CI에 합치지 않는다.
+성능이 나쁘다고 B=24/48을 추가 탐색하지 않는다.
+B=64는 DENSE reference와 identity test로 이미 다뤘다.
+
+시간이 없으면 NOT_RUN_RESOURCE. 기본 core가 성공했는데 확장 미실행이라 모두 NO_GO라고 하지 않는다.
+
+==============================================================================
+19. 실패·버그·재시작
+==============================================================================
+
+상태 파일이 아니라 실제 checkpoint/prediction/metrics/completion을 대조한다.
+
+run key에는 다음 binding을 넣는다:
+code hash(관련 모델·데이터·평가 파일), spec hash, source hash, split key hash,
+normalizer hash, arm/B/seed/config.
+
+cache 존재나 row 수 일치만으로 reuse하지 않는다.
+유효하게 끝난 run만 resume. 새 코드가 같은 이름의 오래된 예측을 읽지 못하게 한다.
+각 attempt는 새 폴더를 쓰고 completion.json은 마지막에 기록한다.
+
+구현 오류를 고친 경우 이전 산출물과 실패 이유를 보존하고 영향받은 stage만 다시 계산한다.
+성능이 낮다는 이유로 재실행하지 않는다.
+결과를 본 뒤 새 방법이 필요해지면 LIMITATION/NEW_HYPOTHESIS로 남기고 이번 v1에 넣지 않는다.
+
+==============================================================================
+20. 코드·테스트는 작게 유지
+==============================================================================
+
+권장 5개 역할 정도면 충분하다:
+data.py / model.py / train.py / evaluate.py / run.py
+테스트는 실제 불변식과 작은 수치 예제를 중심으로 한다.
+빈 리포트 틀 30단계를 먼저 만들지 않는다.
+
+필수 통합 test:
+- 한 train batch update -> checkpoint -> reload -> 두 H 평가 -> keyed loss -> report.
+- C/I 동일 B 입력 크기, 동일 decoder, 실제 horizon 경로 검증.
+- B=64 무압축 identity.
+- U pooling을 손계산 작은 배열과 대조.
+- H_STATIC이 입력 content와 무관한 weights를 출력.
+- R은 true H와 별도 random query를 사용하며 재실행 시 동일.
+- test target 변경은 predict output에 영향을 주지 않음.
+- 같은 origin 전체 채널을 함께 bootstrap.
+- metric point와 bootstrap point가 같은 loss arrays에서 일치.
+- missing result가 scientific FAIL로 변하지 않음.
+
+‘소스에 특정 문자열이 없다’는 검사만으로 위 항목을 통과시키지 않는다.
+
+==============================================================================
+21. 산출물과 보고 방식
+==============================================================================
+
+compact results:
+- execution_spec.json + sha256
+- sources.json / data_manifest.json / environment.json
+- fit_manifest.csv (arm,dataset,B,seed,status,checkpoint hash,wall seconds)
+- metrics.csv (MSE,MAE,같은 비교 분모)
+- contrasts.json (C/I primary, 나머지 secondary)
+- bootstrap.json
+- efficiency.csv
+- optional_references.json
+- STATUS.md
+
+그림은 최대 3개:
+1) dataset×H별 C vs I 개선과 CI.
+2) B별 정확도–전체 latency (실제로 실행한 B만).
+3) 같은 input에서 H에 따른 pooling weight 차이 (정답 없이 만든 표현, 설명용).
+
+빈 데이터를 0으로 그리지 않는다.
+U가 이겼는데 C만 강조하거나, 실패 dataset을 평균에서 제거하지 않는다.
+
+STATUS 첫 문장에는 execution_status와 scientific_decision을 둘 다 표시한다.
+표에는 최소 다음이 있어야 한다:
+- dataset / H / B / model_seed / arm / MSE / MAE
+- C vs I / C vs H_STATIC / C vs R
+- 전체 latency / tokenizer overhead / peak memory
+- 실제 완료 fit 수 / 계획 fit 수
+- missing references / blocked dataset / 평가 범위
+
+총 wall time은 여러 resume invocation을 합친 작업 시간과 마지막 invocation 시간을 구분한다.
+누적 GPU 사용시간을 실제 측정하지 않았으면 만들어 쓰지 않는다.
+
+==============================================================================
+22. 저장·커밋·완료 기준
+==============================================================================
+
+_docs/notes/tsfm_topics/01_forecast_query_tokenization.md의 결과 부분은 계획과 구분해 append한다.
+2·3번 노트는 아이디어 보존 상태 그대로 둔다.
+날짜별 history에는 코드·실행·차단 사실만 남긴다.
+
+코드 snapshot commit을 실험 전에 남길 수 있다.
+report에는 code_commit(실제로 학습에 사용된 버전)을 기록한다.
+그 report를 저장한 artifact commit은 후속 commit일 수 있다.
+자기 자신의 commit SHA를 내용에 넣고 ‘현재 HEAD와 같아야 한다’는 순환 조건을 만들지 않는다.
+
+관련 파일만 개별 stage/commit. raw data, 가중치, runs/, secrets는 포함하지 않는다.
+main merge·force push·다른 세션 파일 stage 금지.
+원격 push는 사용자가 승인한 경우 또는 --push를 명시한 경우에만 새 branch로 한다.
+그 외에는 commit SHA와 push 미실행 상태를 보고한다.
+
+마지막 출력:
+1) 실행 상태와 scientific decision
+2) C vs I의 6개 cell 및 macro 결과
+3) H_STATIC/R 대조 결과
+4) 정확도–전체 latency 비교
+5) native foundation reference 수행 여부와 제한
+6) 완료 fits / 계획 fits, 실제 누적 시간
+7) 실패·미평가·누락된 강한 baseline
+8) 산출물 경로 / code commit / artifact commit / push 상태
+9) 다음 행동 하나: 중단 / 제한된 반복 검증 / pretrained 이식 설계
+
+최종 주장 한계:
+이 run은 목표 조건부 국소 pooling의 개발 스크린이다.
+작은 실험의 성공을 foundation model SOTA로 부르지 않는다.
+실행 실패를 주제의 과학적 실패로 부르지 않는다.
+반대로 실행 완료를 연구 가설 성공으로 부르지 않는다.
