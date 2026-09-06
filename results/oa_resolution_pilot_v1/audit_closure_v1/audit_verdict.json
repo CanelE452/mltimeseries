@@ -12,5 +12,13 @@
   "raw_error_git_status": "LOCAL_12_RAW_ERRORS_PRESENT_GIT_UNTRACKED",
   "train_schedule_fairness": "OK",
   "original_artifacts_unchanged": true,
-  "bootstrap_name_correction": "paired 7-day time-block (cluster) bootstrap"
+  "bootstrap_name_correction": "paired 7-day time-block (cluster) bootstrap",
+  "post_audit_correction": {
+    "what": "The audit's own STATUS section 17 quoted the width-sensitivity bound as 0.016 %.",
+    "actual": 0.08794644286012065,
+    "cause": "0.016 % was the maximum over dataset- and seed-averaged cells, carried over from the pilot's STATUS.md; the diagnostic's bound over individual cells is 0.088 %.",
+    "effect": "None on any verdict. The qualitative reading is unchanged.",
+    "found_by": "cross-checking every numeric claim in the audit STATUS against its artifact",
+    "guard": "test_A16_* now pins each STATUS number to the artifact that produced it"
+  }
 }

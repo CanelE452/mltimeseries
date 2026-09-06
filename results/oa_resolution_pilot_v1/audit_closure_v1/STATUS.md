@@ -87,7 +87,7 @@ independent implementation.
 | O vs R | +0.5318 % [-0.7882, +1.7357] | +0.5318 % [-0.7882, +1.7357] |
 | M vs R | +0.5877 % [-0.6210, +1.7197] | +0.5877 % [-0.6210, +1.7197] |
 
-Largest disagreement 1.26e-14 percentage points; `BOOTSTRAP_REPRODUCED`.
+Largest disagreement 1.25e-14 percentage points; `BOOTSTRAP_REPRODUCED`.
 
 **Naming correction.** The original docstring called this a moving-block bootstrap.
 The implementation partitions origins into fixed, non-overlapping seven-day blocks
@@ -227,7 +227,14 @@ dependence and predictive superiority come apart in the same cell.
 ## 17. Width diagnostic
 
 Supported: the explicit scalar width channel showed little sensitivity under the
-WIDTH_MISMATCH diagnostic — at most 0.016 % on the INTERVAL_MEAN rows.
+WIDTH_MISMATCH diagnostic — at most 0.088 % across the individual INTERVAL_MEAN
+cells (M 0.088 %, O 0.076 %).
+
+The pilot's own STATUS.md put this bound at 0.016 %. That figure was the maximum
+of the dataset- and seed-averaged cells, not of the individual ones, so it read as
+a tighter bound than the diagnostic supports. The averaging is what shrank it; the
+qualitative reading is unchanged, since 0.088 % is still negligible beside the
+contrasts under test.
 
 Withdrawn: "the model does not use interval width". Resolution is available to the
 arms through the token count, the token spacing, the time basis and the operation
@@ -284,6 +291,7 @@ than scored. No new metric was invented for END_BIN.
 | E | "12 raw error arrays are present in the commit" | They are present locally under gitignored `runs/` and were never committed. Their hashes are recorded and block-level sufficient statistics are committed instead. |
 | F | r = 12 seed table | The R column came from END_BIN. Corrected table in section 15; scope is reporting only. |
 | G | "moving-block bootstrap" | Paired 7-day time-block (cluster) bootstrap. |
+| I | width sensitivity "at most 0.016 %" | 0.088 % across individual cells. The smaller figure was a maximum over dataset- and seed-averaged cells and understated the bound. |
 | H | FlowState "zero-shot" pipeline | Zero-shot weights with a target-validation-tuned reconstruction preprocessor. |
 
 ## 21. Current implementation recommendation

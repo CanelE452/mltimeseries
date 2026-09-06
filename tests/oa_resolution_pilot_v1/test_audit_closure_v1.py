@@ -341,3 +341,66 @@ def test_A15_wrong_support_counterexample_is_recorded():
     for c in ce:
         assert c["wrong_support_sensitivity_pct"] > 1.0
         assert c["O_vs_M_pct"] <= 0.0
+
+
+# ------------------------------------- A16 STATUS numbers must match the artifacts
+
+
+def _status_text() -> str:
+    return (AUDIT / "STATUS.md").read_text(encoding="utf-8")
+
+
+def test_A16_width_bound_in_status_matches_the_artifact():
+    """The pilot quoted a bound taken over averaged cells, which read tighter than the
+    diagnostic supports. The audit's number is pinned to the artifact instead."""
+    w = load("width_interpretation_audit.json")
+    bound = w["max_abs_sensitivity_pct_interval_mean"]
+    assert bound == pytest.approx(0.08794644286012065, abs=1e-12)
+
+    text = _status_text()
+    section = text[text.index("## 17. Width diagnostic"):text.index("## 18.")]
+
+    # the supported claim must carry the artifact's bound, not the understated one
+    supported = section[section.index("Supported:"):section.index("Withdrawn:")]
+    claim = supported[:supported.index(chr(10) * 2)]
+    assert f"{bound:.3f} %" in claim
+    assert "0.016 %" not in claim
+
+    # the smaller figure may only appear where it is explained or withdrawn
+    withdrawn = text[text.index("## 20. Claims weakened or withdrawn"):text.index("## 21.")]
+    assert "0.016 %" in withdrawn
+    assert "0.016 %" in section and "maximum" in section
+
+
+@pytest.mark.parametrize("claim,path", [
+    ("-0.049 %", ("arithmetic_revalidation.json", "unseen_interpolation", "O_vs_M")),
+    ("-0.182 %", ("arithmetic_revalidation.json", "seen", "O_vs_M")),
+])
+def test_A16_macro_claims_match_recomputation(claim, path):
+    name, role, pair = path
+    v = load(name)["roles"][role][pair]["recomputed_pct"]
+    assert f"{v:+.3f} %".replace("+", "") in claim or f"{v:.3f} %" == claim.lstrip("+")
+    assert claim in _status_text()
+
+
+def test_A16_reproduction_tolerances_quoted_exactly():
+    arith = load("arithmetic_revalidation.json")["max_abs_delta_pp"]
+    boot = load("bootstrap_revalidation.json")["max_abs_delta_pp"]
+    text = _status_text()
+    assert f"{arith:.2e}" in text
+    assert f"{boot:.2e}" in text
+
+
+def test_A16_r12_numbers_match_the_decomposition():
+    d = load("r12_effect_decomposition.json")
+    text = _status_text()
+    assert f"{d['macro_all_pct']:+.2f} %".replace("+", "+") in text
+    assert f"{d['macro_excluding_dominant_pct']:.2f} %" in text
+    assert f"{d['dominant_cell']['ri_pct']:+.2f} %" in text
+
+
+def test_A16_counterexample_numbers_match():
+    ce = load("mechanism_interpretation_audit.json")["direct_counterexamples"][0]
+    text = _status_text()
+    assert f"{ce['wrong_support_sensitivity_pct']:+.2f} %" in text
+    assert f"{ce['O_vs_M_pct']:.2f} %" in text
