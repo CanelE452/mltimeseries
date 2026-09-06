@@ -1,0 +1,51 @@
+{
+  "audit_name": "HQ-TOKEN-PILOT-v1-AUDIT-CLOSURE",
+  "audited_commit": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "no_model_fit_performed": true,
+  "no_original_artifact_modified": true,
+  "scientific_decision_original": "INCONCLUSIVE",
+  "audit_recommendation_current_implementation": "STOP_SCALING_CURRENT_FIXED_NEIGHBORHOOD_C",
+  "broader_topic_status": "OPEN_NOT_DIRECTLY_TESTED",
+  "meaning": {
+    "STOP_SCALING_CURRENT_FIXED_NEIGHBORHOOD_C": "There is not enough empirical support to carry this exact C implementation to a larger backbone, more datasets, or a foundation model.",
+    "OPEN_NOT_DIRECTLY_TESTED": "Forecast-query-conditioned token budget allocation as a topic is not refuted by this r=2 fixed-local pooling experiment."
+  },
+  "observations_behind_the_recommendation": {
+    "C_vs_I_macro_pct": -0.03738746955939676,
+    "C_vs_I_per_seed_macro_pct": {
+      "2026090601": -0.07202014917790563,
+      "2026090602": 0.005908315563426155
+    },
+    "C_vs_I_bootstrap": {
+      "macro_mean": -0.03938479848322728,
+      "lower95": -0.1275647237878516,
+      "upper95": 0.03276452743664624
+    },
+    "C_vs_R_macro_pct": -0.008254918871619665,
+    "max_abs_query_swap_effect_pct": 0.008205534256378044,
+    "max_mean_horizon_weight_shift": 0.0013487989781424403,
+    "phase_shifted_macro_pct": -0.14413693645100775,
+    "C_vs_DENSE_end_to_end_latency_pct": 38.75634497898177,
+    "training_curve_position_labels": {
+      "ETTm2": [
+        "EARLY_BEST"
+      ],
+      "weather": [
+        "INTERIOR_BEST",
+        "LATE_BEST"
+      ],
+      "electricity": [
+        "LATE_BEST"
+      ]
+    },
+    "paired_fits_with_same_best_update": 6,
+    "synthetic_joint_task_solved_by_C": false
+  },
+  "no_new_gate_created": "These are the observations already in the record. They were not combined into a new threshold, and the pre-registered scientific decision was not revised.",
+  "checks": {
+    "arithmetic": "ARITHMETIC_REPRODUCTION_OK",
+    "bootstrap": "BOOTSTRAP_REPRODUCTION_OK",
+    "schedule_fairness": "SCHEDULES_IDENTICAL",
+    "original_artifact_immutability": "ORIGINAL_ARTIFACTS_UNCHANGED"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "question": "Q2 - did C and I end up close only because of checkpoint selection?",
+  "pairs": 6,
+  "pairs_with_identical_best_update": 6,
+  "pairs_with_different_best_update": 0,
+  "rows": [
+    {
+      "dataset": "ETTm2",
+      "model_seed": 2026090601,
+      "best_update_I": 600,
+      "best_update_C": 600,
+      "same_best_update": true,
+      "best_val_mse_I": 0.1843645386433036,
+      "best_val_mse_C": 0.18442847751903202,
+      "final_update": 3000,
+      "position_label_I": "EARLY_BEST",
+      "position_label_C": "EARLY_BEST"
+    },
+    {
+      "dataset": "ETTm2",
+      "model_seed": 2026090602,
+      "best_update_I": 600,
+      "best_update_C": 600,
+      "same_best_update": true,
+      "best_val_mse_I": 0.19876247448074522,
+      "best_val_mse_C": 0.19814974992521983,
+      "final_update": 3000,
+      "position_label_I": "EARLY_BEST",
+      "position_label_C": "EARLY_BEST"
+    },
+    {
+      "dataset": "weather",
+      "model_seed": 2026090601,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.4301599826596943,
+      "best_val_mse_C": 0.42999653180536723,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    },
+    {
+      "dataset": "weather",
+      "model_seed": 2026090602,
+      "best_update_I": 1200,
+      "best_update_C": 1200,
+      "same_best_update": true,
+      "best_val_mse_I": 0.4278206578196505,
+      "best_val_mse_C": 0.4277836778652315,
+      "final_update": 3000,
+      "position_label_I": "INTERIOR_BEST",
+      "position_label_C": "INTERIOR_BEST"
+    },
+    {
+      "dataset": "electricity",
+      "model_seed": 2026090601,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.15086977611642605,
+      "best_val_mse_C": 0.15082546197324304,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    },
+    {
+      "dataset": "electricity",
+      "model_seed": 2026090602,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.15211988962520007,
+      "best_val_mse_C": 0.15211296767326887,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    }
+  ],
+  "reading": "Where the two arms selected different updates, the reported test contrast compares two independently validation-selected checkpoints. That is the pre-registered procedure, but it means the pairing is on the seed and the data schedule, not on the optimizer step.",
+  "no_reselection": "No checkpoint was re-chosen. Test results were not consulted for selection at any point in this audit."
+}

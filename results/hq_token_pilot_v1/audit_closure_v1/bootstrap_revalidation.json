@@ -1,0 +1,39 @@
+{
+  "question": "does an independent implementation of the stored bootstrap contract agree?",
+  "contract": {
+    "grid": "frozen test origin grid, all channels, both horizons",
+    "seed_handling": "model seeds averaged per key first, seeds are not resampled",
+    "block_origins": 15,
+    "draws": 1000,
+    "seed": 2026090699,
+    "macro": "equal weight over the six dataset x horizon cells"
+  },
+  "recomputed": {
+    "macro_mean": -0.03938479848322728,
+    "lower95": -0.1275647237878516,
+    "upper95": 0.03276452743664624
+  },
+  "original": {
+    "macro_mean": -0.03938479848322728,
+    "lower95": -0.1275647237878516,
+    "upper95": 0.03276452743664624
+  },
+  "abs_difference": {
+    "macro_mean": 0.0,
+    "lower95": 0.0,
+    "upper95": 0.0
+  },
+  "tolerance_pct_points": 1e-06,
+  "status": "BOOTSTRAP_REPRODUCTION_OK",
+  "effective_blocks": {
+    "ETTm2": 8,
+    "weather": 8,
+    "electricity": 4
+  },
+  "origins_per_dataset": {
+    "ETTm2": 117,
+    "weather": 107,
+    "electricity": 52
+  },
+  "note": "A difference here would most likely mean the random stream is consumed in a different order, not that either interval is wrong. The comparison is reported either way."
+}

@@ -1,0 +1,31 @@
+{
+  "question": "Q4 - what did the synthetic control actually establish?",
+  "source": "results/hq_token_pilot_v1/mechanism_capacity_check.json (unmodified)",
+  "original_recorded_verdict": "CAPACITY_CONFIRMED",
+  "per_horizon_mse": {
+    "I": {
+      "96": 0.010634642094373703,
+      "336": 0.028264353051781654
+    },
+    "C": {
+      "96": 0.00524792680516839,
+      "336": 0.2911238968372345
+    }
+  },
+  "joint_equal_weight_mean_mse": {
+    "I": 0.01944949757307768,
+    "C": 0.14818591182120144,
+    "C_over_I_ratio": 7.619009759219841
+  },
+  "per_horizon_relative_improvement_pct": {
+    "96": 50.65253011246307,
+    "336": -930.003751735911
+  },
+  "C_weight_separation_between_horizons": 0.8127862811088562,
+  "I_weight_separation_between_horizons": 0.0,
+  "QUERY_PATH_RESPONSIVE": true,
+  "JOINT_HORIZON_TASK_SOLVED": false,
+  "what_this_supports": "This scorer path was able to learn a function that changes the pooling weight substantially with the horizon on the synthetic task.",
+  "what_this_does_not_support": "On that same synthetic task the horizon-conditioned arm did not beat the input-only arm on the joint multi-horizon objective, which is the objective the real runs optimize. The control therefore establishes query-path responsiveness only; it does not exclude architecture or optimization limitations as an explanation for the real-data null.",
+  "design_caveat": "The task was built on the argument that one token per group can carry only one mixture of its two patches. That argument is not airtight: when the mixture coefficient itself varies with content, the coefficient can act as a side channel, so a content-only pooler is not strictly limited to a single linear combination. No claim is made about whether the trained I arm exploits this."
+}

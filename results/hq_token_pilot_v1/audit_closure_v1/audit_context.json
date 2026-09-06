@@ -1,0 +1,142 @@
+{
+  "git": {
+    "HEAD": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+    "branch": "hq-token-pilot-v1-audit-closure",
+    "origin_main": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+    "remote": "https://github.com/CanelE452/mltimeseries.git",
+    "status_porcelain": [
+      "?? _docs/history/.pending.md",
+      "?? results/hq_token_pilot_v1/audit_closure_v1/",
+      "?? results/hq_token_pilot_v1_dryrun/",
+      "?? scripts/audit_hq_token_pilot_v1.py",
+      "?? scripts/audit_microprofile_hq_token_pilot_v1.py",
+      "?? scripts/audit_status_hq_token_pilot_v1.py"
+    ]
+  },
+  "sampling_exposure": {
+    "note": "Called a sampling exposure ratio and not an epoch: training windows are sliding and overlap heavily, so a ratio below one does not mean a correspondingly small amount of distinct signal was seen.",
+    "per_dataset": {
+      "ETTm2": {
+        "train_origins": 33201,
+        "n_channels": 7,
+        "eligible_channel_origin_pairs": 232407,
+        "windows_drawn": 192000,
+        "sampling_exposure_ratio": 0.8261369063754535,
+        "position_labels": [
+          "EARLY_BEST"
+        ],
+        "last_interval_labels": [
+          "LAST_INTERVAL_WORSENING"
+        ]
+      },
+      "weather": {
+        "train_origins": 35528,
+        "n_channels": 21,
+        "eligible_channel_origin_pairs": 746088,
+        "windows_drawn": 192000,
+        "sampling_exposure_ratio": 0.25734229742336023,
+        "position_labels": [
+          "INTERIOR_BEST",
+          "LATE_BEST"
+        ],
+        "last_interval_labels": [
+          "LAST_INTERVAL_IMPROVING",
+          "LAST_INTERVAL_WORSENING"
+        ]
+      },
+      "electricity": {
+        "train_origins": 17053,
+        "n_channels": 321,
+        "eligible_channel_origin_pairs": 5474013,
+        "windows_drawn": 192000,
+        "sampling_exposure_ratio": 0.03507481622714451,
+        "position_labels": [
+          "LATE_BEST"
+        ],
+        "last_interval_labels": [
+          "LAST_INTERVAL_IMPROVING"
+        ]
+      }
+    },
+    "reading_rule": "A small exposure ratio is only evidence of an insufficient budget when the validation curve was still improving at the last checkpoint. The labels are given next to the ratio for that reason."
+  },
+  "checkpoint_selection": [
+    {
+      "dataset": "ETTm2",
+      "model_seed": 2026090601,
+      "best_update_I": 600,
+      "best_update_C": 600,
+      "same_best_update": true,
+      "best_val_mse_I": 0.1843645386433036,
+      "best_val_mse_C": 0.18442847751903202,
+      "final_update": 3000,
+      "position_label_I": "EARLY_BEST",
+      "position_label_C": "EARLY_BEST"
+    },
+    {
+      "dataset": "ETTm2",
+      "model_seed": 2026090602,
+      "best_update_I": 600,
+      "best_update_C": 600,
+      "same_best_update": true,
+      "best_val_mse_I": 0.19876247448074522,
+      "best_val_mse_C": 0.19814974992521983,
+      "final_update": 3000,
+      "position_label_I": "EARLY_BEST",
+      "position_label_C": "EARLY_BEST"
+    },
+    {
+      "dataset": "weather",
+      "model_seed": 2026090601,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.4301599826596943,
+      "best_val_mse_C": 0.42999653180536723,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    },
+    {
+      "dataset": "weather",
+      "model_seed": 2026090602,
+      "best_update_I": 1200,
+      "best_update_C": 1200,
+      "same_best_update": true,
+      "best_val_mse_I": 0.4278206578196505,
+      "best_val_mse_C": 0.4277836778652315,
+      "final_update": 3000,
+      "position_label_I": "INTERIOR_BEST",
+      "position_label_C": "INTERIOR_BEST"
+    },
+    {
+      "dataset": "electricity",
+      "model_seed": 2026090601,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.15086977611642605,
+      "best_val_mse_C": 0.15082546197324304,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    },
+    {
+      "dataset": "electricity",
+      "model_seed": 2026090602,
+      "best_update_I": 3000,
+      "best_update_C": 3000,
+      "same_best_update": true,
+      "best_val_mse_I": 0.15211988962520007,
+      "best_val_mse_C": 0.15211296767326887,
+      "final_update": 3000,
+      "position_label_I": "LATE_BEST",
+      "position_label_C": "LATE_BEST"
+    }
+  ],
+  "schedule_fairness": {
+    "status": "SCHEDULES_IDENTICAL",
+    "mismatches": [],
+    "checked": 6
+  }
+}

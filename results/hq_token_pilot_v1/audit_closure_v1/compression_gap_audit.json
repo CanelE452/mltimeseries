@@ -1,0 +1,40 @@
+{
+  "question": "Q6 - is the DENSE minus U gap an upper bound on what pooling could gain?",
+  "OBSERVED_DENSE_VS_UNIFORM_COMPRESSION_GAP": {
+    "macro_pct": 3.71907067172636,
+    "cells_pct": {
+      "ETTm2|96": 5.6483925537106465,
+      "ETTm2|336": -0.9321260973377266,
+      "weather|96": 2.731029513629357,
+      "weather|336": 1.0909765251584935,
+      "electricity|96": 8.936385553478477,
+      "electricity|336": 4.839765981718913
+    },
+    "seeds_used": [
+      2026090601
+    ],
+    "meaning": "The measured accuracy difference between the trained 64-token uncompressed arm and the trained 32-token uniform-pooling arm, at model seed 2026090601 only."
+  },
+  "is_an_upper_bound": false,
+  "why_not": "The trained dense arm is one trained model, not an oracle. A compressed model can beat it, for instance through the regularizing effect of the bottleneck, so the observed gap does not cap what a pooling rule could win.",
+  "cells_where_C_beat_DENSE": [
+    {
+      "dataset": "ETTm2",
+      "horizon": 96,
+      "seed": 2026090601,
+      "MSE_C": 0.20641144456176597,
+      "MSE_DENSE": 0.21465658396520373,
+      "RI_C_over_DENSE_pct": 3.841083861082184
+    },
+    {
+      "dataset": "ETTm2",
+      "horizon": 336,
+      "seed": 2026090601,
+      "MSE_C": 0.2944143908096716,
+      "MSE_DENSE": 0.300714148796241,
+      "RI_C_over_DENSE_pct": 2.0949323508013595
+    }
+  ],
+  "DENSE_IS_NOT_EMPIRICAL_UPPER_BOUND": true,
+  "explicitly_withdrawn_statement": "An earlier report treated this gap as the headroom available to any pooling rule and used it to argue that a gate above the gap would be unreachable by construction. That reading is withdrawn."
+}
