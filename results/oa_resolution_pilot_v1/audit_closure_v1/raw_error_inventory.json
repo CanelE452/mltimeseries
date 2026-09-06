@@ -1,0 +1,93 @@
+{
+  "status": "LOCAL_12_RAW_ERRORS_PRESENT_GIT_UNTRACKED",
+  "n_local": 12,
+  "n_git_tracked": 0,
+  "gitignore_rule": ".gitignore:18:runs/\truns/oa_resolution_pilot_v1/errors/errors_jena_M_2026090601.npy",
+  "correction": "An earlier report said the 12 raw error arrays were present in the commit. They are present locally under runs/ but runs/ is gitignored, so they were never part of any commit.",
+  "files": [
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_R_2026090601.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "1df5b484559e676a46942999f21e8fc88c558859937701ecbd915d69daa37ba9",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_R_2026090602.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "0880e46e7a0f654fa5902249d5790af9fe1075eddd7c992f0deaf235f026c09c",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_M_2026090601.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "f1bca56051e54ced3a4b766e2447d1157dc3d8a465a90dc718d3f0b4be6448bc",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_M_2026090602.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "95d132eca5a8bec227dbac9c59d96fe9d176460ada8325505abec374ebd0b246",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_O_2026090601.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "4d156440c9b717c15420af661ff82770cc391eff194d734722fb737f03c0615d",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_jena_O_2026090602.npy",
+      "local_exists": true,
+      "bytes": 3469344,
+      "sha256": "8b6d3a66ebf14eb202620a092539be7baf8c628463f517c09f957a6837fedae6",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_R_2026090601.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "e4349ad1bcbeee074a5cd4c349ef6ad8eac5fa8cf6411318aa76537a7e8c4f31",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_R_2026090602.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "319898137c10ae3e2aca40665e4bd64e85c8e45a387499ccec59f0abedd939e7",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_M_2026090601.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "6c0a03d84d0d03d4dbbb7eafbe5c75fa32c4439e234d6b5599b916903863b4f6",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_M_2026090602.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "f18d1d194e446115646d93e90137eab4847e671fdbe33faff4fa2eaa6e71a9ff",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_O_2026090601.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "857f91392addf9ce1ff3f7b63676fbf6c65c2eafa1609c99c58f1c8512aaa25a",
+      "git_tracked": false
+    },
+    {
+      "path": "runs/oa_resolution_pilot_v1/errors/errors_uci_O_2026090602.npy",
+      "local_exists": true,
+      "bytes": 4108224,
+      "sha256": "1ed85e739c350e87137745d2e164c96c10b739629e8753c22aced8a297e75653",
+      "git_tracked": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "diagnostic_scope": {
+    "jena": {
+      "channel_tested": "temperature",
+      "n_windows": 200,
+      "n_channels_in_dataset_total": 3,
+      "true_base_grid_std": 0.90951872037593,
+      "reconstruction_rmse_at_selected_lambda": [
+        0.029277183451870765,
+        0.052426990664771474
+      ]
+    },
+    "uci": {
+      "channel_tested": "global_active_power",
+      "n_windows": 200,
+      "n_channels_in_dataset_total": 4,
+      "true_base_grid_std": 0.8637161606772581,
+      "reconstruction_rmse_at_selected_lambda": [
+        0.3844140545438069,
+        0.5864202848202481
+      ]
+    }
+  },
+  "scope_limits": "One channel per dataset and 200 test windows, at the selected lambda only. It is not a dataset-wide smoothness measurement.",
+  "allowed_statement": "The dataset-level performance reversal is consistent with the reconstruction-quality diagnostic: the tested Jena channel was reconstructed far more accurately than the tested UCI channel.",
+  "withdrawn_statement": "Reconstruction quality caused the forecasting reversal.",
+  "why": "No intervention was run on reconstruction quality, so no causal claim is supported. The R arm also differs from M and O in its whole tokenisation path, not only in how well it reconstructs.",
+  "M_vs_R_confound": "M and R differ in more than metadata: R reconstructs to 288 base bins and forecasts from that grid, while M reads the coarse tokens directly. The metadata contribution and the tokenisation-path contribution are not separated by this pilot."
+}

@@ -1,0 +1,96 @@
+{
+  "naming_correction": {
+    "original_docstring": "Moving-block bootstrap over evaluation origins",
+    "actual_implementation": "fixed non-overlapping 7-day blocks from origin // (7 * 144), whole blocks drawn with replacement, paired across arms",
+    "correct_name": "paired 7-day time-block (cluster) bootstrap"
+  },
+  "O_vs_M_unseen_interpolation": {
+    "recomputed": {
+      "arm_a": "O",
+      "arm_b": "M",
+      "draws": 1000,
+      "mean": -0.054423767615470374,
+      "lower95": -0.2792679731531297,
+      "upper95": 0.17461400619843262,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "stored": {
+      "mean": -0.05442376761547056,
+      "lower95": -0.2792679731531285,
+      "upper95": 0.17461400619842746
+    },
+    "abs_delta_pp": {
+      "mean": 1.8735013540549517e-16,
+      "lower95": 1.1657341758564144e-15,
+      "upper95": 5.162537064506978e-15
+    }
+  },
+  "O_vs_R_unseen_interpolation": {
+    "recomputed": {
+      "arm_a": "O",
+      "arm_b": "R",
+      "draws": 1000,
+      "mean": 0.5317799062334431,
+      "lower95": -0.7881975409922644,
+      "upper95": 1.7356783901602784,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "stored": {
+      "mean": 0.5317799062334414,
+      "lower95": -0.7881975409922561,
+      "upper95": 1.7356783901602726
+    },
+    "abs_delta_pp": {
+      "mean": 1.6653345369377348e-15,
+      "lower95": 8.215650382226158e-15,
+      "upper95": 5.773159728050814e-15
+    }
+  },
+  "M_vs_R_unseen_interpolation": {
+    "recomputed": {
+      "arm_a": "M",
+      "arm_b": "R",
+      "draws": 1000,
+      "mean": 0.587668896809467,
+      "lower95": -0.6210446126277249,
+      "upper95": 1.7196987385530158,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    },
+    "stored": {
+      "mean": 0.587668896809465,
+      "lower95": -0.6210446126277375,
+      "upper95": 1.719698738553016
+    },
+    "abs_delta_pp": {
+      "mean": 1.9984014443252818e-15,
+      "lower95": 1.2545520178264269e-14,
+      "upper95": 2.220446049250313e-16
+    }
+  },
+  "O_vs_M_unseen_extrapolation_exploratory": {
+    "recomputed": {
+      "arm_a": "O",
+      "arm_b": "M",
+      "draws": 1000,
+      "mean": 1.7968433323423036,
+      "lower95": 1.1930169468844312,
+      "upper95": 2.4301668210210945,
+      "effective_blocks_per_dataset": {
+        "jena": 22,
+        "uci": 22
+      }
+    }
+  },
+  "max_abs_delta_pp": 1.2545520178264269e-14,
+  "tolerance_pp": 1e-06,
+  "status": "BOOTSTRAP_REPRODUCED"
+}

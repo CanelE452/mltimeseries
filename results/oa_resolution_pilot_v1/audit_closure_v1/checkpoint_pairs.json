@@ -1,0 +1,32 @@
+{
+  "m_o_pairs": [
+    {
+      "dataset": "jena",
+      "model_seed": 2026090601,
+      "M_best_update": 4500,
+      "O_best_update": 4500,
+      "M_O_same_best_update": true
+    },
+    {
+      "dataset": "jena",
+      "model_seed": 2026090602,
+      "M_best_update": 4000,
+      "O_best_update": 4000,
+      "M_O_same_best_update": true
+    },
+    {
+      "dataset": "uci",
+      "model_seed": 2026090601,
+      "M_best_update": 3000,
+      "O_best_update": 3000,
+      "M_O_same_best_update": true
+    },
+    {
+      "dataset": "uci",
+      "model_seed": 2026090602,
+      "M_best_update": 3000,
+      "O_best_update": 3000,
+      "M_O_same_best_update": true
+    }
+  ]
+}

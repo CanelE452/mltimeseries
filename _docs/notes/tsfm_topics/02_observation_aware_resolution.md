@@ -326,3 +326,153 @@ Chronos-2 는 본 인터프리터에서 import 불가 → `CHRONOS_REFERENCE_SKI
 제안한다. 재방문한다면 유일하게 당길 실은 **넓은 support 영역**이다 — r=12 결과와
 O-WRONG-SUPPORT 진단이 같은 곳을 가리킨다. 다만 현재는 단일 해상도·사실상 단일 dataset
 관측이므로, 그것은 이 실험의 연장이 아니라 새 사전등록이어야 한다.
+
+---
+
+## OA-RESOLUTION-PILOT-v1 사후 감사 정정
+
+감사명 `OA-RESOLUTION-PILOT-v1-AUDIT-CLOSURE-v1`. 감사 대상 base commit
+`a4956c502795125ab6173a706fab28ef6126bfd9`, 감사 작업 자체는 별도 브랜치
+`oa-resolution-pilot-v1-audit-closure-v1`에서 했다. 상세 근거는
+`results/oa_resolution_pilot_v1/audit_closure_v1/STATUS.md`.
+
+이 절은 위 파일럿 절의 서술을 지우지 않는다. 감사가 확인한 것과 정정한 것만 여기에
+덧붙인다.
+
+### 감사 범위 — model fit 0회
+
+감사 도중 학습은 한 번도 돌지 않았다. optimizer 생성·backward pass·checkpoint 재선택·
+λ 재탐색·seed 추가·dataset/operator/architecture 추가·threshold 신설·FlowState
+재호출, 전부 없음(`audit_verdict.json`의 `core_model_fits_in_audit: 0`, 테스트가 감사
+스크립트에 학습 진입점이 없고 torch를 import하지 않음을 확인). 원본 artifact 21개를
+감사 전후로 해시해 전부 불변임을 확인했다(`original_artifact_immutability.json`).
+감사가 만든 파일은 전부 `results/oa_resolution_pilot_v1/audit_closure_v1/` 아래에만
+있고, `results/oa_resolution_pilot_v1/` 원본은 손대지 않았다.
+
+### 판정은 그대로다 — 엔지니어링 권고만 분리했다
+
+| 항목 | 값 |
+| --- | --- |
+| 원 과학적 판정 (`scientific_decision_original`) | `INCONCLUSIVE` |
+| 현재 구현에 대한 감사 권고 (`audit_recommendation_current_implementation`) | `STOP_SCALING_CURRENT_INTERVAL_INTEGRATED_FOURIER_O` |
+| 더 넓은 관측 인지 해상도 주제 상태 (`broader_topic_status`) | `OPEN_NOT_DIRECTLY_TESTED` |
+
+감사는 새 과학적 판정 토큰을 만들지 않는다. `INCONCLUSIVE`를 다른 값으로 바꾸지
+않았고, `STOP_SCALING_CURRENT_INTERVAL_INTEGRATED_FOURIER_O`는 "지금 이 표현을 이
+구현 그대로 더 키우지 말라"는 엔지니어링 판단이지 주제 자체를 닫는 판정이 아니다.
+2번 계열(관측 방식 인지형 해상도 전이)이라는 더 넓은 질문은 이 파일럿이 직접 시험하지
+않은 채로 열려 있다.
+
+### 재현성 확인
+
+- `metrics.csv`에서 모든 macro를 독립적으로 다시 계산해 `primary_contrasts.json`과
+  대조 — 최대 불일치 3.06e-14 percentage point (허용오차 1e-10 pp), `ARITHMETIC_REPRODUCTION_OK`.
+- raw error → 블록 충분통계(`bootstrap_block_sufficient_stats.csv`) → bootstrap 구간을
+  독립 구현으로 재현 — 최대 불일치 1.26e-14 percentage point, `BOOTSTRAP_REPRODUCED`.
+- 주 결과 O vs M(미학습 보간, 30/60분) -0.049% [-0.279, +0.175] — 변동 없음.
+
+### 발견 오류 1 — FlowState native rate `END_BIN`은 애초에 60분 평균과 비교할 수 없었다
+
+FlowState native rate reference의 `END_BIN` 예측은 report interval의 마지막 base
+bin 하나만 내놓으므로, 그 값들을 평균해도 시간평균이 되지 않는다. base bin
+[1, 2, 3, 4, 5, 6](참 평균 3.5)에서 완벽한 `END_BIN` 예측기조차 r=2에서 4.0, r=3에서
+4.5, r=6에서 6.0을 낸다 — 반면 `INTERVAL_MEAN`은 r ∈ {2, 3, 6} 모두에서 정확히 3.5다.
+v1은 r만 보고 `END_BIN`을 통과시켜 60분 지표로 채점했고, 그 행들은 모델 성능이 아니라
+이 연산 불일치를 측정한 것이었다.
+
+`references.py`에 `can_form_hourly_mean_from_native(operation, r)` 가드를
+추가했다 — `END_BIN`은 시험한 모든 r에서 이 가드를 통과하지 못한다(`False`). 기존
+STATUS.md의 FlowState native 수치는 지우지 않고 `HISTORICAL_NUMBER_NOT_COMPARABLE`로
+표시만 했다. `INTERVAL_MEAN`으로 채점한 native rate 행(r ∈ {2, 3, 6})은 원래부터
+의미론적으로 유효했고 바뀌지 않는다.
+
+이 오류가 미치는 범위: FlowState는 이 파일럿의 선택적(optional) reference였고 핵심
+R/M/O 대조와는 무관하다 — 주 결과·bootstrap·판정 전부 영향받지 않는다.
+
+### 발견 오류 2 — r=12 seed 표에서 R 열이 잘못된 행을 가리켰다
+
+Jena `INTERVAL_MEAN` r=12의 seed별 표에서, 원래 STATUS.md에 인쇄된 R 열은 같은
+r·seed의 `END_BIN` 값이었다(M·O 열은 의도대로 `INTERVAL_MEAN`에서 왔다).
+
+| seed | 인쇄된 R | 올바른 `INTERVAL_MEAN` R |
+| --- | --- | --- |
+| 2026090601 | 0.14457 | 0.16108 |
+| 2026090602 | 0.14936 | 0.16376 |
+
+M·O 열과 거기서 인용한 O vs M(+4.47%, +10.22%)은 옳았고, `metrics.csv`는 per-seed
+cell에서 1.1e-16 이내로 재구성된다. 범위는 `REPORTING_CELL_MAPPING_BUG_ONLY` —
+집계·대조·bootstrap·판정 전부 무관하다. 바뀐 것은 그 표에서 보이던 R의 우위 폭뿐이다.
+잘못된 값으로는 R이 O를 -16.08%/-12.44% 앞서는 것처럼 보였지만, 올바른 값으로는
+-4.19%/-2.55%다. R이 그 cell을 이긴다는 결론 자체는 그대로다.
+
+### 발견 오류 3 — raw error 배열의 추적 상태
+
+`runs/`는 `.gitignore`에 있어(`.gitignore:18`), 12개
+`errors_<dataset>_<arm>_<seed>.npy` 배열은 로컬에는 있지만 어떤 커밋에도 없다. 이전
+기록의 "커밋에 존재한다"는 서술은 오류였고 여기서 정정한다. 상태는
+`LOCAL_12_RAW_ERRORS_PRESENT_GIT_UNTRACKED`, 각 파일의 SHA256은
+`raw_error_inventory.json`에 기록했다. 수십 메가바이트의 배열을 강제로 커밋하는 대신
+`bootstrap_block_sufficient_stats.csv`(dataset·7일 블록·연산·r·arm별 seed-평균
+primary loss 합과 key 개수)를 커밋해 그것만으로 위 bootstrap 구간이 재현되게 했다.
+
+### 명칭 정정 — moving-block이 아니라 paired 7-day time-block bootstrap
+
+원래 docstring은 이것을 moving-block bootstrap이라고 불렀다. 실제 구현은
+`origin // (7 * 144)`로 평가 origin을 고정된 비중첩 7일 블록으로 나누고, 그 블록을
+복원추출한다. 정확한 이름은 `paired 7-day time-block (cluster) bootstrap`이다. 기존
+파일의 표현은 그대로 두고, 이 문구가 정정 기록이다.
+
+### 과장 정정 5건
+
+| # | 기존 표현 | 정정 |
+| --- | --- | --- |
+| a | "기전이 작동한다" | 표현 의존성만 보여준다. 우월성이 아니다 — 직접 반례로 Jena `INTERVAL_MEAN` r=8은 wrong-support 민감도 +7.93%인데 O vs M은 -0.56%다 |
+| b | 복원 가능성이 R의 dataset별 역전 원인이다 | 진단은 dataset당 채널 1개·200개 test window에 국한된다(Jena RMSE 0.029-0.052/신호 std 0.910, UCI RMSE 0.384-0.586/신호 std 0.864). "일관된다"까지만 말할 수 있고 인과관계는 시험하지 않았다 |
+| c | M/O는 interval width를 쓰지 않는다 | 명시적 스칼라 width 채널의 WIDTH_MISMATCH 민감도가 작았다는 것까지만 — token 개수·간격·time basis·연산 임베딩을 통해 width 정보가 여전히 들어갈 수 있다 |
+| d | FlowState는 "zero-shot" reference다 | 가중치는 zero-shot이나, resampled variant를 만드는 재구성 λ는 target validation 데이터로 선택했다 — `MODEL_WEIGHTS_ZERO_SHOT + TARGET_VALIDATION_TUNED_PREPROCESSOR` |
+| e | M > R이므로 metadata만으로 충분하다 | M과 R은 tokenization 경로 자체가 다르다(R은 288 base bin으로 재구성 후 예측, M은 coarse token을 직접 읽는다) — metadata 기여와 tokenization 경로 기여가 이 파일럿에서 분리되지 않는다 |
+
+### r=12의 macro는 한 cell에 지배된다 — 감사로 다시 확인
+
+| dataset | 연산 | O vs M |
+| --- | --- | --- |
+| jena | `INTERVAL_MEAN` | +7.44% |
+| jena | `END_BIN` | -0.48% |
+| uci | `END_BIN` | +0.05% |
+| uci | `INTERVAL_MEAN` | +0.03% |
+| macro (4 cell 전체) | | +1.76% |
+| macro (jena `INTERVAL_MEAN` cell 제외) | | -0.13% |
+
+지배 cell 하나를 빼면 부호가 뒤집힌다. 이 관찰은 위 "부수 소견 2"의 결론과 다르지
+않다 — 감사는 이 분해를 독립 구현으로 다시 확인했을 뿐이다.
+
+### 학습되지 않은 loss 성분 — 상쇄가 아니다
+
+| loss 성분 | O vs M | O vs R | M vs R |
+| --- | --- | --- | --- |
+| primary(주 지표) | -0.049% | +0.574% | +0.624% |
+| 10분 MSE | -0.050% | +0.379% | +0.431% |
+| 60분 MSE | -0.045% | +0.913% | +0.960% |
+
+미학습 보간에서 O vs M은 두 horizon 성분 모두 0 근처다. 한쪽이 이기고 한쪽이 지는
+상쇄가 아니라, 둘 다 거의 영향이 없다.
+
+### 이 파일럿이 아직 시험하지 않은 것 (그래서 broader topic은 열려 있다)
+
+- 연산 우도를 가진 연속시간 잠재상태 모델
+- point·구간평균·적분·극값을 함께 다루는 모델
+- 불규칙 간격, 한 시퀀스 안의 이종 연산·이종 폭
+- 연산 조건부 decoder query, 다중 해상도 출력 요청
+- coarse 관측에서 나오는 확률적 불확실성
+- foundation model 적응, 더 많은 도메인·해상도
+- 실제 source-to-source 의미론 전이
+
+이 목록의 어느 항목도 이 파일럿이 실패했음을 뜻하지 않는다 — 애초에 이 파일럿이
+직접 시험한 적이 없을 뿐이다.
+
+### 감사 이후 다음 결정
+
+원 파일럿의 "다음 결정"(확대 중단, 다른 후보 주제로 이동)은 바뀌지 않는다. 감사는
+그 판단이 산술·재현·공정성 오류가 아니라 실제 결과에 근거했음을 확인했을 뿐이다.
+재방문한다면 위 "아직 시험하지 않은 것" 중 하나를 새로 사전등록해야 한다 — 이
+파일럿의 연장이 아니라 새 실험으로.

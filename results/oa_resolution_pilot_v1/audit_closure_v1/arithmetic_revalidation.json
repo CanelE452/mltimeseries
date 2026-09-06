@@ -1,0 +1,554 @@
+{
+  "basis": "results/oa_resolution_pilot_v1/metrics.csv, recomputed without importing report.py",
+  "tolerance_pp": 1e-10,
+  "max_abs_delta_pp": 3.064215547965432e-14,
+  "status": "ARITHMETIC_REPRODUCTION_OK",
+  "roles": {
+    "seen": {
+      "O_vs_M": {
+        "recomputed_pct": -0.18171325558981508,
+        "stored_pct": -0.181713255589816,
+        "abs_delta_pp": 9.159339953157541e-16,
+        "n_cells": 12,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": -0.13271206927611967
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": -0.2046373604546181
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": -0.5403028677701815
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": -0.09683077592359535
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": -0.6105575507627803
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": -0.5636776506575014
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": 0.11268764061733716
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": 0.04531928981452715
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": 0.1163458302909981
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": -0.07355134776527716
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": -0.006599693669784301
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": -0.22604251152078536
+          }
+        ]
+      },
+      "O_vs_R": {
+        "recomputed_pct": 0.6011335687029282,
+        "stored_pct": 0.6011335687029246,
+        "abs_delta_pp": 3.6637359812630166e-15,
+        "n_cells": 12,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": -0.9867757228012586
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": -0.6804145723173338
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": -1.251674472340225
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": -0.2700334012874839
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": -0.8512568957631972
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": -1.968086697852267
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": 2.339682589391745
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": 2.7808862750253738
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": 2.834580894563965
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": 2.0461476743316775
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": 1.8585511651475373
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": 1.3619959883366062
+          }
+        ]
+      },
+      "M_vs_R": {
+        "recomputed_pct": 0.7842704118890681,
+        "stored_pct": 0.7842704118890671,
+        "abs_delta_pp": 9.992007221626409e-16,
+        "n_cells": 12,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": -0.8529317102030198
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": -0.4748055822519026
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": -0.7075486986602986
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": -0.17303507415895591
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": -0.23923865532597954
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": -1.3965370797928145
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 2,
+            "ri_pct": 2.229507327979696
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 4,
+            "ri_pct": 2.73680728683684
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 8,
+            "ri_pct": 2.7214013012124116
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "ri_pct": 2.118141100769777
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "ri_pct": 1.8650277726974696
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "ri_pct": 1.584456953565594
+          }
+        ]
+      },
+      "per_dataset": {
+        "jena": {
+          "O_vs_M": -0.3581197124741327,
+          "O_vs_R": -1.0013736270602942,
+          "M_vs_R": -0.6406828000654952
+        },
+        "uci": {
+          "O_vs_M": -0.005306798705497402,
+          "O_vs_R": 2.2036407644661504,
+          "M_vs_R": 2.2092236238436316
+        }
+      }
+    },
+    "unseen_interpolation": {
+      "O_vs_M": {
+        "recomputed_pct": -0.04869559543886903,
+        "stored_pct": -0.04869559543887736,
+        "abs_delta_pp": 8.326672684688674e-15,
+        "n_cells": 8,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": -0.4372624725005325
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": -0.6402725181280822
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": 0.9369252823202778
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": -0.4155473980243185
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": 0.12329104429884552
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": 0.09698792041472615
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": 0.009486476338826932
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": -0.0631730982306955
+          }
+        ]
+      },
+      "O_vs_R": {
+        "recomputed_pct": 0.5735364682472891,
+        "stored_pct": 0.5735364682472793,
+        "abs_delta_pp": 9.769962616701378e-15,
+        "n_cells": 8,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": -1.3664537722294812
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": -1.2882890251212142
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": 0.004968550935013916
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": -2.171554822454058
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": 2.603853796483202
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": 3.0147917005149294
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": 2.280167467545291
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": 1.5108078503046296
+          }
+        ]
+      },
+      "M_vs_R": {
+        "recomputed_pct": 0.6236991874866495,
+        "stored_pct": 0.6236991874866495,
+        "abs_delta_pp": 0.0,
+        "n_cells": 8,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": -0.9251459835271314
+          },
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": -0.6438938317425702
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": -0.940771053231737
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": -1.7487405784577748
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 3,
+            "ri_pct": 2.48362483918505
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 6,
+            "ri_pct": 2.920636444650737
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "ri_pct": 2.2708964192579506
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "ri_pct": 1.5729872437586723
+          }
+        ]
+      },
+      "per_dataset": {
+        "jena": {
+          "O_vs_M": -0.13903927658316384,
+          "O_vs_R": -1.205332267217435,
+          "M_vs_R": -1.0646378617398033
+        },
+        "uci": {
+          "O_vs_M": 0.041648085705425775,
+          "O_vs_R": 2.352405203712013,
+          "M_vs_R": 2.3120362367131024
+        }
+      }
+    },
+    "unseen_extrapolation": {
+      "O_vs_M": {
+        "recomputed_pct": 1.7598783043219575,
+        "stored_pct": 1.7598783043219686,
+        "abs_delta_pp": 1.1102230246251565e-14,
+        "n_cells": 4,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": -0.4774783673836547
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": 7.4361191069231225
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": 0.04904821183540076
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": 0.031824265912960836
+          }
+        ]
+      },
+      "O_vs_R": {
+        "recomputed_pct": -1.011595243850691,
+        "stored_pct": -1.0115952438507048,
+        "abs_delta_pp": 1.3766765505351941e-14,
+        "n_cells": 4,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": -3.4458286751581024
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": -3.3606047522104276
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": 1.8922264110903364
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": 0.8678260408754301
+          }
+        ]
+      },
+      "M_vs_R": {
+        "recomputed_pct": -2.9844931173173688,
+        "stored_pct": -2.9844931173173994,
+        "abs_delta_pp": 3.064215547965432e-14,
+        "n_cells": 4,
+        "cells": [
+          {
+            "dataset": "jena",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": -2.954244429702979
+          },
+          {
+            "dataset": "jena",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": -11.664078639491304
+          },
+          {
+            "dataset": "uci",
+            "operation": "END_BIN",
+            "r": 12,
+            "ri_pct": 1.8440826888385775
+          },
+          {
+            "dataset": "uci",
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "ri_pct": 0.8362679110862303
+          }
+        ]
+      },
+      "per_dataset": {
+        "jena": {
+          "O_vs_M": 3.479320369769734,
+          "O_vs_R": -3.403216713684265,
+          "M_vs_R": -7.309161534597141
+        },
+        "uci": {
+          "O_vs_M": 0.0404362388741808,
+          "O_vs_R": 1.3800262259828833,
+          "M_vs_R": 1.340175299962404
+        }
+      }
+    }
+  }
+}

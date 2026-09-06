@@ -58,11 +58,34 @@ OPS = ("END_BIN", "INTERVAL_MEAN")
 ROLE = {2: "SEEN", 4: "SEEN", 8: "SEEN", 3: "UNSEEN_INTERPOLATION",
         6: "UNSEEN_INTERPOLATION", 12: "UNSEEN_EXTRAPOLATION"}
 
-# The native-rate variant returns predictions on its own coarse grid.  Only where
-# that grid tiles the hour can the 60-minute metric be formed by the same block
-# mean the core arms use; anywhere else it would take an upsampler with no official
-# definition, so the condition is reported as not evaluated instead of invented.
+# The native-rate variant returns predictions on its own coarse grid, so whether a
+# 60-minute mean can be formed from it depends on the observation operator, not only
+# on r.  See can_form_hourly_mean_from_native below.
 NATIVE_HOURLY_TILING = {2: 3, 3: 2, 6: 1}
+
+
+def can_form_hourly_mean_from_native(operation: str, r: int) -> tuple[bool, str]:
+    """Can averaging native coarse forecasts produce the hourly mean of the signal?
+
+    INTERVAL_MEAN: each forecast is already the mean over its own r base bins, so
+    consecutive forecasts tile the hour exactly whenever 6 % r == 0.  Averaging them
+    reproduces the hourly mean.
+
+    END_BIN: each forecast is one base bin, the last of its report interval.  The
+    other r - 1 bins are never predicted, so no average of END_BIN forecasts is the
+    hourly mean at any r -- not even a perfect forecaster's.  On base bins
+    [1..6] with r = 3 the END_BIN values are [3, 6], whose mean is 4.5 against a true
+    hourly mean of 3.5.  Scoring those rows against the 60-minute target measures the
+    operator mismatch, not the model.
+    """
+    if operation == "INTERVAL_MEAN":
+        if r in NATIVE_HOURLY_TILING:
+            return True, "the coarse interval means tile the hour exactly"
+        return False, "the coarse grid does not tile the hour"
+    if operation == "END_BIN":
+        return False, ("END_BIN forecasts only the last base bin of each report interval, "
+                       "so their average is never the hourly mean of the signal")
+    raise ValueError(operation)
 
 
 def scale_factor_for(report_interval_bins: int) -> float:
@@ -166,15 +189,22 @@ def resampled_variant(model, hist: torch.Tensor, targ: torch.Tensor, lam: float,
 
 @torch.no_grad()
 def native_variant(model, hist: torch.Tensor, targ: torch.Tensor, device, chunk: int):
-    """Reference B: the coarse observed sequence at its own documented scale factor,
-    scored on the 60-minute metric where the coarse grid tiles the hour."""
+    """Reference B: the coarse observed sequence at its own documented scale factor.
+
+    Scored on the 60-minute metric only where the predicted quantity can actually
+    form an hourly mean.  That is an operator question, not just an r question:
+    END_BIN never qualifies, whatever r is.  The original v1 run scored END_BIN rows
+    here; those numbers are preserved in flowstate_reference.json but are marked
+    HISTORICAL_NUMBER_NOT_COMPARABLE by the audit.
+    """
     rows, skipped = [], []
     for op in OPS:
         for r in EVAL_R:
-            if r not in NATIVE_HOURLY_TILING:
-                skipped.append({"operation": op, "r": r, "reason":
-                                "the native output grid does not tile the hour, so the 60-minute "
-                                "metric would need an upsampler with no official definition"})
+            ok, why = can_form_hourly_mean_from_native(op, r)
+            if not ok:
+                skipped.append({"operation": op, "r": r,
+                                "status": "NOT_EVALUATED_SEMANTIC_TARGET_MISMATCH",
+                                "reason": why})
                 continue
             per_hour = NATIVE_HOURLY_TILING[r]
             steps = FORECAST_BINS // r

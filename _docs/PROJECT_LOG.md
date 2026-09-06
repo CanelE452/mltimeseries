@@ -16,7 +16,7 @@
 | 계열 | 묻는 것 | 상태 | 최신 결과 | 문서 |
 |---|---|:--:|---|---|
 | 01_forecast_query_tokenization | 같은 토큰 예산에서 예측 기간(horizon)을 함께 보는 압축이 입력만 보는 학습형 압축보다 정확한가 | 🟡 | 27/27 fit 완료, 판정 결론 보류(`INCONCLUSIVE`) — 주요 대조 macro -0.037% [-0.128%, +0.033%] (사전등록 문턱 +1.0%), 8개 조건 중 3개 통과 (09-06) | [notes](notes/tsfm_topics/01_forecast_query_tokenization.md) |
-| 02_observation_aware_resolution | 관측 간격뿐 아니라 순간값·구간평균·구간합계 같은 관측 의미까지 모델에 알려주면 해상도가 바뀌어도 더 정확한가 | 🟡 | 12/12 fit 완료, 판정 `INCONCLUSIVE` — 사전등록 주 대조(미학습 보간, O vs M) macro -0.049%, bootstrap 95% CI [-0.279%, +0.175%] (0 포함), Go/No-Go 6개 중 4개 실패. Phase-2(pretrained model 이식) 제안 안 함, 이 계열 확대 중단 제안 (09-06) | [notes](notes/tsfm_topics/02_observation_aware_resolution.md) |
+| 02_observation_aware_resolution | 관측 간격뿐 아니라 순간값·구간평균·구간합계 같은 관측 의미까지 모델에 알려주면 해상도가 바뀌어도 더 정확한가 | 🟡 | 12/12 fit 완료, 판정 `INCONCLUSIVE` — 사전등록 주 대조(미학습 보간, O vs M) macro -0.049%, bootstrap 95% CI [-0.279%, +0.175%] (0 포함), Go/No-Go 6개 중 4개 실패. Phase-2(pretrained model 이식) 제안 안 함, 이 계열 확대 중단 제안 (09-06). 사후 감사(AUDIT-CLOSURE-v1, model fit 0회)로 주 산술·bootstrap 재현 확인, FlowState native END_BIN 의미론 오류와 r=12 표 셀 매핑 오류 정정(집계·판정 무영향). 현재 구현은 Phase-2 미승격 | [notes](notes/tsfm_topics/02_observation_aware_resolution.md) |
 | 03_uncertain_future_covariates | 미래 보조변수가 확정값이 아니라 예보일 때, 그 분포를 작은 표현으로 받는 모델이 점 입력 방식보다 나은가 | ⚪ | 노트만 보존, 데이터 계약 미확정 · 이번 회차는 실행하지 않기로 명시적으로 정함 | [notes](notes/tsfm_topics/03_uncertain_future_covariates.md) |
 
 결론 난 계열이 아직 없으므로(1·2번 모두 `INCONCLUSIVE`로 열려 있음) 표를 나누지 않는다.

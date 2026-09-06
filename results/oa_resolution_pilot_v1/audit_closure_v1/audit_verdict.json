@@ -1,0 +1,16 @@
+{
+  "audit_name": "OA-RESOLUTION-PILOT-v1-AUDIT-CLOSURE-v1",
+  "audited_base_sha": "a4956c502795125ab6173a706fab28ef6126bfd9",
+  "scientific_decision_original": "INCONCLUSIVE",
+  "audit_recommendation_current_implementation": "STOP_SCALING_CURRENT_INTERVAL_INTEGRATED_FOURIER_O",
+  "broader_topic_status": "OPEN_NOT_DIRECTLY_TESTED",
+  "core_model_fits_in_audit": 0,
+  "primary_result_reproduced": true,
+  "bootstrap_reproduced_from_local_raw_errors": true,
+  "flowstate_native_end_bin_status": "INVALID_FOR_HOURLY_MEAN_COMPARISON",
+  "r12_reporting_bug_scope": "REPORTING_CELL_MAPPING_BUG_ONLY",
+  "raw_error_git_status": "LOCAL_12_RAW_ERRORS_PRESENT_GIT_UNTRACKED",
+  "train_schedule_fairness": "OK",
+  "original_artifacts_unchanged": true,
+  "bootstrap_name_correction": "paired 7-day time-block (cluster) bootstrap"
+}

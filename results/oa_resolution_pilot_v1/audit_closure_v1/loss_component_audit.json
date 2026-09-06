@@ -1,0 +1,57 @@
+{
+  "basis": "runs/oa_resolution_pilot_v1/errors/*.npy, seed-averaged per logical key",
+  "purpose": "Whether the near-zero primary contrast hides a 10-minute gain cancelling a 60-minute loss, or whether both components are near zero. Not a new gate.",
+  "roles": {
+    "seen": {
+      "primary": {
+        "O_vs_M_macro_pct": -0.18171325558982063,
+        "O_vs_R_macro_pct": 0.6011335687029228,
+        "M_vs_R_macro_pct": 0.7842704118890662
+      },
+      "mse10": {
+        "O_vs_M_macro_pct": -0.17987633595380934,
+        "O_vs_R_macro_pct": 0.4179260167645906,
+        "M_vs_R_macro_pct": 0.5991232723765569
+      },
+      "mse60": {
+        "O_vs_M_macro_pct": -0.18431457739083815,
+        "O_vs_R_macro_pct": 0.9219009321748803,
+        "M_vs_R_macro_pct": 1.1077995140544752
+      }
+    },
+    "unseen_interpolation": {
+      "primary": {
+        "O_vs_M_macro_pct": -0.04869559543887597,
+        "O_vs_R_macro_pct": 0.5735364682472834,
+        "M_vs_R_macro_pct": 0.6236991874866523
+      },
+      "mse10": {
+        "O_vs_M_macro_pct": -0.050417663109939004,
+        "O_vs_R_macro_pct": 0.37911026341531107,
+        "M_vs_R_macro_pct": 0.43076802717736673
+      },
+      "mse60": {
+        "O_vs_M_macro_pct": -0.04522198504021552,
+        "O_vs_R_macro_pct": 0.91329831717641,
+        "M_vs_R_macro_pct": 0.9604364323526958
+      }
+    },
+    "unseen_extrapolation": {
+      "primary": {
+        "O_vs_M_macro_pct": 1.7598783043219712,
+        "O_vs_R_macro_pct": -1.0115952438506992,
+        "M_vs_R_macro_pct": -2.9844931173173963
+      },
+      "mse10": {
+        "O_vs_M_macro_pct": 1.752301598033723,
+        "O_vs_R_macro_pct": -1.102368920566171,
+        "M_vs_R_macro_pct": -3.0650215031302914
+      },
+      "mse60": {
+        "O_vs_M_macro_pct": 1.7668384652509057,
+        "O_vs_R_macro_pct": -0.8476081859919549,
+        "M_vs_R_macro_pct": -2.830141055742994
+      }
+    }
+  }
+}

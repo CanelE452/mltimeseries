@@ -1,0 +1,10 @@
+{
+  "audited_base_sha": "a4956c502795125ab6173a706fab28ef6126bfd9",
+  "audit_branch": "oa-resolution-pilot-v1-audit-closure-v1",
+  "audit_head": "a4956c502795125ab6173a706fab28ef6126bfd9",
+  "origin_main": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "remote": "https://github.com/CanelE452/mltimeseries.git",
+  "working_tree_clean_of_tracked_changes": true,
+  "runs_dir_gitignored": true,
+  "local_raw_errors_present": 12
+}
