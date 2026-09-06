@@ -6,7 +6,19 @@
 
 ## 현재 상태
 
-아직 코드도 실험도 없다. 문헌 사전조사 자료 두 건만 들어와 있다.
+문헌 사전조사 자료 두 건(아래 "자료")에 더해, 2026-09-06에 `_docs/notes/tsfm_topics/`
+아래 연구 주제 노트 3건이 들어왔고 그중 1번(예측 목표 조건부 토큰화)의 1차 파일럿을
+실행했다. 계열별 상태는 바로 아래 "계열 현황" 표에서 본다.
+
+## 계열 현황
+
+| 계열 | 묻는 것 | 상태 | 최신 결과 | 문서 |
+|---|---|:--:|---|---|
+| 01_forecast_query_tokenization | 같은 토큰 예산에서 예측 기간(horizon)을 함께 보는 압축이 입력만 보는 학습형 압축보다 정확한가 | 🟡 | 27/27 fit 완료, 판정 결론 보류(`INCONCLUSIVE`) — 주요 대조 macro -0.037% [-0.128%, +0.033%] (사전등록 문턱 +1.0%), 8개 조건 중 3개 통과 (09-06) | [notes](notes/tsfm_topics/01_forecast_query_tokenization.md) |
+| 02_observation_aware_resolution | 관측 간격뿐 아니라 순간값·구간평균·구간합계 같은 관측 의미까지 모델에 알려주면 해상도가 바뀌어도 더 정확한가 | ⚪ | 노트만 보존, 이번 회차는 실행하지 않기로 명시적으로 정함 | [notes](notes/tsfm_topics/02_observation_aware_resolution.md) |
+| 03_uncertain_future_covariates | 미래 보조변수가 확정값이 아니라 예보일 때, 그 분포를 작은 표현으로 받는 모델이 점 입력 방식보다 나은가 | ⚪ | 노트만 보존, 데이터 계약 미확정 · 이번 회차는 실행하지 않기로 명시적으로 정함 | [notes](notes/tsfm_topics/03_uncertain_future_covariates.md) |
+
+결론 난 계열이 아직 없으므로(1번은 `INCONCLUSIVE`로 열려 있음) 표를 나누지 않는다.
 
 ## 자료
 
@@ -63,4 +75,9 @@ dossier 에 있는 그대로 옮긴다. 연구 기회가 남아 있다고 증명
 
 ## 다음에 할 일
 
-정해진 것 없음. 연구군을 고르기 전에 dossier 의 "비교의 필수 구분" 절을 먼저 읽는다.
+1번 계열(예측 목표 조건부 토큰화)의 1차 파일럿이 `INCONCLUSIVE`로 끝나
+[노트의 §12.8 다음 행동 후보](notes/tsfm_topics/01_forecast_query_tokenization.md)에
+선택지가 정리돼 있다 — 이 계열을 계속할지 접을지는 아직 정해지지 않았다.
+
+2·3번 계열이나 dossier 의 5개 후보 연구군으로 넘어가는 경우, 연구군을 고르기 전에
+dossier 의 "비교의 필수 구분" 절을 먼저 읽는다.

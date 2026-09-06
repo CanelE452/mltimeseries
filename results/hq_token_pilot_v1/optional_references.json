@@ -1,0 +1,280 @@
+{
+  "dynamic_tokenization_baselines": [
+    {
+      "method": "LocalTokenMerging_2025_ICML",
+      "official_code_found": false,
+      "license": null,
+      "how_checked": "PMLR landing page carried no code link; the 21-page PDF was downloaded and its text and link annotations were scanned. The only GitHub URL in it is a citation to Lyken17/pytorch-OpCounter, a FLOP counter, not the authors' implementation. GitHub repository search on the title terms returned nothing matching.",
+      "multi_horizon_and_same_token_budget_applicable": "NOT_ASSESSED_WITHOUT_CODE",
+      "original_purpose_and_implementation_preserved": "NOT_APPLICABLE",
+      "compared_under_the_same_contract": false,
+      "status": "MISSING_OFFICIAL_BASELINE"
+    },
+    {
+      "method": "BPE4TS_2026_ICML",
+      "official_code_found": false,
+      "license": null,
+      "how_checked": "arXiv abstract page and the 32-page PDF text carried no repository link; GitHub repository search on the title terms returned nothing matching.",
+      "multi_horizon_and_same_token_budget_applicable": "NOT_ASSESSED_WITHOUT_CODE",
+      "original_purpose_and_implementation_preserved": "NOT_APPLICABLE",
+      "compared_under_the_same_contract": false,
+      "status": "MISSING_OFFICIAL_BASELINE"
+    },
+    {
+      "method": "TimeSqueeze",
+      "official_code_found": false,
+      "license": null,
+      "how_checked": "arXiv abstract page and the 21-page PDF text carried no repository link; GitHub repository search returned nothing matching.",
+      "multi_horizon_and_same_token_budget_applicable": "NOT_ASSESSED_WITHOUT_CODE",
+      "original_purpose_and_implementation_preserved": "NOT_APPLICABLE",
+      "compared_under_the_same_contract": false,
+      "status": "MISSING_OFFICIAL_BASELINE"
+    },
+    {
+      "method": "PATK_2026_AAAI",
+      "official_code_found": false,
+      "license": null,
+      "how_checked": "AAAI OJS landing page carried no code link; GitHub search returned nothing matching.",
+      "multi_horizon_and_same_token_budget_applicable": "NOT_ASSESSED_WITHOUT_CODE",
+      "original_purpose_and_implementation_preserved": "NOT_APPLICABLE",
+      "compared_under_the_same_contract": false,
+      "status": "MISSING_OFFICIAL_BASELINE"
+    }
+  ],
+  "missing_strong_dynamic_baseline": true,
+  "missing_strong_dynamic_baseline_note": "No official implementation of Local Merging, BPE for time series, TimeSqueeze or PATK was located inside the timebox, so this pilot has no strong dynamic tokenization baseline. Writing an adjacent-cosine merge heuristic here would be a LOCAL_HEURISTIC and must never be labelled a reproduction of any of those papers. Their absence says nothing about whether the core hypothesis holds.",
+  "reference_subgrid": {
+    "ETTm2": {
+      "origins": 117,
+      "channels": 7,
+      "windows_per_horizon": 819,
+      "channel_subsample": false
+    },
+    "weather": {
+      "origins": 107,
+      "channels": 21,
+      "windows_per_horizon": 2247,
+      "channel_subsample": false
+    },
+    "electricity": {
+      "origins": 52,
+      "channels": 16,
+      "windows_per_horizon": 832,
+      "channel_subsample": true
+    }
+  },
+  "reference_subgrid_note": "Declared before any reference number existed. It is a subset of the frozen test keys, so the core arms are re-scored on exactly these keys for a like-for-like row. These numbers must not be placed beside the full-grid core table.",
+  "core_arms_on_subgrid": {
+    "ETTm2": {
+      "I": {
+        "96": {
+          "mse": 0.20560607785949583,
+          "mae": 0.30301692032649064
+        },
+        "336": {
+          "mse": 0.2944401518620269,
+          "mae": 0.36294482737005057
+        }
+      },
+      "C": {
+        "96": {
+          "mse": 0.20641144631012795,
+          "mae": 0.3040398367546805
+        },
+        "336": {
+          "mse": 0.2944143736554451,
+          "mae": 0.36332451650532005
+        }
+      },
+      "DENSE": {
+        "96": {
+          "mse": 0.21465659539390008,
+          "mae": 0.31368761446886445
+        },
+        "336": {
+          "mse": 0.30071413581458223,
+          "mae": 0.36778937002151285
+        }
+      }
+    },
+    "weather": {
+      "I": {
+        "96": {
+          "mse": 0.16268519339443333,
+          "mae": 0.22818401966510904
+        },
+        "336": {
+          "mse": 0.26085487495231735,
+          "mae": 0.30954436023825416
+        }
+      },
+      "C": {
+        "96": {
+          "mse": 0.16273810682762202,
+          "mae": 0.22824645824061712
+        },
+        "336": {
+          "mse": 0.26103043558739697,
+          "mae": 0.3097157817566279
+        }
+      },
+      "DENSE": {
+        "96": {
+          "mse": 0.16223428836828735,
+          "mae": 0.23248204999605956
+        },
+        "336": {
+          "mse": 0.2565968828146523,
+          "mae": 0.3100449657082459
+        }
+      }
+    },
+    "electricity": {
+      "I": {
+        "96": {
+          "mse": 0.15369223325680464,
+          "mae": 0.24971480247301933
+        },
+        "336": {
+          "mse": 0.18580465351705586,
+          "mae": 0.28033553462325433
+        }
+      },
+      "C": {
+        "96": {
+          "mse": 0.15363405912350386,
+          "mae": 0.2496496591812525
+        },
+        "336": {
+          "mse": 0.1857668977954012,
+          "mae": 0.28029875702910373
+        }
+      },
+      "DENSE": {
+        "96": {
+          "mse": 0.1474630404741336,
+          "mae": 0.24174597324469152
+        },
+        "336": {
+          "mse": 0.18126818199297448,
+          "mae": 0.2754485860412374
+        }
+      }
+    }
+  },
+  "chronos2": {
+    "model": "Chronos-2",
+    "weight": "amazon/chronos-2",
+    "setup_seconds": 6.090450048446655,
+    "quantiles": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "point_forecast_type": "median",
+    "point_forecast_note": "The pipeline exposes quantiles, and 0.5 is the median. The core arms are MSE-trained point forecasts, whose optimum is the mean. Scoring a median with MSE is a handicap of unknown size, so this row is a reference, not a contest.",
+    "per_dataset": {
+      "ETTm2": {
+        "96": {
+          "mse": 0.174907386302948,
+          "mae": 0.23121771216392517
+        },
+        "336": {
+          "mse": 0.29972049593925476,
+          "mae": 0.3165564239025116
+        }
+      },
+      "weather": {
+        "96": {
+          "mse": 0.14798381924629211,
+          "mae": 0.1795172393321991
+        },
+        "336": {
+          "mse": 0.2585884630680084,
+          "mae": 0.27374184131622314
+        }
+      },
+      "electricity": {
+        "96": {
+          "mse": 0.12665046751499176,
+          "mae": 0.19985643029212952
+        },
+        "336": {
+          "mse": 0.15774750709533691,
+          "mae": 0.23289014399051666
+        }
+      }
+    },
+    "status": "COMPLETE",
+    "wall_seconds": 20.57248306274414
+  },
+  "tirex2": {
+    "model": "TiRex-2",
+    "weight": "NX-AI/TiRex-2",
+    "device": "cpu",
+    "device_note": "CPU only on this machine. flashrnn compiles a fused sLSTM CUDA kernel at runtime and needs MSVC plus a CUDA Toolkit, neither of which is installed; the Triton backend exceeds the RTX 4070 shared-memory limit. No Docker, WSL or driver change was attempted, as section 17 forbids it.",
+    "setup_seconds": 2.135178804397583,
+    "quantiles": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "point_forecast_type": "median",
+    "max_supported_prediction_length": 320,
+    "blocked_horizons": {
+      "336": "BLOCKED_CONTRACT: model caps prediction_length at 320"
+    },
+    "per_dataset": {
+      "ETTm2": {
+        "96": {
+          "mse": 0.16971123218536377,
+          "mae": 0.2344614416360855
+        }
+      },
+      "weather": {
+        "96": {
+          "mse": 0.14764578640460968,
+          "mae": 0.17866182327270508
+        }
+      },
+      "electricity": {
+        "96": {
+          "mse": 0.12762653827667236,
+          "mae": 0.20785534381866455
+        }
+      }
+    },
+    "status": "PARTIAL_HORIZON_UNSUPPORTED",
+    "wall_seconds": 250.01712560653687
+  },
+  "interpretation_limits": [
+    "These references were pretrained elsewhere and are evaluated zero-shot; the core arms were fitted on each target. The training conditions are not comparable.",
+    "Pretraining overlap with ETTm2, weather and electricity was not checked, so no unseen zero-shot claim is made.",
+    "Both references return quantiles. Scoring a median under MSE, against arms trained for the mean, is a handicap of unmeasured size.",
+    "No adaptation or tokenizer surgery on these models is attempted in this run."
+  ]
+}

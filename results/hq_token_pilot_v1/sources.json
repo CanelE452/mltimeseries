@@ -1,0 +1,110 @@
+{
+  "experiment_id": "HQ-TOKEN-PILOT-v1",
+  "checked_utc": "2026-09-06",
+  "check_method": "curl -s -o /dev/null -w %{http_code} -L --max-time 25",
+  "note": "HTTP 200 means the URL resolves. It does not by itself mean an official runnable implementation exists.",
+  "mandatory_references": [
+    {
+      "key": "PatchTST",
+      "role": "patching + channel-independent idea, official split reference",
+      "url": "https://github.com/yuqinie98/PatchTST",
+      "http": 200,
+      "official_code": "FOUND",
+      "local_clone": "third_party/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "commit_date": "2023-08-11T08:40:14+08:00",
+      "license": "Apache-2.0",
+      "files_used": [
+        "PatchTST_supervised/data_provider/data_loader.py"
+      ],
+      "code_executed": false,
+      "used_for": "read-only verification of split boundaries; no PatchTST code is imported by the pilot",
+      "verified_facts": [
+        "Dataset_ETT_minute (line 136-137): border2s = [12*30*24*4, +4*30*24*4, +8*30*24*4] = [34560, 46080, 57600] -- matches spec section 4 exactly",
+        "Dataset_Custom (line 234-238): num_train=int(0.7*T), num_test=int(0.2*T), num_vali=T-num_train-num_test -- matches spec section 4 exactly",
+        "official loader starts the input window at border1s[i]-seq_len, i.e. val/test inputs may read history from the preceding split; spec section 4 explicitly allows this and distinguishes it from target leakage"
+      ]
+    },
+    {
+      "key": "LocalTokenMerging",
+      "title": "Efficient Time Series Processing for Transformers and State-Space Models through Token Merging",
+      "venue": "2025/ICML",
+      "url": "https://proceedings.mlr.press/v267/gotz25a.html",
+      "http": 200,
+      "official_code": "NOT_YET_CHECKED",
+      "note": "landing page resolves; official implementation search is deferred to section 16 (post-core, 45 min timebox)"
+    },
+    {
+      "key": "BPE4TS",
+      "title": "Byte Pair Encoding for Efficient Time Series Forecasting",
+      "venue": "2026/ICML (acceptance announced by author institution)",
+      "url": "https://arxiv.org/abs/2505.14411",
+      "acceptance_notice": "https://www.cs.cit.tum.de/en/daml/all-news/article/nine-papers-accepted-at-icml2026/",
+      "http": [200, 200],
+      "official_code": "NOT_YET_CHECKED"
+    },
+    {
+      "key": "TimeSqueeze",
+      "title": "TimeSqueeze: Dynamic Patching for Efficient Time Series Forecasting",
+      "venue": "2025/NeurIPS workshop or public preprint - NOT NeurIPS main track",
+      "url": "https://arxiv.org/abs/2603.11352",
+      "virtual_page": "https://neurips.cc/virtual/2025/130454",
+      "http": [200, 200],
+      "official_code": "NOT_YET_CHECKED"
+    },
+    {
+      "key": "PATK",
+      "title": "Dynamic Semantic Tokenization for Time Series via Elastic Sampling on Physics-aware Perception",
+      "venue": "2026/AAAI",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39517",
+      "http": 200,
+      "official_code": "NOT_YET_CHECKED"
+    },
+    {
+      "key": "TokenLearner",
+      "url": "https://research.google/blog/improving-vision-transformer-efficiency-and-accuracy-by-learning-to-tokenize/",
+      "http": 200,
+      "role": "prior art: learned weighted pooling is not novel by itself"
+    },
+    {
+      "key": "PerceiverIO",
+      "venue": "2022/ICLR",
+      "url": "https://iclr.cc/virtual/2022/spotlight/6270",
+      "http": 200,
+      "role": "prior art: latent bottleneck + query-based output"
+    }
+  ],
+  "foundation_references": [
+    {
+      "key": "Chronos-2",
+      "repo": "https://github.com/amazon-science/chronos-forecasting",
+      "http": 200,
+      "installed_package": "chronos-forecasting",
+      "installed_version": "2.3.1",
+      "device_status": "GPU OK on this machine (verified 2026-09-06 smoke test)"
+    },
+    {
+      "key": "TiRex-2",
+      "repo": "https://github.com/NX-AI/tirex-2",
+      "http": 200,
+      "installed_package": "tirex-2",
+      "installed_version": "0.2.1",
+      "device_status": "CPU ONLY on this machine. flashrnn compiles a fused sLSTM CUDA kernel at runtime and requires MSVC + CUDA Toolkit, neither installed. Triton backend fails on RTX 4070 (shared memory required 270336 > limit 101376). Recorded 2026-09-06.",
+      "requires_env": {
+        "CUDA_HOME": "any existing directory (xlstm reads it at import time)",
+        "TORCH_COMPILE_DISABLE": "1"
+      }
+    }
+  ],
+  "environment": {
+    "python": "3.11.16",
+    "conda_env": "mlts",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 4070, 12.0 GiB, cc 8.9",
+    "os": "Windows 11 (10.0.26200)"
+  },
+  "duplicate_risk": "NOT_YET_ASSESSED - horizon-conditioned compression overlap check is part of section 16"
+}

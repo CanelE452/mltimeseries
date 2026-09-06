@@ -1,0 +1,26 @@
+{
+  "I_mean_weight_on_a_patch": {
+    "96": 0.9562317728996277,
+    "336": 0.9562317728996277
+  },
+  "I": {
+    "96": 0.010634642094373703,
+    "336": 0.028264353051781654
+  },
+  "C_mean_weight_on_a_patch": {
+    "96": 0.9990830421447754,
+    "336": 0.1862967610359192
+  },
+  "C": {
+    "96": 0.00524792680516839,
+    "336": 0.2911238968372345
+  },
+  "relative_improvement_pct": {
+    "96": 50.65253011246307,
+    "336": -930.003751735911
+  },
+  "C_weight_separation_between_horizons": 0.8127862811088562,
+  "updates": 3000,
+  "verdict": "CAPACITY_CONFIRMED",
+  "reading_note": "The verdict reads the H=96 cell and the weight separation. The H=336 cell is expected to favour I on this task and is not evidence against capacity: the H=336 loss mask spans steps 0..335, so it still contains the 96 a-steps, and a single weight per horizon cannot serve both halves of that window. What matters is whether the scorer moves the weight when the horizon changes."
+}

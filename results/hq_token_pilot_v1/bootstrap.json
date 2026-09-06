@@ -1,0 +1,61 @@
+{
+  "draws": 1000,
+  "bootstrap_seed": 2026090699,
+  "block_origins": 15,
+  "effective_blocks": {
+    "ETTm2": 8,
+    "weather": 8,
+    "electricity": 4
+  },
+  "macro_mean": -0.03938479848322728,
+  "lower95": -0.1275647237878516,
+  "upper95": 0.03276452743664624,
+  "flags": [
+    "LOW_EFFECTIVE_TIME_BLOCKS:electricity:4"
+  ],
+  "per_cell_C_vs_I": {
+    "ETTm2|96": {
+      "point_ri_pct": -0.01888059026291522,
+      "lower95": -0.29042358859219186,
+      "upper95": 0.19214450287914212,
+      "n_origins": 117,
+      "n_blocks": 8
+    },
+    "ETTm2|336": {
+      "point_ri_pct": -0.23429066419955458,
+      "lower95": -0.5015227529477168,
+      "upper95": -0.021783785488913576,
+      "n_origins": 117,
+      "n_blocks": 8
+    },
+    "weather|96": {
+      "point_ri_pct": 0.029503901974403668,
+      "lower95": -0.008845250591828502,
+      "upper95": 0.060477045805593925,
+      "n_origins": 107,
+      "n_blocks": 8
+    },
+    "weather|336": {
+      "point_ri_pct": -0.03992668012604561,
+      "lower95": -0.0992611998328996,
+      "upper95": 0.004021259793292586,
+      "n_origins": 107,
+      "n_blocks": 8
+    },
+    "electricity|96": {
+      "point_ri_pct": 0.03230898961337214,
+      "lower95": 0.0276786358473341,
+      "upper95": 0.03875541189812148,
+      "n_origins": 52,
+      "n_blocks": 4
+    },
+    "electricity|336": {
+      "point_ri_pct": 0.006960225644392359,
+      "lower95": 0.000941149449916745,
+      "upper95": 0.014371385349994936,
+      "n_origins": 52,
+      "n_blocks": 4
+    }
+  },
+  "per_cell_note": "Same resampling scheme as the macro interval, applied cell by cell. Model seeds are averaged per key before resampling and are not themselves resampled."
+}

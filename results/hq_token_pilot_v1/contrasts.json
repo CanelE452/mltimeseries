@@ -1,0 +1,334 @@
+{
+  "primary": {
+    "treat": "C",
+    "ref": "I",
+    "cells": {
+      "ETTm2|96": -0.01888059026291522,
+      "ETTm2|336": -0.23429066419955458,
+      "weather|96": 0.029503901974403668,
+      "weather|336": -0.03992668012604561,
+      "electricity|96": 0.03230898961337214,
+      "electricity|336": 0.006960225644392359
+    },
+    "per_dataset_horizon_mean": {
+      "ETTm2": -0.1265856272312349,
+      "weather": -0.005211389075820971,
+      "electricity": 0.01963460762888225
+    },
+    "per_seed_macro": {
+      "2026090601": -0.07202014917790563,
+      "2026090602": 0.005908315563426155
+    },
+    "macro": -0.03738746955939121
+  },
+  "secondary": {
+    "C_vs_H_STATIC": {
+      "treat": "C",
+      "ref": "H_STATIC",
+      "cells": {
+        "ETTm2|96": 3.9117256718465,
+        "ETTm2|336": -1.2226849194177047,
+        "weather|96": 3.767826231914251,
+        "weather|336": 1.3745553794875298,
+        "electricity|96": 2.3011894189329363,
+        "electricity|336": 1.2146579463705787
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 1.3445203762143976,
+        "weather": 2.5711908057008905,
+        "electricity": 1.7579236826517575
+      },
+      "per_seed_macro": {
+        "2026090601": 2.4957473307802456,
+        "2026090602": 1.2078532792050087
+      },
+      "macro": 1.8912116215223485
+    },
+    "C_vs_R": {
+      "treat": "C",
+      "ref": "R",
+      "cells": {
+        "ETTm2|96": -0.01941088656696177,
+        "ETTm2|336": 0.05032048240031228,
+        "weather|96": -0.0010477765935990035,
+        "weather|336": -0.08339442381886109,
+        "electricity|96": 0.002732281663475611,
+        "electricity|336": 0.0012708096859159745
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 0.015454797916675256,
+        "weather": -0.042221100206230044,
+        "electricity": 0.0020015456746957927
+      },
+      "per_seed_macro": {
+        "2026090601": -0.008254918871619665
+      },
+      "macro": -0.008254918871619665
+    },
+    "C_vs_U": {
+      "treat": "C",
+      "ref": "U",
+      "cells": {
+        "ETTm2|96": 9.272516920001683,
+        "ETTm2|336": 1.182333664627011,
+        "weather|96": 2.428965446398623,
+        "weather|336": -0.618003039739623,
+        "electricity|96": 3.232072854746726,
+        "electricity|336": 1.5353262849863714
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 5.227425292314347,
+        "weather": 0.9054812033295001,
+        "electricity": 2.3836995698665486
+      },
+      "per_seed_macro": {
+        "2026090601": 2.838868688503465
+      },
+      "macro": 2.838868688503465
+    },
+    "C_vs_DENSE": {
+      "treat": "C",
+      "ref": "DENSE",
+      "cells": {
+        "ETTm2|96": 3.841083861082184,
+        "ETTm2|336": 2.0949323508013595,
+        "weather|96": -0.31054514684418777,
+        "weather|336": -1.7278297822168165,
+        "electricity|96": -6.264096514730033,
+        "electricity|336": -3.4725005994602043
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 2.968008105941772,
+        "weather": -1.0191874645305021,
+        "electricity": -4.868298557095119
+      },
+      "per_seed_macro": {
+        "2026090601": -0.9731593052279496
+      },
+      "macro": -0.9731593052279496
+    }
+  },
+  "precondition_compression_headroom_DENSE_vs_U": {
+    "treat": "DENSE",
+    "ref": "U",
+    "cells": {
+      "ETTm2|96": 5.6483925537106465,
+      "ETTm2|336": -0.9321260973377266,
+      "weather|96": 2.731029513629357,
+      "weather|336": 1.0909765251584935,
+      "electricity|96": 8.936385553478477,
+      "electricity|336": 4.839765981718913
+    },
+    "per_dataset_horizon_mean": {
+      "ETTm2": 2.35813322818646,
+      "weather": 1.9110030193939254,
+      "electricity": 6.8880757675986946
+    },
+    "per_seed_macro": {
+      "2026090601": 3.71907067172636
+    },
+    "macro": 3.71907067172636
+  },
+  "robustness_phase_shifted_grid": {
+    "treat": "C",
+    "ref": "I",
+    "cells": {
+      "ETTm2|96": -0.45556641927053665,
+      "ETTm2|336": -0.418119836260078,
+      "weather|96": 0.02894918619831266,
+      "weather|336": -0.05249747012678885,
+      "electricity|96": 0.02586422535035826,
+      "electricity|336": 0.0065486954026861
+    },
+    "per_dataset_horizon_mean": {
+      "ETTm2": -0.4368431277653073,
+      "weather": -0.011774141964238094,
+      "electricity": 0.01620646037652218
+    },
+    "per_seed_macro": {
+      "2026090601": -0.1686740337163243,
+      "2026090602": -0.11537724576092072
+    },
+    "macro": -0.14413693645100775
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "bootstrap_seed": 2026090699,
+    "block_origins": 15,
+    "effective_blocks": {
+      "ETTm2": 8,
+      "weather": 8,
+      "electricity": 4
+    },
+    "macro_mean": -0.03938479848322728,
+    "lower95": -0.1275647237878516,
+    "upper95": 0.03276452743664624,
+    "flags": [
+      "LOW_EFFECTIVE_TIME_BLOCKS:electricity:4"
+    ]
+  },
+  "verdict": {
+    "decision": "INCONCLUSIVE",
+    "conditions": {
+      "core_complete_for_I_H_STATIC_C_both_seeds": true,
+      "macro_RI_C_vs_I_at_least_1pct": false,
+      "at_least_2_datasets_positive": false,
+      "no_dataset_worse_than_-1pct": true,
+      "both_seed_macros_positive": false,
+      "bootstrap_lower95_positive": false,
+      "macro_RI_C_vs_H_STATIC_at_least_0.3pct": true,
+      "seed0_C_vs_R_positive": false
+    },
+    "notes": [
+      "effect present but at least one pre-registered condition failed",
+      "seed-to-seed sd of validation MSE reaches 5.05 percent, at or above the 1.0 percent gate; the two-seed interval does not carry that source of variation"
+    ]
+  },
+  "seasonal_naive_anchor": {
+    "ETTm2": {
+      "96": {
+        "mse": 0.26602400579341656,
+        "mae": 0.30253253018939896,
+        "period": 96
+      },
+      "336": {
+        "mse": 0.36897695311616724,
+        "mae": 0.3655883213677887,
+        "period": 96
+      }
+    },
+    "weather": {
+      "96": {
+        "mse": 0.3203480193026659,
+        "mae": 0.29041658187541486,
+        "period": 144
+      },
+      "336": {
+        "mse": 0.3815927877945467,
+        "mae": 0.33110530893907597,
+        "period": 144
+      }
+    },
+    "electricity": {
+      "96": {
+        "mse": 0.2991034242587715,
+        "mae": 0.3161070852701717,
+        "period": 24
+      },
+      "336": {
+        "mse": 0.32460609176662814,
+        "mae": 0.3408700434800023,
+        "period": 24
+      }
+    }
+  },
+  "mechanism_capacity_check": {
+    "I_mean_weight_on_a_patch": {
+      "96": 0.9562317728996277,
+      "336": 0.9562317728996277
+    },
+    "I": {
+      "96": 0.010634642094373703,
+      "336": 0.028264353051781654
+    },
+    "C_mean_weight_on_a_patch": {
+      "96": 0.9990830421447754,
+      "336": 0.1862967610359192
+    },
+    "C": {
+      "96": 0.00524792680516839,
+      "336": 0.2911238968372345
+    },
+    "relative_improvement_pct": {
+      "96": 50.65253011246307,
+      "336": -930.003751735911
+    },
+    "C_weight_separation_between_horizons": 0.8127862811088562,
+    "updates": 3000,
+    "verdict": "CAPACITY_CONFIRMED",
+    "reading_note": "The verdict reads the H=96 cell and the weight separation. The H=336 cell is expected to favour I on this task and is not evidence against capacity: the H=336 loss mask spans steps 0..335, so it still contains the 96 a-steps, and a single weight per horizon cannot serve both halves of that window. What matters is whether the scorer moves the weight when the horizon changes."
+  },
+  "seed_noise_floor": {
+    "per_dataset": {
+      "ETTm2": {
+        "seeds": [
+          2026090711,
+          2026090712,
+          2026090713,
+          2026090714,
+          2026090715,
+          2026090716,
+          2026090717,
+          2026090718
+        ],
+        "mean_validation_mse": [
+          0.18641512360317344,
+          0.18772787657902695,
+          0.2052306816524121,
+          0.1918569399340036,
+          0.20845813670999386,
+          0.19759093974695574,
+          0.20246904828768225,
+          0.21417789544228555
+        ],
+        "mean": 0.19924083024444167,
+        "sd": 0.01006170387834807,
+        "sd_pct_of_mean": 5.050021055425092
+      },
+      "weather": {
+        "seeds": [
+          2026090711,
+          2026090712,
+          2026090713,
+          2026090714,
+          2026090715,
+          2026090716,
+          2026090717,
+          2026090718
+        ],
+        "mean_validation_mse": [
+          0.42933429026319125,
+          0.42933180985726976,
+          0.4334900113346962,
+          0.4297455279195833,
+          0.4322227952978702,
+          0.429343403492057,
+          0.44037892182106264,
+          0.42714125275272236
+        ],
+        "mean": 0.4313735015923066,
+        "sd": 0.004128453906142763,
+        "sd_pct_of_mean": 0.9570485648524112
+      },
+      "electricity": {
+        "seeds": [
+          2026090711,
+          2026090712,
+          2026090713,
+          2026090714,
+          2026090715,
+          2026090716,
+          2026090717,
+          2026090718
+        ],
+        "mean_validation_mse": [
+          0.152438455795051,
+          0.1523861596362177,
+          0.15182082218152793,
+          0.15197965774025712,
+          0.15406848113604935,
+          0.1531110200491988,
+          0.1552594360065038,
+          0.1522002063000381
+        ],
+        "mean": 0.15290802985560548,
+        "sd": 0.0011925195955644447,
+        "sd_pct_of_mean": 0.7798933755739107
+      }
+    },
+    "worst_seed_sd_pct": 5.050021055425092,
+    "gate_threshold_pct": 1.0,
+    "threshold_above_noise": false,
+    "note": "Validation split, arm I only, seeds outside the two pre-registered model seeds. This measures the resolution available to the 1.0 percent gate. It is not an input to the verdict."
+  }
+}

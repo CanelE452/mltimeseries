@@ -1,0 +1,30 @@
+{
+  "execution_status": "COMPLETE",
+  "evidence_level": "DEVELOPMENT_SCREEN",
+  "scientific_decision": "INCONCLUSIVE",
+  "conditions": {
+    "core_complete_for_I_H_STATIC_C_both_seeds": true,
+    "macro_RI_C_vs_I_at_least_1pct": false,
+    "at_least_2_datasets_positive": false,
+    "no_dataset_worse_than_-1pct": true,
+    "both_seed_macros_positive": false,
+    "bootstrap_lower95_positive": false,
+    "macro_RI_C_vs_H_STATIC_at_least_0.3pct": true,
+    "seed0_C_vs_R_positive": false
+  },
+  "notes": [
+    "effect present but at least one pre-registered condition failed",
+    "seed-to-seed sd of validation MSE reaches 5.05 percent, at or above the 1.0 percent gate; the two-seed interval does not carry that source of variation"
+  ],
+  "macro_RI_C_vs_I": -0.03738746955939121,
+  "bootstrap": {
+    "macro_mean": -0.03938479848322728,
+    "lower95": -0.1275647237878516,
+    "upper95": 0.03276452743664624,
+    "flags": [
+      "LOW_EFFECTIVE_TIME_BLOCKS:electricity:4"
+    ]
+  },
+  "fits_completed": 27,
+  "fits_planned": 27
+}
