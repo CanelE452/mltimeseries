@@ -1,0 +1,5 @@
+# execution_spec.json ships with a companion sha256 that must verify against the
+# file's bytes. Line-ending normalization would break that on checkout, so git is
+# told to leave this file exactly as committed on every platform.
+results/**/execution_spec.json -text
+results/**/execution_spec.sha256 -text
