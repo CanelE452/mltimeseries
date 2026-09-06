@@ -17,6 +17,9 @@ data/
 !data/.gitkeep
 runs/
 !runs/.gitkeep
+
+# Upstream repos are cloned, not vendored (scripts/ records how)
+third_party/
 checkpoints/
 *.pt
 *.pth
