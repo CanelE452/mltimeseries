@@ -1,0 +1,53 @@
+{
+  "ranking_information": "2019 usable-origin count only; no 2020 or 2021 result was inspected",
+  "origin_definition": "NWP base times 00 and 12 UTC; leads 6..72 h in 6 h steps (T=12)",
+  "usable_origin_definition": "all twelve future targets present in BMRA_data.parquet",
+  "eligibility": {
+    "min_usable_origins": {
+      "train": 600,
+      "val": 200,
+      "test": 200
+    },
+    "location_metadata_required": true,
+    "inside_ens_grid": {
+      "lat_min": 50.0,
+      "lat_max": 59.5,
+      "lon_min": -8.0,
+      "lon_max": 3.5,
+      "res": 0.5
+    },
+    "acquisition_start_before": "2018-12-01, so a 28-day history exists for early 2019 origins"
+  },
+  "why_origins_not_coverage": "Curtailment blanks the metered series in clustered runs, so 30-minute coverage overstates usable examples. In 2021 the median farm reads 75% coverage but keeps only 21% of its origins under the all-twelve-leads rule.",
+  "deviation_from_prereg": "Instruction section 7 states the eligibility threshold as 2019 target coverage >= 90%. It is applied here as 2019 usable origins >= 600 of 730, the same idea expressed in the unit the evaluation actually uses. The 2020 and 2021 minimums are added because the literal 2019-only reading selects farms whose metering stops on 2020-12-31 and which therefore contribute zero test examples. Both gates read data availability, never a score.",
+  "balance": "4 onshore + 4 offshore",
+  "balance_shortfall": {},
+  "within_group_rule": "seed = most 2019 usable origins (ties by farm ID ascending); then farthest-point selection maximising the minimum great-circle distance to the already chosen farms, ties by 2019 usable origins then farm ID ascending",
+  "n_eligible": {
+    "Onshore wind": 22,
+    "Offshore wind": 48
+  },
+  "selected": {
+    "Onshore wind": [
+      "E_GFLDW-1",
+      "E_BNWKW-1",
+      "T_COUWW-1",
+      "T_AKGLW-2"
+    ],
+    "Offshore wind": [
+      "E_BURBO",
+      "T_BEATO-1",
+      "T_GANW-13",
+      "T_RMPNO-1"
+    ]
+  },
+  "min_pairwise_km": 33.4,
+  "max_pairwise_km": 879.8,
+  "source_type_relabelled": {
+    "farms": [
+      "E_BURBO"
+    ],
+    "reason": "the source generator_list.csv contradicts itself: the Name field reads 'Offshore Windfarm' while the Type field reads 'Onshore wind'. Only rows with that internal contradiction are corrected, so no outside knowledge is used."
+  },
+  "naming": "eight wind farm sites, not eight datasets"
+}

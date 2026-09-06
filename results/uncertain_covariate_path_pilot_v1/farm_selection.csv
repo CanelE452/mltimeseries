@@ -1,0 +1,9 @@
+farm_id,name,type,lat,lon,usable_origins_2019,usable_origins_2020,usable_origins_2021,coverage_2019_30min,has_location,inside_ens_grid,history_before_2019,eligible,group_rank
+E_BURBO,Burbo Bank Offshore Windfarm ,Offshore wind,53.48818302,-3.184922589,724,700,260,0.998972602739726,True,True,True,True,0
+T_BEATO-1,Beatrice Offshore Wind Unit 1 ,Offshore wind,58.08822927,-2.950157266,706,720,224,0.9985159817351598,True,True,True,True,1
+T_GANW-13,Galloper Offshore Windfarm 13 ,Offshore wind,51.87999174,2.039993393,718,698,421,0.9986301369863013,True,True,True,True,2
+T_RMPNO-1,Rampion Offshore Windfarm 1 ,Offshore wind,50.63999361,-0.180003298,718,715,350,0.9990867579908675,True,True,True,True,3
+E_GFLDW-1,Goole Fields 1 Windfarm ,Onshore wind,53.66592589,-0.889282955,724,726,305,0.9994292237442922,True,True,True,True,0
+E_BNWKW-1,Burn of Whilk Windfarm ,Onshore wind,58.3567589,-3.203853799,653,520,267,0.9906963470319635,True,True,True,True,1
+T_COUWW-1,Cour Wind Farm ,Onshore wind,55.68067907,-5.484928631,717,674,320,0.997716894977169,True,True,True,True,2
+T_AKGLW-2,Aikengall 2 Wind Farm Generation ,Onshore wind,55.91720874,-2.490066341,696,389,291,0.9945776255707762,True,True,True,True,3

@@ -32,3 +32,6 @@ checkpoints/
 .env
 *.key
 *.pem
+
+# External raw data for UCP-PATH-PILOT-v1 (never committed)
+data_external/

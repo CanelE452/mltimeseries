@@ -1,0 +1,185 @@
+farm_id,name,type,lat,lon,usable_origins_2019,usable_origins_2020,usable_origins_2021,coverage_2019_30min,has_location,inside_ens_grid,history_before_2019,eligible
+E_ABRTW-1,Auchrobert Wind Farm ,Onshore wind,55.62400279,-3.984210886,645,588,130,0.9846461187214612,True,True,True,False
+E_AIRSW-1,Airies Windfarm ,Onshore wind,54.80205081,-4.657736147,724,720,0,0.9994292237442922,True,True,True,False
+E_ASHWW-1,Andershaw Wind Farm ,Onshore wind,55.50932641,-3.846263794,712,570,151,0.9964611872146119,True,True,True,False
+E_ASLVW-1,Assel Valley Wind Farm ,Onshore wind,55.22647843,-4.778705423,655,589,0,0.9838470319634703,True,True,True,False
+E_BABAW-1,Baillie Wind Farm ,Onshore wind,58.56792109,-3.677021049,625,451,126,0.9845319634703197,True,True,True,False
+E_BETHW-1,Beinn Tharsuinn ,Onshore wind,57.80527491,-4.328995456,488,316,157,0.9324771689497717,True,True,True,False
+E_BNWKW-1,Burn of Whilk Windfarm ,Onshore wind,58.3567589,-3.203853799,653,520,267,0.9906963470319635,True,True,True,True
+E_BODW-1,Blyth Offshore Demonstrator Windfarm Generation ,Offshore wind,55.16695337,-1.364359952,724,720,0,0.9994292237442922,True,True,True,False
+E_BRDUW-1,Braes of Doune ,Onshore wind,56.26982892,-4.058937482,724,605,78,0.9994292237442922,True,True,True,False
+E_BRNLW-1,Brownieleys Windfarm ,Onshore wind,56.8399093,-2.379147489,724,720,0,0.9994292237442922,True,True,True,False
+E_BRYBW-1,Berry Burn Windfarm ,Onshore wind,57.44661104,-3.475392595,625,458,221,0.9828767123287672,True,True,True,True
+E_BTUIW-2,Beinn An Tuirc 2 Windfarm ,Onshore wind,55.57317062,-5.587352746,564,416,202,0.9624429223744292,True,True,True,False
+E_BURBO,Burbo Bank Offshore Windfarm ,Offshore wind,53.48818302,-3.184922589,724,700,260,0.998972602739726,True,True,True,True
+E_CLDRW-1,Clashindarroch Wind Farm ,Onshore wind,57.36648194,-2.866147745,632,515,187,0.9836187214611872,True,True,True,False
+E_CLFLW-1,Clachan Flats Windfarm ,Onshore wind,56.28809278,-4.94288988,619,505,118,0.9769977168949772,True,True,True,False
+E_CNCLW-1,Coire Na Cloiche Windfarm ,Onshore wind,57.76961921,-4.373160566,724,720,0,0.9994292237442922,True,True,False,False
+E_CRGTW-1,Craig 2 Wind Farm ,Onshore wind,55.16411813,-3.068992465,724,712,0,0.9994292237442922,True,True,True,False
+E_DALSW-1,Dalswinton Wind Farm ,Onshore wind,55.18409713,-3.650562349,679,625,215,0.9921232876712329,True,True,True,True
+E_GDSTW-1,Gordonstown Windfarm ,Onshore wind,57.46192108,-2.482760752,687,603,268,0.9925228310502283,True,True,True,True
+E_GFLDW-1,Goole Fields 1 Windfarm ,Onshore wind,53.66592589,-0.889282955,724,726,305,0.9994292237442922,True,True,True,True
+E_GLCHW-1,Glenchamber Wind Farm ,Onshore wind,54.96342049,-4.754333694,724,720,0,0.9994292237442922,True,True,True,False
+E_GLOFW-1,Glens of Foudland ,Onshore wind,57.42534533,-2.636074622,681,583,214,0.9899543378995433,True,True,True,True
+E_GNFSW-1,Gunfleet Sands Windfarm Unit 1 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_GNFSW-2,Gunfleet Sands Windfarm Unit 2 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_GNFSW-3,Gunfleet Sands Demo Unit 3 ,Offshore wind,51.70300942,1.191905792,724,720,0,0.9994292237442922,True,True,True,False
+E_HBHDW-1,Harburnhead Wind Farm ,Onshore wind,55.80868121,-3.532172212,724,726,401,0.9994292237442922,True,True,True,True
+E_HLGLW-1,Hill of Glaschyle Windfarm ,Onshore wind,57.51052024,-3.615587181,724,725,390,0.9994292237442922,True,True,True,True
+E_HLTWW-1,Hill of Towie Windfarm  ,Onshore wind,57.62284106,-3.341046173,724,726,117,0.9994292237442922,True,True,True,False
+E_HRHLW-1,Hare Hill Extension Wind Farm ,Onshore wind,55.36280438,-4.126282787,430,353,0,0.9098173515981736,True,True,True,False
+E_HYWDW-1,Hywind Generator 1 ,Offshore wind,57.507463,-1.44257542,724,726,306,0.9994292237442922,True,True,True,True
+E_KINCW-1,Kincardine Offshore Windfarm ,Offshore wind,56.9972804,-1.873801105,724,720,0,0.9994292237442922,True,True,True,False
+E_MINSW-1,Minsca Wind Farm ,Onshore wind,55.12207057,-3.352856649,652,615,237,0.9868150684931507,True,True,True,True
+E_MOYE-1,Moy Windfarm ,Onshore wind,,,0,0,0,0.0,False,False,False,False
+E_MOYEW-1,Moy Windfarm ,Onshore wind,57.38883375,-4.048801331,563,470,0,0.9638698630136986,True,True,True,False
+E_OMNDW-1,Ormonde Windfarm ,Onshore wind,,,0,0,0,0.0,False,False,False,False
+E_SHRSW-1,Sheringham Shoals Windfarm Unit 1 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_SHRSW-2,Sheringham Shoals Windfarm Unit 2 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_SWBKW-1,Solwaybank Wind Farm ,Onshore wind,55.10017431,-3.107750552,244,720,0,0.3339041095890411,True,True,False,False
+E_THNTW-1,Thanet Offshore Wind Unit 1 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_THNTW-2,Thanet Offshore Wind 2 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+E_TLYMW-1,Tullymurdoch Wind Farm ,Onshore wind,56.65490849,-3.313413874,724,697,175,0.9994292237442922,True,True,True,False
+E_TULWW-1,Tullo Windfarm ,Onshore wind,56.96390981,-2.210758414,642,493,146,0.9873287671232877,True,True,True,False
+E_TULWW-2,Tullow Windfarm Extension ,Onshore wind,56.82742213,-2.404893746,605,483,180,0.980593607305936,True,True,True,False
+E_WLNYW-2,Walney Offshore Windfarm Unit 2 ,Offshore wind,,,0,0,0,0.0,False,False,False,False
+T_ABRBO-1,Aberdeen Offshore Wind Farm ,Offshore wind,57.14619968,-2.0728123,724,726,235,0.9994292237442922,True,True,True,True
+T_ACHRW-1,AChruach Wind Farm ,Onshore wind,56.1527676,-5.310216275,695,651,207,0.9933789954337899,True,True,True,True
+T_AFTOW-1,Afton Wind Farm ,Onshore wind,55.3116002,-4.174283075,724,700,0,0.9994292237442922,True,True,True,False
+T_AKGLW-2,Aikengall 2 Wind Farm Generation ,Onshore wind,55.91720874,-2.490066341,696,389,291,0.9945776255707762,True,True,True,True
+T_ANSUW-1,An Suidhe Windfarm ,Onshore wind,56.21866506,-5.219366715,540,726,258,0.9483447488584474,True,True,True,False
+T_ARCHW-1,Arecleoch Windfarm ,Onshore wind,55.06878497,-4.797053558,453,358,138,0.9180365296803653,True,True,True,False
+T_BDCHW-1,Bad a Cheo Wind Farm ,Onshore wind,58.42046249,-3.42919307,724,698,0,0.9994292237442922,True,True,True,False
+T_BEATO-1,Beatrice Offshore Wind Unit 1 ,Offshore wind,58.08822927,-2.950157266,706,720,224,0.9985159817351598,True,True,True,True
+T_BEATO-2,Beatrice Offshore Wind Unit 2 ,Offshore wind,58.08822927,-2.950157266,700,714,242,0.9981164383561644,True,True,True,True
+T_BEATO-3,Beatrice Offshore Wind Unit 3 ,Offshore wind,58.08822927,-2.950157266,706,708,226,0.9981735159817352,True,True,True,True
+T_BEATO-4,Beatrice Offshore Wind Unit 4 ,Offshore wind,58.08822927,-2.950157266,706,701,235,0.9980593607305936,True,True,True,True
+T_BEINW-1,Beinneun Wind Farm ,Onshore wind,57.0956058,-4.965481104,699,618,247,0.9954337899543378,True,True,True,True
+T_BHLAW-1,Bhlaraidh Windfarm 1 ,Onshore wind,57.21914702,-4.581905495,335,241,95,0.8625570776255708,True,True,True,False
+T_BLKWW-1,Blackcraig Windfarm ,Onshore wind,55.1199124,-4.032118132,705,652,273,0.9949200913242009,True,True,True,True
+T_BLLA-1,Black Law Wind Farm ,Onshore wind,55.76218898,-3.762566658,467,372,104,0.9275114155251142,True,True,True,False
+T_BLLA-2,Black Law Windfarm Extension ,Onshore wind,55.76218898,-3.762566658,419,312,102,0.910216894977169,True,True,True,False
+T_BOWLW-1,Barrow Offshore Windfarm ,Offshore wind,53.99146185,-3.298284442,686,647,272,0.99412100456621,True,True,True,True
+T_BRBEO-1,Burbo Bank Wind Farm Extension ,Onshore wind,53.47999191,-3.270000063,712,714,252,0.998458904109589,True,True,True,True
+T_CGTHW-1,Corriegarth Wind Farm ,Onshore wind,57.19008456,-4.359638082,567,273,154,0.9571347031963471,True,True,True,False
+T_CLDCW-1,Clyde Central Windfarm ,Onshore wind,55.44163409,-3.54273429,454,440,214,0.9269406392694064,True,True,True,False
+T_CLDNW-1,Clyde North Windfarm ,Onshore wind,55.50414268,-3.547901723,442,394,207,0.9214611872146119,True,True,True,False
+T_CLDSW-1,Clyde South Windfarm ,Onshore wind,55.44163409,-3.54273429,549,520,183,0.9618721461187215,True,True,True,False
+T_COUWW-1,Cour Wind Farm ,Onshore wind,55.68067907,-5.484928631,717,674,320,0.997716894977169,True,True,True,True
+T_CRDEW-1,Crossdykes Windfarm 2 ,Onshore wind,,,0,78,0,0.0,False,False,False,False
+T_CRDEW-2,Crossdykes Windfarm 1 ,Onshore wind,,,0,78,0,0.0,False,False,False,False
+T_CRGHW-1,Carraig Gheal Wind Farm ,Onshore wind,56.33901042,-5.294537377,698,651,271,0.9943493150684931,True,True,True,True
+T_CRMLW-1,Corriemoillie Wind Farm ,Onshore wind,57.66872566,-4.773018089,504,445,121,0.9466894977168949,True,True,True,False
+T_CRYRW-2,Crystal Rig Wind Farm - Phase 2 ,Onshore wind,55.89948069,-2.529311427,619,608,242,0.9819063926940639,True,True,True,True
+T_CRYRW-3,Crystal Rig III Wind Farm ,Onshore wind,55.91288749,-2.545491874,724,699,0,0.9990867579908675,True,True,True,False
+T_DDGNO-1,Dudgeon Offshore Wind Farm Generator 1 ,Offshore wind,53.11746007,0.613468182,718,720,372,0.9992009132420091,True,True,True,True
+T_DDGNO-2,Dudgeon Offshore Wind Farm Generator 2 ,Offshore wind,53.11746007,0.613468182,718,720,368,0.9991438356164384,True,True,True,True
+T_DDGNO-3,Dudgeon Offshore Wind Farm Generator 3 ,Offshore wind,53.11746007,0.613468182,718,720,372,0.998972602739726,True,True,True,True
+T_DDGNO-4,Dudgeon Offshore Wind Farm Generator 4 ,Offshore wind,53.11746007,0.613468182,718,720,367,0.998972602739726,True,True,True,True
+T_DNLWW-1,Dun Law Extension Windfarm ,Onshore wind,55.80645716,-2.846031619,580,424,0,0.963755707762557,True,True,True,False
+T_DOREW-1,Dorenell Wind Farm Unit 1 ,Onshore wind,57.35089949,-3.131680974,724,490,0,0.9994292237442922,True,True,True,False
+T_DOREW-2,Dorenell Wind Farm Unit 2 ,Onshore wind,57.35089949,-3.131680974,724,491,0,0.9994292237442922,True,True,True,False
+T_DRSLW-1,Dersalloch Windfarm ,Onshore wind,55.3042572,-4.488218066,386,314,97,0.882134703196347,True,True,True,False
+T_DUNGW-1,Dunmglass Wind Farm ,Onshore wind,57.25148007,-4.255802396,331,280,177,0.8498287671232877,True,True,True,False
+T_EAAO-1,East Anglia One 1 Offshore Wind Farm ,Offshore wind,52.13743908,2.170899597,354,726,402,0.4845890410958904,True,True,False,False
+T_EAAO-2,East Anglia One 2 Offshore Wind Farm ,Offshore wind,52.13743908,2.170899597,354,726,398,0.4845890410958904,True,True,False,False
+T_EDINW-1,Edinbane Windfarm ,Onshore wind,57.46912682,-6.432206156,351,282,210,0.8464041095890411,True,True,True,False
+T_EWHLW-1,Ewe Hill II Wind Farm ,Onshore wind,55.10709222,-3.333869031,408,349,102,0.9062785388127854,True,True,True,False
+T_FALGW-1,Fallago Rig Wind Farm ,Onshore wind,55.83130754,-2.688027741,389,359,217,0.8868150684931507,True,True,True,False
+T_FARR-1,Farr Wind Farm Unit 1 ,Onshore wind,57.33392062,-4.103012553,410,367,113,0.906107305936073,True,True,True,False
+T_FARR-2,Farr Wind Farm Unit 2 ,Onshore wind,57.33392062,-4.103012553,403,334,107,0.9038812785388128,True,True,True,False
+T_FSDLW-1,Freasdail Wind Farm ,Onshore wind,55.77701055,-5.47063879,671,650,246,0.9900114155251142,True,True,True,True
+T_GANW-11,Galloper Offshore Windfarm 11 ,Offshore wind,51.87999174,2.039993393,700,698,413,0.9976027397260274,True,True,True,True
+T_GANW-13,Galloper Offshore Windfarm 13 ,Offshore wind,51.87999174,2.039993393,718,698,421,0.9986301369863013,True,True,True,True
+T_GANW-22,Galloper Offshore Windfarm 22 ,Offshore wind,51.87999174,2.039993393,712,700,424,0.998458904109589,True,True,True,True
+T_GANW-24,Galloper Offshore Windfarm 24 ,Offshore wind,51.87999174,2.039993393,712,702,412,0.9972031963470319,True,True,True,True
+T_GLWSW-1,Galawhistle Wind Farm ,Onshore wind,55.53957496,-3.975422335,510,354,151,0.9347602739726028,True,True,True,False
+T_GNAPW-1,Glen App Wind Farm ,Onshore wind,55.00066068,-4.989676025,467,325,126,0.9291095890410959,True,True,True,False
+T_GNFSW-1,Gunfleet Sands Windfarm Unit 1 ,Offshore wind,51.73081795,1.218011967,605,660,325,0.9842465753424657,True,True,True,True
+T_GNFSW-2,Gunfleet Sands Windfarm Unit 2 ,Offshore wind,51.72718935,1.245924689,624,675,346,0.984703196347032,True,True,True,True
+T_GORDW-1,Gordonbush Wind Farm ,Onshore wind,58.05949502,-3.959051109,474,401,153,0.9307648401826484,True,True,True,False
+T_GRGBW-1,Greater Gabbard Offshore Windfarm ,Offshore wind,51.91764467,1.928420194,718,708,370,0.9985730593607306,True,True,True,True
+T_GRGBW-2,Greater Gabbard Offshore Windfarm ,Offshore wind,51.91764467,1.928420194,718,720,402,0.9985730593607306,True,True,True,True
+T_GRGBW-3,Greater Gabbard Offshore Windfarm ,Offshore wind,51.91764467,1.928420194,700,714,371,0.9977739726027397,True,True,True,True
+T_GRIFW-1,Griffin Wind Farm Unit 1 ,Onshore wind,56.58122253,-3.733752426,466,337,75,0.9283105022831051,True,True,True,False
+T_GRIFW-2,Griffin Wind Farm Unit 2 ,Onshore wind,56.58122253,-3.733752426,467,345,96,0.9268835616438356,True,True,True,False
+T_GYMR-15,Gwynt y Mor Wind Farm East 15 ,Offshore wind,53.45400344,-3.626648679,699,596,277,0.9961187214611872,True,True,True,True
+T_GYMR-17,Gwynt y Mor Wind Farm East 16 ,Offshore wind,53.45400344,-3.626648679,706,644,200,0.9984018264840183,True,True,True,True
+T_GYMR-26,Gwynt y Mor Wind Farm West 26 ,Offshore wind,53.45400344,-3.626648679,698,566,237,0.9964611872146119,True,True,True,True
+T_GYMR-28,Gwynt y Mor Wind Farm West 28 ,Offshore wind,53.45400344,-3.626648679,663,511,205,0.9896689497716895,True,True,True,True
+T_GYMRW-1,Gwynt y Mor Offshore Wind Farm Unit 1 ,Offshore wind,,,0,0,0,0.0,False,False,True,False
+T_GYMRW-2,Gwynt y Mor Offshore Wind Farm Unit 2 ,Offshore wind,,,0,0,0,0.0,False,False,True,False
+T_HADHW-1,Hadyard Hill Wind Farm ,Onshore wind,55.25682334,-4.731906575,371,360,130,0.8736872146118722,True,True,True,False
+T_HALSW-1,Halsary Windfarm ,Onshore wind,,,0,68,0,0.0,False,False,False,False
+T_HMGTO-1,Humber Offshore Wind Farm Unit 1 ,Offshore wind,53.38746284,0.500643457,637,653,293,0.9885844748858448,True,True,True,True
+T_HMGTO-2,Humber Offshore Wind Farm Unit 2 ,Offshore wind,53.38746284,0.500643457,661,645,0,0.9909246575342465,True,True,True,False
+T_HOWAO-1,Hornsea Offshore Windfarm 1 ,Offshore wind,53.68154167,1.420739456,724,511,328,0.9994292237442922,True,True,False,False
+T_HOWAO-2,Hornsea Offshore Windfarm 2 ,Offshore wind,53.68154167,1.420739456,671,717,361,0.9933219178082192,True,True,True,True
+T_HOWAO-3,Hornsea Offshore Windfarm 3 ,Offshore wind,53.68154167,1.420739456,724,726,388,0.9994292237442922,True,True,False,False
+T_HRSTW-1,Harestanes Windfarm ,Onshore wind,55.23902922,-3.574197639,454,401,115,0.9184931506849315,True,True,True,False
+T_KILBW-1,Kilbraur Windfarm ,Onshore wind,58.04040164,-4.058804918,543,477,118,0.9538812785388128,True,True,True,False
+T_KLGLW-1,Kilgallioch Wind Farm ,Onshore wind,54.98845276,-4.801715901,322,245,117,0.8565068493150685,True,True,True,False
+T_KPMRW-1,Kype Muir Windfarm ,Onshore wind,55.63265162,-4.036104996,700,583,0,0.9964611872146119,True,True,True,False
+T_KTHLW-1,Keith Hill Windfarm ,Onshore wind,55.81727155,-2.82545598,724,720,0,0.9994292237442922,True,True,True,False
+T_LARYW-1,London Array Windfarm Unit 1 ,Offshore wind,51.62167931,1.495831596,687,708,365,0.9980593607305936,True,True,True,True
+T_LARYW-2,London Array Windfarm Unit 2 ,Offshore wind,51.62167931,1.495831596,706,708,336,0.9988584474885844,True,True,True,True
+T_LARYW-3,London Array Windfarm Unit 3 ,Offshore wind,51.62167931,1.495831596,706,708,359,0.9982305936073059,True,True,True,True
+T_LARYW-4,London Array Windfarm Unit 4 ,Offshore wind,51.62167931,1.495831596,706,720,352,0.9980022831050228,True,True,True,True
+T_LCLTW-1,Lochluichart Windfarm ,Onshore wind,57.65459417,-4.816701209,516,374,122,0.9541095890410959,True,True,True,False
+T_LNCSW-1,Lincs Offshore Wind Farm Unit 1 ,Offshore wind,53.18417245,0.498076956,700,720,347,0.9981164383561644,True,True,True,True
+T_LNCSW-2,Lincs Offshore Wind Farm Unit 2 ,Offshore wind,53.18417245,0.498076956,706,726,376,0.9983447488584475,True,True,True,True
+T_LNCSW-3,Lincs Wind Farm (Onshore) ,Onshore wind,,,0,0,0,0.0,False,False,False,False
+T_MIDMW-1,Middle Muir Wind Farm ,Onshore wind,55.51288594,-3.804017045,688,593,69,0.9946347031963471,True,True,True,False
+T_MILWW-1,Millennium Wind Farm ,Onshore wind,57.15522678,-4.88364129,521,449,181,0.9518264840182649,True,True,True,False
+T_MKHLW-1,Mark Hill Windfarm ,Onshore wind,55.12837306,-4.746310427,536,399,139,0.954851598173516,True,True,True,False
+T_MYGPW-1,Minnygap Wind Farm ,Onshore wind,55.24876801,-3.514802192,712,653,0,0.9969748858447488,True,True,True,False
+T_OMNDW-1,Ormonde Windfarm Unit 1 ,Onshore wind,54.08887184,-3.438590348,712,670,285,0.9969178082191781,True,True,True,True
+T_PGBIW-1,Pogbie Wind Farm ,Onshore wind,55.82184795,-2.833022516,724,720,0,0.9994292237442922,True,True,True,False
+T_PNYCW-1,Pen y Cymoedd Wind Farm ,Onshore wind,51.65554292,-3.695730238,567,513,0,0.9831050228310503,True,True,True,False
+T_RCBKO-1,Race Bank Offshore Wind Farm Unit 1 ,Offshore wind,53.13597423,0.58917433,663,621,307,0.9912671232876712,True,True,True,True
+T_RCBKO-2,Race Bank Offshore Wind Farm Unit 2 ,Offshore wind,53.13597423,0.58917433,667,624,300,0.9921232876712329,True,True,True,True
+T_RMPNO-1,Rampion Offshore Windfarm 1 ,Offshore wind,50.63999361,-0.180003298,718,715,350,0.9990867579908675,True,True,True,True
+T_RMPNO-2,Rampion Offshore Windfarm 2 ,Offshore wind,50.63999361,-0.180003298,718,721,336,0.9993150684931507,True,True,True,True
+T_RREW-1,Robin Rigg East ,Offshore wind,54.76419372,-3.695519425,718,717,343,0.9986872146118722,True,True,True,True
+T_RRWW-1,Robin Rigg West ,Offshore wind,54.74730472,-3.729305773,718,683,329,0.9985159817351598,True,True,True,True
+T_SANQW-1,Sanquhar Community Wind Farm Generation ,Onshore wind,55.34417699,-4.0465704,711,517,218,0.9960045662100456,True,True,True,True
+T_SHRSW-1,Sheringham Shoals Windfarm Unit 1 ,Offshore wind,53.1353186,1.147921818,718,702,361,0.9983447488584475,True,True,True,True
+T_SHRSW-2,Sheringham Shoals Windfarm Unit 2 ,Offshore wind,53.1353186,1.147921818,718,702,366,0.9974885844748859,True,True,True,True
+T_STLGW-1,Stronelairg Windfarm 1 ,Onshore wind,57.12692452,-4.526370048,383,409,205,0.8905821917808219,True,True,True,False
+T_STLGW-2,Stronelairg Windfarm 2 ,Onshore wind,57.12692452,-4.526370048,387,399,223,0.8888127853881278,True,True,True,False
+T_STLGW-3,Stronelairg Windfarm 3 ,Onshore wind,57.12692452,-4.526370048,393,397,221,0.891837899543379,True,True,True,False
+T_STRNW-1,Strathy North Wind Farm 1 ,Onshore wind,58.49000401,-4.033588119,348,217,80,0.8562214611872146,True,True,True,False
+T_TDBNW-1,Toddleburn Wind Farm ,Onshore wind,55.7685527,-2.877391062,639,555,223,0.9789954337899544,True,True,True,True
+T_THNTO-1,Thanet Offshore Windfarm Unit 1 ,Offshore wind,51.42993207,1.633411349,647,673,0,0.9934931506849315,True,True,True,False
+T_THNTO-2,Thanet Offshore Windfarm Unit 2 ,Offshore wind,51.42993207,1.633411349,640,676,0,0.9930365296803653,True,True,True,False
+T_TKNEW-1,Triton Knoll Offshore Windfarm 1 ,Offshore wind,,,0,168,0,0.0,False,False,False,False
+T_TKNWW-1,Unknown ,Onshore wind,,,0,40,0,0.0,False,False,False,False
+T_TRLGW-1,Tralorg Wind Farm ,Onshore wind,,,0,298,0,0.0,False,False,False,False
+T_WDNSO-1,West of Duddon Sands 1 - OFTO ,Offshore wind,53.98514983,-3.462007117,687,659,302,0.9974885844748859,True,True,True,True
+T_WDNSO-2,West of Duddon Sands 2 - OFTO ,Offshore wind,53.98514983,-3.462007117,694,692,337,0.9976598173515981,True,True,True,True
+T_WDNSW-1,West of Duddon Sands 1 Windfarm ,Offshore wind,,,0,0,0,0.0,False,False,True,False
+T_WDNSW-2,West of Duddon Sands 2 Windfarm ,Offshore wind,,,0,0,0,0.0,False,False,True,False
+T_WHIHW-1,Whiteside Hill Windfarm ,Onshore wind,55.35741392,-4.029442127,712,648,300,0.9972031963470319,True,True,True,True
+T_WHILW-1,Whitelee Wind Farm ,Onshore wind,55.68120688,-4.279060631,459,298,150,0.9320776255707762,True,True,True,False
+T_WHILW-2,Whitelee Windfarm Extension ,Onshore wind,55.67715363,-4.286777696,449,378,183,0.9198630136986301,True,True,True,False
+T_WISTW-2,Brockloch Rig 2 Windfarm ,Onshore wind,55.27640561,-4.241714045,637,591,0,0.9863013698630136,True,True,True,False
+T_WLNYO-2,Walney Offshore Windfarm Unit 2 ,Offshore wind,54.080736,-3.608966901,712,720,279,0.9990867579908675,True,True,True,True
+T_WLNYO-3,Walney Offshore Windfarm (Extension) ,Offshore wind,54.08999466,-3.740010695,700,694,278,0.9986301369863013,True,True,True,True
+T_WLNYO-4,Walney Offshore Windfarm (Extension) ,Offshore wind,54.08999466,-3.740010695,712,696,280,0.9992009132420091,True,True,True,True
+T_WLNYW-1,Walney Offshore Windfarm Unit 1 ,Offshore wind,54.03944862,-3.515788911,724,708,302,0.9994292237442922,True,True,True,True
+T_WTMSO-1,Westermost Rough Windfarm ,Offshore wind,53.09773021,0.561481248,712,708,351,0.997716894977169,True,True,True,True
+T_DOUGW-1,Douglas West Wind Farm,Onshore wind,,,0,0,0,0.0,False,False,False,False
+T_GLNKW-1,Glen Kyllachy Wind Farm,Onshore wind,,,0,0,0,0.0,False,False,False,False
+T_GORDW-2,Gordonbush Wind Farm Extension,Onshore wind,,,0,0,0,0.0,False,False,False,False
+T_HOWBO-3,Hornsea B Offshore Wind Farm,Offshore wind,,,0,0,7,0.0,False,False,False,False
+T_WDRGW-1,Windy Rig Wind Farm,Onshore wind,,,0,0,0,0.0,False,False,False,False
+E_BTUIW-3,Beinn An Tuirc III Wind Farm ,Onshore wind,,,0,0,0,0.0,False,False,False,False
+T_MOWEO-2,Moray Offshore Wind Farm East,Offshore wind,,,0,0,55,0.0,False,False,False,False
+2__PSTAT001,,,,,0,0,150,0.0,False,False,False,False
+2__PSTAT002,,,,,0,0,178,0.0,False,False,False,False
+T_MOWEO-3,,,,,0,0,131,0.0,False,False,False,False
+T_MOWEO-1,,,,,0,0,128,0.0,False,False,False,False
+T_HOWBO-1,,,,,0,0,0,0.0,False,False,False,False
+T_HOWBO-2,,,,,0,0,0,0.0,False,False,False,False
+T_SGRWO-3,,,,,0,0,0,0.0,False,False,False,False
+T_SGRWO-6,,,,,0,0,0,0.0,False,False,False,False

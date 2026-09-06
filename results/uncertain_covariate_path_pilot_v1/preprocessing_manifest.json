@@ -1,0 +1,36 @@
+{
+  "ens_2019_2020": {
+    "n_origins": 77,
+    "first_origin": "2019-01-04 00:00:00",
+    "last_origin": "2019-12-24 00:00:00",
+    "archive_truncated": true,
+    "shape_per_origin": [
+      "n_farms",
+      "K",
+      "T",
+      "D"
+    ],
+    "n_farms": 8,
+    "members": 50,
+    "leads_h": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60,
+      66,
+      72
+    ],
+    "features": [
+      "u10",
+      "v10",
+      "t2m",
+      "ws10"
+    ]
+  }
+}
