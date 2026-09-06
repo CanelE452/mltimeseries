@@ -15,7 +15,10 @@
 | [`reference/time_series_research_dossier_20260906.md`](reference/time_series_research_dossier_20260906.md) | 2025년 말–2026년 시계열 논문·파운데이션 모델 사전조사. 업로드 포스터 4개 재독해, 48개 외부 항목, 5개 후보 연구군, 비교 시 필수 구분 |
 | [`reference/paper_catalog.json`](reference/paper_catalog.json) | 위 조사의 48개 항목을 기계가 읽을 수 있게 정리 (`id` / `venue_status` / `mechanism` / `inspection` / `interpretation_limit` / `primary_sources`) |
 
-두 파일은 업로드 원본 그대로다 (sha256 일치 확인). 내용을 고치지 않는다.
+두 파일은 업로드 원본을 그대로 옮긴 것이다 (배치 시 sha256 일치 확인). 이후 dossier 의
+포스터 섹션 헤더 4개에서 발표자 실명·원본 PDF 파일명·학회 포스터 번호를 지우고
+등장 순서대로 `포스터 1`~`포스터 4` 로 바꿨다 (2026-09-06, 개인정보 제거).
+그 4줄 외에는 내용을 고치지 않는다.
 
 ## 이 자료를 어떻게 쓰고 어떻게 쓰지 않는가
 
