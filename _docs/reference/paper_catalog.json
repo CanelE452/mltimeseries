@@ -1,0 +1,659 @@
+{
+  "as_of": "2026-09-06",
+  "scope": "2025년 말–2026년 중심. 2025 상반기 및 GIFT-Eval은 선행 맥락.",
+  "count": 48,
+  "not_claimed": [
+    "모든 논문의 본문·부록 전수 독해",
+    "독립 재현 또는 SOTA 순위 재산출",
+    "모든 OpenReview 리뷰 접근",
+    "완전한 체계적 문헌고찰"
+  ],
+  "papers": [
+    {
+      "id": "P01",
+      "title": "TiRex: Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "xLSTM의 상태 추적과 contiguous patch masking을 결합한 zero-shot forecasting.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "발표 당시 비교에서의 우위이지 2026년 모든 모델 대비 현재 1위를 뜻하지 않는다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5356603f9c47399adfd372f77a677057-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "TiRex-2: Generalizing TiRex to Multivariate Data and Streaming",
+      "year": 2026,
+      "venue_status": "2026-07 arXiv 공개본; 정식 채택 미확인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "시간 mixer와 비대칭 변수 attention, 합성 다변량 coupling, recurrent state 재사용.",
+      "inspection": "본문 §3–4·부록 B/D/E 일부와 공식 README 확인",
+      "interpretation_limit": "논문상 recurrent streaming 설계와 공개 API를 구분한다. 공식 문서는 OSS forecast 호출이 매번 전달한 전체 context를 다시 계산하고, incremental state-carrying API는 공개 릴리스에 없다고 명시한다. Streaming·fine-tuning은 Pro 확장으로 소개한다.",
+      "primary_sources": [
+        "https://arxiv.org/html/2607.01204v1",
+        "https://github.com/NX-AI/tirex-2",
+        "https://nx-ai.github.io/tirex-2/introduction/"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Chronos-2: From Univariate to Universal Forecasting",
+      "year": 2025,
+      "venue_status": "2025-10 arXiv 기술보고서; 정식 채택 미확인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "시간 attention과 group attention으로 다변량·관련 계열·공변량을 통합; 합성 다변량 학습.",
+      "inspection": "공개본 초록·Amazon Science 설명·공식 README 확인",
+      "interpretation_limit": "원래 Chronos의 TMLR 2024 채택과 Chronos-2의 상태를 혼동하지 않는다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2510.15821",
+        "https://www.amazon.science/blog/introducing-chronos-2-from-univariate-to-universal-forecasting",
+        "https://github.com/amazon-science/chronos-forecasting"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "TimesFM 3.0",
+      "year": 2026,
+      "venue_status": "2026-08 기업 공식 모델 공개; 별도 메인 채택 미확인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "다변량 target과 past/future-known covariates를 직접 처리하는 최신 TimesFM 세대.",
+      "inspection": "저자 공식 자료·README 확인; 학습 실행 없음",
+      "interpretation_limit": "소스 코드와 가중치 라이선스를 분리한다. 현재 저장소는 3.0 가중치를 비상업·비프로덕션용으로 명시한다. 순위는 저자 보고.",
+      "primary_sources": [
+        "https://github.com/google-research/timesfm",
+        "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Toto 2.0: Time Series Forecasting Enters the Scaling Era",
+      "year": 2026,
+      "venue_status": "2026-05 arXiv 기술보고서; 정식 채택 미확인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "4M–2.5B 모델군, 공통 학습 recipe와 u-muP hyperparameter transfer, 한 번/블록 단위 예측.",
+      "inspection": "기술보고서 초록·Datadog 공식 공개 설명·모델 카드 확인",
+      "interpretation_limit": "스케일링·리더보드 결과는 해당 데이터와 저자 실험 범위다. 현재 보편적 최고라고 단정하지 않는다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2605.20119",
+        "https://www.datadoghq.com/blog/ai/toto-2/"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "FlowState: Sampling-Rate-Equivariant Time-Series Forecasting",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "State-space encoder와 functional basis decoder로 관측 해상도·예측 길이를 유연하게 처리.",
+      "inspection": "ICML 공식 목록·IBM publication/event의 Conference paper 확인",
+      "interpretation_limit": "NeurIPS 2025 선행 버전은 workshop paper다. 2026 버전과 구분.",
+      "primary_sources": [
+        "https://research.ibm.com/publications/flowstate-sampling-rate-equivariant-time-series-forecasting",
+        "https://research.ibm.com/events/icml-2026",
+        "https://icml.cc/Downloads/2026"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "생성 예측·목적함수",
+      "mechanism": "TimeFlow loss로 다음 patch의 연속 예측분포를 생성.",
+      "inspection": "공식 ICML 초록·저자 프로젝트 확인",
+      "interpretation_limit": "포인트 예측과 분포 예측, 샘플 수/추론비용을 분리해서 비교해야 한다.",
+      "primary_sources": [
+        "https://icml.cc/virtual/2025/poster/45591",
+        "https://github.com/thuml/Sundial"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Moirai-MoE: Empowering Time Series Foundation Models with Sparse Mixture of Experts",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "파운데이션 모델·구조",
+      "mechanism": "주기별 수동 모델 분할 대신 sparse MoE를 이용한 token-level 전문화.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "MoE는 이미 존재한다. 단순 expert 추가가 새 기여는 아니다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v267/liu25an.html"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "SEMPO: Lightweight Foundation Models for Time Series Forecasting",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "고·저 에너지 주파수 정보를 반영한 mixture-of-prompts 기반 경량 사전학습.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "경량 모델이라는 사실과 사전학습 데이터·시간 비용은 별개다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/ecfb69ce6be017deb5a926c2718f6bc1-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "GTM: A General Time-series Model for Enhanced Representation Learning of Time-Series data",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "주파수 attention, reconstruction/autoregressive masking 등으로 일반적인 시계열 표현을 학습.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "예측뿐 아니라 표현·분류 등 과제별 설정을 분리해야 한다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/0c6639f49f01a8578675303ce0030233-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "TSPulse: Tiny Pre-Trained Models with Disentangled Representations for Rapid Time-Series Analysis",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "약 1M 파라미터 모델에서 시간·주파수·의미 표현을 분리하고 작은 task 모듈로 재사용.",
+      "inspection": "공식 학회 초록 확인",
+      "interpretation_limit": "이상탐지·검색·복원·분류 성능을 forecasting SOTA로 바꾸어 말하지 않는다.",
+      "primary_sources": [
+        "https://iclr.cc/virtual/2026/poster/10010081"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Zeus: Towards Tuning-Free Foundation Model for Time Series Analysis",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "point-wise token, U자형 multi-scale 구조, multi-objective temporal masking으로 다과제 재사용.",
+      "inspection": "공식 학회 목록 및 저자 공개본 초록 확인",
+      "interpretation_limit": "tuning-free라는 명칭도 실제 task별 입력·사전학습/평가 설정을 확인해야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2607.01918",
+        "https://icml.cc/Downloads/2026"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "CoRA: Boosting Time Series Foundation Models for Multivariate Forecasting through Correlation-aware Adapter",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "적응·미세조정",
+      "mechanism": "시변/불변 상관 구조를 저랭크 모듈과 contrastive supervision으로 파운데이션 모델에 반영.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "현재 native multivariate 모델까지 baseline에 넣어야 한다. 개별 OpenReview 리뷰 본문 접근은 차단됐다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ae3e173398d6e43fea63cbcc16fbaa98-Abstract-Conference.html",
+        "https://openreview.net/forum?id=JRlNrcTllN"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "UniCA: Unified Covariate Adaptation for Time Series Foundation Model",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "적응·미세조정",
+      "mechanism": "수치 외의 범주·이미지·텍스트 공변량까지 시계열 표현으로 정렬해 통합.",
+      "inspection": "공식 ICLR 초록 및 프로그램 확인",
+      "interpretation_limit": "추가 modality가 실제 예측 시점에 이용 가능한지부터 구분해야 한다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/0b5eb45a22ff33956c043dd271f244ea-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Lost in the Non-convex Loss Landscape: How to Fine-tune the Large Time Series Model?",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "적응·미세조정",
+      "mechanism": "Smoothed Full Fine-tuning: 사전학습 가중치와 무작위 초기화 모델 가중치의 보간 후 전체 미세조정.",
+      "inspection": "공식 학회 초록 확인",
+      "interpretation_limit": "일반적인 fine-tuning과 비교할 때 동일 backbone/예산/검증 선택을 유지해야 한다.",
+      "primary_sources": [
+        "https://iclr.cc/virtual/2026/poster/10011175",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/6255f22349da5f2126dfc0b007075450-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Time-PEFT: Temporal and Multichannel Complexity-Based Fine-Tuning for Time-Series Foundation Models",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "적응·미세조정",
+      "mechanism": "시간·다채널 복잡도를 진단하고 주파수 adapter와 채널 adapter를 결합.",
+      "inspection": "ICML 공식 목록과 저자 README 확인",
+      "interpretation_limit": "MOMENT 기반 보고를 TiRex-2·Chronos-2에서도 검증된 것으로 확대하지 않는다.",
+      "primary_sources": [
+        "https://github.com/kaist-dmlab/TimePEFT",
+        "https://icml.cc/Downloads/2026"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Context-aware Output-Space Adapter for Test-Time Adaptation in Time Series Forecasting",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "COSA: frozen base의 출력에 문맥 조건부 residual adapter를 적용하고 관측된 feedback으로 갱신.",
+      "inspection": "공식 학회 초록 확인",
+      "interpretation_limit": "이미 도착한 정답을 쓰는 online adaptation과 정답 없는 test-time adaptation을 구분해야 한다.",
+      "primary_sources": [
+        "https://iclr.cc/virtual/2026/poster/10010061"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Adapt Data to Model: Adaptive Transformation Optimization for Domain-shared Time Series Foundation Models",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "TATO: 모델보다 입력의 context/scale/outlier 변환을 조정하여 frozen 모델의 성능을 개선.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "이전 공개 초록과 최종 proceedings의 효과 수치가 달라 숫자 인용에는 버전 고정이 필요하다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/48c5226582f41254026748c7e35d4ac2-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "In-Context Fine-Tuning for Time-Series Foundation Models",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "관련 시계열 예제를 문맥으로 이용하도록 훈련해 추론 시 gradient update 없이 적응.",
+      "inspection": "공식 학회 초록 확인",
+      "interpretation_limit": "제목의 fine-tuning과 실제 배포 시 gradient-free adaptation을 구분.",
+      "primary_sources": [
+        "https://icml.cc/virtual/2025/poster/43707"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Retrieval Augmented Time Series Forecasting",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "RAFT: 유사 과거 구간과 그 이후 값을 훈련 데이터에서 검색해 예측 입력에 보강.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "업로드한 residual-memory 포스터는 미래값 대신 잔차를 검색한다는 차이가 있다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v267/han25d.html"
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Enhancing Multivariate Time Series Forecasting with Global Temporal Retrieval",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "GTR: 짧은 lookback 밖의 전역 주기를 temporal embedding·retrieval·잔차 융합으로 반영.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "모든 retrieval이 raw 사례 검색은 아니다. 전역 주기 표현과 실제 memory bank를 구분.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/7a3284ce53f620d244fca0c79d94c478-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "Lightweight Online Adaption for Time Series Foundation Model Forecasts",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "추론·온라인 적응",
+      "mechanism": "ELF: 고정 FM과 경량 online forecaster를 feedback 기반 weighter로 결합.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "기존 Point/Hurdle-only loss weighting 실험이 이 방법을 직접 반증하지 않는다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v267/lee25ag.html"
+      ]
+    },
+    {
+      "id": "P23",
+      "title": "DBLoss: Decomposition-based Loss Function for Time Series Forecasting",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "생성 예측·목적함수",
+      "mechanism": "정답·예측을 trend/seasonal 성분으로 분해해 학습 손실을 구성.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "새 분포 family를 추가하는 것과 다른 학습 objective 연구다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2823c4f838727564c108c85d7e6e8507-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P24",
+      "title": "MMPD: Diverse Time Series Forecasting via Multi-Mode Patch Diffusion Loss",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "생성 예측·목적함수",
+      "mechanism": "미래 잠재 patch에 조건화한 diffusion과 다중 mode 표현으로 여러 가능한 미래를 모델링.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "point 평균오차와 predictive diversity를 별도 평가해야 한다. MSE가 언제나 Gaussian 가정을 필요로 한다고 일반화하지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/be7b70477c8fca697f14b1dbb1c086d1-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P25",
+      "title": "DistDF: Time-Series Forecasting Needs Joint-Distribution Wasserstein Alignment",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "생성 예측·목적함수",
+      "mechanism": "예측과 정답의 joint-distribution discrepancy로 학습하는 미분 가능한 Wasserstein 정렬.",
+      "inspection": "공식 학회 초록·arXiv 초록 확인",
+      "interpretation_limit": "초록의 MSE/likelihood 비판을 모든 회귀문제에 대한 보편적 정리로 확대하지 않는다.",
+      "primary_sources": [
+        "https://iclr.cc/virtual/2026/poster/10009095",
+        "https://arxiv.org/abs/2510.24574"
+      ]
+    },
+    {
+      "id": "P26",
+      "title": "MoFo: Empowering Long-term Time Series Forecasting with Periodic Pattern Modeling",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "주기에 맞춘 patch 구성과 modulation으로 장기 패턴을 표현.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "데이터셋별 학습 모델의 성능과 zero-shot FM 성능은 별개다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/7a99ad21706dec5b28f9ad715e12197f-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P27",
+      "title": "FACT: Fine-grained Across-variable Convolution for Multivariate Time Series Forecasting",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "경량 모델·표현",
+      "mechanism": "시간·주파수의 세밀한 변수 상호작용을 depth-wise/dilated 2D convolution으로 모델링.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "변수 간 모델링이 반드시 attention이어야 한다는 가정을 깨는 구조 연구.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/090d636f951ac0bb18fd5610c95c6a76-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P28",
+      "title": "Synthetic Series-Symbol Data Generation for Time Series Foundation Models",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "사전학습 데이터",
+      "mechanism": "SymTime: 시계열과 생성 규칙의 기호 표현을 연결하는 합성 학습 데이터.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "통제실험용 matched-marginal 생성과 표현 사전학습용 생성은 목적이 다르다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0f45ce821121c459398fd03a0ecc6b60-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P29",
+      "title": "Forging Time Series with Language: A Large Language Model Approach to Synthetic Data Generation",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "사전학습 데이터",
+      "mechanism": "SDForger: 시계열 임베딩과 언어모델을 연결한 합성 시계열 생성.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "synthetic fidelity와 실제 downstream forecasting 향상을 별도로 검증해야 한다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/70fb27f33beefef137e09bbd875c28ad-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P30",
+      "title": "CauKer: Classification Time Series Foundation Models Can Be Pretrained on Synthetic Data",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인·Oral 확인",
+      "category": "사전학습 데이터",
+      "mechanism": "GP kernel 조합과 구조적 인과모델을 이용해 분류 FM용 합성 시계열을 생성.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "주과제는 classification이다. forecasting leaderboard 성능으로 바꿔 읽지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/702b67152ec4435795f681865b67999c-Abstract-Conference.html",
+        "https://iclr.cc/virtual/2026/events/oral"
+      ]
+    },
+    {
+      "id": "P31",
+      "title": "DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "학습 신호·정규화",
+      "mechanism": "주파수 재구성 잔차로 sample noise를 추정하고 dropout 강도를 조정.",
+      "inspection": "공식 학회 목록 및 저자 공개본 초록 확인",
+      "interpretation_limit": "표본을 제거하는 선별법과 다르다. 공식 ICML 목록에서 채택을 교차 확인.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2601.21726",
+        "https://icml.cc/Downloads/2026"
+      ]
+    },
+    {
+      "id": "P32",
+      "title": "Filter, Augment, Forecast: Online Data Selection for Robust Time Series Forecasting",
+      "year": 2026,
+      "venue_status": "AISTATS 2026 메인",
+      "category": "학습 신호·정규화",
+      "mechanism": "reference model 기반 online data selection과 augmentation; shift에 맞춰 reference 갱신.",
+      "inspection": "공식 proceedings 초록 검색 확인",
+      "interpretation_limit": "정적 1-pass selection-frequency filter를 원 논문의 완전한 재현이라고 부르지 않는다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v300/taga26a.html"
+      ]
+    },
+    {
+      "id": "P33",
+      "title": "A Multi-Task Learning Approach to Linear Multivariate Forecasting",
+      "year": 2025,
+      "venue_status": "AISTATS 2025 메인",
+      "category": "학습 신호·정규화",
+      "mechanism": "MTLinear: 변수 관련성에 따른 task grouping과 prediction-error 기반 gradient scaling.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "generic PCGrad 또는 업로드된 PV-surgery와 동일한 방법은 아니다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v258/nochumsohn25a.html"
+      ]
+    },
+    {
+      "id": "P34",
+      "title": "TimeDistill: Efficient Long-Term Time Series Forecasting with MLPs via Cross-Architecture Distillation",
+      "year": 2026,
+      "venue_status": "저자 공식 저장소가 KDD 2026으로 명시; publisher proceedings 교차 확인 미완료",
+      "category": "학습 신호·정규화",
+      "mechanism": "Transformer/CNN의 multi-scale·multi-period 표현을 가벼운 MLP에 증류.",
+      "inspection": "저자 공식 자료·README 확인; 학습 실행 없음",
+      "interpretation_limit": "공식 저장소의 학회 표기 수준으로 기록. 이전 확률 head 증류 실험과 전달 대상이 다르다.",
+      "primary_sources": [
+        "https://github.com/LingFengGold/TimeDistill",
+        "https://arxiv.org/abs/2502.15016"
+      ]
+    },
+    {
+      "id": "P35",
+      "title": "TimeOmni-1: Incentivizing Complex Reasoning with Time Series in Large Language Models",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "멀티모달·추론",
+      "mechanism": "시계열 인식·인과·사건 조건 예측 등 reasoning 과제와 보상 기반 학습.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "자연어 reasoning 점수의 향상을 일반 forecasting MSE SOTA와 같게 보지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f7227d037ee7202106f511f78e9ecb80-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P36",
+      "title": "TimeOmni-VL: Unified Models for Time Series Understanding and Generation",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "멀티모달·추론",
+      "mechanism": "시계열↔이미지 양방향 매핑과 이해 결과를 이용한 수치 생성.",
+      "inspection": "공식 학회 목록 및 저자 공개본 초록 확인",
+      "interpretation_limit": "near-lossless mapping 및 의미 이해·수치 생성 각각의 실험 조건을 분리해서 봐야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2602.17149",
+        "https://icml.cc/Downloads/2026"
+      ]
+    },
+    {
+      "id": "P37",
+      "title": "VisionTS: Visual Masked Autoencoders Are Free-Lunch Zero-Shot Time Series Forecasters",
+      "year": 2025,
+      "venue_status": "ICML 2025 메인",
+      "category": "멀티모달·추론",
+      "mechanism": "이미지 사전학습 masked autoencoder의 복원 능력을 시계열 예측으로 전이.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "이미지로 바꾸기 자체가 새 아이디어는 아니다. 2026 모델과 다시 비교가 필요하다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v267/chen25be.html"
+      ]
+    },
+    {
+      "id": "P38",
+      "title": "MIRA: Medical Time Series Foundation Model for Real-World Health Data",
+      "year": 2025,
+      "venue_status": "NeurIPS 2025 메인",
+      "category": "분류·이상탐지·의료 표현",
+      "mechanism": "불규칙 의료 관측을 위한 연속시간 위치 표현과 frequency expert 등 도메인 표현.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "의료 데이터 접근성과 task 특성이 일반 시계열 benchmark와 다르다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8e12ba543adc673da5b89c9311fcf72c-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P39",
+      "title": "Repurposing Foundation Model for Generalizable Medical Time Series Classification",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "분류·이상탐지·의료 표현",
+      "mechanism": "FORMED: task/channel·label query를 이용한 의료 시계열 분류 전이.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "forecasting과 분류 SOTA를 구분한다. 새 task query의 학습량도 공개해야 한다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/8707924df5e207fa496f729f49069446-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P40",
+      "title": "When Foundation Models are One-Liners: Limitations and Future Directions for Time Series Anomaly Detection",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "분류·이상탐지·의료 표현",
+      "mechanism": "FM 기반 이상 점수를 moving variance 등 매우 단순한 baseline과 비교.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "일부 점수화 방식·benchmark의 한계를 모든 TSFM의 무용성으로 확대하지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/cf70320e93c08b39b1b29a348097a376-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P41",
+      "title": "Complexity- and Statistics-Guided Anomaly Detection in Time Series Foundation Models",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "분류·이상탐지·의료 표현",
+      "mechanism": "복잡도에 맞춘 예측·통계 정보로 over-generalization과 정규화 손실을 보완.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "이상 점수 개선을 평균 예측성능 개선과 섞지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d06768735ce7d11ade5baef7099b4e05-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P42",
+      "title": "Adaptive Conformal Anomaly Detection with Time Series Foundation Models for Signal Monitoring",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "분류·이상탐지·의료 표현",
+      "mechanism": "FM 예측오차에 adaptive conformal anomaly scoring을 결합.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "coverage 보장은 가정과 online protocol을 확인해야 하며 arbitrary shift에 무조건 보장되지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f54c9fc57aa6e1c72400cc127917fcf8-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P43",
+      "title": "Beyond Accuracy: Are Time Series Foundation Models Well-Calibrated?",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "벤치마크·평가",
+      "mechanism": "정확도 외에 output head·horizon·AR decoding에 따른 uncertainty calibration을 분석.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "진단 논문은 방법 연구의 비교 기준으로 활용하며 사용자 연구를 자동으로 분석 논문으로 돌리지 않는다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/9af2b1d6acf561af9c4cf70d52c7a49d-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P44",
+      "title": "Context parroting: A simple but tough-to-beat baseline for foundation models in scientific machine learning",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "벤치마크·평가",
+      "mechanism": "동역학 예측에서 context 복사 baseline과 FM을 비교.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "해당 과제군에서의 관찰이지 모든 시계열에서 복사가 최선이라는 뜻은 아니다.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5fbdcd4d2190682b913c6b39b58e95f0-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P45",
+      "title": "TimeRecipe: A Time-Series Forecasting Recipe via Benchmarking Module Level Effectiveness",
+      "year": 2026,
+      "venue_status": "ICLR 2026 메인",
+      "category": "벤치마크·평가",
+      "mechanism": "정규화·분해·임베딩·모델 등의 구성요소를 1만 회 이상 조합 실험으로 분석.",
+      "inspection": "정식 메인 논문집·초록 확인",
+      "interpretation_limit": "초기 작은 연구에 동일 실험량을 요구하는 것이 아니다. 강한 조합 baseline을 찾는 참고 자료.",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f46ddea413df86832418c5e04e59644f-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "P46",
+      "title": "GIFT-Eval: A Benchmark for General Time Series Forecasting Model Evaluation",
+      "year": 2024,
+      "venue_status": "공개 benchmark; NeurIPS 2024 TSALM workshop/ICLR 2025 제출본 확인, 메인 채택은 이번 조사 미확인",
+      "category": "벤치마크·평가",
+      "mechanism": "다양한 빈도·도메인·horizon에 대한 일반 시계열 예측 평가와 비누출 pretraining corpus.",
+      "inspection": "논문 초록·OpenReview 검색 결과·공식 benchmark 자료 확인",
+      "interpretation_limit": "다른 공개 버전에서 dataset 수가 다르다. 과제 수·모델 수·train policy를 version pin해야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2410.10393",
+        "https://openreview.net/forum?id=9EBSEkFSje",
+        "https://github.com/SalesforceAIResearch/gift-eval"
+      ]
+    },
+    {
+      "id": "P47",
+      "title": "fev-bench: A Realistic Benchmark for Time Series Forecasting",
+      "year": 2025,
+      "venue_status": "2025-09 arXiv 공개본; 별도 메인 채택 미확인",
+      "category": "벤치마크·평가",
+      "mechanism": "공변량 포함 과제와 bootstrap win rate/skill score를 제공하는 100-task benchmark.",
+      "inspection": "공개 초록 확인",
+      "interpretation_limit": "현재 코드 버전과 paper version을 고정하고 zero-shot/FT 조건을 구분한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2509.26468",
+        "https://github.com/autogluon/fev"
+      ]
+    },
+    {
+      "id": "P48",
+      "title": "It's TIME: Towards the Next Generation of Time Series Forecasting Benchmarks",
+      "year": 2026,
+      "venue_status": "ICML 2026 메인",
+      "category": "벤치마크·평가",
+      "mechanism": "새로운 50개 데이터·98개 과제와 task-centric zero-shot 평가.",
+      "inspection": "공식 학회 목록 및 저자 공개본 초록 확인",
+      "interpretation_limit": "저자들이 contamination-resistant 설계를 주장한다. 모든 사전학습 corpus의 절대적 비누출을 독립 검증한 것은 아니다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2602.12147",
+        "https://icml.cc/Downloads/2026"
+      ]
+    }
+  ]
+}

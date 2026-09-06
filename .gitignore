@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Caches
+.cache/
+.ipynb_checkpoints/
+
+# Data and heavy artifacts are never committed
+data/
+!data/.gitkeep
+runs/
+!runs/.gitkeep
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+*.parquet
+
+# Credentials
+.env
+*.key
+*.pem
