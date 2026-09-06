@@ -1,0 +1,108 @@
+{
+  "leads_h": [
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48,
+    54,
+    60,
+    66,
+    72
+  ],
+  "history_steps": 1344,
+  "history_rule": "strictly before the origin; max 10% missing",
+  "target": "BMRA_data.parquet metered power in MW, exact timestamp join",
+  "splits": {
+    "train": {
+      "year": 2019,
+      "n_examples": 5547,
+      "n_origins": 710,
+      "per_farm": {
+        "E_BURBO": 710,
+        "T_BEATO-1": 692,
+        "T_GANW-13": 704,
+        "T_RMPNO-1": 704,
+        "E_GFLDW-1": 710,
+        "E_BNWKW-1": 639,
+        "T_COUWW-1": 703,
+        "T_AKGLW-2": 685
+      },
+      "dropped": {
+        "future_crosses_split": 48,
+        "target_missing": 181,
+        "history_short": 0,
+        "history_missing": 0
+      }
+    },
+    "val": {
+      "year": 2020,
+      "n_examples": 4899,
+      "n_origins": 719,
+      "per_farm": {
+        "E_BURBO": 699,
+        "T_BEATO-1": 713,
+        "T_GANW-13": 691,
+        "T_RMPNO-1": 713,
+        "E_GFLDW-1": 719,
+        "E_BNWKW-1": 438,
+        "T_COUWW-1": 667,
+        "T_AKGLW-2": 259
+      },
+      "dropped": {
+        "future_crosses_split": 48,
+        "target_missing": 702,
+        "history_short": 0,
+        "history_missing": 199
+      }
+    },
+    "test": {
+      "year": 2021,
+      "n_examples": 1362,
+      "n_origins": 484,
+      "per_farm": {
+        "E_BURBO": 121,
+        "T_BEATO-1": 100,
+        "T_GANW-13": 325,
+        "T_RMPNO-1": 195,
+        "E_GFLDW-1": 173,
+        "E_BNWKW-1": 111,
+        "T_COUWW-1": 192,
+        "T_AKGLW-2": 145
+      },
+      "dropped": {
+        "future_crosses_split": 48,
+        "target_missing": 3384,
+        "history_short": 0,
+        "history_missing": 1046
+      }
+    }
+  },
+  "normalisation": {
+    "target": "per farm, mean and std of the 2019 training targets",
+    "weather": "global per feature, 2019 training only",
+    "target_mean_mw": {
+      "E_BURBO": 27.93798828125,
+      "T_BEATO-1": 59.557804107666016,
+      "T_GANW-13": 40.454219818115234,
+      "T_RMPNO-1": 75.22154235839844,
+      "E_GFLDW-1": 8.714584350585938,
+      "E_BNWKW-1": 6.580623149871826,
+      "T_COUWW-1": 6.758121013641357,
+      "T_AKGLW-2": 27.85364532470703
+    },
+    "target_std_mw": {
+      "E_BURBO": 27.952972412109375,
+      "T_BEATO-1": 46.686614990234375,
+      "T_GANW-13": 30.930767059326172,
+      "T_RMPNO-1": 75.60648345947266,
+      "E_GFLDW-1": 8.623619079589844,
+      "E_BNWKW-1": 5.771785259246826,
+      "T_COUWW-1": 6.446232318878174,
+      "T_AKGLW-2": 21.609886169433594
+    }
+  }
+}

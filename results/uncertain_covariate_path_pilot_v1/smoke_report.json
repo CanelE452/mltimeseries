@@ -1,0 +1,96 @@
+{
+  "arms": [
+    "H",
+    "M",
+    "S",
+    "D",
+    "P"
+  ],
+  "seed": 2026090601,
+  "epochs": 3,
+  "n_examples": {
+    "train": 400,
+    "val": 200,
+    "test": 121
+  },
+  "shapes": {
+    "base": [
+      400,
+      12,
+      18
+    ],
+    "weather": [
+      400,
+      50,
+      12,
+      4
+    ],
+    "target": [
+      400,
+      12
+    ]
+  },
+  "fits": {
+    "H": {
+      "n_parameters": 36481,
+      "val_macro_scaled_crps": 1.0954374074935913,
+      "seconds_per_epoch": 0.48,
+      "loss_finite": true
+    },
+    "M": {
+      "n_parameters": 65921,
+      "val_macro_scaled_crps": 0.8672395348548889,
+      "seconds_per_epoch": 0.18,
+      "loss_finite": true
+    },
+    "S": {
+      "n_parameters": 67457,
+      "val_macro_scaled_crps": 0.8658026456832886,
+      "seconds_per_epoch": 0.06,
+      "loss_finite": true
+    },
+    "D": {
+      "n_parameters": 65921,
+      "val_macro_scaled_crps": 0.857337474822998,
+      "seconds_per_epoch": 0.06,
+      "loss_finite": true
+    },
+    "P": {
+      "n_parameters": 65921,
+      "val_macro_scaled_crps": 0.8858795762062073,
+      "seconds_per_epoch": 0.07,
+      "loss_finite": true
+    }
+  },
+  "d_p_parameter_equality": {
+    "D": 65921,
+    "P": 65921,
+    "relative_difference_percent": 0.0,
+    "pass": true
+  },
+  "whole_path_permutation_invariance": {
+    "max_abs_diff": 1.862645149230957e-08,
+    "tolerance": 1e-06,
+    "pass": true
+  },
+  "gradients": {
+    "loss": 0.951494574546814,
+    "loss_finite": true,
+    "max_abs_grad": 0.0939127579331398,
+    "all_finite": true,
+    "pass": true
+  },
+  "runtime_estimate": {
+    "seconds_per_epoch_scaled": {
+      "H": 6.7,
+      "M": 2.5,
+      "S": 0.8,
+      "D": 0.8,
+      "P": 0.9
+    },
+    "worst_case_gpu_hours_21_fits": 0.69,
+    "note": "worst case assumes every fit runs the full 50 epochs without early stopping"
+  },
+  "scope": "smoke run; no scientific verdict is taken from it",
+  "all_passed": true
+}

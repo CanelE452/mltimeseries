@@ -1,0 +1,57 @@
+{
+  "model_id": "autogluon/chronos-2-synth",
+  "revision": "3607918a9fd027d5c465d8213e46b98e2c041cea",
+  "frozen": true,
+  "fine_tuned": false,
+  "lora": false,
+  "chronos_forecasting_version": "2.3.1",
+  "transformers_version": "5.16.1",
+  "torch_version": "2.11.0+cu128",
+  "quantile_levels": [
+    0.01,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "prediction_steps": 144,
+  "prediction_step_minutes": 30,
+  "leads_h": [
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48,
+    54,
+    60,
+    66,
+    72
+  ],
+  "lead_selection": "datetime join against origin + (j+1) * 30 min, not a positional guess",
+  "input": "target history only; no weather, no future target, no calendar",
+  "splits": {
+    "train": {
+      "n_examples": 5547,
+      "reused": false
+    },
+    "val": {
+      "n_examples": 4899,
+      "reused": false
+    },
+    "test": {
+      "n_examples": 1362,
+      "reused": false
+    }
+  }
+}

@@ -139,7 +139,7 @@ def main() -> int:
 
     step("integrity_tests", BASE_PY, ["-m", f"{SRC}.data_contract"],
          [RESULTS / "integrity_tests.json"])
-    report = json.loads((RESULTS / "integrity_tests.json").read_text())
+    report = json.loads((RESULTS / "integrity_tests.json").read_text(encoding="utf-8"))
     if not report["all_passed"]:
         (RESULTS / "STATUS.md").write_text(
             "# UCP-PATH-PILOT-v1\n\nNOT_EVALUATED_DATA_OR_INTEGRITY: an integrity test failed. "
@@ -149,7 +149,7 @@ def main() -> int:
     log("integrity tests T01-T13 all pass")
 
     step("smoke", MLTS_PY, ["-m", f"{SRC}.smoke"], [RESULTS / "smoke_report.json"])
-    smoke = json.loads((RESULTS / "smoke_report.json").read_text())
+    smoke = json.loads((RESULTS / "smoke_report.json").read_text(encoding="utf-8"))
     if not smoke["all_passed"]:
         raise RuntimeError(f"smoke checks failed: {smoke}")
     log(f"smoke passed; worst-case estimate "
@@ -165,7 +165,7 @@ def main() -> int:
     step("report", MLTS_PY, ["-m", f"{SRC}.report"],
          [RESULTS / "STATUS.md", RESULTS / "SELF_AUDIT.md"])
 
-    verdict = json.loads((RESULTS / "verdict.json").read_text())
+    verdict = json.loads((RESULTS / "verdict.json").read_text(encoding="utf-8"))
     elapsed = (time.time() - started) / 3600
     log("=" * 72)
     log(f"FINAL TOKEN: {verdict['final_token']}")
@@ -174,7 +174,7 @@ def main() -> int:
             f"[{check['ci_lower']:+.2f}, {check['ci_upper']:+.2f}] "
             f"seeds positive {check['seeds_positive']['n_positive']}/{check['seeds_positive']['n_seeds']}")
     log(f"  screens: {verdict['screens']}")
-    audit = (RESULTS / "SELF_AUDIT.md").read_text()
+    audit = (RESULTS / "SELF_AUDIT.md").read_text(encoding="utf-8")
     marker = "All checks passed: **"
     passed = audit.split(marker)[1][:6] if marker in audit else "unknown"
     log(f"  self audit all passed: {passed.strip('*')}")

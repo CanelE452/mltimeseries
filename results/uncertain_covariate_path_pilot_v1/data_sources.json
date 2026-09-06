@@ -1,0 +1,28 @@
+{
+  "ens_2019_2020": {
+    "record": "13255991",
+    "doi": "10.5281/zenodo.13255991",
+    "title": "ECMWF/ENS - 2019 to 2020 - Great Britain",
+    "filename": "ecmwf_ens_2019-2020.tar.gz",
+    "size": 36034983151,
+    "md5": "5bc1122fb5a64bdd9ac980b9f1db2e64",
+    "license": "cc-by-4.0",
+    "raw_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\raw\\ecmwf_ens_2019-2020.tar.gz",
+    "extracted_path": null,
+    "consumed_as_stream": true,
+    "verified_md5": true
+  },
+  "ens_2021": {
+    "record": "13256007",
+    "doi": "10.5281/zenodo.13256007",
+    "title": "ECMWF/ENS - 2021 - Great Britain",
+    "filename": "ecmwf_ens_2021.tar.gz",
+    "size": 18003586760,
+    "md5": "24caeb6b55d5f2038b913855f5085b0b",
+    "license": "cc-by-4.0",
+    "raw_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\raw\\ecmwf_ens_2021.tar.gz",
+    "extracted_path": null,
+    "consumed_as_stream": true,
+    "verified_md5": true
+  }
+}

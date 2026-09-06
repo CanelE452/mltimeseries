@@ -1,0 +1,157 @@
+{
+  "T01_history_before_origin": {
+    "pass": true,
+    "min_gap_minutes": 30.0,
+    "history_steps": 1344,
+    "rule": "build_panel slices power.iloc[end-1344:end] where end is the position of the origin"
+  },
+  "T02_weather_base_valid_time": {
+    "pass": true,
+    "origin_hours": [
+      0,
+      12
+    ]
+  },
+  "T03_targets_after_origin": {
+    "pass": true,
+    "lead_hours": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60,
+      66,
+      72
+    ],
+    "rule": "targets are read at origin + 6..72 h by datetime join"
+  },
+  "T04_split_boundaries": {
+    "pass": true,
+    "splits": {
+      "train": {
+        "n": 5547,
+        "window": [
+          "2019-01-01 00:00:00",
+          "2019-12-31 23:30:00"
+        ],
+        "first_origin": "2019-01-01 00:00:00",
+        "last_target": "2019-12-31 12:00:00",
+        "all_inside_window": true
+      },
+      "val": {
+        "n": 4899,
+        "window": [
+          "2020-01-01 00:00:00",
+          "2020-12-31 23:30:00"
+        ],
+        "first_origin": "2020-01-01 00:00:00",
+        "last_target": "2020-12-31 12:00:00",
+        "all_inside_window": true
+      },
+      "test": {
+        "n": 1362,
+        "window": [
+          "2021-01-01 00:00:00",
+          "2021-12-31 23:30:00"
+        ],
+        "first_origin": "2021-01-01 00:00:00",
+        "last_target": "2021-12-31 12:00:00",
+        "all_inside_window": true
+      },
+      "train_before_val": {
+        "no_overlap": true
+      },
+      "val_before_test": {
+        "no_overlap": true
+      }
+    }
+  },
+  "T05_member_identity": {
+    "pass": true,
+    "reference_origin": "2019-01-01 00:00:00",
+    "byte_identical_on_reread": true,
+    "mean_abs_step_same_member_ms": 0.8940666317939758,
+    "mean_abs_step_mismatched_member_ms": 0.9749855995178223
+  },
+  "T06_T08_broken_marginals": {
+    "per_lead_member_multiset_identical": {
+      "pass": true,
+      "max_abs_diff": 0.0
+    },
+    "T06_mean": {
+      "pass": true,
+      "max_abs_diff": 0.0,
+      "tolerance": 3.0456936645507815e-07
+    },
+    "T07_std": {
+      "pass": true,
+      "max_abs_diff": 2.6645352591003757e-15,
+      "tolerance": 3.0456936645507815e-07
+    },
+    "T08_quantiles": {
+      "pass": true,
+      "max_abs_diff": 0.0,
+      "tolerance": 3.0456936645507815e-07
+    },
+    "path_actually_broken": {
+      "pass": true,
+      "max_abs_diff": 29.94761848449707
+    }
+  },
+  "T09_T10_normalisation": {
+    "T09_weather": {
+      "pass": true,
+      "max_abs_diff_mean": 0.0,
+      "max_abs_diff_std": 0.0
+    },
+    "T10_target": {
+      "pass": true,
+      "max_abs_diff_mean": 0.0,
+      "max_abs_diff_std": 0.0
+    },
+    "note": "recomputed from the training panel alone and compared with the stored file"
+  },
+  "T11_shared_evaluation_keys": {
+    "pass": true,
+    "n_examples": {
+      "train": 5547,
+      "val": 4899,
+      "test": 1362
+    },
+    "rule": "every arm indexes the same panel arrays; evaluate.py asserts key equality again"
+  },
+  "T12_no_future_target_in_chronos": {
+    "pass": true,
+    "splits": {
+      "train": {
+        "cached": true,
+        "keys_match_panel": true,
+        "input": "panel history array only, which ends 30 minutes before the origin"
+      },
+      "val": {
+        "cached": true,
+        "keys_match_panel": true,
+        "input": "panel history array only, which ends 30 minutes before the origin"
+      },
+      "test": {
+        "cached": true,
+        "keys_match_panel": true,
+        "input": "panel history array only, which ends 30 minutes before the origin"
+      }
+    }
+  },
+  "T13_no_observed_future_weather": {
+    "pass": true,
+    "rule": "extract_ens reads tigge-GB_<origin>.nc and raises unless the file's first valid time equals the origin in its own name, so every lead used is a forecast issued at the origin",
+    "archives": {
+      "ens_2019_2020": 1453,
+      "ens_2021": 730
+    }
+  },
+  "all_passed": true
+}
