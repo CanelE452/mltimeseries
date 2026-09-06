@@ -7,12 +7,17 @@
 
 ## 현재 상태
 
-문헌 사전조사 단계다. 코드와 실험은 아직 없다.
+문헌 사전조사에서 나온 연구 주제 노트 3건 중 2건의 1차 파일럿을 실행했다 —
+`HQ-TOKEN-PILOT-v1`(예측 목표 조건부 토큰화)과 `OA-RESOLUTION-PILOT-v1`(관측 방식
+인지형 해상도 전이), 둘 다 판정은 `INCONCLUSIVE`다. 상세는
+[`_docs/PROJECT_LOG.md`](_docs/PROJECT_LOG.md)의 계열 현황표를 본다.
 
 ## 무엇이 들어 있나
 
-- [`_docs/PROJECT_LOG.md`](_docs/PROJECT_LOG.md) — 진입점. 자료 목록, 해석 경계,
-  아직 확정하지 않은 후보 연구군 5개.
+- [`_docs/PROJECT_LOG.md`](_docs/PROJECT_LOG.md) — 진입점. 계열 현황표, 자료 목록,
+  해석 경계, 아직 확정하지 않은 후보 연구군 5개.
+- [`_docs/notes/tsfm_topics/`](_docs/notes/tsfm_topics/) — 연구 주제 노트 3건. 01·02는
+  1차 파일럿 결과까지, 03은 아직 착수 전 제안만 담고 있다.
 - [`_docs/reference/time_series_research_dossier_20260906.md`](_docs/reference/time_series_research_dossier_20260906.md)
   — 48개 외부 연구·모델·벤치마크 항목의 사전조사. 항목마다 확인 깊이와 해석 경계를
   함께 적었다.

@@ -1,0 +1,196 @@
+{
+  "experiment_id": "OA-RESOLUTION-PILOT-v1",
+  "audited_on": "2026-09-06",
+  "rule": "native_record_semantics is taken only from official documentation. No semantics is inferred from the shape of the numbers.",
+  "documents_consulted": [
+    {
+      "dataset": "jena",
+      "url": "https://www.bgc-jena.mpg.de/wetter/",
+      "document": "Documentation of the Weather Station on Top of the Roof of the Institute Building of the Max-Planck-Institute for Biogeochemistry",
+      "document_url": "https://www.bgc-jena.mpg.de/wetter/Weatherstation.pdf",
+      "author": "Olaf Kolle, Max-Planck-Institute for Biogeochemistry",
+      "document_date": "2025-02-04",
+      "license": "CC-BY-4.0",
+      "key_quotes": [
+        "The sensors are scanned by the logger every 10 seconds - averages, totals and maxima of the variables over periods of 10 minutes are internally calculated and stored in the datalogger ring memory.",
+        "Date Time | dd.mm.yyyy hh.mm (MEZ) | Date and time of the data record (the timestamp represents the end of the averaging period)"
+      ]
+    },
+    {
+      "dataset": "uci",
+      "url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "document": "UCI Machine Learning Repository dataset page, Additional Variable Information",
+      "key_quotes": [
+        "one-minute sampling rate over a period of almost 4 years",
+        "global_active_power: household global minute-averaged active power (in kilowatt)",
+        "global_reactive_power: household global minute-averaged reactive power (in kilowatt)",
+        "voltage: minute-averaged voltage (in volt)",
+        "global_intensity: household global minute-averaged current intensity (in ampere)",
+        "sub_metering_1: energy sub-metering No. 1 (in watt-hour of active energy)",
+        "The dataset contains some missing values in the measurements (nearly 1,25% of the rows)"
+      ]
+    }
+  ],
+  "point_observation_warning": {
+    "statement": "Neither dataset publishes an instantaneous point observation. Every published record of every selected variable is an interval statistic over its native reporting interval.",
+    "consequence": "The controlled observation type END_BIN is the last native base-bin record inside a report interval. It is NOT a mathematical instantaneous point. A true point operator appears only in the synthetic analytical unit tests."
+  },
+  "variables": [
+    {
+      "dataset": "jena",
+      "source_url": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+      "raw_column_name": "T (degC)",
+      "physical_quantity": "air temperature",
+      "unit": "degC",
+      "native_sampling_interval": "10 minutes (sensor scanned every 10 s, aggregated by the CR1000X datalogger)",
+      "native_record_semantics": "INTERVAL_MEAN (arithmetic mean over the 10-minute period)",
+      "interval_start_definition": "timestamp minus 10 minutes",
+      "interval_end_definition": "timestamp",
+      "timestamp_represents": "END of the averaging period, in MEZ (CET, UTC+1, no daylight saving)",
+      "selected_for_core": true,
+      "evidence": "Weatherstation.pdf section 2: 'averages, totals and maxima of the variables over periods of 10 minutes are internally calculated'. Table 3 states the timestamp is the end of the averaging period. T carries no 'max.' prefix and is not an accumulation, so it falls in the 'averages' group; the file also proves the naming convention by carrying both 'wv' and 'max. wv'. First record of mpi_roof_2023a.csv is 01.01.2023 00:10:00, consistent with end-labelling."
+    },
+    {
+      "dataset": "jena",
+      "source_url": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+      "raw_column_name": "p (mbar)",
+      "physical_quantity": "air pressure",
+      "unit": "mbar",
+      "native_sampling_interval": "10 minutes",
+      "native_record_semantics": "INTERVAL_MEAN (arithmetic mean over the 10-minute period)",
+      "interval_start_definition": "timestamp minus 10 minutes",
+      "interval_end_definition": "timestamp",
+      "timestamp_represents": "END of the averaging period, in MEZ (CET, UTC+1, no daylight saving)",
+      "selected_for_core": true,
+      "evidence": "Same as T (degC): Weatherstation.pdf section 2 and Table 3. No 'max.' prefix, not an accumulation."
+    },
+    {
+      "dataset": "jena",
+      "source_url": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+      "raw_column_name": "rh (%)",
+      "physical_quantity": "relative humidity",
+      "unit": "percent",
+      "native_sampling_interval": "10 minutes",
+      "native_record_semantics": "INTERVAL_MEAN (arithmetic mean over the 10-minute period)",
+      "interval_start_definition": "timestamp minus 10 minutes",
+      "interval_end_definition": "timestamp",
+      "timestamp_represents": "END of the averaging period, in MEZ (CET, UTC+1, no daylight saving)",
+      "selected_for_core": true,
+      "evidence": "Same as T (degC): Weatherstation.pdf section 2 and Table 3. No 'max.' prefix, not an accumulation."
+    },
+    {
+      "dataset": "jena",
+      "source_url": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+      "raw_column_name": "rain (mm)",
+      "physical_quantity": "precipitation amount",
+      "unit": "mm",
+      "native_sampling_interval": "10 minutes",
+      "native_record_semantics": "TOTAL over the 10-minute period (tipping-bucket accumulation)",
+      "interval_start_definition": "timestamp minus 10 minutes",
+      "interval_end_definition": "timestamp",
+      "timestamp_represents": "END of the accumulation period",
+      "selected_for_core": false,
+      "evidence": "Weatherstation.pdf Table 1/2 lists a tipping bucket with 0.1 mm resolution, and section 2 names 'totals' as one of the stored aggregations. Excluded: a different observation operator from the mean channels."
+    },
+    {
+      "dataset": "jena",
+      "source_url": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+      "raw_column_name": "max. wv (m/s)",
+      "physical_quantity": "maximum wind velocity",
+      "unit": "m/s",
+      "native_sampling_interval": "10 minutes",
+      "native_record_semantics": "MAXIMUM over the 10-minute period",
+      "interval_start_definition": "timestamp minus 10 minutes",
+      "interval_end_definition": "timestamp",
+      "timestamp_represents": "END of the aggregation period",
+      "selected_for_core": false,
+      "evidence": "Weatherstation.pdf section 2 names 'maxima' as a stored aggregation; the column name carries the explicit 'max.' prefix. Excluded: a different observation operator."
+    },
+    {
+      "dataset": "uci",
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "raw_column_name": "Global_active_power",
+      "physical_quantity": "household global active power",
+      "unit": "kilowatt",
+      "native_sampling_interval": "1 minute",
+      "native_record_semantics": "INTERVAL_MEAN (minute-averaged)",
+      "interval_start_definition": "labelled minute t (adopted convention: the record labels the interval [t, t+1min))",
+      "interval_end_definition": "labelled minute t + 1 minute",
+      "timestamp_represents": "the labelled minute of the one-minute averaging window; the official documentation does NOT state whether the label is the start or the end of that window",
+      "selected_for_core": true,
+      "evidence": "Official variable description: 'household global minute-averaged active power (in kilowatt)'. The averaging semantics is documented; only the +/-1 minute anchor of the label is not. See timestamp_anchor_note."
+    },
+    {
+      "dataset": "uci",
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "raw_column_name": "Global_reactive_power",
+      "physical_quantity": "household global reactive power",
+      "unit": "kilowatt",
+      "native_sampling_interval": "1 minute",
+      "native_record_semantics": "INTERVAL_MEAN (minute-averaged)",
+      "interval_start_definition": "labelled minute t (adopted convention: the record labels the interval [t, t+1min))",
+      "interval_end_definition": "labelled minute t + 1 minute",
+      "timestamp_represents": "the labelled minute of the one-minute averaging window; anchor not documented",
+      "selected_for_core": true,
+      "evidence": "Official variable description: 'household global minute-averaged reactive power (in kilowatt)'."
+    },
+    {
+      "dataset": "uci",
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "raw_column_name": "Voltage",
+      "physical_quantity": "voltage",
+      "unit": "volt",
+      "native_sampling_interval": "1 minute",
+      "native_record_semantics": "INTERVAL_MEAN (minute-averaged)",
+      "interval_start_definition": "labelled minute t (adopted convention: the record labels the interval [t, t+1min))",
+      "interval_end_definition": "labelled minute t + 1 minute",
+      "timestamp_represents": "the labelled minute of the one-minute averaging window; anchor not documented",
+      "selected_for_core": true,
+      "evidence": "Official variable description: 'minute-averaged voltage (in volt)'."
+    },
+    {
+      "dataset": "uci",
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "raw_column_name": "Global_intensity",
+      "physical_quantity": "household global current intensity",
+      "unit": "ampere",
+      "native_sampling_interval": "1 minute",
+      "native_record_semantics": "INTERVAL_MEAN (minute-averaged)",
+      "interval_start_definition": "labelled minute t (adopted convention: the record labels the interval [t, t+1min))",
+      "interval_end_definition": "labelled minute t + 1 minute",
+      "timestamp_represents": "the labelled minute of the one-minute averaging window; anchor not documented",
+      "selected_for_core": true,
+      "evidence": "Official variable description: 'household global minute-averaged current intensity (in ampere)'."
+    },
+    {
+      "dataset": "uci",
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "raw_column_name": "Sub_metering_1",
+      "physical_quantity": "active energy consumed by kitchen circuit",
+      "unit": "watt-hour of active energy",
+      "native_sampling_interval": "1 minute",
+      "native_record_semantics": "ENERGY ACCUMULATION over the minute (not a mean of an intensive quantity)",
+      "interval_start_definition": "labelled minute t",
+      "interval_end_definition": "labelled minute t + 1 minute",
+      "timestamp_represents": "the labelled minute; anchor not documented",
+      "selected_for_core": false,
+      "evidence": "Official variable description: 'energy sub-metering No. 1 (in watt-hour of active energy)'. Excluded from the core: watt-hour is an energy total, a different observation operator from the minute-averaged power/voltage/current channels. Sub_metering_2 and Sub_metering_3 are excluded for the same reason."
+    }
+  ],
+  "timestamp_anchor_note": {
+    "dataset": "uci",
+    "documented": false,
+    "issue": "The UCI documentation states the values are minute-averaged but does not say whether the printed timestamp labels the start or the end of that minute.",
+    "adopted_convention": "The record labelled t is treated as the mean over [t, t+1min).",
+    "why_this_does_not_affect_the_comparison": "The two possible anchors differ by a uniform 1-minute shift of the entire labelled grid. Every base bin, forecast origin, history window and target window in this pilot is defined on that single labelled grid, so the shift moves all of them together. It cannot change the ordering or adjacency of bins, cannot move an aggregation window across a forecast origin or a split boundary, and is identical for R, M and O. It changes only the wall-clock interpretation of the results, which is recorded as a limitation.",
+    "not_resolved_by": "No inference from the shape of the values was used to pick the anchor."
+  },
+  "shared_base_grid": {
+    "base_interval_minutes": 10,
+    "jena": "the native 10-minute record is the base bin, unchanged",
+    "uci": "a base bin is the mean of its 10 native minute means, and is missing unless all 10 are present",
+    "resulting_semantics": "for both datasets a base bin holds the INTERVAL_MEAN of the physical quantity over that 10-minute bin"
+  },
+  "blocked": [],
+  "status": "PASS"
+}

@@ -1,0 +1,32 @@
+{
+  "dataset": "uci",
+  "screen_updates": 1250,
+  "model_seed": 2026090601,
+  "candidates": [
+    {
+      "lambda": 0.0001,
+      "val_primary": 0.4743150293675391,
+      "best_update": 500,
+      "wall_seconds": 21.951289415359497
+    },
+    {
+      "lambda": 0.01,
+      "val_primary": 0.4742113989576432,
+      "best_update": 500,
+      "wall_seconds": 21.900357723236084
+    },
+    {
+      "lambda": 1.0,
+      "val_primary": 0.4723814383490395,
+      "best_update": 500,
+      "wall_seconds": 22.093054056167603
+    },
+    {
+      "lambda": 100.0,
+      "val_primary": 0.47004459830565004,
+      "best_update": 1250,
+      "wall_seconds": 22.038007736206055
+    }
+  ],
+  "selected_lambda": 100.0
+}

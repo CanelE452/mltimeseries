@@ -1,0 +1,112 @@
+{
+  "experiment_id": "OA-RESOLUTION-PILOT-v1",
+  "base_interval_minutes": 10,
+  "history_bins": 288,
+  "history_hours": 48,
+  "forecast_bins": 72,
+  "forecast_hours": 12,
+  "train_report_intervals_r": [
+    2,
+    4,
+    8
+  ],
+  "unseen_interpolation_r": [
+    3,
+    6
+  ],
+  "unseen_extrapolation_r": [
+    12
+  ],
+  "operations": [
+    "END_BIN",
+    "INTERVAL_MEAN"
+  ],
+  "periods": {
+    "jena": {
+      "start": "2023-01-01",
+      "end": "2025-01-01"
+    },
+    "uci": {
+      "start": "2007-01-01",
+      "end": "2009-01-01"
+    }
+  },
+  "period_selection_rule": "available from the official source, continuous two years, maximum coverage of the selected channels, ties to the earlier window; forecast accuracy plays no part",
+  "channels": {
+    "jena": [
+      "temperature",
+      "pressure",
+      "relative_humidity"
+    ],
+    "uci": [
+      "global_active_power",
+      "global_reactive_power",
+      "voltage",
+      "global_intensity"
+    ]
+  },
+  "split_fractions": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "scaling": "per channel, mean and population std over the train base bins only",
+  "arms": {
+    "R": "operator-aware reconstruction + base-grid forecaster",
+    "M": "observed tokens with centre-time metadata",
+    "O": "observed tokens with the interval-integrated time basis"
+  },
+  "fourier_k": 16,
+  "fourier_cycles_per_48h": "geometric, 1 to 128",
+  "query_basis": "centre basis on the 72 target base bins, identical for M and O",
+  "model": {
+    "d_model": 128,
+    "heads": 4,
+    "ffn": 256,
+    "dropout": 0.1,
+    "encoder_layers": 2,
+    "decoder": "1 cross-attention block, pre-norm"
+  },
+  "loss": "0.5 * MSE_10min + 0.5 * MSE_60min, each averaged over its own lead axis first",
+  "hourly_aggregation": "6-step block mean of the 72 ten-minute outputs, applied identically to predictions and targets",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "effective_batch_windows": 64,
+    "grad_clip": 1.0
+  },
+  "tier": {
+    "name": "FULL",
+    "max_updates": 5000,
+    "warmup": 250,
+    "validation_every": 500
+  },
+  "checkpoint_selection": "minimum validation primary loss over the TRAINING resolutions only (r = 2, 4, 8); unseen resolutions never enter model selection",
+  "model_seeds": [
+    2026090601,
+    2026090602
+  ],
+  "observation_schedule_seed": 2026090621,
+  "bootstrap_seed": 2026090699,
+  "bootstrap_draws": 1000,
+  "bootstrap_block_days": 7,
+  "evaluation_origin_stride_bins": 72,
+  "eligibility_rule": "every base bin of the 288-bin history and the 72-bin target must be a real measurement; the rule ignores r and the operation so the window set is identical across arms, operations and resolutions",
+  "lambda_candidates": [
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "lambda_selected": {
+    "jena": 100.0,
+    "uci": 100.0
+  },
+  "go_no_go": {
+    "interp_O_vs_M_macro_min": 1.0,
+    "interp_O_vs_R_macro_min": 0.5,
+    "seen_O_vs_M_macro_min": -0.5
+  },
+  "core_fits": 12
+}

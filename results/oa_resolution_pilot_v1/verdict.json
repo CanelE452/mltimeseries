@@ -1,0 +1,81 @@
+{
+  "scientific_decision": "INCONCLUSIVE",
+  "checks": {
+    "1_interp_O_vs_M_macro_ge_1pct": false,
+    "2_both_datasets_positive": false,
+    "3_both_seeds_positive": false,
+    "4_bootstrap_lower95_gt_0": false,
+    "5_interp_O_vs_R_macro_ge_0p5pct": true,
+    "6_seen_O_vs_M_macro_ge_minus0p5pct": true
+  },
+  "fallback_clause_inputs": {
+    "O_matches_M_within_1pct": true,
+    "M_beats_R_significantly": false,
+    "R_at_least_as_good_as_M": false,
+    "M_vs_R_bootstrap": {
+      "arm_a": "M",
+      "arm_b": "R",
+      "resolutions": [
+        3,
+        6
+      ],
+      "draws": 1000,
+      "block_days": 7,
+      "origins_per_block": 14,
+      "effective_blocks_min_over_datasets": 22,
+      "low_effective_time_blocks": false,
+      "mean": 0.587668896809465,
+      "lower95": -0.6210446126277375,
+      "upper95": 1.719698738553016
+    }
+  },
+  "primary_O_vs_M_unseen_interpolation_macro_pct": -0.04869559543887736,
+  "O_vs_R_unseen_interpolation_macro_pct": 0.5735364682472793,
+  "M_vs_R_unseen_interpolation_macro_pct": 0.6236991874866495,
+  "seen_O_vs_M_macro_pct": -0.181713255589816,
+  "per_seed_macro_O_vs_M": {
+    "2026090601": -0.300115606031133,
+    "2026090602": 0.2020593487196659
+  },
+  "per_dataset_macro_O_vs_M": {
+    "jena": -0.1390392765831694,
+    "uci": 0.04164808570541467
+  },
+  "bootstrap": {
+    "arm_a": "O",
+    "arm_b": "M",
+    "resolutions": [
+      3,
+      6
+    ],
+    "draws": 1000,
+    "block_days": 7,
+    "origins_per_block": 14,
+    "effective_blocks_min_over_datasets": 22,
+    "low_effective_time_blocks": false,
+    "mean": -0.05442376761547056,
+    "lower95": -0.2792679731531285,
+    "upper95": 0.17461400619842746
+  },
+  "thresholds": {
+    "interp_O_vs_M_macro_min": 1.0,
+    "interp_O_vs_R_macro_min": 0.5,
+    "seen_O_vs_M_macro_min": -0.5
+  },
+  "execution_status": "COMPLETE",
+  "notes": [],
+  "resources": {
+    "rss_cap_bytes": 10737418240,
+    "available_floor_bytes": 6823056179,
+    "gpu_allocated_cap_bytes": 10302468915,
+    "peak_process_tree_rss_bytes": 1510461440,
+    "peak_gpu_allocated_bytes": 379337728,
+    "min_available_ram_bytes": 15779069952,
+    "blocked_resource": false
+  },
+  "wall_seconds_total": 863.4,
+  "superseded_decision": {
+    "token": "METADATA_MODEL_SUFFICIENT",
+    "why_changed": "The first gate implementation read the section 35 clause 'M is significantly better than R' as a point-estimate macro threshold and dropped the significance requirement. The paired bootstrap puts the M vs R unseen-interpolation interval across zero and the sign flips between the two datasets, so that clause is not satisfied and the outcome falls through to INCONCLUSIVE. No threshold was lowered and no model was added; the correction makes the verdict weaker, not stronger. Only the scoring stage was rerun -- the fits, the frozen keys and the per-key errors are untouched."
+  }
+}

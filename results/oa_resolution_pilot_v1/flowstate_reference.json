@@ -1,0 +1,436 @@
+{
+  "model": "ibm-research/flowstate",
+  "revision": "r1.1",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/ibm-research/flowstate",
+  "package": "tsfm_public (ibm-granite/granite-tsfm, gift-flowstate branch)",
+  "scale_factor_definition": "base seasonality 24 divided by the number of steps in the data's daily cycle, exactly as the model card states",
+  "information_condition": "zero-shot pretrained. R / M / O are trained on the target data. Not a matched training budget, and not called one.",
+  "environment": {
+    "python": "3.11.16",
+    "torch": "2.11.0+cu128",
+    "note": "the official package pins python<3.13 and transformers<4.51, so it runs in a separate interpreter from the core experiment"
+  },
+  "datasets": {
+    "jena": {
+      "n_test_keys": 876,
+      "channels": [
+        "temperature",
+        "pressure",
+        "relative_humidity"
+      ],
+      "resampled": {
+        "variant": "FLOWSTATE_RESAMPLED",
+        "scale_factor": 0.16666666666666666,
+        "reconstruction_lambda": 100.0,
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.16312529343992607,
+            "mse60": 0.16060700046417375,
+            "primary": 0.16186614695204993
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "mse10": 0.1649314404622605,
+            "mse60": 0.16241597584937806,
+            "primary": 0.16367370815581928
+          },
+          {
+            "operation": "END_BIN",
+            "r": 4,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.1684958401335973,
+            "mse60": 0.16597456746994088,
+            "primary": 0.1672352038017691
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "mse10": 0.17251651036684915,
+            "mse60": 0.16999998484572318,
+            "primary": 0.17125824760628616
+          },
+          {
+            "operation": "END_BIN",
+            "r": 8,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.17365089834552921,
+            "mse60": 0.1711496593745332,
+            "primary": 0.1724002788600312
+          },
+          {
+            "operation": "END_BIN",
+            "r": 12,
+            "role": "UNSEEN_EXTRAPOLATION",
+            "n_keys": 876,
+            "mse10": 0.1929583484179353,
+            "mse60": 0.19038459372847047,
+            "primary": 0.19167147107320287
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.1657726487068281,
+            "mse60": 0.16325440635419872,
+            "primary": 0.1645135275305134
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "mse10": 0.1736221003205809,
+            "mse60": 0.17109291303103372,
+            "primary": 0.1723575066758073
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.1819521210509348,
+            "mse60": 0.17940765646494686,
+            "primary": 0.18067988875794083
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "mse10": 0.2021040110827581,
+            "mse60": 0.19952522674107662,
+            "primary": 0.20081461891191738
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "role": "SEEN",
+            "n_keys": 876,
+            "mse10": 0.22571653644788212,
+            "mse60": 0.2230943065800079,
+            "primary": 0.224405421513945
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "role": "UNSEEN_EXTRAPOLATION",
+            "n_keys": 876,
+            "mse10": 0.2730753231266318,
+            "mse60": 0.27039913608603283,
+            "primary": 0.2717372296063323
+          }
+        ]
+      },
+      "native_rate": {
+        "variant": "FLOWSTATE_NATIVE_RATE",
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.1541497516849814
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 0.5,
+            "mse60": 0.15505818226566054
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 1.0,
+            "mse60": 0.15493141679458966
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.15426560732871974
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 0.5,
+            "mse60": 0.15683890586574328
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 1.0,
+            "mse60": 0.165905884956116
+          }
+        ],
+        "not_evaluated": [
+          {
+            "operation": "END_BIN",
+            "r": 4,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 8,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 12,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          }
+        ]
+      }
+    },
+    "uci": {
+      "n_test_keys": 1032,
+      "channels": [
+        "global_active_power",
+        "global_reactive_power",
+        "voltage",
+        "global_intensity"
+      ],
+      "resampled": {
+        "variant": "FLOWSTATE_RESAMPLED",
+        "scale_factor": 0.16666666666666666,
+        "reconstruction_lambda": 100.0,
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.6752802262934603,
+            "mse60": 0.4380081198936285,
+            "primary": 0.5566441730935444
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "mse10": 0.7102287018945975,
+            "mse60": 0.47245207960291424,
+            "primary": 0.5913403907487559
+          },
+          {
+            "operation": "END_BIN",
+            "r": 4,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.7680822287419046,
+            "mse60": 0.5294827412265216,
+            "primary": 0.6487824849842131
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "mse10": 0.8633711065432822,
+            "mse60": 0.623916601949884,
+            "primary": 0.7436438542465831
+          },
+          {
+            "operation": "END_BIN",
+            "r": 8,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.9269304127656213,
+            "mse60": 0.688008213690085,
+            "primary": 0.8074693132278532
+          },
+          {
+            "operation": "END_BIN",
+            "r": 12,
+            "role": "UNSEEN_EXTRAPOLATION",
+            "n_keys": 1032,
+            "mse10": 1.180713527424391,
+            "mse60": 0.9399724588837735,
+            "primary": 1.0603429931540822
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.6746604719827342,
+            "mse60": 0.4376654116682304,
+            "primary": 0.5561629418254823
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "mse10": 0.6996227133181668,
+            "mse60": 0.4626039146452911,
+            "primary": 0.5811133139817289
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.7135495991669885,
+            "mse60": 0.47656009964240614,
+            "primary": 0.5950548494046973
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "mse10": 0.7444080751995708,
+            "mse60": 0.507167426190635,
+            "primary": 0.6257877506951028
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "mse10": 0.7696903934774473,
+            "mse60": 0.5325006828751675,
+            "primary": 0.6510955381763074
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "role": "UNSEEN_EXTRAPOLATION",
+            "n_keys": 1032,
+            "mse10": 0.8217434559681619,
+            "mse60": 0.5841794254243836,
+            "primary": 0.7029614406962728
+          }
+        ]
+      },
+      "native_rate": {
+        "variant": "FLOWSTATE_NATIVE_RATE",
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.35535261335298995
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 0.5,
+            "mse60": 0.34919973353082817
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 1.0,
+            "mse60": 0.3756118079488592
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.3514417243558307
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 0.5,
+            "mse60": 0.34087100139884063
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 1.0,
+            "mse60": 0.33501389876816623
+          }
+        ],
+        "not_evaluated": [
+          {
+            "operation": "END_BIN",
+            "r": 4,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 8,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 12,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 4,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 8,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 12,
+            "reason": "the native output grid does not tile the hour, so the 60-minute metric would need an upsampler with no official definition"
+          }
+        ]
+      }
+    }
+  },
+  "status": "OK",
+  "n_parameters": 18524928,
+  "wall_seconds": 73.8
+}

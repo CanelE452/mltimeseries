@@ -1,0 +1,244 @@
+{
+  "O_vs_M_unseen_interpolation": {
+    "arm_a": "O",
+    "arm_b": "M",
+    "resolutions": [
+      3,
+      6
+    ],
+    "draws": 1000,
+    "block_days": 7,
+    "origins_per_block": 14,
+    "effective_blocks_min_over_datasets": 22,
+    "low_effective_time_blocks": false,
+    "mean": -0.05442376761547056,
+    "lower95": -0.2792679731531285,
+    "upper95": 0.17461400619842746
+  },
+  "O_vs_R_unseen_interpolation": {
+    "arm_a": "O",
+    "arm_b": "R",
+    "resolutions": [
+      3,
+      6
+    ],
+    "draws": 1000,
+    "block_days": 7,
+    "origins_per_block": 14,
+    "effective_blocks_min_over_datasets": 22,
+    "low_effective_time_blocks": false,
+    "mean": 0.5317799062334414,
+    "lower95": -0.7881975409922561,
+    "upper95": 1.7356783901602726
+  },
+  "supplementary_post_hoc": {
+    "note": "Added after the primary numbers were in, to make the dataset-level disagreement and the word 'significantly' in the METADATA_MODEL_SUFFICIENT definition checkable. The pre-registered gate and its token were NOT recomputed or changed.",
+    "intervals": {
+      "M_vs_R_unseen_interpolation_all": {
+        "arm_a": "M",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 0.587668896809465,
+        "lower95": -0.6210446126277375,
+        "upper95": 1.719698738553016
+      },
+      "M_vs_R_unseen_interpolation_jena": {
+        "arm_a": "M",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": -1.1365162783493263,
+        "lower95": -3.447300360861707,
+        "upper95": 0.8583462757646999
+      },
+      "M_vs_R_unseen_interpolation_uci": {
+        "arm_a": "M",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 2.3391616663165022,
+        "lower95": 1.1585068667900562,
+        "upper95": 3.506050364557536
+      },
+      "O_vs_R_unseen_interpolation_all": {
+        "arm_a": "O",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 0.5317799062334414,
+        "lower95": -0.7881975409922618,
+        "upper95": 1.7356783901602713
+      },
+      "O_vs_R_unseen_interpolation_jena": {
+        "arm_a": "O",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": -1.279516528040952,
+        "lower95": -3.668209031586389,
+        "upper95": 0.8358838260505704
+      },
+      "O_vs_R_unseen_interpolation_uci": {
+        "arm_a": "O",
+        "arm_b": "R",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 2.377580003164096,
+        "lower95": 1.2013249648821678,
+        "upper95": 3.530320371332166
+      },
+      "O_vs_M_unseen_interpolation_all": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": -0.054423767615470166,
+        "lower95": -0.27926797315312846,
+        "upper95": 0.17461400619843423
+      },
+      "O_vs_M_unseen_interpolation_jena": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": -0.14146455143079675,
+        "lower95": -0.528709980095201,
+        "upper95": 0.2573150586351531
+      },
+      "O_vs_M_unseen_interpolation_uci": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          3,
+          6
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 0.039688349782176155,
+        "lower95": -0.14863677513466517,
+        "upper95": 0.20325018405175505
+      },
+      "O_vs_M_unseen_extrapolation_all": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          12
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 1.7968433323423034,
+        "lower95": 1.193016946884437,
+        "upper95": 2.4301668210210967
+      },
+      "O_vs_M_unseen_extrapolation_jena": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          12
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 3.542008778528346,
+        "lower95": 2.415540511085345,
+        "upper95": 4.74023865962767
+      },
+      "O_vs_M_unseen_extrapolation_uci": {
+        "arm_a": "O",
+        "arm_b": "M",
+        "resolutions": [
+          12
+        ],
+        "draws": 1000,
+        "block_days": 7,
+        "origins_per_block": 14,
+        "effective_blocks_min_over_datasets": 22,
+        "low_effective_time_blocks": false,
+        "mean": 0.04886423369818892,
+        "lower95": -0.3178756091023797,
+        "upper95": 0.38085844189146784
+      }
+    }
+  },
+  "M_vs_R_unseen_interpolation": {
+    "arm_a": "M",
+    "arm_b": "R",
+    "resolutions": [
+      3,
+      6
+    ],
+    "draws": 1000,
+    "block_days": 7,
+    "origins_per_block": 14,
+    "effective_blocks_min_over_datasets": 22,
+    "low_effective_time_blocks": false,
+    "mean": 0.587668896809465,
+    "lower95": -0.6210446126277375,
+    "upper95": 1.719698738553016
+  }
+}

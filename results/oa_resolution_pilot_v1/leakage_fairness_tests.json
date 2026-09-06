@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "summary": "15 passed, 3 warnings in 4.24s",
+  "seconds": 5.3,
+  "status": "PASS",
+  "covers": [
+    "L01 train-only scaler",
+    "L02 lambda screening reads validation only",
+    "L03 target values never reach the observations",
+    "L04 no window crosses the origin",
+    "L05 training origins stay inside train",
+    "L06/L07 the key set cannot depend on arm, operation or r",
+    "L08 aggregation joins on keys not row order",
+    "F01 one schedule per (dataset, seed) across arms",
+    "F01 balanced condition cycle",
+    "F05 one checkpoint per fit",
+    "F06 per-seed rows preserved",
+    "F02/F03/F04 M and O differ only in the observation time basis"
+  ],
+  "note": "written after the core fits; the gating suite that ran before the fits is operator_unit_tests.json"
+}

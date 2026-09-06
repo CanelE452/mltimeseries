@@ -1,0 +1,11 @@
+{
+  "chronos_2": {
+    "status": "CHRONOS_REFERENCE_SKIPPED_TIMEBOX",
+    "detail": "ModuleNotFoundError: No module named 'chronos'",
+    "rule": "run only if already installed and usable within 15 minutes on the same frozen key subgrid; no new dependency debugging"
+  },
+  "tirex_2": {
+    "status": "NOT_REQUIRED",
+    "detail": "not a required reference for this pilot; no environment time spent"
+  }
+}

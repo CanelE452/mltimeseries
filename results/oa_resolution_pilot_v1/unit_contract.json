@@ -1,0 +1,74 @@
+{
+  "jena/R/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.138927698135376,
+    "relative_prediction_difference": 0.0
+  },
+  "jena/M/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.0567290782928467,
+    "relative_prediction_difference": 0.0
+  },
+  "jena/O/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.0863332748413086,
+    "relative_prediction_difference": 0.0
+  },
+  "jena/R/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.0403831005096436,
+    "relative_prediction_difference": 0.0
+  },
+  "jena/M/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.0147159099578857,
+    "relative_prediction_difference": 0.0
+  },
+  "jena/O/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 3.0300307273864746,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/R/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.1529455184936523,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/M/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.295245885848999,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/O/2026090601": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.3009345531463623,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/R/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.463667631149292,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/M/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.532860517501831,
+    "relative_prediction_difference": 0.0
+  },
+  "uci/O/2026090602": {
+    "max_abs_representation_difference": 0.0,
+    "max_abs_prediction_difference": 0.0,
+    "prediction_scale": 2.5922789573669434,
+    "relative_prediction_difference": 0.0
+  }
+}

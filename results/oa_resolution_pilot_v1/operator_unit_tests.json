@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "summary": "130 passed, 3 warnings in 8.85s",
+  "seconds": 9.6,
+  "status": "PASS",
+  "stdout_tail": "........................................................................ [ 55%]\n..........................................................               [100%]\n============================== warnings summary ===============================\ntests/oa_resolution_pilot_v1/test_operators.py::test_F03_M_and_O_have_identical_parameter_counts\ntests/oa_resolution_pilot_v1/test_operators.py::test_F02_M_and_O_start_byte_identical_under_one_seed\ntests/oa_resolution_pilot_v1/test_operators.py::test_F04_the_integrated_basis_carries_no_trainable_parameter\n  E:\\CODING\\proj\\mltimeseries\\experiments\\oa_resolution_pilot_v1\\model.py:56: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n    return nn.TransformerEncoder(layer, num_layers=N_ENCODER_LAYERS)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n130 passed, 3 warnings in 8.85s"
+}
