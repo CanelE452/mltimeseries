@@ -26,6 +26,11 @@ checkpoints/
 *.ckpt
 *.safetensors
 *.npz
+
+# The blanket *.npz rule above is for model-sized arrays. The per-example loss
+# archives are 2 MB of scores and keys, and an outside reader cannot recompute
+# the effects or regenerate the bootstrap without them.
+!results/**/per_example_losses.npz
 *.parquet
 
 # Credentials
