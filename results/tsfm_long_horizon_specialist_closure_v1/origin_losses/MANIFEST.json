@@ -1,0 +1,711 @@
+{
+  "description": "Per-origin scaled quantile losses for every comparator on every task. Arrays: origin_loss (float32), origin_window (int16), origin_key. No target values, no covariates, no raw benchmark data.",
+  "n_files": 176,
+  "total_bytes": 6629185,
+  "files": {
+    "origins__COMPONENT_DeepAR__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "975ba9eb1c7ad63993c1c4b553aadf045c749d5b908c39b78cb30cca27e194b2",
+      "bytes": 2039
+    },
+    "origins__COMPONENT_DeepAR__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "1446f047744ba1e1edf71f279e3d22de8833451329604c5697df45d1c20e13c3",
+      "bytes": 2048
+    },
+    "origins__COMPONENT_DeepAR__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "ee76020f597d02f5169204a05617252bf0e05a2aa2e0040fb4cda846ab94da0e",
+      "bytes": 1063
+    },
+    "origins__COMPONENT_DeepAR__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "fc990f2c24da83aab91459fa4a5fd0f5caabfbf08e0283a394069b4ec18a37fd",
+      "bytes": 1062
+    },
+    "origins__COMPONENT_DeepAR__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "ae6732f2372db79ae7ee21de05af3a48777aff7d61528cff0fb6ff55ac376c73",
+      "bytes": 61824
+    },
+    "origins__COMPONENT_DeepAR__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "565343a381b3d6faf3e8b6ee059c8238e370658f8c3bd153fb6ed28269da4e73",
+      "bytes": 61978
+    },
+    "origins__COMPONENT_DeepAR__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "8871ae2a210e07d51b6af47a3e597be0ef81d5e4c4e77da03d424900889bef04",
+      "bytes": 17579
+    },
+    "origins__COMPONENT_DeepAR__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "290bb2cefe8e5ad9b0f23f592733244f5a63ee367b9723c46942414d08fb3229",
+      "bytes": 17674
+    },
+    "origins__COMPONENT_DeepAR__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "b74731b6f8388e4b856ac66baae7a56b052b4660e0acc7ef804ee4bca982f27b",
+      "bytes": 19035
+    },
+    "origins__COMPONENT_DeepAR__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "3e4bf65a6dcc8128d7441c9a85c5814a2e3261a89747187d348d33e3758baf96",
+      "bytes": 19150
+    },
+    "origins__COMPONENT_DeepAR__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "7475dc0c8a37201545059e992dc861a990b2cfc65de390da08723c7a96ae96de",
+      "bytes": 178221
+    },
+    "origins__COMPONENT_DeepAR__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "65bc4497580347d0b95947581c0513e1972f3b7db0810659f55a6a97081aa675",
+      "bytes": 178230
+    },
+    "origins__COMPONENT_DeepAR__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "d276c5773d86e0b5d267e8ff4a22609036e399a9519791c5f5d9930c2173ef50",
+      "bytes": 52512
+    },
+    "origins__COMPONENT_DeepAR__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "6e9834f2b2a6b5e46874b289c4781848bf4f7fec08c3b3997135f14ed3e0c694",
+      "bytes": 52568
+    },
+    "origins__COMPONENT_DeepAR__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "95346f421a946060ed6fa676c44389c3e066c77f13822059aa8b66bc5f3e3c7f",
+      "bytes": 7991
+    },
+    "origins__COMPONENT_DeepAR__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "cad7209cb5fe508d186c752b12d19b8f412f32a7e1e511eb3a6d0a35ab6943ed",
+      "bytes": 8052
+    },
+    "origins__COMPONENT_DeepAR__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "904b44dbc851dc6dab64fc2af3448026ebcd0ba88d420092d6721b9ee2514912",
+      "bytes": 3375
+    },
+    "origins__COMPONENT_DeepAR__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "77cc8b02554666e1489625f641dabafdae8bf849cf741a375495d95a9109d036",
+      "bytes": 3377
+    },
+    "origins__COMPONENT_DeepAR__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "72f09bf5039a6c5673a325a3d9532990c35de56e178779a562e08d87132ab4a3",
+      "bytes": 13119
+    },
+    "origins__COMPONENT_DeepAR__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "ea196b0248e9957ffcfca4e35f7e4bae1fdf23df136431a01a9969af38920a60",
+      "bytes": 13114
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "4f4b781347724050afaafdbbed45b42f1755363f1b04b5da5ce16d9f15a67764",
+      "bytes": 2036
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "4f4b781347724050afaafdbbed45b42f1755363f1b04b5da5ce16d9f15a67764",
+      "bytes": 2036
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "eb10a1ba3b60b778c9dcbd616ee65ed8db3f90636f94941ddc1dc7863feff113",
+      "bytes": 1063
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "eb10a1ba3b60b778c9dcbd616ee65ed8db3f90636f94941ddc1dc7863feff113",
+      "bytes": 1063
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "f6d30f7b8dae17aa8668da4d5a85709b43a8f5b5ff22eb6d0e4ff3306ac1a63f",
+      "bytes": 61621
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "059439f4eeba3bd46e87ef8654fda0a701e7b9b41cfe3f3b2959c2a6246fa50f",
+      "bytes": 61669
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "8afcbc9f4d07c4211f177f35580a9ffd5a1621739a045b11fe792291e9c613e7",
+      "bytes": 17550
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "8afcbc9f4d07c4211f177f35580a9ffd5a1621739a045b11fe792291e9c613e7",
+      "bytes": 17550
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "f880dbdc8b51f1067a1e8e92ce495dd5b7226f585b8bd6a57db9fddeb6d1da3e",
+      "bytes": 19040
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "f880dbdc8b51f1067a1e8e92ce495dd5b7226f585b8bd6a57db9fddeb6d1da3e",
+      "bytes": 19040
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "981ac16da9ccb7a84b791868146a3ed6894417e1bc4f66e334f44b5a421a3ebe",
+      "bytes": 178228
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "df1d760b03427ea9831fab60ee1f2cf312bc2b4aef1e1ff97fb32d3e35609c80",
+      "bytes": 178201
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "168abfb8dc129b47288e02ab4270d62a1fd4e1af6205d174a432b18920ae8ed2",
+      "bytes": 52496
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "168abfb8dc129b47288e02ab4270d62a1fd4e1af6205d174a432b18920ae8ed2",
+      "bytes": 52496
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "dd555dddd5085b0a71dbf7d179ddb671aa386b497a1e0d754133fa207b8f9666",
+      "bytes": 7976
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "dd555dddd5085b0a71dbf7d179ddb671aa386b497a1e0d754133fa207b8f9666",
+      "bytes": 7976
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "e60d803432f10777ef8e5636f53100cf67d5d2cc9da1a229915de429881d2f8c",
+      "bytes": 3368
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "e60d803432f10777ef8e5636f53100cf67d5d2cc9da1a229915de429881d2f8c",
+      "bytes": 3368
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "1c8124725e93e1431bc36f2e7ebddef9b76dda24d06ed770d5dfcb352fd68d23",
+      "bytes": 13109
+    },
+    "origins__COMPONENT_DirectTabular__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "1c8124725e93e1431bc36f2e7ebddef9b76dda24d06ed770d5dfcb352fd68d23",
+      "bytes": 13109
+    },
+    "origins__COMPONENT_DLinear__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "9c303b1d32378eb6bd140bd4e129daa3fb0343c778c09951b0c8c6eb14f169e8",
+      "bytes": 2041
+    },
+    "origins__COMPONENT_DLinear__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "e15c38f8165f9d8b6c8b7ed13760dcaeae54a8a40dcb6537ec0d1cea545164a2",
+      "bytes": 2045
+    },
+    "origins__COMPONENT_DLinear__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "7a0a0c95d84a2d71072616fc6e60c08497486c4c4632d265efce4ae7da257851",
+      "bytes": 1064
+    },
+    "origins__COMPONENT_DLinear__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "08f3c358cdd1cc16966dc1c4a96b2f632bdc8e7763c340ec617103a6d4351daa",
+      "bytes": 1062
+    },
+    "origins__COMPONENT_DLinear__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "66c4b4ae66d8d822a73677a57deb98c4951d237abf7ba6b06acd7f87d05ea984",
+      "bytes": 61558
+    },
+    "origins__COMPONENT_DLinear__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "5e72443494b4b4466355570ce685ea2c95e2a593b287b086965443b54646da81",
+      "bytes": 61669
+    },
+    "origins__COMPONENT_DLinear__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "2ca74763e631358f141d7169310177ee8fdb5f34c21b987bfb26e3a7cc9550ce",
+      "bytes": 17671
+    },
+    "origins__COMPONENT_DLinear__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "7e8a1eb8684cbd0d24b9c30771ca5b4c4044f7aa0b1d6dd4fe6a24879827b479",
+      "bytes": 17551
+    },
+    "origins__COMPONENT_DLinear__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "5f44f5585b5a8eb1a007327380d854e21cb122e2cb340187a8aff25e8625c3f9",
+      "bytes": 19292
+    },
+    "origins__COMPONENT_DLinear__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "02a303073bc145b6f802faaef64be29f7a42ed07cf5be5723b443d54e8ef68da",
+      "bytes": 19282
+    },
+    "origins__COMPONENT_DLinear__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "2931f8be3a9d434a61479c35c850be6fb83a82b5718e23e3d8a32dfd7bd0d81c",
+      "bytes": 178121
+    },
+    "origins__COMPONENT_DLinear__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "e4493779f3c9b79ca799105d8049446b749d07c9c6ae55de43f33cb611c73b1a",
+      "bytes": 178166
+    },
+    "origins__COMPONENT_DLinear__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "7dbbce561f9335303763ead0843fda9edce161fc0ddf69c6c4faf740367207a2",
+      "bytes": 52505
+    },
+    "origins__COMPONENT_DLinear__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "0e933ce51d2eec34b8bba1abe0341b6e42f77b0c0f4d33408b484f0ca385076a",
+      "bytes": 52525
+    },
+    "origins__COMPONENT_DLinear__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "6f97f339accdf60355d1894c6244e1ad359e12102daae62479b9bd6fce5c205c",
+      "bytes": 8056
+    },
+    "origins__COMPONENT_DLinear__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "8d82b51d03776a0c868fad51b12e41e2aa0ceda039db7447072149a4a1545ea0",
+      "bytes": 8053
+    },
+    "origins__COMPONENT_DLinear__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "6a5c2815be716523f7769cf317f3a94aa9d117453f18a3383b55b4d3d441b417",
+      "bytes": 3384
+    },
+    "origins__COMPONENT_DLinear__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "15aa9b5dcf170b768cacdf2f9e4e6cad3de58580a5c1f9a6a0626fae52d714dc",
+      "bytes": 3381
+    },
+    "origins__COMPONENT_DLinear__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "5421368948132f625f8644708c5ea5d3efdf4c2ddbc4901ade4f89736f6a176f",
+      "bytes": 13087
+    },
+    "origins__COMPONENT_DLinear__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "2c6e710a47ff0f16fcdf7affe652a62db66d09d74b850e15ac85db9935d231c7",
+      "bytes": 13096
+    },
+    "origins__COMPONENT_PatchTST__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "59a035e47dd84742c3956f5f7bdb21bd395ec7ad2d1c816a11468911f0eb66c1",
+      "bytes": 2031
+    },
+    "origins__COMPONENT_PatchTST__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "301312badaf8219cb0dd8a54b67b1ae76c94aa93283d635cf8d9e43bfee4ad87",
+      "bytes": 2038
+    },
+    "origins__COMPONENT_PatchTST__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "b3865957da2c28562b6d8c9ca39bf47b09c65ffb857f3526cb0b18126af17f91",
+      "bytes": 1061
+    },
+    "origins__COMPONENT_PatchTST__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "da633faf6346d44f9fcfa442455f31845d50860a44806a5ebd7942bc63fc4660",
+      "bytes": 1063
+    },
+    "origins__COMPONENT_PatchTST__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "6f5dbfa4b0aae11a195a2c410a26567f006a7d266d843ed861952a280c30f459",
+      "bytes": 61792
+    },
+    "origins__COMPONENT_PatchTST__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "c5a9d2fdc352b0c4958eae039254f5d54fd35dfae5a2b83a6aaac6ab843e7991",
+      "bytes": 61764
+    },
+    "origins__COMPONENT_PatchTST__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "5535eee3810694278b9748324b2cc67382b03b1330a876a187fe5a6cde2a1745",
+      "bytes": 17561
+    },
+    "origins__COMPONENT_PatchTST__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "ce2a48c2fc81dea0bac5af5f56818c4f4c9d981a988a81a914174658baa0c5b1",
+      "bytes": 17483
+    },
+    "origins__COMPONENT_PatchTST__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "e9ce6c218bb9faa53ef761d6f3904ce701e2dc8a1714e1815ca9823e532c74a4",
+      "bytes": 19048
+    },
+    "origins__COMPONENT_PatchTST__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "59ea7695214db1f5d8fab6f796094934c2dc74303fa05c764847ebd7cabed1d1",
+      "bytes": 19111
+    },
+    "origins__COMPONENT_PatchTST__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "291b03c0bba0b02c08736ad59e56a52310a155b5acf8338645f79f5171f0f962",
+      "bytes": 178183
+    },
+    "origins__COMPONENT_PatchTST__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "b49448c36d3f546ea20e4d2b01a6f3197f8d8f1cc479452a9c0142e290c3bdd4",
+      "bytes": 178165
+    },
+    "origins__COMPONENT_PatchTST__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "85aa57a8d14f308170fafc0010020cd21ee3d4d25d5554f12fe428e91ea4d5bf",
+      "bytes": 52564
+    },
+    "origins__COMPONENT_PatchTST__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "c2ad2229de9b243661e8c3d03a42c8dc4e8fad190de5ff73abcab09a01177664",
+      "bytes": 52555
+    },
+    "origins__COMPONENT_PatchTST__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "d2270463d34f6f8749c5ec7a0b2d3bdf480e7be4fc3c0ae03aac6d5165a1184b",
+      "bytes": 8010
+    },
+    "origins__COMPONENT_PatchTST__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "1c948f88360ffae65b6ca2d18f6ea54720b8dc01fd0565e25d994701ade1324b",
+      "bytes": 8000
+    },
+    "origins__COMPONENT_PatchTST__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "736aa6e22bf2d460e0edc247a14cc84e9b5bf2f6b25f8b88b27c001eab352722",
+      "bytes": 3369
+    },
+    "origins__COMPONENT_PatchTST__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "e3a1e294dccb9b4d60154f0bbbcc8dac8ed2c70bf41a5dc2b8d0977939b72308",
+      "bytes": 3378
+    },
+    "origins__COMPONENT_PatchTST__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "c1debb6aca41d5f59e0bd82c07ae782b410ae27fa70c7da82a6a34fafad91e06",
+      "bytes": 13074
+    },
+    "origins__COMPONENT_PatchTST__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "8ec9023927e471bec6e9aa1c2d18f0bd3fb85cf956fbcaf4420bf90109130a50",
+      "bytes": 13077
+    },
+    "origins__COMPONENT_TiDE__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "2e87042627b88499ea92c8f36f20cc2e5b1fd20b0d7c601d8c6492866d478caa",
+      "bytes": 2029
+    },
+    "origins__COMPONENT_TiDE__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "470573364c6652b7c7e33a21a7455f758bb0ea77ef2c325053e553f242f027d8",
+      "bytes": 2032
+    },
+    "origins__COMPONENT_TiDE__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "2ee5ce84cdb4398fd39235ea1430de5b03c956255f2366b0a444266e94e17ec2",
+      "bytes": 1062
+    },
+    "origins__COMPONENT_TiDE__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "7bfd17395acd2e964fbdebaae4228bd4f31fa2a3dc1f93d0a5a250a996576120",
+      "bytes": 1064
+    },
+    "origins__COMPONENT_TiDE__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "ff0370f69f201bddc61d8510fc08b47132c80dce10edeab01fd9ffe6e45719cc",
+      "bytes": 61785
+    },
+    "origins__COMPONENT_TiDE__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "54ef57e9179079c36d7e02d11e7820d7788ff4129cdb5858a00da6d263c2eabb",
+      "bytes": 61804
+    },
+    "origins__COMPONENT_TiDE__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "c0129be5bdb10e3faaf99996b2445c9cf655c5584f070d1afc90493c3730fe84",
+      "bytes": 17730
+    },
+    "origins__COMPONENT_TiDE__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "de63af42f6db4662c44169fd48934f256e27b5182b2b5d0bec58e21c0d6bdc63",
+      "bytes": 17547
+    },
+    "origins__COMPONENT_TiDE__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "7f59a19ab42c5eab12f7a190cff72eee8f88a021f27dfa3d69a6476e0f1a4bef",
+      "bytes": 19293
+    },
+    "origins__COMPONENT_TiDE__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "724b7207659444371e8b6c23b07ca9a213b0f1633b27e1dcd19f1a4a6e64d5c7",
+      "bytes": 19127
+    },
+    "origins__COMPONENT_TiDE__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "54c6d2d154683688731b6551e71513655cacfd8073dbe9994070866a58f55d4f",
+      "bytes": 177998
+    },
+    "origins__COMPONENT_TiDE__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "a3ff882101a3949b0fa1c92c98682d395a85893be20badaf15fbca4368cb1871",
+      "bytes": 178041
+    },
+    "origins__COMPONENT_TiDE__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "64f469d1115ea88b27a0d652b4ee1bd7136e983f0fb2ce88b46f5b4175892eb1",
+      "bytes": 52519
+    },
+    "origins__COMPONENT_TiDE__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "f014c7ea0c0aa98429cb9e40fd364ac3c1180013687c810190ebc597308a2be9",
+      "bytes": 52556
+    },
+    "origins__COMPONENT_TiDE__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "75a318af07cb383a580f23f4b4b8cfe2b1d030f8e8a9cea585429872e3c89994",
+      "bytes": 7988
+    },
+    "origins__COMPONENT_TiDE__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "bf114609a11dae0ea23e134041b4abed9cef70ed616a462137c68ea8da7e7a02",
+      "bytes": 7999
+    },
+    "origins__COMPONENT_TiDE__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "101bf6ecc72c51345603fbb22707c1f5c3150bc1524b4751a1d3b7eef2228891",
+      "bytes": 3364
+    },
+    "origins__COMPONENT_TiDE__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "8262b52d9b2ae269f4131ec9d16dcf39f2d1fec0ac378e3d8903bbdde2cfb032",
+      "bytes": 3363
+    },
+    "origins__COMPONENT_TiDE__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "8e06d2cad03cd5e81c2afe4e32b5f1060c72c9153de9837e194d3666fd32f19a",
+      "bytes": 13087
+    },
+    "origins__COMPONENT_TiDE__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "492fb65020c5dd37487d1e4d00e04c9b694f88a7813308fa6d19237ee54fd799",
+      "bytes": 13079
+    },
+    "origins__S_BEST__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "975ba9eb1c7ad63993c1c4b553aadf045c749d5b908c39b78cb30cca27e194b2",
+      "bytes": 2039
+    },
+    "origins__S_BEST__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "4f4b781347724050afaafdbbed45b42f1755363f1b04b5da5ce16d9f15a67764",
+      "bytes": 2036
+    },
+    "origins__S_BEST__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "2ee5ce84cdb4398fd39235ea1430de5b03c956255f2366b0a444266e94e17ec2",
+      "bytes": 1062
+    },
+    "origins__S_BEST__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "fc990f2c24da83aab91459fa4a5fd0f5caabfbf08e0283a394069b4ec18a37fd",
+      "bytes": 1062
+    },
+    "origins__S_BEST__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "f6d30f7b8dae17aa8668da4d5a85709b43a8f5b5ff22eb6d0e4ff3306ac1a63f",
+      "bytes": 61621
+    },
+    "origins__S_BEST__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "059439f4eeba3bd46e87ef8654fda0a701e7b9b41cfe3f3b2959c2a6246fa50f",
+      "bytes": 61669
+    },
+    "origins__S_BEST__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "8871ae2a210e07d51b6af47a3e597be0ef81d5e4c4e77da03d424900889bef04",
+      "bytes": 17579
+    },
+    "origins__S_BEST__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "ce2a48c2fc81dea0bac5af5f56818c4f4c9d981a988a81a914174658baa0c5b1",
+      "bytes": 17483
+    },
+    "origins__S_BEST__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "b74731b6f8388e4b856ac66baae7a56b052b4660e0acc7ef804ee4bca982f27b",
+      "bytes": 19035
+    },
+    "origins__S_BEST__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "f880dbdc8b51f1067a1e8e92ce495dd5b7226f585b8bd6a57db9fddeb6d1da3e",
+      "bytes": 19040
+    },
+    "origins__S_BEST__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "291b03c0bba0b02c08736ad59e56a52310a155b5acf8338645f79f5171f0f962",
+      "bytes": 178183
+    },
+    "origins__S_BEST__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "b49448c36d3f546ea20e4d2b01a6f3197f8d8f1cc479452a9c0142e290c3bdd4",
+      "bytes": 178165
+    },
+    "origins__S_BEST__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "64f469d1115ea88b27a0d652b4ee1bd7136e983f0fb2ce88b46f5b4175892eb1",
+      "bytes": 52519
+    },
+    "origins__S_BEST__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "f014c7ea0c0aa98429cb9e40fd364ac3c1180013687c810190ebc597308a2be9",
+      "bytes": 52556
+    },
+    "origins__S_BEST__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "95346f421a946060ed6fa676c44389c3e066c77f13822059aa8b66bc5f3e3c7f",
+      "bytes": 7991
+    },
+    "origins__S_BEST__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "bf114609a11dae0ea23e134041b4abed9cef70ed616a462137c68ea8da7e7a02",
+      "bytes": 7999
+    },
+    "origins__S_BEST__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "736aa6e22bf2d460e0edc247a14cc84e9b5bf2f6b25f8b88b27c001eab352722",
+      "bytes": 3369
+    },
+    "origins__S_BEST__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "77cc8b02554666e1489625f641dabafdae8bf849cf741a375495d95a9109d036",
+      "bytes": 3377
+    },
+    "origins__S_BEST__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "c1debb6aca41d5f59e0bd82c07ae782b410ae27fa70c7da82a6a34fafad91e06",
+      "bytes": 13074
+    },
+    "origins__S_BEST__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "8ec9023927e471bec6e9aa1c2d18f0bd3fb85cf956fbcaf4420bf90109130a50",
+      "bytes": 13077
+    },
+    "origins__S_ENSEMBLE__fevbench__australian_tourism__australian_tourism__seed2026090701.npz": {
+      "sha256": "6419511565d802c542f6880a82b9142d77c839ee840194f39177a497bbcf83b6",
+      "bytes": 2036
+    },
+    "origins__S_ENSEMBLE__fevbench__australian_tourism__australian_tourism__seed2026090702.npz": {
+      "sha256": "37a2704552988dcc0ef0f22147accf7152052f55a0d75526fc1ac1ff6ebf74ca",
+      "bytes": 2030
+    },
+    "origins__S_ENSEMBLE__fevbench__ETT_1D__ETT_1D__seed2026090701.npz": {
+      "sha256": "51048f20d22c9a74f6bd541e609007dee35c93217c5ec101d7328dcdbfea878c",
+      "bytes": 1062
+    },
+    "origins__S_ENSEMBLE__fevbench__ETT_1D__ETT_1D__seed2026090702.npz": {
+      "sha256": "f1cfa7f01e97afdfc995a9c7c478807d7c2af53e7fcacae718fc2b460e469620",
+      "bytes": 1064
+    },
+    "origins__S_ENSEMBLE__fevbench__hermes__hermes__seed2026090701.npz": {
+      "sha256": "683efbf749dc24b2c562ef348bbe19db260f2d41e72de0afcb459f3a7560f625",
+      "bytes": 61761
+    },
+    "origins__S_ENSEMBLE__fevbench__hermes__hermes__seed2026090702.npz": {
+      "sha256": "e6d5ec4af39e3dec21496871e483fbb32fa064e003ec312b511891be9ad2f6c6",
+      "bytes": 61751
+    },
+    "origins__S_ENSEMBLE__fevbench__hospital__hospital__seed2026090701.npz": {
+      "sha256": "0446b6aed695f792bb8f1133cef37f953745803450e0b17eadc6ecf7653994ba",
+      "bytes": 17567
+    },
+    "origins__S_ENSEMBLE__fevbench__hospital__hospital__seed2026090702.npz": {
+      "sha256": "2d9dcd29a0b0986ddd0faf49d42d89a3ea4e148e126eca3ac347ad8be407518e",
+      "bytes": 17538
+    },
+    "origins__S_ENSEMBLE__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090701.npz": {
+      "sha256": "698805124e4c54ccc1dfb690099365f2df463e5a29e402e5318ab890ae89e0a3",
+      "bytes": 18997
+    },
+    "origins__S_ENSEMBLE__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__seed2026090702.npz": {
+      "sha256": "ded24ecc4ece460bbac6d5a0fafa25a104a8d32f2bb9702b3456173aeec88b15",
+      "bytes": 19020
+    },
+    "origins__S_ENSEMBLE__fevbench__m5_1M__m5_1M__seed2026090701.npz": {
+      "sha256": "431dc754b4f5de8227703766b2266cbd7cf8e17004b93c93c6fc526ec8080511",
+      "bytes": 178263
+    },
+    "origins__S_ENSEMBLE__fevbench__m5_1M__m5_1M__seed2026090702.npz": {
+      "sha256": "9c1f272d339b35a9f62e69e64b8ebbeb1d3301ebe8804332206e942a98a37d75",
+      "bytes": 178252
+    },
+    "origins__S_ENSEMBLE__fevbench__restaurant__restaurant__seed2026090701.npz": {
+      "sha256": "8879f087868dfba8e82433d0201f5e29f4371f7617ab58a3ef47a3712e257e33",
+      "bytes": 52558
+    },
+    "origins__S_ENSEMBLE__fevbench__restaurant__restaurant__seed2026090702.npz": {
+      "sha256": "4c975be669a582d8965879cc445467659fc2fb6c7e16b5ed0b9363baa7d45074",
+      "bytes": 52596
+    },
+    "origins__S_ENSEMBLE__fevbench__solar_1D__solar_1D__seed2026090701.npz": {
+      "sha256": "8f275779fb514420e86dc24f52c62d3466cd34b7144ae7c598c851419253c82f",
+      "bytes": 8016
+    },
+    "origins__S_ENSEMBLE__fevbench__solar_1D__solar_1D__seed2026090702.npz": {
+      "sha256": "fb9dcab45b7a0e18aace0a2383b77d83a813572953c63db72c4f1a68afbcd176",
+      "bytes": 8047
+    },
+    "origins__S_ENSEMBLE__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090701.npz": {
+      "sha256": "27517e24ca9123beded0a8b8467c9a9ef7ab881f28686f34245bb4e6dc03ec0e",
+      "bytes": 3368
+    },
+    "origins__S_ENSEMBLE__fevbench__us_consumption_1Y__us_consumption_1Y__seed2026090702.npz": {
+      "sha256": "edee5267236bb0c4b836fbf9d615be01e8453d6296a3709b0f2d2961b24e501d",
+      "bytes": 3371
+    },
+    "origins__S_ENSEMBLE__fevbench__world_co2_emissions__world_co2_emissions__seed2026090701.npz": {
+      "sha256": "3e59b735d70d86889ef13e0e3917d55bccba12f9d9b20f76e2bb4f505ec850cc",
+      "bytes": 13109
+    },
+    "origins__S_ENSEMBLE__fevbench__world_co2_emissions__world_co2_emissions__seed2026090702.npz": {
+      "sha256": "ffac1122fe89e558d8377893148394fce30728305805c4572966a5f10c8ac434",
+      "bytes": 13120
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__hospital__hospital.npz": {
+      "sha256": "6b3f7ec8f4806d4302daa72866325120fbe1f5cd35553260a533e3f062751bcc",
+      "bytes": 17576
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "6bdb029b3a36a7da04b2ff75444c00a8141d537a4b0ff151c0d0ba2e72d65a57",
+      "bytes": 178166
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__restaurant__restaurant.npz": {
+      "sha256": "870b7e4259314fa7429a9e20b3e4b1e503daba3d04114e752ffa6591ebe5bd59",
+      "bytes": 52572
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "7a64e54901ad2dee7b8f0e92039aae4654c8aaad0186c99c6169d305f68d2b44",
+      "bytes": 8153
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "323b193b4a644b8bfcb06dd79ff36bdd6508dcfe275e78dc7029009645ccbc1b",
+      "bytes": 3373
+    },
+    "origins__TSFM_chronos-2-synth__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "428082c74cf0994d0ed6142e6edcb61b6d649feb9f3bd7f54a504c4ea02157d8",
+      "bytes": 13100
+    },
+    "origins__TSFM_chronos-2__fevbench__hospital__hospital.npz": {
+      "sha256": "454ca51763563d76107df262192dbb5312639b059b04f01426c97a286873d613",
+      "bytes": 17555
+    },
+    "origins__TSFM_chronos-2__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "16a472de137fca7195523c11e59ffdad4b34dd844a611c05d8349ba73af7a444",
+      "bytes": 178155
+    },
+    "origins__TSFM_chronos-2__fevbench__restaurant__restaurant.npz": {
+      "sha256": "66ae3e04b08befdbdbbc1fefbbee0cd0cfd9308ccebb667879a2860250e31a05",
+      "bytes": 52581
+    },
+    "origins__TSFM_chronos-2__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "d49dcc5d7ae4699938069256b0af18c448d9e2d8e7e903c9fe7a7a586e204363",
+      "bytes": 8148
+    },
+    "origins__TSFM_chronos-2__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "3085e9f5c0ec26019d5e4829c5434c970588dc11151daec4197a9d7d2630e1aa",
+      "bytes": 3370
+    },
+    "origins__TSFM_chronos-2__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "a1b89e826f6ad81c8b793cf553cea94114b4e86c5f6554c0118727e5cb0d583f",
+      "bytes": 13090
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__hospital__hospital.npz": {
+      "sha256": "97949d580b874cc450580188258b8b7e3c28c479ce23c0954dc342e08405044c",
+      "bytes": 17478
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "621d9d98a589f1a0bb798118e4ad1553086f9063e0089de14183c1a468be09b6",
+      "bytes": 177974
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__restaurant__restaurant.npz": {
+      "sha256": "5a67e73f93c16555b6808d1ecab8fe2e5d5a05d454f7b1feff8ca543c8dd7c7e",
+      "bytes": 52280
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "da12e3bdb5d10b8b1beb5f8fcb2a67468a48e8ff4938903d3afe72d8c1b054f2",
+      "bytes": 8144
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "43c7b5f9eceea0b8a1c29d94df3dc53dc37f6c6e41698c24734d37d6bd55c0d0",
+      "bytes": 3376
+    },
+    "origins__TSFM_linear-ar-specialist__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "c742adedafcbbac583f3a7a85036b31af001ab920373ea7d35cb8a39ffd3180a",
+      "bytes": 13060
+    },
+    "origins__TSFM_seasonal-naive__fevbench__hospital__hospital.npz": {
+      "sha256": "f7042cc087ccb59a25256b4eb1bf6e444b8e3302bf428572b65fa66179fa0b89",
+      "bytes": 17443
+    },
+    "origins__TSFM_seasonal-naive__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "080284327082a83f8e6ecf54a24d2406369667b577a5328e83ba88b038deece7",
+      "bytes": 177579
+    },
+    "origins__TSFM_seasonal-naive__fevbench__restaurant__restaurant.npz": {
+      "sha256": "c9f1b91f070c637cc2bd4f34133f09a2ed7f8e0d51d96331355491ad2d6aba68",
+      "bytes": 51852
+    },
+    "origins__TSFM_seasonal-naive__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "75ca0bcf01b0ca0942f61f8bddd9688978af71138f86710c3abf10fd7ad204f0",
+      "bytes": 7919
+    },
+    "origins__TSFM_seasonal-naive__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "8f61fdfd06b7f64fec4e9274bd45f564d9cafb9a19f5444970079d9b3ba61156",
+      "bytes": 3377
+    },
+    "origins__TSFM_seasonal-naive__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "131ee705c545f07b4663eb37bcb476e29ee57c97b98c8579df1ef3ca93c94e5d",
+      "bytes": 13059
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__hospital__hospital.npz": {
+      "sha256": "fb40005769c2fc79fa9f0006bca70e0017648cdc19b1829c33d0052db5b376fd",
+      "bytes": 17587
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "5229661640ef30334fc47c2dcd9b6d33a477fe7af1036fc73e444155fcba4f8d",
+      "bytes": 178151
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__restaurant__restaurant.npz": {
+      "sha256": "915256c66ed0463f69ee95cf0ecf42f4407c7924ae40ee9bfdcff2ab0609097d",
+      "bytes": 52601
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "641e23c4e201e4aef1181ec10c403dd482da52734b872df8a27abe324c5f0e76",
+      "bytes": 8142
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "558fbbf17ba0a614bf441696705a394feaa4ff8e9347000e420cc67d808150a4",
+      "bytes": 3372
+    },
+    "origins__TSFM_timesfm-3.0__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "79022db6cf5a4f7cab0a781702b451c5d3a84222bcef35b167990d404dce18c4",
+      "bytes": 13102
+    },
+    "origins__TSFM_tirex-2__fevbench__hospital__hospital.npz": {
+      "sha256": "92f2ad3cd8829da66afff7aac12c85824b7cedf78a0140781e7cb5a69cc4852a",
+      "bytes": 17575
+    },
+    "origins__TSFM_tirex-2__fevbench__m5_1M__m5_1M.npz": {
+      "sha256": "ffd2adc8425ca19e42f2f4de170cc617eed0230afbe341cb4324d0420d8fc9d3",
+      "bytes": 178196
+    },
+    "origins__TSFM_tirex-2__fevbench__restaurant__restaurant.npz": {
+      "sha256": "167e9065490c816ff3cebc8d5d22068f3914690287711bd0f0bac1a3f39ae2ce",
+      "bytes": 52594
+    },
+    "origins__TSFM_tirex-2__fevbench__solar_1D__solar_1D.npz": {
+      "sha256": "3ac8b18a7a7886249763e5539c325f5bfb64ccfb4c11adc898e32dc2b347124d",
+      "bytes": 8159
+    },
+    "origins__TSFM_tirex-2__fevbench__us_consumption_1Y__us_consumption_1Y.npz": {
+      "sha256": "acdcb65eb27d0737f7767dbcfe57c2707ce6cba05e87631416a96ad05d62a4ce",
+      "bytes": 3371
+    },
+    "origins__TSFM_tirex-2__fevbench__world_co2_emissions__world_co2_emissions.npz": {
+      "sha256": "d08a8f051dc6d0a3ae587756b4b819eabb41657cf684e2e92ca565c06d2658f2",
+      "bytes": 13084
+    }
+  }
+}

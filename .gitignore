@@ -54,3 +54,7 @@ data_external/*
 !data_external/tsfm_benchmark_gap_discovery_v1/
 data_external/tsfm_benchmark_gap_discovery_v1/*
 !data_external/tsfm_benchmark_gap_discovery_v1/fev_bench_tasks.yaml
+
+# Per-origin loss archives for the long-horizon closure: scaled losses, a window
+# index and an item id, no target values. Same reasoning as the study above.
+!results/tsfm_long_horizon_specialist_closure_v1/origin_losses/*.npz

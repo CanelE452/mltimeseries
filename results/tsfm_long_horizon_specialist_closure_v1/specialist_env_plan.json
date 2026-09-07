@@ -1,0 +1,36 @@
+{
+  "experiment": "TSFM-LONG-HORIZON-SPECIALIST-CLOSURE-v1",
+  "why_isolated": "The TSFM environment (.venv-tsfm) runs three verified foundation models on pinned package versions. AutoGluon pins pandas, numpy and torch ranges of its own, so installing it there would risk silently changing the models this closure must keep identical to the source study. Section 9 requires a separate environment.",
+  "env_path": ".venv-tsfm-specialist",
+  "base_interpreter": "conda mlts python 3.11 (same as .venv-tsfm), fresh venv without system site packages",
+  "python_target": "3.11",
+  "packages_requested": [
+    "autogluon.timeseries (stable)",
+    "torch with CUDA",
+    "model dependencies pulled by autogluon"
+  ],
+  "requested_model_pool": [
+    "PatchTST",
+    "TiDE",
+    "DLinear",
+    "DeepAR",
+    "DirectTabular"
+  ],
+  "minimum_requirement": "PatchTST, at least one of TiDE/DLinear, at least 3 distinct specialist families",
+  "forbidden_in_suite": [
+    "Chronos",
+    "Chronos2",
+    "Toto",
+    "TimesFM",
+    "TiRex",
+    "any pretrained foundation model"
+  ],
+  "metric_computation": "fev native evaluator, reused from the existing .venv-tsfm; the specialist env only produces forecasts",
+  "handoff": "specialist env writes quantile forecasts to runs/.../forecasts as npz; the TSFM env scores them with fev",
+  "time_cap_minutes": 90,
+  "on_block": "SPECIALIST_ENV_BLOCKED -> INCONCLUSIVE_SPECIALIST_POWER; a single weak linear model will not be substituted to force a result",
+  "host": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_running_this_plan": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]"
+  }
+}

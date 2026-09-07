@@ -1,0 +1,890 @@
+{
+  "tasks": [
+    {
+      "task_uid": "fevbench::ETT_1D::ETT_1D",
+      "safe_name": "fevbench__ETT_1D__ETT_1D",
+      "track": "U",
+      "horizon": 28,
+      "num_windows": 20,
+      "seasonality": 7,
+      "freq": "D",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "HUFL",
+        "HULL",
+        "LUFL",
+        "LULL",
+        "MUFL",
+        "MULL",
+        "OT"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 14,
+          "context_min": 164,
+          "context_median": 164,
+          "context_max": 164,
+          "last_context_timestamp": "2016-12-12T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 14,
+          "context_min": 192,
+          "context_median": 192,
+          "context_max": 192,
+          "last_context_timestamp": "2017-01-09T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 14,
+          "context_min": 220,
+          "context_median": 220,
+          "context_max": 220,
+          "last_context_timestamp": "2017-02-06T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 14,
+          "context_min": 248,
+          "context_median": 248,
+          "context_max": 248,
+          "last_context_timestamp": "2017-03-06T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 14,
+          "context_min": 276,
+          "context_median": 276,
+          "context_max": 276,
+          "last_context_timestamp": "2017-04-03T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 14,
+          "context_min": 304,
+          "context_median": 304,
+          "context_max": 304,
+          "last_context_timestamp": "2017-05-01T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 14,
+          "context_min": 332,
+          "context_median": 332,
+          "context_max": 332,
+          "last_context_timestamp": "2017-05-29T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 14,
+          "context_min": 360,
+          "context_median": 360,
+          "context_max": 360,
+          "last_context_timestamp": "2017-06-26T00:00:00.000000000"
+        },
+        {
+          "window_idx": 8,
+          "n_items": 14,
+          "context_min": 388,
+          "context_median": 388,
+          "context_max": 388,
+          "last_context_timestamp": "2017-07-24T00:00:00.000000000"
+        },
+        {
+          "window_idx": 9,
+          "n_items": 14,
+          "context_min": 416,
+          "context_median": 416,
+          "context_max": 416,
+          "last_context_timestamp": "2017-08-21T00:00:00.000000000"
+        },
+        {
+          "window_idx": 10,
+          "n_items": 14,
+          "context_min": 444,
+          "context_median": 444,
+          "context_max": 444,
+          "last_context_timestamp": "2017-09-18T00:00:00.000000000"
+        },
+        {
+          "window_idx": 11,
+          "n_items": 14,
+          "context_min": 472,
+          "context_median": 472,
+          "context_max": 472,
+          "last_context_timestamp": "2017-10-16T00:00:00.000000000"
+        },
+        {
+          "window_idx": 12,
+          "n_items": 14,
+          "context_min": 500,
+          "context_median": 500,
+          "context_max": 500,
+          "last_context_timestamp": "2017-11-13T00:00:00.000000000"
+        },
+        {
+          "window_idx": 13,
+          "n_items": 14,
+          "context_min": 528,
+          "context_median": 528,
+          "context_max": 528,
+          "last_context_timestamp": "2017-12-11T00:00:00.000000000"
+        },
+        {
+          "window_idx": 14,
+          "n_items": 14,
+          "context_min": 556,
+          "context_median": 556,
+          "context_max": 556,
+          "last_context_timestamp": "2018-01-08T00:00:00.000000000"
+        },
+        {
+          "window_idx": 15,
+          "n_items": 14,
+          "context_min": 584,
+          "context_median": 584,
+          "context_max": 584,
+          "last_context_timestamp": "2018-02-05T00:00:00.000000000"
+        },
+        {
+          "window_idx": 16,
+          "n_items": 14,
+          "context_min": 612,
+          "context_median": 612,
+          "context_max": 612,
+          "last_context_timestamp": "2018-03-05T00:00:00.000000000"
+        },
+        {
+          "window_idx": 17,
+          "n_items": 14,
+          "context_min": 640,
+          "context_median": 640,
+          "context_max": 640,
+          "last_context_timestamp": "2018-04-02T00:00:00.000000000"
+        },
+        {
+          "window_idx": 18,
+          "n_items": 14,
+          "context_min": 668,
+          "context_median": 668,
+          "context_max": 668,
+          "last_context_timestamp": "2018-04-30T00:00:00.000000000"
+        },
+        {
+          "window_idx": 19,
+          "n_items": 14,
+          "context_min": 696,
+          "context_median": 696,
+          "context_max": 696,
+          "last_context_timestamp": "2018-05-28T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::LOOP_SEATTLE_1D::LOOP_SEATTLE_1D",
+      "safe_name": "fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D",
+      "track": "U",
+      "horizon": 28,
+      "num_windows": 10,
+      "seasonality": 7,
+      "freq": "D",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 323,
+          "context_min": 85,
+          "context_median": 85,
+          "context_max": 85,
+          "last_context_timestamp": "2015-03-26T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 323,
+          "context_min": 113,
+          "context_median": 113,
+          "context_max": 113,
+          "last_context_timestamp": "2015-04-23T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 323,
+          "context_min": 141,
+          "context_median": 141,
+          "context_max": 141,
+          "last_context_timestamp": "2015-05-21T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 323,
+          "context_min": 169,
+          "context_median": 169,
+          "context_max": 169,
+          "last_context_timestamp": "2015-06-18T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 323,
+          "context_min": 197,
+          "context_median": 197,
+          "context_max": 197,
+          "last_context_timestamp": "2015-07-16T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 323,
+          "context_min": 225,
+          "context_median": 225,
+          "context_max": 225,
+          "last_context_timestamp": "2015-08-13T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 323,
+          "context_min": 253,
+          "context_median": 253,
+          "context_max": 253,
+          "last_context_timestamp": "2015-09-10T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 323,
+          "context_min": 281,
+          "context_median": 281,
+          "context_max": 281,
+          "last_context_timestamp": "2015-10-08T00:00:00.000000000"
+        },
+        {
+          "window_idx": 8,
+          "n_items": 323,
+          "context_min": 309,
+          "context_median": 309,
+          "context_max": 309,
+          "last_context_timestamp": "2015-11-05T00:00:00.000000000"
+        },
+        {
+          "window_idx": 9,
+          "n_items": 323,
+          "context_min": 337,
+          "context_median": 337,
+          "context_max": 337,
+          "last_context_timestamp": "2015-12-03T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::australian_tourism::australian_tourism",
+      "safe_name": "fevbench__australian_tourism__australian_tourism",
+      "track": "U",
+      "horizon": 8,
+      "num_windows": 2,
+      "seasonality": 4,
+      "freq": "QE-DEC",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 89,
+          "context_min": 20,
+          "context_median": 20,
+          "context_max": 20,
+          "last_context_timestamp": "2002-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 89,
+          "context_min": 28,
+          "context_median": 28,
+          "context_max": 28,
+          "last_context_timestamp": "2004-12-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::hermes::hermes",
+      "safe_name": "fevbench__hermes__hermes",
+      "track": "U",
+      "horizon": 52,
+      "num_windows": 1,
+      "seasonality": 1,
+      "freq": "W-MON",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 10000,
+          "context_min": 209,
+          "context_median": 209,
+          "context_max": 209,
+          "last_context_timestamp": "2018-12-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::us_consumption_1Y::us_consumption_1Y",
+      "safe_name": "fevbench__us_consumption_1Y__us_consumption_1Y",
+      "track": "U",
+      "horizon": 5,
+      "num_windows": 10,
+      "seasonality": 1,
+      "freq": "YE-DEC",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 31,
+          "context_min": 14,
+          "context_median": 14,
+          "context_max": 14,
+          "last_context_timestamp": "1973-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 31,
+          "context_min": 19,
+          "context_median": 19,
+          "context_max": 19,
+          "last_context_timestamp": "1978-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 31,
+          "context_min": 24,
+          "context_median": 24,
+          "context_max": 24,
+          "last_context_timestamp": "1983-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 31,
+          "context_min": 29,
+          "context_median": 29,
+          "context_max": 29,
+          "last_context_timestamp": "1988-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 31,
+          "context_min": 34,
+          "context_median": 34,
+          "context_max": 34,
+          "last_context_timestamp": "1993-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 31,
+          "context_min": 39,
+          "context_median": 39,
+          "context_max": 39,
+          "last_context_timestamp": "1998-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 31,
+          "context_min": 44,
+          "context_median": 44,
+          "context_max": 44,
+          "last_context_timestamp": "2003-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 31,
+          "context_min": 49,
+          "context_median": 49,
+          "context_max": 49,
+          "last_context_timestamp": "2008-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 8,
+          "n_items": 31,
+          "context_min": 54,
+          "context_median": 54,
+          "context_max": 54,
+          "last_context_timestamp": "2013-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 9,
+          "n_items": 31,
+          "context_min": 59,
+          "context_median": 59,
+          "context_max": 59,
+          "last_context_timestamp": "2018-12-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::solar_1D::solar_1D",
+      "safe_name": "fevbench__solar_1D__solar_1D",
+      "track": "U",
+      "horizon": 28,
+      "num_windows": 10,
+      "seasonality": 1,
+      "freq": "D",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 137,
+          "context_min": 85,
+          "context_median": 85,
+          "context_max": 85,
+          "last_context_timestamp": "2006-03-26T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 137,
+          "context_min": 113,
+          "context_median": 113,
+          "context_max": 113,
+          "last_context_timestamp": "2006-04-23T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 137,
+          "context_min": 141,
+          "context_median": 141,
+          "context_max": 141,
+          "last_context_timestamp": "2006-05-21T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 137,
+          "context_min": 169,
+          "context_median": 169,
+          "context_max": 169,
+          "last_context_timestamp": "2006-06-18T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 137,
+          "context_min": 197,
+          "context_median": 197,
+          "context_max": 197,
+          "last_context_timestamp": "2006-07-16T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 137,
+          "context_min": 225,
+          "context_median": 225,
+          "context_max": 225,
+          "last_context_timestamp": "2006-08-13T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 137,
+          "context_min": 253,
+          "context_median": 253,
+          "context_max": 253,
+          "last_context_timestamp": "2006-09-10T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 137,
+          "context_min": 281,
+          "context_median": 281,
+          "context_max": 281,
+          "last_context_timestamp": "2006-10-08T00:00:00.000000000"
+        },
+        {
+          "window_idx": 8,
+          "n_items": 137,
+          "context_min": 309,
+          "context_median": 309,
+          "context_max": 309,
+          "last_context_timestamp": "2006-11-05T00:00:00.000000000"
+        },
+        {
+          "window_idx": 9,
+          "n_items": 137,
+          "context_min": 337,
+          "context_median": 337,
+          "context_max": 337,
+          "last_context_timestamp": "2006-12-03T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::hospital::hospital",
+      "safe_name": "fevbench__hospital__hospital",
+      "track": "U",
+      "horizon": 12,
+      "num_windows": 4,
+      "seasonality": 12,
+      "freq": "ME",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 767,
+          "context_min": 36,
+          "context_median": 36,
+          "context_max": 36,
+          "last_context_timestamp": "2002-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 767,
+          "context_min": 48,
+          "context_median": 48,
+          "context_max": 48,
+          "last_context_timestamp": "2003-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 767,
+          "context_min": 60,
+          "context_median": 60,
+          "context_max": 60,
+          "last_context_timestamp": "2004-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 767,
+          "context_min": 72,
+          "context_median": 72,
+          "context_max": 72,
+          "last_context_timestamp": "2005-12-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::m5_1M::m5_1M",
+      "safe_name": "fevbench__m5_1M__m5_1M",
+      "track": "U",
+      "horizon": 12,
+      "num_windows": 1,
+      "seasonality": 12,
+      "freq": "ME",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 29364,
+          "context_min": 6,
+          "context_median": 48,
+          "context_max": 52,
+          "last_context_timestamp": "2015-05-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::world_co2_emissions::world_co2_emissions",
+      "safe_name": "fevbench__world_co2_emissions__world_co2_emissions",
+      "track": "U",
+      "horizon": 5,
+      "num_windows": 9,
+      "seasonality": 1,
+      "freq": "YE-DEC",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 191,
+          "context_min": 15,
+          "context_median": 15,
+          "context_max": 15,
+          "last_context_timestamp": "1974-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 191,
+          "context_min": 20,
+          "context_median": 20,
+          "context_max": 20,
+          "last_context_timestamp": "1979-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 191,
+          "context_min": 25,
+          "context_median": 25,
+          "context_max": 25,
+          "last_context_timestamp": "1984-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 191,
+          "context_min": 30,
+          "context_median": 30,
+          "context_max": 30,
+          "last_context_timestamp": "1989-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 191,
+          "context_min": 35,
+          "context_median": 35,
+          "context_max": 35,
+          "last_context_timestamp": "1994-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 191,
+          "context_min": 40,
+          "context_median": 40,
+          "context_max": 40,
+          "last_context_timestamp": "1999-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 191,
+          "context_min": 45,
+          "context_median": 45,
+          "context_max": 45,
+          "last_context_timestamp": "2004-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 191,
+          "context_min": 50,
+          "context_median": 50,
+          "context_max": 50,
+          "last_context_timestamp": "2009-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 8,
+          "n_items": 191,
+          "context_min": 55,
+          "context_median": 55,
+          "context_max": 55,
+          "last_context_timestamp": "2014-12-31T00:00:00.000000000"
+        }
+      ]
+    },
+    {
+      "task_uid": "fevbench::restaurant::restaurant",
+      "safe_name": "fevbench__restaurant__restaurant",
+      "track": "U",
+      "horizon": 28,
+      "num_windows": 8,
+      "seasonality": 7,
+      "freq": "D",
+      "quantile_levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "eval_metric": "SQL",
+      "target_columns": [
+        "target"
+      ],
+      "training_window": 0,
+      "training_note": "window_00 is the training frame: it holds everything visible before the first evaluation cutoff. Later windows are inference context only.",
+      "windows": [
+        {
+          "window_idx": 0,
+          "n_items": 805,
+          "context_min": 4,
+          "context_median": 72,
+          "context_max": 254,
+          "last_context_timestamp": "2016-09-10T00:00:00.000000000"
+        },
+        {
+          "window_idx": 1,
+          "n_items": 810,
+          "context_min": 5,
+          "context_median": 100,
+          "context_max": 282,
+          "last_context_timestamp": "2016-10-08T00:00:00.000000000"
+        },
+        {
+          "window_idx": 2,
+          "n_items": 811,
+          "context_min": 14,
+          "context_median": 128,
+          "context_max": 310,
+          "last_context_timestamp": "2016-11-05T00:00:00.000000000"
+        },
+        {
+          "window_idx": 3,
+          "n_items": 813,
+          "context_min": 7,
+          "context_median": 156,
+          "context_max": 338,
+          "last_context_timestamp": "2016-12-03T00:00:00.000000000"
+        },
+        {
+          "window_idx": 4,
+          "n_items": 814,
+          "context_min": 20,
+          "context_median": 184,
+          "context_max": 366,
+          "last_context_timestamp": "2016-12-31T00:00:00.000000000"
+        },
+        {
+          "window_idx": 5,
+          "n_items": 815,
+          "context_min": 10,
+          "context_median": 212,
+          "context_max": 394,
+          "last_context_timestamp": "2017-01-28T00:00:00.000000000"
+        },
+        {
+          "window_idx": 6,
+          "n_items": 817,
+          "context_min": 25,
+          "context_median": 240,
+          "context_max": 422,
+          "last_context_timestamp": "2017-02-25T00:00:00.000000000"
+        },
+        {
+          "window_idx": 7,
+          "n_items": 817,
+          "context_min": 53,
+          "context_median": 268,
+          "context_max": 450,
+          "last_context_timestamp": "2017-03-25T00:00:00.000000000"
+        }
+      ]
+    }
+  ]
+}

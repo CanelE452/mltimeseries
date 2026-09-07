@@ -1,0 +1,69 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "os": "Windows-10-10.0.26200-SP0",
+  "autogluon_timeseries": "1.6.1",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "gpu_total_memory_mb": 12282,
+  "packages": {
+    "autogluon.timeseries": "1.6.1",
+    "autogluon.core": "1.6.1",
+    "torch": "2.11.0+cu128",
+    "lightning": "2.6.5",
+    "pytorch-lightning": "2.6.5",
+    "gluonts": "0.17.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.0",
+    "statsforecast": "2.0.3",
+    "mlforecast": "0.14.0"
+  },
+  "env_path": ".venv-tsfm-specialist",
+  "isolated_from": ".venv-tsfm (TSFM environment left untouched)",
+  "model_availability": [
+    {
+      "requested": "PatchTST",
+      "actual_class": "PatchTSTModel",
+      "family": "patch transformer",
+      "available": true,
+      "reason_if_unavailable": ""
+    },
+    {
+      "requested": "TiDE",
+      "actual_class": "TiDEModel",
+      "family": "dense encoder",
+      "available": true,
+      "reason_if_unavailable": ""
+    },
+    {
+      "requested": "DLinear",
+      "actual_class": "DLinearModel",
+      "family": "linear decomposition",
+      "available": true,
+      "reason_if_unavailable": ""
+    },
+    {
+      "requested": "DeepAR",
+      "actual_class": "DeepARModel",
+      "family": "autoregressive RNN",
+      "available": true,
+      "reason_if_unavailable": ""
+    },
+    {
+      "requested": "DirectTabular",
+      "actual_class": "DirectTabularModel",
+      "family": "tabular regression",
+      "available": true,
+      "reason_if_unavailable": ""
+    }
+  ],
+  "n_available": 5,
+  "forbidden_present_but_never_used": [
+    "ChronosModel",
+    "Chronos2Model",
+    "TotoModel",
+    "Toto2Model"
+  ]
+}

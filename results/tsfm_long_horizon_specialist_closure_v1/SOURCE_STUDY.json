@@ -1,0 +1,79 @@
+{
+  "experiment": "TSFM-LONG-HORIZON-SPECIALIST-CLOSURE-v1",
+  "audited_at_utc": "2026-09-07T05:44:57.112830+00:00",
+  "repo": "CanelE452/mltimeseries",
+  "source_branch": "tsfm-benchmark-gap-discovery-v1",
+  "source_remote_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "source_local_base_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "source_results_root": "results/tsfm_benchmark_gap_discovery_v1",
+  "source_benchmark": "fev-bench",
+  "source_benchmark_commit": "eadb28ed3a3f8fc2db8dd4d3d6850894efcbc4d1",
+  "source_benchmark_tasks_sha256": "c7160f61a5e1ded66a3954ef1c514d55d13be18534b34fca817356312a6520a9",
+  "selected_tasks_sha256": "f10d6a205a3394a9bbb0bde50d0deaa7a50142ed377462cd7f706e31c7c30234",
+  "source_final_token": "NO_STRONG_GAP_FOUND",
+  "source_d1_long_effect": {
+    "median_condition_gap_pct": 38.81152907969118,
+    "n_tasks_in_bucket": 4,
+    "n_affected_families": 3,
+    "verdict": "NOT_A_CANDIDATE"
+  },
+  "source_d1_long_regret": {
+    "median_regret_pct": 1.5861903658322238,
+    "gate_min_regret_pct": 8.0,
+    "why_it_failed_the_gate": "The condition effect was large and shared across all three families, but the median regret against the best evaluated deployable estimator was far below the registered 8% threshold: on these tasks no other evaluated model did better."
+  },
+  "d1_horizon_ratio_thresholds": {
+    "low": 0.021735292819630166,
+    "high": 0.1652439024390244
+  },
+  "d1_threshold_source": "results/tsfm_benchmark_gap_discovery_v1/descriptor_thresholds.json",
+  "development_tasks": [
+    "fevbench::ETT_1D::ETT_1D",
+    "fevbench::LOOP_SEATTLE_1D::LOOP_SEATTLE_1D",
+    "fevbench::australian_tourism::australian_tourism",
+    "fevbench::hermes::hermes"
+  ],
+  "previously_used_tasks": [
+    "fevbench::ETT_1D::ETT_1D",
+    "fevbench::LOOP_SEATTLE_1D::LOOP_SEATTLE_1D",
+    "fevbench::M_DENSE_1H::M_DENSE_1H",
+    "fevbench::SZ_TAXI_15T::SZ_TAXI_15T",
+    "fevbench::australian_tourism::australian_tourism",
+    "fevbench::bizitobs_l2c_1H::bizitobs_l2c_1H",
+    "fevbench::boomlet_1062::boomlet_1062",
+    "fevbench::ecdc_ili::ecdc_ili",
+    "fevbench::entsoe_1H::entsoe_1H",
+    "fevbench::epf_be::epf_be",
+    "fevbench::ercot_1D::ercot_1D",
+    "fevbench::favorita_stores_1D::favorita_stores_1D",
+    "fevbench::fred_md_2025::fred_md_2025/cee",
+    "fevbench::hermes::hermes",
+    "fevbench::jena_weather_1D::jena_weather_1D",
+    "fevbench::kdd_cup_2022_10T::kdd_cup_2022_10T",
+    "fevbench::redset_1H::redset_1H",
+    "fevbench::uci_air_quality_1H::uci_air_quality_1H"
+  ],
+  "primary_model_revisions": {
+    "chronos-2": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "tirex-2": "05e5b26db52bfb256f1ae1bdf785589850482de3",
+    "timesfm-3.0": "43046b85ec22d584a13f8098c2ed39c889e129c2"
+  },
+  "primary_model_contamination": {
+    "chronos-2": "OVERLAP_RISK_UNKNOWN",
+    "tirex-2": "OVERLAP_RISK_UNKNOWN",
+    "timesfm-3.0": "CLEAN_BY_OFFICIAL_EXCLUSION"
+  },
+  "files_read": {
+    "selected_tasks.json": "62b3be852156bd662142f9130600a3d016ebf4de7b8a84b72482737ff863fd94",
+    "selected_tasks.sha256": "28cf4a3e561105b42f3df09f52bd1a60bc33640a7627e127bdaee82f56226a91",
+    "task_metadata.csv": "83fe590566f39c9c0e285137d3899e31e655faf322186f806d2655b6f58e94b0",
+    "task_pool.csv": "07c8e7829d538c5e01cc3df472cd809f92c28bdc2271b2104388207204b4ea5c",
+    "benchmark_results.csv": "0461cfc05c32fca6b3c2d19ace974ec162745d78ad0092807e007b755012e936",
+    "failure_candidates_gate.csv": "5905ed43087ebc2e6c0eae30cc361a88cc96799de4f5b00436d48281255fe0cb",
+    "model_audit.csv": "03ecd3211a23b4efdf46a9ed21e89a750440cbbee7038b42b5ca4ba1cf11afbe",
+    "benchmark_audit.json": "c00b09712a9943e7ce88ea5eee4f6b8eaa9318cb1ca5448e2f4349ed59a52466",
+    "descriptor_thresholds.json": "4a70adb24170f61e64462435a293ea629e45bc376fc354146125501151595d17",
+    "STATUS.md": "b25b70d0d98fe9eafc4fa8f403f6fb39e1d969c519ff16f090f494dda042ef27",
+    "verdict.json": "786f5f017442426a1348cd4a05dfabdb9f2cbe08bf836e837bb74e6a04f049ba"
+  }
+}

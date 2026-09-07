@@ -1,0 +1,87 @@
+{
+  "experiment": "TSFM-LONG-HORIZON-SPECIALIST-CLOSURE-v1",
+  "generated_at_utc": "2026-09-07T08:13:30.514681+00:00",
+  "source_study_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "source_study_token": "NO_STRONG_GAP_FOUND",
+  "final_token": "SHARED_TASK_DIFFICULTY_CLOSE",
+  "final_token_reason": "a strong supervised specialist did not expose the registered 5-8% recoverable gap on either split; the long-horizon deficit looks like task difficulty every model shares",
+  "development_tasks": 4,
+  "holdout_tasks": 6,
+  "usable_development_tasks": 4,
+  "usable_holdout_tasks": 6,
+  "specialist_suite": [
+    "DLinear",
+    "DeepAR",
+    "DirectTabular",
+    "PatchTST",
+    "TiDE"
+  ],
+  "specialist_strength": {
+    "n_tasks": 10,
+    "median_RI_vs_linear_ar_pct": 0.5388902579835729,
+    "wins_vs_linear_ar": 5,
+    "median_RI_vs_naive_pct": 4.967737778617,
+    "wins_vs_naive": 7,
+    "beats_linear_ar": false,
+    "beats_naive": true,
+    "passed": true
+  },
+  "specialist_strength_passed": true,
+  "development": {
+    "available": true,
+    "median_RI_vs_envelope_pct": -25.47013012719497,
+    "median_RI_vs_fixed_pct": -21.639076190341257,
+    "wins_vs_envelope": 0,
+    "n_usable": 4,
+    "seed_medians": [
+      -23.019049218719584,
+      -27.92121103567037
+    ],
+    "checks": {
+      "A_median_vs_envelope_ge_8": false,
+      "B_median_vs_fixed_ge_8": false,
+      "C_positive_on_at_least_3_of_4": false,
+      "D_both_seed_medians_positive": false,
+      "E_specialist_strength_plausible": true
+    },
+    "signal": false
+  },
+  "holdout": {
+    "available": true,
+    "median_RI_vs_envelope_pct": -48.47092187102543,
+    "median_RI_vs_fixed_pct": -47.50532265472226,
+    "wins_vs_envelope": 0,
+    "n_usable": 6,
+    "seed_medians": [
+      -33.883997948978326,
+      -49.69262433782539
+    ],
+    "checks": {
+      "A_median_vs_envelope_ge_5": false,
+      "B_median_vs_fixed_ge_5": false,
+      "C_positive_on_at_least_4": false,
+      "D_both_seed_medians_positive": false,
+      "E_usable_at_least_5": true
+    },
+    "signal": false
+  },
+  "contract_tension": {
+    "present": true,
+    "token_by_registered_rule": "SHARED_TASK_DIFFICULTY_CLOSE",
+    "alternative_reading": "INCONCLUSIVE_SPECIALIST_POWER",
+    "why": "Section 17 passes the strength gate on either the linear-AR criterion or the SeasonalNaive one, and only the SeasonalNaive one is met: the suite wins 7/10 against the naive anchor but only 5/10 against the source study's linear ridge autoregression, at a median of 0.54%. Section 22.3 lists exactly that - a suite that does not stably beat linear AR - as an example of INCONCLUSIVE_SPECIALIST_POWER.",
+    "which_rule_was_followed": "Section 17 is the operational gate and names its own consequence, so it governs the token. Section 22.3 is a list of examples.",
+    "does_it_change_the_action": "No. Both readings say the same thing about what to do next: do not start method work on long-horizon now. They differ only in whether the question is closed or left open, and the safer of the two is stated in section 17 of STATUS.md."
+  },
+  "dev_gap_signal": false,
+  "holdout_gap_signal": false,
+  "integrity": {
+    "holdout_frozen_before_training": true,
+    "no_eval_labels_in_training": true,
+    "no_refit_after_first_cutoff": true,
+    "track_u_matched": true,
+    "metric_native_fev": true,
+    "source_results_unchanged": true,
+    "checks_failed": []
+  }
+}

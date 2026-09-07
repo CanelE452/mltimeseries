@@ -1,0 +1,36 @@
+{
+  "experiment": "TSFM-LONG-HORIZON-SPECIALIST-CLOSURE-v1",
+  "timestamp_utc": "2026-09-07T06:59:03.488722+00:00",
+  "repo": "CanelE452/mltimeseries",
+  "branch": "tsfm-long-horizon-specialist-closure-v1",
+  "base_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "base_branch": "tsfm-benchmark-gap-discovery-v1",
+  "origin_main_sha": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "source_branch_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "dirty_before_start": {
+    "tracked_modifications": [],
+    "untracked": [
+      ".venv-tsfm-specialist/",
+      "experiments/tsfm_long_horizon_specialist_closure_v1/",
+      "results/hq_token_pilot_v1_dryrun/",
+      "results/oa_resolution_pilot_v1_dryrun/",
+      "results/tsfm_long_horizon_specialist_closure_v1/",
+      "results/uncertain_covariate_path_pilot_v1_dryrun/per_example_losses.npz"
+    ],
+    "hard_stop_triggered": false
+  },
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4070",
+      "total_memory_mb": 12282
+    }
+  ],
+  "free_disk_gb": 765.8,
+  "environments": {
+    "tsfm": ".venv-tsfm (unchanged from the source study)",
+    "specialist": ".venv-tsfm-specialist (new, isolated)"
+  }
+}
