@@ -521,8 +521,38 @@ def build() -> str:
         "- Absolute model ranking under a clean contamination contract: two of the three primary "
         "models carry unresolved fev-bench overlap risk."
     )
-    if not len(confirmation):
+    add(
+        "- Two probes from the registered bank never ran, because no candidate reached the probe "
+        "stage: P2, which varies context length, and P7, which re-expresses a task at another "
+        "resolution. Both need fresh inference rather than a recombination of stored forecasts."
+    )
+    add(
+        "- The optional fourth foundation model and the optional modern specialist (a PatchTST or "
+        "TimesNet class model) were not added. Section 13 lists both as the first things to drop "
+        "under budget pressure, and neither would change a verdict that turns on the three primary "
+        "families agreeing with each other."
+    )
+    confirmation_cells = (
+        ok[ok.split == "confirmation"] if len(ok) and "split" in ok.columns else pd.DataFrame()
+    )
+    if len(confirmation_cells):
+        add("")
+        add(
+            f"The confirmation split was opened, but not for a candidate: none existed. After the "
+            f"candidate spec was frozen and hashed, its {confirmation_cells.task_uid.nunique()} "
+            f"tasks were run in full ({len(confirmation_cells)} cells) to test whether the "
+            "oracle-exploitability result reproduces out of sample. It does, and section 10b "
+            "reports both splits side by side. No condition was confirmed because no condition was "
+            "ever promoted."
+        )
+    else:
         add("- The confirmation split, which stays sealed unless a candidate reaches it.")
+    add("")
+    add(
+        "Every model here emits a deterministic quantile path, so Section 26's seed requirement "
+        "does not bind: there is no sampling to average over. The one estimator fitted on data, "
+        "the ridge specialist, is a closed-form least-squares solve with no random initialisation."
+    )
     add("")
 
     # 17

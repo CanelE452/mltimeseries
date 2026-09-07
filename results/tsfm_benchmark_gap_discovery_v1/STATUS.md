@@ -1,6 +1,6 @@
 # TSFM-BENCHMARK-GAP-DISCOVERY-v1 — status
 
-Generated 2026-09-07T03:32:50.189879+00:00
+Generated 2026-09-07T03:52:00.915711+00:00
 
 ## 1. Executive verdict
 
@@ -439,7 +439,12 @@ No candidate to rank.
 - Fine-tuning of any foundation model: the contract confines this study to zero-shot inference, simple baselines and probes.
 - Whether the observed behaviour generalises beyond fev-bench. One benchmark cannot support a claim about time-series forecasting in general.
 - Absolute model ranking under a clean contamination contract: two of the three primary models carry unresolved fev-bench overlap risk.
-- The confirmation split, which stays sealed unless a candidate reaches it.
+- Two probes from the registered bank never ran, because no candidate reached the probe stage: P2, which varies context length, and P7, which re-expresses a task at another resolution. Both need fresh inference rather than a recombination of stored forecasts.
+- The optional fourth foundation model and the optional modern specialist (a PatchTST or TimesNet class model) were not added. Section 13 lists both as the first things to drop under budget pressure, and neither would change a verdict that turns on the three primary families agreeing with each other.
+
+The confirmation split was opened, but not for a candidate: none existed. After the candidate spec was frozen and hashed, its 6 tasks were run in full (60 cells) to test whether the oracle-exploitability result reproduces out of sample. It does, and section 10b reports both splits side by side. No condition was confirmed because no condition was ever promoted.
+
+Every model here emits a deterministic quantile path, so Section 26's seed requirement does not bind: there is no sampling to average over. The one estimator fitted on data, the ridge specialist, is a closed-form least-squares solve with no random initialisation.
 
 ## 17. Recommended next action
 
