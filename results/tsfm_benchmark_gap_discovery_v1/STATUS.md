@@ -1,6 +1,6 @@
 # TSFM-BENCHMARK-GAP-DISCOVERY-v1 — status
 
-Generated 2026-09-07T03:52:00.915711+00:00
+Generated 2026-09-07T04:13:48.281907+00:00
 
 ## 1. Executive verdict
 

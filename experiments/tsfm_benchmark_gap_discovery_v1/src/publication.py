@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import pathlib
 import re
 import subprocess
 from datetime import datetime, timezone
@@ -29,6 +30,15 @@ SECRET_CONTENT_PATTERN = re.compile(
     r"(aws_secret_access_key|BEGIN [A-Z ]*PRIVATE KEY|xox[baprs]-[A-Za-z0-9-]{10,}"
     r"|gh[pousr]_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9]{32,}|hf_[A-Za-z0-9]{30,})"
 )
+
+# The single deliberate exception to the data_external rule: the fev-bench task
+# definition is the frozen evaluation contract this study is judged against, not raw
+# data. It is 48 KB of YAML, fetched from a pinned upstream commit, and its sha256 is
+# re-checked on every run. Tracking it means an auditor can read the contract without
+# trusting a download.
+TRACKED_EXCEPTIONS = {
+    "data_external/tsfm_benchmark_gap_discovery_v1/fev_bench_tasks.yaml",
+}
 
 AUDIT_CRITICAL = [
     "results/tsfm_benchmark_gap_discovery_v1/BASE_STATE.json",
@@ -115,6 +125,8 @@ def scan() -> dict:
     findings: dict = {"blockers": [], "warnings": []}
 
     for path in tracked:
+        if path in TRACKED_EXCEPTIONS:
+            continue
         if path.startswith(FORBIDDEN_PREFIXES) or path.endswith(FORBIDDEN_SUFFIXES):
             findings["blockers"].append(f"forbidden tracked path: {path}")
         if SECRET_NAME_PATTERN.search(path):
@@ -130,8 +142,15 @@ def scan() -> dict:
     for path, size in large:
         findings["blockers"].append(f"tracked file over 10 MB: {path} ({size / 1024**2:.1f} MB)")
 
+    # This file holds the detection patterns as string literals, so scanning it
+    # matches them by construction. It is the scanner; excluding it is not a blind
+    # spot, and every other tracked text file is still read.
+    self_path = str(pathlib.Path(__file__).resolve().relative_to(paths.REPO)).replace("\\", "/")
+
     scanned = 0
     for path in tracked:
+        if path == self_path:
+            continue
         full = paths.REPO / path
         if not full.exists() or full.stat().st_size > 2 * 1024**2:
             continue
@@ -164,6 +183,7 @@ def scan() -> dict:
 
     findings["n_tracked_files"] = len(tracked)
     findings["n_text_files_scanned"] = scanned
+    findings["content_scan_skipped"] = [self_path]
     findings["largest_tracked_files"] = sorted(
         (
             (p, (paths.REPO / p).stat().st_size)
@@ -202,6 +222,7 @@ def verify_remote() -> dict:
         "audit_critical_files_tracked": [
             p for p in AUDIT_CRITICAL + CONDITIONAL_CRITICAL if p in git("ls-files").splitlines()
         ],
+        "deliberately_tracked_exceptions": sorted(TRACKED_EXCEPTIONS),
         "intentionally_untracked_artifacts": [
             "runs/tsfm_benchmark_gap_discovery_v1/** - model weights, HF caches and raw quantile "
             "forecasts; regenerable from the committed code plus the pinned checkpoints",

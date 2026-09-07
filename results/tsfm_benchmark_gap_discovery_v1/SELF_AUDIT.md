@@ -1,6 +1,6 @@
 # Self audit
 
-Generated 2026-09-07T03:32:12.728722+00:00 from the artifacts on disk, not from memory.
+Generated 2026-09-07T04:13:45.086764+00:00 from the artifacts on disk, not from memory.
 
 ## Integrity checks
 
@@ -29,13 +29,15 @@ Generated 2026-09-07T03:32:12.728722+00:00 from the artifacts on disk, not from 
 
 ## Repository state
 
-|                              | value                                    |
-|:-----------------------------|:-----------------------------------------|
-| branch                       | tsfm-benchmark-gap-discovery-v1          |
-| head                         | b4fbea46b1ac9cd221e0ef3d7bc769d2f2d8a77f |
-| base_sha_at_start            | b4fbea46b1ac9cd221e0ef3d7bc769d2f2d8a77f |
-| origin_main_now              | 36b01d2b84df16f03447a8e214723fc61ae147fd |
-| origin_main_at_start         | 36b01d2b84df16f03447a8e214723fc61ae147fd |
-| origin_main_unchanged        | True                                     |
-| forbidden_tracked_files      | []                                       |
-| previous_study_files_changed | []                                       |
+|                                 | value                                                                  |
+|:--------------------------------|:-----------------------------------------------------------------------|
+| branch                          | tsfm-benchmark-gap-discovery-v1                                        |
+| head_when_audited               | 352089e4d1f1a84600077aebcf69e4eb787fd78c                               |
+| head_note                       | Audited on a commit later than the study's base.                       |
+| base_sha_at_start               | b4fbea46b1ac9cd221e0ef3d7bc769d2f2d8a77f                               |
+| origin_main_now                 | 36b01d2b84df16f03447a8e214723fc61ae147fd                               |
+| origin_main_at_start            | 36b01d2b84df16f03447a8e214723fc61ae147fd                               |
+| origin_main_unchanged           | True                                                                   |
+| forbidden_tracked_files         | []                                                                     |
+| deliberately_tracked_exceptions | ['data_external/tsfm_benchmark_gap_discovery_v1/fev_bench_tasks.yaml'] |
+| previous_study_files_changed    | []                                                                     |

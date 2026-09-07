@@ -308,12 +308,18 @@ def repo_state() -> dict:
         ).stdout.strip()
 
     base = json.loads((paths.RESULTS / "BASE_STATE.json").read_text(encoding="utf-8"))
+    head = git("rev-parse", "HEAD")
     tracked = git("ls-files")
+    from .publication import TRACKED_EXCEPTIONS
+
     forbidden = [
         line
         for line in tracked.splitlines()
-        if line.startswith(("data_external/", "runs/"))
-        or line.endswith((".pt", ".pth", ".ckpt", ".safetensors"))
+        if line not in TRACKED_EXCEPTIONS
+        and (
+            line.startswith(("data_external/", "runs/"))
+            or line.endswith((".pt", ".pth", ".ckpt", ".safetensors"))
+        )
     ]
     other_studies = git(
         "diff",
@@ -330,12 +336,20 @@ def repo_state() -> dict:
     )
     return {
         "branch": git("rev-parse", "--abbrev-ref", "HEAD"),
-        "head": git("rev-parse", "HEAD"),
+        "head_when_audited": head,
+        "head_note": (
+            "This audit runs before the commit that publishes it, so `head_when_audited` is the "
+            "commit the artifacts were produced on top of, not the commit you are reading. The "
+            "published SHA is in REMOTE_PUBLICATION.json, which is written after the push."
+            if head == base["base_sha"]
+            else "Audited on a commit later than the study's base."
+        ),
         "base_sha_at_start": base["base_sha"],
         "origin_main_now": git("rev-parse", "origin/main"),
         "origin_main_at_start": base["origin_main_sha"],
         "origin_main_unchanged": git("rev-parse", "origin/main") == base["origin_main_sha"],
         "forbidden_tracked_files": forbidden,
+        "deliberately_tracked_exceptions": sorted(TRACKED_EXCEPTIONS),
         "previous_study_files_changed": [f for f in other_studies.splitlines() if f],
     }
 
