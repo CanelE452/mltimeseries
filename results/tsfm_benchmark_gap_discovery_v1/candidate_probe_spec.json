@@ -1,0 +1,18 @@
+{
+  "candidates": [],
+  "confirmation_untouched": true,
+  "deployable_probe_window_rule": "Deployable probes may use windows 0..k-1 to act on window k and are scored on windows 1..K-1; every quantity they are compared against is restricted to the same windows.",
+  "experiment": "TSFM-BENCHMARK-GAP-DISCOVERY-v1",
+  "frozen_at_utc": "2026-09-07T02:44:03.624387+00:00",
+  "headroom_definitions": {
+    "H_oracle": "100 * (baseline_loss - oracle_loss) / baseline_loss",
+    "H_residual": "100 * (simple_loss - oracle_loss) / baseline_loss",
+    "R_simple": "(baseline_loss - simple_loss) / (baseline_loss - oracle_loss)",
+    "baseline_loss": "one primary foundation model, chosen once for the whole affected task set by its mean aggregate and applied unchanged to every task in it; not a per-task winner",
+    "oracle_loss": "P0 per-origin minimum across the primary foundation models (uses evaluation labels; diagnostic only)",
+    "simple_loss": "best deployable simple fix among P1, P3, P4 and P6"
+  },
+  "max_candidates": 4,
+  "split_used_for_discovery": "discovery",
+  "track": "U"
+}

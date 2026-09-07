@@ -1,0 +1,54 @@
+{
+  "experiment": "TSFM-BENCHMARK-GAP-DISCOVERY-v1",
+  "timestamp_utc": "2026-09-07T01:25:35.860673+00:00",
+  "repo": "CanelE452/mltimeseries",
+  "branch": "tsfm-benchmark-gap-discovery-v1",
+  "base_sha": "b4fbea46b1ac9cd221e0ef3d7bc769d2f2d8a77f",
+  "origin_main_sha": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "dirty_before_start": {
+    "tracked_modifications": [],
+    "untracked": [
+      ".venv-tsfm/",
+      "_docs/history/.pending.md",
+      "experiments/tsfm_benchmark_gap_discovery_v1/",
+      "results/hq_token_pilot_v1_dryrun/",
+      "results/oa_resolution_pilot_v1_dryrun/",
+      "results/uncertain_covariate_path_pilot_v1_dryrun/per_example_losses.npz"
+    ],
+    "hard_stop_triggered": false
+  },
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "python_executable": "E:\\CODING\\proj\\mltimeseries\\.venv-tsfm\\Scripts\\python.exe",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4070",
+      "total_memory_mb": 12282,
+      "capability": "8.9"
+    }
+  ],
+  "cuda": {
+    "torch_cuda_version": "12.8",
+    "cuda_available": true,
+    "nvcc_available": false,
+    "msvc_cl_available": false
+  },
+  "free_disk_bytes": 832416829440,
+  "free_disk_gb": 775.2,
+  "packages": {
+    "fev": "0.10.0",
+    "chronos-forecasting": "2.3.1",
+    "tirex-2": "0.2.1",
+    "timesfm": "3.0.1",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "datasets": "4.8.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "xlstm": "2.0.5",
+    "huggingface_hub": "1.30.0",
+    "accelerate": "1.14.0"
+  }
+}

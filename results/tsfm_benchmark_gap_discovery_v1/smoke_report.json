@@ -1,0 +1,320 @@
+{
+  "smoke_task": "fevbench::bizitobs_l2c_1H::bizitobs_l2c_1H",
+  "ran_at_utc": "2026-09-07T01:54:25.255308+00:00",
+  "device": "cuda",
+  "task_contract": {
+    "eval_metric": "SQL",
+    "quantile_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "horizon": 24,
+    "num_windows": 20,
+    "seasonality": 24,
+    "target_columns": [
+      "target_0",
+      "target_1",
+      "target_2",
+      "target_3",
+      "target_4",
+      "target_5",
+      "target_6"
+    ],
+    "freq": "h"
+  },
+  "windows_checked": 2,
+  "results": [
+    {
+      "model": "chronos-2",
+      "track": "U",
+      "load_seconds": 4.74,
+      "device": "cuda",
+      "window_scores": [
+        0.010583636855146808,
+        0.13497577539090866
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.191,
+        0.026
+      ],
+      "forecasts_per_second": 64.3,
+      "origin_reconciliation_gap_max": 2.056337556516708e-16,
+      "peak_memory_mb": 503.6,
+      "notes": {
+        "entry_point": "Chronos2Pipeline.predict_quantiles",
+        "batch_size": 256,
+        "default_context_length": 2048
+      },
+      "status": "OK"
+    },
+    {
+      "model": "tirex-2-fevbench",
+      "track": "U",
+      "load_seconds": 0.96,
+      "device": "cuda",
+      "window_scores": [
+        0.026931555362087592,
+        0.149339624708999
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.271,
+        0.179
+      ],
+      "forecasts_per_second": 31.1,
+      "origin_reconciliation_gap_max": 2.576492078016159e-16,
+      "peak_memory_mb": 351.4,
+      "notes": {
+        "entry_point": "tirex2.ForecastModel.forecast",
+        "batch_size": 256,
+        "native_pytorch_kernels": true,
+        "point_forecast": "median quantile (model emits no separate mean)"
+      },
+      "status": "OK"
+    },
+    {
+      "model": "timesfm-3.0",
+      "track": "U",
+      "load_seconds": 1.85,
+      "device": "cuda",
+      "window_scores": [
+        0.006565824479013162,
+        0.12110678544548671
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.344,
+        0.306
+      ],
+      "forecasts_per_second": 21.6,
+      "origin_reconciliation_gap_max": 2.291826631640092e-16,
+      "peak_memory_mb": 1328.2,
+      "notes": {
+        "entry_point": "TimesFM3Evaluator.predict_batch",
+        "per_core_batch_size": 32,
+        "univariate_flag": true
+      },
+      "status": "OK"
+    },
+    {
+      "model": "chronos-2-synth",
+      "track": "U",
+      "load_seconds": 1.28,
+      "device": "cuda",
+      "window_scores": [
+        0.012919019826880573,
+        0.13578978236179343
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.025,
+        0.025
+      ],
+      "forecasts_per_second": 280.7,
+      "origin_reconciliation_gap_max": 2.0440106120560642e-16,
+      "peak_memory_mb": 503.3,
+      "notes": {
+        "entry_point": "Chronos2Pipeline.predict_quantiles",
+        "batch_size": 256,
+        "default_context_length": 2048
+      },
+      "status": "OK"
+    },
+    {
+      "model": "tirex-2-general",
+      "track": "U",
+      "load_seconds": 0.74,
+      "device": "cuda",
+      "window_scores": [
+        0.026931555362087592,
+        0.149339624708999
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.176,
+        0.174
+      ],
+      "forecasts_per_second": 40.0,
+      "origin_reconciliation_gap_max": 2.576492078016159e-16,
+      "peak_memory_mb": 351.4,
+      "notes": {
+        "entry_point": "tirex2.ForecastModel.forecast",
+        "batch_size": 256,
+        "native_pytorch_kernels": true,
+        "point_forecast": "median quantile (model emits no separate mean)"
+      },
+      "status": "OK"
+    },
+    {
+      "model": "seasonal-naive",
+      "track": "U",
+      "window_scores": [
+        1.0914291891217118,
+        0.6949324821588267
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.001,
+        0.001
+      ],
+      "forecasts_per_second": 10883.9,
+      "origin_reconciliation_gap_max": 2.0344389460915341e-16,
+      "peak_memory_mb": null,
+      "notes": {
+        "estimator": "seasonal_naive",
+        "seasonality": 24
+      },
+      "status": "OK"
+    },
+    {
+      "model": "linear-ar-specialist",
+      "track": "U",
+      "window_scores": [
+        0.5378274258569351,
+        0.41594819131709654
+      ],
+      "n_items": 7,
+      "horizon": 24,
+      "context_median": 2208,
+      "quantile_shapes": [
+        [
+          7,
+          1,
+          24,
+          9
+        ],
+        [
+          7,
+          1,
+          24,
+          9
+        ]
+      ],
+      "seconds_per_window": [
+        0.003,
+        0.003
+      ],
+      "forecasts_per_second": 2184.7,
+      "origin_reconciliation_gap_max": 0.0,
+      "peak_memory_mb": null,
+      "notes": {
+        "estimator": "linear_ar_specialist",
+        "seasonality": 24,
+        "ridge_alpha": 1.0,
+        "fitted_on": "visible history of each series only"
+      },
+      "status": "OK"
+    }
+  ],
+  "tirex2_kernel_agreement": {
+    "available": true,
+    "max_abs_difference": 1.1324882507324219e-06,
+    "max_relative_difference": 1.0463784292369382e-06
+  },
+  "n_ok": 7,
+  "n_blocked": 0
+}

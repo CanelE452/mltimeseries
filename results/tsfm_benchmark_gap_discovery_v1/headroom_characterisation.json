@@ -1,0 +1,54 @@
+{
+  "scope": "all 12 TRACK U discovery tasks, treated as one set",
+  "not_a_candidate": "No descriptor bucket passed the failure gate. These numbers characterise the model set as a whole and are not evidence that any condition is a gap.",
+  "baseline_model": {
+    "model": "timesfm-3.0",
+    "chosen": "single model for the whole task set",
+    "per_model_mean_aggregate": {
+      "chronos-2": 0.7837831822285336,
+      "tirex-2": 0.7638201028541393,
+      "timesfm-3.0": 0.7353338725968904
+    }
+  },
+  "n_tasks": 12,
+  "baseline_loss": 0.7029129859420328,
+  "oracle_loss": 0.6554605660325786,
+  "oracle_is_deployable": false,
+  "simple_loss": 0.7104865392078829,
+  "best_simple_fix": "P6_quantile_average_ensemble",
+  "per_simple_fix_loss": {
+    "P4_supervised_specialist": 1.0471780509850233,
+    "P6_quantile_average_ensemble": 0.7104865392078829
+  },
+  "H_oracle_pct": 6.750824192820847,
+  "R_simple": -0.15960309885779214,
+  "H_residual_pct": 7.8282766538392075,
+  "bootstrap": {
+    "n_replicates": 1000,
+    "n_tasks": 12,
+    "resampling": "origins within evaluation windows, paired across probes",
+    "interpretation": "conditional on this set of tasks; it does not express uncertainty about which tasks the benchmark contains",
+    "H_oracle_pct": {
+      "median": 6.95350365989401,
+      "ci_lower": 5.758656757583996,
+      "ci_upper": 8.584941455509139
+    },
+    "R_simple": {
+      "median": -0.10580548038731552,
+      "ci_lower": -0.31527638620422616,
+      "ci_upper": 0.07227650470016088
+    },
+    "H_residual_pct": {
+      "median": 7.722176258162145,
+      "ci_lower": 6.927932790954772,
+      "ci_upper": 8.661898884744854
+    }
+  },
+  "screen_if_it_had_been_a_candidate": {
+    "passes_oracle_headroom": true,
+    "passes_simple_recovery": true,
+    "passes_residual": true,
+    "simple_baseline_solves": false,
+    "verdict": "PROCEED_TO_CONFIRMATION"
+  }
+}

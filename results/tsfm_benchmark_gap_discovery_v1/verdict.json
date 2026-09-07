@@ -1,0 +1,35 @@
+{
+  "experiment": "TSFM-BENCHMARK-GAP-DISCOVERY-v1",
+  "generated_at_utc": "2026-09-07T03:32:14.718869+00:00",
+  "execution_status": "COMPLETED",
+  "final_token": "NO_STRONG_GAP_FOUND",
+  "final_token_reason": "no descriptor bucket met the registered failure gate on the discovery split",
+  "benchmark": "fev-bench",
+  "primary_models": [
+    "chronos-2",
+    "tirex-2",
+    "timesfm-3.0"
+  ],
+  "diagnostic_models": [
+    "chronos-2-synth"
+  ],
+  "tracks_run": [
+    "C",
+    "M",
+    "U"
+  ],
+  "discovery_tasks": 12,
+  "confirmation_tasks": 6,
+  "confirmation_opened": true,
+  "n_gap_candidates": 0,
+  "top_candidate": null,
+  "integrity": {
+    "task_selection_frozen": true,
+    "confirmation_untouched_until_freeze": true,
+    "information_conditions_fair": true,
+    "metric_contract_valid": true,
+    "checks_passed": 20,
+    "checks_total": 20
+  },
+  "notes": []
+}

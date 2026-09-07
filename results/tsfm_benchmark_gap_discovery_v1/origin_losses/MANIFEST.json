@@ -1,0 +1,703 @@
+{
+  "description": "Per-origin scaled quantile losses for every (model, track, task) cell. Arrays: origin_loss (float32) and origin_key ('w{window}::{series id}'). No target values, no covariates, no raw benchmark data.",
+  "n_files": 174,
+  "total_bytes": 2391282,
+  "files": {
+    "chronos-2-synth__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "8d39d9f09dfed9e5224be3ef8be6a769d32093991f4782f315435ec890daef61",
+      "bytes": 1535
+    },
+    "chronos-2-synth__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "dc48aa10bf5481321c6f64b6946ec4079550a27706a137d1eae8ed81e5b75ffc",
+      "bytes": 923
+    },
+    "chronos-2-synth__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "cca3a4d73c9b5b8c87e36d8ac4e846f586d092d38f982cca092560310c5ea964",
+      "bytes": 103177
+    },
+    "chronos-2-synth__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "c860d2d8ed09da07f06200971d3207fa30206d3f57689a7e14b3a3cfd8efb48e",
+      "bytes": 61888
+    },
+    "chronos-2-synth__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "ead926c3079ae082a8990a82b310b9099453a7b18f6243116f7ae57fe85629c6",
+      "bytes": 922
+    },
+    "chronos-2-synth__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "240287a552eb67ab7f06bbc0f4681b8337e714ff156dffb33ff00279768dbcda",
+      "bytes": 926
+    },
+    "chronos-2-synth__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "266f1439f13200d12637181ef147b49d660fff06c749dbbb9cffd32b62493592",
+      "bytes": 924
+    },
+    "chronos-2-synth__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "a04da32ca37bdb623a9f9fb3538bf79c8441b3bb21f3f758b405fef99a5d311a",
+      "bytes": 1062
+    },
+    "chronos-2-synth__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "9a0e22c564d41d21b00cb2e9877298e4c9825050bf6cb5cb0bd436eb8534b1cc",
+      "bytes": 946
+    },
+    "chronos-2-synth__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "c66560933455d968caa11499365abd1370d136c35311e726a14786cc0ddf9969",
+      "bytes": 851
+    },
+    "chronos-2-synth__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "57077fdb406a70c5278aecc3973c531815b8915dd3f856116843454e8f13b4ec",
+      "bytes": 921
+    },
+    "chronos-2-synth__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "adeb8b6289057d229553be5caf6d82024e8fc541088059dd39298412c26641b6",
+      "bytes": 1818
+    },
+    "chronos-2-synth__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "a7eaa9ff5a1496681599d945670a8206893fc7b4e988ca3be18a2ecf5fe3622e",
+      "bytes": 686
+    },
+    "chronos-2-synth__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "1283fb9bde7bf811baa043e8a5e904bb7312f8734262164e8a7ab71ad9172108",
+      "bytes": 685
+    },
+    "chronos-2-synth__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "7690e6ca4a558b0e63e0590ee79072f8ce1482c7c4c2e28b42acae937ccc8bab",
+      "bytes": 2193
+    },
+    "chronos-2-synth__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "6a3364f613a30027ef25bc8c7a890d01b46cf0d7241858f2ee75467424b35613",
+      "bytes": 1283
+    },
+    "chronos-2-synth__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "002fb9b474d91f10bd753a0b6690395a20e29b0fd2ca07aea29f2b9de884a609",
+      "bytes": 922
+    },
+    "chronos-2-synth__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "102c8dc3b405d1b5b0f5b4cb8f10fb19d5ad5ba31484704ead9c638ea335d8de",
+      "bytes": 1838
+    },
+    "chronos-2-synth__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "2b7f1b6ec2cdfbc29a6d8235ccb4d11004d1c29d202f2e9d8a08923eaa782b65",
+      "bytes": 813
+    },
+    "chronos-2-synth__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "c1cbee89a7601b82eeab864bed23cf092461d65d406afb17e66889a96018779d",
+      "bytes": 103222
+    },
+    "chronos-2-synth__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "166733d4ee08b483e5fa740c001d400e438a062a1370d9774d1d0d8be5e0e39f",
+      "bytes": 946
+    },
+    "chronos-2-synth__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "6030b57affa93e532a2539b1a08d9779b3631df8f61f5aaf0eb56f1561d4b7f1",
+      "bytes": 61653
+    },
+    "chronos-2-synth__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "2d558b7ac39b09034e9b5cc760657056f3208cf1bff59a6bb7c83e01876bb04e",
+      "bytes": 851
+    },
+    "chronos-2-synth__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "35ac37cbd086bc15984d396eeb0792664174ac62672da89b3577faa9eab22871",
+      "bytes": 8205
+    },
+    "chronos-2-synth__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "3f1d00781a667c97906d0f910499b2f6d4181140dc9a2df5f1a417787a2393f7",
+      "bytes": 18980
+    },
+    "chronos-2-synth__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "5919c63e49935329da37e67c2abec8199ec24896e42b5b34b42c388b6ad1278c",
+      "bytes": 2293
+    },
+    "chronos-2-synth__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "d37602e4ee7744a57a093d4932035000f3f99a89edd93ac81f38a3dd5d5e203b",
+      "bytes": 9013
+    },
+    "chronos-2-synth__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "6dddbbc9e9a428dc8208cc5bf9572c1c09e3413754f51587a3e36648fd1645b5",
+      "bytes": 9491
+    },
+    "chronos-2-synth__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "6cb20aa71c232c216616712ca2878ce6a5945545a5fbd86f11010265aa12557d",
+      "bytes": 684
+    },
+    "chronos-2__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "36532868a7ae1c2f245373cc3bc8910fdbe2127197d7cb9ab1b8d2406bcc9587",
+      "bytes": 1530
+    },
+    "chronos-2__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "f47dc2d3f92d1dac3a2548efe87ff7f0fd3816f238e035843a36f7f05d0930ed",
+      "bytes": 923
+    },
+    "chronos-2__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "c45e511db04050bdbce82c78ef4e065410da8f66f076c64b06ba8c49c28521c1",
+      "bytes": 103168
+    },
+    "chronos-2__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "e5401dafbcea3e42917dcf73fa56193a354273de2a6f4d3da63760e628f468c9",
+      "bytes": 61886
+    },
+    "chronos-2__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "d58c772367ae96dba7ccbbef309f0acd9b1c5552f4a0d4e11fd4b030f48203a2",
+      "bytes": 922
+    },
+    "chronos-2__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "3ed2abf03b740b37cb8f96f08ac952d2feb1e81ddeae0640f2c3baca007d89a1",
+      "bytes": 926
+    },
+    "chronos-2__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "bc8047534732e741e341f2d54ffdf9c7f47c672c1c56ccf470a93067e7bf0b5c",
+      "bytes": 925
+    },
+    "chronos-2__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "994fed1f0d7a0ffa1510432a54808e67cbdc4a1e86a9be854ec03b04c6d36d44",
+      "bytes": 1062
+    },
+    "chronos-2__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "b84c301d59e0dc7a928af578bfe293c8cdcd2c8498ab4734cafa22a7ecf4ae08",
+      "bytes": 946
+    },
+    "chronos-2__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "f60cae9e10499b782292e5e2cdf7ee9f6a46e76f0373893c664b3392de67c6dd",
+      "bytes": 851
+    },
+    "chronos-2__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "3028348dbed45e0013a428113f3085d065d9e586de0c538981cfbbd6f6e69f08",
+      "bytes": 923
+    },
+    "chronos-2__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "0f7c55b68af8635789903b98ae15a80d2385db529d0da5ea2c38fec6987b6211",
+      "bytes": 1832
+    },
+    "chronos-2__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "fe256c032d42c56f4d7f8165a6725f021f7078f34b6d400f1cb628417773c42a",
+      "bytes": 686
+    },
+    "chronos-2__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "9bd1b053727697893c01799d1fb46bfa4de60321532ae8b75ba92c0d6474f70f",
+      "bytes": 685
+    },
+    "chronos-2__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "82951a5fe721606887c9e5352b68caf1b145d48c6cd038ad03ab9a1424b0ad44",
+      "bytes": 2186
+    },
+    "chronos-2__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "0b3072448975dd649db452c37267b3f47b23893f149a6bcb0677d1d97a47feda",
+      "bytes": 1277
+    },
+    "chronos-2__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "043f0432f3f930ffd9b9c1c49710718c01de0a5723eb9f31d10a725dfc37c30a",
+      "bytes": 922
+    },
+    "chronos-2__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "1b09d01c741f9c204ff87e0dbb6460c2f440573c767f6207031ccce54eb64ba9",
+      "bytes": 1835
+    },
+    "chronos-2__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "8dcb895c51419d0a39eae9bdf32bb98281c07702ff8dc7cf520973256599bc75",
+      "bytes": 814
+    },
+    "chronos-2__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "e08485f05055f65bef2d90c80d4081c2fe3186565efab702b17b8109b23cebe6",
+      "bytes": 103181
+    },
+    "chronos-2__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "eed0d094a50ead73bdc88b533ac7d774c05a63a65f888452a34381c7a7a9559f",
+      "bytes": 945
+    },
+    "chronos-2__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "2b0d1b1e8b22f85ef0102a341e6bc26cac5771569fd99b52c3b07b27b75207d4",
+      "bytes": 61662
+    },
+    "chronos-2__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "034483e7e24576b6688d8622ef8e093044946eef502efee6af6a6cab9628746e",
+      "bytes": 851
+    },
+    "chronos-2__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "f755d4230dc6e1b2c9c2d7ae1bfe5664db9ea01fe6c828bdd0372208a1986d53",
+      "bytes": 8221
+    },
+    "chronos-2__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "01f942af067b198a7fa9cefe821aeabf0082f3e908897e228fed7a57f3e80d60",
+      "bytes": 18984
+    },
+    "chronos-2__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "2f800e2b871e252d7550a3d56e9737d4bbf462ac280d1475af78fe636047acf8",
+      "bytes": 2291
+    },
+    "chronos-2__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "f287889189cb8c846ca8d41634e36f7178025f4208d6bc97f249b735ed0c9ac6",
+      "bytes": 9021
+    },
+    "chronos-2__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "a9b329686f7cd038646aa9eec7dbd0512c217cec5866bf86ba11d5825e49a7a0",
+      "bytes": 9490
+    },
+    "chronos-2__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "75c923432d31930b14eab96bb6ffefa17c01ad86cc324d8471d4aa81fed45a89",
+      "bytes": 684
+    },
+    "linear-ar-specialist__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "61a1f2a3d85e698f30ac1a9abf30a77412b5227e1830787017f42bfdf418e838",
+      "bytes": 1517
+    },
+    "linear-ar-specialist__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "ac78552e22b6ddb5e799f658684539a1700f2e4365e3a254fedda4b943419a1e",
+      "bytes": 922
+    },
+    "linear-ar-specialist__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "66b323a771c276df76fe0fc259a6be7e08e55c44f76b0b00eb5eebdbd85d0685",
+      "bytes": 102361
+    },
+    "linear-ar-specialist__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "b7aff12eeed172d9c87db5a53e5f5a87df42a1f80933e7792e495ece29fc2287",
+      "bytes": 61498
+    },
+    "linear-ar-specialist__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "1fc57b2fd48b8c2910a3c963e9db0c978d183e463add57498d61764204691d09",
+      "bytes": 922
+    },
+    "linear-ar-specialist__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "877fe78d3898f01eb3335c8a29e413f86e5d3719a504003b17bb0367a388c832",
+      "bytes": 926
+    },
+    "linear-ar-specialist__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "55f179e3dda5ca642edf711b5dd6f413ca20b57c1a8e89f7c7f8ca6b1161b2a8",
+      "bytes": 924
+    },
+    "linear-ar-specialist__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "e1aa50bc4815f71b3e5f48f9bea2ff193d498dee5a933c6b9fd35ee606ea5313",
+      "bytes": 1062
+    },
+    "linear-ar-specialist__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "b144d1306257dd5a056deb3dfc70702fb1032a6b9aa9411c922d1d2c47cbad44",
+      "bytes": 946
+    },
+    "linear-ar-specialist__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "4681ec233fec58ecfad08ea5918087d918c3bafd5efb0642e25d81ababbf0ec0",
+      "bytes": 851
+    },
+    "linear-ar-specialist__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "1fc57b2fd48b8c2910a3c963e9db0c978d183e463add57498d61764204691d09",
+      "bytes": 922
+    },
+    "linear-ar-specialist__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "6861cddf5b4e008c4ff25dbef3574b57fd35676344da47ff4756f040a65d2c48",
+      "bytes": 1821
+    },
+    "linear-ar-specialist__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "380f329f7e041486de1b98d5e47109528b46eb4506080583885f7696fccd56ec",
+      "bytes": 687
+    },
+    "linear-ar-specialist__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "70b608c82a40bfa49726b858a681f5efa297baf374e5666f2067636525177540",
+      "bytes": 685
+    },
+    "linear-ar-specialist__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "2ba59f362daeb37027328ec21729c17be33c3f350c7a58af83eb747f8a3a3270",
+      "bytes": 2167
+    },
+    "linear-ar-specialist__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "bb48355d06689cf83ca90b4fefec532ced2166843eaae1bfe872c139e7a85888",
+      "bytes": 1264
+    },
+    "linear-ar-specialist__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "ac78552e22b6ddb5e799f658684539a1700f2e4365e3a254fedda4b943419a1e",
+      "bytes": 922
+    },
+    "linear-ar-specialist__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "e78b37dc1fdeb66ded4d9109e2408ad3b2df0232b8c79f299a8032f7cd6a38fc",
+      "bytes": 1831
+    },
+    "linear-ar-specialist__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "a95cb0fa3be11f6a6ebec84e297ccb25c09deb92c5c8ed5f7e60096d8ff8cd08",
+      "bytes": 813
+    },
+    "linear-ar-specialist__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "66b323a771c276df76fe0fc259a6be7e08e55c44f76b0b00eb5eebdbd85d0685",
+      "bytes": 102361
+    },
+    "linear-ar-specialist__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "b144d1306257dd5a056deb3dfc70702fb1032a6b9aa9411c922d1d2c47cbad44",
+      "bytes": 946
+    },
+    "linear-ar-specialist__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "afd6bf9546d2c3768c9197a181372137ef03fd86b7a0b7c8bcba94d0e544c858",
+      "bytes": 61252
+    },
+    "linear-ar-specialist__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "4681ec233fec58ecfad08ea5918087d918c3bafd5efb0642e25d81ababbf0ec0",
+      "bytes": 851
+    },
+    "linear-ar-specialist__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "e8e5068ddc128be73c27263542133f43a01d154be0e51340f181c1bcb92388c8",
+      "bytes": 8091
+    },
+    "linear-ar-specialist__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "8b7c313a0062c599081e55285a53595456dba8ffc4cc3964edd080184ae85e57",
+      "bytes": 18760
+    },
+    "linear-ar-specialist__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "7f27d9717e5cbcc0b58cf02f07fb431e7aa503fa7a5d14a41f6e28b2ba1779fd",
+      "bytes": 2263
+    },
+    "linear-ar-specialist__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "466d33a65166f77a15df40dc54ccea82027d6f0c4544954fe42df1099fb158ca",
+      "bytes": 8907
+    },
+    "linear-ar-specialist__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "73df581a14f9138e5f5ab3cce9bc65a7fa2330fb18f2b2021062c211f6591a78",
+      "bytes": 9468
+    },
+    "linear-ar-specialist__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "b0066fce4cee581dd5fcfebb219b47e155bc88dc06089772762675cd50712734",
+      "bytes": 683
+    },
+    "seasonal-naive__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "7fb384596cd5124f6267e05e60ded06b8158127175e1e9571007fa273bc9fe47",
+      "bytes": 1514
+    },
+    "seasonal-naive__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "8864b75aeae853eaddaff43bf09a6c627bd053aae424d62d81883cf6f6f11204",
+      "bytes": 921
+    },
+    "seasonal-naive__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "902d17ddfcf295f3636483f4fb3f59ccbb01bd2267835980faa6155edea681b3",
+      "bytes": 102275
+    },
+    "seasonal-naive__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "e21cb4a2113d875236469eb62d8fe0cd2205e7f627656dce46f6fe455c63316e",
+      "bytes": 61647
+    },
+    "seasonal-naive__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "f91d184c15990afa41373e08eff10cb0968eaa830cf31a82d5b137b5161185ec",
+      "bytes": 923
+    },
+    "seasonal-naive__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "4762346ad90fe5d862f2459637f3fbb3225f5c15c6405a802aac04ff602dea08",
+      "bytes": 925
+    },
+    "seasonal-naive__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "64b9cae3cef77fd755b5beaeba6b9163b5e9f6ad407fb405d684c922a4833c9a",
+      "bytes": 924
+    },
+    "seasonal-naive__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "eb48bcb6d20381e161eafdce7157e60e8c5c340e97c1dc15a16e8eb0a35cc448",
+      "bytes": 1062
+    },
+    "seasonal-naive__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "463b5cfd75bd9d1f56ba981ea7749b9c9d12a580a5e0f9b43172c4251cd4e537",
+      "bytes": 945
+    },
+    "seasonal-naive__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "a3adbe2b8d1626d074c63aac1a04856558b47d5c66c85fb49ce36435edb2e9cc",
+      "bytes": 851
+    },
+    "seasonal-naive__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "f91d184c15990afa41373e08eff10cb0968eaa830cf31a82d5b137b5161185ec",
+      "bytes": 923
+    },
+    "seasonal-naive__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "6861cddf5b4e008c4ff25dbef3574b57fd35676344da47ff4756f040a65d2c48",
+      "bytes": 1821
+    },
+    "seasonal-naive__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "bb48a04fec2f64d700d0b8ab20495ebf24467e2e9c4d176ab63950b4f66056ca",
+      "bytes": 686
+    },
+    "seasonal-naive__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "6e96df2ea58d74ed76e995741c9c1a26bf81e7c3780bc58a5b2c5de770cc933e",
+      "bytes": 685
+    },
+    "seasonal-naive__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "1bdec54a457d383df7b2349b2d349995fef622ed800269e1e5dcdde879ccdad4",
+      "bytes": 2172
+    },
+    "seasonal-naive__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "c23e9bef42c87d6c894f526ebb9a4d47c85947179f615ee64b9bbc413551b2dc",
+      "bytes": 1261
+    },
+    "seasonal-naive__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "8864b75aeae853eaddaff43bf09a6c627bd053aae424d62d81883cf6f6f11204",
+      "bytes": 921
+    },
+    "seasonal-naive__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "87bd3a9792ec60b27b0f652ee4c0433f0e6ecc6aa6ea2e09b3773fe20ed38fe0",
+      "bytes": 1826
+    },
+    "seasonal-naive__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "f079654fc27fcbe452c337c5ef250ac39489369b384564e14f28c6859a5631bb",
+      "bytes": 813
+    },
+    "seasonal-naive__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "902d17ddfcf295f3636483f4fb3f59ccbb01bd2267835980faa6155edea681b3",
+      "bytes": 102275
+    },
+    "seasonal-naive__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "463b5cfd75bd9d1f56ba981ea7749b9c9d12a580a5e0f9b43172c4251cd4e537",
+      "bytes": 945
+    },
+    "seasonal-naive__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "ee4782a580742c49258f28dc9032d5d4693c356bf159a3e0b0d9f77b399b1697",
+      "bytes": 61401
+    },
+    "seasonal-naive__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "a3adbe2b8d1626d074c63aac1a04856558b47d5c66c85fb49ce36435edb2e9cc",
+      "bytes": 851
+    },
+    "seasonal-naive__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "424edc0a949ab3ba188aa03e1de61ac811e08920de9d937ff889317b91010463",
+      "bytes": 8116
+    },
+    "seasonal-naive__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "10ff4520b9ad338091590f0f748ff4da20e0007b7e0d853596d5c7457f4fb578",
+      "bytes": 18687
+    },
+    "seasonal-naive__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "749ef94f632891cadbdf1fdfe83b2191b95df0d425c47970af36f18aa669843a",
+      "bytes": 2254
+    },
+    "seasonal-naive__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "d580cac686d896737f39e0e37931bbd535dfa07114253ec5c498f115a3986a99",
+      "bytes": 8870
+    },
+    "seasonal-naive__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "0b9ca1a14b73e684394823dd81d162f8ea7fa359846e790b41ad89a1c26d7ff7",
+      "bytes": 9385
+    },
+    "seasonal-naive__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "38144b20a2c54e3d7ffb85f58df8e1361dee80bd1628dd4a3526cbc5a127b284",
+      "bytes": 684
+    },
+    "timesfm-3.0__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "89d56a33911fffdce76b41aeb2413073e5b9d738aee05d685a233f3ad9b7619f",
+      "bytes": 1536
+    },
+    "timesfm-3.0__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "09500812ebd4a4976e200f113fa7a6dbf164f998117436baf9ec37c10be89a60",
+      "bytes": 923
+    },
+    "timesfm-3.0__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "65d506a23566b6c0d43b8b3db1e74ec1b702ecc77c3669ea3aa4d4b60a9aa405",
+      "bytes": 103215
+    },
+    "timesfm-3.0__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "f4da2134bdb22288badd49d852091ec8a3f3992b8fe1e58666e800e3a74d8fb8",
+      "bytes": 61837
+    },
+    "timesfm-3.0__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "75583bba0a773cb2df31b94b198347748db478208fae31c0a768242c0f7de49b",
+      "bytes": 922
+    },
+    "timesfm-3.0__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "37ecd64b090e28e6a3fe85720317528f2ffe15e8cc53dbd3dec747ae729f756b",
+      "bytes": 925
+    },
+    "timesfm-3.0__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "c005e691ef191493e603ffdb306d4a75dd1b5a47e92c0de40a6afa0f0d9c0dca",
+      "bytes": 924
+    },
+    "timesfm-3.0__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "b66b65cdb1d6ba46adad730566944018f5733ddcd6da385a0f12bdcb5588d0e3",
+      "bytes": 1061
+    },
+    "timesfm-3.0__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "dbcc63cc9321bfad1ba0fbdf261f0489f7174c7539f4ee016a9d020e0149808b",
+      "bytes": 946
+    },
+    "timesfm-3.0__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "42e15a734263126a8a7a3fb2d3927d6e5d9107af49f8dc2340ccd3fc0b18154e",
+      "bytes": 850
+    },
+    "timesfm-3.0__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "c665e189f5c8be1ae5eef92839b085e5067ff597961e665e4de5346530f92593",
+      "bytes": 922
+    },
+    "timesfm-3.0__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "27312133625d4b123861cb97b63d6babcef1dfb80ab851fe868cd3f5555023c9",
+      "bytes": 1831
+    },
+    "timesfm-3.0__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "786d9e1ae046a9bec4d4a876f634facbcf16ecfb8e3f9b0dc41e6ac6d5400bef",
+      "bytes": 687
+    },
+    "timesfm-3.0__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "ec4c6ade69648e0fe068a9af43a059ee2717bbb998a7b6404f4907dd186db76f",
+      "bytes": 686
+    },
+    "timesfm-3.0__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "0bb7cc3f1199da9d450cfd98396eee7d544056aa4c4654e071fa1252c8a24ed4",
+      "bytes": 2189
+    },
+    "timesfm-3.0__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "a2dedcffc8612122934e580cdf64ebe22b4b7af571053615cfeb9857be106646",
+      "bytes": 1279
+    },
+    "timesfm-3.0__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "f97ab22b1ef9cd7a86261da418482eddca53fa9f9b939450a3eee770b30a68c6",
+      "bytes": 923
+    },
+    "timesfm-3.0__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "d5d4980c6818e6049e20812a0f9ea14de02f273631b14358fe75562953acc66c",
+      "bytes": 1834
+    },
+    "timesfm-3.0__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "098fb0d2c53ea4fdd1455207e3379a90913b88d0cf8c484dc79e0db22edbdb7e",
+      "bytes": 814
+    },
+    "timesfm-3.0__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "021c32f11329851882decb0a92175d7a0bb1a0c8a1c6fd3b679490610c93de7d",
+      "bytes": 103188
+    },
+    "timesfm-3.0__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "ca07dc8602fb05fac2b0f11675e9c130346af75a21de9fc166207496b5203aab",
+      "bytes": 945
+    },
+    "timesfm-3.0__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "598e353e31325dbdd872e332b5bcc93044f30157bd3490eaf980dd4f79a80a6a",
+      "bytes": 61607
+    },
+    "timesfm-3.0__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "d68a551de56c2ae57ea596e96d47fcdd1a84f39e93e130b328d71976eb901f23",
+      "bytes": 851
+    },
+    "timesfm-3.0__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "936e9db7a026d166a46f7fbe83d6fa557e01578ab4ae075f27e77f5299a5c2a1",
+      "bytes": 8153
+    },
+    "timesfm-3.0__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "70c2128a1f5efb696e903e16a10731fb67a900020e0a95bae34183c97aaec08d",
+      "bytes": 18975
+    },
+    "timesfm-3.0__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "b01b28303c6d5c8fa3be2f600bba4a070e14bec1c4d266074ce3c92d2fc8d579",
+      "bytes": 2295
+    },
+    "timesfm-3.0__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "68cd98c6b2d36952ae0ee2d40c54566932c5679453a44614bebe078d50749fbd",
+      "bytes": 9032
+    },
+    "timesfm-3.0__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "1ae33fd2774ce89912f99896192df5097e2a6bc2c4f006ef632377735440274a",
+      "bytes": 9491
+    },
+    "timesfm-3.0__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "a0d409335a4eaaefe33c8341a08c1538daae378ca16b4940d8d70b209a81e3b1",
+      "bytes": 683
+    },
+    "tirex-2__trackC__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "74df5aa4f75234bbf28830a4672e43b7c6bdb82abb9b2fa626d21c1733beb7a5",
+      "bytes": 1532
+    },
+    "tirex-2__trackC__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "2c04c1761cdf0404bee314b44c9e923aea383e817e790f5d4d79f47ff57909c2",
+      "bytes": 923
+    },
+    "tirex-2__trackC__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "c5f0a7cfd32544f75b612dea6fa0024917f6a97dc80558a96bbe401890e62c7a",
+      "bytes": 103098
+    },
+    "tirex-2__trackC__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "fbd995a01c89df3ee03e72853ea23ae629103604b21e37bbc13717b280f0cb5a",
+      "bytes": 61755
+    },
+    "tirex-2__trackC__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "6f7690fe0b1cbf247d71685357ae81ceb385c8dd33a2d8db7cd238c656385ef3",
+      "bytes": 922
+    },
+    "tirex-2__trackM__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "766e1dc73ac8f9160d45d0d792aed198a7dd566f1b76d0fd2d77a6c92ced99a0",
+      "bytes": 925
+    },
+    "tirex-2__trackM__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "a4c5b2ed3e07e3d7f880914869c3860b59dfe9a6017f6385242963b2e525ea8c",
+      "bytes": 924
+    },
+    "tirex-2__trackM__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "17ce5a90fae1d7cb748c040f3188d3d05fa29ddd49fa48e6dee5cc3b8c7a10a4",
+      "bytes": 1063
+    },
+    "tirex-2__trackM__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "21e412670ff510b0e85da31738a3c07b41a2e4340f367a4f7750c6466109738f",
+      "bytes": 945
+    },
+    "tirex-2__trackM__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "413a1a2bdc1c1e37ae25c0112d5fbbf91611d0618e96285367d6db3380fd161a",
+      "bytes": 851
+    },
+    "tirex-2__trackM__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "7932e272e18fb40a1808381f6bbf1c4d69be571d925354b9d30535c9b9e8d724",
+      "bytes": 922
+    },
+    "tirex-2__trackU__fevbench__australian_tourism__australian_tourism__origins.npz": {
+      "sha256": "3c1b01a0333ed8484ecc72cb5d7288e99e8dd8073184c1dc0bd43f9eeb244a5c",
+      "bytes": 1831
+    },
+    "tirex-2__trackU__fevbench__bizitobs_l2c_1H__bizitobs_l2c_1H__origins.npz": {
+      "sha256": "789a6fa2f3e15e559a2d40980239698f8074649991cc14bf10d8aeeb89ec0f86",
+      "bytes": 687
+    },
+    "tirex-2__trackU__fevbench__boomlet_1062__boomlet_1062__origins.npz": {
+      "sha256": "06df925b301c59796993ab81e17c26d5a62e25502f5dd2842c0dcbb7f880f54f",
+      "bytes": 685
+    },
+    "tirex-2__trackU__fevbench__ecdc_ili__ecdc_ili__origins.npz": {
+      "sha256": "81d048c5d6b17fc0adbc778c6016e5df8e82b7d91ab3c1463792f74dc1402309",
+      "bytes": 2190
+    },
+    "tirex-2__trackU__fevbench__entsoe_1H__entsoe_1H__origins.npz": {
+      "sha256": "e24dfa7c8a8e7acb681b453dc850552484aff85bd7c7101a8a7391370107e63b",
+      "bytes": 1283
+    },
+    "tirex-2__trackU__fevbench__epf_be__epf_be__origins.npz": {
+      "sha256": "376783dc70f9a016f28cd5bd8ae15192e302c45981b69a71d1223ebc4b550a0d",
+      "bytes": 923
+    },
+    "tirex-2__trackU__fevbench__ercot_1D__ercot_1D__origins.npz": {
+      "sha256": "76a28ab060ecfd03f12f66a7b2d620742a9685bebe3c35983177243231d439b4",
+      "bytes": 1829
+    },
+    "tirex-2__trackU__fevbench__ETT_1D__ETT_1D__origins.npz": {
+      "sha256": "b4bfbebec485b66502e9d3d047e600a1a7e5b1312bb3c65a0cb257a84389b301",
+      "bytes": 813
+    },
+    "tirex-2__trackU__fevbench__favorita_stores_1D__favorita_stores_1D__origins.npz": {
+      "sha256": "c1f199f181ee17086aa52c0d886f12f3d85982e4ff0ecba4c1bf480f02e37da0",
+      "bytes": 103155
+    },
+    "tirex-2__trackU__fevbench__fred_md_2025__fred_md_2025-cee__origins.npz": {
+      "sha256": "3d7b1ea63a890940f1688dbd7c3abbf8664e0e9a8a81f83788bb49321a031e83",
+      "bytes": 946
+    },
+    "tirex-2__trackU__fevbench__hermes__hermes__origins.npz": {
+      "sha256": "e775fde6ae7174cb2a3fb6e4323ac208cb488546d1d5b07457d594a51c9f15a1",
+      "bytes": 61597
+    },
+    "tirex-2__trackU__fevbench__jena_weather_1D__jena_weather_1D__origins.npz": {
+      "sha256": "1fccceca420be96b233d0d09237528ded2a0155bacd89c5796028ccb20c68481",
+      "bytes": 851
+    },
+    "tirex-2__trackU__fevbench__kdd_cup_2022_10T__kdd_cup_2022_10T__origins.npz": {
+      "sha256": "73fe7146d19d136e39611a6aa2b209f777fd0329db02495020de739fda05f709",
+      "bytes": 8214
+    },
+    "tirex-2__trackU__fevbench__LOOP_SEATTLE_1D__LOOP_SEATTLE_1D__origins.npz": {
+      "sha256": "d7bc0965845a4d84e0851bc75ecd8cdc973408f1631d46515d8d89a658bb0f65",
+      "bytes": 18948
+    },
+    "tirex-2__trackU__fevbench__M_DENSE_1H__M_DENSE_1H__origins.npz": {
+      "sha256": "5b225fe2e80c0e7aa7d0adf7201fe692db7b7c68bc26b18b3a2a566689880463",
+      "bytes": 2294
+    },
+    "tirex-2__trackU__fevbench__redset_1H__redset_1H__origins.npz": {
+      "sha256": "d636cd7a351126ab1edcc7d9206a1901853c0331162704c2ccfe67ab366f27fd",
+      "bytes": 9018
+    },
+    "tirex-2__trackU__fevbench__SZ_TAXI_15T__SZ_TAXI_15T__origins.npz": {
+      "sha256": "302c471eba9e0366847fa34f3fa493f85350aacc71b3894dbba5dcef66b49373",
+      "bytes": 9485
+    },
+    "tirex-2__trackU__fevbench__uci_air_quality_1H__uci_air_quality_1H__origins.npz": {
+      "sha256": "946acc6dd1479e440f62728d685f9993faadcd70f023326bfc704ecd4188d11c",
+      "bytes": 683
+    }
+  }
+}

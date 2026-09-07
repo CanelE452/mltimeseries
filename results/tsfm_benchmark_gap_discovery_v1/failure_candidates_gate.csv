@@ -1,0 +1,23 @@
+descriptor,descriptor_label,bucket,n_tasks_in_bucket,affected_models,n_affected_models,affected_families,n_affected_families,median_condition_gap_pct,median_regret_pct,gate_min_tasks,gate_min_families,gate_min_gap,gate_min_regret,passes_failure_gate,verdict
+D1,horizon ratio,long,4,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,38.81152907969118,1.5861903658322238,True,True,True,False,False,NOT_A_CANDIDATE
+D1,horizon ratio,medium,4,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,22.01774007401046,0.9969595279212541,True,True,True,False,False,NOT_A_CANDIDATE
+D1,horizon ratio,short,4,[],0,[],0,,12.12747894770455,True,False,False,True,False,NOT_A_CANDIDATE
+D2,frequency,daily_or_coarser,5,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,32.492338063999924,2.088471029695107,True,True,True,False,False,NOT_A_CANDIDATE
+D2,frequency,hourly,4,[],0,[],0,,11.70511573999095,True,False,False,True,False,NOT_A_CANDIDATE
+D2,frequency,sub_hourly,3,[],0,[],0,,1.0337127180116328,True,False,False,False,False,NOT_A_CANDIDATE
+D3,target dimensionality,1,8,[],0,[],0,,2.5004669550342618,True,False,False,False,False,NOT_A_CANDIDATE
+D3,target dimensionality,2_16,3,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,15.299641952155387,1.239585498106826,True,True,True,False,False,NOT_A_CANDIDATE
+D3,target dimensionality,gt16,1,[],0,[],0,,0.9602063378308754,False,False,False,False,False,CASE_ONLY
+D4,future covariates,available,3,[],0,[],0,,6.57260684243289,True,False,False,False,False,NOT_A_CANDIDATE
+D4,future covariates,none,9,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,55.68306108981269,2.2040020918162284,True,True,True,False,False,NOT_A_CANDIDATE
+D5,past covariates,available,1,[],0,[],0,,2.514436999817084,False,False,False,False,False,CASE_ONLY
+D5,past covariates,none,11,"[""chronos-2""]",1,"[""transformer_encoder""]",1,5.957951912317838,2.2040020918162284,True,False,True,False,False,NOT_A_CANDIDATE
+D6,zero fraction / intermittency,0.1_0.5,2,[],0,[],0,,6.365983619319635,False,False,False,False,False,CASE_ONLY
+D6,zero fraction / intermittency,lt0.1,10,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,23.996120127658525,2.024890439508858,True,True,True,False,False,NOT_A_CANDIDATE
+D7,missingness,high,2,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,5.711602089926392,1.658454718468191,False,True,True,False,False,CASE_ONLY
+D7,missingness,low,10,[],0,[],0,,2.1462365607556677,True,False,False,False,False,NOT_A_CANDIDATE
+D8,train-only distribution shift,high,4,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,8.253293262907844,1.2426169626194237,True,True,True,False,False,NOT_A_CANDIDATE
+D8,train-only distribution shift,low,4,[],0,[],0,,6.379953664102457,True,False,False,False,False,NOT_A_CANDIDATE
+D8,train-only distribution shift,mid,4,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,23.814289369685547,2.024890439508858,True,True,True,False,False,NOT_A_CANDIDATE
+D9,seasonal strength,moderate,3,[],0,[],0,,15.367828876736136,True,False,False,True,False,NOT_A_CANDIDATE
+D9,seasonal strength,weak,7,"[""chronos-2"", ""timesfm-3.0"", ""tirex-2""]",3,"[""recurrent_xlstm"", ""transformer_encoder"", ""transformer_patch_variate""]",3,38.07344006399356,1.190628111943416,True,True,True,False,False,NOT_A_CANDIDATE

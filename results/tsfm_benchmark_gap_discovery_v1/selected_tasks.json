@@ -1,0 +1,326 @@
+{
+  "benchmark": "fev-bench",
+  "confirmation_summary": {
+    "dataset_families": [
+      "epf",
+      "ercot",
+      "favorita",
+      "fred",
+      "jena",
+      "redset"
+    ],
+    "domains": {
+      "cloud": 1,
+      "econ": 1,
+      "energy": 2,
+      "nature": 1,
+      "retail": 1
+    },
+    "freq_buckets": {
+      "daily_or_coarser": 4,
+      "hourly": 2
+    },
+    "horizon_buckets": {
+      "long": 1,
+      "medium": 3,
+      "short": 2
+    },
+    "n": 6,
+    "n_dataset_families": 6,
+    "n_known_cov": 2,
+    "n_multivariate": 2,
+    "n_past_cov": 2,
+    "total_track_u_forecasts": 17641
+  },
+  "confirmation_tasks": [
+    "fevbench::favorita_stores_1D::favorita_stores_1D",
+    "fevbench::redset_1H::redset_1H",
+    "fevbench::fred_md_2025::fred_md_2025/cee",
+    "fevbench::ercot_1D::ercot_1D",
+    "fevbench::epf_be::epf_be",
+    "fevbench::jena_weather_1D::jena_weather_1D"
+  ],
+  "d1_horizon_ratio_thresholds": {
+    "medium_max": 0.05,
+    "short_max": 0.009589
+  },
+  "deferred_same_family_tasks": [
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1855::boomlet_1855"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1975::boomlet_1975"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_2187::boomlet_2187"
+    },
+    {
+      "family": "bizitobs",
+      "task_uid": "fevbench::bizitobs_l2c_5T::bizitobs_l2c_5T"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1209::boomlet_1209"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1225::boomlet_1225"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1230::boomlet_1230"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1282::boomlet_1282"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1487::boomlet_1487"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1631::boomlet_1631"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_1676::boomlet_1676"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_285::boomlet_285"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_619::boomlet_619"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_772::boomlet_772"
+    },
+    {
+      "family": "boomlet",
+      "task_uid": "fevbench::boomlet_963::boomlet_963"
+    },
+    {
+      "family": "redset",
+      "task_uid": "fevbench::redset_15T::redset_15T"
+    },
+    {
+      "family": "redset",
+      "task_uid": "fevbench::redset_5T::redset_5T"
+    },
+    {
+      "family": "fred",
+      "task_uid": "fevbench::fred_md_2025::fred_md_2025/macro"
+    },
+    {
+      "family": "fred",
+      "task_uid": "fevbench::fred_qd_2025::fred_qd_2025/cee"
+    },
+    {
+      "family": "fred",
+      "task_uid": "fevbench::fred_qd_2025::fred_qd_2025/macro"
+    }
+  ],
+  "discovery_summary": {
+    "dataset_families": [
+      "ETT",
+      "LOOP",
+      "M",
+      "SZ",
+      "australian",
+      "bizitobs",
+      "boomlet",
+      "ecdc",
+      "entsoe",
+      "hermes",
+      "kdd",
+      "uci"
+    ],
+    "domains": {
+      "cloud": 2,
+      "econ": 1,
+      "energy": 3,
+      "healthcare": 1,
+      "mobility": 3,
+      "nature": 1,
+      "retail": 1
+    },
+    "freq_buckets": {
+      "daily_or_coarser": 5,
+      "hourly": 4,
+      "sub_hourly": 3
+    },
+    "horizon_buckets": {
+      "long": 4,
+      "medium": 4,
+      "short": 4
+    },
+    "n": 12,
+    "n_dataset_families": 12,
+    "n_known_cov": 3,
+    "n_multivariate": 4,
+    "n_past_cov": 1,
+    "total_track_u_forecasts": 17898
+  },
+  "discovery_tasks": [
+    "fevbench::bizitobs_l2c_1H::bizitobs_l2c_1H",
+    "fevbench::boomlet_1062::boomlet_1062",
+    "fevbench::australian_tourism::australian_tourism",
+    "fevbench::ETT_1D::ETT_1D",
+    "fevbench::entsoe_1H::entsoe_1H",
+    "fevbench::kdd_cup_2022_10T::kdd_cup_2022_10T",
+    "fevbench::ecdc_ili::ecdc_ili",
+    "fevbench::LOOP_SEATTLE_1D::LOOP_SEATTLE_1D",
+    "fevbench::M_DENSE_1H::M_DENSE_1H",
+    "fevbench::SZ_TAXI_15T::SZ_TAXI_15T",
+    "fevbench::hermes::hermes",
+    "fevbench::uci_air_quality_1H::uci_air_quality_1H"
+  ],
+  "draw_order": [
+    "fevbench::bizitobs_l2c_1H::bizitobs_l2c_1H",
+    "fevbench::boomlet_1062::boomlet_1062",
+    "fevbench::australian_tourism::australian_tourism",
+    "fevbench::ETT_1D::ETT_1D",
+    "fevbench::entsoe_1H::entsoe_1H",
+    "fevbench::kdd_cup_2022_10T::kdd_cup_2022_10T",
+    "fevbench::ecdc_ili::ecdc_ili",
+    "fevbench::LOOP_SEATTLE_1D::LOOP_SEATTLE_1D",
+    "fevbench::M_DENSE_1H::M_DENSE_1H",
+    "fevbench::SZ_TAXI_15T::SZ_TAXI_15T",
+    "fevbench::jena_weather_1D::jena_weather_1D",
+    "fevbench::uci_air_quality_1H::uci_air_quality_1H",
+    "fevbench::favorita_stores_1D::favorita_stores_1D",
+    "fevbench::redset_1H::redset_1H",
+    "fevbench::fred_md_2025::fred_md_2025/cee",
+    "fevbench::ercot_1D::ercot_1D",
+    "fevbench::epf_be::epf_be",
+    "fevbench::solar_with_weather_15T::solar_with_weather_15T",
+    "fevbench::hospital::hospital",
+    "fevbench::hermes::hermes",
+    "fevbench::gvar::gvar",
+    "fevbench::proenfo_gfc12::proenfo_gfc12",
+    "fevbench::uk_covid_nation_1D::uk_covid_nation_1D/cumulative",
+    "fevbench::hierarchical_sales_1D::hierarchical_sales_1D",
+    "fevbench::us_consumption_1M::us_consumption_1M",
+    "fevbench::m5_1D::m5_1D",
+    "fevbench::world_co2_emissions::world_co2_emissions",
+    "fevbench::restaurant::restaurant",
+    "fevbench::rohlik_orders_1D::rohlik_orders_1D",
+    "fevbench::rossmann_1D::rossmann_1D",
+    "fevbench::walmart::walmart",
+    "fevbench::boomlet_1855::boomlet_1855",
+    "fevbench::boomlet_1975::boomlet_1975",
+    "fevbench::boomlet_2187::boomlet_2187",
+    "fevbench::bizitobs_l2c_5T::bizitobs_l2c_5T",
+    "fevbench::boomlet_1209::boomlet_1209",
+    "fevbench::boomlet_1225::boomlet_1225",
+    "fevbench::boomlet_1230::boomlet_1230",
+    "fevbench::boomlet_1282::boomlet_1282",
+    "fevbench::boomlet_1487::boomlet_1487",
+    "fevbench::boomlet_1631::boomlet_1631",
+    "fevbench::boomlet_1676::boomlet_1676",
+    "fevbench::boomlet_285::boomlet_285",
+    "fevbench::boomlet_619::boomlet_619",
+    "fevbench::boomlet_772::boomlet_772",
+    "fevbench::boomlet_963::boomlet_963",
+    "fevbench::redset_15T::redset_15T",
+    "fevbench::redset_5T::redset_5T",
+    "fevbench::fred_md_2025::fred_md_2025/macro",
+    "fevbench::fred_qd_2025::fred_qd_2025/cee",
+    "fevbench::fred_qd_2025::fred_qd_2025/macro",
+    "fevbench::us_consumption_1Q::us_consumption_1Q",
+    "fevbench::us_consumption_1Y::us_consumption_1Y",
+    "fevbench::world_life_expectancy::world_life_expectancy",
+    "fevbench::world_tourism::world_tourism",
+    "fevbench::ETT_1W::ETT_1W",
+    "fevbench::ercot_1M::ercot_1M",
+    "fevbench::ercot_1W::ercot_1W",
+    "fevbench::kdd_cup_2022_1D::kdd_cup_2022_1D",
+    "fevbench::solar_1D::solar_1D",
+    "fevbench::solar_1W::solar_1W",
+    "fevbench::ETT_1H::ETT_1H",
+    "fevbench::epf_de::epf_de",
+    "fevbench::epf_fr::epf_fr",
+    "fevbench::epf_np::epf_np",
+    "fevbench::epf_pjm::epf_pjm",
+    "fevbench::ercot_1H::ercot_1H",
+    "fevbench::proenfo_gfc14::proenfo_gfc14",
+    "fevbench::proenfo_gfc17::proenfo_gfc17",
+    "fevbench::solar_with_weather_1H::solar_with_weather_1H",
+    "fevbench::ETT_15T::ETT_15T",
+    "fevbench::entsoe_15T::entsoe_15T",
+    "fevbench::entsoe_30T::entsoe_30T",
+    "fevbench::kdd_cup_2022_30T::kdd_cup_2022_30T",
+    "fevbench::hospital_admissions_1D::hospital_admissions_1D",
+    "fevbench::hospital_admissions_1W::hospital_admissions_1W",
+    "fevbench::uk_covid_nation_1D::uk_covid_nation_1D/new",
+    "fevbench::uk_covid_nation_1W::uk_covid_nation_1W/cumulative",
+    "fevbench::uk_covid_nation_1W::uk_covid_nation_1W/new",
+    "fevbench::uk_covid_utla_1D::uk_covid_utla_1D/new",
+    "fevbench::uk_covid_utla_1W::uk_covid_utla_1W/cumulative",
+    "fevbench::M_DENSE_1D::M_DENSE_1D",
+    "fevbench::LOOP_SEATTLE_1H::LOOP_SEATTLE_1H",
+    "fevbench::SZ_TAXI_1H::SZ_TAXI_1H",
+    "fevbench::LOOP_SEATTLE_5T::LOOP_SEATTLE_5T",
+    "fevbench::uci_air_quality_1D::uci_air_quality_1D",
+    "fevbench::jena_weather_1H::jena_weather_1H",
+    "fevbench::jena_weather_10T::jena_weather_10T",
+    "fevbench::favorita_stores_1M::favorita_stores_1M",
+    "fevbench::favorita_stores_1W::favorita_stores_1W",
+    "fevbench::favorita_transactions_1D::favorita_transactions_1D",
+    "fevbench::favorita_transactions_1M::favorita_transactions_1M",
+    "fevbench::favorita_transactions_1W::favorita_transactions_1W",
+    "fevbench::hierarchical_sales_1W::hierarchical_sales_1W",
+    "fevbench::m5_1M::m5_1M",
+    "fevbench::m5_1W::m5_1W",
+    "fevbench::rohlik_orders_1W::rohlik_orders_1W",
+    "fevbench::rohlik_sales_1D::rohlik_sales_1D",
+    "fevbench::rohlik_sales_1W::rohlik_sales_1W",
+    "fevbench::rossmann_1W::rossmann_1W"
+  ],
+  "experiment": "TSFM-BENCHMARK-GAP-DISCOVERY-v1",
+  "frozen_at_utc": "2026-09-07T01:31:19.108087+00:00",
+  "repairs_applied": [
+    {
+      "requirement": "known_future_covariates",
+      "set": "discovery",
+      "swapped_in": "fevbench::hermes::hermes",
+      "swapped_out": "fevbench::jena_weather_1D::jena_weather_1D"
+    },
+    {
+      "requirement": "multivariate",
+      "set": "confirmation",
+      "swapped_in": "fevbench::jena_weather_1D::jena_weather_1D",
+      "swapped_out": "fevbench::solar_with_weather_15T::solar_with_weather_15T"
+    }
+  ],
+  "required_coverage": {
+    "horizon_long": {
+      "confirmation_min": 1,
+      "discovery_min": 2
+    },
+    "horizon_medium": {
+      "confirmation_min": 1,
+      "discovery_min": 2
+    },
+    "horizon_short": {
+      "confirmation_min": 1,
+      "discovery_min": 2
+    },
+    "known_future_covariates": {
+      "confirmation_min": 2,
+      "discovery_min": 3
+    },
+    "multivariate": {
+      "confirmation_min": 2,
+      "discovery_min": 3
+    }
+  },
+  "selection_rule": "Round-robin over (domain, frequency bucket) strata with tasks sorted lexically by task_uid inside a stratum, deferring any task whose dataset family has already been drawn; the first 12 tasks are discovery, the next 6 confirmation. Documented repair swaps then guarantee the registered coverage minimums.",
+  "tasks_yaml_sha256": "c7160f61a5e1ded66a3954ef1c514d55d13be18534b34fca817356312a6520a9"
+}

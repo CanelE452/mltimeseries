@@ -1,0 +1,17 @@
+{
+  "thresholds_from": "discovery split only",
+  "cuts": {
+    "horizon_to_context_ratio": {
+      "low": 0.021735292819630166,
+      "high": 0.1652439024390244
+    },
+    "shift_median": {
+      "low": 0.147303014664944,
+      "high": 0.369156140896782
+    },
+    "missing_fraction": {
+      "low": 0.0,
+      "high": 0.0
+    }
+  }
+}

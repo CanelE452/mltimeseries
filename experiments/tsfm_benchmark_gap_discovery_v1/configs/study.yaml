@@ -1,0 +1,74 @@
+experiment: TSFM-BENCHMARK-GAP-DISCOVERY-v1
+branch: tsfm-benchmark-gap-discovery-v1
+
+benchmark:
+  name: fev-bench
+  library: fev
+  repo: https://github.com/autogluon/fev
+  pinned_commit: eadb28ed3a3f8fc2db8dd4d3d6850894efcbc4d1
+  tasks_yaml_url: https://raw.githubusercontent.com/autogluon/fev/eadb28ed3a3f8fc2db8dd4d3d6850894efcbc4d1/benchmarks/fev_bench/tasks.yaml
+  tasks_yaml_sha256: c7160f61a5e1ded66a3954ef1c514d55d13be18534b34fca817356312a6520a9
+  local_tasks_yaml: data_external/tsfm_benchmark_gap_discovery_v1/fev_bench_tasks.yaml
+  n_tasks: 100
+  native_metric: SQL
+  extra_metrics: [MASE, WAPE, WQL]
+
+models:
+  primary:
+    - id: chronos-2
+      hf: amazon/chronos-2
+      family: transformer-encoder
+    - id: tirex-2
+      hf: NX-AI/TiRex-2
+      family: recurrent-xlstm
+    - id: timesfm-3.0
+      hf: google/timesfm-3.0-pytorch
+      family: transformer-patch-variate
+  diagnostic:
+    - id: chronos-2-synth
+      hf: autogluon/chronos-2-synth
+      family: transformer-encoder
+      role: contamination-control
+
+baselines:
+  - id: seasonal-naive
+    role: B0
+  - id: linear-ar-specialist
+    role: B1
+
+selection:
+  discovery_target: 12
+  confirmation_target: 6
+  rule: stratified-lexicographic-deterministic
+  seed_free: true
+
+tracks:
+  - U   # common univariate, no future covariates (primary discovery)
+  - M   # native multivariate targets
+  - C   # future-known covariates
+
+thresholds:
+  failure_gate:
+    min_discovery_affected_tasks: 3
+    min_model_families: 2
+    min_condition_gap_pct: 5.0
+    min_regret_vs_comparator_pct: 8.0
+  headroom_screen:
+    min_oracle_headroom_pct: 5.0
+    max_simple_recovery_fraction: 0.50
+    min_residual_pct: 3.0
+    min_model_families: 2
+  simple_fix_stop:
+    solved_recovery_fraction: 0.70
+    solved_residual_pct: 1.5
+    solved_direct_improvement_pct: 5.0
+  confirmation:
+    min_severity_pct: 3.0
+    min_oracle_headroom_pct: 3.0
+    min_residual_pct: 2.0
+
+budget:
+  gpu_hours_inference: 12
+  gpu_hours_training: 12
+  gpu_hours_total: 24
+  max_disk_fraction: 0.25

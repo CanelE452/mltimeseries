@@ -1,0 +1,65 @@
+{
+  "audited_at_utc": "2026-09-07T01:33:37.938379+00:00",
+  "primary_benchmark": {
+    "name": "fev-bench",
+    "paper": "fev-bench: A Realistic Benchmark for Time Series Forecasting (2025, arXiv:2509.26468)",
+    "official_repo": "https://github.com/autogluon/fev",
+    "pinned_commit": "eadb28ed3a3f8fc2db8dd4d3d6850894efcbc4d1",
+    "task_definition_url": "https://raw.githubusercontent.com/autogluon/fev/eadb28ed3a3f8fc2db8dd4d3d6850894efcbc4d1/benchmarks/fev_bench/tasks.yaml",
+    "task_definition_sha256": "c7160f61a5e1ded66a3954ef1c514d55d13be18534b34fca817356312a6520a9",
+    "evaluator": "fev (native)",
+    "evaluator_version": "0.10.0",
+    "evaluator_module": "E:\\CODING\\proj\\mltimeseries\\.venv-tsfm\\Lib\\site-packages\\fev\\__init__.py",
+    "n_tasks": 100,
+    "dataset_hub_path": [
+      "autogluon/fev_datasets"
+    ],
+    "eval_metric": [
+      "SQL"
+    ],
+    "extra_metrics": [
+      "[\"MASE\", {\"epsilon\": 1.0, \"name\": \"WAPE\"}, {\"epsilon\": 1.0, \"name\": \"WQL\"}]"
+    ],
+    "quantile_levels": [
+      [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ]
+    ],
+    "split_semantics": "Each task defines num_windows rolling evaluation windows. A window exposes past data up to its cutoff plus known-future columns over the horizon; the horizon values of the target are never visible to the model.",
+    "covariate_semantics": {
+      "known_dynamic_columns": "available over the past AND the forecast horizon",
+      "past_dynamic_columns": "available over the past only",
+      "static_columns": "time invariant per series"
+    },
+    "missing_handling": "Series with fewer than min_context_length observations before the cutoff or fewer than horizon observations after it are dropped by fev, identically for every model.",
+    "leakage_policy": "fev-bench does not ship a model-specific exclusion list. Pretraining overlap is a property of each checkpoint and is tracked in contamination_matrix.csv.",
+    "license": "Apache-2.0 for the fev library; per-dataset licences upstream in autogluon/fev_datasets",
+    "expected_data_volume": "238,784 TRACK U forecasts over the full 100-task pool; the frozen 18-task selection is a small fraction of it"
+  },
+  "secondary_benchmarks_considered": [
+    {
+      "name": "GIFT-Eval",
+      "official_repo": "https://github.com/SalesforceAIResearch/gift-eval",
+      "status": "NOT_RUN",
+      "reason": "Declared SECONDARY by the study contract. Running it needs a second harness and a second full data download; under the 24 GPU-hour budget the primary discovery plus its holdout confirmation on fev-bench was funded instead. Recorded in 'what was not tested' rather than partially attempted."
+    },
+    {
+      "name": "TIME",
+      "status": "NOT_RUN",
+      "reason": "Optional in the study contract; not required once fev-bench is primary."
+    }
+  ],
+  "metric_contract": {
+    "native": "SQL (scaled quantile loss), the metric every fev-bench task declares",
+    "computed_by": "fev native evaluator only; no metric is reimplemented in this study",
+    "normalisation": "relative_to_naive(m,t) = score(m,t) / score(seasonal_naive,t); regret(m,t) = 100 * (score(m,t) - best_deployable(t)) / best_deployable(t)"
+  }
+}

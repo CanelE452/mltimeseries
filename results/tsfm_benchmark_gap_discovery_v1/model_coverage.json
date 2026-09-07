@@ -1,0 +1,12 @@
+{
+  "audited_at_utc": "2026-09-07T01:58:08.973448+00:00",
+  "n_primary_models": 3,
+  "n_primary_ready": 3,
+  "architecture_families": [
+    "recurrent_xlstm",
+    "transformer_encoder",
+    "transformer_patch_variate"
+  ],
+  "n_architecture_families": 3,
+  "coverage_sufficient": true
+}

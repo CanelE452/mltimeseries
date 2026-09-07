@@ -39,4 +39,18 @@ checkpoints/
 *.pem
 
 # External raw data for UCP-PATH-PILOT-v1 (never committed)
-data_external/
+data_external/*
+
+# Study venv for TSFM-BENCHMARK-GAP-DISCOVERY-v1 (recreatable from configs/study.yaml)
+.venv-tsfm/
+
+# Per-origin loss archives are audit-critical and small (< 1 MB total); the blanket
+# *.npz rule above is for model-sized arrays.
+!results/tsfm_benchmark_gap_discovery_v1/origin_losses/*.npz
+
+# The fev-bench task definition is the frozen evaluation contract, not raw data, so it
+# is tracked. Git will not descend into an excluded directory, so the parents have to be
+# re-included before the file itself can be.
+!data_external/tsfm_benchmark_gap_discovery_v1/
+data_external/tsfm_benchmark_gap_discovery_v1/*
+!data_external/tsfm_benchmark_gap_discovery_v1/fev_bench_tasks.yaml
