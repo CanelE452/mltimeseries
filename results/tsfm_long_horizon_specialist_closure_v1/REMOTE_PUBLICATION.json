@@ -1,0 +1,42 @@
+{
+  "repo": "CanelE452/mltimeseries",
+  "branch": "tsfm-long-horizon-specialist-closure-v1",
+  "local_head": "b5d18a1ac973479b5b632ea2c1acbc5845c66c9a",
+  "remote_tip": "b5d18a1ac973479b5b632ea2c1acbc5845c66c9a",
+  "remote_matches_local": true,
+  "origin_main_at_start": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "origin_main_after_push": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "main_unchanged": true,
+  "source_branch_sha": "dbdc8b82feb9fcec6448e647a2eef7141d0136fa",
+  "pushed_at": "2026-09-07T08:15:41.543850+00:00",
+  "push_status": "VERIFIED",
+  "audit_files_tracked": [
+    "results/tsfm_long_horizon_specialist_closure_v1/BASE_STATE.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/SOURCE_STUDY.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/long_horizon_tasks.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/long_horizon_tasks.sha256",
+    "results/tsfm_long_horizon_specialist_closure_v1/SPECIALIST_MODEL_AVAILABILITY.md",
+    "results/tsfm_long_horizon_specialist_closure_v1/specialist_env_plan.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/specialist_env.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/specialist_manifest.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/development_tsfm_results.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/holdout_tsfm_results.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/specialist_scores.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/specialist_component_results.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/comparator_scores.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/comparison_effects.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/aggregate_effects.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/fairness_matrix.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/integrity_checks.csv",
+    "results/tsfm_long_horizon_specialist_closure_v1/verdict.json",
+    "results/tsfm_long_horizon_specialist_closure_v1/STATUS.md",
+    "results/tsfm_long_horizon_specialist_closure_v1/SELF_AUDIT.md"
+  ],
+  "intentionally_untracked": [
+    "runs/tsfm_long_horizon_specialist_closure_v1/predictors/** - AutoGluon predictor directories with fitted model weights; regenerable from the committed code and the frozen task list",
+    "runs/tsfm_long_horizon_specialist_closure_v1/forecasts/** - raw quantile forecasts",
+    "data_external/tsfm_long_horizon_specialist_closure_v1/** - exported window arrays, which contain benchmark target values and are not redistributable"
+  ],
+  "secret_scan_passed": true,
+  "large_file_scan_passed": true
+}

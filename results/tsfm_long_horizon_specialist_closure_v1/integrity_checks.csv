@@ -20,4 +20,4 @@ A18,S_ENSEMBLE contains no pretrained foundation model,PASS,"no fitted model nam
 A19,same evaluation windows for every comparator,PASS,specialist and TSFM scores on a task use the same window count declared by the task,results/tsfm_long_horizon_specialist_closure_v1/specialist_scores.csv
 A20,old study files unchanged,PASS,no file under the previous studies changed between dbdc8b82feb9 and HEAD,git diff against the source base commit
 A21,origin/main unchanged,PASS,"origin/main 36b01d2b84df16f03447a8e214723fc61ae147fd, recorded at start 36b01d2b84df16f03447a8e214723fc61ae147fd",results/tsfm_long_horizon_specialist_closure_v1/BASE_STATE.json
-A22,final remote branch tip == local HEAD,FAIL,branch not pushed yet; re-run verify after the push,results/tsfm_long_horizon_specialist_closure_v1/REMOTE_PUBLICATION.json
+A22,final remote branch tip == local HEAD,PASS,"remote tip b5d18a1ac973479b5b632ea2c1acbc5845c66c9a, local HEAD b5d18a1ac973479b5b632ea2c1acbc5845c66c9a",results/tsfm_long_horizon_specialist_closure_v1/REMOTE_PUBLICATION.json

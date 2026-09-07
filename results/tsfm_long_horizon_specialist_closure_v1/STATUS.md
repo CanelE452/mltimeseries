@@ -1,6 +1,6 @@
 # TSFM-LONG-HORIZON-SPECIALIST-CLOSURE-v1 — status
 
-Generated 2026-09-07T08:13:57.665280+00:00
+Generated 2026-09-07T08:15:42.523847+00:00
 
 ## 1. Executive verdict
 
@@ -228,7 +228,7 @@ Does it change what to do next? No. Both readings say the same thing about what 
 
 ## 15. Integrity and deviations
 
-21/22 checks pass. Detail in `SELF_AUDIT.md`.
+22/22 checks pass. Detail in `SELF_AUDIT.md`.
 
 | check   | result   | description                                                               |
 |:--------|:---------|:--------------------------------------------------------------------------|
@@ -253,7 +253,7 @@ Does it change what to do next? No. Both readings say the same thing about what 
 | A19     | PASS     | same evaluation windows for every comparator                              |
 | A20     | PASS     | old study files unchanged                                                 |
 | A21     | PASS     | origin/main unchanged                                                     |
-| A22     | FAIL     | final remote branch tip == local HEAD                                     |
+| A22     | PASS     | final remote branch tip == local HEAD                                     |
 
 ### Deviations
 
