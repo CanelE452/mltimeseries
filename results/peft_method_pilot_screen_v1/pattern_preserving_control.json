@@ -1,0 +1,104 @@
+{
+ "study17_validation_rule": {
+  "metric": "normalised monthly-mean MSE on V, lower is better",
+  "frozen_before_evaluation": true,
+  "simple_validation_scores": {
+   "PROFILE": 0.32021390993335613,
+   "F0": 0.3236500960744631,
+   "COARSE_LIFT": 0.21630814596177267,
+   "FROZEN_HEAD": 0.2635076720868873
+  },
+  "selected_simple_policy": "COARSE_LIFT",
+  "note": "PATTERN_FROM_HEAD inherits FROZEN_HEAD's validation score, PATTERN_FROM_LORA inherits ATTN_LORA's. Under the frozen rule the winner is COARSE_LIFT, not either of them."
+ },
+ "study17_reference": {
+  "F0": {
+   "0": 0.057493254980842484,
+   "1": 0.23260623523078308
+  },
+  "PROFILE": {
+   "0": 0.05747515173777128,
+   "1": 0.22615583240261572
+  },
+  "COARSE_LIFT": {
+   "0": 0.06877773924818202,
+   "1": 0.26986511711414213
+  },
+  "FROZEN_HEAD": {
+   "0": 1.5968039929855953,
+   "1": 0.5153865771750884
+  },
+  "ATTN_LORA": {
+   "0": 1.5969735988279297,
+   "1": 0.5147235722647164
+  }
+ },
+ "study17_reference_pattern_mse": {
+  "F0": {
+   "0": 0.05349942122857328,
+   "1": 0.1081645882849994
+  },
+  "PROFILE": {
+   "0": 0.053156007728673835,
+   "1": 0.10830650442208291
+  },
+  "COARSE_LIFT": {
+   "0": 0.05349942122857328,
+   "1": 0.1081645882849994
+  },
+  "FROZEN_HEAD": {
+   "0": 1.5929751941894366,
+   "1": 0.41962572507701273
+  },
+  "ATTN_LORA": {
+   "0": 1.592924153599522,
+   "1": 0.419301385245582
+  }
+ },
+ "PATTERN_FROM_HEAD": {
+  "mse": {
+   "0": 0.05732822002473179,
+   "1": 0.20392544038307506
+  },
+  "level_mse": {
+   "0": 0.0038287987961585154,
+   "1": 0.09576085209807562
+  },
+  "pattern_mse": {
+   "0": 0.05349942122857328,
+   "1": 0.1081645882849994
+  }
+ },
+ "PATTERN_FROM_LORA": {
+  "mse": {
+   "0": 0.057548866456981,
+   "1": 0.20358677530413385
+  },
+  "level_mse": {
+   "0": 0.004049445228407715,
+   "1": 0.09542218701913445
+  },
+  "pattern_mse": {
+   "0": 0.053499421228573284,
+   "1": 0.1081645882849994
+  }
+ },
+ "PATTERN_FROM_TRUTH_ORACLE": {
+  "mse": {
+   "0": 0.05349942122857328,
+   "1": 0.1081645882849994
+  },
+  "level_mse": {
+   "0": 1.2255952363035656e-32,
+   "1": 1.1068780279518911e-33
+  },
+  "pattern_mse": {
+   "0": 0.05349942122857328,
+   "1": 0.1081645882849994
+  }
+ },
+ "decomposition_identity": {
+  "statement": "mse(level_shift(source)) == pattern_mse(F0) + level_mse(source)",
+  "max_abs_residual": 2.7755575615628914e-17
+ }
+}

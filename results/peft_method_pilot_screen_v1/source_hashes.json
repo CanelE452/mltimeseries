@@ -1,0 +1,14 @@
+{
+ "runs/peft_coarse_supervision_v1/forecast/predictions.npz": "741e8dce6bbddb422dc473566df6bd00b72639308731540586f13d3f93547f48",
+ "runs/peft_coarse_supervision_v1/data/evaluation_truth.npz": "1f6fcea6b9e0e729c1ed10b2a47d27cf17995cf6fe7e8cfefe52a1fc9b39ed69",
+ "runs/peft_coarse_supervision_v1/data/evaluation_inputs.npz": "3f4524366a7e6cb1e999a50e9b49fdf9b5f8c501c75a2672e6a1c1db1915bb72",
+ "experiments/peft_coarse_supervision_v1/analysis.py": "5f59db195e8939e90c31d59da83c09a2df4136d539304ff880838f46a4078158",
+ "results/peft_selection_regret_v1/selected_results.csv": "eb22d8a60f69735894efa06ebb9a73f9fe118660b4680993fde18542c5f6ed33",
+ "data_external/uci_bike_sharing/raw/hour.csv": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+ "experiments/peft_method_pilot_screen_v1/pattern_preserving_probe.py": "ab9a94bc350a75f07ff4c3c3832eb25ed40cd23fd8474c7d36b3f6dee4caf2d4",
+ "experiments/peft_method_pilot_screen_v1/adaptation_abstain_probe.py": "c87ba687d062b627821bb06702f170f24975ec3b1ed8b294fef7922029e72a71",
+ "experiments/peft_method_pilot_screen_v1/covariate_lag_probe.py": "a08ba97d5fb8944a7229fe0f4c3e15b49f522655dcf20885990abe39c8d28cc8",
+ "results/peft_method_pilot_screen_v1/pattern_preserving_control.json": "8f33ae34c2b0d810fce716f561c491c0054a1c58cd5c87bc6448629c9361b136",
+ "results/peft_method_pilot_screen_v1/adaptation_abstain_control.json": "240cb06a6b89b5001366345b1530616d13b91fc78d53268709a28921645adddf",
+ "results/peft_method_pilot_screen_v1/covariate_lag_control.json": "c921e8c1d93759b9c2faab6425813c526c3de2434d8e4bc13eca776911c7d21f"
+}

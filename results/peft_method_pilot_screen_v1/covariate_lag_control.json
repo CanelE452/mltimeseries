@@ -1,0 +1,63 @@
+{
+ "source": "data_external\\uci_bike_sharing\\raw\\hour.csv",
+ "grid_hours": 17544,
+ "observed_hours": 17379,
+ "max_lag_searched": 48,
+ "peaks": {
+  "casual": {
+   "temp": {
+    "best_lag": 0,
+    "corr_at_best_lag": 0.459615645544846,
+    "corr_at_lag0": 0.459615645544846,
+    "abs_gain_over_lag0": 0.0
+   },
+   "atemp": {
+    "best_lag": 0,
+    "corr_at_best_lag": 0.4540800653329088,
+    "corr_at_lag0": 0.4540800653329088,
+    "abs_gain_over_lag0": 0.0
+   },
+   "hum": {
+    "best_lag": 0,
+    "corr_at_best_lag": -0.34702809283992586,
+    "corr_at_lag0": -0.34702809283992586,
+    "abs_gain_over_lag0": 0.0
+   },
+   "windspeed": {
+    "best_lag": 12,
+    "corr_at_best_lag": -0.2048108941458404,
+    "corr_at_lag0": 0.09028677509691815,
+    "abs_gain_over_lag0": 0.11452411904892223
+   }
+  },
+  "registered": {
+   "temp": {
+    "best_lag": 0,
+    "corr_at_best_lag": 0.33536084904299607,
+    "corr_at_lag0": 0.33536084904299607,
+    "abs_gain_over_lag0": 0.0
+   },
+   "atemp": {
+    "best_lag": 0,
+    "corr_at_best_lag": 0.33255863540509667,
+    "corr_at_lag0": 0.33255863540509667,
+    "abs_gain_over_lag0": 0.0
+   },
+   "hum": {
+    "best_lag": 35,
+    "corr_at_best_lag": 0.29005742951259067,
+    "corr_at_lag0": -0.2739331184919315,
+    "abs_gain_over_lag0": 0.016124311020659143
+   },
+   "windspeed": {
+    "best_lag": 11,
+    "corr_at_best_lag": -0.1875688974637495,
+    "corr_at_lag0": 0.08232084736312739,
+    "abs_gain_over_lag0": 0.1052480501006221
+   }
+  }
+ },
+ "verdict_rule": "A lag worth aligning would peak at a nonzero lag and beat lag 0 by a clear margin in absolute correlation.",
+ "nonzero_peak_count": 3,
+ "max_abs_gain_over_lag0": 0.11452411904892223
+}

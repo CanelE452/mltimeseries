@@ -1,0 +1,108 @@
+{
+ "source_csv": "results\\peft_selection_regret_v1\\selected_results.csv",
+ "procedure": "SORT",
+ "cells": [
+  "s12_bike",
+  "s12_household",
+  "s13_bike",
+  "s13_household"
+ ],
+ "selectors": [
+  "ALL_RECENT7",
+  "ALL_V",
+  "F0",
+  "FIXED_LOW",
+  "HEAD_V",
+  "LORA_RECENT7",
+  "LORA_V"
+ ],
+ "score": {
+  "s12_bike": {
+   "ALL_RECENT7": 0.39432194433081813,
+   "ALL_V": 0.39432194433081813,
+   "F0": 0.4102237148565775,
+   "FIXED_LOW": 0.39432194433081813,
+   "HEAD_V": 0.4095526087873566,
+   "LORA_RECENT7": 0.39432194433081813,
+   "LORA_V": 0.39432194433081813
+  },
+  "s12_household": {
+   "ALL_RECENT7": 0.3696076402784033,
+   "ALL_V": 0.3696076402784033,
+   "F0": 0.38064943608777235,
+   "FIXED_LOW": 0.37108512858279324,
+   "HEAD_V": 0.37711163593452024,
+   "LORA_RECENT7": 0.3696076402784033,
+   "LORA_V": 0.3696076402784033
+  },
+  "s13_bike": {
+   "ALL_RECENT7": 0.171382253458297,
+   "ALL_V": 0.171382253458297,
+   "F0": 0.1679422747013316,
+   "FIXED_LOW": 0.16621213974790544,
+   "HEAD_V": 0.17977741583144063,
+   "LORA_RECENT7": 0.171382253458297,
+   "LORA_V": 0.171382253458297
+  },
+  "s13_household": {
+   "ALL_RECENT7": 0.4714167052256909,
+   "ALL_V": 0.4714167052256909,
+   "F0": 0.47885084213219203,
+   "FIXED_LOW": 0.4726998943243589,
+   "HEAD_V": 0.47885084213219203,
+   "LORA_RECENT7": 0.4714167052256909,
+   "LORA_V": 0.4714167052256909
+  }
+ },
+ "loss_vs_f0_pct": {
+  "s12_bike": {
+   "ALL_RECENT7": -3.8763654927455726,
+   "ALL_V": -3.8763654927455726,
+   "F0": 0.0,
+   "FIXED_LOW": -3.8763654927455726,
+   "HEAD_V": -0.16359514209350767,
+   "LORA_RECENT7": -3.8763654927455726,
+   "LORA_V": -3.8763654927455726
+  },
+  "s12_household": {
+   "ALL_RECENT7": -2.900778186578728,
+   "ALL_V": -2.900778186578728,
+   "F0": 0.0,
+   "FIXED_LOW": -2.512628838565707,
+   "HEAD_V": -0.9294116364949366,
+   "LORA_RECENT7": -2.900778186578728,
+   "LORA_V": -2.900778186578728
+  },
+  "s13_bike": {
+   "ALL_RECENT7": 2.0483102084231293,
+   "ALL_V": 2.0483102084231293,
+   "F0": 0.0,
+   "FIXED_LOW": -1.0301962126588056,
+   "HEAD_V": 7.047148284228395,
+   "LORA_RECENT7": 2.0483102084231293,
+   "LORA_V": 2.0483102084231293
+  },
+  "s13_household": {
+   "ALL_RECENT7": -1.5524953184584473,
+   "ALL_V": -1.5524953184584473,
+   "F0": 0.0,
+   "FIXED_LOW": -1.2845227086674131,
+   "HEAD_V": 0.0,
+   "LORA_RECENT7": -1.5524953184584473,
+   "LORA_V": -1.5524953184584473
+  }
+ },
+ "cells_where_f0_is_best": [],
+ "cells_where_fixed_low_beats_f0": [
+  "s12_bike",
+  "s12_household",
+  "s13_bike",
+  "s13_household"
+ ],
+ "cells_where_validation_all_beats_f0": [
+  "s12_bike",
+  "s12_household",
+  "s13_household"
+ ],
+ "note": "One optimizer seed (12000) on development data from Studies 12 and 13. Four cells is not a sample from which to generalise; it is enough to check whether the premise of direction A holds at all in the data this repository already has."
+}

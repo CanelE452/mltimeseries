@@ -56,6 +56,10 @@ CPU68검사/17.24초, cache16.234초, S0 14.234초, 본학습78.828초, 캐시 �
 
 Native 출력 LoRA를 제외해도 이번 성능이 유지되지만 파라미터 감소는2.26%라 새 효율적 방법의 기여로 주장하지 않는다. 과거 공변량 회수 격차는 남으며, 다음 방법론 진입 전에 train-only lag search 등 단순 풀이가 이를 해결하는지 새 원천에서 판단할 것을 권한다. 본학습7분33초, GPU 표본 최대2262MiB/55°C, 여유 RAM 최소15.31GiB였다. 최초 분석의 문자열 ID 처리 오류는 로그를 보존한 채 분석기만 수정했고 최종 검증은exit0다. 원 학습 결과와 소스 계약을 유지했다.
 
+### 2026-09-09 방법 파일럿 인계 Part A — 후보 스크린 `NO_METHOD_SPECIFICATION`
+
+외부 지시문(`PEFT_METHOD_PILOT_CLI.txt`)의 Part A를 수행했다. [로컬 인벤토리 21](notes/tsfm_topics/21_peft_method_pilot_local_inventory_20260909.md)(지시문이 전제한 kit 폴더 부재 포함), [후보 스크린 22](notes/tsfm_topics/22_peft_method_candidate_screen_20260909.md)(네 방향 A/B/C/D 전부 닫힘, 셋은 새 GPU 학습 없이 저장 결과만으로; 판별자 검토 후 방향 B 근거 정정), [다음 경로와 의견 23](notes/tsfm_topics/23_peft_next_paths_and_opinion_20260909.md)(문제 명세 + 짧은 계열 풀 예측, 백본 검사 3 fits → break-even 4 fits, 조건부 후보 P1~P3, 승인 항목 A~E). 새 GPU 학습 0회, 기존 study 수정 0건. Part B는 승인 전 미진행.
+
 ## 계열 현황
 
 - **01_forecast_query_tokenization:** 27/27 fit 완료, `INCONCLUSIVE`. 주요 대조 macro −0.037% [−0.128%, +0.033%], 사전 문턱+1.0%, 8조건 중3개 통과(09-06). [초기 노트](notes/tsfm_topics/01_forecast_query_tokenization.md).
