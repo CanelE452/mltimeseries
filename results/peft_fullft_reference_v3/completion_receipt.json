@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-09-08T20:54:06.7652465Z",
+  "local_links_checked": 11,
+  "missing_links": [],
+  "figures_visually_inspected": true,
+  "independent_metrics_audit_passed": true,
+  "interpretation": "No observed Full-FT accuracy advantage over standard LoRA under this fixed budget; no equivalence or global optimality claim",
+  "artifacts": {
+    "_docs/notes/tsfm_topics/20_peft_fullft_reference_results_20260909.md": "5c29bc11eefb48b97d7c0c1d301dd6f8d799029a17afd4e1d54f59fed7cd96ad",
+    "_docs/history/2026-09-09.md": "e84f1830ae9623f912d5976fd2a851577267115c2d912c414c76565cde35b28a",
+    "results/peft_fullft_reference_v3/summary.json": "41c6b00d0696756b3d683a0525e581904d9d28c9c12dd94df469ecddf9093204",
+    "results/peft_fullft_reference_v3/metrics.csv": "6c2fc7028a1680383259ff2c0ed2406e57114c61c5fe453ea9f42d04208855cd",
+    "runs/peft_fullft_reference_v3/independent_final_audit.json": "2986888aae6b5f5549c0ddcbd62359a30ff59964bbd3e16add090832e07bb1bb",
+    "runs/peft_fullft_reference_v3/execution_resource_summary.json": "06b7cf8cb0e08a8ddc8e4f8b3493751150cf90b8779203c267e17c61d5861d83",
+    "runs/peft_fullft_reference_v3/windows_final.json": "70bf1ae48fa216dbb712c0eb0c1732e298972a0ec3ea00bcd1460b711885d38d",
+    "results/peft_fullft_reference_v3/figures/manifest.json": "9a056bb30f44c0537c1f70f8a651043448ff353f4b646deda06a76ddb38f30a5"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "124 main-study trials; normal resource logs are sampled every 10 seconds, not instantaneous peaks",
+  "sample_count": 427,
+  "first_sample_utc": "2026-09-08T01:21:19.635531+00:00",
+  "last_sample_utc": "2026-09-08T02:29:02.689458+00:00",
+  "min_available_ram_gib": 15.159629821777344,
+  "min_available_commit_gib": 14.080093383789062,
+  "max_child_tree_rss_gib": 1.7513313293457031,
+  "max_git_process_count": 2,
+  "max_gpu_memory_used_mib": 2276.0,
+  "max_gpu_temperature_c": 58.0,
+  "max_torch_peak_allocated_gib": 0.832301139831543,
+  "guard_failures": 0,
+  "safety_stops": 0
+}

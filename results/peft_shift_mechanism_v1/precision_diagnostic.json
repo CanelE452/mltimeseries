@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "results": {
+    "float32": {
+      "normalized_max_abs": 4.76837158203125e-07,
+      "raw_max_abs": 1.1920928955078125e-06,
+      "raw_mean_abs": 9.715412829791603e-08
+    },
+    "bfloat16": {
+      "normalized_max_abs": 0.015625,
+      "raw_max_abs": 0.04043388366699219,
+      "raw_mean_abs": 0.0011875751661136746
+    }
+  },
+  "optimizer_steps": 0,
+  "fit_train_episodes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "data_sha256": "4fe3185ebe05b874d7d3dbfff52daf98ee0d0bb834f7222855bcc78f0bf376c7",
+  "source_sha256": "c014070c0160df7e81cc32470a808b2e3df8c7a0b288d612172d33ae1a50d4ac",
+  "wall_seconds": 4.892553399993631,
+  "peak_cuda_gib": 0.4639272689819336,
+  "scope": "Pretrained model only. Exact mathematical permutation invariance is distinct from finite-precision path differences; no forecasting-risk lower bound follows from this diagnostic alone."
+}

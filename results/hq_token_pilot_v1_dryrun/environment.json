@@ -1,0 +1,20 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.4.6",
+  "cuda_available": true,
+  "device_used": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "smoke": {
+    "seconds_per_update": 0.010451465845108032,
+    "validation_pass_seconds": {
+      "ETTm2": 0.023062944412231445,
+      "weather": 0.02607274055480957,
+      "electricity": 0.15131139755249023
+    },
+    "estimated_core_seconds": 12.859886527061462,
+    "estimated_core_hours": 0.0035721907019615174,
+    "smoke_accuracy_used_for_decisions": false
+  }
+}

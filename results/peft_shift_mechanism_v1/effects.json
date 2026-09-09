@@ -1,0 +1,371 @@
+{
+  "choices": {
+    "Q00": {
+      "head": "H_LIN",
+      "best_fm_by_c0_validation": "OFF_LORA"
+    },
+    "Q10": {
+      "head": "H_LIN",
+      "best_fm_by_c0_validation": "OFF_LORA"
+    },
+    "Q01": {
+      "head": "H_LIN",
+      "best_fm_by_c0_validation": "OFF_LORA"
+    },
+    "Q11": {
+      "head": "H_LIN",
+      "best_fm_by_c0_validation": "OFF_LORA"
+    }
+  },
+  "contrasts": {
+    "Q00": {
+      "head_vs_off": {
+        "value": 0.06464398762428349,
+        "corpus_values": [
+          0.05906637115087495,
+          0.0630119523180609,
+          0.07185363940391462
+        ],
+        "ci": [
+          0.05192048714777024,
+          0.07676719109719672
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+        "decision": "practical_gain_supported"
+      },
+      "raw_vs_off": {
+        "value": -0.3307479063956834,
+        "corpus_values": [
+          -0.3368862865005636,
+          -0.3330180050163999,
+          -0.3223394276700868
+        ],
+        "ci": [
+          -0.34491741050463964,
+          -0.31719018349004935
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "joint_minus_lp": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "raw_vs_validation_best_fm": {
+        "value": -0.3307479063956834,
+        "corpus_values": [
+          -0.3368862865005636,
+          -0.3330180050163999,
+          -0.3223394276700868
+        ],
+        "ci": [
+          -0.34491741050463964,
+          -0.31719018349004935
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      }
+    },
+    "Q10": {
+      "head_vs_off": {
+        "value": 0.07742978438872813,
+        "corpus_values": [
+          0.08579274363952488,
+          0.07668963170267899,
+          0.06980697782398053
+        ],
+        "ci": [
+          0.06568352771715875,
+          0.0888906143868357
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+        "decision": "practical_gain_supported"
+      },
+      "raw_vs_off": {
+        "value": -0.31204950102671347,
+        "corpus_values": [
+          -0.3042717122406062,
+          -0.31383929490953744,
+          -0.31803749592999686
+        ],
+        "ci": [
+          -0.3250994969070962,
+          -0.2985405867938582
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "joint_minus_lp": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "raw_vs_validation_best_fm": {
+        "value": -0.31204950102671347,
+        "corpus_values": [
+          -0.3042717122406062,
+          -0.31383929490953744,
+          -0.31803749592999686
+        ],
+        "ci": [
+          -0.3250994969070962,
+          -0.2985405867938582
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      }
+    },
+    "Q01": {
+      "head_vs_off": {
+        "value": 0.05636177145090074,
+        "corpus_values": [
+          0.048463494317595356,
+          0.0624052567678822,
+          0.05821656326722466
+        ],
+        "ci": [
+          0.04276461344783966,
+          0.0690191173685622
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+        "decision": "practical_gain_supported"
+      },
+      "raw_vs_off": {
+        "value": -0.33576000708976206,
+        "corpus_values": [
+          -0.34366603815434976,
+          -0.33078872954391736,
+          -0.33282525357101905
+        ],
+        "ci": [
+          -0.3498018214683569,
+          -0.3209898373020497
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "joint_minus_lp": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "raw_vs_validation_best_fm": {
+        "value": -0.33576000708976206,
+        "corpus_values": [
+          -0.34366603815434976,
+          -0.33078872954391736,
+          -0.33282525357101905
+        ],
+        "ci": [
+          -0.3498018214683569,
+          -0.3209898373020497
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      }
+    },
+    "Q11": {
+      "head_vs_off": {
+        "value": 0.07249877710863933,
+        "corpus_values": [
+          0.07096553446208866,
+          0.07104917337189513,
+          0.0754816234919342
+        ],
+        "ci": [
+          0.0591390288836908,
+          0.08616917519336635
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+        "decision": "practical_gain_supported"
+      },
+      "raw_vs_off": {
+        "value": -0.31601856946707946,
+        "corpus_values": [
+          -0.31805278504482315,
+          -0.3184896813682583,
+          -0.31151324198815683
+        ],
+        "ci": [
+          -0.33024458550840236,
+          -0.30206421677041156
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "joint_minus_lp": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "raw_vs_validation_best_fm": {
+        "value": -0.31601856946707946,
+        "corpus_values": [
+          -0.31805278504482315,
+          -0.3184896813682583,
+          -0.31151324198815683
+        ],
+        "ci": [
+          -0.33024458550840236,
+          -0.30206421677041156
+        ],
+        "confidence": 0.9875,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      }
+    }
+  },
+  "interactions": {
+    "angle": {
+      "value": 0.0,
+      "corpus_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+    },
+    "self_lag": {
+      "value": 0.0,
+      "corpus_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+    },
+    "nonadditive_exploratory": {
+      "value": 0.0,
+      "corpus_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+    },
+    "D_by_condition": {
+      "Q00": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.95,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "Q10": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.95,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "Q01": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.95,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      },
+      "Q11": {
+        "value": 0.0,
+        "corpus_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.95,
+        "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions"
+      }
+    },
+    "time_group_both_selected_step_zero": {
+      "Q00": true,
+      "Q10": true,
+      "Q01": true,
+      "Q11": true
+    },
+    "interpretation": "If TIME and GROUP both select step zero, a zero contrast describes the selection outcome and does not establish equal module roles or absence of an interaction under other optimization procedures."
+  },
+  "bootstrap_replicates": 4000,
+  "seed": 2026090808,
+  "delta": 0.01,
+  "component_diagnostic": "Exploratory OLS projection of median forecasts on the three true conditional-mean components; coefficients do not identify causal module function or absence of information in hidden representations."
+}

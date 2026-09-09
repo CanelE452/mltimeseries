@@ -1,0 +1,253 @@
+{
+  "new_gpu_trials": 18,
+  "new_gpu_fits": 12,
+  "new_f0_cache_trials": 6,
+  "reused_gpu_trials": 0,
+  "trial_guard_seconds": 699.8569999999999,
+  "completed_invocation_wall_seconds": 700.2488882541656,
+  "gpu_trials": [
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_3e-05",
+      "method": "ALIGN_ATTN",
+      "corpus": 0,
+      "lr": 3e-05,
+      "selected": false,
+      "model_wall_seconds": 42.651824900000065,
+      "wrapper_wall_seconds": 47.948406800001976,
+      "guard_seconds": 50.516,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 160
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_1e-04",
+      "method": "ALIGN_ATTN",
+      "corpus": 0,
+      "lr": 0.0001,
+      "selected": true,
+      "model_wall_seconds": 42.82843270000012,
+      "wrapper_wall_seconds": 47.9888856999969,
+      "guard_seconds": 50.516,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_F0/lr_1e-03",
+      "method": "ALIGN_F0",
+      "corpus": 0,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 5.064852199997404,
+      "wrapper_wall_seconds": 10.36378820000391,
+      "guard_seconds": 14.219,
+      "peak_cuda_gib": 0.4639105796813965,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_3e-05",
+      "method": "ATTN",
+      "corpus": 0,
+      "lr": 3e-05,
+      "selected": true,
+      "model_wall_seconds": 42.6849183000013,
+      "wrapper_wall_seconds": 48.03368690000207,
+      "guard_seconds": 50.516,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_1e-04",
+      "method": "ATTN",
+      "corpus": 0,
+      "lr": 0.0001,
+      "selected": false,
+      "model_wall_seconds": 42.667541800001345,
+      "wrapper_wall_seconds": 48.066860999999335,
+      "guard_seconds": 50.515,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c0/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 0,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 5.433101599999645,
+      "wrapper_wall_seconds": 10.832651700002316,
+      "guard_seconds": 14.218,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_ATTN/lr_3e-05",
+      "method": "ALIGN_ATTN",
+      "corpus": 1,
+      "lr": 3e-05,
+      "selected": false,
+      "model_wall_seconds": 43.65853120000247,
+      "wrapper_wall_seconds": 49.10212150000007,
+      "guard_seconds": 52.609,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 160
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_ATTN/lr_1e-04",
+      "method": "ALIGN_ATTN",
+      "corpus": 1,
+      "lr": 0.0001,
+      "selected": true,
+      "model_wall_seconds": 44.04261650000262,
+      "wrapper_wall_seconds": 49.49623950000387,
+      "guard_seconds": 52.609,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_F0/lr_1e-03",
+      "method": "ALIGN_F0",
+      "corpus": 1,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 5.12217000000237,
+      "wrapper_wall_seconds": 10.428353399998741,
+      "guard_seconds": 14.203,
+      "peak_cuda_gib": 0.4639105796813965,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/ATTN/lr_3e-05",
+      "method": "ATTN",
+      "corpus": 1,
+      "lr": 3e-05,
+      "selected": true,
+      "model_wall_seconds": 42.34791760000371,
+      "wrapper_wall_seconds": 47.60248700000375,
+      "guard_seconds": 50.531,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/ATTN/lr_1e-04",
+      "method": "ATTN",
+      "corpus": 1,
+      "lr": 0.0001,
+      "selected": false,
+      "model_wall_seconds": 42.877954099996714,
+      "wrapper_wall_seconds": 48.29232619999675,
+      "guard_seconds": 50.515,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c1/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 1,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 5.050602099996468,
+      "wrapper_wall_seconds": 10.32855379999819,
+      "guard_seconds": 14.219,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_ATTN/lr_3e-05",
+      "method": "ALIGN_ATTN",
+      "corpus": 2,
+      "lr": 3e-05,
+      "selected": false,
+      "model_wall_seconds": 42.77495859999908,
+      "wrapper_wall_seconds": 48.00008119999984,
+      "guard_seconds": 50.531,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 200
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_ATTN/lr_1e-04",
+      "method": "ALIGN_ATTN",
+      "corpus": 2,
+      "lr": 0.0001,
+      "selected": true,
+      "model_wall_seconds": 43.23399010000139,
+      "wrapper_wall_seconds": 48.51185899999837,
+      "guard_seconds": 52.609,
+      "peak_cuda_gib": 0.8317880630493164,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_F0/lr_1e-03",
+      "method": "ALIGN_F0",
+      "corpus": 2,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 5.116936300000816,
+      "wrapper_wall_seconds": 10.411398200005351,
+      "guard_seconds": 14.203,
+      "peak_cuda_gib": 0.4639105796813965,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/ATTN/lr_3e-05",
+      "method": "ATTN",
+      "corpus": 2,
+      "lr": 3e-05,
+      "selected": true,
+      "model_wall_seconds": 43.82507050000277,
+      "wrapper_wall_seconds": 49.05657810000412,
+      "guard_seconds": 52.61,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 160
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/ATTN/lr_1e-04",
+      "method": "ATTN",
+      "corpus": 2,
+      "lr": 0.0001,
+      "selected": false,
+      "model_wall_seconds": 42.6154366999981,
+      "wrapper_wall_seconds": 47.958884300001955,
+      "guard_seconds": 50.515,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_trainlag_v1/trials/Q00_c2/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 2,
+      "lr": 0.001,
+      "selected": true,
+      "model_wall_seconds": 4.994395500005339,
+      "wrapper_wall_seconds": 10.248356600000989,
+      "guard_seconds": 14.203,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    }
+  ],
+  "cpu_raw_fits": [
+    {
+      "corpus": 0,
+      "raw_fit_seconds": 0.0010025000010500662,
+      "raw_wall_seconds": 0.04687679999915417,
+      "lag_fit_seconds": 0.004596600003424101,
+      "path": "runs/peft_trainlag_v1/raw/Q00_c0"
+    },
+    {
+      "corpus": 1,
+      "raw_fit_seconds": 0.000897699996130541,
+      "raw_wall_seconds": 0.0460084000005736,
+      "lag_fit_seconds": 0.004439000003912952,
+      "path": "runs/peft_trainlag_v1/raw/Q00_c1"
+    },
+    {
+      "corpus": 2,
+      "raw_fit_seconds": 0.0008502999990014359,
+      "raw_wall_seconds": 0.04675729999871692,
+      "lag_fit_seconds": 0.004639400001906324,
+      "path": "runs/peft_trainlag_v1/raw/Q00_c2"
+    }
+  ],
+  "cpu_raw_wall_seconds": 0.1396424999984447,
+  "cpu_lag_fit_seconds": 0.013675000009243377,
+  "analysis_wall_seconds": 1.8452028999963659,
+  "note": "All 12 LR fits and six frozen/cache trials are charged; CPU lag/RAW and analysis costs are separate."
+}

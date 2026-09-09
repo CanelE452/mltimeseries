@@ -1,0 +1,150 @@
+{
+  "summary": [
+    {
+      "method": "F0",
+      "procedure": "SORT",
+      "score": 0.5369669456085747,
+      "coverage80": 0.7943115234375,
+      "width80": 2.512340777278723,
+      "median_mse": 0.9847581488260762,
+      "crossing": 0.0
+    },
+    {
+      "method": "F0",
+      "procedure": "QCAL",
+      "score": 0.5375722814093787,
+      "coverage80": 0.807861328125,
+      "width80": 2.5945012931030993,
+      "median_mse": 0.9859581755663975,
+      "crossing": 0.0
+    },
+    {
+      "method": "ATTN",
+      "procedure": "SORT",
+      "score": 0.49721427140185215,
+      "coverage80": 0.7515055338541666,
+      "width80": 2.129815804334214,
+      "median_mse": 0.8413589571259096,
+      "crossing": 0.0
+    },
+    {
+      "method": "ATTN",
+      "procedure": "QCAL",
+      "score": 0.49562704643290095,
+      "coverage80": 0.7911376953125,
+      "width80": 2.3195382640154656,
+      "median_mse": 0.8389609979419693,
+      "crossing": 0.0
+    },
+    {
+      "method": "ALIGN_F0",
+      "procedure": "SORT",
+      "score": 0.4605718030721859,
+      "coverage80": 0.8101806640625,
+      "width80": 2.2445324224835304,
+      "median_mse": 0.7318306123048245,
+      "crossing": 0.0
+    },
+    {
+      "method": "ALIGN_F0",
+      "procedure": "QCAL",
+      "score": 0.46094794582877086,
+      "coverage80": 0.812744140625,
+      "width80": 2.2738284103770074,
+      "median_mse": 0.7318067440990902,
+      "crossing": 0.0
+    },
+    {
+      "method": "ALIGN_ATTN",
+      "procedure": "SORT",
+      "score": 0.36845447215946686,
+      "coverage80": 0.6996663411458334,
+      "width80": 1.3983099105519514,
+      "median_mse": 0.455720203406259,
+      "crossing": 0.0
+    },
+    {
+      "method": "ALIGN_ATTN",
+      "procedure": "QCAL",
+      "score": 0.3637691108789833,
+      "coverage80": 0.7982177734375,
+      "width80": 1.731656310820597,
+      "median_mse": 0.4534676209575866,
+      "crossing": 0.0
+    }
+  ],
+  "primary_method": "ALIGN_ATTN",
+  "decision": {
+    "supports_simple_calibration_closure": true,
+    "all_corpora_score_worsening_at_most_1pct_F0": true,
+    "mean_coverage_between_78_and_82pct": true,
+    "corpus_score_change_over_F0": [
+      -0.0056811876222393545,
+      -0.011067141197612321,
+      -0.009428485146826215
+    ],
+    "corpus_qcal_coverage80": [
+      0.8023681640625,
+      0.78955078125,
+      0.802734375
+    ],
+    "mean_qcal_coverage80": 0.7982177734375,
+    "interpretation": "Supports simple correction of this observed development phenomenon"
+  },
+  "previous_diagnostic_references": [
+    {
+      "method": "RAW",
+      "corpus": "0",
+      "score": "0.32354802717397657",
+      "coverage80": "0.80615234375",
+      "width80": "1.54808861166625",
+      "median_mse": "0.3584635166812397"
+    },
+    {
+      "method": "ORACLE",
+      "corpus": "0",
+      "score": "0.3226639071980776",
+      "coverage80": "0.8043212890625",
+      "width80": "1.537861882490688",
+      "median_mse": "0.35699812797091046"
+    },
+    {
+      "method": "RAW",
+      "corpus": "1",
+      "score": "0.32304868744893783",
+      "coverage80": "0.80615234375",
+      "width80": "1.5497258774579368",
+      "median_mse": "0.35751104106051546"
+    },
+    {
+      "method": "ORACLE",
+      "corpus": "1",
+      "score": "0.3226639071980776",
+      "coverage80": "0.8043212890625",
+      "width80": "1.537861882490688",
+      "median_mse": "0.35699812797091046"
+    },
+    {
+      "method": "RAW",
+      "corpus": "2",
+      "score": "0.3234601756450194",
+      "coverage80": "0.7816162109375",
+      "width80": "1.4624465493127559",
+      "median_mse": "0.35778698428399386"
+    },
+    {
+      "method": "ORACLE",
+      "corpus": "2",
+      "score": "0.3226639071980776",
+      "coverage80": "0.8043212890625",
+      "width80": "1.537861882490688",
+      "median_mse": "0.35699812797091046"
+    }
+  ],
+  "references_used_for_calibration": false,
+  "limits": [
+    "Same validation reused for checkpoint/LR selection and calibration; no conformal coverage guarantee",
+    "Previously observed Gaussian development evaluation, not a fresh confirmation or rejection of C",
+    "Simple closure success concerns this observed phenomenon; failure does not justify a new adapter"
+  ]
+}

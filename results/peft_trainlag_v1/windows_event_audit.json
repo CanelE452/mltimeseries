@@ -1,0 +1,19 @@
+{
+  "since_utc": "2026-09-08T04:09:47.0000000+00:00",
+  "checked_at": "2026-09-08T13:26:34.2349456+09:00",
+  "scope": "S0 start through query: Application 1000/1002; System NVIDIA/Display/resource-exhaustion/Kernel-Power",
+  "queries": [
+    {
+      "log": "Application",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    }
+  ]
+}

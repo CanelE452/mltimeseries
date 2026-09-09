@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-08T07:32:57.675764+00:00",
+  "protected_hashes_verified": 257,
+  "s0_jobs": 8,
+  "logical_gpu_jobs": 42,
+  "gpu_attempts_including_safety_stop": 43,
+  "raw_cpu_jobs": 2,
+  "successful_analysis_jobs": 1,
+  "expected_safety_stops": 1,
+  "final_figures": 8,
+  "report_links_verified": 18,
+  "report_sha256": "757147bcfbd478367cda4d4234067b6b859fe38d88ec2a5dab075b41ebe95483",
+  "verification_sha256": "0f46ddb61ef050ef15046085c2408d267dae480fb2bb14d39ad2a186dd6b0b6c",
+  "plot_manifest_sha256": "88f0527a762df9b5d903fb336465ad52671ac529fb15fcdbf2160a31d052da14",
+  "recovery_audit_sha256": "c98d7f6e626042b68cf50456d13237e79487b261c1a577721a9364d407412b52",
+  "windows_event_audit_sha256": "ca288850a76da0691a3d13cf7bbd1d62a981fca03d9401562ab5a2dc8af23891",
+  "cpu_tests": {
+    "study_passed": 29,
+    "parent_analysis_regression_passed": 21
+  },
+  "independent_numerical_errors": {
+    "offset": 0,
+    "score_max": 2.78e-17,
+    "ci_max": 4.34e-16
+  },
+  "locks_released": true,
+  "current_A_branch": "closed_per_fixed_rule",
+  "overall_goal": "active; no novel PEFT method established"
+}

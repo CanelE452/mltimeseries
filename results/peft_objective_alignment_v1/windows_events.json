@@ -1,0 +1,45 @@
+{
+  "completed": true,
+  "start_local": "2026-09-08T18:06:06.0000000+09:00",
+  "end_local": "2026-09-08T18:18:42.7704118+09:00",
+  "timezone": "Asia/Seoul",
+  "checks": [
+    {
+      "log": "Application",
+      "id": 1000,
+      "count": 0,
+      "events": []
+    },
+    {
+      "log": "Application",
+      "id": 1002,
+      "count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "id": 41,
+      "count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "id": 4101,
+      "count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "id": 153,
+      "count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "id": 2004,
+      "count": 0,
+      "events": []
+    }
+  ],
+  "scope": "Queried event IDs during this study only; does not establish the cause or permanent resolution of previous crashes."
+}

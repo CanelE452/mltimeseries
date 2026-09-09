@@ -1,0 +1,416 @@
+{
+  "completed": true,
+  "kind": "frozen_causal_alignment_exploratory_diagnostic",
+  "conditions": [
+    {
+      "condition": "Q00",
+      "selected_lag": 48,
+      "val_score": 0.4573953278788566,
+      "eval_score": 0.45482765838060035,
+      "f0_eval_score": 0.5310676844835602,
+      "evaluation": {
+        "raw_mean_2pinball": 0.45482765838060035,
+        "median_mse": 0.7116847370374653,
+        "median_mae": 0.6703588839872889,
+        "qmean_proxy_mse": 0.7117352555544473,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.8140869140625,
+        "interval80_width": 2.24300866655301,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.4413638376233377,
+          0.455626988258237,
+          0.46284941741501434,
+          0.47585356896565567,
+          0.4490977962895902,
+          0.44575496089124156,
+          0.4378618583110232,
+          0.46019075267507425,
+          0.44559841120408045,
+          0.43045483929530176,
+          0.4466960217381621,
+          0.45587705718750327,
+          0.4725981175519029,
+          0.46017184400205824,
+          0.4759437420074053,
+          0.46130332067401286
+        ]
+      },
+      "f0_evaluation": {
+        "raw_mean_2pinball": 0.5310676844835602,
+        "median_mse": 0.9664109003434393,
+        "median_mae": 0.7831829911981512,
+        "qmean_proxy_mse": 0.9669522834433104,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.7960205078125,
+        "interval80_width": 2.5166477853113065,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.5543071958056934,
+          0.5443192799832276,
+          0.5280136050277792,
+          0.5356360846373048,
+          0.535890983853406,
+          0.5254318738675466,
+          0.5122137374831212,
+          0.5354495825551039,
+          0.5081265932964852,
+          0.5220429690477647,
+          0.5203046711439169,
+          0.5271373753464156,
+          0.5422980871857825,
+          0.5294937291321961,
+          0.5455582696215243,
+          0.5308589137496934
+        ]
+      },
+      "aligned_minus_f0": -0.07624002610295985,
+      "aligned_minus_f0_ci": [
+        -0.08425667992802023,
+        -0.06830355362176932
+      ],
+      "relative_improvement": 0.14355990456677833,
+      "relative_improvement_ci": [
+        0.12967303781614423,
+        0.15791803323451814
+      ],
+      "confidence": 0.9875
+    },
+    {
+      "condition": "Q10",
+      "selected_lag": 48,
+      "val_score": 0.44655577678145475,
+      "eval_score": 0.4443939066210835,
+      "f0_eval_score": 0.5259325605826376,
+      "evaluation": {
+        "raw_mean_2pinball": 0.4443939066210835,
+        "median_mse": 0.6767097887243612,
+        "median_mae": 0.6535326758428202,
+        "qmean_proxy_mse": 0.6766716927004751,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.8173828125,
+        "interval80_width": 2.211534908877411,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.4229199965843223,
+          0.46584099633252896,
+          0.42561822026277873,
+          0.4522431430241738,
+          0.41990785264816516,
+          0.44902167257812875,
+          0.4449584154387581,
+          0.4637100034471702,
+          0.45339411952281,
+          0.42980943859404686,
+          0.43915300742270197,
+          0.43785110967122165,
+          0.4379394796636957,
+          0.45743086241571135,
+          0.4730425781360908,
+          0.43746161019503255
+        ]
+      },
+      "f0_evaluation": {
+        "raw_mean_2pinball": 0.5259325605826376,
+        "median_mse": 0.9462154530991164,
+        "median_mae": 0.7740667094557789,
+        "qmean_proxy_mse": 0.9469583515981885,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.801513671875,
+        "interval80_width": 2.5185678780023864,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.5299702589800356,
+          0.5420705966433729,
+          0.49956606049103314,
+          0.518449822386401,
+          0.5156718094991511,
+          0.545847380650093,
+          0.5272050659708641,
+          0.5327791418292828,
+          0.5136729154127183,
+          0.5082878720071853,
+          0.526619968177769,
+          0.5145609004046672,
+          0.5328193628275599,
+          0.5328723040177161,
+          0.5556783050818155,
+          0.5188492049425429
+        ]
+      },
+      "aligned_minus_f0": -0.08153865396155408,
+      "aligned_minus_f0_ci": [
+        -0.08935475192825505,
+        -0.07378394418835299
+      ],
+      "relative_improvement": 0.1550363298884254,
+      "relative_improvement_ci": [
+        0.14175499952928944,
+        0.16867242537351154
+      ],
+      "confidence": 0.9875
+    },
+    {
+      "condition": "Q01",
+      "selected_lag": 48,
+      "val_score": 0.4724795156506173,
+      "eval_score": 0.4638057165310938,
+      "f0_eval_score": 0.5280971767773374,
+      "evaluation": {
+        "raw_mean_2pinball": 0.4638057165310938,
+        "median_mse": 0.7389008933990742,
+        "median_mae": 0.685191321571712,
+        "qmean_proxy_mse": 0.7386688527200149,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.8167724609375,
+        "interval80_width": 2.298098533372581,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.4537128413955704,
+          0.46612684231657364,
+          0.4642455324675991,
+          0.4793097478132142,
+          0.4635235634848961,
+          0.46545457183136835,
+          0.45460120860099656,
+          0.46221975546895505,
+          0.46178217643011965,
+          0.4454503205265815,
+          0.45598499567660933,
+          0.46685886536828225,
+          0.4685458374236818,
+          0.468467398651966,
+          0.47925680084491457,
+          0.4653510061961693
+        ]
+      },
+      "f0_evaluation": {
+        "raw_mean_2pinball": 0.5280971767773374,
+        "median_mse": 0.9528637244527534,
+        "median_mae": 0.7804383223611024,
+        "qmean_proxy_mse": 0.9538225378562488,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.8033447265625,
+        "interval80_width": 2.5146069232230275,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.5508470239532575,
+          0.5372798162783833,
+          0.5273071547379378,
+          0.5419795102022972,
+          0.5193985807284035,
+          0.530443262304928,
+          0.519880738403924,
+          0.5273271108479639,
+          0.5094939609837289,
+          0.5239104478788453,
+          0.5153998251273939,
+          0.5376995971330559,
+          0.5225932633731497,
+          0.5272974804109407,
+          0.5374046572833302,
+          0.5212923987898657
+        ]
+      },
+      "aligned_minus_f0": -0.06429146024624352,
+      "aligned_minus_f0_ci": [
+        -0.07146616451673382,
+        -0.05697533313300409
+      ],
+      "relative_improvement": 0.12174172306425879,
+      "relative_improvement_ci": [
+        0.10841965676561378,
+        0.13464092477079267
+      ],
+      "confidence": 0.9875
+    },
+    {
+      "condition": "Q11",
+      "selected_lag": 48,
+      "val_score": 0.46284720500887844,
+      "eval_score": 0.45620552956575383,
+      "f0_eval_score": 0.5247723107845341,
+      "evaluation": {
+        "raw_mean_2pinball": 0.45620552956575383,
+        "median_mse": 0.7155244968969647,
+        "median_mae": 0.6710213923807515,
+        "qmean_proxy_mse": 0.7150999300015857,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.8165283203125,
+        "interval80_width": 2.269327021355899,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.4340326130332396,
+          0.480516939110061,
+          0.43616753664787644,
+          0.4635381299960139,
+          0.42956649169488204,
+          0.47598962437755515,
+          0.45344418282655513,
+          0.47454552143698897,
+          0.46881354436822015,
+          0.44033701469718717,
+          0.4503027031472855,
+          0.4519580498749059,
+          0.440759556709748,
+          0.4685152325052319,
+          0.4827886228482105,
+          0.4480127097781008
+        ]
+      },
+      "f0_evaluation": {
+        "raw_mean_2pinball": 0.5247723107845341,
+        "median_mse": 0.9401954198141864,
+        "median_mae": 0.7727477165415522,
+        "qmean_proxy_mse": 0.940971041267723,
+        "qmean_proxy_definition": "Arithmetic average of predicted quantiles; not an identified conditional mean",
+        "interval80_coverage": 0.798095703125,
+        "interval80_width": 2.5095827002107853,
+        "quantile_crossing_rate": 0.0,
+        "per_horizon_2pinball": [
+          0.5276015109946702,
+          0.5423131879080129,
+          0.510179248540983,
+          0.5279700600757481,
+          0.505687873143169,
+          0.5527194590718087,
+          0.5333961477198061,
+          0.5305262967225447,
+          0.5116682531607661,
+          0.5127642640288637,
+          0.5205561163090275,
+          0.5195128251750638,
+          0.5124155347319139,
+          0.5358566699374695,
+          0.5399227873987398,
+          0.5132667376339576
+        ]
+      },
+      "aligned_minus_f0": -0.06856678121878038,
+      "aligned_minus_f0_ci": [
+        -0.07592691458747731,
+        -0.06111492781815984
+      ],
+      "relative_improvement": 0.13066005924793003,
+      "relative_improvement_ci": [
+        0.11709936248754532,
+        0.14395733949175119
+      ],
+      "confidence": 0.9875
+    }
+  ],
+  "selected_lags": {
+    "Q00": 48,
+    "Q10": 48,
+    "Q01": 48,
+    "Q11": 48
+  },
+  "validation_scores": {
+    "Q00": {
+      "32": 0.5120034293821052,
+      "48": 0.4573953278788566,
+      "64": 0.5273770043930095
+    },
+    "Q10": {
+      "32": 0.5100297904942535,
+      "48": 0.44655577678145475,
+      "64": 0.5335764093178357
+    },
+    "Q01": {
+      "32": 0.5201087705675722,
+      "48": 0.4724795156506173,
+      "64": 0.5321233751545807
+    },
+    "Q11": {
+      "32": 0.5169551118044016,
+      "48": 0.46284720500887844,
+      "64": 0.5372302593494569
+    }
+  },
+  "validation_selection_sha256": "78d199d3a573c45b93aa0de978e26fbfe0a5eb73c8fa67719eec2570c3e2ba6a",
+  "selection_saved_before_evaluation": true,
+  "selection_inputs_sha256": "274ced1ee4aac5aaf1b077f763c33a480955e3bad3eec4f74b44ac1778781df6",
+  "diagnostic_addendum_sha256": "90419727fe8b9d700585660e2d922422e7880f48f9673cfc797fefe9853b536b",
+  "prediction_hashes": {
+    "validation_predictions.npz": "6851319c17c04a3d04f3f957be36493e6b6c992961c4b29c72fc821401e647a7",
+    "evaluation_predictions.npz": "f7e795a69e3741d337f5906fb54458877a8541c487446670c7bd1bf7293e0205"
+  },
+  "hashes": {
+    "source": {
+      "diagnose_alignment.py": "1b51c4e4d6e0af39169827ec66c14cdb246b9722ad29909b53e1b64e93031870",
+      "shift_train.py": "1250abd9f34f6b054dd730e527180e5b1a318d0d2279b4c08dd4a99cc71a3e8d",
+      "chronos_model.py": "13ed6b3e1010e1b60fad45cd078da5ff1cda23cdfcaf9055a996276219d9e3c1",
+      "chronos_layers.py": "73493f306ecfaa21fa57636ff46321ccb5d50ded02a382598cf759dbfc9dd60f",
+      "scope_modeling.py": "35db520cb7b9a832f70b8c0f12b6bd22f848973817766e40e482c231eb44ecbf",
+      "diagnostic_addendum.md": "90419727fe8b9d700585660e2d922422e7880f48f9673cfc797fefe9853b536b"
+    },
+    "data": {
+      "Q00": "4fe3185ebe05b874d7d3dbfff52daf98ee0d0bb834f7222855bcc78f0bf376c7",
+      "Q10": "59f320c244a5ed835a2c039e6608058d6fd34ac6389e2d01aa4ab989c40481dc",
+      "Q01": "6a2fd81adcdf6cba56f414aef2668557ca4a668c0777f2a052138c56dc2c32b2",
+      "Q11": "653d289768ddd62bb8925b3bb8cc45bd18bc336208ab77b4caffde52c667d6a9"
+    },
+    "original_f0_predictions": {
+      "Q00": "0c7daee01dae6a61d3877de136450fc284d9eeb922f19b65f2d47bb11df73aa6",
+      "Q10": "debcbbfec3dfa7483d7be1161731ac470ea59e7fe130b86f50a174ffdfd6f8a9",
+      "Q01": "e9e3ca9d622e1c42739c10a9acdc1708d213d345c6b9f7fc5181837185640daa",
+      "Q11": "453792bdf22d5818a8351add55ef953549b4ad4e0e206f2d964e744dbc2ac286"
+    },
+    "original_f0_results": {
+      "Q00": "6e4ceff441b6f65d7da169ecad73237cf173eb8cddff88d0fc6eb0f45b41f036",
+      "Q10": "c95de746d348bfeb2b05084e4a0dfafc4f39685f76b173ea9fd909d9fdcea952",
+      "Q01": "dd720a759d89925db0f6301f3f1b7f2c6c5e7d71dc7d069463fea5d090cad774",
+      "Q11": "62a6dce84c60841f4843145d69b58b1f02586442019dc16bb5e143ee965d4b16"
+    },
+    "original_completed": "37c4eead366b24fbdb6212605c2fbe54c8ead82bba7619f1a53bb6b3838bf911",
+    "original_selected": "14fbe9757c60ceeac1f93c797ac02d9df68e4725adaee217bc2a4694a0b97463",
+    "original_contract": "1244b71bd8d43d5c0093a82940d531538871df49d0393fe04aa497c17e1d52ee",
+    "checkpoint_config": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "checkpoint_weights": {
+      "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+    }
+  },
+  "fresh_f0_raw_max_abs_error": {
+    "Q00": 0.0,
+    "Q10": 0.0,
+    "Q01": 0.0,
+    "Q11": 0.0
+  },
+  "encode_signature": "(context: torch.Tensor, context_mask: torch.Tensor | None = None, group_ids: torch.Tensor | None = None, future_covariates: torch.Tensor | None = None, future_covariates_mask: torch.Tensor | None = None, num_output_patches: int = 1, future_target: torch.Tensor | None = None, future_target_mask: torch.Tensor | None = None, output_attentions: bool = False)",
+  "future_covariate_api_used": true,
+  "forward_calls": {
+    "f0_identity": 4,
+    "validation": 384,
+    "evaluation": 512
+  },
+  "optimizer_updates": 0,
+  "trainable_parameters": 0,
+  "all_parameters_frozen": true,
+  "original_future_values_supplied": 0,
+  "wall_seconds": 25.978081499997643,
+  "peak_cuda_gib": 0.46389341354370117,
+  "bootstrap": {
+    "draws": 4000,
+    "seed": 2026090811,
+    "confidence": 0.9875,
+    "unit": "paired episode ID across all four conditions",
+    "family": "four condition contrasts"
+  },
+  "limitations": [
+    "Exploratory follow-up inference diagnostic after the original development study; not a new PEFT method or confirmatory mechanism test.",
+    "The candidate set 32/48/64 uses generator knowledge and includes the true driver lag 48.",
+    "The intervention jointly retimes U/V, pads the earliest context, drops the latest lag-minus-16 original driver observations, changes U/V context normalization, and uses the known-future-covariate path.",
+    "Jointly retiming U/V does not add channel identity or remove the model's exact-arithmetic U/V-swap symmetry.",
+    "No originally future U/V or Y values are supplied. Y past is unchanged; Y future covariates are masked out.",
+    "One frozen pretrained model and one shared evaluation episode set are used; these are not three independently fitted repetitions.",
+    "Paired uncertainty is conditional on the validation-selected lag and this generator family, excluding validation-selection uncertainty."
+  ],
+  "original_source_contract": {
+    "experiments/peft_shift_mechanism_v1/data.py": "8ad0f78347b77a9e580b684b5640d0eb28cd073eaf8b8bf7d1f0cc3072b6010f",
+    "experiments/peft_shift_mechanism_v1/train.py": "1250abd9f34f6b054dd730e527180e5b1a318d0d2279b4c08dd4a99cc71a3e8d",
+    "experiments/peft_shift_mechanism_v1/run_study.py": "e2f75d9a2b393def6bfa0e5faf67aa186986acc8bbcf5ecaf194a23e0f8a47e6",
+    "experiments/peft_adaptation_scope_v1/modeling.py": "35db520cb7b9a832f70b8c0f12b6bd22f848973817766e40e482c231eb44ecbf",
+    "experiments/peft_adaptation_scope_v1/guard.py": "6ccaf5813aa00ec0ea76160f37287d5c1accf096e7ebd02becce985750ddadfd",
+    "experiments/peft_adaptation_scope_v1/train.py": "ed6fdfbe6c198edb20af925b5f959e81269f555d2ae1e89e7ea8d04a4f0facbd"
+  }
+}

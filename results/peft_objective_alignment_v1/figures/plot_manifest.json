@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "input_hashes": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\selected_results.csv": "5c657ee06bdc4e3a7ebfa07170a0b92ebac056f5d49897a0ff07e796517be661",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\effects.json": "ec5e54dec4dd2d40c3ea2364d93afdad5c13f3f187a3fa29169dee8988c29a44",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\diagnostics.json": "032750e247fc97e538834172eda09109633240dd4fd4b5c81ef6c45e6e64e485",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\metrics.json": "7e144c5fb40dcda53ac9f34fde756e16356d98d11fec376f43a8f4c6f932c3e2",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\costs.json": "872a4fb03b94a129552987daba405f9ac78456ab35e18ed72404ecd08e6ae810",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\resource_summary.json": "2b0a42e835b2c72e59b517768414d61712d24e2175e55d4b075751cf236c8de0",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_objective_alignment_v1\\verification.json": "cbfd045ed293d061175e910cfd758fa90ba884b68a13e4bb105b735014544a95",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_objective_alignment_v1\\plot.py": "538b13ea56a5fba88cd53b0df7d2bddca615513711085448d754ad570b29c081"
+  },
+  "figure_hashes": {
+    "01_scores_and_primary_effect.pdf": "c0bc2429291b735de3e63cea84031d585d16d3d44480b2a3ed667dcd5d23ca49",
+    "01_scores_and_primary_effect.png": "068ca788153b66f02c448f66a6ede7bffb6facda0c6b55216d88c223d8e8dac6",
+    "02_validation_and_future.pdf": "398c4b7cb525be4e3f16519710c66be9c9b816805be502296f5f13bae8a9c8bb",
+    "02_validation_and_future.png": "8d7e7780b5575f458c6f80a6e63f83aa707c5e0587a3be34647a64093b88c8eb",
+    "03_gradient_directions_and_clipping.pdf": "b797c697a351811b07364556c5406690c92b4dce541f33270b562296b736f15f",
+    "03_gradient_directions_and_clipping.png": "e3d363f81d67c28ac664a355179e016ea38ea41aad004f1f2bdf6d162b546086"
+  },
+  "scope": "Verified development diagnostic; no model or future prediction archive is opened"
+}

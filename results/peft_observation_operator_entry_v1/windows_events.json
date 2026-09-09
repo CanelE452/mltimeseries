@@ -1,0 +1,31 @@
+{
+  "through_local": "2026-09-08T18:58:42.5219333+09:00",
+  "scope": "Selected Windows events in the CPU execution interval; not proof of historical crash repair or future stability",
+  "checked_at": "2026-09-08T18:58:42.5219333+09:00",
+  "timezone": "Asia/Seoul",
+  "from_local": "2026-09-08T18:48:07.0000000",
+  "checks": [
+    {
+      "ids": [
+        1000,
+        1002
+      ],
+      "count": 0,
+      "events": [],
+      "log": "Application",
+      "query_succeeded": true
+    },
+    {
+      "ids": [
+        41,
+        4101,
+        153,
+        2004
+      ],
+      "count": 0,
+      "events": [],
+      "log": "System",
+      "query_succeeded": true
+    }
+  ]
+}

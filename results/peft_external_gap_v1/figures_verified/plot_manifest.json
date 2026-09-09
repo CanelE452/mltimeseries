@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "verified_analysis_required": true,
+  "prediction_archives_opened": false,
+  "input_hashes": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\all_results.csv": "b221320aa019bc9f03a37f2c40e0214e8f489a185a8adac69f65eaeb6a8ed986",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\costs.json": "bbd1f5a94214805ab9c5c1016f67c5ce76f0b734523f1a7ade4d098ad70e9dae",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\diagnostics.json": "61640f23d0313d50a72081c464f0e235ca12645fd2ab264e4f799c842cbee829",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\effects.json": "acdf663db1455e8dbf5409613180c769b8f72e408e4fe743377cac14d7a67d9c",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\resource_summary.json": "8ccf7e39a74b7eb686e2a267f8d42eab443cd4f70a6aaf2c805b5aac3e15b5f5",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\selected_results.csv": "36a744f9a659ef10e4682207a6ac6162a4509c23c0d3697277e5518a14a1242d",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\verification.json": "25d9e0eb39efed660922bf4ebd026647b442884e7b26b651845f6d0d27e38f44",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_external_gap_v1\\plot.py": "881094853811a6e23c84428c64d1e449023d3a7be7458a6f8c167d60a09d59af"
+  },
+  "figure_hashes": {
+    "01_scores_and_coverage.pdf": "841489ca72a4c9e2f5748775f56bf0bce3f6bd0021574edb85d516f6146df9a0",
+    "01_scores_and_coverage.png": "f8745e3612361f7e97a10def446829529998b5b3f4c6660784b3581645552a93",
+    "02_primary_effect_and_block_sensitivity.pdf": "e17b6c4dd6c54926994cf3d7a1c7458ddc279c2547c20f4e8224e8cd42b79d11",
+    "02_primary_effect_and_block_sensitivity.png": "c8ef6660e37b0371e6e753cc5ec326adaa44d8de1656092a3f4fc3aaf45d8f84",
+    "03_all_development_trajectories.pdf": "8f1ad2c6aa162b499869b6bc9ea097b5adcabe91af088b3f1ac08d9e6f6202bb",
+    "03_all_development_trajectories.png": "39d22345b66789b11660586e960922cdb4e864e6665941e7204c68cf0b4e532a"
+  },
+  "selected_rows": 32,
+  "fit_trajectories": 28,
+  "seed_error_bars": "sample SD across three fixed optimizer seeds; absent for single F0/RAW",
+  "effect_intervals": "verified paired temporal 97.5% CI; 7-day primary, 3/14-day descriptive sensitivity",
+  "matplotlib_version": "3.11.1",
+  "numpy_version": "2.4.6",
+  "dpi": 300
+}

@@ -1,0 +1,174 @@
+{
+  "source_archives": [
+    {
+      "dataset": "jena",
+      "url": "https://www.bgc-jena.mpg.de/wetter/mpi_roof_2023a.zip",
+      "file": "jena_mpi_roof\\_zip\\mpi_roof_2023a.zip",
+      "bytes": 1279553,
+      "sha256": "83fc9b310df75b43248f80e602e2edc6876bc197b9f4fcae16fbe72cceff1518"
+    },
+    {
+      "dataset": "jena",
+      "url": "https://www.bgc-jena.mpg.de/wetter/mpi_roof_2023b.zip",
+      "file": "jena_mpi_roof\\_zip\\mpi_roof_2023b.zip",
+      "bytes": 1303267,
+      "sha256": "316705ccf21a5daffdedbd477c273ce4f0b93404937da466d3e9443c3fafcaad"
+    },
+    {
+      "dataset": "jena",
+      "url": "https://www.bgc-jena.mpg.de/wetter/mpi_roof_2024.zip",
+      "file": "jena_mpi_roof\\_zip\\mpi_roof_2024.zip",
+      "bytes": 2583427,
+      "sha256": "3ce424b9d1671ebc26c09921c7d4f9444282acb1e8a5f020d90a156287ba83aa"
+    },
+    {
+      "dataset": "uci",
+      "url": "https://archive.ics.uci.edu/static/public/235/individual+household+electric+power+consumption.zip",
+      "file": "uci_household_power\\_zip\\household_power_consumption.zip",
+      "bytes": 20640916,
+      "sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff"
+    }
+  ],
+  "source_files": [
+    {
+      "dataset": "jena",
+      "file": "jena_mpi_roof\\mpi_roof_2023a.csv",
+      "bytes": 5473114,
+      "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1"
+    },
+    {
+      "dataset": "jena",
+      "file": "jena_mpi_roof\\mpi_roof_2023b.csv",
+      "bytes": 5594494,
+      "sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318"
+    },
+    {
+      "dataset": "jena",
+      "file": "jena_mpi_roof\\mpi_roof_2024.csv",
+      "bytes": 11068144,
+      "sha256": "65a47db98ad85b0600f2deab1e11055af8fef9c5aedceadbdcd0011748120558"
+    },
+    {
+      "dataset": "uci",
+      "file": "uci_household_power\\household_power_consumption.txt",
+      "bytes": 132960755,
+      "sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7"
+    }
+  ],
+  "datasets": {
+    "jena": {
+      "period_start": "2023-01-01 00:00:00",
+      "period_end": "2025-01-01 00:00:00",
+      "n_base_bins": 105264,
+      "base_interval_minutes": 10,
+      "channels": [
+        "temperature",
+        "pressure",
+        "relative_humidity"
+      ],
+      "coverage_overall": 0.9999715002279982,
+      "coverage_per_channel": {
+        "temperature": 0.9999715002279982,
+        "pressure": 0.9999715002279982,
+        "relative_humidity": 0.9999715002279982
+      },
+      "missing_base_bins_per_channel": {
+        "temperature": 3,
+        "pressure": 3,
+        "relative_humidity": 3
+      },
+      "splits": {
+        "train": [
+          0,
+          73684
+        ],
+        "val": [
+          73684,
+          84210
+        ],
+        "test": [
+          84210,
+          105264
+        ]
+      },
+      "train_scaling_mean": {
+        "temperature": 10.406341526309362,
+        "pressure": 988.1129920875125,
+        "relative_humidity": 77.550677786675
+      },
+      "train_scaling_std": {
+        "temperature": 7.700496514068574,
+        "pressure": 9.97974439504171,
+        "relative_humidity": 18.040919720127523
+      },
+      "provenance": {
+        "source_files": [
+          "mpi_roof_2023a.csv",
+          "mpi_roof_2023b.csv",
+          "mpi_roof_2024.csv"
+        ],
+        "duplicate_stamps_dropped": 143,
+        "record_semantics": "native 10-minute interval mean; timestamp = end of period"
+      },
+      "grid_sha256": "5c9d9bea1f7e5d45e0fa05c213c175783f720c54db79e71ee2a4f56a1480f289"
+    },
+    "uci": {
+      "period_start": "2007-01-01 00:00:00",
+      "period_end": "2009-01-01 00:00:00",
+      "n_base_bins": 105264,
+      "base_interval_minutes": 10,
+      "channels": [
+        "global_active_power",
+        "global_reactive_power",
+        "voltage",
+        "global_intensity"
+      ],
+      "coverage_overall": 0.9958105335157319,
+      "coverage_per_channel": {
+        "global_active_power": 0.9958105335157319,
+        "global_reactive_power": 0.9958105335157319,
+        "voltage": 0.9958105335157319,
+        "global_intensity": 0.9958105335157319
+      },
+      "missing_base_bins_per_channel": {
+        "global_active_power": 441,
+        "global_reactive_power": 441,
+        "voltage": 441,
+        "global_intensity": 441
+      },
+      "splits": {
+        "train": [
+          0,
+          73684
+        ],
+        "val": [
+          73684,
+          84210
+        ],
+        "test": [
+          84210,
+          105264
+        ]
+      },
+      "train_scaling_mean": {
+        "global_active_power": 1.144945310857845,
+        "global_reactive_power": 0.11517662731181329,
+        "voltage": 239.81106764485088,
+        "global_intensity": 4.868974544461885
+      },
+      "train_scaling_std": {
+        "global_active_power": 1.102695773702235,
+        "global_reactive_power": 0.09660978901684086,
+        "voltage": 3.410758352984287,
+        "global_intensity": 4.651230763236572
+      },
+      "provenance": {
+        "source_files": [
+          "household_power_consumption.txt"
+        ],
+        "record_semantics": "native 1-minute interval mean; base bin = mean of 10 valid minute means, missing if any of the 10 is absent"
+      },
+      "grid_sha256": "794e51db8921029ef38104d83f9b48c702c4c1770378e9a97087b1a5e5a478e8"
+    }
+  }
+}

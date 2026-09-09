@@ -1,0 +1,104 @@
+{
+  "ettm2": {
+    "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\ettm2",
+    "raw_rescue_used": true,
+    "val_score": 0.4414909261524655,
+    "selected_ridge": 1000.0,
+    "penalty_grid": [
+      0.001,
+      0.1,
+      10.0,
+      1000.0
+    ],
+    "wall_seconds": 0.5719890000000305,
+    "penaltyboundary": true,
+    "all_evaluated_penalties": [
+      0.001,
+      0.1,
+      10.0,
+      1000.0
+    ],
+    "source_candidate_count": 4,
+    "total_candidates_executed": 7,
+    "total_search_wall_seconds": 1.031575200000134,
+    "selection_policy": "Minimum validation scaled 2-pinball across preserved original/rescue runs; original wins ties",
+    "candidates": [
+      {
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw\\ettm2",
+        "raw_rescue_used": false,
+        "val_score": 0.4830610216112636,
+        "selected_ridge": 10.0,
+        "penalty_grid": [
+          0.001,
+          0.1,
+          10.0
+        ],
+        "wall_seconds": 0.4595862000001034
+      },
+      {
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\ettm2",
+        "raw_rescue_used": true,
+        "val_score": 0.4414909261524655,
+        "selected_ridge": 1000.0,
+        "penalty_grid": [
+          0.001,
+          0.1,
+          10.0,
+          1000.0
+        ],
+        "wall_seconds": 0.5719890000000305
+      }
+    ]
+  },
+  "jena": {
+    "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\jena",
+    "raw_rescue_used": true,
+    "val_score": 0.3877436018163838,
+    "selected_ridge": 1000.0,
+    "penalty_grid": [
+      0.001,
+      0.1,
+      10.0,
+      1000.0
+    ],
+    "wall_seconds": 6.2574814999998125,
+    "penaltyboundary": true,
+    "all_evaluated_penalties": [
+      0.001,
+      0.1,
+      10.0,
+      1000.0
+    ],
+    "source_candidate_count": 4,
+    "total_candidates_executed": 7,
+    "total_search_wall_seconds": 9.98807110000007,
+    "selection_policy": "Minimum validation scaled 2-pinball across preserved original/rescue runs; original wins ties",
+    "candidates": [
+      {
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw\\jena",
+        "raw_rescue_used": false,
+        "val_score": 0.40604347816376046,
+        "selected_ridge": 10.0,
+        "penalty_grid": [
+          0.001,
+          0.1,
+          10.0
+        ],
+        "wall_seconds": 3.7305896000002576
+      },
+      {
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\jena",
+        "raw_rescue_used": true,
+        "val_score": 0.3877436018163838,
+        "selected_ridge": 1000.0,
+        "penalty_grid": [
+          0.001,
+          0.1,
+          10.0,
+          1000.0
+        ],
+        "wall_seconds": 6.2574814999998125
+      }
+    ]
+  }
+}

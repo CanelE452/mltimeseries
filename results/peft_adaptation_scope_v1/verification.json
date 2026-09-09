@@ -1,0 +1,518 @@
+{
+  "passed": true,
+  "completed_trials": 62,
+  "adaptation_trials": 60,
+  "data_sha256": {
+    "ettm2": "ed6248fe4cbb997146e7ef15eb2be4e4835263166f176454073c496a06f8bb73",
+    "jena": "af54f084603495c0a5d078584323ce719c15676e579700596ee66e2588738f09"
+  },
+  "resource_samples": 433,
+  "min_available_ram_gib": 15.797496795654297,
+  "min_available_commit_gib": 10.300933837890625,
+  "max_git_process_count": 2,
+  "max_child_tree_rss_gib": 2.118358612060547,
+  "max_gpu_sample_memory_mib": 6428.0,
+  "max_gpu_sample_temperature_c": 70.0,
+  "max_torch_peak_allocated_gib": 4.722023963928223,
+  "total_trial_wall_seconds": 3896.466820200001,
+  "optimization_boundaries": [
+    {
+      "panel": "ettm2",
+      "method": "AFF",
+      "lr": 0.01,
+      "registered_grid": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "lr_at_grid_boundary": true,
+      "selected_step": 500,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": true,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 500,
+          "step_at_budget": true
+        },
+        {
+          "seed": 1,
+          "selected_step": 500,
+          "step_at_budget": true
+        },
+        {
+          "seed": 2,
+          "selected_step": 450,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": true,
+      "rescue_performed": false
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_LIN",
+      "lr": 0.0003,
+      "registered_grid": [
+        0.0001,
+        0.0003,
+        0.001
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 400,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 400,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 350,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 450,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_MLP",
+      "lr": 0.001,
+      "registered_grid": [
+        0.0001,
+        0.0003,
+        0.001
+      ],
+      "lr_at_grid_boundary": true,
+      "selected_step": 200,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 200,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 200,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 150,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_FULL",
+      "lr": 0.0001,
+      "registered_grid": [
+        3e-05,
+        0.0001,
+        0.0003
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 450,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 450,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 300,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 450,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "ettm2",
+      "method": "OFF_LORA",
+      "lr": 0.0001,
+      "registered_grid": [
+        1e-05,
+        3e-05,
+        0.0001
+      ],
+      "lr_at_grid_boundary": true,
+      "selected_step": 100,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 100,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 100,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 100,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "ettm2",
+      "method": "FULL",
+      "lr": 3e-06,
+      "registered_grid": [
+        1e-06,
+        3e-06,
+        1e-05
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 50,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 50,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 0,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 50,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "AFF",
+      "lr": 0.003,
+      "registered_grid": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 350,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 350,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 250,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 450,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "H_LIN",
+      "lr": 0.001,
+      "registered_grid": [
+        0.0001,
+        0.0003,
+        0.001
+      ],
+      "lr_at_grid_boundary": true,
+      "selected_step": 500,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": true,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 500,
+          "step_at_budget": true
+        },
+        {
+          "seed": 1,
+          "selected_step": 400,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 300,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": true,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "H_MLP",
+      "lr": 0.0003,
+      "registered_grid": [
+        0.0001,
+        0.0003,
+        0.001
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 450,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 450,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 400,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 300,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "H_FULL",
+      "lr": 0.0001,
+      "registered_grid": [
+        3e-05,
+        0.0001,
+        0.0003
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 450,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 450,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 400,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 450,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "OFF_LORA",
+      "lr": 3e-05,
+      "registered_grid": [
+        1e-05,
+        3e-05,
+        0.0001
+      ],
+      "lr_at_grid_boundary": false,
+      "selected_step": 200,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 200,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 250,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 250,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    },
+    {
+      "panel": "jena",
+      "method": "FULL",
+      "lr": 1e-05,
+      "registered_grid": [
+        1e-06,
+        3e-06,
+        1e-05
+      ],
+      "lr_at_grid_boundary": true,
+      "selected_step": 50,
+      "selected_step_scope": "HPO seed 0",
+      "step_at_budget": false,
+      "selected_seeds": [
+        {
+          "seed": 0,
+          "selected_step": 50,
+          "step_at_budget": false
+        },
+        {
+          "seed": 1,
+          "selected_step": 50,
+          "step_at_budget": false
+        },
+        {
+          "seed": 2,
+          "selected_step": 50,
+          "step_at_budget": false
+        }
+      ],
+      "any_seed_at_budget": false,
+      "rescue_performed": false
+    }
+  ],
+  "raw_result_audits": {
+    "ettm2": {
+      "selected_source": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\ettm2",
+      "selected_on_validation_only": true,
+      "analysis_csv_source_verified": true,
+      "raw_rescue_used": true,
+      "penaltyboundary": true,
+      "candidates": [
+        {
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw\\ettm2",
+          "raw_rescue_used": false,
+          "val_score": 0.4830610216112636,
+          "selected_ridge": 10.0,
+          "penalty_grid": [
+            0.001,
+            0.1,
+            10.0
+          ],
+          "wall_seconds": 0.4595862000001034,
+          "completed_verified": true,
+          "train_origin_hash_verified": true,
+          "prediction_origin_order_verified": true,
+          "oof_purge_verified": true
+        },
+        {
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\ettm2",
+          "raw_rescue_used": true,
+          "val_score": 0.4414909261524655,
+          "selected_ridge": 1000.0,
+          "penalty_grid": [
+            0.001,
+            0.1,
+            10.0,
+            1000.0
+          ],
+          "wall_seconds": 0.5719890000000305,
+          "completed_verified": true,
+          "train_origin_hash_verified": true,
+          "prediction_origin_order_verified": true,
+          "oof_purge_verified": true
+        }
+      ],
+      "original_and_rescue_preserved": true,
+      "total_candidates_executed": 7
+    },
+    "jena": {
+      "selected_source": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\jena",
+      "selected_on_validation_only": true,
+      "analysis_csv_source_verified": true,
+      "raw_rescue_used": true,
+      "penaltyboundary": true,
+      "candidates": [
+        {
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw\\jena",
+          "raw_rescue_used": false,
+          "val_score": 0.40604347816376046,
+          "selected_ridge": 10.0,
+          "penalty_grid": [
+            0.001,
+            0.1,
+            10.0
+          ],
+          "wall_seconds": 3.7305896000002576,
+          "completed_verified": true,
+          "train_origin_hash_verified": true,
+          "prediction_origin_order_verified": true,
+          "oof_purge_verified": true
+        },
+        {
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\raw_rescue\\jena",
+          "raw_rescue_used": true,
+          "val_score": 0.3877436018163838,
+          "selected_ridge": 1000.0,
+          "penalty_grid": [
+            0.001,
+            0.1,
+            10.0,
+            1000.0
+          ],
+          "wall_seconds": 6.2574814999998125,
+          "completed_verified": true,
+          "train_origin_hash_verified": true,
+          "prediction_origin_order_verified": true,
+          "oof_purge_verified": true
+        }
+      ],
+      "original_and_rescue_preserved": true,
+      "total_candidates_executed": 7
+    }
+  },
+  "selected_report_audit": {
+    "passed": true,
+    "selected_csv_rows": 40,
+    "exact_selected_keys_verified": true,
+    "selected_sources_and_scores_verified": true,
+    "effects_verified": 4,
+    "paired_seed_ids_verified": [
+      0,
+      1,
+      2
+    ]
+  }
+}

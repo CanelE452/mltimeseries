@@ -1,0 +1,338 @@
+{
+  "summary": [
+    {
+      "panel": "ettm2",
+      "method": "RAW_VARX_RIDGE",
+      "mean": 0.4324153249634941,
+      "seed_sd": null,
+      "relative_improvement_over_F0": -0.20849376032846334,
+      "coverage80_mean": 0.8179408482142857,
+      "crossing_rate_mean": 0.0,
+      "selected_trial_seconds_mean": 0.5719890000000305,
+      "hpo_seed0_seconds": null,
+      "confirmation_seed12_seconds": null,
+      "all_trial_seconds": null,
+      "all_guard_seconds": null,
+      "peak_vram_gib": null,
+      "selected_steps": [
+        0
+      ],
+      "raw_total_search_seconds": 1.031575200000134
+    },
+    {
+      "panel": "ettm2",
+      "method": "F0",
+      "mean": 0.35781345271155185,
+      "seed_sd": null,
+      "relative_improvement_over_F0": 0.0,
+      "coverage80_mean": 0.7570219494047619,
+      "crossing_rate_mean": 0.001953125,
+      "selected_trial_seconds_mean": 25.49415910000016,
+      "hpo_seed0_seconds": null,
+      "confirmation_seed12_seconds": null,
+      "all_trial_seconds": 25.49415910000016,
+      "all_guard_seconds": 28.39,
+      "peak_vram_gib": 0.46456432342529297,
+      "selected_steps": [
+        0
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "AFF",
+      "mean": 0.35707178060163436,
+      "seed_sd": 0.0005810206377320721,
+      "relative_improvement_over_F0": 0.0020727898973529335,
+      "coverage80_mean": 0.7302207341269841,
+      "crossing_rate_mean": 0.001953125,
+      "selected_trial_seconds_mean": 11.161636900000303,
+      "hpo_seed0_seconds": 34.29477960000031,
+      "confirmation_seed12_seconds": 22.25657290000072,
+      "all_trial_seconds": 56.55135250000103,
+      "all_guard_seconds": 73.40700000000001,
+      "peak_vram_gib": 0.4484868049621582,
+      "selected_steps": [
+        500,
+        500,
+        450
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_LIN",
+      "mean": 0.34931286565223885,
+      "seed_sd": 0.0006778218703389286,
+      "relative_improvement_over_F0": 0.02375703594958367,
+      "coverage80_mean": 0.8004247271825397,
+      "crossing_rate_mean": 0.010682508680555555,
+      "selected_trial_seconds_mean": 10.653792566666652,
+      "hpo_seed0_seconds": 31.846964699999717,
+      "confirmation_seed12_seconds": 21.29253510000035,
+      "all_trial_seconds": 53.13949980000007,
+      "all_guard_seconds": 71.375,
+      "peak_vram_gib": 0.4690742492675781,
+      "selected_steps": [
+        400,
+        350,
+        450
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_MLP",
+      "mean": 0.34776246552236945,
+      "seed_sd": 0.003302752343844509,
+      "relative_improvement_over_F0": 0.028090020408720995,
+      "coverage80_mean": 0.7751271081349206,
+      "crossing_rate_mean": 0.010467044890873016,
+      "selected_trial_seconds_mean": 11.218251500000102,
+      "hpo_seed0_seconds": 34.27506799999992,
+      "confirmation_seed12_seconds": 22.337445600000137,
+      "all_trial_seconds": 56.61251360000006,
+      "all_guard_seconds": 71.406,
+      "peak_vram_gib": 0.4775686264038086,
+      "selected_steps": [
+        200,
+        200,
+        150
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "H_FULL",
+      "mean": 0.34821160245661087,
+      "seed_sd": 0.001495763171312871,
+      "relative_improvement_over_F0": 0.02683479389099841,
+      "coverage80_mean": 0.7798704117063492,
+      "crossing_rate_mean": 0.005673363095238096,
+      "selected_trial_seconds_mean": 11.944524866666447,
+      "hpo_seed0_seconds": 34.7899766999999,
+      "confirmation_seed12_seconds": 23.757207099999505,
+      "all_trial_seconds": 58.5471837999994,
+      "all_guard_seconds": 75.36099999999999,
+      "peak_vram_gib": 0.5221214294433594,
+      "selected_steps": [
+        450,
+        300,
+        450
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "OFF_LORA",
+      "mean": 0.34010965264953086,
+      "seed_sd": 0.0006825361147908385,
+      "relative_improvement_over_F0": 0.049477737429544755,
+      "coverage80_mean": 0.7795293898809524,
+      "crossing_rate_mean": 0.0003301711309523809,
+      "selected_trial_seconds_mean": 190.97009390000025,
+      "hpo_seed0_seconds": 573.6774791000007,
+      "confirmation_seed12_seconds": 380.9790804000004,
+      "all_trial_seconds": 954.6565595000011,
+      "all_guard_seconds": 972.766,
+      "peak_vram_gib": 1.1976871490478516,
+      "selected_steps": [
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "panel": "ettm2",
+      "method": "FULL",
+      "mean": 0.34683179943040404,
+      "seed_sd": 0.009781265349057862,
+      "relative_improvement_over_F0": 0.03069100168796779,
+      "coverage80_mean": 0.7742280505952381,
+      "crossing_rate_mean": 0.0011842757936507938,
+      "selected_trial_seconds_mean": 132.02392303333377,
+      "hpo_seed0_seconds": 395.7758893000009,
+      "confirmation_seed12_seconds": 264.715782700001,
+      "all_trial_seconds": 660.4916720000019,
+      "all_guard_seconds": 678.984,
+      "peak_vram_gib": 2.6706318855285645,
+      "selected_steps": [
+        50,
+        0,
+        50
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "RAW_VARX_RIDGE",
+      "mean": 0.3056035164022197,
+      "seed_sd": null,
+      "relative_improvement_over_F0": -0.30376771414010095,
+      "coverage80_mean": 0.8875558035714286,
+      "crossing_rate_mean": 0.0,
+      "selected_trial_seconds_mean": 6.2574814999998125,
+      "hpo_seed0_seconds": null,
+      "confirmation_seed12_seconds": null,
+      "all_trial_seconds": null,
+      "all_guard_seconds": null,
+      "peak_vram_gib": null,
+      "selected_steps": [
+        0
+      ],
+      "raw_total_search_seconds": 9.98807110000007
+    },
+    {
+      "panel": "jena",
+      "method": "F0",
+      "mean": 0.2344002793502064,
+      "seed_sd": null,
+      "relative_improvement_over_F0": 0.0,
+      "coverage80_mean": 0.7799995866402116,
+      "crossing_rate_mean": 0.010980902777777777,
+      "selected_trial_seconds_mean": 34.98956510000016,
+      "hpo_seed0_seconds": null,
+      "confirmation_seed12_seconds": null,
+      "all_trial_seconds": 34.98956510000016,
+      "all_guard_seconds": 38.562,
+      "peak_vram_gib": 0.4955272674560547,
+      "selected_steps": [
+        0
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "AFF",
+      "mean": 0.2319268006638988,
+      "seed_sd": 0.0003269358962997067,
+      "relative_improvement_over_F0": 0.010552370898040175,
+      "coverage80_mean": 0.71480930335097,
+      "crossing_rate_mean": 0.010611634700176368,
+      "selected_trial_seconds_mean": 12.985581766666352,
+      "hpo_seed0_seconds": 40.701173200000085,
+      "confirmation_seed12_seconds": 25.673139899999114,
+      "all_trial_seconds": 66.3743130999992,
+      "all_guard_seconds": 83.389,
+      "peak_vram_gib": 0.4603104591369629,
+      "selected_steps": [
+        350,
+        250,
+        450
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "H_LIN",
+      "mean": 0.22976682579177163,
+      "seed_sd": 0.0010058741144562925,
+      "relative_improvement_over_F0": 0.019767269780050722,
+      "coverage80_mean": 0.7782496968694885,
+      "crossing_rate_mean": 0.0793821304563492,
+      "selected_trial_seconds_mean": 12.39497403333356,
+      "hpo_seed0_seconds": 39.29453560000002,
+      "confirmation_seed12_seconds": 24.348178400000506,
+      "all_trial_seconds": 63.642714000000524,
+      "all_guard_seconds": 81.344,
+      "peak_vram_gib": 0.4805293083190918,
+      "selected_steps": [
+        500,
+        400,
+        300
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "H_MLP",
+      "mean": 0.22537180582284555,
+      "seed_sd": 0.0014533708701510272,
+      "relative_improvement_over_F0": 0.038517332626006984,
+      "coverage80_mean": 0.7723972111992946,
+      "crossing_rate_mean": 0.05989032186948853,
+      "selected_trial_seconds_mean": 13.222869033333003,
+      "hpo_seed0_seconds": 41.49537469999996,
+      "confirmation_seed12_seconds": 26.151437499998792,
+      "all_trial_seconds": 67.64681219999875,
+      "all_guard_seconds": 85.392,
+      "peak_vram_gib": 0.48717641830444336,
+      "selected_steps": [
+        450,
+        400,
+        300
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "H_FULL",
+      "mean": 0.22452906986374802,
+      "seed_sd": 0.0013559967170313088,
+      "relative_improvement_over_F0": 0.042112618269154356,
+      "coverage80_mean": 0.7611262676366843,
+      "crossing_rate_mean": 0.040434682264109345,
+      "selected_trial_seconds_mean": 13.645209166666518,
+      "hpo_seed0_seconds": 42.11586850000003,
+      "confirmation_seed12_seconds": 27.03018019999945,
+      "all_trial_seconds": 69.14604869999948,
+      "all_guard_seconds": 85.438,
+      "peak_vram_gib": 0.526853084564209,
+      "selected_steps": [
+        450,
+        400,
+        450
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "OFF_LORA",
+      "mean": 0.22808855462002753,
+      "seed_sd": 0.001792660840093122,
+      "relative_improvement_over_F0": 0.02692712119488916,
+      "coverage80_mean": 0.7842537477954145,
+      "crossing_rate_mean": 0.02302551807760141,
+      "selected_trial_seconds_mean": 188.33888406666665,
+      "hpo_seed0_seconds": 566.4194729999999,
+      "confirmation_seed12_seconds": 377.49582889999965,
+      "all_trial_seconds": 943.9153018999996,
+      "all_guard_seconds": 962.61,
+      "peak_vram_gib": 2.8754820823669434,
+      "selected_steps": [
+        200,
+        250,
+        250
+      ]
+    },
+    {
+      "panel": "jena",
+      "method": "FULL",
+      "mean": 0.22977084183997518,
+      "seed_sd": 0.0017368055933463954,
+      "relative_improvement_over_F0": 0.01975013648902102,
+      "coverage80_mean": 0.6907965443121693,
+      "crossing_rate_mean": 0.02173618000440917,
+      "selected_trial_seconds_mean": 156.95636059999984,
+      "hpo_seed0_seconds": 471.5931115000003,
+      "confirmation_seed12_seconds": 313.66601339999943,
+      "all_trial_seconds": 785.2591248999997,
+      "all_guard_seconds": 800.5790000000001,
+      "peak_vram_gib": 4.722023963928223,
+      "selected_steps": [
+        50,
+        50,
+        50
+      ]
+    }
+  ],
+  "unique_cache": {
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\cache\\ettm2\\09c67f2aa56dca10e847": {
+      "generation_seconds": 18.74538110000003,
+      "charged_to_trial": "ettm2_F0_lr0_seed0"
+    },
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_adaptation_scope_v1\\cache\\jena\\3af2fbcb1f6985e83d13": {
+      "generation_seconds": 28.18490040000006,
+      "charged_to_trial": "jena_F0_lr0_seed0"
+    }
+  },
+  "started": "2026-09-08T01:11:47.969715+09:00",
+  "finished": "2026-09-08T02:20:18.412008+09:00",
+  "s1_elapsed_seconds": 4110.442293,
+  "all_trial_seconds": 3896.466820200001,
+  "all_guard_seconds": 4109.003000000001,
+  "cost_notes": [
+    "Cache cost already included once in each F0; do not add again to total",
+    "RAW original/rescue costs are recorded separately in raw_selection.json and overlap GPU work",
+    "Selected-step is checkpoint choice; every adaptation trial still ran 500 updates"
+  ]
+}

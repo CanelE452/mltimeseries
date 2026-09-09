@@ -1,0 +1,46 @@
+{
+  "PAYEMS": {
+    "events": 408,
+    "revised_events": 408,
+    "mean_revision": 0.01034910088577851,
+    "mean_absolute_revision": 0.039589483685079356,
+    "median_absolute_revision": 0.02826043416330748,
+    "p95_absolute_revision": 0.11608283622086545,
+    "maximum_absolute_revision": 0.443854548942646,
+    "revision_rmse_over_historical_std": 0.376794338066218,
+    "release_lag_days_min_median_max": [
+      31,
+      34.0,
+      51
+    ],
+    "revision_count_first_to_mature_min_median_max": [
+      1,
+      2.0,
+      3
+    ],
+    "historical_variance": 0.02446234798892294,
+    "units": "100 log difference; percentage points"
+  },
+  "INDPRO": {
+    "events": 408,
+    "revised_events": 404,
+    "mean_revision": -4.414324142691417e-05,
+    "mean_absolute_revision": 0.24174607825588804,
+    "median_absolute_revision": 0.1748311916117462,
+    "p95_absolute_revision": 0.6510236069510755,
+    "maximum_absolute_revision": 1.6301540036690376,
+    "revision_rmse_over_historical_std": 0.5380079702142017,
+    "release_lag_days_min_median_max": [
+      41,
+      45.0,
+      57
+    ],
+    "revision_count_first_to_mature_min_median_max": [
+      0,
+      5.0,
+      6
+    ],
+    "historical_variance": 0.3822081743756808,
+    "units": "100 log difference; percentage points"
+  }
+}

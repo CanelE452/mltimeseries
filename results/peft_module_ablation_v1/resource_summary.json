@@ -1,0 +1,33 @@
+{
+  "scope": "Resource summaries are separated by artifact origin. Use 'new' for the 12 module-ablation fits; 'reused' describes original F0/BOTH reference guards and must not be reported as new-run safety.",
+  "new": {
+    "scope": "12 new module-ablation production trial guards only",
+    "origin": "new",
+    "sample_count": 48,
+    "first_sample_utc": "2026-09-08T03:04:21.379264+00:00",
+    "last_sample_utc": "2026-09-08T03:11:44.595854+00:00",
+    "min_available_ram_gib": 15.310943603515625,
+    "min_available_commit_gib": 13.409393310546875,
+    "max_child_tree_rss_gib": 1.7520294189453125,
+    "max_git_process_count": 2,
+    "max_gpu_memory_used_mib": 2262.0,
+    "max_gpu_temperature_c": 55.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "reused": {
+    "scope": "read-reused original Q00 F0/BOTH reference guards only",
+    "origin": "reused",
+    "sample_count": 21,
+    "first_sample_utc": "2026-09-08T01:21:19.635531+00:00",
+    "last_sample_utc": "2026-09-08T01:35:13.496722+00:00",
+    "min_available_ram_gib": 15.283039093017578,
+    "min_available_commit_gib": 14.101730346679688,
+    "max_child_tree_rss_gib": 1.7336883544921875,
+    "max_git_process_count": 0,
+    "max_gpu_memory_used_mib": 2250.0,
+    "max_gpu_temperature_c": 55.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  }
+}

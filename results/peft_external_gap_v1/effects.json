@@ -1,0 +1,475 @@
+{
+  "completed": true,
+  "sources": {
+    "bike": {
+      "primary": {
+        "value": 0.03925264016627694,
+        "seed_values": [
+          0.035334376831259035,
+          0.0470962437459754,
+          0.03532729992159639
+        ],
+        "ci": [
+          0.02052333706022908,
+          0.051822620666497045
+        ],
+        "confidence": 0.975,
+        "decision": "conditional_practical_improvement",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "block_days": 7,
+        "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+        "inferential_role": "primary"
+      },
+      "block_sensitivity": {
+        "3": {
+          "value": 0.03925264016627694,
+          "seed_values": [
+            0.035334376831259035,
+            0.0470962437459754,
+            0.03532729992159639
+          ],
+          "ci": [
+            0.02420513035053474,
+            0.05283999675822028
+          ],
+          "confidence": 0.975,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 3,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "7": {
+          "value": 0.03925264016627694,
+          "seed_values": [
+            0.035334376831259035,
+            0.0470962437459754,
+            0.03532729992159639
+          ],
+          "ci": [
+            0.02052333706022908,
+            0.051822620666497045
+          ],
+          "confidence": 0.975,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 7,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "primary"
+        },
+        "14": {
+          "value": 0.03925264016627694,
+          "seed_values": [
+            0.035334376831259035,
+            0.0470962437459754,
+            0.03532729992159639
+          ],
+          "ci": [
+            0.016337545712556002,
+            0.05003059985307165
+          ],
+          "confidence": 0.975,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 14,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "descriptive sensitivity"
+        }
+      },
+      "sort_effect": {
+        "value": 0.040805070939976575,
+        "seed_values": [
+          0.03712770350652065,
+          0.0472177499801252,
+          0.03806975933328388
+        ],
+        "ci": [
+          0.02427940086846505,
+          0.05158758857064856
+        ],
+        "confidence": 0.95,
+        "decision": "conditional_practical_improvement",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "block_days": 7,
+        "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+        "inferential_role": "descriptive sensitivity"
+      },
+      "sort_block_sensitivity": {
+        "3": {
+          "value": 0.040805070939976575,
+          "seed_values": [
+            0.03712770350652065,
+            0.0472177499801252,
+            0.03806975933328388
+          ],
+          "ci": [
+            0.02798577358817923,
+            0.05260644499894639
+          ],
+          "confidence": 0.95,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 3,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "7": {
+          "value": 0.040805070939976575,
+          "seed_values": [
+            0.03712770350652065,
+            0.0472177499801252,
+            0.03806975933328388
+          ],
+          "ci": [
+            0.02427940086846505,
+            0.05158758857064856
+          ],
+          "confidence": 0.95,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 7,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "14": {
+          "value": 0.040805070939976575,
+          "seed_values": [
+            0.03712770350652065,
+            0.0472177499801252,
+            0.03806975933328388
+          ],
+          "ci": [
+            0.02137758516220875,
+            0.05076553267877663
+          ],
+          "confidence": 0.95,
+          "decision": "conditional_practical_improvement",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 14,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        }
+      },
+      "raw_over_lora": {
+        "value": -1.2801024534853063,
+        "seed_values": [
+          -1.2781818122232234,
+          -1.2869838263115527,
+          -1.2751417219211423
+        ],
+        "ci": [
+          -1.7424318278441866,
+          -1.0498102164532794
+        ],
+        "confidence": 0.95,
+        "decision": "conditional_practical_harm",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "definition": "(mean_seed S_LORA_QCAL - S_RAW_QCAL) / S_F0_QCAL",
+        "inferential_role": "descriptive, outside the primary family"
+      },
+      "raw_veto": {
+        "applies": false,
+        "raw_score": 0.9220201622172213,
+        "lora_mean_score": 0.3950828815233007,
+        "criterion": "Conservative point-estimate screen: S_RAW_QCAL < mean_seed S_LORA_QCAL; no significance claim"
+      },
+      "selected_head_family": "H_FULL",
+      "selected_head_lr": 3e-05,
+      "selected_lora_lr": 1e-05,
+      "optimizer_seeds": [
+        12000,
+        12001,
+        12002
+      ],
+      "target_names": [
+        "casual",
+        "registered"
+      ]
+    },
+    "household": {
+      "primary": {
+        "value": 0.013553243425088716,
+        "seed_values": [
+          0.013990115019760389,
+          0.014673225832859016,
+          0.011996389422646745
+        ],
+        "ci": [
+          -0.0006822271662725689,
+          0.032396170062366315
+        ],
+        "confidence": 0.975,
+        "decision": "inconclusive",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "block_days": 7,
+        "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+        "inferential_role": "primary"
+      },
+      "block_sensitivity": {
+        "3": {
+          "value": 0.013553243425088716,
+          "seed_values": [
+            0.013990115019760389,
+            0.014673225832859016,
+            0.011996389422646745
+          ],
+          "ci": [
+            -0.0006797553662031544,
+            0.029587471864927297
+          ],
+          "confidence": 0.975,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 3,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "7": {
+          "value": 0.013553243425088716,
+          "seed_values": [
+            0.013990115019760389,
+            0.014673225832859016,
+            0.011996389422646745
+          ],
+          "ci": [
+            -0.0006822271662725689,
+            0.032396170062366315
+          ],
+          "confidence": 0.975,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 7,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "primary"
+        },
+        "14": {
+          "value": 0.013553243425088716,
+          "seed_values": [
+            0.013990115019760389,
+            0.014673225832859016,
+            0.011996389422646745
+          ],
+          "ci": [
+            0.0016880964806093495,
+            0.031010899867099262
+          ],
+          "confidence": 0.975,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 14,
+          "definition": "(S_H_QCAL - S_LORA_QCAL) / S_F0_QCAL",
+          "inferential_role": "descriptive sensitivity"
+        }
+      },
+      "sort_effect": {
+        "value": 0.01927942295577417,
+        "seed_values": [
+          0.019713665500837915,
+          0.021290120130310924,
+          0.016834483236173668
+        ],
+        "ci": [
+          0.005991319575466446,
+          0.03435702247550902
+        ],
+        "confidence": 0.95,
+        "decision": "inconclusive",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "block_days": 7,
+        "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+        "inferential_role": "descriptive sensitivity"
+      },
+      "sort_block_sensitivity": {
+        "3": {
+          "value": 0.01927942295577417,
+          "seed_values": [
+            0.019713665500837915,
+            0.021290120130310924,
+            0.016834483236173668
+          ],
+          "ci": [
+            0.006338308585545345,
+            0.032936936250176664
+          ],
+          "confidence": 0.95,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 3,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "7": {
+          "value": 0.01927942295577417,
+          "seed_values": [
+            0.019713665500837915,
+            0.021290120130310924,
+            0.016834483236173668
+          ],
+          "ci": [
+            0.005991319575466446,
+            0.03435702247550902
+          ],
+          "confidence": 0.95,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 7,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        },
+        "14": {
+          "value": 0.01927942295577417,
+          "seed_values": [
+            0.019713665500837915,
+            0.021290120130310924,
+            0.016834483236173668
+          ],
+          "ci": [
+            0.009372401301770658,
+            0.031228476947425844
+          ],
+          "confidence": 0.95,
+          "decision": "inconclusive",
+          "practical_threshold": 0.01,
+          "valid_resamples": 4000,
+          "discarded_resamples": 0,
+          "requested_resamples": 4000,
+          "positive_means": "right procedure improves over left",
+          "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+          "block_days": 14,
+          "definition": "(S_H_SORT - S_LORA_SORT) / S_F0_SORT",
+          "inferential_role": "descriptive sensitivity"
+        }
+      },
+      "raw_over_lora": {
+        "value": -0.17679703901880583,
+        "seed_values": [
+          -0.17829555459915689,
+          -0.17721112979611453,
+          -0.17488443266114606
+        ],
+        "ci": [
+          -0.25788711834198175,
+          -0.10364960537039156
+        ],
+        "confidence": 0.95,
+        "decision": "conditional_practical_harm",
+        "practical_threshold": 0.01,
+        "valid_resamples": 4000,
+        "discarded_resamples": 0,
+        "requested_resamples": 4000,
+        "positive_means": "right procedure improves over left",
+        "scope": "date blocks conditional on three fitted optimizer seeds and frozen development selections",
+        "definition": "(mean_seed S_LORA_QCAL - S_RAW_QCAL) / S_F0_QCAL",
+        "inferential_role": "descriptive, outside the primary family"
+      },
+      "raw_veto": {
+        "applies": false,
+        "raw_score": 0.44269056715575794,
+        "lora_mean_score": 0.3752022458567475,
+        "criterion": "Conservative point-estimate screen: S_RAW_QCAL < mean_seed S_LORA_QCAL; no significance claim"
+      },
+      "selected_head_family": "H_FULL",
+      "selected_head_lr": 3e-05,
+      "selected_lora_lr": 0.0001,
+      "optimizer_seeds": [
+        12000,
+        12001,
+        12002
+      ],
+      "target_names": [
+        "Global_active_power",
+        "Global_reactive_power"
+      ]
+    }
+  },
+  "primary_family_size": 2,
+  "primary_confidence_each": 0.975,
+  "bootstrap_replicates": 4000,
+  "bootstrap_seed": 2026090812,
+  "primary_block_days": 7,
+  "moving_block_variant": "noncircular overlapping blocks; truncate final block to original origin count",
+  "overall_gate": "internal_peft_need_not_established_by_this_screen",
+  "scope": "Two fixed real-source windows, static adapters and three fixed optimizer seeds; conditional temporal bootstrap, not whole selection/training uncertainty",
+  "selection_limitation": "SORT selects checkpoints/family/LR before common QCAL; this compares selected procedures, not optimally calibrated model families. H has six development candidates versus three LoRA candidates.",
+  "calibration_limitation": "Fixed horizon-pooled empirical quantile offsets on 13 dependent daily calibration origins; no conformal coverage guarantee"
+}

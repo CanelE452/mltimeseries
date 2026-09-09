@@ -1,0 +1,31 @@
+{
+  "execution_status": "COMPLETE",
+  "evidence_level": "DEVELOPMENT_SCREEN",
+  "scientific_decision": "INCONCLUSIVE",
+  "conditions": {
+    "core_complete_for_I_H_STATIC_C_both_seeds": true,
+    "macro_RI_C_vs_I_at_least_1pct": false,
+    "at_least_2_datasets_positive": true,
+    "no_dataset_worse_than_-1pct": true,
+    "both_seed_macros_positive": false,
+    "bootstrap_lower95_positive": false,
+    "macro_RI_C_vs_H_STATIC_at_least_0.3pct": true,
+    "seed0_C_vs_R_positive": false
+  },
+  "notes": [
+    "effect present but at least one pre-registered condition failed",
+    "compression headroom (DENSE over U) is 0.77 percent, below the 1.0 percent gate. Under this budget no pooling rule could have reached the threshold, so a negative reading here is a statement about the setting, not about the hypothesis.",
+    "seed-to-seed sd of validation MSE reaches 9.90 percent, at or above the 1.0 percent gate; the two-seed interval does not carry that source of variation"
+  ],
+  "macro_RI_C_vs_I": -0.005059840133383083,
+  "bootstrap": {
+    "macro_mean": -0.005110746568718608,
+    "lower95": -0.0061494641936895205,
+    "upper95": -0.004207241166589252,
+    "flags": [
+      "LOW_EFFECTIVE_TIME_BLOCKS:electricity:4"
+    ]
+  },
+  "fits_completed": 27,
+  "fits_planned": 27
+}

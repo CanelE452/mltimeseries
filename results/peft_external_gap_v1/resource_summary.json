@@ -1,0 +1,62 @@
+{
+  "new_fit_gpu": {
+    "scope": "28 new production fit guards: 26 adaptation fits and 2 F0/cache jobs",
+    "sample_count": 77,
+    "job_count": 28,
+    "first_sample_utc": "2026-09-08T06:19:42.963106+00:00",
+    "last_sample_utc": "2026-09-08T06:30:08.303326+00:00",
+    "min_available_ram_gib": 13.951313018798828,
+    "min_available_commit_gib": 8.652545928955078,
+    "max_child_tree_rss_gib": 1.6701126098632812,
+    "max_git_process_count": 2,
+    "max_gpu_memory_used_mib": 2619.0,
+    "max_gpu_temperature_c": 58.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "new_forecast_gpu": {
+    "scope": "14 new selected holdout inference guards, no optimizer updates",
+    "sample_count": 21,
+    "job_count": 14,
+    "first_sample_utc": "2026-09-08T06:30:10.491917+00:00",
+    "last_sample_utc": "2026-09-08T06:32:45.342831+00:00",
+    "min_available_ram_gib": 14.485401153564453,
+    "min_available_commit_gib": 10.786670684814453,
+    "max_child_tree_rss_gib": 1.494537353515625,
+    "max_git_process_count": 0,
+    "max_gpu_memory_used_mib": 2111.0,
+    "max_gpu_temperature_c": 53.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "new_all_production_gpu": {
+    "scope": "All 42 new production GPU guards; CPU analysis and S0 excluded",
+    "sample_count": 98,
+    "job_count": 42,
+    "first_sample_utc": "2026-09-08T06:19:42.963106+00:00",
+    "last_sample_utc": "2026-09-08T06:32:45.342831+00:00",
+    "min_available_ram_gib": 13.951313018798828,
+    "min_available_commit_gib": 8.652545928955078,
+    "max_child_tree_rss_gib": 1.6701126098632812,
+    "max_git_process_count": 2,
+    "max_gpu_memory_used_mib": 2619.0,
+    "max_gpu_temperature_c": 58.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "new_raw_cpu": {
+    "scope": "Two new RAW CPU guards, distinct from GPU and the enclosing analysis guard",
+    "sample_count": 2,
+    "job_count": 2,
+    "first_sample_utc": "2026-09-08T06:32:55.785781+00:00",
+    "last_sample_utc": "2026-09-08T06:33:07.487489+00:00",
+    "min_available_ram_gib": 16.00531005859375,
+    "min_available_commit_gib": 13.525360107421875,
+    "max_child_tree_rss_gib": 0.0,
+    "max_git_process_count": 0,
+    "max_gpu_memory_used_mib": null,
+    "max_gpu_temperature_c": null,
+    "guard_failures": 0,
+    "safety_stops": 0
+  }
+}

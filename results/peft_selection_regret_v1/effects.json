@@ -1,0 +1,3655 @@
+{
+  "completed": true,
+  "cells": {
+    "s12_bike": {
+      "SORT": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "primary"
+            },
+            "14": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      },
+      "QCAL": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "s12_household": {
+      "SORT": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.010632977957856116,
+                0.0023860330254666363
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.00990621029423786,
+                0.0010202549732213563
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "primary"
+            },
+            "14": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.008260003205964428,
+                0.0006074903826192873
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.013060716818125524,
+                  0.0023489530878916948
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.012841022919065151,
+                  0.0013651993522636216
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.010577357561556327,
+                  0.001293408142288548
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.0097407877895965,
+                  0.004237586351996067
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.009232979325629513,
+                  0.002764492314181863
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.008781190549733168,
+                  0.0017530498904807445
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.010632977957856116,
+                0.0023860330254666363
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.00990621029423786,
+                0.0010202549732213563
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.0038814934801302088,
+              "ci": [
+                -0.008260003205964428,
+                0.0006074903826192873
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.013060716818125524,
+                  0.0023489530878916948
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.012841022919065151,
+                  0.0013651993522636216
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.00501498855496595,
+                "ci": [
+                  -0.010577357561556327,
+                  0.001293408142288548
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.0097407877895965,
+                  0.004237586351996067
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.009232979325629513,
+                  0.002764492314181863
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.002731266738226517,
+                "ci": [
+                  -0.008781190549733168,
+                  0.0017530498904807445
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      },
+      "QCAL": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.009044809497621055,
+                0.0024269469111196464
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.008507442856304705,
+                0.0012750049853837396
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.007537538312436128,
+                -0.00016563486414389786
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.011553649797655432,
+                  0.0016233330590370461
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.010437104493521386,
+                  -0.0002332560963274783
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.008299463579427173,
+                  -0.0006174092015774564
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.008447190839375915,
+                  0.004830442783401857
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.008351957225693983,
+                  0.004554850108572093
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.00810548192613044,
+                  0.004054282039228619
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.009044809497621055,
+                0.0024269469111196464
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.008507442856304705,
+                0.0012750049853837396
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.0030945250754518955,
+              "ci": [
+                -0.007537538312436128,
+                -0.00016563486414389786
+              ],
+              "confidence": 0.9875,
+              "decision": "conditional_practical_equivalence",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.011553649797655432,
+                  0.0016233330590370461
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.010437104493521386,
+                  -0.0002332560963274783
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.0041507232267818574,
+                "ci": [
+                  -0.008299463579427173,
+                  -0.0006174092015774564
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.008447190839375915,
+                  0.004830442783401857
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.008351957225693983,
+                  0.004554850108572093
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.002022307333103969,
+                "ci": [
+                  -0.00810548192613044,
+                  0.004054282039228619
+                ],
+                "confidence": 0.9875,
+                "decision": "conditional_practical_equivalence",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "s13_bike": {
+      "SORT": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.001222819601806721,
+                0.06075365459722162
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.004138940271998557,
+                0.05838139382493306
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "primary"
+            },
+            "14": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.0062408655799624955,
+                0.06210441116296042
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.008956171814154012,
+                  0.06628973237929839
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.007287662259961187,
+                  0.06139133421427115
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.005423402783698242,
+                  0.06745716863311324
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  -0.009184091321788799,
+                  0.07367485570196244
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  -0.0046249853799900376,
+                  0.06992336094053678
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  0.0013299020107281356,
+                  0.070936356273404
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.001222819601806721,
+                0.06075365459722162
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.004138940271998557,
+                0.05838139382493306
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.030785064210819345,
+              "ci": [
+                0.0062408655799624955,
+                0.06210441116296042
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.008956171814154012,
+                  0.06628973237929839
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.007287662259961187,
+                  0.06139133421427115
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.03318687188154928,
+                "ci": [
+                  -0.005423402783698242,
+                  0.06745716863311324
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  -0.009184091321788799,
+                  0.07367485570196244
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  -0.0046249853799900376,
+                  0.06992336094053678
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.0282149289828765,
+                "ci": [
+                  0.0013299020107281356,
+                  0.070936356273404
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      },
+      "QCAL": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.025710722971592947,
+              "ci": [
+                -0.0023718193763438886,
+                0.0548186117055746
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.025710722971592947,
+              "ci": [
+                -0.0009734937177606617,
+                0.051564578744484404
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.025710722971592947,
+              "ci": [
+                0.0018232127035113822,
+                0.054073741735470957
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.013606150678059098,
+                  0.060062647719613095
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.011055335685557222,
+                  0.05508889084204433
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.010601912994366875,
+                  0.06017027453665771
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.013237769251781805,
+                  0.06771078663187566
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.010109849590378165,
+                  0.0643198537817906
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.006230852828038741,
+                  0.06420690326400252
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": 0.025710722971592947,
+              "ci": [
+                -0.0023718193763438886,
+                0.0548186117055746
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": 0.025710722971592947,
+              "ci": [
+                -0.0009734937177606617,
+                0.051564578744484404
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": 0.025710722971592947,
+              "ci": [
+                0.0018232127035113822,
+                0.054073741735470957
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.013606150678059098,
+                  0.060062647719613095
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.011055335685557222,
+                  0.05508889084204433
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.027966003580214897,
+                "ci": [
+                  -0.010601912994366875,
+                  0.06017027453665771
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.013237769251781805,
+                  0.06771078663187566
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.010109849590378165,
+                  0.0643198537817906
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": 0.023294112477284586,
+                "ci": [
+                  -0.006230852828038741,
+                  0.06420690326400252
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "s13_household": {
+      "SORT": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.011715965036983156,
+                0.005716549119929866
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.013509757393628917,
+                0.0059882850401260365
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "primary"
+            },
+            "14": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.012415565063038494,
+                0.0036033034471491783
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01028444645334516,
+                  0.0058853833943961
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01036091734631387,
+                  0.005513371988058801
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01067905781220059,
+                  0.004345818744084103
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.0185238701167719,
+                  0.00792143621416724
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.019783685169176495,
+                  0.008339647489018156
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.017504051661769073,
+                  0.004764189805787338
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.011715965036983156,
+                0.005716549119929866
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.013509757393628917,
+                0.0059882850401260365
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.002679726097910343,
+              "ci": [
+                -0.012415565063038494,
+                0.0036033034471491783
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01028444645334516,
+                  0.0058853833943961
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01036091734631387,
+                  0.005513371988058801
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.001864952524704611,
+                "ci": [
+                  -0.01067905781220059,
+                  0.004345818744084103
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.0185238701167719,
+                  0.00792143621416724
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.019783685169176495,
+                  0.008339647489018156
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.0035011058204979157,
+                "ci": [
+                  -0.017504051661769073,
+                  0.004764189805787338
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      },
+      "QCAL": {
+        "LORA_V_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01596873087391753,
+                -0.002708187313083365
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01676015230449038,
+                -0.0029989716775163616
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01696535583541795,
+                -0.004461709246464778
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.015169090731179459,
+                  -0.002551058121591025
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.015635824631644323,
+                  -0.0029112144864964704
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.016657189789602855,
+                  -0.002787468530547683
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.02089250396034222,
+                  -0.0004002654717043004
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.021563082681837792,
+                  -0.0007915585727027124
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.019583494001260405,
+                  -0.002799756983774292
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        },
+        "LORA_RECENT7_vs_FIXED_LOW": {
+          "daily": {
+            "3": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01596873087391753,
+                -0.002708187313083365
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "7": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01676015230449038,
+                -0.0029989716775163616
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            },
+            "14": {
+              "value": -0.008891812735125014,
+              "ci": [
+                -0.01696535583541795,
+                -0.004461709246464778
+              ],
+              "confidence": 0.9875,
+              "decision": "inconclusive",
+              "practical_threshold": 0.01,
+              "bootstrap_seed": 2026090814,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left selector is worse than right selector",
+              "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+              "inferential_role": "descriptive sensitivity"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.015169090731179459,
+                  -0.002551058121591025
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.015635824631644323,
+                  -0.0029112144864964704
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.008801434459634685,
+                "ci": [
+                  -0.016657189789602855,
+                  -0.002787468530547683
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.02089250396034222,
+                  -0.0004002654717043004
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "7": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.021563082681837792,
+                  -0.0007915585727027124
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              },
+              "14": {
+                "value": -0.008983284298252651,
+                "ci": [
+                  -0.019583494001260405,
+                  -0.002799756983774292
+                ],
+                "confidence": 0.9875,
+                "decision": "inconclusive",
+                "practical_threshold": 0.01,
+                "bootstrap_seed": 2026090814,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left selector is worse than right selector",
+                "scope": "Conditional date-block uncertainty for stored seed12000 checkpoints and pre-fixed V selectors; excludes training and selector-estimation uncertainty",
+                "inferential_role": "descriptive sensitivity; overlapping contexts and temporal dependence remain",
+                "origin_indexing": "zero-based before subsampling",
+                "target_windows_overlap": false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gate": {
+    "decision": "close_current_B_branch",
+    "primary_harm_cells": [],
+    "opposite_fixed_low_harm_cells": [],
+    "harm_cells_passing_recent_and_nonoverlap_checks": [],
+    "harm_repeats_across_both_sources": false,
+    "cell_checks": {
+      "s12_bike": {
+        "primary_selection_harm_exceeds_one_percent": false,
+        "opposite_fixed_low_harm_exceeds_one_percent": false,
+        "recent7_point_harm_exceeds_one_percent": false,
+        "both_selectors_positive_on_both_nonoverlapping_subsets": false
+      },
+      "s12_household": {
+        "primary_selection_harm_exceeds_one_percent": false,
+        "opposite_fixed_low_harm_exceeds_one_percent": false,
+        "recent7_point_harm_exceeds_one_percent": false,
+        "both_selectors_positive_on_both_nonoverlapping_subsets": false
+      },
+      "s13_bike": {
+        "primary_selection_harm_exceeds_one_percent": false,
+        "opposite_fixed_low_harm_exceeds_one_percent": false,
+        "recent7_point_harm_exceeds_one_percent": true,
+        "both_selectors_positive_on_both_nonoverlapping_subsets": true
+      },
+      "s13_household": {
+        "primary_selection_harm_exceeds_one_percent": false,
+        "opposite_fixed_low_harm_exceeds_one_percent": false,
+        "recent7_point_harm_exceeds_one_percent": false,
+        "both_selectors_positive_on_both_nonoverlapping_subsets": false
+      }
+    },
+    "simple_rule_veto": true,
+    "simple_rule_veto_rules": [
+      "FIXED_LOW"
+    ],
+    "simple_rule_diagnostics": {
+      "F0": {
+        "values_over_f0": {
+          "s12_bike": 0.038763654927455725,
+          "s12_household": 0.02900778186578728,
+          "s13_bike": 0.010301962126588056,
+          "s13_household": 0.015524953184584474
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": false
+      },
+      "FIXED_LOW": {
+        "values_over_f0": {
+          "s12_bike": 0.0,
+          "s12_household": 0.0038814934801302088,
+          "s13_bike": 0.0,
+          "s13_household": 0.002679726097910343
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": true
+      },
+      "LORA_RECENT7": {
+        "values_over_f0": {
+          "s12_bike": 0.0,
+          "s12_household": 0.0,
+          "s13_bike": 0.030785064210819345,
+          "s13_household": 0.0
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": false
+      },
+      "ALL_V": {
+        "values_over_f0": {
+          "s12_bike": 0.0,
+          "s12_household": 0.0,
+          "s13_bike": 0.030785064210819345,
+          "s13_household": 0.0
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": false
+      },
+      "ALL_RECENT7": {
+        "values_over_f0": {
+          "s12_bike": 0.0,
+          "s12_household": 0.0,
+          "s13_bike": 0.030785064210819345,
+          "s13_household": 0.0
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": false
+      },
+      "HEAD_V": {
+        "values_over_f0": {
+          "s12_bike": 0.03712770350652065,
+          "s12_household": 0.019713665500837915,
+          "s13_bike": 0.08077344496887201,
+          "s13_household": 0.015524953184584474
+        },
+        "avoids_point_loss_within_one_percent_in_all_cells": false
+      }
+    },
+    "simple_rule_comparison_is_descriptive": true,
+    "scope": "Exploratory gate conditional on four cells from two sources and stored seed12000 checkpoints; a gate failure does not prove that all selectors or PEFT methods are unnecessary"
+  },
+  "primary_family_size": 4,
+  "primary_confidence_each": 0.9875,
+  "bootstrap_seed": 2026090814,
+  "bootstrap_replicates": 4000,
+  "primary_procedure": "SORT",
+  "primary_comparison": "LORA_V minus FIXED_LOW, divided by the same cell's F0",
+  "primary_block_days": 7,
+  "optimizer_seed": 12000,
+  "scope": "Exploratory four cells from two sources; no pooled temporal blocks or independent-source claim",
+  "secondary_inference": "QCAL, Recent7 and 3/14-day/odd/even intervals are descriptive; only four full-SORT 7-day comparisons define the primary family",
+  "checkpoint_limitation": "Only each stored V-best checkpoint is available; this does not measure regret over all early-stopping steps"
+}

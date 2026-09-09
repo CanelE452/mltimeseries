@@ -1,0 +1,28 @@
+{
+  "jena/R": {
+    "seconds_per_100_updates": 2.01,
+    "n_parameters": 407041
+  },
+  "jena/M": {
+    "seconds_per_100_updates": 0.72,
+    "n_parameters": 411585
+  },
+  "jena/O": {
+    "seconds_per_100_updates": 0.72,
+    "n_parameters": 411585
+  },
+  "uci/R": {
+    "seconds_per_100_updates": 1.88,
+    "n_parameters": 407041
+  },
+  "uci/M": {
+    "seconds_per_100_updates": 0.72,
+    "n_parameters": 411585
+  },
+  "uci/O": {
+    "seconds_per_100_updates": 0.72,
+    "n_parameters": 411585
+  },
+  "projected_full_tier_hours_for_12_fits": 0.188,
+  "tier": "DRY"
+}

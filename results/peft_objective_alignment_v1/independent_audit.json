@@ -1,0 +1,394 @@
+{
+  "completed": true,
+  "study": "peft_objective_alignment_v1",
+  "created_utc": "2026-09-08T09:22:00+00:00",
+  "scope": "Independent numerical audit after production fit/forecast completion; no training, no GPU, no core/result modification besides this JSON.",
+  "method_independence": {
+    "analysis_module_imported": false,
+    "analysis_module_copied": false,
+    "implementation": "Inline NumPy recomputation from saved prediction NPZ and fit std only; experiments.peft_objective_alignment_v1.analyse was not imported or copied.",
+    "execution_note": "PowerShell here-string piped to python: $py | python -"
+  },
+  "bootstrap": {
+    "procedure": "daily moving block bootstrap over eval origins",
+    "seed": 2026090815,
+    "replicates": 4000,
+    "block_origins": 7,
+    "confidence": 0.975,
+    "quantile_method_for_qcal": "np.quantile(..., method=\"linear\")",
+    "valid_resamples": {
+      "bike": 4000,
+      "household": 4000
+    },
+    "discarded_resamples": {
+      "bike": 0,
+      "household": 0
+    }
+  },
+  "input_sha256": {
+    "predictions": {
+      "bike|F0": "046160607e764b0515962089c6dc2b67d40b9d8bcd33cf6ade370b2ca9f27a4a",
+      "bike|NATIVE": "f3e3f827be1739aa961275a3f9c3d4f0fab92acae7a7d09d15339625532e4e78",
+      "bike|NORM_ALIGNED": "3bcc2a37d1b2fe6c54d1ea58383ccc7598e258c94fe757cd630829a81a516a78",
+      "bike|RAW_ALIGNED": "31516fb0bd65565f2b7fc60ba3d5fb64a8af5f3c828cb734cfa4a85499c6c1cc",
+      "household|F0": "d7f52b59393cf751c2502400d997b5b097a24dc49c9945283bfcf38a2d8ec270",
+      "household|NATIVE": "fb752499260196325f80faac4f0c2f550f96717f4bbc59190a71f584301f64a4",
+      "household|NORM_ALIGNED": "211cba5e82a5da41e738d313bf49f0146f425e49844ec8c33728648ea54eef13",
+      "household|RAW_ALIGNED": "5446aa1195b83c9094b2335ddac01578edb07fc139951c9b24262bbdc9ea1ed8"
+    },
+    "fit_archives": {
+      "bike": "021702a65951c8389c2bf4daf0caa1c195dd74ff0cb00296e89842b9be74af5f",
+      "household": "e6c3ab5dbbf910ba8cfe8564da75094e30e17a176e00b62c86b29c87affb269f"
+    },
+    "root_outputs_compared": {
+      "selected_results.csv": "5c657ee06bdc4e3a7ebfa07170a0b92ebac056f5d49897a0ff07e796517be661",
+      "metrics.json": "7e144c5fb40dcda53ac9f34fde756e16356d98d11fec376f43a8f4c6f932c3e2",
+      "effects.json": "ec5e54dec4dd2d40c3ea2364d93afdad5c13f3f187a3fa29169dee8988c29a44",
+      "verification.json": "cbfd045ed293d061175e910cfd758fa90ba884b68a13e4bb105b735014544a95"
+    }
+  },
+  "algorithm": {
+    "score": "prediction=np.sort(eval_predictions, axis=2); loss=2*max(q*(y-p),(q-1)*(y-p))/fit_std[target]; NaN target cells are zeroed and excluded from counts; score=mean_target(sum_loss_target/count_target).",
+    "qcal": "For each target and quantile, offset[target,q]=np.quantile((cal_target-cal_prediction_q)[finite], q, method=\"linear\"); add offsets to eval predictions and sort quantile axis before scoring.",
+    "primary_effect": "ratio=(SORT_NORM_ALIGNED-SORT_RAW_ALIGNED)/SORT_F0; percent=100*ratio.",
+    "bootstrap": "rng=np.random.default_rng(2026090815); starts=rng.integers(0,n-7+1,size=(4000,ceil(n/7))); convert sampled blocks to origin weights; recompute macro scores under weights and take quantiles [0.0125,0.9875]."
+  },
+  "scores": [
+    {
+      "dataset": "bike",
+      "method": "F0",
+      "procedure": "SORT",
+      "score": 0.4102237148565775,
+      "target_scores": [
+        0.5042774512819176,
+        0.3161699784312374
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "F0",
+      "procedure": "QCAL",
+      "score": 0.4116368023975271,
+      "target_scores": [
+        0.5068265340961361,
+        0.3164470706989181
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "NATIVE",
+      "procedure": "SORT",
+      "score": 0.39555194029949925,
+      "target_scores": [
+        0.4841497600610586,
+        0.30695412053793997
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "NATIVE",
+      "procedure": "QCAL",
+      "score": 0.39712735070868127,
+      "target_scores": [
+        0.48657752159393275,
+        0.3076771798234298
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "NORM_ALIGNED",
+      "procedure": "SORT",
+      "score": 0.39556935412723837,
+      "target_scores": [
+        0.4842242359761575,
+        0.30691447227831925
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "NORM_ALIGNED",
+      "procedure": "QCAL",
+      "score": 0.39711266093849207,
+      "target_scores": [
+        0.4865946991793851,
+        0.30763062269759905
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "RAW_ALIGNED",
+      "procedure": "SORT",
+      "score": 0.39646200132121145,
+      "target_scores": [
+        0.4860816419987391,
+        0.3068423606436838
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "bike",
+      "method": "RAW_ALIGNED",
+      "procedure": "QCAL",
+      "score": 0.3979907521435244,
+      "target_scores": [
+        0.48839003217659877,
+        0.30759147211045007
+      ],
+      "target_q_counts": [
+        83664,
+        83664
+      ],
+      "target_valid_cells": [
+        3984,
+        3984
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "F0",
+      "procedure": "SORT",
+      "score": 0.38064943608777235,
+      "target_scores": [
+        0.2854738861324003,
+        0.4758249860431444
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "F0",
+      "procedure": "QCAL",
+      "score": 0.38172766734985697,
+      "target_scores": [
+        0.28448826386908654,
+        0.47896707083062734
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "NATIVE",
+      "procedure": "SORT",
+      "score": 0.37099636842323214,
+      "target_scores": [
+        0.2744848236142357,
+        0.46750791323222857
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "NATIVE",
+      "procedure": "QCAL",
+      "score": 0.3757339117010362,
+      "target_scores": [
+        0.2797542389836003,
+        0.4717135844184721
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "NORM_ALIGNED",
+      "procedure": "SORT",
+      "score": 0.37101119750698897,
+      "target_scores": [
+        0.27450347506242934,
+        0.4675189199515486
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "NORM_ALIGNED",
+      "procedure": "QCAL",
+      "score": 0.3757420082718043,
+      "target_scores": [
+        0.2798125971455137,
+        0.4716714193980949
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "RAW_ALIGNED",
+      "procedure": "SORT",
+      "score": 0.37054709310988765,
+      "target_scores": [
+        0.2742504065168692,
+        0.466843779702906
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    },
+    {
+      "dataset": "household",
+      "method": "RAW_ALIGNED",
+      "procedure": "QCAL",
+      "score": 0.3755384108962757,
+      "target_scores": [
+        0.2799186850626294,
+        0.47115813672992196
+      ],
+      "target_q_counts": [
+        80976,
+        80976
+      ],
+      "target_valid_cells": [
+        3856,
+        3856
+      ]
+    }
+  ],
+  "primary_sort": {
+    "bike": {
+      "ratio": -0.0021760009517859578,
+      "percent": -0.21760009517859577,
+      "ci_ratio": [
+        -0.00680337604505483,
+        0.0014188823131659608
+      ],
+      "ci_percent": [
+        -0.6803376045054831,
+        0.1418882313165961
+      ],
+      "valid_resamples": 4000,
+      "discarded_resamples": 0
+    },
+    "household": {
+      "ratio": 0.0012192436218250462,
+      "percent": 0.12192436218250462,
+      "ci_ratio": [
+        -0.0005905506125033706,
+        0.002554680839707383
+      ],
+      "ci_percent": [
+        -0.05905506125033706,
+        0.25546808397073834
+      ],
+      "valid_resamples": 4000,
+      "discarded_resamples": 0
+    }
+  },
+  "comparison_to_root_analysis": {
+    "root_analysis_guard_completed": true,
+    "max_score_abs_diff": 0.0,
+    "score_abs_diffs_all_zero": true,
+    "max_primary_effect_value_or_ci_abs_diff": 2.6194324487249787e-16,
+    "max_origin_target_qcount_diff": 0,
+    "root_gate": {
+      "decision": "CLOSE_CURRENT_OBJECTIVE_ALIGNMENT_SCREEN",
+      "both_source_lower_bounds_exceed_one_percent": false,
+      "source_checks": {
+        "bike": false,
+        "household": false
+      },
+      "threshold": 0.01,
+      "new_method_demonstrated": false,
+      "scope": "Two reused development blocks, LR3e-5, seed12000 and 200 updates; neither a novel PEFT success nor a universal statement about transformed losses"
+    }
+  }
+}

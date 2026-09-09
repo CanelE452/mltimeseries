@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "selected_rows": 132,
+  "selected_fm_count": 96,
+  "completed_trial_count": 124,
+  "source_contract_matched": true,
+  "prepared_hashes_matched": true,
+  "prediction_scores_recomputed": true,
+  "paired_episode_ids_matched": true,
+  "hpo_argmin_and_fixed_repeat_lr_verified": true,
+  "exact_trial_keys_verified": true,
+  "selected_step_zero_predictions_equal_f0": true,
+  "analysis_source_hashes": {
+    "analyse.py": "b807c38410bc37a48d00fabcad1efbd60585128069e9dada897ffebef568d927",
+    "raw.py": "5310b27e62e256d75cf6a24a6ebddcf41b67ae4b4f5ce0194b89a4a81ab00a15"
+  }
+}

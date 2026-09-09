@@ -1,0 +1,280 @@
+{
+  "completed": true,
+  "guard_count": 9,
+  "guard_seconds": 164.03,
+  "guards": {
+    "runs\\peft_coarse_supervision_v1\\data_entry_guard\\status.json": {
+      "started_at": "2026-09-08T10:31:10.973188+00:00",
+      "guard_pid": 45960,
+      "command": [
+        ".\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.fetch"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": false,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 43348,
+      "child_create_time": 1788863470.987104,
+      "finished_at": "2026-09-08T10:31:33.121300+00:00",
+      "elapsed_seconds": 22.156,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\data_build_guard\\status.json": {
+      "started_at": "2026-09-08T11:01:13.546127+00:00",
+      "guard_pid": 39564,
+      "command": [
+        ".\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.data"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": false,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 51132,
+      "child_create_time": 1788865273.5641828,
+      "finished_at": "2026-09-08T11:01:19.632000+00:00",
+      "elapsed_seconds": 6.078,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\plot_guard\\status.json": {
+      "started_at": "2026-09-08T11:13:49.554982+00:00",
+      "guard_pid": 28332,
+      "command": [
+        ".\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.plot"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": false,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 51096,
+      "child_create_time": 1788866029.5687857,
+      "finished_at": "2026-09-08T11:13:51.631682+00:00",
+      "elapsed_seconds": 2.078,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\cache\\status.json": {
+      "started_at": "2026-09-08T11:06:42.632876+00:00",
+      "guard_pid": 31284,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.cache",
+        "--contract",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\study_contract.json",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\cache"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 54180,
+      "child_create_time": 1788865602.6936448,
+      "finished_at": "2026-09-08T11:06:58.854294+00:00",
+      "elapsed_seconds": 16.234,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\ridge\\status.json": {
+      "started_at": "2026-09-08T11:09:25.608929+00:00",
+      "guard_pid": 50012,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.ridge",
+        "--contract",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\study_contract.json",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\ridge"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": false,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 49964,
+      "child_create_time": 1788865765.624984,
+      "finished_at": "2026-09-08T11:09:29.698428+00:00",
+      "elapsed_seconds": 4.094,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\smoke\\status.json": {
+      "started_at": "2026-09-08T11:09:31.509486+00:00",
+      "guard_pid": 50012,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.train",
+        "--contract",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\study_contract.json",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\smoke\\s0",
+        "--smoke"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 48412,
+      "child_create_time": 1788865771.5634556,
+      "finished_at": "2026-09-08T11:09:45.745142+00:00",
+      "elapsed_seconds": 14.234,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\train\\status.json": {
+      "started_at": "2026-09-08T11:09:47.589463+00:00",
+      "guard_pid": 50012,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.train",
+        "--contract",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\study_contract.json",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\train"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 51296,
+      "child_create_time": 1788865787.6353316,
+      "finished_at": "2026-09-08T11:11:06.430359+00:00",
+      "elapsed_seconds": 78.828,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\forecast\\status.json": {
+      "started_at": "2026-09-08T11:11:08.426588+00:00",
+      "guard_pid": 50012,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.forecast",
+        "--contract",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\study_contract.json",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\forecast"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 18916,
+      "child_create_time": 1788865868.4920676,
+      "finished_at": "2026-09-08T11:11:24.675332+00:00",
+      "elapsed_seconds": 16.25,
+      "reasons": []
+    },
+    "runs\\peft_coarse_supervision_v1\\guards\\analysis\\status.json": {
+      "started_at": "2026-09-08T11:11:26.409896+00:00",
+      "guard_pid": 50012,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_coarse_supervision_v1.run_study",
+        "--analysis-worker"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": false,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 52632,
+      "child_create_time": 1788865886.415438,
+      "finished_at": "2026-09-08T11:11:30.489330+00:00",
+      "elapsed_seconds": 4.078,
+      "reasons": []
+    }
+  },
+  "resource_sample_count": 21,
+  "minimum_available_ram_gib": 14.044269561767578,
+  "minimum_available_commit_gib": 10.012157440185547,
+  "maximum_child_rss_gib": 1.7315902709960938,
+  "maximum_git_processes": 0,
+  "maximum_observed_gpu_mib": 2330.0,
+  "maximum_observed_gpu_temperature_c": 55.0,
+  "scope": "Periodic guard observations, not exact system-wide peaks; short CPU stages may only have startup samples"
+}

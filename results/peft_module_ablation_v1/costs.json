@@ -1,0 +1,211 @@
+{
+  "new_trial_count": 12,
+  "reused_reference_count": 6,
+  "new_guard_total_seconds": 453.14000000000004,
+  "reused_reference_guard_total_seconds": 188.204,
+  "new_model_wall_seconds": 412.84355930001766,
+  "reused_reference_model_wall_seconds": 169.2262148000009,
+  "trial_costs": [
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c0/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 0,
+      "lr": 0.001,
+      "origin": "reused",
+      "model_wall_seconds": 9.600466199997754,
+      "guard_elapsed_seconds": 12.219,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c0/OFF_LORA/lr_3e-05",
+      "method": "BOTH",
+      "corpus": 0,
+      "lr": 3e-05,
+      "origin": "reused",
+      "model_wall_seconds": 47.14624200000253,
+      "guard_elapsed_seconds": 50.516,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c0/OUT_ONLY/lr_3e-05",
+      "method": "OUT_ONLY",
+      "corpus": 0,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 21.647638800001005,
+      "guard_elapsed_seconds": 24.328,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c0/OUT_ONLY/lr_1e-04",
+      "method": "OUT_ONLY",
+      "corpus": 0,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 22.134343200006697,
+      "guard_elapsed_seconds": 26.328,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c0/ATTN_ONLY/lr_3e-05",
+      "method": "ATTN_ONLY",
+      "corpus": 0,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 46.38921790000313,
+      "guard_elapsed_seconds": 50.531,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c0/ATTN_ONLY/lr_1e-04",
+      "method": "ATTN_ONLY",
+      "corpus": 0,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 47.53736360000039,
+      "guard_elapsed_seconds": 50.532,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c1/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 1,
+      "lr": 0.001,
+      "origin": "reused",
+      "model_wall_seconds": 9.57550959999935,
+      "guard_elapsed_seconds": 12.203,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c1/OFF_LORA/lr_3e-05",
+      "method": "BOTH",
+      "corpus": 1,
+      "lr": 3e-05,
+      "origin": "reused",
+      "model_wall_seconds": 46.41158030000224,
+      "guard_elapsed_seconds": 50.516,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c1/OUT_ONLY/lr_3e-05",
+      "method": "OUT_ONLY",
+      "corpus": 1,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 21.804764300002716,
+      "guard_elapsed_seconds": 26.328,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c1/OUT_ONLY/lr_1e-04",
+      "method": "OUT_ONLY",
+      "corpus": 1,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 21.56437780000124,
+      "guard_elapsed_seconds": 24.297,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c1/ATTN_ONLY/lr_3e-05",
+      "method": "ATTN_ONLY",
+      "corpus": 1,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 47.35333779999928,
+      "guard_elapsed_seconds": 50.546,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 80
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c1/ATTN_ONLY/lr_1e-04",
+      "method": "ATTN_ONLY",
+      "corpus": 1,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 47.50797170000442,
+      "guard_elapsed_seconds": 50.547,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c2/F0/lr_1e-03",
+      "method": "F0",
+      "corpus": 2,
+      "lr": 0.001,
+      "origin": "reused",
+      "model_wall_seconds": 9.402780099997472,
+      "guard_elapsed_seconds": 12.219,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs/peft_shift_mechanism_v1/trials/Q00_c2/OFF_LORA/lr_3e-05",
+      "method": "BOTH",
+      "corpus": 2,
+      "lr": 3e-05,
+      "origin": "reused",
+      "model_wall_seconds": 47.08963660000154,
+      "guard_elapsed_seconds": 50.531,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c2/OUT_ONLY/lr_3e-05",
+      "method": "OUT_ONLY",
+      "corpus": 2,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 21.590257900003053,
+      "guard_elapsed_seconds": 24.312,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c2/OUT_ONLY/lr_1e-04",
+      "method": "OUT_ONLY",
+      "corpus": 2,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 21.641074799998023,
+      "guard_elapsed_seconds": 24.313,
+      "peak_cuda_gib": 0.47226428985595703,
+      "best_step": 40
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c2/ATTN_ONLY/lr_3e-05",
+      "method": "ATTN_ONLY",
+      "corpus": 2,
+      "lr": 3e-05,
+      "origin": "new",
+      "model_wall_seconds": 47.036116099996434,
+      "guard_elapsed_seconds": 50.547,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 120
+    },
+    {
+      "path": "runs/peft_module_ablation_v1/trials/Q00_c2/ATTN_ONLY/lr_1e-04",
+      "method": "ATTN_ONLY",
+      "corpus": 2,
+      "lr": 0.0001,
+      "origin": "new",
+      "model_wall_seconds": 46.63709540000127,
+      "guard_elapsed_seconds": 50.531,
+      "peak_cuda_gib": 0.8317747116088867,
+      "best_step": 40
+    }
+  ],
+  "completed_invocation_wall_seconds": 453.46136593818665,
+  "completed_trial_guard_seconds": 453.14000000000004,
+  "cost_note": "Original F0/BOTH references are read-reused; they are reported separately from the 12 new fits."
+}

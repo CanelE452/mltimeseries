@@ -1,0 +1,47 @@
+{
+  "per_dataset": {
+    "ETTm2": {
+      "seeds": [
+        2026090711,
+        2026090712
+      ],
+      "mean_validation_mse": [
+        1.1043962282013022,
+        0.9598975585977407
+      ],
+      "mean": 1.0321468933995215,
+      "sd": 0.10217598914911279,
+      "sd_pct_of_mean": 9.899365080931624
+    },
+    "weather": {
+      "seeds": [
+        2026090711,
+        2026090712
+      ],
+      "mean_validation_mse": [
+        0.7305189119244977,
+        0.7344878079194543
+      ],
+      "mean": 0.732503359921976,
+      "sd": 0.0028064332718579733,
+      "sd_pct_of_mean": 0.3831290647126732
+    },
+    "electricity": {
+      "seeds": [
+        2026090711,
+        2026090712
+      ],
+      "mean_validation_mse": [
+        0.7442249554965918,
+        0.6990517233822605
+      ],
+      "mean": 0.7216383394394261,
+      "sd": 0.03194229875615761,
+      "sd_pct_of_mean": 4.426358330818539
+    }
+  },
+  "worst_seed_sd_pct": 9.899365080931624,
+  "gate_threshold_pct": 1.0,
+  "threshold_above_noise": false,
+  "note": "Validation split, arm I only, seeds outside the two pre-registered model seeds. This measures the resolution available to the 1.0 percent gate. It is not an input to the verdict."
+}

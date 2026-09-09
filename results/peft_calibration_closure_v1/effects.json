@@ -1,0 +1,124 @@
+{
+  "effects": {
+    "F0": {
+      "score_change_over_F0": {
+        "value": 0.0011273241411870005,
+        "corpus_values": [
+          0.0011273241411870005,
+          0.0011273241411870005,
+          0.0011273241411870005
+        ],
+        "ci95": [
+          0.00010657494757244179,
+          0.002134706992149393
+        ],
+        "definition": "(QCAL score - SORT score) / original native F0 score; positive is worse"
+      },
+      "coverage_change": {
+        "value": 0.0135498046875,
+        "corpus_values": [
+          0.0135498046875,
+          0.0135498046875,
+          0.0135498046875
+        ],
+        "ci95": [
+          0.010009765625,
+          0.0172119140625
+        ],
+        "unit": "fraction; multiply by 100 for percentage points"
+      }
+    },
+    "ATTN": {
+      "score_change_over_F0": {
+        "value": -0.0029559081465477025,
+        "corpus_values": [
+          -0.0016326364646976075,
+          -0.0011097446405546182,
+          -0.006125343334390882
+        ],
+        "ci95": [
+          -0.004530500241925901,
+          -0.001392620261224508
+        ],
+        "definition": "(QCAL score - SORT score) / original native F0 score; positive is worse"
+      },
+      "coverage_change": {
+        "value": 0.039632161458333336,
+        "corpus_values": [
+          0.03759765625,
+          0.0277099609375,
+          0.0535888671875
+        ],
+        "ci95": [
+          0.03666178385416667,
+          0.042724609375
+        ],
+        "unit": "fraction; multiply by 100 for percentage points"
+      }
+    },
+    "ALIGN_F0": {
+      "score_change_over_F0": {
+        "value": 0.0007004951788206543,
+        "corpus_values": [
+          0.0007004951788206543,
+          0.0007004951788206543,
+          0.0007004951788206543
+        ],
+        "ci95": [
+          0.0002599541002661588,
+          0.0011606199600902188
+        ],
+        "definition": "(QCAL score - SORT score) / original native F0 score; positive is worse"
+      },
+      "coverage_change": {
+        "value": 0.0025634765625,
+        "corpus_values": [
+          0.0025634765625,
+          0.0025634765625,
+          0.0025634765625
+        ],
+        "ci95": [
+          -0.00048828125,
+          0.005615234375
+        ],
+        "unit": "fraction; multiply by 100 for percentage points"
+      }
+    },
+    "ALIGN_ATTN": {
+      "score_change_over_F0": {
+        "value": -0.008725604655559285,
+        "corpus_values": [
+          -0.005681187622239227,
+          -0.011067141197612321,
+          -0.009428485146826312
+        ],
+        "ci95": [
+          -0.01046944276996247,
+          -0.006975530900027558
+        ],
+        "definition": "(QCAL score - SORT score) / original native F0 score; positive is worse"
+      },
+      "coverage_change": {
+        "value": 0.09855143229166667,
+        "corpus_values": [
+          0.0863037109375,
+          0.112060546875,
+          0.0972900390625
+        ],
+        "ci95": [
+          0.09395345052083334,
+          0.10306803385416666
+        ],
+        "unit": "fraction; multiply by 100 for percentage points"
+      }
+    }
+  },
+  "replicates": 4000,
+  "seed": 2026090811,
+  "paired_episodes": 512,
+  "fitted_corpora": 3,
+  "confidence": 0.95,
+  "descriptive_intervals_only": true,
+  "resample_training_or_validation": false,
+  "multiplicity": "Four descriptive comparisons without a joint family-wise error guarantee"
+}

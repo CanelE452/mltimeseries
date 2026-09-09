@@ -1,0 +1,18 @@
+{
+  "since_utc": "2026-09-08T01:21:19.567766+00:00",
+  "checked_at": "2026-09-08T11:32:04.2755365+09:00",
+  "queries": [
+    {
+      "log": "Application",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    }
+  ]
+}

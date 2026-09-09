@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "passed": true,
+  "row_count": 24,
+  "procedures": 8,
+  "corpora": 3,
+  "new_gpu_fits": 0,
+  "new_calibration_fits": 12,
+  "val_only_offsets": true,
+  "source_prediction_scores_recomputed": true,
+  "shared_episode_pairing_verified": true,
+  "source_contract_hashes_verified_before_after": true,
+  "analysis_sha256": "c3e8dd069c3b9df33d4e698c514f683b0468dc6cb61552c68de385a1b644ebfd",
+  "protected_file_count": 216,
+  "outputs": {
+    "all_results.csv": "a449b04a6a4e9c20d106dc2f99d9cd283422d64975ae32d6c7d51512e3f60fb6",
+    "summary.json": "14ef6ea46fdd5451e78c77f50e77943e683f43ceeead91bb075abb210d34c772",
+    "effects.json": "97b449c5d2d9e17d8cc4a4cc9535b107bd733d3fd6de3adef38c7bd648617106",
+    "offsets.json": "711772b8d40fd3a1a79fb990c1cdd850216b72fd26b680a1ac0201c00ef620f0",
+    "calibration_predictions.npz": "6f4b7717fe184a05ea6db453cc202b672c37a17d9e4ae531d7625a8cd120a51a",
+    "analysis_contract.json": "dbc5e6ee55b403d840549ac44315b1937959ebd9cbaa6e49c376972d24a55f2c"
+  },
+  "wall_seconds": 3.5913038999933633
+}

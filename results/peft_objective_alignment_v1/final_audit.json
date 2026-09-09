@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-08T09:28:15.928650+00:00",
+  "study_contract_sha256": "e20970e05d8099ada23219980c41fd0e638af5564ea31f6ad0dcee8edef0ea37",
+  "protected_hashes_verified": 885,
+  "analysis_artifact_hashes_verified": 1057,
+  "analysis_output_hashes_verified": 6,
+  "s0_jobs": 6,
+  "new_fits": 6,
+  "new_forecasts": 6,
+  "reused_forecasts": 2,
+  "production_optimizer_updates": 1200,
+  "s0_optimizer_updates": 30,
+  "successful_gpu_guards": 18,
+  "successful_analysis_cpu_guards": 1,
+  "unsuccessful_guards": 0,
+  "safety_stops": 0,
+  "all_gpu_guard_seconds": 554.5000000000001,
+  "final_cpu_analysis_guard_seconds": 36.218,
+  "all_gpu_and_cpu_guard_seconds": 590.7180000000001,
+  "full_runner_invocation_seconds": {
+    "smoke": 102.50471138954163,
+    "production": 458.5455222129822
+  },
+  "completion_snapshot_seconds": {
+    "smoke": 101.05028533935547,
+    "production": 457.12635469436646
+  },
+  "cost_scope": "Finally-closed invocations include end-of-run validation; guard sums include completed enclosing CPU analysis. Original study/cache/F0 sunk costs, unit tests, documentation and external verification are excluded.",
+  "cpu_tests": {
+    "passed": 53,
+    "wall_seconds": 6.56
+  },
+  "final_figures": 6,
+  "root_pngs_visually_inspected": 3,
+  "report_links_verified": 15,
+  "report_sha256": "5aabcc8e03b76027189e9cbfd5095c491181c4c2d724b38dff15a01b17087cf1",
+  "verification_sha256": "cbfd045ed293d061175e910cfd758fa90ba884b68a13e4bb105b735014544a95",
+  "plot_manifest_sha256": "18da8f8077e37642d507ba6a09218e7e065a0d71ed81bae14ca72fa5fa50d847",
+  "windows_event_audit_sha256": "81268dd66d2960e6820938512e16cccb3aea21b998ce50007ff7a7b126daff28",
+  "independent_audit_sha256": "299289d4d1f93963489236f9e36d235919bd2afb966fded306ca68907b0a6a4a",
+  "independent_numerical_errors": {
+    "root_analysis_guard_completed": true,
+    "max_score_abs_diff": 0.0,
+    "score_abs_diffs_all_zero": true,
+    "max_primary_effect_value_or_ci_abs_diff": 2.6194324487249787e-16,
+    "max_origin_target_qcount_diff": 0,
+    "root_gate": {
+      "decision": "CLOSE_CURRENT_OBJECTIVE_ALIGNMENT_SCREEN",
+      "both_source_lower_bounds_exceed_one_percent": false,
+      "source_checks": {
+        "bike": false,
+        "household": false
+      },
+      "threshold": 0.01,
+      "new_method_demonstrated": false,
+      "scope": "Two reused development blocks, LR3e-5, seed12000 and 200 updates; neither a novel PEFT success nor a universal statement about transformed losses"
+    }
+  },
+  "analysis_guard_artifact_hashes": {
+    "runs/peft_objective_alignment_v1/analysis_guard/resource_log.jsonl": "97bbf54813a462d92e822387b2145cab881fbd87b73a022dbe55a9ed5c882a33",
+    "runs/peft_objective_alignment_v1/analysis_guard/status.json": "2cafdfbf31cd642394322ac3e4abff3bcdb2751f4b1c161fee4d9c2949d8f2a5",
+    "runs/peft_objective_alignment_v1/analysis_guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/peft_objective_alignment_v1/analysis_guard/stdout.log": "fc4c421d1c8c1ec1588ff643eea086c551a90e6a35d31c81d96de4518f2871df"
+  },
+  "locks_released": true,
+  "current_objective_alignment_screen": "CLOSE_CURRENT_OBJECTIVE_ALIGNMENT_SCREEN",
+  "overall_goal": "active; no novel PEFT method established"
+}

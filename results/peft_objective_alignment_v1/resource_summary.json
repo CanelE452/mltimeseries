@@ -1,0 +1,33 @@
+{
+  "all_gpu_attempts": {
+    "scope": "All new fit/forecast/S0 attempts including failed preserved attempts",
+    "sample_count": 60,
+    "job_count": 18,
+    "first_sample_utc": "2026-09-08T09:06:06.436702+00:00",
+    "last_sample_utc": "2026-09-08T09:15:59.670643+00:00",
+    "min_available_ram_gib": 13.92380142211914,
+    "min_available_commit_gib": 8.073753356933594,
+    "max_child_tree_rss_gib": 1.8030242919921875,
+    "max_git_process_count": 2,
+    "max_gpu_memory_used_mib": 2581.0,
+    "max_gpu_temperature_c": 57.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "successful_gpu_attempts": {
+    "scope": "Successful new fit/forecast/S0 attempts only",
+    "sample_count": 60,
+    "job_count": 18,
+    "first_sample_utc": "2026-09-08T09:06:06.436702+00:00",
+    "last_sample_utc": "2026-09-08T09:15:59.670643+00:00",
+    "min_available_ram_gib": 13.92380142211914,
+    "min_available_commit_gib": 8.073753356933594,
+    "max_child_tree_rss_gib": 1.8030242919921875,
+    "max_git_process_count": 2,
+    "max_gpu_memory_used_mib": 2581.0,
+    "max_gpu_temperature_c": 57.0,
+    "guard_failures": 0,
+    "safety_stops": 0
+  },
+  "prior_completed_cpu_analysis_attempts": null
+}

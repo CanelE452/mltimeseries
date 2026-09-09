@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "summary_sha256": "41c6b00d0696756b3d683a0525e581904d9d28c9c12dd94df469ecddf9093204",
+  "outputs": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_fullft_reference_v3\\figures\\scores.png": "ebca5a43206a474a775e3a1a398e15f99ae5830432db4ea2227892d2361c98f5",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_fullft_reference_v3\\figures\\scores.pdf": "d06a2229b4931689bb514056f373d5fc27ea919bfc40362f9406c8daca516813",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_fullft_reference_v3\\figures\\compute_memory.png": "4de9580cebdb75e98554432c241cbb23c6b3d04332fb6f445ec123c79791dfa8",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_fullft_reference_v3\\figures\\compute_memory.pdf": "7cb29c333f3b1c1a1f302a399f0310104a68e933ae608df9fc395950bc20ef1e"
+  }
+}

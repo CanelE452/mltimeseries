@@ -1,0 +1,185 @@
+{
+  "completed": true,
+  "verdict": "PASS",
+  "created_at_utc": "2026-09-08T11:15:20.355799+00:00",
+  "reviewer": "peft_safety",
+  "method": "Independent source CSV E extraction, compensated scalar sums, separately centered prediction/truth pattern errors, target-cluster count-weighted bootstrap; production analysis module never imported.",
+  "forecast_lock_verified_before_truth_read": true,
+  "scope": "Two sites, eight fixed targets per site, three shared calendar months; 4000 target-within-site resamples, keeping each target months together. Conditional uncertainty does not cover new times, sites, or training seeds.",
+  "identity_checks_passed": true,
+  "source_evaluation_timestamp_rows": 2184,
+  "evaluation_cells": 48,
+  "valid_hour_count": 34944,
+  "eligible_cells": 48,
+  "source_truth_max_abs_error": 0.0,
+  "recomputed_cell_metric_count": 960,
+  "cell_metric_max_abs_difference": 4.440892098500626e-16,
+  "macro_metric_max_abs_difference": 2.220446049250313e-16,
+  "decomposition_max_abs_error": 8.881784197001252e-16,
+  "effect_point_max_abs_difference": 2.6645352591003757e-15,
+  "ci95_max_abs_difference": 8.881784197001252e-16,
+  "coarse_lift_pattern_invariance_max_abs_error": 2.7755575615628914e-17,
+  "coarse_lift_residual_spread_in_scale_units": 4.2327252813834093e-16,
+  "simple_policy": "COARSE_LIFT",
+  "sites": {
+    "Eagle": {
+      "F0": {
+        "mse": 0.057493254980842484,
+        "level_mse": 0.0039938337522692135,
+        "pattern_mse": 0.05349942122857327,
+        "mae": 0.1736420586290015
+      },
+      "PROFILE": {
+        "mse": 0.05747515173777126,
+        "level_mse": 0.004319144009097436,
+        "pattern_mse": 0.053156007728673835,
+        "mae": 0.17454484402159878
+      },
+      "COARSE_LIFT": {
+        "mse": 0.06877773924818202,
+        "level_mse": 0.015278318019608743,
+        "pattern_mse": 0.05349942122857327,
+        "mae": 0.18833141541992052
+      },
+      "FROZEN_HEAD": {
+        "mse": 1.5968039929855953,
+        "level_mse": 0.003828798796158508,
+        "pattern_mse": 1.5929751941894368,
+        "mae": 1.0855896390648
+      },
+      "ATTN_LORA": {
+        "mse": 1.5969735988279297,
+        "level_mse": 0.004049445228407719,
+        "pattern_mse": 1.592924153599522,
+        "mae": 1.0843935775855666
+      },
+      "effect": {
+        "point": -26.580437306758206,
+        "ci95": [
+          -42.902669481722405,
+          -18.322066109902007
+        ]
+      },
+      "head_pattern_over_f0_pattern": 29.775559391260323,
+      "lora_minus_head_mse": 0.00016960584233438603
+    },
+    "Lamb": {
+      "F0": {
+        "mse": 0.23260623523078305,
+        "level_mse": 0.12444164694578369,
+        "pattern_mse": 0.10816458828499942,
+        "mae": 0.3046265336347871
+      },
+      "PROFILE": {
+        "mse": 0.22615583240261572,
+        "level_mse": 0.11784932798053281,
+        "pattern_mse": 0.1083065044220829,
+        "mae": 0.3029931924214249
+      },
+      "COARSE_LIFT": {
+        "mse": 0.2698651171141421,
+        "level_mse": 0.16170052882914268,
+        "pattern_mse": 0.10816458828499942,
+        "mae": 0.4562410946410306
+      },
+      "FROZEN_HEAD": {
+        "mse": 0.5153865771750884,
+        "level_mse": 0.09576085209807562,
+        "pattern_mse": 0.4196257250770127,
+        "mae": 0.3984187832736
+      },
+      "ATTN_LORA": {
+        "mse": 0.5147235722647164,
+        "level_mse": 0.09542218701913445,
+        "pattern_mse": 0.41930138524558197,
+        "mae": 0.39833461519766405
+      },
+      "effect": {
+        "point": -1.0526736521384954,
+        "ci95": [
+          -1.2825323938777358,
+          0.14085678009357666
+        ]
+      },
+      "head_pattern_over_f0_pattern": 3.8795111388151753,
+      "lora_minus_head_mse": -0.0006630049103719671
+    }
+  },
+  "pooled": {
+    "arms": {
+      "F0": {
+        "mse": 0.14504974510581276,
+        "level_mse": 0.06421774034902646,
+        "pattern_mse": 0.08083200475678634,
+        "mae": 0.2391342961318943
+      },
+      "PROFILE": {
+        "mse": 0.1418154920701935,
+        "level_mse": 0.06108423599481513,
+        "pattern_mse": 0.08073125607537837,
+        "mae": 0.23876901822151186
+      },
+      "COARSE_LIFT": {
+        "mse": 0.16932142818116205,
+        "level_mse": 0.08848942342437571,
+        "pattern_mse": 0.08083200475678634,
+        "mae": 0.32228625503047553
+      },
+      "FROZEN_HEAD": {
+        "mse": 1.0560952850803418,
+        "level_mse": 0.049794825447117066,
+        "pattern_mse": 1.0063004596332248,
+        "mae": 0.7420042111692
+      },
+      "ATTN_LORA": {
+        "mse": 1.055848585546323,
+        "level_mse": 0.049735816123771086,
+        "pattern_mse": 1.006112769422552,
+        "mae": 0.7413640963916154
+      }
+    },
+    "effect": {
+      "point": -6.1118835935798845,
+      "ci95": [
+        -11.062638505883259,
+        -4.436218252917615
+      ]
+    }
+  },
+  "progress_gate": {
+    "passed": false,
+    "both_site_effect_at_least_one_percent": false,
+    "both_site_pattern_better_than_head": true,
+    "pooled_ci_lower_positive": false
+  },
+  "decision": "CLOSE_CURRENT_COARSE_SUPERVISION_SCREEN",
+  "novel_method_demonstrated": false,
+  "interpretation": "The large fine-pattern degradation is already present in the coarse-trained frozen head. LoRA slightly lowers head pattern MSE in both sites but does not rescue total fine error relative to the validation-selected simple policy. This is a failed fixed head-plus-LoRA screen, not evidence that all coarse supervision or PEFT is impossible, nor proof of a particular nullspace causal mechanism.",
+  "all_audited_artifacts_unchanged": true,
+  "audited_artifact_sha256": {
+    "runs\\peft_coarse_supervision_v1\\forecast\\predictions.npz": "741e8dce6bbddb422dc473566df6bd00b72639308731540586f13d3f93547f48",
+    "runs\\peft_coarse_supervision_v1\\data\\evaluation_truth.npz": "1f6fcea6b9e0e729c1ed10b2a47d27cf17995cf6fe7e8cfefe52a1fc9b39ed69",
+    "runs\\peft_coarse_supervision_v1\\data\\evaluation_inputs.npz": "3f4524366a7e6cb1e999a50e9b49fdf9b5f8c501c75a2672e6a1c1db1915bb72",
+    "runs\\peft_coarse_supervision_v1\\study_contract.json": "79567c6a38b25975c64a273015f12fd0811eca33e8b760a6e905ea148f0d2ed8",
+    "runs\\peft_coarse_supervision_v1\\selection.json": "3ab0d0f275fab0fb818a8e220598c4d7d5e48c119fa356a869b13b62c1ec1f8f",
+    "runs\\peft_coarse_supervision_v1\\forecast\\result.json": "3e3104abd86e7748abbae6d34bb6a41abe7129e4505678dcf382682db22d90b3",
+    "results\\peft_coarse_supervision_v1\\metrics.json": "59a8395cbe111005e47857b22f288e43cb8b2145a05dad4d6481de7e9b16cb7a",
+    "runs\\peft_coarse_supervision_v1\\data\\metadata.json": "e4f5ec87997d321e1716afb24626fd4cf6f51a5390f95261457a1c59ae7f595f",
+    "runs\\peft_coarse_supervision_v1\\data\\prepared_data_audit.json": "b48cb708df16d8b73d5d18e3d8ba0dde1baf4a2e70f2bc868e2f9aae0cd7fffb"
+  },
+  "selection_input_sha256": {
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\cache\\result.json": "ebb63fd15a0803b8998df3e5535716ad51c9e7fb16d1d6ed20b468a590e91859",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\cache\\cache.npz": "7da073d983d7b7f4549fa7831ee0d15acc02f005e4786eda7f57e2c979019447",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\ridge\\result.json": "83326160c7096115bd3325b56ee40f650b83e77226deca93ff4ea1b99e8ef3d7",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\ridge\\head_weights.npz": "116c57f0c07acf938a13386afc67834c97b6e224352b3742fd187c22df5df305",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\ridge\\coarse_lift_weights.npz": "105820f77fa7c910493052ea7f2fd0da4b558436be93b2b1bcabe832def30323",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\train\\result.json": "5bf3940ff710d73956bd5a95f07eac5e4111f7ef7cbd3fa5779eca6d46b5e85a",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\train\\best_trainable.pt": "4f1d13abd9a29414f6059b2e4111d47b71c8ab6a63ffce54552c1011ab55fd79",
+    "E:\\CODING\\proj\\mltimeseries\\runs\\peft_coarse_supervision_v1\\train\\predictions.npz": "a151beb5fd8465ace471d5b7a81cf1e6753d3d84a82338a9dd60a2477a4cf35c"
+  },
+  "raw_source_sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+  "bootstrap_seed": 2026090817,
+  "bootstrap_replicates": 4000,
+  "bootstrap_confidence": 0.95,
+  "elapsed_seconds": 1.5251652000006288
+}

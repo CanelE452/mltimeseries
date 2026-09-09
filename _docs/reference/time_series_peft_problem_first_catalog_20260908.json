@@ -1,0 +1,550 @@
+{
+  "as_of": "2026-09-08",
+  "scope": "Targeted problem-first scoping review for native time-series forecasting foundation-model adaptation. Covers revisable supervision, aggregate/sparse supervision, and changing observation/covariate conditions.",
+  "review_type": "Targeted scoping review; not exhaustive systematic review",
+  "record_count": 29,
+  "counts_by_category": {
+    "paper": 22,
+    "official_model": 1,
+    "official_data": 5,
+    "official_artifact": 1
+  },
+  "record_count_meaning": "Selected paper/model/data/artifact entries; not number of newly discovered papers or search hits. Some sources were known previously.",
+  "inherited_catalog": "time_series_peft_paper_catalog_20260907.json",
+  "inherited_baseline_ids": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T06",
+    "T07",
+    "T10",
+    "T15",
+    "M01",
+    "M02",
+    "M03",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08"
+  ],
+  "search_date": "2026-09-08",
+  "search_method": "Web discovery followed by primary arXiv/proceedings/publisher text and official code/model/data documentation; backward reference chasing. Exact source URLs are recorded per entry. Query strings below are the recorded search terms, not a complete HTTP trace.",
+  "search_queries_by_track": {
+    "root": [
+      "time series foundation adaptation missing sensors fine tuning",
+      "time series parameter efficient adaptation benchmark forgetting 2026",
+      "time series foundation models adaptation failure frozen linear probing",
+      "online learning forecasting revised labels label revisions adaptation model correction",
+      "continual learning delayed label correction low rank adaptation unlearning",
+      "time series forecasting data revisions model fine tuning preliminary labels",
+      "\"online learning\" \"evolving\" feedback labels corrections",
+      "\"learning\" \"label corrections\" unlearning regression",
+      "\"delayed feedback\" \"revisions\" learning",
+      "\"online learning\" \"revisable\"",
+      "\"online learning\" \"evolving feedback\" [domains arxiv.org, proceedings.mlr.press, openreview.net]",
+      "\"online learning\" \"label\" \"correction\" [same academic domains]",
+      "\"machine unlearning\" \"label\" \"correction\" [same academic domains]",
+      "\"Non-stochastic Bandits With Evolving Observations\"",
+      "\"Corrective Machine Unlearning\" Goel",
+      "site:proceedings.mlr.press/v272 \"Evolving Observations\"",
+      "\"In-Context Fine-Tuning for Time-Series Foundation Models\" site:proceedings.mlr.press",
+      "\"time series foundation models\" \"missing channels\" adaptation",
+      "\"time series\" \"covariate\" \"reliability\" \"adapter\"",
+      "\"time series foundation\" \"sensor\" \"drift\" adaptation",
+      "\"time series foundation\" \"variable\" \"availability\" tuning",
+      "\"time series\" forecasting \"missing covariates\" adaptation [academic domains]",
+      "\"time series foundation\" \"missingness\" [academic domains]",
+      "\"sensor\" \"replacement\" \"domain adaptation\" time series dataset [arxiv.org, archive.ics.uci.edu, proceedings.mlr.press]",
+      "site:archive.ics.uci.edu \"Gas sensor\" \"drift\"",
+      "\"Are Time-Series Foundation Models Ready for E-Nose Data\"",
+      "\"time series\" \"missing\" \"covariate\" \"adapter\" \"UniCA\"",
+      "gas sensor drift dataset UCI 3600 16 sensors batches"
+    ],
+    "weak_supervision": [
+      "time series foundation model adaptation weak supervision temporal aggregation sparse labels fine resolution",
+      "temporal disaggregation deep learning low frequency target high frequency donor transfer learning",
+      "\"temporal disaggregation\" \"learning\" neural",
+      "\"time series\" \"aggregate labels\" forecasting",
+      "\"foundation\" \"coarse\" \"fine\" \"time series\" adaptation",
+      "\"load profiles\" \"monthly\" \"transfer learning\"",
+      "\"time series\" \"aggregate observations\" learning",
+      "\"time series\" \"weakly supervised\" forecasting foundation",
+      "\"temporal disaggregation\" \"meta\" learning",
+      "\"learning from\" \"aggregates\" regression time series",
+      "\"active learning\" \"time series foundation\"",
+      "\"sparse\" \"labels\" \"fine-tuning\" \"forecasting\" \"foundation\"",
+      "\"active learning\" \"load forecasting\" \"measurement\"",
+      "\"low-rank adaptation\" \"aggregate\" \"labels\"",
+      "\"meta-learning\" \"coarse\" \"regression\"",
+      "\"learning from label proportions\" \"regression\" \"neural\"",
+      "\"aggregate observations\" \"neural\" \"forecasting\"",
+      "\"weak supervision\" \"time series forecasting\"",
+      "\"Learning from Label Proportions and Covariate-shifted Instances\""
+    ],
+    "streaming": [
+      "time series forecasting delayed feedback foundation model online adaptation label delay 2026",
+      "time series foundation model continual learning delayed labels replay parameter efficient fine tuning ORTCL",
+      "\"time series\" \"foundation\" \"revisions\" forecasting adaptation",
+      "\"forecasting\" \"delayed labels\" \"foundation\" time series",
+      "\"Online Time Series Prediction Using Feature Adjustment\" ICLR 2026",
+      "ALFRED real time vintage dates data revisions API documentation",
+      "\"MacroCast\" \"vintage\" github",
+      "\"MacroCast\" \"fine-tuning\" \"checkpoint\"",
+      "site.bls.gov employment situation revisions preliminary first second estimates payroll"
+    ]
+  },
+  "inclusion_criteria": [
+    "Directly overlaps an adaptation constraint or provides a necessary simple comparator.",
+    "Primary technical source or official data/code artifact available.",
+    "Public by 2026-09-08; classical work included when directly relevant."
+  ],
+  "exclusion_criteria": [
+    "Secondary summaries used only as discovery leads.",
+    "Pure classification/imputation/synthesis results cannot substantiate future forecasting performance.",
+    "No claim of formal acceptance from a preprint template or self-reported submission.",
+    "Abstract-only papers cannot substantiate uninspected experimental or implementation details."
+  ],
+  "access_limitations": [
+    "Some OpenReview endpoints returned browser challenges; proceedings/arXiv used when possible.",
+    "Modern data payloads and pretrained weights were not downloaded during this review.",
+    "No complete bibliometric search count or PRISMA-style screening flow is claimed.",
+    "MacroCast public yearly checkpoints and monthly paper protocol are not yet reconciled.",
+    "Official code existence does not imply reproducibility or validated Windows execution."
+  ],
+  "current_turn_training_runs": 0,
+  "novelty_status": "UNCONFIRMED",
+  "recommended_next_action": "R1 revision-data feasibility audit, then existing-method falsification; not a new PEFT method claim.",
+  "sources": [
+    {
+      "id": "N01",
+      "title": "MacroCast: A Vintage-Consistent Time Series Foundation Model for Real-Time Macroeconomic Forecasting",
+      "category": "paper",
+      "venue_status": "arXiv 2606.28670v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2606.28670v1"
+      ],
+      "inspection": "Methods 2.4, evaluation 3.1–3.3; HTML inspected 2026-09-08.",
+      "interpretation_limit": "Vintage-specific fine-tuning is established; exact warm-start/reset behavior and full training reproduction remain unverified.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N02",
+      "title": "Proactive Model Adaptation Against Concept Drift for Online Time Series Forecasting (PROCEED)",
+      "category": "paper",
+      "venue_status": "KDD 2025; arXiv v5",
+      "primary_sources": [
+        "https://arxiv.org/html/2412.08435v5",
+        "https://github.com/SJTU-DMTai/OnlineTSF"
+      ],
+      "inspection": "Primary method and delayed-supervision protocol; official repository.",
+      "interpretation_limit": "Horizon-induced delay is not the same as later revision of an already observed label.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N03",
+      "title": "Online Time Series Prediction Using Feature Adjustment (ADAPT-Z)",
+      "category": "paper",
+      "venue_status": "ICLR 2026; arXiv v1 inspected",
+      "primary_sources": [
+        "https://arxiv.org/html/2509.03810v1",
+        "https://openreview.net/pdf/b9de73ecdeb391ee8172df8d8a4995936d896aa7.pdf"
+      ],
+      "inspection": "Primary method and official conference PDF.",
+      "interpretation_limit": "Feature adjustment and historical gradients under delay are prior work; no local reproduction.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N04",
+      "title": "Learning the Context of Errors: Black-Box Online Adaptation of Time Series Foundation Models (ORCA)",
+      "category": "paper",
+      "venue_status": "arXiv 2606.14222v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2606.14222v1",
+        "https://github.com/Fifthky/ORCA"
+      ],
+      "inspection": "Method, appendix protocol and official code existence.",
+      "interpretation_limit": "Input/output-conditioned residual correction with a frozen TSFM is a strong comparator; reported point metrics use medians, not a general probabilistic guarantee.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N05",
+      "title": "Towards Principled Test-Time Adaptation for Time Series Forecasting (FAC)",
+      "category": "paper",
+      "venue_status": "arXiv 2605.17250v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2605.17250v1"
+      ],
+      "inspection": "Method and main backbone list.",
+      "interpretation_limit": "Main experiments use iTransformer, PatchTST, DLinear, OLS and FreTS; do not cite as reproduced native-TSFM evidence. Includes input/output correction variants.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N06",
+      "title": "AdapTS: Lightweight Online Adaption for Time Series Foundation Model Forecasts",
+      "category": "paper",
+      "venue_status": "arXiv 2502.12920v2",
+      "primary_sources": [
+        "https://arxiv.org/html/2502.12920v2"
+      ],
+      "inspection": "Method: online Fourier linear forecasting, Woodbury update, forecast mixing.",
+      "interpretation_limit": "Already combines fast adaptation and frozen forecasts. Channel-independent; no local reproduction.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N07",
+      "title": "TS-Memory: Plug-and-Play Memory for Time Series Foundation Models",
+      "category": "paper",
+      "venue_status": "arXiv 2602.11550v1; venue not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2602.11550v1"
+      ],
+      "inspection": "Method 3–4, retrieval-teacher construction and frozen-backbone interface.",
+      "interpretation_limit": "Offline kNN quantile teacher distilled into a small parallel model; requires realized training futures. A frozen backbone does not guarantee the mixed forecast preserves all previous performance. Official executable repository not established.",
+      "track": "baseline",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N08",
+      "title": "In-Context Fine-Tuning for Time-Series Foundation Models",
+      "category": "paper",
+      "venue_status": "ICML 2025, PMLR 267:16355–16374",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v267/faw25b.html",
+        "https://research.google/blog/time-series-foundation-models-can-be-few-shot-learners/"
+      ],
+      "inspection": "Proceedings abstract and official method explanation.",
+      "interpretation_limit": "Requires a model trained to use related examples; do not assume arbitrary pretrained checkpoints have the same capability.",
+      "track": "baseline",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N09",
+      "title": "Non-stochastic Bandits With Evolving Observations",
+      "category": "paper",
+      "venue_status": "ALT 2025, PMLR 272:204–227",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v272/bar-on25a.html",
+        "https://arxiv.org/abs/2405.16843"
+      ],
+      "inspection": "Official proceedings and primary abstract; indexed PDF introduction. OpenReview direct PDF challenged.",
+      "interpretation_limit": "Retroactively changing feedback is an established online-learning setting; its expert/bandit results are not a theorem for nonconvex LoRA.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N10",
+      "title": "Corrective Machine Unlearning",
+      "category": "paper",
+      "venue_status": "TMLR 10/2024; earlier DMLR workshop version also exists",
+      "primary_sources": [
+        "https://openreview.net/pdf?id=v8enu4jP9B",
+        "https://arxiv.org/abs/2402.14015",
+        "https://github.com/drimpossible/corrective-unlearning-bench"
+      ],
+      "inspection": "Primary abstract, indexed TMLR PDF header and official code.",
+      "interpretation_limit": "Removing harmful training influence is prior work; partial corruption discovery differs from known statistical revisions.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N11",
+      "title": "Subtract the Corruption: Training-Data-Free Corrective Machine Unlearning using Task Arithmetic",
+      "category": "paper",
+      "venue_status": "arXiv 2511.18660v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2511.18660v1",
+        "https://github.com/mosix11/CUTS"
+      ],
+      "inspection": "Method and assumptions; code linked by paper.",
+      "interpretation_limit": "Proxy-derived negative task-vector editing is not new. Source-free CV corruption setup differs from streaming regression with known revised values.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N12",
+      "title": "Forget or Fine-tune? A Comparative Study of Machine Unlearning Strategies for Noisy Label Correction",
+      "category": "paper",
+      "venue_status": "arXiv 2608.30046v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2608.30046v1"
+      ],
+      "inspection": "Method, baselines and findings.",
+      "interpretation_limit": "Retain-set fine-tuning is a strong CV comparator in reported conditions; do not infer numerical TSFM gains.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N13",
+      "title": "Learning from Label Proportions and Covariate-shifted Instances",
+      "category": "paper",
+      "venue_status": "UAI 2025, PMLR 286",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v286/singh25b.html",
+        "https://arxiv.org/html/2411.12334v2",
+        "https://github.com/google-deepmind/covariate_shifted_llp"
+      ],
+      "inspection": "Methods, theory assumptions and correlated-bag experiments; official code.",
+      "interpretation_limit": "Source individual labels plus target aggregate labels already studied. Main theoretical covariate-shift assumptions do not cover arbitrary changing target conditionals; correlated bags are not entirely absent.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N14",
+      "title": "Frequency Domain Predictive Modelling with Aggregated Data",
+      "category": "paper",
+      "venue_status": "AISTATS 2017, PMLR 54",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v54/bhowmik17a.html",
+        "https://proceedings.mlr.press/v54/bhowmik17a/bhowmik17a.pdf"
+      ],
+      "inspection": "Primary method, assumptions, aliasing analysis and experiments.",
+      "interpretation_limit": "Aggregated features/labels can identify shared fine-level linear predictors under assumptions. A single aggregate's nullspace is not a universal impossibility theorem.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N15",
+      "title": "Temporal Disaggregation of Time Series",
+      "category": "paper",
+      "venue_status": "The R Journal, 2013",
+      "primary_sources": [
+        "https://journal.r-project.org/articles/RJ-2013-028/",
+        "https://journal.r-project.org/articles/RJ-2013-028/RJ-2013-028.pdf"
+      ],
+      "inspection": "Original exposition and tempdisagg implementation description.",
+      "interpretation_limit": "Chow–Lin/Denton and movement preservation are existing methods; known-total reconstruction must be distinguished from forecasting an unknown total.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N16",
+      "title": "Utilizing Load Research Data for Direct Access Forecasting and Reconciliation",
+      "category": "paper",
+      "venue_status": "ACEEE Summer Study 1998",
+      "primary_sources": [
+        "https://www.aceee.org/files/proceedings/1998/data/papers/0625.PDF"
+      ],
+      "inspection": "Operational monthly-meter/fine-sample example and forecast versus reconciliation distinction.",
+      "interpretation_limit": "Establishes an operational motivation, not an accessible modern customer dataset or a fine-audit acquisition-cost contract.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N17",
+      "title": "Technical Note: Temporal disaggregation of spatial rainfall fields with generative adversarial networks",
+      "category": "paper",
+      "venue_status": "HESS 25, 3207–3225, 2021",
+      "primary_sources": [
+        "https://hess.copernicus.org/articles/25/3207/2021/index.html",
+        "https://github.com/sipposip/pr-disagg-radar-gan"
+      ],
+      "inspection": "Primary paper and official generator repository.",
+      "interpretation_limit": "Uses fine-resolution training data and known daily totals for reconstruction; not coarse-only future forecasting.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N18",
+      "title": "Compact Latent Manifold Translation: A Parameter-Efficient Foundation Model for Cross-Modal and Cross-Frequency Physiological Signal Synthesis",
+      "category": "paper",
+      "venue_status": "2026 arXiv preprint; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2605.13248v1"
+      ],
+      "inspection": "Method and high-resolution latent supervision.",
+      "interpretation_limit": "Frozen tokenizer does not eliminate fine training labels; public runnable code not established in this review.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N19",
+      "title": "FlowState: Sampling-Rate-Equivariant Time-Series Forecasting",
+      "category": "paper",
+      "venue_status": "arXiv 2508.05287v3 inspected",
+      "primary_sources": [
+        "https://arxiv.org/html/2508.05287v3",
+        "https://huggingface.co/ibm-research/flowstate"
+      ],
+      "inspection": "Continuous-basis forecasting method and public model card. v3 distinguishes approximate encoder invariance from overall sampling-rate equivariance.",
+      "interpretation_limit": "Changing sampling rate alone is insufficient motivation for a new adapter. Does not establish all weak-supervision settings are solved.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N20",
+      "title": "TRACE: A Temporal Conditional Estimation for Multimodal Time Series Foundation Models",
+      "category": "paper",
+      "venue_status": "arXiv 2606.06285v1; formal acceptance not verified",
+      "primary_sources": [
+        "https://arxiv.org/html/2606.06285v1"
+      ],
+      "inspection": "Method outline, tasks and missing-modality setting.",
+      "interpretation_limit": "Different TRACE from PEFT paper 2503.16991. Clinical/sentiment multimodal tasks are not native-TSFM forecasting evidence. Executable code not established.",
+      "track": "schema",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N21",
+      "title": "Are Time-Series Foundation Models Ready for E-Nose Data? An Empirical Assessment of Their Embeddings",
+      "category": "paper",
+      "venue_status": "arXiv 2606.27672v1; SENSORS2026 portal says accepted poster",
+      "primary_sources": [
+        "https://arxiv.org/html/2606.27672v1",
+        "https://epapers2.org/sensors2026/ESR/paper_details.php?paper_id=8598"
+      ],
+      "inspection": "Primary abstract and method/task outline; official conference portal.",
+      "interpretation_limit": "Gas classification and concentration estimation are not automatically future forecasting; reported fine-tuning necessity is limited to studied conditions.",
+      "track": "schema",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N22",
+      "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+      "category": "official_model",
+      "venue_status": "Official Google Research publication, accessed 2026-09-08",
+      "primary_sources": [
+        "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+        "https://github.com/google-research/timesfm"
+      ],
+      "inspection": "Official native multi-target and past/past-future covariate capabilities.",
+      "interpretation_limit": "Capability is not proof of robustness to a changed observation process. TimesFM2.5 LoRA example does not establish TimesFM3 training readiness.",
+      "track": "schema",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "D01",
+      "title": "ALFRED help and download documentation",
+      "category": "official_data",
+      "venue_status": "Federal Reserve Bank of St. Louis",
+      "primary_sources": [
+        "https://alfred.stlouisfed.org/help",
+        "https://alfred.stlouisfed.org/help/downloaddata"
+      ],
+      "inspection": "Vintage definition, release-date fallback and official download routes.",
+      "interpretation_limit": "Daily dates are not precise user ingestion timestamps; no payload/QC performed.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "D02",
+      "title": "FRED/ALFRED series observations and vintage dates API",
+      "category": "official_data",
+      "venue_status": "Federal Reserve Bank of St. Louis",
+      "primary_sources": [
+        "https://fred.stlouisfed.org/docs/api/fred/series_observations.html",
+        "https://fred.stlouisfed.org/docs/api/fred/series_vintagedates.html"
+      ],
+      "inspection": "realtime_start/end, output types 3/4 and vintage_dates schema.",
+      "interpretation_limit": "API key needed for API route; documentation availability is not verified complete historical series coverage.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "D03",
+      "title": "Nonfarm Payroll Employment: Revisions between over-the-month estimates, 1979-present",
+      "category": "official_data",
+      "venue_status": "US Bureau of Labor Statistics",
+      "primary_sources": [
+        "https://www.bls.gov/web/empsit/cesnaicsrev.htm",
+        "https://alfred.stlouisfed.org/series?seid=PAYEMS"
+      ],
+      "inspection": "BLS monthly initial/second/final-sample and annual revision procedure.",
+      "interpretation_limit": "Final sample-based estimate remains subject to annual benchmark revisions; fixed maturity is needed for scoring.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "D04",
+      "title": "Building Data Genome Project 2",
+      "category": "official_data",
+      "venue_status": "Scientific Data 2020; official repository",
+      "primary_sources": [
+        "https://github.com/buds-lab/building-data-genome-project-2"
+      ],
+      "inspection": "Repository scope and metadata; existing study17 has a pinned raw-data audit.",
+      "interpretation_limit": "Public hourly data support a controlled aggregate-access experiment, not actual monthly billing arrival timestamps; previously used panels are development data.",
+      "track": "weak_supervision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "D05",
+      "title": "Gas Sensor Array Drift Dataset",
+      "category": "official_data",
+      "venue_status": "UCI dataset 224",
+      "primary_sources": [
+        "https://archive.ics.uci.edu/dataset/224/gas"
+      ],
+      "inspection": "Official description: 13910 samples, 16 sensors, derived 128 features and batches.",
+      "interpretation_limit": "Derived feature rows must not be concatenated into an invented continuous forecasting stream. No payload downloaded.",
+      "track": "schema",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "A01",
+      "title": "MacroCast public model card and checkpoint manifest",
+      "category": "official_artifact",
+      "venue_status": "Author Hugging Face repository; manifest revision 294e473968d1cf970fa05a23d5b70b8ae5c4af90",
+      "primary_sources": [
+        "https://huggingface.co/shubhranshu/MacroCast",
+        "https://huggingface.co/shubhranshu/MacroCast/blob/294e473968d1cf970fa05a23d5b70b8ae5c4af90/manifest.json"
+      ],
+      "inspection": "Card and manifest: 26 yearly checkpoints, 1998–2023.",
+      "interpretation_limit": "Yearly artifacts do not reproduce all monthly refits. cutoff=1998-12 and train_vintage=1999-08.csv need interpretation; not proof of leakage. No weight download or execution.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    },
+    {
+      "id": "N23",
+      "title": "Modeling data revisions: Measurement error and dynamics of true values",
+      "category": "paper",
+      "venue_status": "Journal of Econometrics 161(2):101–109, 2011; DOI 10.1016/j.jeconom.2010.04.010",
+      "primary_sources": [
+        "https://www.sciencedirect.com/science/article/pii/S0304407610002526"
+      ],
+      "inspection": "Publisher abstract and introduction: state-space model of news, noise and spillovers in revised data.",
+      "interpretation_limit": "Existing revision modeling and filtering, not a reproduced PEFT method; complete numerical implementation not inspected.",
+      "track": "revision",
+      "inspected_on": "2026-09-08",
+      "new_local_replication": false
+    }
+  ]
+}

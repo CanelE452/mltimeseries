@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-08T06:49:17.962894+00:00",
+  "protected_hashes_verified": 255,
+  "completed_production_and_analysis_guards": 45,
+  "s0_jobs": 8,
+  "final_figures": 6,
+  "report_links_verified": 14,
+  "report_sha256": "76b490fe3eee87b9a8c796dd950acd632eb1d0e7b378bc83fa9209a15447b1f4",
+  "verification_sha256": "25d9e0eb39efed660922bf4ebd026647b442884e7b26b651845f6d0d27e38f44",
+  "plot_manifest_sha256": "33229fddcdda0e21fe5688e78f529f0126b22be08980fa5a3c26142e32792513",
+  "expected_initial_analysis_failure": 1,
+  "locks_released": true,
+  "cpu_tests": {
+    "passed": 40,
+    "wall_seconds": 2.95
+  },
+  "windows_event_audit_sha256": "6c07102d7217c3917faf4a2a67249316850440add51171348f6bdf3d4bfba06e"
+}

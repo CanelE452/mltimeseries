@@ -1,0 +1,18 @@
+{
+  "scope": "Exactly 18 new production GPU trial guards; S0/CPU and old runs excluded",
+  "origin": "new",
+  "sample_count": 76,
+  "first_sample_utc": "2026-09-08T04:11:32.198646+00:00",
+  "last_sample_utc": "2026-09-08T04:23:10.193222+00:00",
+  "min_available_ram_gib": 14.993907928466797,
+  "min_available_commit_gib": 11.812114715576172,
+  "max_child_tree_rss_gib": 1.7605247497558594,
+  "max_git_process_count": 2,
+  "max_gpu_memory_used_mib": 2295.0,
+  "max_gpu_temperature_c": 53.0,
+  "guard_failures": 0,
+  "safety_stops": 0,
+  "gpu_trial_count": 18,
+  "reused_trial_count": 0,
+  "cpu_resource_scope": "CPU RAW fits run inside the separately reported root analysis guard"
+}

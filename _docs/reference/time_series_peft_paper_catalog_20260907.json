@@ -1,0 +1,541 @@
+{
+  "as_of": "2026-09-07",
+  "scope": "Targeted scoping review of time-series forecasting FM PEFT/adaptation, relevant general PEFT baselines, official implementations, and one unverified-manuscript public artifact.",
+  "count": 29,
+  "counts_by_category": {
+    "time_series_adaptation_paper": 17,
+    "general_peft_or_retention_paper": 8,
+    "official_model_and_implementation": 3,
+    "public_artifact_without_verified_manuscript": 1
+  },
+  "year_convention": "Verified venue year when available; otherwise preprint or implementation year. Online/volume date ambiguity is recorded in venue_status.",
+  "not_claimed": [
+    "Complete systematic review",
+    "Full-text and appendix verification of every item",
+    "Independent replication or PEFT training",
+    "Measured GPU training cost",
+    "Established novelty",
+    "Acceptance of a self-reported submission"
+  ],
+  "search_date": "2026-09-07",
+  "search_queries": [
+    "time series foundation model PEFT",
+    "time series parameter efficient fine tuning",
+    "Chronos-2 LoRA paper fine tuning",
+    "ChronosX covariates fine tuning frozen backbone",
+    "time series PEFT 2026 foundation",
+    "Time-PEFT",
+    "TRACE time series",
+    "Adapting Time Series Foundation Models through Data Mixtures",
+    "CoRA correlation-aware adapter",
+    "UniCA covariate adaptation",
+    "OpenMHC Chronos-2 LoRA",
+    "TSFM-PEFT-Bench"
+  ],
+  "papers": [
+    {
+      "id": "T01",
+      "title": "Time-PEFT: Temporal and Multichannel Complexity-Based Fine-Tuning for Time-Series Foundation Models",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "ICML 2026 poster. 공식 프로그램 metadata 확인.",
+      "mechanism": "temporal/multichannel complexity 진단과 frequency·channel adapter. 공개 구현은 MOMENT에 encoder LoRA와 forecasting head 학습을 함께 사용한다.",
+      "inspection": "공식 초록, 공개 `run.py` 정적 흐름. OpenReview 본문/PDF는 403으로 확보하지 못했다.",
+      "interpretation_limit": "본문의 split·HPO·수치·ablation은 미확인. “최대 개선율”을 비교 수치로 채택하지 않는다. 공개 early-stopping 경로의 best checkpoint 복구 여부도 재현 전에 점검해야 한다.",
+      "evidence_locator_and_findings": "코드에서 backbone을 동결하고 frequency adapter·채널별 projection·head·LoRA를 학습한다. Channel adapter는 공유 down projection과 채널별 up projection이며, 그 경로에서 다른 채널 값을 직접 집계하는 연산은 확인되지 않았다. 채널별 파라미터와 채널 간 mixing은 다르다.",
+      "research_implication": "복잡도 측정, 주파수 adapter, 채널별 adapter 자체는 새 출발점으로 약하다. Native group mechanism의 적응 실패를 별도로 입증해야 한다.",
+      "primary_sources": [
+        "https://icml.cc/virtual/2026/poster/61767",
+        "https://openreview.net/forum?id=n8seTOinYs",
+        "https://github.com/kaist-dmlab/TimePEFT/blob/ea4e7e1887bb35587bab7ea93e2af3685ac55852/run.py"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "CoRA: Boosting Time Series Foundation Models for Multivariate Forecasting through Correlation-aware Adapter",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "ICLR 2026 본학회. Cheng et al.의 correlation-aware CoRA다.",
+      "mechanism": "time-varying/invariant low-rank correlation, 양·음 관계 projection, partial-correlation contrastive objective를 forecasting에 결합한다.",
+      "inspection": "최종 공식 PDF 방법·실험·App.D/E/F 및 공개 코드. 최종 Table 1 수치는 arXiv v1과 달라 최종본을 우선했다.",
+      "interpretation_limit": "adapter라는 명칭만으로 frozen-backbone PEFT로 분류하면 안 된다. 공개 active `plugin` 경로는 freeze 호출이 주석이며 optimizer에 `self.model.fm.parameters()`를 등록한다. 별도 plugin 파라미터 등록 및 논문상 inference 계산 생략과 공개 forward의 일치를 먼저 해결해야 한다. 이 불일치만으로 논문 성능이 잘못됐다고 단정하지 않는다.",
+      "evidence_locator_and_findings": "10 datasets, 5% training, horizon 96/192/336/720 평균. Table 1은 GPT4TS/CALF/UniTime/MOMENT/Timer/TTM을 다룬다. 저자 보고 Timer ETTh1 MSE .450→.421.",
+      "research_implication": "관계 추가 효과, backbone 학습 효과, auxiliary loss 효과를 분리했는가?",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/file/ae3e173398d6e43fea63cbcc16fbaa98-Paper-Conference.pdf",
+        "https://github.com/decisionintelligence/CoRA/blob/1292f7b114e26d477675291004acb018e81896ca/ts_benchmark/baselines/pre_train/adapters_for_plugin.py#L343",
+        "https://github.com/decisionintelligence/CoRA/blob/1292f7b114e26d477675291004acb018e81896ca/ts_benchmark/plugin/plugin.py#L161"
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "UniCA: Unified Covariate Adaptation for Time Series Foundation Model",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "ICLR 2026 본학회; arXiv 최초 2025-06, v2 2026-03.",
+      "mechanism": "이질적 공변량을 시계열 표현으로 바꾸고 frozen FM 전후에 fusion한다. 과거 관측과 미래에 알려진 공변량을 구분한다.",
+      "inspection": "최종 PDF 방법·실험·관련 부록 및 공개 동결 경로.",
+      "interpretation_limit": "추가 정보와 PEFT 효과를 분리해야 하며 baseline default와 자체 HPO가 동일 예산이라는 보장은 없다. 동결 코드는 확인했지만 2025-09 snapshot이 2026 최종 부록 전체를 재현한다고 확정할 수 없다.",
+      "evidence_locator_and_findings": "주 backbone은 Chronos-Bolt-base와 TimesFM 2.0 500M. SFT는 target-only(App.B.4). Fusion 위치별 차이는 작다고 보고한다(App.G.1). Noise covariate 추가 실험은 informative covariate가 misleading해지는 drift와 다르다. MOMENT 확장은 imputation이다.",
+      "research_implication": "이미 공변량을 받는 FM에 같은 정보를 주어도 새 적응이 필요한가?",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/file/0b5eb45a22ff33956c043dd271f244ea-Paper-Conference.pdf",
+        "https://github.com/hanlu-nju/UniCA/blob/727d3670e9b7993472b19f47e42ac0d75142b127/models/adapter/unica/module.py#L72",
+        "https://github.com/hanlu-nju/UniCA/blob/727d3670e9b7993472b19f47e42ac0d75142b127/models/wrapper/fm/chronos_wrapper.py#L129"
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "CoRA: Covariate-Aware Adaptation of Time Series Foundation Models",
+      "year": 2025,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "2025-10 arXiv 공개본. 정식 채택 미확인. Qin et al.; T02와 다른 논문이다.",
+      "mechanism": "frozen TS/텍스트/이미지 feature, 학습 공변량 가중치, head 전후 adaLN scale/shift, zero initialization.",
+      "inspection": "arXiv v1 본문·관련 부록. 공식 구현 미확인.",
+      "interpretation_limit": "extra covariate 정보와 adaptation 효과가 함께 달라진다. GCE라는 명칭의 학습 가중치가 인과식별을 보장하지 않는다. Exact checkpoint revision·matched compute는 미확인.",
+      "evidence_locator_and_findings": "Sundial을 중심으로 TimesFM/Chronos-Bolt/FlowState를 추가한다. EPF·multimodal·few-shot 평가가 있다. Table 5 EPF 평균 MSE는 CoRA .278, target-only SFT .296으로 저자 보고한다.",
+      "research_implication": "간단한 scale/shift head 적응과 공변량 주입을 통제한 뒤에도 내부 PEFT 이득이 남는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2510.12681v1",
+        "https://openreview.net/forum?id=Y7IZlDttMM"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "Beyond LoRA: Exploring Efficient Fine-Tuning Techniques for Time Series Foundational Models",
+      "year": 2024,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "NeurIPS 2024 TSALM workshop. 본학회 논문이 아니다.",
+      "mechanism": "Chronos-T5 계열에 BitFit, LayerNorm tuning, VeRA, FourierFT를 적용·비교한다.",
+      "inspection": "arXiv v1 본문·부록, workshop PDF. 전용 공식 코드 미확인.",
+      "interpretation_limit": "일부 LoRA/full FT 결과는 이전 연구에서 가져온다. 동일 HPO 비교를 가정할 수 없다. FourierFT의 Fourier 표현은 weight matrix에 대한 것이며 입력 시계열의 계절 주파수를 보존한다는 뜻이 아니다.",
+      "evidence_locator_and_findings": "ICU 생체신호 forecasting. FourierFT 2,400 parameters는 Chronos Tiny 사례이며, 함께 언급되는 700K는 N-HiTS 파라미터다. Tiny LoRA는 49K, Base LoRA는 442K이므로 모델 크기를 섞어 비교하면 안 된다.",
+      "research_implication": "일반 PEFT의 단순 이식보다 명확한 시계열 실패 기전이 있는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2409.11302v1",
+        "https://openreview.net/pdf?id=YZJ8Re0gQv"
+      ]
+    },
+    {
+      "id": "T06",
+      "title": "TRACE: Time SeRies PArameter EffiCient FinE-tuning",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "Neurocomputing 664, article 132098, 2026-02-01. arXiv 최초 2025-03, 읽은 버전 v3.",
+      "mechanism": "prediction head 축소와 validation masking으로 추정한 LoRA module 중요도에 따른 선택.",
+      "inspection": "arXiv v3 방법·실험, 출판사 서지정보. 전용 공식 코드 미확인.",
+      "interpretation_limit": "head 구조 변경과 adapter 선택의 효과를 분리해야 한다. Validation을 반복 사용하는 구조 선택 비용도 예산에 넣어야 한다. arXiv의 volume 표기와 출판사가 충돌하여 출판사 정보를 채택했다.",
+      "evidence_locator_and_findings": "MOMENT-base 중심으로 LP, LP+LoRA, head 축소, AdaLoRA 등을 비교한다. 기본 rank 2, masking과 선택 비용이 포함된다.",
+      "research_implication": "“중요한 layer에 rank를 배분한다”를 넘어선 새 관찰이 있는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2503.16991v3",
+        "https://www.sciencedirect.com/science/article/pii/S0925231225027705"
+      ]
+    },
+    {
+      "id": "T07",
+      "title": "Adapting Time Series Foundation Models through Data Mixtures (MixFT)",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "2026-03 arXiv 공개본; 정식 채택 미확인.",
+      "mechanism": "context embedding의 Bayesian GMM으로 데이터를 묶고 domain LoRA와 routing을 학습한다. MixUp과 pretraining replay를 사용한다.",
+      "inspection": "arXiv v1 방법·실험·관련 부록. 전용 공식 코드 미확인.",
+      "interpretation_limit": "target-only adaptation과 정보 조건이 다르다. Adapter library·routing 비용도 있다. 평균 순위 개선이 모든 dataset에서 frozen을 이긴다는 뜻은 아니다.",
+      "evidence_locator_and_findings": "Chronos-Bolt-small, Moirai-1.1-R-small; 관련 6 datasets로 학습하고 다른 10 datasets에서 평가한다. Shared adapter 및 여러 mixture 접근이 비교군이다.",
+      "research_implication": "regime별 LoRA를 제안한다면 기존 routing·replay 대비 어떤 실패를 새로 해결하는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2603.02840v1"
+      ]
+    },
+    {
+      "id": "T08",
+      "title": "Lost in the Non-convex Loss Landscape: How to Fine-tune the Large Time Series Model? (SFF)",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "ICLR 2026 본학회. arXiv 등록은 2026-06.",
+      "mechanism": "pretrained weight와 variance-controlled random initialization을 보간한 뒤 full fine-tuning한다.",
+      "inspection": "공식 proceedings, arXiv 방법·실험·관련 부록, 공식 저장소 존재 확인.",
+      "interpretation_limit": "모든 backbone에서 LoRA를 이겼다는 결과가 아니다. SFF 자체는 PEFT가 아니다.",
+      "evidence_locator_and_findings": "여러 TSFM에서 FF, LP, LP→FF, 최적화·정규화 대조군과 비교한다. LoRA 비교는 App.A.5.1 Table 10의 **Timer, H=96, rank=8** 설정이다. ETTh1 MSE LoRA .418, FF .367, SFF .355를 보고한다.",
+      "research_implication": "PEFT의 이득이 low-rank 제한 때문인지, full FT의 불리한 최적화 설정 때문인지 분리했는가?",
+      "primary_sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/6255f22349da5f2126dfc0b007075450-Abstract-Conference.html",
+        "https://arxiv.org/html/2606.08578v1",
+        "https://github.com/Meteor-Stars/SFF"
+      ]
+    },
+    {
+      "id": "T09",
+      "title": "Are Time Series Foundation Models Susceptible to Catastrophic Forgetting?",
+      "year": 2025,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "2025-10 arXiv 공개본; 정식 채택 미확인.",
+      "mechanism": "TimesFM을 합성 sine-mixture A 다음 B에 순차 fine-tuning하며 적응과 이전 성능 유지의 관계를 분석한다.",
+      "inspection": "arXiv v1 본문 실험·한계.",
+      "interpretation_limit": "단일 backbone, 합성 데이터, 제한된 전이이며 PEFT 대 full FT의 체계적 비교가 아니다. 원래 모든 pretraining 지식의 손실을 측정한 것으로 읽지 않는다.",
+      "evidence_locator_and_findings": "learning rate·epoch에 따라 B 개선과 A 악화가 함께 나타난다.",
+      "research_implication": "유지할 능력을 이전 적응 task, 새로운 target 기간, 다른 series 중 무엇으로 정의하는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2510.00809v1"
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "ORTCL: Towards Continual Learning of Time Series Foundation Models on Streaming Data via Orthogonal Rotation",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "AAAI 2026 본학회; 40(28):23541–23549, 공식 출판 2026-03-14.",
+      "mechanism": "입력·출력 feature space의 orthogonal rotation으로 기존 metric structure를 유지하며 순차 적응한다.",
+      "inspection": "공식 본문 method/setup/table 및 일부 부록. 전체 비용·코드 재현성 감사는 하지 않았다.",
+      "interpretation_limit": "배포된 off-the-shelf checkpoint를 그대로 target-only 적응시키는 조건과 다르다. 본문의 retention 주장과 우리 deployment 조건을 맞춰야 한다.",
+      "evidence_locator_and_findings": "Timer 중심, 부록 Moirai/PatchTST. 단일·다중 domain stream에서 비교한다. 실험 설명은 downstream dataset을 제외한 UTSD-12G 사전학습을 사용한다.",
+      "research_implication": "직교 제약이나 망각 방지라는 이름만으로 차별화할 수 있는가?",
+      "primary_sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/39526",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/39526/43487"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "Probabilistic Forecasting for Building Energy Systems using Time-Series Foundation Models",
+      "year": 2025,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "Energy and Buildings 348, 116446; DOI 10.1016/j.enbuild.2025.116446. Crossref publication year 2025, 최초 preprint 2025-05.",
+      "mechanism": "Chronos의 q/v LoRA와 full FT를 building energy probabilistic forecasting에 적용한다.",
+      "inspection": "저자 원문, 출판사·연구기관 서지정보. 날짜 표기가 혼재하여 DOI/volume을 기준으로 기록했다.",
+      "interpretation_limit": "LoRA가 경쟁력 있는 사례이지만 일부 point metric은 full FT가 더 좋다. 장비별 속도 보고를 현재 GPU 예상치로 환산하지 않는다. 단일 건물 결과로 일반적인 calibration 보존을 주장할 수 없다.",
+      "evidence_locator_and_findings": "일본 한 건물 8 zone·4 season, 15분 간격. LoRA rank 4/16/64, 1,000 iterations; point와 quantile·interval 점수를 함께 비교한다.",
+      "research_implication": "새 adapter가 보통의 LoRA보다 필요한 이유를 먼저 확인했는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2506.00630v1",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0378778825011764",
+        "https://www.merl.com/publications/TR2026-030"
+      ]
+    },
+    {
+      "id": "T12",
+      "title": "Time Series Foundation Models for Process Model Forecasting",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "CAiSE 2026 본학회 채택 목록 확인; 최초 preprint 2025-12.",
+      "mechanism": "process event log의 일별 directly-follows count 예측에 TSFM의 zero-shot·LoRA·full FT를 비교한다.",
+      "inspection": "arXiv v1 실험, 공식 채택 목록·코드.",
+      "interpretation_limit": "이득은 작거나 음수인 조건도 있다. 제한된 설정이 충분한 HPO 뒤의 성능 상한은 아니다. Series 간 표준편차와 학습 seed 불확실성을 구별한다.",
+      "evidence_locator_and_findings": "4개 public log, 7일 예측, 60/20/20 시간 분리. Chronos-Bolt/Moirai LoRA는 rank 2, q/k/v/o, LR 1e−4, 3 epochs. Chronos-2 full FT도 포함한다.",
+      "research_implication": "target에 특화하면 언제나 유리하다는 가정을 버리고 frozen baseline을 유지했는가?",
+      "primary_sources": [
+        "https://arxiv.org/html/2512.07624v1",
+        "https://caise26.polimi.it/?page_id=948",
+        "https://github.com/YongboYu/pmf-tsfm"
+      ]
+    },
+    {
+      "id": "T13",
+      "title": "Dual Adaptation of Time-Series Foundation Models for Financial Forecasting",
+      "year": 2025,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "ICML 2025 1st Workshop on Foundation Models for Structured Data. 본학회 논문이 아니다.",
+      "mechanism": "frozen TimesFM에 shared Generalizer Adapter와 asset Identity Signature를 학습하며 후자는 추론 때 제거한다.",
+      "inspection": "공식 workshop PDF method·실험. 공식 코드 미확인.",
+      "interpretation_limit": "단일 시장·backbone, raw-price MSE와 HPO 조건을 검토해야 한다. 작은 차이를 일반적인 PEFT OOD 실패로 확대하지 않는다.",
+      "evidence_locator_and_findings": "SP100 학습 후 겹치지 않는 SP500 assets를 평가하며 LoRA/LN/bias/full FT 등과 비교한다. 대표 OOD MSE는 제안 20.65, LoRA 20.97, full FT 20.79로 저자 보고한다.",
+      "research_implication": "asset identity에 대한 과적합과 시간적 distribution shift를 구분했는가?",
+      "primary_sources": [
+        "https://openreview.net/pdf?id=SSdBpVNYxd"
+      ]
+    },
+    {
+      "id": "T14",
+      "title": "TS-PET: A Novel Framework for Fine-Tuning Pretrained Time-Series Models",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "Big Data, OnlineFirst 2026-04-28.",
+      "mechanism": "경량 prediction module 및 parameter synergy를 고려한 stochastic pruned LoRA/rank allocation을 초록에서 제안한다.",
+      "inspection": "출판사 초록·참고문헌. 본문 상세 실험 접근 미확보.",
+      "interpretation_limit": "backbone·동일 예산·split·코드·재현성을 깊게 확인하지 못했다. 핵심 수치 증거가 아니라 중복 가능성 확인 항목이다.",
+      "evidence_locator_and_findings": "adaptive LoRA와 head 관련 접근을 비교 대상으로 명시한다.",
+      "research_implication": "layer/rank 선택을 주제로 정하기 전에 이 논문의 본문까지 확보해야 한다.",
+      "primary_sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/2167647X261439005"
+      ]
+    },
+    {
+      "id": "T15",
+      "title": "ChronosX: Adapting Pretrained Time Series Models with Exogenous Variables",
+      "year": 2025,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "AISTATS 2025 본학회, PMLR 258:2242–2250.",
+      "mechanism": "input/output injection block으로 과거·미래 공변량을 pretrained model에 넣는다. Adapter-only와 full-finetuned 변형을 구분한다.",
+      "inspection": "공식 proceedings, arXiv v1 method·variant·covariate ablation. 논문이 연결한 코드 branch의 완전 재현성은 미확인.",
+      "interpretation_limit": "ChronosX를 Chronos-2의 내장 covariate/group attention과 동일시하면 안 된다. 추가 공변량을 가진 모델 대 target-only 모델의 차이는 PEFT만의 효과가 아니다.",
+      "evidence_locator_and_findings": "32개 합성 데이터 및 실제 데이터를 다룬다. 공변량을 제거한 adapter 대조가 있어 정보 추가와 layer 추가를 분리하는 설계에 참고된다.",
+      "research_implication": "단순 input/output adapter와 강한 residual correction을 넘어서는 문제가 있는가?",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v258/arango25a.html",
+        "https://arxiv.org/html/2503.12107v1",
+        "https://github.com/amazon-science/chronos-forecasting/tree/chronosx"
+      ]
+    },
+    {
+      "id": "T16",
+      "title": "Market-Information-Aware Gated-LoRA of Foundation Models for Transferable Day-Ahead Electricity Price Forecasting",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "2026-08-11 arXiv 공개본; 정식 채택 미확인.",
+      "mechanism": "Chronos-2의 source-market rank-8 LoRA를 학습한 뒤 adapter를 동결하고 시장 상태로 adapter 강도를 조절하는 gate를 학습한다.",
+      "inspection": "arXiv v1 method·ablation·limitations. 공식 코드·데이터 공개 미확인.",
+      "interpretation_limit": "State 연결을 깨도 개선 대부분이 남는다. Gate 전체 이득을 상태 해석의 증거로 쓰면 안 된다. Target-only 적응과 source-transfer는 다른 조건이며 미래 시장 정보의 실제 공개 시점도 중요하다.",
+      "evidence_locator_and_findings": "Target-market label 없이 4개 시장의 leave-one-market-out 평가. Table III MAE는 Source-LoRA 76.98, 실제 gate 74.633, shuffled-state gate 74.873이다. III-C4는 MAE/CRPS 개선과 함께 PICP80 하락·coverage deviation 증가를 명시한다.",
+      "research_implication": "조건부 LoRA 강도는 이미 직접 선행연구가 있다. 상태가 필요한 이유를 shuffled-state·constant gate와 분리해야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/html/2608.11359v1"
+      ]
+    },
+    {
+      "id": "T17",
+      "title": "OpenMHC: Accelerating the Science of Wearable Foundation Models",
+      "year": 2026,
+      "category": "time_series_adaptation_paper",
+      "venue_status": "2026-07 arXiv 공개본; 읽은 버전 v3. 정식 채택 미확인.",
+      "mechanism": "wearable 데이터·benchmark와 여러 모델 비교. Chronos-2의 일반 LoRA를 실제 adaptation baseline으로 사용한다.",
+      "inspection": "v3 forecasting 결과·Table 35, 공식 repository의 공개 범위.",
+      "interpretation_limit": "새 PEFT 방법 논문이 아니다. v3에서 Table 34는 Toto이며 Chronos-2는 Table 35다. 공식 공개 XS와 논문 전체 데이터 규모를 구분해야 한다. 구간의 겹침 여부만으로 paired 효과의 유의성을 판정하지 않는다.",
+      "evidence_locator_and_findings": "19 channels, 14일 input→24시간 예측. LoRA rank 16/alpha 16, 25 epochs, 15-trial Bayesian HPO. Table 4 aggregate skill은 frozen 36.4, FT 37.6으로 저자 보고한다.",
+      "research_implication": "Native multichannel의 충분히 조정된 일반 LoRA와 비교했는가? 데이터 접근이 가능하면 cross-person 평가 후보가 될 수 있다.",
+      "primary_sources": [
+        "https://arxiv.org/html/2607.16235v3",
+        "https://github.com/AshleyLab/OpenMHC"
+      ]
+    },
+    {
+      "id": "R01",
+      "title": "TSFM-PEFT-Bench: A Cross-Architecture Benchmark for PEFT Selection in Time Series Foundation Models",
+      "year": 2026,
+      "category": "public_artifact_without_verified_manuscript",
+      "venue_status": "Hugging Face 공개 artifact. NeurIPS 2026 Datasets and Benchmarks 제출은 카드의 자가 신고이며 채택 확인이 아니다.",
+      "mechanism": "카드상 cross-architecture PEFT 비교·shift profile 기반 선택. 공개 결과 파일에 selector 평가가 있다.",
+      "inspection": "HF card·파일 목록·일부 JSON. Revision `634649d2275084dd87bb6afc60702471a57c7ce6`.",
+      "interpretation_limit": "본문·코드·전처리·제외 기준을 감사할 수 없어 검증된 benchmark 결론으로 사용하지 않는다. Run 수를 독립 domain 수로 세지 않는다.",
+      "evidence_locator_and_findings": "공개 HF 파일 목록에는 결과·manifest가 있지만 카드가 소개한 manuscript·학습 source는 확인되지 않았다. 연결된 익명 repository API는 조사 시 `not_connected`를 반환했다.",
+      "research_implication": "PEFT selector·rank/locus sweep의 설계 중복을 확인할 공개물이다. 후보를 확정하기 전 원문 확보가 필요하다.",
+      "primary_sources": [
+        "https://huggingface.co/datasets/EvalData/tsfm-peft-bench",
+        "https://huggingface.co/datasets/EvalData/tsfm-peft-bench/blob/634649d2275084dd87bb6afc60702471a57c7ce6/results/paper_manifest.json",
+        "https://huggingface.co/datasets/EvalData/tsfm-peft-bench/blob/634649d2275084dd87bb6afc60702471a57c7ce6/results/selector_evaluation.json"
+      ]
+    },
+    {
+      "id": "G01",
+      "title": "Parameter-Efficient Transfer Learning for NLP",
+      "year": 2019,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "ICML 2019 본학회.",
+      "mechanism": "pretrained model을 동결하고 작은 bottleneck adapter를 학습한다.",
+      "inspection": "공식 proceedings·초록.",
+      "interpretation_limit": "NLP 결과다. 일반적인 비선형 adapter는 LoRA처럼 단순 weight merge가 되지 않아 추론 비용이 달라질 수 있다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v97/houlsby19a.html"
+      ]
+    },
+    {
+      "id": "G02",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "year": 2022,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "2021 arXiv 원문; ICLR 2022 발표 논문.",
+      "mechanism": "동결 weight에 low-rank increment를 학습하며 배포 시 선형 weight에 합칠 수 있다.",
+      "inspection": "저자 arXiv·공식 구현 자료.",
+      "interpretation_limit": "저장 파라미터 절감과 학습 전체 비용 절감은 다르다. 공식 TSFM default LoRA가 이미 어디까지 적응하는지 먼저 확인해야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2106.09685",
+        "https://github.com/microsoft/LoRA"
+      ]
+    },
+    {
+      "id": "G03",
+      "title": "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning (AdaLoRA)",
+      "year": 2023,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "ICLR 2023; arXiv metadata 확인.",
+      "mechanism": "중요도에 따라 업데이트 행렬별 rank 예산을 배분한다.",
+      "inspection": "arXiv 원문 요약·서지정보.",
+      "interpretation_limit": "“layer마다 다른 rank” 자체는 이미 일반 PEFT의 연구 주제다. 시계열 특유의 추정 실패를 보여줘야 한다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2303.10512"
+      ]
+    },
+    {
+      "id": "G04",
+      "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "year": 2024,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "ICML 2024 본학회.",
+      "mechanism": "weight magnitude와 direction을 분리해 적응한다.",
+      "inspection": "공식 proceedings·초록.",
+      "interpretation_limit": "새 scale-aware TS adapter의 유용한 대조군이지만 시계열 성능을 이번에 재현하지 않았다.",
+      "primary_sources": [
+        "https://proceedings.mlr.press/v235/liu24bn.html"
+      ]
+    },
+    {
+      "id": "G05",
+      "title": "Parameter Efficient Fine-tuning via Explained Variance Adaptation (EVA)",
+      "year": 2025,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "NeurIPS 2025 본학회.",
+      "mechanism": "activation SVD 기반 초기화와 설명 분산에 따른 rank 재배분.",
+      "inspection": "공식 proceedings·초록.",
+      "interpretation_limit": "activation 기반 rank 선택도 선행연구가 있다. 시계열 residual·독립 기간 부족의 영향은 별도 검증해야 한다.",
+      "primary_sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/41d33bd41fd44bd9dba0e092047cf213-Abstract-Conference.html"
+      ]
+    },
+    {
+      "id": "G06",
+      "title": "LoRA-FA: Efficient and Effective Low Rank Representation Fine-tuning",
+      "year": 2023,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "2023 arXiv 공개본; 이번 조사에서 정식 venue 미확인.",
+      "mechanism": "LoRA의 A를 고정하고 B만 학습하여 activation memory 요구를 줄인다.",
+      "inspection": "현재 arXiv 제목·초록.",
+      "interpretation_limit": "모든 backbone activation이 사라지는 것은 아니다. 메모리 효율을 주장할 경우 고려할 대조군이다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2308.03303"
+      ]
+    },
+    {
+      "id": "G07",
+      "title": "Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution",
+      "year": 2022,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "2022 arXiv 원문; ICLR 2022 발표 논문.",
+      "mechanism": "full FT의 표현 변형과 OOD 성능 관계를 분석하고 linear probe 뒤 fine-tuning하는 LP-FT를 검토한다.",
+      "inspection": "저자 원문 요약·주장 범위.",
+      "interpretation_limit": "CV 및 제한된 이론 설정이다. 시계열에서 head-first 적응이 유리하다는 근거는 아직 아니다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2202.10054"
+      ]
+    },
+    {
+      "id": "G08",
+      "title": "Robust Fine-Tuning of Zero-Shot Models (WiSE-FT)",
+      "year": 2022,
+      "category": "general_peft_or_retention_paper",
+      "venue_status": "CVPR 2022 본학회.",
+      "mechanism": "zero-shot와 fine-tuned weight를 보간하여 target/OOD 성능의 균형을 조절한다.",
+      "inspection": "공식 proceedings·초록.",
+      "interpretation_limit": "CV 결과다. 우리 연구에서는 adapter strength shrinkage나 forecast mixture를 새 복잡한 보존 기법보다 먼저 비교한다. 두 방식은 비선형 모델에서 서로 같은 연산이 아니다.",
+      "primary_sources": [
+        "https://openaccess.thecvf.com/content/CVPR2022/html/Wortsman_Robust_Fine-Tuning_of_Zero-Shot_Models_CVPR_2022_paper.html"
+      ]
+    },
+    {
+      "id": "M01",
+      "title": "Chronos-2: From Univariate to Universal Forecasting / 공식 fine-tuning 구현",
+      "year": 2025,
+      "category": "official_model_and_implementation",
+      "venue_status": "2025-10 arXiv 모델 논문 및 현재 공식 OSS. 로컬 chronos-forecasting 2.3.1.",
+      "mechanism": "시간 attention과 group attention으로 target·관련 series·공변량을 처리한다. 공식 `fit`에 full/LoRA 모드가 있다.",
+      "inspection": "공식 repository·pipeline 문서, 설치 metadata와 로컬 pipeline/model/layers/loss 정적 추적.",
+      "interpretation_limit": "실제 PEFT backward·GPU 메모리·최종 성능은 미측정. 아래 구현 점검 결과를 따른다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2510.15821",
+        "https://github.com/amazon-science/chronos-forecasting/blob/main/src/chronos/chronos2/pipeline.py",
+        "https://github.com/amazon-science/chronos-forecasting"
+      ]
+    },
+    {
+      "id": "M02",
+      "title": "TimesFM 2.5 / TimesFM 3 공식 구현",
+      "year": 2026,
+      "category": "official_model_and_implementation",
+      "venue_status": "공식 모델·소프트웨어 자료. 로컬 timesfm 3.0.1.",
+      "mechanism": "TimesFM 3는 native multivariate 기능을 제공한다. 공개 LoRA fine-tuning 예제는 TimesFM **2.5** 경로다.",
+      "inspection": "공식 README·finetuning 예제, 로컬 TimesFM 3 forward/decode 경로.",
+      "interpretation_limit": "2.5 예제를 3의 end-to-end PEFT 지원으로 인용하면 안 된다. 3의 raw forward는 존재하지만 학습 loss/mask/loader/backward의 검증은 별도다. 3 모델 weight 사용 조건도 코드 라이선스와 별도로 확인해야 한다.",
+      "primary_sources": [
+        "https://github.com/google-research/timesfm",
+        "https://github.com/google-research/timesfm/tree/master/timesfm-forecasting/examples/finetuning"
+      ]
+    },
+    {
+      "id": "M03",
+      "title": "TiRex-2: Generalizing TiRex to Multivariate Data and Streaming / 공식 구현",
+      "year": 2026,
+      "category": "official_model_and_implementation",
+      "venue_status": "2026-07 arXiv 및 공식 OSS. 로컬 tirex-2 0.2.1.",
+      "mechanism": "temporal xLSTM과 변수 attention을 결합한 multivariate forecaster.",
+      "inspection": "공식 논문·문서와 로컬 raw forward/predict 경로. 기존 프로젝트의 inference 실행 기록.",
+      "interpretation_limit": "공개 제품 설명의 fine-tuning은 Pro 확장이다. Raw forward가 있으므로 연구자가 학습을 구현할 수 없다는 뜻은 아니다. 다만 Windows의 커널·컴파일 환경과 backward가 검증되지 않아 첫 PEFT backbone으로는 준비 비용이 크다.",
+      "primary_sources": [
+        "https://arxiv.org/abs/2607.01204",
+        "https://nx-ai.github.io/tirex-2/introduction/",
+        "https://github.com/NX-AI/tirex-2"
+      ]
+    }
+  ],
+  "local_runtime": {
+    "environment": ".venv-tsfm",
+    "python": "3.11.16",
+    "chronos-forecasting": "2.3.1",
+    "timesfm": "3.0.1",
+    "tirex-2": "0.2.1",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "peft": null,
+    "peft_status": "not_installed",
+    "training_executed": false
+  },
+  "local_code_evidence": [
+    {
+      "path": "C:/Users/User/anaconda3/envs/mlts/Lib/site-packages/chronos/chronos2/pipeline.py",
+      "sha256": "482d28d81b7a50852fd081bd660f5ce39dab79534c237157efaf12bb586c07e1",
+      "inspection": "Static source inspection only; no training or backward executed during this review."
+    },
+    {
+      "path": "C:/Users/User/anaconda3/envs/mlts/Lib/site-packages/chronos/chronos2/model.py",
+      "sha256": "13ed6b3e1010e1b60fad45cd078da5ff1cda23cdfcaf9055a996276219d9e3c1",
+      "inspection": "Static source inspection only; no training or backward executed during this review."
+    },
+    {
+      "path": "C:/Users/User/anaconda3/envs/mlts/Lib/site-packages/chronos/chronos2/layers.py",
+      "sha256": "73493f306ecfaa21fa57636ff46321ccb5d50ded02a382598cf759dbfc9dd60f",
+      "inspection": "Static source inspection only; no training or backward executed during this review."
+    },
+    {
+      "path": "C:/Users/User/anaconda3/envs/mlts/Lib/site-packages/chronos/chronos2/dataset.py",
+      "sha256": "90b34b05af99069972a33aa780019ab2fca7514e907b68921a2d5c9205584e0a",
+      "inspection": "Static source inspection only; no training or backward executed during this review."
+    }
+  ],
+  "pinned_repositories": {
+    "kaist-dmlab/TimePEFT": "ea4e7e1887bb35587bab7ea93e2af3685ac55852",
+    "decisionintelligence/CoRA": "1292f7b114e26d477675291004acb018e81896ca",
+    "hanlu-nju/UniCA": "727d3670e9b7993472b19f47e42ac0d75142b127",
+    "EvalData/tsfm-peft-bench": "634649d2275084dd87bb6afc60702471a57c7ce6"
+  },
+  "citation_verification": {
+    "as_of": "2026-09-07",
+    "method": "literature-review CitationVerifier.verify_doi; extracted identifiers normalized to remove sentence punctuation. This checks DOI resolution and Crossref metadata only, not every claim or all URLs. Other primary sources were inspected in the research session.",
+    "results": [
+      {
+        "doi": "10.1016/j.enbuild.2025.116446",
+        "resolver_verified": true,
+        "metadata": {
+          "title": "Probabilistic forecasting for building energy systems using time-series foundation models",
+          "authors": "Park, Y., Germain, F., Liu, J., et al.",
+          "year": "2025",
+          "journal": "Energy and Buildings",
+          "volume": "348",
+          "pages": "116446",
+          "doi": "10.1016/j.enbuild.2025.116446"
+        }
+      },
+      {
+        "doi": "10.1177/2167647X261439005",
+        "resolver_verified": true,
+        "metadata": {}
+      }
+    ]
+  }
+}

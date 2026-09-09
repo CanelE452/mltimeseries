@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_and_original_reference_contract_preserved": true,
+  "verified_analysis_and_csv_hashes": true,
+  "gpu_guards_completed": 15,
+  "analysis_guard_verified_completed": true,
+  "locks_released": true,
+  "local_links_checked": 16,
+  "figures_exist": [
+    "score_comparison.png",
+    "score_comparison.pdf",
+    "deletion_effects.png",
+    "deletion_effects.pdf",
+    "validation_trajectories.png",
+    "validation_trajectories.pdf"
+  ],
+  "plots_visually_inspected_png_count": 3
+}

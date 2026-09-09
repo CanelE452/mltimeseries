@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-09-08T14:15:42.149416+00:00",
+  "supersedes_report_check_in": "results/peft_revision_entry_v1/final_audit.json",
+  "prior_final_audit_sha256": "93664e2c4cd3aa33a73080f62e499f1f5b8687593cbb757168ea3de74b19dd3a",
+  "prior_artifact_hashes_verified": 75,
+  "prior_report_snapshot": "results\\peft_revision_entry_v1\\report_before_editorial.md",
+  "prior_report_sha256": "89b05a9846f9dc98de0d43794b3bd117bad73b9de99e269d819726a189a0db20",
+  "report_sha256": "6bd95c02b0fada2ce67b7b8979acc18e3102f4b6227f223e5a71208a36630365",
+  "report_local_links": 14,
+  "protected_count": 1237,
+  "changes": [
+    "Specify zero new neural/FM training; CPU ridge fitting did run.",
+    "Distinguish regularization (lambda) from variance normalization."
+  ],
+  "numerical_results_changed": false
+}

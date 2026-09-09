@@ -1,0 +1,998 @@
+{
+  "trials": [
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\F0\\lr_1e-03",
+      "guard_seconds": 12.219,
+      "method": "F0",
+      "seconds": 9.600466199997754,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\GROUP\\lr_1e-04",
+      "guard_seconds": 42.5,
+      "method": "GROUP",
+      "seconds": 38.41458109999803,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.438,
+      "method": "GROUP",
+      "seconds": 37.89265109999542,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\H_LIN\\lr_1e-03",
+      "guard_seconds": 10.156,
+      "method": "H_LIN",
+      "seconds": 6.776870399997279,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_LIN",
+      "seconds": 6.768046099998173,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\H_MLP\\lr_1e-03",
+      "guard_seconds": 10.141,
+      "method": "H_MLP",
+      "seconds": 6.931588699997519,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_MLP",
+      "seconds": 7.052005099998496,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\JOINT\\lr_1e-04",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 47.75662110000121,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.515,
+      "method": "JOINT",
+      "seconds": 47.30719490000047,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\LP\\lr_1e-04",
+      "guard_seconds": 42.516,
+      "method": "LP",
+      "seconds": 40.29014599999937,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\LP\\lr_3e-05",
+      "guard_seconds": 42.5,
+      "method": "LP",
+      "seconds": 40.1842142999958,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.531,
+      "method": "OFF_LORA",
+      "seconds": 47.059721999998146,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "OFF_LORA",
+      "seconds": 47.14624200000253,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\TIME\\lr_1e-04",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.56142469999759,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c0\\TIME\\lr_3e-05",
+      "guard_seconds": 40.438,
+      "method": "TIME",
+      "seconds": 37.78323369999998,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.57550959999935,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.453,
+      "method": "GROUP",
+      "seconds": 37.61252229999809,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_LIN",
+      "seconds": 6.96497680000175,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_MLP",
+      "seconds": 6.857574699999532,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.5,
+      "method": "JOINT",
+      "seconds": 46.89168260000588,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\LP\\lr_3e-05",
+      "guard_seconds": 42.484,
+      "method": "LP",
+      "seconds": 39.75036650000402,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "OFF_LORA",
+      "seconds": 46.41158030000224,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 80
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c1\\TIME\\lr_3e-05",
+      "guard_seconds": 40.437,
+      "method": "TIME",
+      "seconds": 37.84000820000074,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\F0\\lr_1e-03",
+      "guard_seconds": 12.219,
+      "method": "F0",
+      "seconds": 9.402780099997472,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.437,
+      "method": "GROUP",
+      "seconds": 37.70832309999969,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_LIN",
+      "seconds": 6.855945600000268,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_MLP",
+      "seconds": 6.901498500003072,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 48.036575999998604,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\LP\\lr_3e-05",
+      "guard_seconds": 42.484,
+      "method": "LP",
+      "seconds": 40.00283199999831,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "OFF_LORA",
+      "seconds": 47.08963660000154,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q00_c2\\TIME\\lr_3e-05",
+      "guard_seconds": 40.437,
+      "method": "TIME",
+      "seconds": 37.921895499996026,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\F0\\lr_1e-03",
+      "guard_seconds": 12.219,
+      "method": "F0",
+      "seconds": 9.553366799998912,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\GROUP\\lr_1e-04",
+      "guard_seconds": 40.437,
+      "method": "GROUP",
+      "seconds": 37.81654249999701,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.72373789999983,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\H_LIN\\lr_1e-03",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.790470100000675,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_LIN",
+      "seconds": 6.803338199999416,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\H_MLP\\lr_1e-03",
+      "guard_seconds": 10.156,
+      "method": "H_MLP",
+      "seconds": 6.913777299996582,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_MLP",
+      "seconds": 6.95588940000016,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\JOINT\\lr_1e-04",
+      "guard_seconds": 50.515,
+      "method": "JOINT",
+      "seconds": 46.86457369999698,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "JOINT",
+      "seconds": 46.87561740000092,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\LP\\lr_1e-04",
+      "guard_seconds": 42.469,
+      "method": "LP",
+      "seconds": 40.233044199994765,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\LP\\lr_3e-05",
+      "guard_seconds": 44.484,
+      "method": "LP",
+      "seconds": 41.189169199999014,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.547,
+      "method": "OFF_LORA",
+      "seconds": 46.56153600000107,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 48.5,
+      "method": "OFF_LORA",
+      "seconds": 46.10504870000295,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\TIME\\lr_1e-04",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.413131799999974,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c0\\TIME\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.931427099996654,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.441765499999747,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.406,
+      "method": "GROUP",
+      "seconds": 37.70070249999844,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.157,
+      "method": "H_LIN",
+      "seconds": 6.8137218999982,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_MLP",
+      "seconds": 6.979851800002507,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.515,
+      "method": "JOINT",
+      "seconds": 47.769698700001754,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\LP\\lr_3e-05",
+      "guard_seconds": 44.484,
+      "method": "LP",
+      "seconds": 40.33544950000214,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "OFF_LORA",
+      "seconds": 46.39502360000188,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 80
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c1\\TIME\\lr_3e-05",
+      "guard_seconds": 40.437,
+      "method": "TIME",
+      "seconds": 37.898199499999464,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.483467800004291,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\GROUP\\lr_3e-05",
+      "guard_seconds": 42.469,
+      "method": "GROUP",
+      "seconds": 38.84169549999933,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_LIN",
+      "seconds": 6.834348099997442,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.125,
+      "method": "H_MLP",
+      "seconds": 6.942936699997517,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "JOINT",
+      "seconds": 46.86421900000278,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\LP\\lr_3e-05",
+      "guard_seconds": 42.5,
+      "method": "LP",
+      "seconds": 40.09538170000451,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 48.531,
+      "method": "OFF_LORA",
+      "seconds": 46.32143229999929,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q01_c2\\TIME\\lr_3e-05",
+      "guard_seconds": 40.437,
+      "method": "TIME",
+      "seconds": 37.85178380000434,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.45002480000403,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\GROUP\\lr_1e-04",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.56681789999857,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.63771109999652,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\H_LIN\\lr_1e-03",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.767730599996867,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_LIN",
+      "seconds": 6.872138400001859,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\H_MLP\\lr_1e-03",
+      "guard_seconds": 10.141,
+      "method": "H_MLP",
+      "seconds": 6.917975399999705,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_MLP",
+      "seconds": 7.003027200000361,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\JOINT\\lr_1e-04",
+      "guard_seconds": 50.515,
+      "method": "JOINT",
+      "seconds": 47.95027430000482,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 47.12904329999583,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\LP\\lr_1e-04",
+      "guard_seconds": 42.5,
+      "method": "LP",
+      "seconds": 40.15035999999964,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\LP\\lr_3e-05",
+      "guard_seconds": 44.516,
+      "method": "LP",
+      "seconds": 40.35112130000198,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.531,
+      "method": "OFF_LORA",
+      "seconds": 46.37664380000206,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 48.515,
+      "method": "OFF_LORA",
+      "seconds": 46.30251340000541,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\TIME\\lr_1e-04",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.57879520000279,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c0\\TIME\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.55130620000273,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.344186100002844,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.391,
+      "method": "GROUP",
+      "seconds": 37.84035029999359,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.736252800001239,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_MLP",
+      "seconds": 7.122181600003387,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "JOINT",
+      "seconds": 47.25921240000025,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\LP\\lr_3e-05",
+      "guard_seconds": 44.5,
+      "method": "LP",
+      "seconds": 40.41452159999608,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.531,
+      "method": "OFF_LORA",
+      "seconds": 47.662384099996416,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c1\\TIME\\lr_3e-05",
+      "guard_seconds": 40.406,
+      "method": "TIME",
+      "seconds": 37.70637400000123,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.398463799996534,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.94562399999995,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.746663699996134,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_MLP",
+      "seconds": 6.9290611000033095,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 47.006522799994855,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\LP\\lr_3e-05",
+      "guard_seconds": 42.484,
+      "method": "LP",
+      "seconds": 40.032617600001686,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.5,
+      "method": "OFF_LORA",
+      "seconds": 47.00995829999738,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q10_c2\\TIME\\lr_3e-05",
+      "guard_seconds": 40.406,
+      "method": "TIME",
+      "seconds": 37.61518159999832,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\F0\\lr_1e-03",
+      "guard_seconds": 12.204,
+      "method": "F0",
+      "seconds": 9.409705099998973,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\GROUP\\lr_1e-04",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.76644900000247,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.65592180000385,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\H_LIN\\lr_1e-03",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.912038000002212,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.904777199997625,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\H_MLP\\lr_1e-03",
+      "guard_seconds": 10.157,
+      "method": "H_MLP",
+      "seconds": 7.0394746999954805,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_MLP",
+      "seconds": 7.114148400003614,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\JOINT\\lr_1e-04",
+      "guard_seconds": 50.515,
+      "method": "JOINT",
+      "seconds": 46.98329090000334,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 47.192661200002476,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\LP\\lr_1e-04",
+      "guard_seconds": 44.5,
+      "method": "LP",
+      "seconds": 40.63340630000312,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\LP\\lr_3e-05",
+      "guard_seconds": 44.5,
+      "method": "LP",
+      "seconds": 40.70981290000054,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\OFF_LORA\\lr_1e-04",
+      "guard_seconds": 50.547,
+      "method": "OFF_LORA",
+      "seconds": 46.71428800000285,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 40
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 48.516,
+      "method": "OFF_LORA",
+      "seconds": 46.31155890000082,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 80
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\TIME\\lr_1e-04",
+      "guard_seconds": 42.485,
+      "method": "TIME",
+      "seconds": 38.62008299999434,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c0\\TIME\\lr_3e-05",
+      "guard_seconds": 40.407,
+      "method": "TIME",
+      "seconds": 37.67047499999899,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\F0\\lr_1e-03",
+      "guard_seconds": 12.203,
+      "method": "F0",
+      "seconds": 9.24565530000109,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "GROUP",
+      "seconds": 37.597935699996015,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.141,
+      "method": "H_LIN",
+      "seconds": 6.728035000000091,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.156,
+      "method": "H_MLP",
+      "seconds": 7.047196999999869,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.547,
+      "method": "JOINT",
+      "seconds": 46.4769099000041,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\LP\\lr_3e-05",
+      "guard_seconds": 42.484,
+      "method": "LP",
+      "seconds": 40.332766500003345,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.516,
+      "method": "OFF_LORA",
+      "seconds": 46.79282289999537,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 80
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c1\\TIME\\lr_3e-05",
+      "guard_seconds": 40.421,
+      "method": "TIME",
+      "seconds": 37.77072789999511,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\F0\\lr_1e-03",
+      "guard_seconds": 12.218,
+      "method": "F0",
+      "seconds": 9.465177000005497,
+      "peak_cuda_gib": 0.4638981819152832,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\GROUP\\lr_3e-05",
+      "guard_seconds": 40.438,
+      "method": "GROUP",
+      "seconds": 37.61605060000147,
+      "peak_cuda_gib": 0.8052825927734375,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\H_LIN\\lr_3e-04",
+      "guard_seconds": 10.125,
+      "method": "H_LIN",
+      "seconds": 6.799366500003089,
+      "peak_cuda_gib": 0.4677739143371582,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\H_MLP\\lr_3e-04",
+      "guard_seconds": 10.14,
+      "method": "H_MLP",
+      "seconds": 7.011884300001839,
+      "peak_cuda_gib": 0.47640466690063477,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\JOINT\\lr_3e-05",
+      "guard_seconds": 50.531,
+      "method": "JOINT",
+      "seconds": 47.94346599999699,
+      "peak_cuda_gib": 0.8264265060424805,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\LP\\lr_3e-05",
+      "guard_seconds": 42.469,
+      "method": "LP",
+      "seconds": 40.0707878999965,
+      "peak_cuda_gib": 0.8247480392456055,
+      "best_step": 0
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\OFF_LORA\\lr_3e-05",
+      "guard_seconds": 50.515,
+      "method": "OFF_LORA",
+      "seconds": 46.88197509999736,
+      "peak_cuda_gib": 0.832301139831543,
+      "best_step": 120
+    },
+    {
+      "path": "runs\\peft_shift_mechanism_v1\\trials\\Q11_c2\\TIME\\lr_3e-05",
+      "guard_seconds": 40.422,
+      "method": "TIME",
+      "seconds": 37.693392699999094,
+      "peak_cuda_gib": 0.8115549087524414,
+      "best_step": 0
+    }
+  ],
+  "guard_total_seconds": 4071.4939999999997,
+  "run_wall_seconds": 4073.2518434524536
+}

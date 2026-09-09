@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "input_hashes": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\candidate_results.csv": "3b84e78a2e97fceb1f51b8b6220ad725d990ac0f613404f2a8da6a87d643bff9",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\costs.json": "4331ba98b8c1cab54aa2c41a9fdf95e530d0cc9eb9aa283f11bbad5e9ae24ec3",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\diagnostics.json": "29d0844c69193a23a0a13b250c79dd4d8a98e0ed94873da66d9c6ec4f6d7f505",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\effects.json": "b29df131df83f35491574c7175abbf8c992a5b5b9142249f7478f10b9bbe859e",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\oracle_regret.json": "d491fe5895a3e1798e93de465e1027efce5c0ef271ce9adefee9ee3722331cf3",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\resource_summary.json": "2218f115f3536fc5ef3b699aa90e1832a3ebcc5302946efa644d9484f7419299",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\selected_results.csv": "eb22d8a60f69735894efa06ebb9a73f9fe118660b4680993fde18542c5f6ed33",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_selection_regret_v1\\verification.json": "419f76d66c7d08ef2a72d8f9802b5adb361fb15ae84bb6bbafb4a47890ae6341",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_selection_regret_v1\\plot.py": "dadddfedd3c3117c270806b41e9782930d590626a72f4b2c999e100e7ba2c0cf"
+  },
+  "figure_hashes": {
+    "01_all_candidates_validation_and_future.pdf": "1386bda995de19438e25d752a92f951e69ce5536d247b327900ce1545ed3ac03",
+    "01_all_candidates_validation_and_future.png": "2135cc8449f8b6cf90a0d1a58e241a6a32fff5a7d518737a8f69fe806836c486",
+    "02_selection_loss_and_nonoverlap.pdf": "976cc3a0384065341f1e82961afa879b4c3d9dd95f05175a6c80f0aa37260716",
+    "02_selection_loss_and_nonoverlap.png": "ea2c004e6c577c5dcc11cdcd8a628bf25c571cb13acf637a73056362c666077f",
+    "03_hindsight_oracle_point_regret.pdf": "d289bae6e58cf13ca9eaf8df3f32e4ffa686cb11b5b0cba848d25a0522d03365",
+    "03_hindsight_oracle_point_regret.png": "cab5365e3c2c28b09a83b68ff785df284bfcf2453bbdb7f19920936cda0507cc"
+  },
+  "prediction_archives_opened": false,
+  "candidate_rows": 80,
+  "selector_rows": 56,
+  "primary_interval": "Four 98.75% paired temporal intervals, conditional on one stored optimizer seed",
+  "oracle_regret": "Descriptive hindsight point estimate only",
+  "dpi": 300,
+  "matplotlib_version": "3.11.1",
+  "numpy_version": "2.4.6"
+}

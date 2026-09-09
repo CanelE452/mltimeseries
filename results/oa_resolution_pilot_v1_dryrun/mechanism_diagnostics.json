@@ -1,0 +1,455 @@
+{
+  "within_batch_width_permutation": {
+    "claim": "a within-batch permutation of width metadata is the identity",
+    "reason": "one batch holds one report interval, so all its tokens share one support width",
+    "per_condition": {
+      "END_BIN|r2": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r2": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          2
+        ]
+      },
+      "END_BIN|r3": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r3": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          3
+        ]
+      },
+      "END_BIN|r4": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r4": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          4
+        ]
+      },
+      "END_BIN|r6": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r6": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          6
+        ]
+      },
+      "END_BIN|r8": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r8": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          8
+        ]
+      },
+      "END_BIN|r12": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          1
+        ]
+      },
+      "INTERVAL_MEAN|r12": {
+        "distinct_widths_in_batch": 1,
+        "width_bins": [
+          12
+        ]
+      }
+    }
+  },
+  "variants": {
+    "jena/R/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.4032713278243531,
+        "END_BIN|r3": 0.40317859932712224,
+        "END_BIN|r4": 0.40323554217543234,
+        "END_BIN|r6": 0.4031396897416137,
+        "END_BIN|r8": 0.4028846267695841,
+        "END_BIN|r12": 0.4021430940932879,
+        "INTERVAL_MEAN|r2": 0.4032436260894009,
+        "INTERVAL_MEAN|r3": 0.4032361050174661,
+        "INTERVAL_MEAN|r4": 0.40322907411888853,
+        "INTERVAL_MEAN|r6": 0.4032249717407575,
+        "INTERVAL_MEAN|r8": 0.4032032957904415,
+        "INTERVAL_MEAN|r12": 0.40324423792155367
+      },
+      "WIDTH_MISMATCH": "N/A (R has no per-token width metadata; the operator enters through the reconstruction matrix)",
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "jena/M/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.4162794849643969,
+        "END_BIN|r3": 0.4161417184899387,
+        "END_BIN|r4": 0.41485412207912636,
+        "END_BIN|r6": 0.4146377046902974,
+        "END_BIN|r8": 0.40987868613848405,
+        "END_BIN|r12": 0.41216961107297573,
+        "INTERVAL_MEAN|r2": 0.41397206424033806,
+        "INTERVAL_MEAN|r3": 0.4144089967692824,
+        "INTERVAL_MEAN|r4": 0.4135219751427707,
+        "INTERVAL_MEAN|r6": 0.41331504251314627,
+        "INTERVAL_MEAN|r8": 0.4136596074387363,
+        "INTERVAL_MEAN|r12": 0.4138355870225114
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.4162794849643969,
+        "END_BIN|r3": 0.4161417184899387,
+        "END_BIN|r4": 0.41485412207912636,
+        "END_BIN|r6": 0.4146377046902974,
+        "END_BIN|r8": 0.40987868613848405,
+        "END_BIN|r12": 0.41216961107297573,
+        "INTERVAL_MEAN|r2": 0.4139483900375018,
+        "INTERVAL_MEAN|r3": 0.4143984015673807,
+        "INTERVAL_MEAN|r4": 0.4135176925898687,
+        "INTERVAL_MEAN|r6": 0.4133200278020885,
+        "INTERVAL_MEAN|r8": 0.4136726897056789,
+        "INTERVAL_MEAN|r12": 0.4138628138254767
+      },
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "jena/O/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.41622496413313637,
+        "END_BIN|r3": 0.41595255620947713,
+        "END_BIN|r4": 0.4147713347657086,
+        "END_BIN|r6": 0.41451646748198767,
+        "END_BIN|r8": 0.4093707448815646,
+        "END_BIN|r12": 0.41191761814840305,
+        "INTERVAL_MEAN|r2": 0.41370646757622287,
+        "INTERVAL_MEAN|r3": 0.41370446007001344,
+        "INTERVAL_MEAN|r4": 0.41369416724601293,
+        "INTERVAL_MEAN|r6": 0.4137328952959139,
+        "INTERVAL_MEAN|r8": 0.41377343298637703,
+        "INTERVAL_MEAN|r12": 0.413739348655422
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.41622496413313637,
+        "END_BIN|r3": 0.41595255620947713,
+        "END_BIN|r4": 0.4147713347657086,
+        "END_BIN|r6": 0.41451646748198767,
+        "END_BIN|r8": 0.4093707448815646,
+        "END_BIN|r12": 0.41191761814840305,
+        "INTERVAL_MEAN|r2": 0.4136879487669087,
+        "INTERVAL_MEAN|r3": 0.4136935418054938,
+        "INTERVAL_MEAN|r4": 0.4136894527635618,
+        "INTERVAL_MEAN|r6": 0.4137379848249427,
+        "INTERVAL_MEAN|r8": 0.4137865345771999,
+        "INTERVAL_MEAN|r12": 0.41376632016543385
+      },
+      "WRONG_SUPPORT": {
+        "END_BIN|r2": 0.41633651300108054,
+        "END_BIN|r3": 0.41619581229066194,
+        "END_BIN|r4": 0.4148979045484708,
+        "END_BIN|r6": 0.4147833678276027,
+        "END_BIN|r8": 0.40954352078372486,
+        "END_BIN|r12": 0.4123290924176778,
+        "INTERVAL_MEAN|r2": 0.4138718244691962,
+        "INTERVAL_MEAN|r3": 0.4143775995463541,
+        "INTERVAL_MEAN|r4": 0.41349379330465236,
+        "INTERVAL_MEAN|r6": 0.413224509317581,
+        "INTERVAL_MEAN|r8": 0.4145843596218928,
+        "INTERVAL_MEAN|r12": 0.41356446590597773
+      }
+    },
+    "jena/R/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.41759069597340065,
+        "END_BIN|r3": 0.41752933312768803,
+        "END_BIN|r4": 0.4176000345787501,
+        "END_BIN|r6": 0.4175597587132563,
+        "END_BIN|r8": 0.4174291287382988,
+        "END_BIN|r12": 0.41682109604143114,
+        "INTERVAL_MEAN|r2": 0.41756342698449955,
+        "INTERVAL_MEAN|r3": 0.417569068468869,
+        "INTERVAL_MEAN|r4": 0.4175739391753663,
+        "INTERVAL_MEAN|r6": 0.4175832097388838,
+        "INTERVAL_MEAN|r8": 0.41759045047847104,
+        "INTERVAL_MEAN|r12": 0.4176609899899731
+      },
+      "WIDTH_MISMATCH": "N/A (R has no per-token width metadata; the operator enters through the reconstruction matrix)",
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "jena/M/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.4164544529022147,
+        "END_BIN|r3": 0.41628844389632413,
+        "END_BIN|r4": 0.41489637115774636,
+        "END_BIN|r6": 0.4157245093829011,
+        "END_BIN|r8": 0.4116517095805303,
+        "END_BIN|r12": 0.4135131463068261,
+        "INTERVAL_MEAN|r2": 0.4211722922651735,
+        "INTERVAL_MEAN|r3": 0.42090026537577313,
+        "INTERVAL_MEAN|r4": 0.42092690674681643,
+        "INTERVAL_MEAN|r6": 0.4205040860938155,
+        "INTERVAL_MEAN|r8": 0.4213566241199023,
+        "INTERVAL_MEAN|r12": 0.4185597638016966
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.4164544529022147,
+        "END_BIN|r3": 0.41628844389632413,
+        "END_BIN|r4": 0.41489637115774636,
+        "END_BIN|r6": 0.4157245093829011,
+        "END_BIN|r8": 0.4116517095805303,
+        "END_BIN|r12": 0.4135131463068261,
+        "INTERVAL_MEAN|r2": 0.4209602935129105,
+        "INTERVAL_MEAN|r3": 0.4207948027136119,
+        "INTERVAL_MEAN|r4": 0.42088430929401693,
+        "INTERVAL_MEAN|r6": 0.42054299459065475,
+        "INTERVAL_MEAN|r8": 0.4214677614708469,
+        "INTERVAL_MEAN|r12": 0.41874838310833934
+      },
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "jena/O/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.4164733693479947,
+        "END_BIN|r3": 0.41620034932001543,
+        "END_BIN|r4": 0.4149172523794653,
+        "END_BIN|r6": 0.4155462985713732,
+        "END_BIN|r8": 0.41146648420046456,
+        "END_BIN|r12": 0.41331353035147333,
+        "INTERVAL_MEAN|r2": 0.4211086002114701,
+        "INTERVAL_MEAN|r3": 0.42107609390668127,
+        "INTERVAL_MEAN|r4": 0.4210572425088926,
+        "INTERVAL_MEAN|r6": 0.42100292144845064,
+        "INTERVAL_MEAN|r8": 0.42101802918464626,
+        "INTERVAL_MEAN|r12": 0.42113838565948347
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.4164733693479947,
+        "END_BIN|r3": 0.41620034932001543,
+        "END_BIN|r4": 0.4149172523794653,
+        "END_BIN|r6": 0.4155462985713732,
+        "END_BIN|r8": 0.41146648420046456,
+        "END_BIN|r12": 0.41331353035147333,
+        "INTERVAL_MEAN|r2": 0.42089315092182594,
+        "INTERVAL_MEAN|r3": 0.42096942799276416,
+        "INTERVAL_MEAN|r4": 0.42101490279855247,
+        "INTERVAL_MEAN|r6": 0.4210448044620148,
+        "INTERVAL_MEAN|r8": 0.4211217486150733,
+        "INTERVAL_MEAN|r12": 0.42134222320225684
+      },
+      "WRONG_SUPPORT": {
+        "END_BIN|r2": 0.416531729915915,
+        "END_BIN|r3": 0.41637429581385227,
+        "END_BIN|r4": 0.4149671109844016,
+        "END_BIN|r6": 0.4158263152048468,
+        "END_BIN|r8": 0.4115217616568962,
+        "END_BIN|r12": 0.4136885769291011,
+        "INTERVAL_MEAN|r2": 0.421226782341526,
+        "INTERVAL_MEAN|r3": 0.420961727290393,
+        "INTERVAL_MEAN|r4": 0.42099089437423776,
+        "INTERVAL_MEAN|r6": 0.42053618278677607,
+        "INTERVAL_MEAN|r8": 0.4218934017773633,
+        "INTERVAL_MEAN|r12": 0.41845926683243007
+      }
+    },
+    "uci/R/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.5699538648590561,
+        "END_BIN|r3": 0.5698288813117862,
+        "END_BIN|r4": 0.5709447352461112,
+        "END_BIN|r6": 0.5723691245382146,
+        "END_BIN|r8": 0.5734718298727228,
+        "END_BIN|r12": 0.5748630896095157,
+        "INTERVAL_MEAN|r2": 0.5694823265075684,
+        "INTERVAL_MEAN|r3": 0.5693982770276624,
+        "INTERVAL_MEAN|r4": 0.569329462772192,
+        "INTERVAL_MEAN|r6": 0.5692844871402711,
+        "INTERVAL_MEAN|r8": 0.5691117916920388,
+        "INTERVAL_MEAN|r12": 0.5690601597460665
+      },
+      "WIDTH_MISMATCH": "N/A (R has no per-token width metadata; the operator enters through the reconstruction matrix)",
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "uci/M/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.5688596714374631,
+        "END_BIN|r3": 0.5680210534916368,
+        "END_BIN|r4": 0.5695473694986151,
+        "END_BIN|r6": 0.5699117983034415,
+        "END_BIN|r8": 0.571097148943317,
+        "END_BIN|r12": 0.5713486361873242,
+        "INTERVAL_MEAN|r2": 0.5698446571364884,
+        "INTERVAL_MEAN|r3": 0.5703871005265287,
+        "INTERVAL_MEAN|r4": 0.5701517088468685,
+        "INTERVAL_MEAN|r6": 0.5702062156773353,
+        "INTERVAL_MEAN|r8": 0.5709789247475854,
+        "INTERVAL_MEAN|r12": 0.5710405929144039
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.5688596714374631,
+        "END_BIN|r3": 0.5680210534916368,
+        "END_BIN|r4": 0.5695473694986151,
+        "END_BIN|r6": 0.5699117983034415,
+        "END_BIN|r8": 0.571097148943317,
+        "END_BIN|r12": 0.5713486361873242,
+        "INTERVAL_MEAN|r2": 0.5698087760644366,
+        "INTERVAL_MEAN|r3": 0.5703685754953429,
+        "INTERVAL_MEAN|r4": 0.5701449360958365,
+        "INTERVAL_MEAN|r6": 0.5702123410942018,
+        "INTERVAL_MEAN|r8": 0.5709967345230339,
+        "INTERVAL_MEAN|r12": 0.5710720553878665
+      },
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "uci/O/2026090601": {
+      "BASE": {
+        "END_BIN|r2": 0.5684330139973367,
+        "END_BIN|r3": 0.5676276951797249,
+        "END_BIN|r4": 0.5691266355588455,
+        "END_BIN|r6": 0.5694391390149908,
+        "END_BIN|r8": 0.570704603380011,
+        "END_BIN|r12": 0.5709277511567108,
+        "INTERVAL_MEAN|r2": 0.5693569529888242,
+        "INTERVAL_MEAN|r3": 0.569543394007424,
+        "INTERVAL_MEAN|r4": 0.5697264874628348,
+        "INTERVAL_MEAN|r6": 0.5701931289924208,
+        "INTERVAL_MEAN|r8": 0.5702248608419137,
+        "INTERVAL_MEAN|r12": 0.5705088113629541
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.5684330139973367,
+        "END_BIN|r3": 0.5676276951797249,
+        "END_BIN|r4": 0.5691266355588455,
+        "END_BIN|r6": 0.5694391390149908,
+        "END_BIN|r8": 0.570704603380011,
+        "END_BIN|r12": 0.5709277511567108,
+        "INTERVAL_MEAN|r2": 0.5693242337352545,
+        "INTERVAL_MEAN|r3": 0.5695268913756969,
+        "INTERVAL_MEAN|r4": 0.5697199392688367,
+        "INTERVAL_MEAN|r6": 0.5701997843823692,
+        "INTERVAL_MEAN|r8": 0.5702411074971043,
+        "INTERVAL_MEAN|r12": 0.5705414345098097
+      },
+      "WRONG_SUPPORT": {
+        "END_BIN|r2": 0.5685254261475201,
+        "END_BIN|r3": 0.5676973522171493,
+        "END_BIN|r4": 0.5692218172457791,
+        "END_BIN|r6": 0.5695335786471996,
+        "END_BIN|r8": 0.5708166933798975,
+        "END_BIN|r12": 0.5710114494774693,
+        "INTERVAL_MEAN|r2": 0.5695182815078617,
+        "INTERVAL_MEAN|r3": 0.5700310477914736,
+        "INTERVAL_MEAN|r4": 0.569843336593273,
+        "INTERVAL_MEAN|r6": 0.5699404690616815,
+        "INTERVAL_MEAN|r8": 0.5706483781799789,
+        "INTERVAL_MEAN|r12": 0.5708173092945602
+      }
+    },
+    "uci/R/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.5705547623856123,
+        "END_BIN|r3": 0.5707256863283556,
+        "END_BIN|r4": 0.5710056692130806,
+        "END_BIN|r6": 0.5723505325095598,
+        "END_BIN|r8": 0.5735055263652358,
+        "END_BIN|r12": 0.5748739907907885,
+        "INTERVAL_MEAN|r2": 0.5702855965887853,
+        "INTERVAL_MEAN|r3": 0.5705375149268512,
+        "INTERVAL_MEAN|r4": 0.5707183762114177,
+        "INTERVAL_MEAN|r6": 0.5711414019266764,
+        "INTERVAL_MEAN|r8": 0.5712441381557968,
+        "INTERVAL_MEAN|r12": 0.5716443089551704
+      },
+      "WIDTH_MISMATCH": "N/A (R has no per-token width metadata; the operator enters through the reconstruction matrix)",
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "uci/M/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.5726310393606969,
+        "END_BIN|r3": 0.5724812561227369,
+        "END_BIN|r4": 0.5732576976450838,
+        "END_BIN|r6": 0.5746506803719572,
+        "END_BIN|r8": 0.5752469227295514,
+        "END_BIN|r12": 0.5766056591226149,
+        "INTERVAL_MEAN|r2": 0.5720268561858539,
+        "INTERVAL_MEAN|r3": 0.5720283504604369,
+        "INTERVAL_MEAN|r4": 0.5719357544137526,
+        "INTERVAL_MEAN|r6": 0.5720875022947326,
+        "INTERVAL_MEAN|r8": 0.571896775286327,
+        "INTERVAL_MEAN|r12": 0.5718438093976457
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.5726310393606969,
+        "END_BIN|r3": 0.5724812561227369,
+        "END_BIN|r4": 0.5732576976450838,
+        "END_BIN|r6": 0.5746506803719572,
+        "END_BIN|r8": 0.5752469227295514,
+        "END_BIN|r12": 0.5766056591226149,
+        "INTERVAL_MEAN|r2": 0.5719548108041749,
+        "INTERVAL_MEAN|r3": 0.571997233139452,
+        "INTERVAL_MEAN|r4": 0.5719248647837676,
+        "INTERVAL_MEAN|r6": 0.5720920599708261,
+        "INTERVAL_MEAN|r8": 0.5719163205272467,
+        "INTERVAL_MEAN|r12": 0.5718525800594064
+      },
+      "WRONG_SUPPORT": "N/A (identity for M, which already uses the centre basis; not defined for R)"
+    },
+    "uci/O/2026090602": {
+      "BASE": {
+        "END_BIN|r2": 0.5726324652516565,
+        "END_BIN|r3": 0.5724110122798949,
+        "END_BIN|r4": 0.5732833096223284,
+        "END_BIN|r6": 0.5745377161706141,
+        "END_BIN|r8": 0.5752825589143029,
+        "END_BIN|r12": 0.5765783107557962,
+        "INTERVAL_MEAN|r2": 0.571959984394931,
+        "INTERVAL_MEAN|r3": 0.571878871714422,
+        "INTERVAL_MEAN|r4": 0.5717850489209789,
+        "INTERVAL_MEAN|r6": 0.571998440942099,
+        "INTERVAL_MEAN|r8": 0.5718501501305159,
+        "INTERVAL_MEAN|r12": 0.5719395949859027
+      },
+      "WIDTH_MISMATCH": {
+        "END_BIN|r2": 0.5726324652516565,
+        "END_BIN|r3": 0.5724110122798949,
+        "END_BIN|r4": 0.5732833096223284,
+        "END_BIN|r6": 0.5745377161706141,
+        "END_BIN|r8": 0.5752825589143029,
+        "END_BIN|r12": 0.5765783107557962,
+        "INTERVAL_MEAN|r2": 0.5718882056169732,
+        "INTERVAL_MEAN|r3": 0.571848333343979,
+        "INTERVAL_MEAN|r4": 0.5717745843783829,
+        "INTERVAL_MEAN|r6": 0.5720068844713906,
+        "INTERVAL_MEAN|r8": 0.5718675805616749,
+        "INTERVAL_MEAN|r12": 0.5719625224438749
+      },
+      "WRONG_SUPPORT": {
+        "END_BIN|r2": 0.5726599933565125,
+        "END_BIN|r3": 0.5725093465442805,
+        "END_BIN|r4": 0.5732881163441857,
+        "END_BIN|r6": 0.5746776812760405,
+        "END_BIN|r8": 0.5752732328666273,
+        "END_BIN|r12": 0.576641953730768,
+        "INTERVAL_MEAN|r2": 0.5720916690752488,
+        "INTERVAL_MEAN|r3": 0.5720891952514648,
+        "INTERVAL_MEAN|r4": 0.571988375149956,
+        "INTERVAL_MEAN|r6": 0.5721423057622688,
+        "INTERVAL_MEAN|r8": 0.5719717306684154,
+        "INTERVAL_MEAN|r12": 0.5718590534010599
+      }
+    }
+  },
+  "note": "run on every completed model, inference only, no retraining"
+}

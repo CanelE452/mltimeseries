@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-08T08:27:48.989824+00:00",
+  "protected_hashes_verified": 557,
+  "analysis_artifact_hashes_verified": 410,
+  "s0_jobs": 4,
+  "new_forecasts": 28,
+  "reused_forecasts": 12,
+  "new_training_updates": 0,
+  "cpu_analysis_exitcode": 0,
+  "final_figures": 6,
+  "report_links_verified": 16,
+  "report_sha256": "65fcf27902d19fc334274add774b2c0f98519f2c5c89d632a615520b98a6a040",
+  "verification_sha256": "419f76d66c7d08ef2a72d8f9802b5adb361fb15ae84bb6bbafb4a47890ae6341",
+  "plot_manifest_sha256": "aac0baae38307eddd6db7f1020242ae1b24209ed04a6aa9ed76022ffeeac4515",
+  "windows_event_audit_sha256": "ab2c9cfbcc57dde247d4bad8d5caa35a1ad14a66fd5bc378eb12a553e99a7d1a",
+  "selection_contract_sha256": "4a0bab22a946ab0e6eb21d88edb72e61be15ae9c0e8da162b1dd3bae146d98da",
+  "new_forecast_torch_peak_allocated_gib_max": 0.48294925689697266,
+  "cpu_tests": {
+    "passed": 47,
+    "subtests": 4,
+    "post_plot_change_tests": 2
+  },
+  "independent_numerical_errors": {
+    "score_max": 0.0,
+    "primary_ci_max": 0.0
+  },
+  "locks_released": true,
+  "current_B_branch": "closed_per_fixed_rule",
+  "overall_goal": "active; no novel PEFT method established"
+}

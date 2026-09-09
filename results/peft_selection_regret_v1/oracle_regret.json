@@ -1,0 +1,650 @@
+{
+  "s12_bike": {
+    "SORT": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3785307364132209,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3785307364132209,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.4095526087873566,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s12_bike__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.07725779201828231,
+          "all_regret_over_f0": 0.07725779201828231
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03849413709082659,
+          "all_regret_over_f0": 0.03849413709082659
+        },
+        "LORA_V": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03849413709082659,
+          "all_regret_over_f0": 0.03849413709082659
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03849413709082659,
+          "all_regret_over_f0": 0.03849413709082659
+        },
+        "HEAD_V": {
+          "candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.07562184059734724
+        },
+        "ALL_V": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03849413709082659,
+          "all_regret_over_f0": 0.03849413709082659
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03849413709082659,
+          "all_regret_over_f0": 0.03849413709082659
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    },
+    "QCAL": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.37995132007262605,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.37995132007262605,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.41041841804450596,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s12_bike__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.07697436706424914,
+          "all_regret_over_f0": 0.07697436706424914
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03868013740660334,
+          "all_regret_over_f0": 0.03868013740660334
+        },
+        "LORA_V": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03868013740660334,
+          "all_regret_over_f0": 0.03868013740660334
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03868013740660334,
+          "all_regret_over_f0": 0.03868013740660334
+        },
+        "HEAD_V": {
+          "candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s12_bike__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.07401451423786237
+        },
+        "ALL_V": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03868013740660334,
+          "all_regret_over_f0": 0.03868013740660334
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s12_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.03868013740660334,
+          "all_regret_over_f0": 0.03868013740660334
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    }
+  },
+  "s12_household": {
+    "SORT": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3696076402784033,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3696076402784033,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.37711163593452024,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s12_household__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.02900778186578728,
+          "all_regret_over_f0": 0.02900778186578728
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0038814934801302088,
+          "all_regret_over_f0": 0.0038814934801302088
+        },
+        "LORA_V": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "HEAD_V": {
+          "candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.019713665500837915
+        },
+        "ALL_V": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    },
+    "QCAL": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3746302209997727,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.3746302209997727,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.37997063497222205,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s12_household__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0185929576427044,
+          "all_regret_over_f0": 0.0185929576427044
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0030945250754518955,
+          "all_regret_over_f0": 0.0030945250754518955
+        },
+        "LORA_V": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "HEAD_V": {
+          "candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s12_household__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.013990115019760389
+        },
+        "ALL_V": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s12_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    }
+  },
+  "s13_bike": {
+    "SORT": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "score": 0.16621213974790544,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "score": 0.16621213974790544,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s13_bike__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.17094287475082362,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s13_bike__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.010301962126588056,
+          "all_regret_over_f0": 0.010301962126588056
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_V": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.030785064210819345,
+          "all_regret_over_f0": 0.030785064210819345
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.030785064210819345,
+          "all_regret_over_f0": 0.030785064210819345
+        },
+        "HEAD_V": {
+          "candidate_id": "s13_bike__H_MLP__lr_1e-03__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s13_bike__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.052604629158014886,
+          "all_regret_over_f0": 0.08077344496887201
+        },
+        "ALL_V": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.030785064210819345,
+          "all_regret_over_f0": 0.030785064210819345
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.030785064210819345,
+          "all_regret_over_f0": 0.030785064210819345
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    },
+    "QCAL": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "score": 0.1666585578703777,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "score": 0.1666585578703777,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s13_bike__H_FULL__lr_3e-05__seed_12000",
+          "score": 0.1705228675235014,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s13_bike__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.012213392265237622,
+          "all_regret_over_f0": 0.012213392265237622
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_V": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.025710722971592947,
+          "all_regret_over_f0": 0.025710722971592947
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.025710722971592947,
+          "all_regret_over_f0": 0.025710722971592947
+        },
+        "HEAD_V": {
+          "candidate_id": "s13_bike__H_MLP__lr_1e-03__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s13_bike__H_FULL__lr_3e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.0521744528337995,
+          "all_regret_over_f0": 0.07507824710798615
+        },
+        "ALL_V": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.025710722971592947,
+          "all_regret_over_f0": 0.025710722971592947
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s13_bike__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "all_oracle_candidate_id": "s13_bike__OFF_LORA__lr_1e-05__seed_12000",
+          "family_regret_over_f0": 0.025710722971592947,
+          "all_regret_over_f0": 0.025710722971592947
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    }
+  },
+  "s13_household": {
+    "SORT": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.4714167052256909,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.4714167052256909,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s13_household__H_FULL__lr_1e-04__seed_12000",
+          "score": 0.47885084213219203,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s13_household__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.015524953184584474,
+          "all_regret_over_f0": 0.015524953184584474
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.002679726097910343,
+          "all_regret_over_f0": 0.002679726097910343
+        },
+        "LORA_V": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "HEAD_V": {
+          "candidate_id": "s13_household__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s13_household__H_FULL__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.015524953184584474
+        },
+        "ALL_V": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    },
+    "QCAL": {
+      "oracles": {
+        "ALL": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.47639674085657024,
+          "candidate_count": 10
+        },
+        "LORA": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "score": 0.47639674085657024,
+          "candidate_count": 3
+        },
+        "HEAD": {
+          "candidate_id": "s13_household__H_FULL__lr_1e-04__seed_12000",
+          "score": 0.4871311903888714,
+          "candidate_count": 6
+        }
+      },
+      "selectors": {
+        "F0": {
+          "candidate_id": "s13_household__F0__lr_0e+00__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.02203605464830119,
+          "all_regret_over_f0": 0.02203605464830119
+        },
+        "FIXED_LOW": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-05__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.008891812735125014,
+          "all_regret_over_f0": 0.008891812735125014
+        },
+        "LORA_V": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "LORA_RECENT7": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "LORA",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "HEAD_V": {
+          "candidate_id": "s13_household__H_FULL__lr_3e-05__seed_12000",
+          "family": "HEAD",
+          "family_oracle_candidate_id": "s13_household__H_FULL__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.02203605464830119
+        },
+        "ALL_V": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        },
+        "ALL_RECENT7": {
+          "candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family": "ALL",
+          "family_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "all_oracle_candidate_id": "s13_household__OFF_LORA__lr_1e-04__seed_12000",
+          "family_regret_over_f0": 0.0,
+          "all_regret_over_f0": 0.0
+        }
+      },
+      "point_estimates_only": true,
+      "confidence_intervals_computed": false,
+      "scope": "Hindsight minima over already scored candidates; unavailable at deployment and not an implementable selector"
+    }
+  }
+}

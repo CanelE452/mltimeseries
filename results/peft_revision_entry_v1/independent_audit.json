@@ -1,0 +1,289 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-09-08T14:06:54.542985+00:00",
+  "source_sha256": "7b9fca3d434ea68dd6790ce022e3e66d6b29d8fa7a9c847d3e13b4a1a1a770d2",
+  "input_hashes": {
+    "results\\peft_revision_entry_v1\\cpu_results.json": "dd116dee5879d03a34f163db519841653fedb9dc12a530b63242cfcc5d671eaa",
+    "results\\peft_revision_entry_v1\\evaluation_predictions.json": "4efed509d3b6b8ca2cff80e15678f0bcb180b8ec7eb0b4862c55236b9cf06cd5",
+    "results\\peft_revision_entry_v1\\ridge_identity.json": "d86a77de0a0f7218cc296561d210b96d6b798357f0bc47063eb74c88e3dfd2f8",
+    "results\\peft_revision_entry_v1\\origin_audit.json": "27e42119aa9b85796f7aeb87fcc62750d00c013374d2e1205a08fd7d11dbcc44",
+    "results\\peft_revision_entry_v1\\event_labels.csv": "d4673134ea53c5fc61df8b41bc3bea36d61b7036defa07356f5311d39f0c31ca",
+    "runs\\peft_revision_entry_v1\\validation_selection.json": "9329efce424df357b65915b4de25765ef5246ccdd9e608929b8cc32fed304cd7",
+    "runs\\peft_revision_entry_v1\\cpu_contract.json": "f886012f140b65e88e063eb13e1ea42db7092a32e885172c6361a0d552ee0922",
+    "results\\peft_revision_entry_v1\\posthoc_matched_config.json": "94d4cc2e2afbc6debdb95e646a879cbb856905775d7fc6fad4cc106433f1bff1",
+    "data_external\\alfred_revision_entry_v1\\complete\\PAYEMS\\obs._by_real-time_period.csv": "243ed793f666047a6a6bbf68f7c3a3ee449f94ad85d15013a77efd58ec4b1b48",
+    "data_external\\alfred_revision_entry_v1\\complete\\INDPRO\\obs._by_real-time_period.csv": "1ecd58322543f1cdd7b788950eb92106b9468fea6a83438584339220498c182e"
+  },
+  "implementation_imports": "No imports from run.py, data.py or model.py",
+  "scope": "Raw CSV interval lookup; first/mature labels; historical scales; saved prediction metrics; paired CI; saved V argmin and scores. Does not refit every candidate or independently replay ridge state.",
+  "counts": {
+    "logical": 3305,
+    "historical_variance": 2,
+    "truth_from_raw_csv": 2,
+    "first_growth_from_raw_csv": 816,
+    "all_mature_labels": 816,
+    "mse": 16,
+    "mae": 16,
+    "normalized_mse": 16,
+    "matched_mse": 9,
+    "matched_mae": 9,
+    "matched_improvement_percent": 3,
+    "matched_prediction_difference": 3,
+    "selected_validation_mse": 12,
+    "pooled_normalized_mse": 8,
+    "pooled_improvement_percent": 8,
+    "paired_circular_block_ci": 8
+  },
+  "maximum_absolute_errors": {
+    "historical_variance": 5.620504062164855e-16,
+    "truth_from_raw_csv": 1.3139489496438728e-13,
+    "first_growth_from_raw_csv": 1.7690016118621088e-13,
+    "all_mature_labels": 1.7244539129990244e-13,
+    "mse": 5.684341886080802e-14,
+    "mae": 1.6764367671839864e-14,
+    "normalized_mse": 6.480149750132114e-12,
+    "matched_mse": 2.5757174171303632e-14,
+    "matched_mae": 8.326672684688674e-15,
+    "matched_improvement_percent": 3.597122599785507e-14,
+    "matched_prediction_difference": 0.0,
+    "selected_validation_mse": 2.3314683517128287e-15,
+    "pooled_normalized_mse": 3.268496584496461e-12,
+    "pooled_improvement_percent": 4.050093593832571e-13,
+    "paired_circular_block_ci": 3.524291969370097e-12
+  },
+  "failures": [],
+  "series": {
+    "PAYEMS": {
+      "evaluation_origins": 60,
+      "historical_scale_rows": 288,
+      "historical_variance": 0.024462347988922377,
+      "best_reported_mse_arm": "ZERO_GROWTH"
+    },
+    "INDPRO": {
+      "evaluation_origins": 60,
+      "historical_scale_rows": 288,
+      "historical_variance": 0.3822081743756809,
+      "best_reported_mse_arm": "ZERO_GROWTH"
+    }
+  },
+  "posthoc_descriptive_only": {
+    "PAYEMS": {
+      "FIRST_FIXED_X": {
+        "yearly_mse": {
+          "2020": 30.890127398868188,
+          "2021": 0.246530354852774,
+          "2022": 0.08020798832018168,
+          "2023": 0.01571021674743647,
+          "2024": 0.007144372427401884
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9888093450056126,
+        "mse_2021_2024": 0.08739823308694851
+      },
+      "FIRST_BIAS": {
+        "yearly_mse": {
+          "2020": 25.17733389182179,
+          "2021": 0.23235802922955917,
+          "2022": 0.07237354756815621,
+          "2023": 0.012924837991600794,
+          "2024": 0.005817468932040346
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9873151514819233,
+        "mse_2021_2024": 0.08086847093033912
+      },
+      "REVISED_FIXED_X": {
+        "yearly_mse": {
+          "2020": 25.645918368507683,
+          "2021": 0.23239921751661993,
+          "2022": 0.07111123594459075,
+          "2023": 0.012755690294275668,
+          "2024": 0.0057833869346719585
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9875982005238036,
+        "mse_2021_2024": 0.08051238267253957
+      },
+      "REVISED_CURRENT_X": {
+        "yearly_mse": {
+          "2020": 27.28599860792581,
+          "2021": 0.2139520893203423,
+          "2022": 0.06284943258412769,
+          "2023": 0.011038607079157626,
+          "2024": 0.005250932562565862
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9893727071829125,
+        "mse_2021_2024": 0.07327276538654837
+      },
+      "MATURE_ONLY": {
+        "yearly_mse": {
+          "2020": 22.9003435912005,
+          "2021": 0.20795463803834435,
+          "2022": 0.07595836648294722,
+          "2023": 0.013213262639982395,
+          "2024": 0.005867317196893577
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9869418100480246,
+        "mse_2021_2024": 0.07574839608954188
+      },
+      "AGE_CORRECTED": {
+        "yearly_mse": {
+          "2020": 25.65763179051812,
+          "2021": 0.23240386081010952,
+          "2022": 0.07107170422863028,
+          "2023": 0.01274596935117875,
+          "2024": 0.005779268550429161
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9876056444685278,
+        "mse_2021_2024": 0.08050020073508694
+      },
+      "ZERO_GROWTH": {
+        "yearly_mse": {
+          "2020": 20.01204527950697,
+          "2021": 0.20308716647165923,
+          "2022": 0.07536616820554833,
+          "2023": 0.02656036751809257,
+          "2024": 0.018227758174706118
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9841044060747794,
+        "mse_2021_2024": 0.08081036509250157
+      },
+      "LAST_KNOWN_GROWTH": {
+        "yearly_mse": {
+          "2020": 47.230413935009814,
+          "2021": 0.1048076733871639,
+          "2022": 0.019500885645591957,
+          "2023": 0.007750417060221941,
+          "2024": 0.006683088439735173
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9970710463041801,
+        "mse_2021_2024": 0.034685516133178246
+      }
+    },
+    "INDPRO": {
+      "FIRST_FIXED_X": {
+        "yearly_mse": {
+          "2020": 27.536861033285202,
+          "2021": 1.9244043538607494,
+          "2022": 0.40388780614604086,
+          "2023": 0.24670228128730476,
+          "2024": 0.4754578141412534
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9002706701748714,
+        "mse_2021_2024": 0.762613063858837
+      },
+      "FIRST_BIAS": {
+        "yearly_mse": {
+          "2020": 27.523550804332462,
+          "2021": 1.919382507243971,
+          "2022": 0.40359606575946233,
+          "2023": 0.24765905582753267,
+          "2024": 0.47692763822207995
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9003122666527195,
+        "mse_2021_2024": 0.7618913167632614
+      },
+      "REVISED_FIXED_X": {
+        "yearly_mse": {
+          "2020": 27.432337392378955,
+          "2021": 1.9771107024294123,
+          "2022": 0.4092551866303293,
+          "2023": 0.24507367275372802,
+          "2024": 0.4867020873034024
+        },
+        "fraction_of_total_squared_error_in_2020": 0.8979347706829215,
+        "mse_2021_2024": 0.7795354122792183
+      },
+      "REVISED_CURRENT_X": {
+        "yearly_mse": {
+          "2020": 26.23493572382498,
+          "2021": 2.1069539209415145,
+          "2022": 0.4577243674283393,
+          "2023": 0.23980394407179303,
+          "2024": 0.4772083146398181
+        },
+        "fraction_of_total_squared_error_in_2020": 0.8888189145682915,
+        "mse_2021_2024": 0.8204226367703663
+      },
+      "MATURE_ONLY": {
+        "yearly_mse": {
+          "2020": 24.820699168371892,
+          "2021": 2.0058229513107015,
+          "2022": 0.4119974218835316,
+          "2023": 0.24623138117172527,
+          "2024": 0.48578291521773265
+        },
+        "fraction_of_total_squared_error_in_2020": 0.8873873953270992,
+        "mse_2021_2024": 0.7874586673959229
+      },
+      "AGE_CORRECTED": {
+        "yearly_mse": {
+          "2020": 27.44082778989041,
+          "2021": 1.9761895985125733,
+          "2022": 0.4092353347060756,
+          "2023": 0.24508944085541226,
+          "2024": 0.48673615463656356
+        },
+        "fraction_of_total_squared_error_in_2020": 0.8979893141116427,
+        "mse_2021_2024": 0.779312632177656
+      },
+      "ZERO_GROWTH": {
+        "yearly_mse": {
+          "2020": 21.83241508355508,
+          "2021": 2.0002326660360112,
+          "2022": 0.3748711928349064,
+          "2023": 0.2665844929078749,
+          "2024": 0.4596327430341438
+        },
+        "fraction_of_total_squared_error_in_2020": 0.8756174737461296,
+        "mse_2021_2024": 0.775330273703234
+      },
+      "LAST_KNOWN_GROWTH": {
+        "yearly_mse": {
+          "2020": 51.73832033818463,
+          "2021": 3.751687067523681,
+          "2022": 0.5673466264393379,
+          "2023": 0.6004366897938582,
+          "2024": 0.7147296007146106
+        },
+        "fraction_of_total_squared_error_in_2020": 0.9017961917519844,
+        "mse_2021_2024": 1.4085499961178716
+      }
+    }
+  },
+  "posthoc_matched_config_metric_audit": {
+    "PAYEMS": [
+      {
+        "lam": 1.0,
+        "window": null,
+        "mse": {
+          "FIRST_FIXED_X": 6.247944066243195,
+          "REVISED_FIXED_X": 6.442983291778974,
+          "FIRST_BIAS": 6.240576998327614
+        },
+        "revision_improvement_percent": -3.121654474942401
+      },
+      {
+        "lam": 10.0,
+        "window": null,
+        "mse": {
+          "FIRST_FIXED_X": 5.105475036825354,
+          "REVISED_FIXED_X": 5.193593579839568,
+          "FIRST_BIAS": 5.100161555108629
+        },
+        "revision_improvement_percent": -1.7259616858102944
+      }
+    ],
+    "INDPRO": [
+      {
+        "lam": 100.0,
+        "window": null,
+        "mse": {
+          "FIRST_FIXED_X": 6.1174626577441105,
+          "REVISED_FIXED_X": 6.110095808299166,
+          "FIRST_BIAS": 6.114223214277101
+        },
+        "revision_improvement_percent": 0.12042328424545591
+      }
+    ]
+  },
+  "posthoc_limit": "Year splits and 2020 concentration are descriptive after seeing E; do not change original gate or replace full E.",
+  "wall_seconds": 1.2338000000017928
+}

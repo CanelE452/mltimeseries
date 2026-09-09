@@ -1,0 +1,230 @@
+{
+  "primary": {
+    "effects": {
+      "alignment_over_attention": {
+        "value": 0.06823970940732159,
+        "corpus_values": [
+          0.07866576921965422,
+          0.06741054201421799,
+          0.058642816988092566
+        ],
+        "ci": [
+          0.050581420211594494,
+          0.08559632387318784
+        ],
+        "confidence": 0.975,
+        "scope": "paired episodes conditional on three fitted corpus/optimizer and validation selections",
+        "decision": "repeated_practical_improvement",
+        "definition": "(S_ATTN - S_ALIGN_F0) / S_F0"
+      },
+      "attention_after_alignment": {
+        "value": 0.17155121309807508,
+        "corpus_values": [
+          0.167766152236233,
+          0.1598683663578036,
+          0.18701912070018867
+        ],
+        "ci": [
+          0.1574120078951462,
+          0.18568339747186463
+        ],
+        "confidence": 0.975,
+        "scope": "paired episodes conditional on three fitted corpus/optimizer and validation selections",
+        "decision": "repeated_practical_improvement",
+        "definition": "(S_ALIGN_F0 - S_ALIGN_ATTN) / S_F0"
+      }
+    },
+    "lr_by_method": {
+      "ATTN": 3e-05,
+      "ALIGN_ATTN": 0.0001
+    },
+    "positive_means_improvement": true
+  },
+  "fixed_lr_descriptive": {
+    "effects": {
+      "alignment_over_attention": {
+        "value": 0.06823970940732159,
+        "corpus_values": [
+          0.07866576921965422,
+          0.06741054201421799,
+          0.058642816988092566
+        ],
+        "ci": [
+          0.050581420211594494,
+          0.08559632387318784
+        ],
+        "confidence": 0.975,
+        "scope": "paired episodes conditional on three fitted corpus/optimizer and validation selections",
+        "decision": "repeated_practical_improvement",
+        "definition": "(S_ATTN - S_ALIGN_F0) / S_F0"
+      },
+      "attention_after_alignment": {
+        "value": 0.16494163200237855,
+        "corpus_values": [
+          0.15982208050120789,
+          0.16279019327781397,
+          0.1722126222281138
+        ],
+        "ci": [
+          0.15129658566042375,
+          0.17873403112000538
+        ],
+        "confidence": 0.975,
+        "scope": "paired episodes conditional on three fitted corpus/optimizer and validation selections",
+        "decision": "repeated_practical_improvement",
+        "definition": "(S_ALIGN_F0 - S_ALIGN_ATTN) / S_F0"
+      }
+    },
+    "lr_by_method": {
+      "ATTN": 3e-05,
+      "ALIGN_ATTN": 3e-05
+    },
+    "positive_means_improvement": true
+  },
+  "raw_oracle_diagnostic": {
+    "value": 0.0012819961517745273,
+    "corpus_values": [
+      0.001646507262932056,
+      0.0007165808882781779,
+      0.0014829003041133477
+    ],
+    "ci": [
+      0.0006904250937366769,
+      0.0018628572750212628
+    ],
+    "confidence": 0.95,
+    "scope": "paired episodes conditional on three fitted corpus/optimizer and validation selections",
+    "definition": "(S_RAW - S_ORACLE) / S_F0",
+    "practically_near_oracle": true,
+    "multiplicity": "Separate exploratory diagnostic; not part of the two-primary-contrast family"
+  },
+  "choices": {
+    "ATTN": {
+      "lr": 3e-05,
+      "candidates": [
+        {
+          "condition": "Q00",
+          "corpus": 0,
+          "method": "ATTN",
+          "input_mode": "raw",
+          "lr": 3e-05,
+          "path": "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_3e-05",
+          "val_score": 0.5002887613493512
+        },
+        {
+          "condition": "Q00",
+          "corpus": 0,
+          "method": "ATTN",
+          "input_mode": "raw",
+          "lr": 0.0001,
+          "path": "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_1e-04",
+          "val_score": 0.5014886510329326
+        }
+      ]
+    },
+    "ALIGN_ATTN": {
+      "lr": 0.0001,
+      "candidates": [
+        {
+          "condition": "Q00",
+          "corpus": 0,
+          "method": "ALIGN_ATTN",
+          "input_mode": "aligned",
+          "lr": 3e-05,
+          "path": "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_3e-05",
+          "val_score": 0.3835589860426941
+        },
+        {
+          "condition": "Q00",
+          "corpus": 0,
+          "method": "ALIGN_ATTN",
+          "input_mode": "aligned",
+          "lr": 0.0001,
+          "path": "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_1e-04",
+          "val_score": 0.38017166935534175
+        }
+      ]
+    }
+  },
+  "delta": 0.01,
+  "selected_optimization_boundaries": [
+    {
+      "method": "ALIGN_ATTN",
+      "corpus": 0,
+      "lr": 0.0001,
+      "lr_at_lower_candidate": false,
+      "lr_at_upper_candidate": true,
+      "best_step": 80,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    },
+    {
+      "method": "ATTN",
+      "corpus": 0,
+      "lr": 3e-05,
+      "lr_at_lower_candidate": true,
+      "lr_at_upper_candidate": false,
+      "best_step": 120,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    },
+    {
+      "method": "ALIGN_ATTN",
+      "corpus": 1,
+      "lr": 0.0001,
+      "lr_at_lower_candidate": false,
+      "lr_at_upper_candidate": true,
+      "best_step": 80,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    },
+    {
+      "method": "ATTN",
+      "corpus": 1,
+      "lr": 3e-05,
+      "lr_at_lower_candidate": true,
+      "lr_at_upper_candidate": false,
+      "best_step": 120,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    },
+    {
+      "method": "ALIGN_ATTN",
+      "corpus": 2,
+      "lr": 0.0001,
+      "lr_at_lower_candidate": false,
+      "lr_at_upper_candidate": true,
+      "best_step": 80,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    },
+    {
+      "method": "ATTN",
+      "corpus": 2,
+      "lr": 3e-05,
+      "lr_at_lower_candidate": true,
+      "lr_at_upper_candidate": false,
+      "best_step": 160,
+      "best_at_zero": false,
+      "best_at_last_update": false
+    }
+  ],
+  "bootstrap": {
+    "replicates": 4000,
+    "seed": 2026090810,
+    "paired_episodes": 512,
+    "fitted_corpora": 3,
+    "primary_family_size": 2,
+    "primary_confidence": 0.975,
+    "raw_diagnostic_confidence": 0.95,
+    "resample_training_or_validation": false
+  },
+  "interpretation_limits": [
+    "Fresh random samples from the same stationary Gaussian family are not a new external data source.",
+    "ALIGN_F0 fits lag selection on target training labels; only FM weights remain frozen.",
+    "Retiming, missing padding, normalization, retained context and future-covariate access change jointly.",
+    "Removing the small oracle lag dictionary does not remove stationary additive or one-lag-per-channel inductive biases.",
+    "RAW uses optimistic in-sample residual quantiles, without OOF calibration; failure cannot establish absent information.",
+    "Conditional intervals do not include full training-corpus or validation-selection uncertainty."
+  ]
+}

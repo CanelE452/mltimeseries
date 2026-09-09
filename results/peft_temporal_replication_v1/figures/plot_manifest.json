@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "verified_analysis_required": true,
+  "prediction_archives_opened": false,
+  "input_hashes": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\all_results.csv": "9455f1c8bc6d56e5babb31904420e80895689ef346b77ba6c96bab036507e14c",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\costs.json": "ddd0bb92d945e793c7dbc5f98126d2d7669e40a7407f171260344c2abe73f2c6",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\diagnostics.json": "63e07bc16c4a3826e86b5536e42f45a09c8d8cab9f1585a11148967e57b7a119",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\effects.json": "8a2bdd21a06f8ecfe5bfeebda56c3fc559cf2297489ef7a2a903c7150cd0db96",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\resource_summary.json": "a3a77a9721c090c0f9866aac6e3438fd325a6a073abb17672322f5c96239fce0",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\selected_results.csv": "cc54bb20521256a9571491120c090885630530ed519698d1241079763a4a7423",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\temporal_comparison.json": "5547cf70822ced5ffbd29161b9537f4a9c9b1499ad093e71252a3c20e8d8cfbc",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_temporal_replication_v1\\verification.json": "0f46ddb61ef050ef15046085c2408d267dae480fb2bb14d39ad2a186dd6b0b6c",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\verification.json": "25d9e0eb39efed660922bf4ebd026647b442884e7b26b651845f6d0d27e38f44",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\selected_results.csv": "36a744f9a659ef10e4682207a6ac6162a4509c23c0d3697277e5518a14a1242d",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_external_gap_v1\\effects.json": "acdf663db1455e8dbf5409613180c769b8f72e408e4fe743377cac14d7a67d9c",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_temporal_replication_v1\\plot.py": "6ccb6f4eb46b713f3ca729bb0f382e5f3a5faf8d44e781963268694ec6d0f20d",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_external_gap_v1\\plot.py": "881094853811a6e23c84428c64d1e449023d3a7be7458a6f8c167d60a09d59af",
+    "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_temporal_replication_v1\\analyse.py": "2ea7d21d9f9a70393afb5b02c4723b1f9a73d37d5ce5765806d50a4f3a0e19a1"
+  },
+  "figure_hashes": {
+    "01_scores_and_coverage.pdf": "25e39cb8856b24398190813c12b528317f775f9b8bcf8efb4e177073ea81640a",
+    "01_scores_and_coverage.png": "bebb9146f5a6569246e8d77e6036e13443727718cfe3e63b02ba7b62c750718a",
+    "02_primary_effect_and_block_sensitivity.pdf": "f4491bc7a10b742951c70929ef6401e04010f9bd0351501e6f34be78b4819229",
+    "02_primary_effect_and_block_sensitivity.png": "e310e4f576dcb95a79c2d6e210ff8981dcbd7882fcc80cbcbd640ad5a7430706",
+    "03_all_development_trajectories.pdf": "5a440178f9224f0dd53844291f00fc134ab05080812ba0bd1eb242754ba15b87",
+    "03_all_development_trajectories.png": "b76fb12a6aeedac01c1202e1390987ea745f82e73cc136a893be239436dde183",
+    "04_separate_temporal_replication.pdf": "dd66b3e80b62108df8712dad361113947af8e31a254951bc5f0b92764b1d4273",
+    "04_separate_temporal_replication.png": "9e9e43ac92ffc198320b9775f94ae9c6ff720a8d3ffd3de4cd9b6b7b0d907a89"
+  },
+  "selected_rows": 32,
+  "fit_trajectories": 28,
+  "temporal_comparison": "Two separate estimates on the same sources; no pooled estimate or new-source inference",
+  "seed_error_bars": "Sample SD across three fixed optimizer seeds; absent for single F0/RAW",
+  "effect_intervals": "Paired temporal 97.5% CI; 7-day primary, 3/14-day descriptive sensitivity",
+  "matplotlib_version": "3.11.1",
+  "numpy_version": "2.4.6",
+  "dpi": 300
+}

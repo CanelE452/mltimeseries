@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "all_rows": 24,
+  "selected_rows": 18,
+  "gpu_trials": 18,
+  "raw_fits": 3,
+  "oracle_rows": 3,
+  "source_plan_data_prior_s0_contract_matched": true,
+  "exact_trial_and_selection_keys": true,
+  "corpus0_validation_argmin_verified": true,
+  "lag_selector_train_hash_and_full_scores_reproduced": true,
+  "original_past_source_indices_verified": true,
+  "paired_initialization_sampler_verified": true,
+  "own_adaptation_checkpoint_and_native_cache_hashes_verified": true,
+  "saved_prediction_scores_recomputed": true,
+  "raw_train_only_ols_predictions_reproduced": true,
+  "shared_evaluation_arrays_verified": true,
+  "all_gpu_guards_exit0": true,
+  "analysis_sha256": "1fcfe386e5f0ed9991897b69cea20c3b6e6639881f8ba14339bfdea4d18265ae",
+  "artifacts": {
+    "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_3e-05": {
+      "result.json": "8ce248c34c40fe61488ada0969844e43af81a02ce7e3e84857f18654fb4aef8d",
+      "predictions.npz": "284a7bf7ee5b1f35aa989032ef442c73ce13e1fa47f0c2051fcfe8fd3fe291fe",
+      "best_adaptation.pt": "f0bbb3c254e1c46352d088f64728462af06d2bfb4442d3fafb05f06562c0c254"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_ATTN/lr_1e-04": {
+      "result.json": "e15f22e4ae7f1b3648191ea34d9b2eeaa494f4c23f2184f1642fb5478eecd202",
+      "predictions.npz": "8a97e14e2b27e7e37e643ae52c4dae33a3452dc636b750284c3c23ec75454203",
+      "best_adaptation.pt": "52652c7e4dd7c5ef251bc6a749b0b9f9921bc440802da242df3b4d4511b7e19d"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c0/ALIGN_F0/lr_1e-03": {
+      "result.json": "5874f383368102a6eb72b6dd0c5688200cfcde3b383a929bd84647800f92967b",
+      "predictions.npz": "d0b048773a29d0028e88086fa6a5f67cbf57a7fdf73cd42ae27e0c9a30628e51",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_3e-05": {
+      "result.json": "9d0324fc7b84032fdb317782d8fd2a61a4c795aa707857bb2559b166f8e426ae",
+      "predictions.npz": "a4d2132ebfa8f388e39ade0646eb7d3ab24711e3bcfff1bdeb74f1609e2d365a",
+      "best_adaptation.pt": "71fc6a41af5ada64ca4a7e553749cdd8b70a2a963cde3f371d19f32c53d64321"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c0/ATTN/lr_1e-04": {
+      "result.json": "f1f9fca943cd301f79c13974460b900c566810db28f41a9f804a95ea0c3b33f1",
+      "predictions.npz": "f364556311a7aa44c3245c59f9f47a3b67c42d8ec989c9611db57691e55b5ddc",
+      "best_adaptation.pt": "d19ce4d9e1917e4f8d833563bdb6598fdfd760ba94b71a4189531a90955c89e5"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c0/F0/lr_1e-03": {
+      "result.json": "5ca9f40fff476509a137a3e5b472e02a248c91b6c2457182c9bc3c8de13e3c92",
+      "predictions.npz": "3da1b0eba54abba5c7a76f3daa062d74016be83e05690658a49f3af19e72a9c7",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_ATTN/lr_3e-05": {
+      "result.json": "563a981360dc7dcc78992d847f9d6f60b8ed9798d457e59c2da0d5482e7818e6",
+      "predictions.npz": "5ec29b2d2d9947ce91c771150063f63ec239abf9cdff1966eb3ccc3167aced51",
+      "best_adaptation.pt": "c1df64cc4f9b7e8862d6080fb447d3f6003cc859be38f1bc078cd4b324a60568"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_ATTN/lr_1e-04": {
+      "result.json": "32119c7f3d4d7203e1b5c0548ede8f7fc39aef44c629d8e3f676af6e12201fe0",
+      "predictions.npz": "ea9f220ee5588a74f1fc1bb2959b04a9468e9b5d201243a583539bd3914498aa",
+      "best_adaptation.pt": "54691869ee3a7ceff507e2d31fdc1a351e6d0a63f2e860b6c6c4e1b7004a782d"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/ALIGN_F0/lr_1e-03": {
+      "result.json": "17670e09cba19fd2624e1f19b2ab519823cfe919caec85d240d0a8ea576df24a",
+      "predictions.npz": "17aabd2287e07bf30036a1a754bad32f72e47154ed7c2dca04d460235bf312e5",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/ATTN/lr_3e-05": {
+      "result.json": "aadc47598a376b346b138a4896707152cd52adc080a839aa23f12878a4d45b14",
+      "predictions.npz": "6e5e0e333bae621257c804c3b7f7a406e2e136c21ebf74399236413dabb2d4e3",
+      "best_adaptation.pt": "1ea64fe748a85f07c48df5db4a374c20f742f95d71c9772ccabde551b68e61b1"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/ATTN/lr_1e-04": {
+      "result.json": "6a805d9657acc4830904551a3d6a50a096661f7b88e5da1fbe93727b52777c0c",
+      "predictions.npz": "be9dd925b6d9fa393c7c320d11832ed24c52e0776c313ef8d1044a3323e0f027",
+      "best_adaptation.pt": "25fd42157f3a8a0b88ea0e6ff98d149fb2e1b6ac9e4c226df85f9368a207478a"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c1/F0/lr_1e-03": {
+      "result.json": "4b355c86309f199964cf03d6b87f69c5e6df901b37ec1888181763f2ff92b82e",
+      "predictions.npz": "cfbb5a30b8548a18fb8e67a2647edfc7999ce35067f1135a99b93466f036f15c",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_ATTN/lr_3e-05": {
+      "result.json": "00bfa92dbc144d35745154fdb961e2bad39206a15b70e995e34303eadb3b7e6a",
+      "predictions.npz": "b5690cfd41a06677bee0d67dd4dfcfb9c29a847a0e4e0a3b2d33b8beef4850fd",
+      "best_adaptation.pt": "8ed00fba89f5089c2c07bf092fd4e9fb482ee53616a1e42be23e7dfc4ceb9327"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_ATTN/lr_1e-04": {
+      "result.json": "946128c8b6e92f61d5699c25f92fb347f2c8dd1e1483d9effa558a08221ed207",
+      "predictions.npz": "59f2413bce98a56699314500d42e1aa9814be3ef30dcadd0944caeb1ed605a13",
+      "best_adaptation.pt": "f9a4fef67e124d3944d557f872d72447e3d384d7196131af5fca7d45ed6a07bb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/ALIGN_F0/lr_1e-03": {
+      "result.json": "a0783d4be77db8fe4894854528a9e0622ade265db0a16e520f2006386f70512b",
+      "predictions.npz": "ca27180c8f966eba13ce84a2e37e95855faae56a2480ef643bdbe372fd9a6e25",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/ATTN/lr_3e-05": {
+      "result.json": "f9ffa1881b854c0af8fbd007ee483adc32bb3af05da33874cedd193b3c496b37",
+      "predictions.npz": "dbdf4739a2193ac074a95371d2761f33398ebae2cce8494b7699ac441ba509e5",
+      "best_adaptation.pt": "1d18e7dbb4637ddc856a9ea7e2ee46013a5f007cf0b1cd18e0c620102ebe5a1b"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/ATTN/lr_1e-04": {
+      "result.json": "b755371b669e847ca597a468486f13738b835bc5e4ad11b6965034390e20bc81",
+      "predictions.npz": "1cd2396ceb71a5b6c639dbcb9a83be7537113a3205e36bd21dcadec55391290a",
+      "best_adaptation.pt": "e013871de8d38525f65233cefb95acb32a4be123e1d9c2798db4ed5b65b70f95"
+    },
+    "runs/peft_trainlag_v1/trials/Q00_c2/F0/lr_1e-03": {
+      "result.json": "7f8ec55d3a5dcf82a862b1a4620fa0f86d3b872dbc4ebf101a887cd77088902a",
+      "predictions.npz": "6abf23c05b5cb168fd4706b261e282c9039e0008088c4d6dd772a1b2a8eab9fe",
+      "best_adaptation.pt": "6b5795f647a6b4b62e1b80e17644a9f199216c48d2f93e37fb5fe0b1e08aa5cb"
+    },
+    "runs/peft_trainlag_v1/raw/Q00_c0": {
+      "result.json": "31b4092cc295b9e032d3bba6f5ed7d9b2a2b63698c818a47eea477ff65d2fd01",
+      "predictions.npz": "fc6ad138b066e4eb5a85262e817aa8d1b907380385e15dc87d7b42aaa4b236a1",
+      "analysis_provenance.json": "7c64c3ccbc5821c45f102028d8427e2c005845f6122b54624494206f332df0f2"
+    },
+    "runs/peft_trainlag_v1/raw/Q00_c1": {
+      "result.json": "e6a499f58cb5cb69d0c6c65f089b56c3d6071fd3e1854342a863caed5086eb73",
+      "predictions.npz": "c75da808aeedc9e7e3a536973df8a57aadb789f7fed67e3f5971366bd35f2a82",
+      "analysis_provenance.json": "89032f97fc21fac7d829c44c23a5e67698e27f5da7b8eca57b0f5f0df2f18732"
+    },
+    "runs/peft_trainlag_v1/raw/Q00_c2": {
+      "result.json": "b478b2fa288b418b227ee04c8352671128d7a40eb1d40f2dafb196c9ecd2ab95",
+      "predictions.npz": "ea09048fe82f7e92949a4336c4cc9cb306dd64eac91e0b4e8cb79af524840b89",
+      "analysis_provenance.json": "054621f6611e5db27f608dd515c7f29c36080244fb5a6a4a23cdf618afff5358"
+    }
+  },
+  "contract_sha256": "adbbe2f172a49521b68e3d548657bba3e22775b541adc31d9a1d3cdc890865db",
+  "outputs": {
+    "all_results.csv": "19d8f8beef87cc223a9ac9ab6d6f61b3e05c635f1da909c29a1801b78d89c73e",
+    "selected_results.csv": "5dbecc2ec949cca8277d49d7152d83689f890da715862b8dd753a19be1838dec",
+    "effects.json": "dc6b0b266d03a7f18a2f5937897168817509c0eb3f2f955838d8fc785de00a08",
+    "costs.json": "5c04641374c8c104f926925717f967043ce7aa9333d844c0dc6e48ceff1fc34d",
+    "resource_summary.json": "471c7ddbb13173614088879d9a456b220f7cb5a6ca2a3aa21aae0c672bec23f1"
+  }
+}

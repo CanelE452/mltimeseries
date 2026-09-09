@@ -1,0 +1,106 @@
+{
+  "kind": "frozen_causal_alignment_exploratory_diagnostic",
+  "conditions": [
+    "Q00",
+    "Q10",
+    "Q01",
+    "Q11"
+  ],
+  "corpus": 0,
+  "candidate_lags": [
+    32,
+    48,
+    64
+  ],
+  "validation_count": 128,
+  "evaluation_count": 512,
+  "selection": "Minimize raw mean 2-pinball over validation episodes; ties choose the smaller lag",
+  "validation_settings": 12,
+  "evaluation_settings": 4,
+  "optimizer_updates": 0,
+  "device": "cuda",
+  "weight_dtype": "float32",
+  "autocast": "bfloat16",
+  "autocast_weight_cache": false,
+  "tf32": false,
+  "micro_groups": 4,
+  "encoder_rows": 12,
+  "torch_threads": 2,
+  "interop_threads": 1,
+  "gpu_memory_fraction": 0.67,
+  "max_seconds": 240,
+  "bootstrap": {
+    "draws": 4000,
+    "seed": 2026090811,
+    "confidence": 0.9875,
+    "unit": "paired episode ID across all four conditions",
+    "family": "four condition contrasts"
+  },
+  "source_indices": {
+    "32": {
+      "past_valid_min": 0,
+      "past_valid_max": 223,
+      "known_future_min": 224,
+      "known_future_max": 239,
+      "dropped_latest_driver_observations": 16
+    },
+    "48": {
+      "past_valid_min": 0,
+      "past_valid_max": 207,
+      "known_future_min": 208,
+      "known_future_max": 223,
+      "dropped_latest_driver_observations": 32
+    },
+    "64": {
+      "past_valid_min": 0,
+      "past_valid_max": 191,
+      "known_future_min": 192,
+      "known_future_max": 207,
+      "dropped_latest_driver_observations": 48
+    }
+  },
+  "hashes": {
+    "source": {
+      "diagnose_alignment.py": "1b51c4e4d6e0af39169827ec66c14cdb246b9722ad29909b53e1b64e93031870",
+      "shift_train.py": "1250abd9f34f6b054dd730e527180e5b1a318d0d2279b4c08dd4a99cc71a3e8d",
+      "chronos_model.py": "13ed6b3e1010e1b60fad45cd078da5ff1cda23cdfcaf9055a996276219d9e3c1",
+      "chronos_layers.py": "73493f306ecfaa21fa57636ff46321ccb5d50ded02a382598cf759dbfc9dd60f",
+      "scope_modeling.py": "35db520cb7b9a832f70b8c0f12b6bd22f848973817766e40e482c231eb44ecbf",
+      "diagnostic_addendum.md": "90419727fe8b9d700585660e2d922422e7880f48f9673cfc797fefe9853b536b"
+    },
+    "data": {
+      "Q00": "4fe3185ebe05b874d7d3dbfff52daf98ee0d0bb834f7222855bcc78f0bf376c7",
+      "Q10": "59f320c244a5ed835a2c039e6608058d6fd34ac6389e2d01aa4ab989c40481dc",
+      "Q01": "6a2fd81adcdf6cba56f414aef2668557ca4a668c0777f2a052138c56dc2c32b2",
+      "Q11": "653d289768ddd62bb8925b3bb8cc45bd18bc336208ab77b4caffde52c667d6a9"
+    },
+    "original_f0_predictions": {
+      "Q00": "0c7daee01dae6a61d3877de136450fc284d9eeb922f19b65f2d47bb11df73aa6",
+      "Q10": "debcbbfec3dfa7483d7be1161731ac470ea59e7fe130b86f50a174ffdfd6f8a9",
+      "Q01": "e9e3ca9d622e1c42739c10a9acdc1708d213d345c6b9f7fc5181837185640daa",
+      "Q11": "453792bdf22d5818a8351add55ef953549b4ad4e0e206f2d964e744dbc2ac286"
+    },
+    "original_f0_results": {
+      "Q00": "6e4ceff441b6f65d7da169ecad73237cf173eb8cddff88d0fc6eb0f45b41f036",
+      "Q10": "c95de746d348bfeb2b05084e4a0dfafc4f39685f76b173ea9fd909d9fdcea952",
+      "Q01": "dd720a759d89925db0f6301f3f1b7f2c6c5e7d71dc7d069463fea5d090cad774",
+      "Q11": "62a6dce84c60841f4843145d69b58b1f02586442019dc16bb5e143ee965d4b16"
+    },
+    "original_completed": "37c4eead366b24fbdb6212605c2fbe54c8ead82bba7619f1a53bb6b3838bf911",
+    "original_selected": "14fbe9757c60ceeac1f93c797ac02d9df68e4725adaee217bc2a4694a0b97463",
+    "original_contract": "1244b71bd8d43d5c0093a82940d531538871df49d0393fe04aa497c17e1d52ee",
+    "checkpoint_config": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "checkpoint_weights": {
+      "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+    }
+  },
+  "limitations": [
+    "Exploratory follow-up inference diagnostic after the original development study; not a new PEFT method or confirmatory mechanism test.",
+    "The candidate set 32/48/64 uses generator knowledge and includes the true driver lag 48.",
+    "The intervention jointly retimes U/V, pads the earliest context, drops the latest lag-minus-16 original driver observations, changes U/V context normalization, and uses the known-future-covariate path.",
+    "Jointly retiming U/V does not add channel identity or remove the model's exact-arithmetic U/V-swap symmetry.",
+    "No originally future U/V or Y values are supplied. Y past is unchanged; Y future covariates are masked out.",
+    "One frozen pretrained model and one shared evaluation episode set are used; these are not three independently fitted repetitions.",
+    "Paired uncertainty is conditional on the validation-selected lag and this generator family, excluding validation-selection uncertainty."
+  ]
+}

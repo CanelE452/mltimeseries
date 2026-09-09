@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "raw archive/schema/interval checks only; derived causal coverage is checked separately",
+  "source_sha256": "c8f53029db39bf2486f6c5cce05880e7afc9382db0c45273ed2d97b362a7ecb5",
+  "series": {
+    "PAYEMS": {
+      "csv_rows": 6161,
+      "event_months": 421,
+      "event_start": "1989-12-01",
+      "event_end": "2024-12-01",
+      "requested_vintages_including_boundaries": 431,
+      "earliest_record_start": "1990-01-05",
+      "latest_record_start": "2025-03-07",
+      "open_ended_intervals": 210,
+      "finite_ends_after_cutoff": 211,
+      "overlapping_intervals": 0,
+      "internal_interval_gaps": 0,
+      "invalid_levels": 0,
+      "readme_vintage_selection_verified": true,
+      "csv_sha256": "243ed793f666047a6a6bbf68f7c3a3ee449f94ad85d15013a77efd58ec4b1b48"
+    },
+    "INDPRO": {
+      "csv_rows": 8925,
+      "event_months": 421,
+      "event_start": "1989-12-01",
+      "event_end": "2024-12-01",
+      "requested_vintages_including_boundaries": 454,
+      "earliest_record_start": "1990-01-17",
+      "latest_record_start": "2025-06-17",
+      "open_ended_intervals": 0,
+      "finite_ends_after_cutoff": 421,
+      "overlapping_intervals": 0,
+      "internal_interval_gaps": 0,
+      "invalid_levels": 0,
+      "readme_vintage_selection_verified": true,
+      "csv_sha256": "1ecd58322543f1cdd7b788950eb92106b9468fea6a83438584339220498c182e"
+    }
+  }
+}

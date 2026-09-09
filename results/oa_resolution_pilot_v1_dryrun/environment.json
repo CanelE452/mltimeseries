@@ -1,0 +1,14 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.13.0+cu126",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "vram_bytes": 12878086144,
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "git_commit": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+  "git_branch": "oa-resolution-pilot-v1",
+  "git_status_dirty": true,
+  "started_utc": "2026-09-06T07:10:06Z"
+}

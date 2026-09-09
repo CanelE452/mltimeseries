@@ -1,0 +1,307 @@
+{
+  "primary": {
+    "attention_deletion_penalty": {
+      "value": 0.06461513901957866,
+      "corpus_values": [
+        0.05906637115087495,
+        0.06298550284859047,
+        0.07179354305927056
+      ],
+      "ci": [
+        0.05318288686558824,
+        0.07568982033483279
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+      "decision": "repeated_practical_harm"
+    },
+    "output_deletion_penalty": {
+      "value": -0.0004156486613768542,
+      "corpus_values": [
+        -0.0006540015279178962,
+        -0.0002128500713735311,
+        -0.00038009438483913515
+      ],
+      "ci": [
+        -0.0005170581816710846,
+        -0.00030886493519061993
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+      "decision": "conditional_practical_equivalence"
+    },
+    "lr_by_method": {
+      "OUT_ONLY": 3e-05,
+      "ATTN_ONLY": 3e-05
+    },
+    "definition": {
+      "attention_deletion_penalty": "(S_OUT_ONLY - S_BOTH) / S_F0",
+      "output_deletion_penalty": "(S_ATTN_ONLY - S_BOTH) / S_F0",
+      "positive_value": "the ablated method is worse than BOTH relative to F0"
+    }
+  },
+  "secondary": {
+    "attention_deletion_penalty": {
+      "value": 0.06461513901957866,
+      "corpus_values": [
+        0.05906637115087495,
+        0.06298550284859047,
+        0.07179354305927056
+      ],
+      "ci": [
+        0.05318288686558824,
+        0.07568982033483279
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+      "decision": "repeated_practical_harm"
+    },
+    "output_deletion_penalty": {
+      "value": -0.0004156486613768542,
+      "corpus_values": [
+        -0.0006540015279178962,
+        -0.0002128500713735311,
+        -0.00038009438483913515
+      ],
+      "ci": [
+        -0.0005170581816710846,
+        -0.00030886493519061993
+      ],
+      "confidence": 0.975,
+      "scope": "paired evaluation episodes conditional on three fitted corpus/optimizer repetitions",
+      "decision": "conditional_practical_equivalence"
+    },
+    "lr_by_method": {
+      "OUT_ONLY": 3e-05,
+      "ATTN_ONLY": 3e-05
+    },
+    "definition": {
+      "attention_deletion_penalty": "(S_OUT_ONLY - S_BOTH) / S_F0",
+      "output_deletion_penalty": "(S_ATTN_ONLY - S_BOTH) / S_F0",
+      "positive_value": "the ablated method is worse than BOTH relative to F0"
+    }
+  },
+  "choices": {
+    "primary_fixed_lr": {
+      "OUT_ONLY": 3e-05,
+      "ATTN_ONLY": 3e-05
+    },
+    "secondary_corpus0_validation": {
+      "OUT_ONLY": {
+        "lr": 3e-05,
+        "candidates": [
+          {
+            "corpus": 0,
+            "method": "OUT_ONLY",
+            "lr": 3e-05,
+            "path": "runs/peft_module_ablation_v1/trials/Q00_c0/OUT_ONLY/lr_3e-05",
+            "val_score": 0.5271084163377986
+          },
+          {
+            "corpus": 0,
+            "method": "OUT_ONLY",
+            "lr": 0.0001,
+            "path": "runs/peft_module_ablation_v1/trials/Q00_c0/OUT_ONLY/lr_1e-04",
+            "val_score": 0.5271084163377986
+          }
+        ]
+      },
+      "ATTN_ONLY": {
+        "lr": 3e-05,
+        "candidates": [
+          {
+            "corpus": 0,
+            "method": "ATTN_ONLY",
+            "lr": 3e-05,
+            "path": "runs/peft_module_ablation_v1/trials/Q00_c0/ATTN_ONLY/lr_3e-05",
+            "val_score": 0.5023412066898202
+          },
+          {
+            "corpus": 0,
+            "method": "ATTN_ONLY",
+            "lr": 0.0001,
+            "path": "runs/peft_module_ablation_v1/trials/Q00_c0/ATTN_ONLY/lr_1e-04",
+            "val_score": 0.5050231892539794
+          }
+        ]
+      }
+    }
+  },
+  "descriptive_f0_relative_scores": [
+    {
+      "method": "F0",
+      "corpus": 0,
+      "lr": 0.001,
+      "score": 0.5310676844835602,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": 0.0,
+      "origin": "reused"
+    },
+    {
+      "method": "BOTH",
+      "corpus": 0,
+      "lr": 3e-05,
+      "score": 0.49969944352561846,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.05906637115087505,
+      "origin": "reused"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 0,
+      "lr": 3e-05,
+      "score": 0.5310676844835602,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": 0.0,
+      "origin": "new"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 0,
+      "lr": 0.0001,
+      "score": 0.5310676844835602,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": 0.0,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 0,
+      "lr": 3e-05,
+      "score": 0.4993521244485384,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.05972037267879296,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 0,
+      "lr": 0.0001,
+      "score": 0.5008783869436919,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.056846421693359246,
+      "origin": "new"
+    },
+    {
+      "method": "F0",
+      "corpus": 1,
+      "lr": 0.001,
+      "score": 0.5310676844835602,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": 0.0,
+      "origin": "reused"
+    },
+    {
+      "method": "BOTH",
+      "corpus": 1,
+      "lr": 3e-05,
+      "score": 0.4976040728712191,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.06301195231806093,
+      "origin": "reused"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 1,
+      "lr": 3e-05,
+      "score": 0.5310536380250528,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -2.644946947036247e-05,
+      "origin": "new"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 1,
+      "lr": 0.0001,
+      "score": 0.5310447724393768,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -4.314335978804133e-05,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 1,
+      "lr": 3e-05,
+      "score": 0.4974910350766726,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.06322480238943451,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 1,
+      "lr": 0.0001,
+      "score": 0.49003363652746534,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.07726707754021726,
+      "origin": "new"
+    },
+    {
+      "method": "F0",
+      "corpus": 2,
+      "lr": 0.001,
+      "score": 0.5310676844835602,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": 0.0,
+      "origin": "reused"
+    },
+    {
+      "method": "BOTH",
+      "corpus": 2,
+      "lr": 3e-05,
+      "score": 0.4929085385836065,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.07185363940391479,
+      "origin": "reused"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 2,
+      "lr": 3e-05,
+      "score": 0.5310357692569642,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -6.009634464410098e-05,
+      "origin": "new"
+    },
+    {
+      "method": "OUT_ONLY",
+      "corpus": 2,
+      "lr": 0.0001,
+      "score": 0.531035990899323,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -5.9678992270240624e-05,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 2,
+      "lr": 3e-05,
+      "score": 0.49270668273876483,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.07223373378875382,
+      "origin": "new"
+    },
+    {
+      "method": "ATTN_ONLY",
+      "corpus": 2,
+      "lr": 0.0001,
+      "score": 0.49153138002524244,
+      "f0_score": 0.5310676844835602,
+      "relative_to_f0": -0.07444682780268413,
+      "origin": "new"
+    }
+  ],
+  "bootstrap": {
+    "replicates": 4000,
+    "confidence_per_contrast": 0.975,
+    "family_size": 2,
+    "seed": 2026090809,
+    "paired_episode_count": 512
+  },
+  "delta": 0.01,
+  "interpretation_limits": [
+    "The intervals are conditional on the three fitted corpus/optimizer repetitions.",
+    "The exploratory self/U/V coefficients are OLS projections of median forecasts, not module mechanisms.",
+    "This Q00 module-deletion result does not establish an equal-parameter model ranking."
+  ]
+}

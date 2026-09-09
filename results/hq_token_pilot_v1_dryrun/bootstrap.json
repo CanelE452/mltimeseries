@@ -1,0 +1,16 @@
+{
+  "draws": 50,
+  "bootstrap_seed": 2026090699,
+  "block_origins": 15,
+  "effective_blocks": {
+    "ETTm2": 8,
+    "weather": 8,
+    "electricity": 4
+  },
+  "macro_mean": -0.005110746568718608,
+  "lower95": -0.0061494641936895205,
+  "upper95": -0.004207241166589252,
+  "flags": [
+    "LOW_EFFECTIVE_TIME_BLOCKS:electricity:4"
+  ]
+}

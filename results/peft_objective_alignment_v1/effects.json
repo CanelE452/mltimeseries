@@ -1,0 +1,2915 @@
+{
+  "completed": true,
+  "sources": {
+    "bike": {
+      "SORT": {
+        "NORM_ALIGNED_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -0.0021760009517859578,
+              "ci": [
+                -0.006435056593709143,
+                0.0017811017667339394
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -0.0021760009517859578,
+              "ci": [
+                -0.006803376045054664,
+                0.0014188823131661007
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -0.0021760009517859578,
+              "ci": [
+                -0.0053926900544960235,
+                0.001530965923874716
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.005497654811002887,
+                "ci": [
+                  -0.013082369418886228,
+                  0.0010720733418193326
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.005497654811002887,
+                "ci": [
+                  -0.013042910427499128,
+                  0.0008905842885843321
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.005497654811002887,
+                "ci": [
+                  -0.0103697961107698,
+                  0.0009986829857890939
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.001422050316892818,
+                "ci": [
+                  -0.002029736084282802,
+                  0.004430061951148293
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.001422050316892818,
+                "ci": [
+                  -0.0023518381300662297,
+                  0.003308902173047955
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.001422050316892818,
+                "ci": [
+                  -0.0025874842186762977,
+                  0.0029583142600752878
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.0036833017575142587,
+              "ci": [
+                -0.00978333366242524,
+                0.001207883325900559
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.0002280786904347685,
+              "ci": [
+                -0.003990892820523158,
+                0.00506858758488695
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_NORM_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -4.244958813560882e-05,
+              "ci": [
+                -0.0003272927140712123,
+                0.00021181658614376257
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -4.244958813560882e-05,
+              "ci": [
+                -0.0003053777634373907,
+                0.00019422274356363173
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -4.244958813560882e-05,
+              "ci": [
+                -0.00026743246253183977,
+                0.0001770587966711003
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.00022033407079713804,
+                "ci": [
+                  -0.00011701237041504783,
+                  0.0005938702883545631
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.00022033407079713804,
+                "ci": [
+                  -9.12892315259633e-05,
+                  0.0005311479256841264
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.00022033407079713804,
+                "ci": [
+                  -7.248541244785185e-05,
+                  0.0004699044675159204
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.0003270996803744076,
+                "ci": [
+                  -0.0007066412038332084,
+                  1.2457694730751295e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.0003270996803744076,
+                "ci": [
+                  -0.0006425687479836528,
+                  6.235980092788686e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.0003270996803744076,
+                "ci": [
+                  -0.0005455898479339518,
+                  2.9014157554423837e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.000147688370577924,
+              "ci": [
+                -0.0005729546670603326,
+                0.0001485054413319341
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.00012540172162313958,
+              "ci": [
+                -0.00012078850907762651,
+                0.0004033686955739261
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -0.0022184505399215665,
+              "ci": [
+                -0.00650784972650818,
+                0.0017353365185099824
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -0.0022184505399215665,
+              "ci": [
+                -0.006796128155543206,
+                0.0013709281846485397
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -0.0022184505399215665,
+              "ci": [
+                -0.005455347285930984,
+                0.0013793702797758047
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.0052773207402057485,
+                "ci": [
+                  -0.012899528454310267,
+                  0.0013003538548524217
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.0052773207402057485,
+                "ci": [
+                  -0.01292855534003805,
+                  0.0010872002433148819
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.0052773207402057485,
+                "ci": [
+                  -0.01020457293338748,
+                  0.0011374416406130445
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0010949506365184102,
+                "ci": [
+                  -0.002307463108612368,
+                  0.003971478368420293
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0010949506365184102,
+                "ci": [
+                  -0.002505006599286635,
+                  0.0028777526012501243
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0010949506365184102,
+                "ci": [
+                  -0.0026553389868998055,
+                  0.002520847404442428
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.003830990128092183,
+              "ci": [
+                -0.009883448686807385,
+                0.0009234753406915658
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.00035348041205790807,
+              "ci": [
+                -0.003910118151072006,
+                0.005367082598621725
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        }
+      },
+      "QCAL": {
+        "NORM_ALIGNED_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -0.002133169823295724,
+              "ci": [
+                -0.006182948326398724,
+                0.0012296859890134745
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -0.002133169823295724,
+              "ci": [
+                -0.006357403338138224,
+                0.0011188710611688304
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -0.002133169823295724,
+              "ci": [
+                -0.005253596270371529,
+                0.0012547703761168136
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.005258872841721413,
+                "ci": [
+                  -0.012338350441837825,
+                  0.0005072554880842353
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.005258872841721413,
+                "ci": [
+                  -0.012066978997068418,
+                  0.00037862795392669277
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.005258872841721413,
+                "ci": [
+                  -0.009812433109693793,
+                  0.0006094841609776456
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0012394139045797566,
+                "ci": [
+                  -0.0019131093250309588,
+                  0.0037759401005604183
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0012394139045797566,
+                "ci": [
+                  -0.0025712738254200255,
+                  0.002967374228462204
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0012394139045797566,
+                "ci": [
+                  -0.0028153374576579543,
+                  0.0026117907797433572
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.0035423026941854285,
+              "ci": [
+                -0.009221861454055232,
+                0.0005675487416385525
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.00012371922755504975,
+              "ci": [
+                -0.003752139055130794,
+                0.004458880354181438
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_NORM_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": 3.568624113209421e-05,
+              "ci": [
+                -0.00023044036570408406,
+                0.0002667514754681468
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": 3.568624113209421e-05,
+              "ci": [
+                -0.0001870964866256284,
+                0.0002692087531602765
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": 3.568624113209421e-05,
+              "ci": [
+                -0.000160502015108803,
+                0.0002715334512053895
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0002841943883365736,
+                "ci": [
+                  -4.41898210945584e-05,
+                  0.0006759267550792392
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0002841943883365736,
+                "ci": [
+                  -2.273190776056222e-05,
+                  0.0006000279402540499
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0002841943883365736,
+                "ci": [
+                  -1.772143402725612e-05,
+                  0.0005389601838415224
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -0.00023245008806084931,
+                "ci": [
+                  -0.0005907180264877902,
+                  0.0001106340865025569
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.00023245008806084931,
+                "ci": [
+                  -0.0005299986233662028,
+                  0.00021474301063984967
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.00023245008806084931,
+                "ci": [
+                  -0.00040842499890300144,
+                  0.0001819945756581687
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -3.3892435176443167e-05,
+              "ci": [
+                -0.0004151523384323063,
+                0.0003166650815072675
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.00014712452773809476,
+              "ci": [
+                -0.00010199230108449621,
+                0.0004242007795410177
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -0.0020974835821636296,
+              "ci": [
+                -0.006154908891530884,
+                0.0012710907568937936
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -0.0020974835821636296,
+              "ci": [
+                -0.006323871177501847,
+                0.0011581742658955036
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -0.0020974835821636296,
+              "ci": [
+                -0.005204904207172035,
+                0.001196762117744756
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -0.00497467845338484,
+                "ci": [
+                  -0.012103159240291433,
+                  0.0007695288366025476
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -0.00497467845338484,
+                "ci": [
+                  -0.011860711558862248,
+                  0.0006424621544728734
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -0.00497467845338484,
+                "ci": [
+                  -0.009600251727321995,
+                  0.0008057139832871611
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0010069638165189072,
+                "ci": [
+                  -0.0020016961406864806,
+                  0.0034384608573104474
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0010069638165189072,
+                "ci": [
+                  -0.0025434385696408274,
+                  0.002637791413205619
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0010069638165189072,
+                "ci": [
+                  -0.002726184508921735,
+                  0.0023165541555775185
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.0035761951293618714,
+              "ci": [
+                -0.009209578160037275,
+                0.0004585478662127398
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.00027084375529314454,
+              "ci": [
+                -0.0036727283605797923,
+                0.004769119809115862
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        }
+      }
+    },
+    "household": {
+      "SORT": {
+        "NORM_ALIGNED_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": 0.0012192436218250462,
+              "ci": [
+                -0.0005255710106372995,
+                0.002789854221836682
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": 0.0012192436218250462,
+              "ci": [
+                -0.0005905506125031087,
+                0.002554680839707512
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": 0.0012192436218250462,
+              "ci": [
+                -0.0004703188653145631,
+                0.002123659743800438
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.0006492371026022081,
+                "ci": [
+                  -0.001495595182859015,
+                  0.0024967759514565252
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0006492371026022081,
+                "ci": [
+                  -0.0013370029700110148,
+                  0.002062684179525559
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0006492371026022081,
+                "ci": [
+                  -0.0014485850881783087,
+                  0.001751985188335632
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0017976640808335408,
+                "ci": [
+                  -0.00029275740633746383,
+                  0.003602711235716732
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0017976640808335408,
+                "ci": [
+                  -0.00017152753571176421,
+                  0.0032977405976915113
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0017976640808335408,
+                "ci": [
+                  0.00022224807933731567,
+                  0.0028483438489399857
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": 0.0008864857973131892,
+              "ci": [
+                -0.0013364005966479088,
+                0.002928512759355609
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.001418883556866262,
+              "ci": [
+                -0.0005142721002735855,
+                0.002681549463067728
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_NORM_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -3.89573249056631e-05,
+              "ci": [
+                -0.00011596552153247941,
+                3.9887612096093937e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -3.89573249056631e-05,
+              "ci": [
+                -0.000109872634689215,
+                3.3245217877061164e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -3.89573249056631e-05,
+              "ci": [
+                -9.365900387897622e-05,
+                3.70996544407595e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -7.734783176768204e-05,
+                "ci": [
+                  -0.00019245008256450497,
+                  4.2100193058279615e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -7.734783176768204e-05,
+                "ci": [
+                  -0.00018995750406665304,
+                  3.208975083878222e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -7.734783176768204e-05,
+                "ci": [
+                  -0.00016471719607874245,
+                  4.273160394994457e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": -1.3081835048259163e-10,
+                "ci": [
+                  -9.02023324659892e-05,
+                  9.081192027802494e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -1.3081835048259163e-10,
+                "ci": [
+                  -8.553573699877805e-05,
+                  0.0001074549170996529
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -1.3081835048259163e-10,
+                "ci": [
+                  -8.423614753685776e-05,
+                  9.880902464446359e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -6.533504148638714e-05,
+              "ci": [
+                -0.00017918239087118834,
+                3.610529175090005e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": -2.313186495651063e-05,
+              "ci": [
+                -9.969891425666154e-05,
+                5.301391757156961e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": 0.0011802862969193832,
+              "ci": [
+                -0.0005639434665829144,
+                0.0027543420026053195
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": 0.0011802862969193832,
+              "ci": [
+                -0.0006327328086955242,
+                0.002479045409999048
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": 0.0011802862969193832,
+              "ci": [
+                -0.0004870825991051689,
+                0.0020576570429176916
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": 0.000571889270834526,
+                "ci": [
+                  -0.0015712042352918844,
+                  0.002421086767136145
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.000571889270834526,
+                "ci": [
+                  -0.0014110196561294172,
+                  0.0019734436452898386
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.000571889270834526,
+                "ci": [
+                  -0.001488854042058939,
+                  0.001661952086677778
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0017976639500151903,
+                "ci": [
+                  -0.00027993864514815016,
+                  0.0035989615823024002
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0017976639500151903,
+                "ci": [
+                  -0.0001473246306580921,
+                  0.0032679911933289623
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0017976639500151903,
+                "ci": [
+                  0.0002381533634473554,
+                  0.0028168732807769448
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": 0.0008211507558268021,
+              "ci": [
+                -0.0014296797142569339,
+                0.0028463649986084673
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.0013957516919097515,
+              "ci": [
+                -0.0005418955601376083,
+                0.002675220847135415
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        }
+      },
+      "QCAL": {
+        "NORM_ALIGNED_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": 0.0005333576602976727,
+              "ci": [
+                -0.0010058335005304238,
+                0.0019566447902244245
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": 0.0005333576602976727,
+              "ci": [
+                -0.0012961207186740523,
+                0.0017829952904961474
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": 0.0005333576602976727,
+              "ci": [
+                -0.0011368151791973646,
+                0.001527397786611101
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -4.103400827337921e-05,
+                "ci": [
+                  -0.0018639092654723416,
+                  0.0015124104281728206
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -4.103400827337921e-05,
+                "ci": [
+                  -0.0020197559676274467,
+                  0.0013373807334790331
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -4.103400827337921e-05,
+                "ci": [
+                  -0.0020484583898151246,
+                  0.0012002987362851423
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.0011164612543754053,
+                "ci": [
+                  -0.0008398990947389705,
+                  0.0027847528023915652
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.0011164612543754053,
+                "ci": [
+                  -0.0009087556993168812,
+                  0.002564687231529572
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.0011164612543754053,
+                "ci": [
+                  -0.0005130280277891147,
+                  0.002105280473141025
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.0003729078861562891,
+              "ci": [
+                -0.0022594815789945977,
+                0.0013991552359363044
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.0010716450032416047,
+              "ci": [
+                -0.001051502535231689,
+                0.0023946100348329995
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_NORM_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": -2.1210332550225786e-05,
+              "ci": [
+                -0.00010309642297379742,
+                5.6933755462087315e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": -2.1210332550225786e-05,
+              "ci": [
+                -9.489948677350521e-05,
+                5.099696511303914e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": -2.1210332550225786e-05,
+              "ci": [
+                -8.136650357223408e-05,
+                6.781839396255392e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -5.6669464167210265e-05,
+                "ci": [
+                  -0.00017955509535989795,
+                  6.077678549565799e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -5.6669464167210265e-05,
+                "ci": [
+                  -0.0001716598007814098,
+                  5.251682433960403e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -5.6669464167210265e-05,
+                "ci": [
+                  -0.0001472517564060449,
+                  7.78818500695766e-05
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 1.4786615560598777e-05,
+                "ci": [
+                  -7.071008356661175e-05,
+                  0.00010173683596756385
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 1.4786615560598777e-05,
+                "ci": [
+                  -6.686370299643609e-05,
+                  0.00011428148583880267
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 1.4786615560598777e-05,
+                "ci": [
+                  -4.951680505037308e-05,
+                  0.00011367647567947115
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.00020513381156671542,
+              "ci": [
+                -0.00031769112719373736,
+                -9.452681622321653e-05
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 8.803323431806907e-05,
+              "ci": [
+                6.343049894004432e-06,
+                0.0001662781445711821
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        },
+        "NATIVE_vs_RAW_ALIGNED": {
+          "daily": {
+            "3": {
+              "value": 0.0005121473277474469,
+              "ci": [
+                -0.0010508548279959259,
+                0.0019320238238894106
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 3,
+              "stride_days": 1,
+              "block_origins": 3,
+              "target_span_days": 4,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "7": {
+              "value": 0.0005121473277474469,
+              "ci": [
+                -0.001330341618378977,
+                0.0017608830360733444
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            "14": {
+              "value": 0.0005121473277474469,
+              "ci": [
+                -0.0011231011939398588,
+                0.001493672059117114
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 14,
+              "stride_days": 1,
+              "block_origins": 14,
+              "target_span_days": 15,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          },
+          "nonoverlapping": {
+            "even": {
+              "3": {
+                "value": -9.770347244058947e-05,
+                "ci": [
+                  -0.0019078291325216232,
+                  0.0014613800389232092
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": -9.770347244058947e-05,
+                "ci": [
+                  -0.0020905371700350862,
+                  0.0012560704221493966
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": -9.770347244058947e-05,
+                "ci": [
+                  -0.002054820661312797,
+                  0.001142008205159251
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 42,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            },
+            "odd": {
+              "3": {
+                "value": 0.001131247869936004,
+                "ci": [
+                  -0.0008345791033233222,
+                  0.0028027563338307326
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 3,
+                "stride_days": 2,
+                "block_origins": 2,
+                "target_span_days": 4,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "7": {
+                "value": 0.001131247869936004,
+                "ci": [
+                  -0.0008567316895692684,
+                  0.0025558033815618188
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 7,
+                "stride_days": 2,
+                "block_origins": 4,
+                "target_span_days": 8,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              },
+              "14": {
+                "value": 0.001131247869936004,
+                "ci": [
+                  -0.0004468334226698695,
+                  0.0020971073350074753
+                ],
+                "confidence": 0.975,
+                "bootstrap_seed": 2026090815,
+                "requested_resamples": 4000,
+                "valid_resamples": 4000,
+                "discarded_resamples": 0,
+                "requested_block_days": 14,
+                "stride_days": 2,
+                "block_origins": 7,
+                "target_span_days": 14,
+                "origin_count": 41,
+                "positive_means": "left objective has greater forecast loss than right objective",
+                "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation",
+                "origin_indexing": "zero-based",
+                "target_windows_overlap": false,
+                "inferential_role": "descriptive sensitivity; context overlap and serial dependence remain"
+              }
+            }
+          },
+          "by_target": [
+            {
+              "value": -0.0005780416977230045,
+              "ci": [
+                -0.002518663972275912,
+                0.0012203909448405502
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            },
+            {
+              "value": 0.0011596782375596737,
+              "ci": [
+                -0.0009655457215088404,
+                0.0024859626839790305
+              ],
+              "confidence": 0.975,
+              "bootstrap_seed": 2026090815,
+              "requested_resamples": 4000,
+              "valid_resamples": 4000,
+              "discarded_resamples": 0,
+              "requested_block_days": 7,
+              "stride_days": 1,
+              "block_origins": 7,
+              "target_span_days": 8,
+              "origin_count": 83,
+              "positive_means": "left objective has greater forecast loss than right objective",
+              "scope": "Conditional date uncertainty for saved seed12000 fits on previously consumed development blocks; excludes training uncertainty and is not independent confirmation"
+            }
+          ],
+          "inferential_role": "Primary only for SORT NORM_ALIGNED versus RAW_ALIGNED, two-target macro, daily seven-day blocks; otherwise descriptive"
+        }
+      }
+    }
+  },
+  "gate": {
+    "decision": "CLOSE_CURRENT_OBJECTIVE_ALIGNMENT_SCREEN",
+    "both_source_lower_bounds_exceed_one_percent": false,
+    "source_checks": {
+      "bike": false,
+      "household": false
+    },
+    "threshold": 0.01,
+    "new_method_demonstrated": false,
+    "scope": "Two reused development blocks, LR3e-5, seed12000 and 200 updates; neither a novel PEFT success nor a universal statement about transformed losses"
+  },
+  "bootstrap_seed": 2026090815,
+  "primary_confidence_each": 0.975,
+  "primary_family_size": 2,
+  "primary_procedure": "SORT",
+  "primary_comparison": "NORM_ALIGNED_vs_RAW_ALIGNED",
+  "primary_block_days": 7,
+  "secondary_scope": "QCAL, NATIVE comparisons, per-target, 3/14-day and parity intervals are descriptive; no additional family-wide guarantee"
+}

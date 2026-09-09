@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "metrics_sha256": "59a8395cbe111005e47857b22f288e43cb8b2145a05dad4d6481de7e9b16cb7a",
+  "source_sha256": "20eaaf2cabc64006132617b94f0c80cf3f7610f0e3af15646c543318456019f3",
+  "figure_hashes": {
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_coarse_supervision_v1\\figures\\coarse_supervision.png": "e905064ae1e76a0e9bbf67e529acc3d755d6bf9319c2e8fd530a5a121ab27bb2",
+    "E:\\CODING\\proj\\mltimeseries\\results\\peft_coarse_supervision_v1\\figures\\coarse_supervision.pdf": "2ee2285e4ca207e8910e2ce4db101ffb6aba1d37264b1db2dc44373aa79b35db"
+  }
+}

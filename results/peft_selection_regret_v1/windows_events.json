@@ -1,0 +1,28 @@
+{
+  "end": "2026-09-08T17:21:46.3627163+09:00",
+  "start": "2026-09-08T17:04:32.0000000",
+  "groups": [
+    {
+      "count": 0,
+      "ids": [
+        1000,
+        1002
+      ],
+      "log": "Application",
+      "events": []
+    },
+    {
+      "count": 0,
+      "ids": [
+        41,
+        4101,
+        153,
+        2004
+      ],
+      "log": "System",
+      "events": []
+    }
+  ],
+  "queried_at": "2026-09-08T17:21:46.3627163+09:00",
+  "scope": "Application crashes/hangs and selected System events during study14; no causal or future stability guarantee"
+}

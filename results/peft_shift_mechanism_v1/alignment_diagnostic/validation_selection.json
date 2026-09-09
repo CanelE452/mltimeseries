@@ -1,0 +1,78 @@
+{
+  "completed": true,
+  "stage": "validation_selection_locked",
+  "evaluation_started": false,
+  "validation_scores": {
+    "Q00": {
+      "32": 0.5120034293821052,
+      "48": 0.4573953278788566,
+      "64": 0.5273770043930095
+    },
+    "Q10": {
+      "32": 0.5100297904942535,
+      "48": 0.44655577678145475,
+      "64": 0.5335764093178357
+    },
+    "Q01": {
+      "32": 0.5201087705675722,
+      "48": 0.4724795156506173,
+      "64": 0.5321233751545807
+    },
+    "Q11": {
+      "32": 0.5169551118044016,
+      "48": 0.46284720500887844,
+      "64": 0.5372302593494569
+    }
+  },
+  "selected_lags": {
+    "Q00": 48,
+    "Q10": 48,
+    "Q01": 48,
+    "Q11": 48
+  },
+  "selection_rule": "Minimize raw mean 2-pinball over validation episodes; ties choose the smaller lag",
+  "validation_inputs": {
+    "Q00": {
+      "context_sha256": "5b466b5f9a4f9283cb585751d045824a1920114e685c12fb28431d17fa27e28e",
+      "target_sha256": "7bfafea118a87b3557aa109d2cfa3a2a47991994bcb7dd12c487002c4f49f2d0",
+      "episode_ids_sha256": "33ddefa9e2f4e1c70ab2e1cb4dbbdbc0496f29ddbcee5fbfc4ad85fe5eb7c2a1",
+      "f0_val_score": 0.5271084163377986
+    },
+    "Q10": {
+      "context_sha256": "1505f5c58279fd6952bb2e1cee73f2e8a614f76720981cbd084082a8cd321a34",
+      "target_sha256": "65c7891c2ca91ff652132ee6bebfe27355aa9cbdb804a612cd78918f83780a54",
+      "episode_ids_sha256": "33ddefa9e2f4e1c70ab2e1cb4dbbdbc0496f29ddbcee5fbfc4ad85fe5eb7c2a1",
+      "f0_val_score": 0.5302048232186238
+    },
+    "Q01": {
+      "context_sha256": "705ef4e78910ee9631eea10d5adbd33067ace014071f55789ea6ec893cae2d4a",
+      "target_sha256": "5e7b5199bd14f9c2d8944475da20fed647dbfad0fe080dbe578563bf919e1244",
+      "episode_ids_sha256": "33ddefa9e2f4e1c70ab2e1cb4dbbdbc0496f29ddbcee5fbfc4ad85fe5eb7c2a1",
+      "f0_val_score": 0.5279963390488656
+    },
+    "Q11": {
+      "context_sha256": "ccca5cb9499066e32a8318028dc0da6f663ac79a56ac650d1c61c528e78fd8ae",
+      "target_sha256": "062b421e273411646ced5389a0a45d2382e3d638e5a2930ae2b49f1a82b10e98",
+      "episode_ids_sha256": "33ddefa9e2f4e1c70ab2e1cb4dbbdbc0496f29ddbcee5fbfc4ad85fe5eb7c2a1",
+      "f0_val_score": 0.530167893969807
+    }
+  },
+  "validation_predictions_sha256": "6851319c17c04a3d04f3f957be36493e6b6c992961c4b29c72fc821401e647a7",
+  "source_hashes": {
+    "diagnose_alignment.py": "1b51c4e4d6e0af39169827ec66c14cdb246b9722ad29909b53e1b64e93031870",
+    "shift_train.py": "1250abd9f34f6b054dd730e527180e5b1a318d0d2279b4c08dd4a99cc71a3e8d",
+    "chronos_model.py": "13ed6b3e1010e1b60fad45cd078da5ff1cda23cdfcaf9055a996276219d9e3c1",
+    "chronos_layers.py": "73493f306ecfaa21fa57636ff46321ccb5d50ded02a382598cf759dbfc9dd60f",
+    "scope_modeling.py": "35db520cb7b9a832f70b8c0f12b6bd22f848973817766e40e482c231eb44ecbf",
+    "diagnostic_addendum.md": "90419727fe8b9d700585660e2d922422e7880f48f9673cfc797fefe9853b536b"
+  },
+  "data_hashes": {
+    "Q00": "4fe3185ebe05b874d7d3dbfff52daf98ee0d0bb834f7222855bcc78f0bf376c7",
+    "Q10": "59f320c244a5ed835a2c039e6608058d6fd34ac6389e2d01aa4ab989c40481dc",
+    "Q01": "6a2fd81adcdf6cba56f414aef2668557ca4a668c0777f2a052138c56dc2c32b2",
+    "Q11": "653d289768ddd62bb8925b3bb8cc45bd18bc336208ab77b4caffde52c667d6a9"
+  },
+  "validation_forward_calls": 384,
+  "elapsed_seconds": 14.783471000002464,
+  "selection_inputs_sha256": "274ced1ee4aac5aaf1b077f763c33a480955e3bad3eec4f74b44ac1778781df6"
+}

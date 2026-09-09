@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "fit_trials": 28,
+  "adaptation_fits": 26,
+  "f0_cache_jobs": 2,
+  "forecast_jobs": 14,
+  "new_production_gpu_jobs": 42,
+  "fit_guard_seconds": 626.8059999999999,
+  "forecast_guard_seconds": 156.688,
+  "production_gpu_guard_seconds": 783.4939999999999,
+  "runner_invocation_wall_seconds": 784.7034957408905,
+  "fit_completion_invocation_wall_seconds": 627.6666071414948,
+  "unused_fit_count": 14,
+  "unused_fit_guard_seconds_included": 280.045,
+  "optimizer_seconds_included": 321.73490959994524,
+  "raw_cpu": {
+    "bike": {
+      "created_this_analysis": false,
+      "fit_wall_seconds": 0.29387470000074245,
+      "replay_audit_wall_seconds": 0.10370569999940926,
+      "all_lambda_train_only_replay": true,
+      "normal_equations_verified": true
+    },
+    "household": {
+      "created_this_analysis": false,
+      "fit_wall_seconds": 0.24477170000318438,
+      "replay_audit_wall_seconds": 0.09180429999832995,
+      "all_lambda_train_only_replay": true,
+      "normal_equations_verified": true
+    }
+  },
+  "raw_cpu_fit_seconds": 0.5386464000039268,
+  "raw_cpu_jobs": 2,
+  "raw_cpu_guard_seconds": 4.156,
+  "raw_cpu_replay_seconds": 0.19550999999773921,
+  "s0_separate": {
+    "jobs": 8,
+    "invocation_wall_seconds": 85.78089761734009,
+    "guard_seconds": 85.37599999999999
+  },
+  "cost_scope": "Each phase is separately reported; invocation wall and child guard durations overlap and must not be added. RAW fits use two separate CPU guards; RAW replay is inside CPU analysis wall.",
+  "analysis_wall_seconds_before_serialization": 4.37555440000142
+}

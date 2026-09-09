@@ -1,0 +1,11 @@
+# Objective alignment in fixed-budget native LoRA
+
+This diagnostic compares native context-normalized pinball, sorted normalized target-macro pinball, and sorted raw target-macro pinball on the two study12 development blocks. All arms use the same Chronos-2 revision, OFF_LORA modules, seed, sampled origins, 200 updates and LR3e-5. A train-only initial gradient-norm measurement supplies a fixed multiplier; it does not equalize subsequent AdamW dynamics or clipping.
+
+The [prospective plan](../../_docs/notes/tsfm_topics/15_peft_objective_alignment_plan_20260908.md) defines six fresh fits, six forecasts, two reused F0 forecasts and the two-source practical gate. Raw-loss fine-tuning already exists; a positive diagnostic would not establish a new PEFT method. These previously observed development sources provide no independent confirmation.
+
+Root executes one child at a time through the existing shared resource guard. Six train-only five-update smoke runs must pass first, including exact replay of the two original native smoke runs. The production native arms must also reproduce their original training and validation records. All six production checkpoints are frozen before any new held-out forecast is produced. Original data, sources, caches and results are protected by hashes.
+
+Use `.venv-peft/Scripts/python.exe -m experiments.peft_objective_alignment_v1.prepare`, then the `run_study` module with `--smoke`, then without it. Once all forecasts complete, run `analyse` through the CPU guard and then `plot`. Preserve failed attempts; do not overwrite a partial trial or silently change the frozen contract. The cost ledger includes failed attempts and distinguishes reused artifacts from new computation.
+
+Completed on 2026-09-08: all 53 CPU tests, six smoke runs, six fits, six forecasts and guarded CPU analysis passed. Both native smoke/production trajectories exactly reproduced the original study12 records. The two primary raw-loss effects were -0.218% F0 (Bike) and +0.122% F0 (Household); both 97.5% intervals included zero and failed the fixed practical gate. The current screen is closed. This does not invalidate LoRA or establish a novel method. See the [results, independent verification and limitations](../../_docs/notes/tsfm_topics/15_peft_objective_alignment_results_20260908.md).

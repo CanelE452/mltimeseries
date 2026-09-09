@@ -1,0 +1,19 @@
+{
+  "since_utc": "2026-09-08T03:03:22.0000000+00:00",
+  "checked_at": "2026-09-08T12:13:12.9095473+09:00",
+  "scope": "S0 start through post-training audit; Application1000/1002, System NVIDIA/Display/resource/Kernel-Power",
+  "queries": [
+    {
+      "log": "Application",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    },
+    {
+      "log": "System",
+      "success": true,
+      "matching_count": 0,
+      "events": []
+    }
+  ]
+}

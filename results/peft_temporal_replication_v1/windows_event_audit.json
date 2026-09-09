@@ -1,0 +1,21 @@
+{
+  "since_utc": "2026-09-08T06:55:16.0000000+00:00",
+  "checked_at": "2026-09-08T16:20:44.7302820+09:00",
+  "scope": "13 S0 start through query: Application 1000/1002; System 41/4101/153/2004; all IDs in each declared log",
+  "queries": [
+    {
+      "log": "Application",
+      "success": true,
+      "matching_count": 0,
+      "events": [],
+      "errors": []
+    },
+    {
+      "log": "System",
+      "success": true,
+      "matching_count": 0,
+      "events": [],
+      "errors": []
+    }
+  ]
+}

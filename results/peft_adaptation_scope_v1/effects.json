@@ -1,0 +1,278 @@
+[
+  {
+    "panel": "ettm2",
+    "head_selected_on_validation": "H_MLP",
+    "internal": "OFF_LORA",
+    "paired_seed_count": 3,
+    "paired_seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "delta_over_F0": 0.021387717020823416,
+    "seed_deltas": [
+      0.028056334549025248,
+      0.00861007597768707,
+      0.027496740535757944
+    ],
+    "point_effect_metric_reconciliation": true,
+    "seed_aggregation": "Arithmetic mean of separately evaluated seed losses; no prediction ensemble",
+    "conditional_dayblock_ci95": {
+      "1": [
+        -0.008737641716128295,
+        0.05425975217646232
+      ],
+      "3": [
+        -0.006954156408590666,
+        0.05329729906709636
+      ],
+      "7": [
+        -0.004262548233279728,
+        0.050811176100312404
+      ]
+    },
+    "bootstrap_details": {
+      "1": {
+        "ci95": [
+          -0.008737641716128295,
+          0.05425975217646232
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "3": {
+        "ci95": [
+          -0.006954156408590666,
+          0.05329729906709636
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "7": {
+        "ci95": [
+          -0.004262548233279728,
+          0.050811176100312404
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      }
+    },
+    "uncertainty_scope": "Same circular evaluation-day blocks resample every method, channel and seed. Recompute each channel's loss sum / valid count and the F0 denominator. Conditional on these trained seeds; two development panels are not independent-domain evidence."
+  },
+  {
+    "panel": "ettm2",
+    "head_selected_on_validation": "H_MLP",
+    "internal": "FULL",
+    "paired_seed_count": 3,
+    "paired_seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "delta_over_F0": 0.0026009812792463865,
+    "seed_deltas": [
+      0.029777167799868807,
+      -0.0386298309224607,
+      0.016655606960331054
+    ],
+    "point_effect_metric_reconciliation": true,
+    "seed_aggregation": "Arithmetic mean of separately evaluated seed losses; no prediction ensemble",
+    "conditional_dayblock_ci95": {
+      "1": [
+        -0.02398857330084594,
+        0.03156110055979964
+      ],
+      "3": [
+        -0.022303842730948053,
+        0.030535073894778466
+      ],
+      "7": [
+        -0.0210239730366028,
+        0.029719996727486424
+      ]
+    },
+    "bootstrap_details": {
+      "1": {
+        "ci95": [
+          -0.02398857330084594,
+          0.03156110055979964
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "3": {
+        "ci95": [
+          -0.022303842730948053,
+          0.030535073894778466
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "7": {
+        "ci95": [
+          -0.0210239730366028,
+          0.029719996727486424
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      }
+    },
+    "uncertainty_scope": "Same circular evaluation-day blocks resample every method, channel and seed. Recompute each channel's loss sum / valid count and the F0 denominator. Conditional on these trained seeds; two development panels are not independent-domain evidence."
+  },
+  {
+    "panel": "jena",
+    "head_selected_on_validation": "H_FULL",
+    "internal": "OFF_LORA",
+    "paired_seed_count": 3,
+    "paired_seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "delta_over_F0": -0.015185497074265369,
+    "seed_deltas": [
+      -0.014121510993131747,
+      -0.00232009076996922,
+      -0.029114889459695134
+    ],
+    "point_effect_metric_reconciliation": true,
+    "seed_aggregation": "Arithmetic mean of separately evaluated seed losses; no prediction ensemble",
+    "conditional_dayblock_ci95": {
+      "1": [
+        -0.04506493997691121,
+        0.015104871787560375
+      ],
+      "3": [
+        -0.04189284827438472,
+        0.013502020156793458
+      ],
+      "7": [
+        -0.04097294911041735,
+        0.010554284702459948
+      ]
+    },
+    "bootstrap_details": {
+      "1": {
+        "ci95": [
+          -0.04506493997691121,
+          0.015104871787560375
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "3": {
+        "ci95": [
+          -0.04189284827438472,
+          0.013502020156793458
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "7": {
+        "ci95": [
+          -0.04097294911041735,
+          0.010554284702459948
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      }
+    },
+    "uncertainty_scope": "Same circular evaluation-day blocks resample every method, channel and seed. Recompute each channel's loss sum / valid count and the F0 denominator. Conditional on these trained seeds; two development panels are not independent-domain evidence."
+  },
+  {
+    "panel": "jena",
+    "head_selected_on_validation": "H_FULL",
+    "internal": "FULL",
+    "paired_seed_count": 3,
+    "paired_seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "delta_over_F0": -0.02236248178013342,
+    "seed_deltas": [
+      -0.02224797211747104,
+      -0.009231491779953875,
+      -0.03560798144297534
+    ],
+    "point_effect_metric_reconciliation": true,
+    "seed_aggregation": "Arithmetic mean of separately evaluated seed losses; no prediction ensemble",
+    "conditional_dayblock_ci95": {
+      "1": [
+        -0.049322700141963875,
+        0.005020913296240704
+      ],
+      "3": [
+        -0.04832040370735072,
+        0.003083461206382015
+      ],
+      "7": [
+        -0.04019307586689718,
+        -0.006268510567073479
+      ]
+    },
+    "bootstrap_details": {
+      "1": {
+        "ci95": [
+          -0.049322700141963875,
+          0.005020913296240704
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "3": {
+        "ci95": [
+          -0.04832040370735072,
+          0.003083461206382015
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      },
+      "7": {
+        "ci95": [
+          -0.04019307586689718,
+          -0.006268510567073479
+        ],
+        "valid_resamples": 4000,
+        "requested_resamples": 4000,
+        "discarded_resamples": 0,
+        "denominator": "F0 score recomputed on the same resampled blocks",
+        "missing_target_policy": "Discard draws lacking all observations of any fixed target"
+      }
+    },
+    "uncertainty_scope": "Same circular evaluation-day blocks resample every method, channel and seed. Recompute each channel's loss sum / valid count and the F0 denominator. Conditional on these trained seeds; two development panels are not independent-domain evidence."
+  }
+]

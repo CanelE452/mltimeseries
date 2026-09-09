@@ -1,0 +1,18 @@
+{
+  "since": "2026-09-08T01:11:47.0000000",
+  "checked_at": "2026-09-08T02:23:07.2886460+09:00",
+  "queries": [
+    {
+      "matching_count": 0,
+      "log": "Application",
+      "success": true,
+      "events": []
+    },
+    {
+      "matching_count": 0,
+      "log": "System",
+      "success": true,
+      "events": []
+    }
+  ]
+}

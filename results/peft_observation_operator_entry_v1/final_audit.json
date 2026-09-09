@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-08T10:06:51.335205+00:00",
+  "study": "peft_observation_operator_entry_v1",
+  "protected_parent_artifacts": 1079,
+  "numeric_contract_sha256": "3ce448a9490dad01296707dc90d362e4bf98caf42b5b29b22e3f592098c838e4",
+  "plan_sha256": "e591bcb9d4b07b443a8d6d234544a8a995c24e6719436e9844e52da9384b73cc",
+  "numeric_source_hashes": {
+    "__init__.py": {
+      "path": "experiments/peft_observation_operator_entry_v1/__init__.py",
+      "sha256": "9054f1d633545849cdbe4cce7c5e20cef574517e60006c7e552a6c4e28753865"
+    },
+    "prepare.py": {
+      "path": "experiments/peft_observation_operator_entry_v1/prepare.py",
+      "sha256": "b27a1724a7f14f50fa1cec1e7e78f03516983682d9fa49f3f1848d4b13cdd1ae"
+    },
+    "model.py": {
+      "path": "experiments/peft_observation_operator_entry_v1/model.py",
+      "sha256": "b2db86fcd2f962a9a7bd3c03ef4ac4968c84368f3b4798f65e1326c05a0a8161"
+    },
+    "run.py": {
+      "path": "experiments/peft_observation_operator_entry_v1/run.py",
+      "sha256": "2cd4d5b317ae30e67f211167f7a4ab08eeb0d2d6e483b4457654353c2ca2de65"
+    }
+  },
+  "unit_test_observation": {
+    "command": ".venv-tsfm/Scripts/python.exe -m pytest experiments/peft_observation_operator_entry_v1/tests -q",
+    "passed": 17,
+    "seconds": 0.53,
+    "exit_code": 0
+  },
+  "independent_numerical_checks": 146,
+  "independent_numerical_max_error": 3.069072773698167e-14,
+  "independent_data_robust_checks_passed": true,
+  "data_float_boundary_counts_not_identical": true,
+  "unresolved_data_mean_aggregation_exception_count": 1,
+  "unresolved_data_mean_aggregation_max_abs_celsius": 0.125,
+  "scientific_decision": "EXISTING_LINEAR_CONDITIONING_SUFFICIENT",
+  "new_method_demonstrated": false,
+  "new_training_updates": 0,
+  "guards": [
+    {
+      "name": "numerical_guard",
+      "elapsed_seconds": 6.078,
+      "returncode": 0,
+      "finished_at": "2026-09-08T09:48:13.231671+00:00"
+    },
+    {
+      "name": "data_qc_guard",
+      "elapsed_seconds": 10.094,
+      "returncode": 0,
+      "finished_at": "2026-09-08T09:57:37.422913+00:00"
+    }
+  ],
+  "guard_seconds_total": 16.172,
+  "resource_sampling_scope": "Two startup samples only; no measured child peak or GPU telemetry",
+  "resource_samples": 2,
+  "min_available_ram_gib": 15.930042266845703,
+  "min_available_commit_gib": 13.391368865966797,
+  "max_observed_git_count": 0,
+  "shared_lock_released": true,
+  "windows_selected_event_count": 0,
+  "report_sha256": "06ab2459c5ef7a006b5e64b0a1751bcf582a1772a6c9e3ec63140fbdad8322ad",
+  "verified_report_local_links": [
+    "_docs\\notes\\tsfm_topics\\16_observation_operator_entry_plan_20260908.md",
+    "experiments\\peft_observation_operator_entry_v1\\README.md",
+    "results\\peft_observation_operator_entry_v1\\result.json",
+    "runs\\peft_observation_operator_entry_v1\\numerical_guard\\status.json",
+    "runs\\peft_observation_operator_entry_v1\\data_qc_guard\\status.json",
+    "results\\peft_observation_operator_entry_v1\\independent_audit.json",
+    "data_external\\uscrn_operator_entry_v1\\contract.json",
+    "data_external\\uscrn_operator_entry_v1\\qc.json",
+    "data_external\\uscrn_operator_entry_v1\\independent_audit.json",
+    "results\\peft_observation_operator_entry_v1\\windows_events.json"
+  ],
+  "artifact_hashes": {
+    "results/peft_observation_operator_entry_v1/result.json": "9bdf7156695d61ca0972e27a2fdb67aadf6035ead8b82deb2c277b08ad477c28",
+    "results/peft_observation_operator_entry_v1/independent_audit.json": "35666cf53eacd190fffc86f60d536e53731e9b31968b6cb45ccb59fc2e7dc778",
+    "results/peft_observation_operator_entry_v1/windows_events.json": "a1a789c8c839322aaa25d8da67248381a9d9f8e1e7420a11042b49766fead39e",
+    "runs/peft_observation_operator_entry_v1/contract.json": "3ce448a9490dad01296707dc90d362e4bf98caf42b5b29b22e3f592098c838e4",
+    "runs/peft_observation_operator_entry_v1/completed.json": "3a36fb3dadc2d364d0f41f66d95f8b5e8dd57cc1b9aaf8d7f99dfb408eb8bd52",
+    "data_external/uscrn_operator_entry_v1/contract.json": "1b470c5e15279811668b9947f6f55f569b34187ccfcda6115d5ff1921507992f",
+    "data_external/uscrn_operator_entry_v1/qc.json": "ca511d6313921526b8e4efe3aef30f7c4552d7e522624a1b902069094d1d51db",
+    "data_external/uscrn_operator_entry_v1/independent_audit.json": "37048883c546fa46452bd4f8b5058595e6344e225782fa7d394f8c7b8d142edc",
+    "experiments/peft_observation_operator_entry_v1/data_qc.py": "1c72170b005851405bfe233a5a66c11628008ffe0ea560b3db90a557f9d05a3f",
+    "runs/peft_observation_operator_entry_v1/numerical_guard/status.json": "c410e834217d25041c9dde2121c1da384273f3295e325092103ce5565053ebca",
+    "runs/peft_observation_operator_entry_v1/numerical_guard/resource_log.jsonl": "98051d8eae9cbe35902eef1594cb205229c34de50fcb7b3adc94fa3a87e34e4a",
+    "runs/peft_observation_operator_entry_v1/numerical_guard/stdout.log": "cb30bb9268ae4ec8b63e36f25a6858b978da4486d4cc714504119b594da696fc",
+    "runs/peft_observation_operator_entry_v1/numerical_guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/peft_observation_operator_entry_v1/data_qc_guard/status.json": "a1075ee84b7412e69c633c86f1fa50efc456aa3658ed74ec0d839d811ab6d3b5",
+    "runs/peft_observation_operator_entry_v1/data_qc_guard/resource_log.jsonl": "6092ba246b142d47fa149f36978fd94a4df083705fcbb55f8959bc05829f69af",
+    "runs/peft_observation_operator_entry_v1/data_qc_guard/stdout.log": "f53a1e555eb8b1b5f7ad7933edb107f9705edc43d0b59576d8b4b8899753cdd2",
+    "runs/peft_observation_operator_entry_v1/data_qc_guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "_docs/notes/tsfm_topics/16_observation_operator_entry_results_20260908.md": "06ab2459c5ef7a006b5e64b0a1751bcf582a1772a6c9e3ec63140fbdad8322ad",
+    "experiments/peft_observation_operator_entry_v1/tests/test_data_qc.py": "9f48bfd2b7d3cefa6a072feb9e0fc3da008548be3ceca0b9118c1d622d544773",
+    "experiments/peft_observation_operator_entry_v1/tests/test_model.py": "4657280af8adaf417f61ef519fff2589722bc7b516b122ce91bb14c2abc32bb8",
+    "data_external/uscrn_operator_entry_v1/raw/CRNH0203-2024-AZ_Tucson_11_W.txt": "df3770689f4cc18ae818ded93287d43da90a12943401ab7e114fcf0349ebcfea",
+    "data_external/uscrn_operator_entry_v1/raw/CRNS0101-05-2024-AZ_Tucson_11_W.txt": "e11b7befa5896605fbaf18b688b5c237d0696c044242211b931a181572a73065"
+  },
+  "scope": "Provenance and execution completion audit; not a claim of exact real hourly aggregation, novel PEFT, independent forecasting confirmation, or crash repair"
+}

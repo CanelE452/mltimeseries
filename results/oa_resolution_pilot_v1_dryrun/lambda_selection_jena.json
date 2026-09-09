@@ -1,0 +1,32 @@
+{
+  "dataset": "jena",
+  "screen_updates": 200,
+  "model_seed": 2026090601,
+  "candidates": [
+    {
+      "lambda": 0.0001,
+      "val_primary": 0.2931665927171707,
+      "best_update": 200,
+      "wall_seconds": 3.6519291400909424
+    },
+    {
+      "lambda": 0.01,
+      "val_primary": 0.2931663393974304,
+      "best_update": 200,
+      "wall_seconds": 3.656358003616333
+    },
+    {
+      "lambda": 1.0,
+      "val_primary": 0.2929401795069377,
+      "best_update": 200,
+      "wall_seconds": 3.6575117111206055
+    },
+    {
+      "lambda": 100.0,
+      "val_primary": 0.2921209434668223,
+      "best_update": 200,
+      "wall_seconds": 3.66333270072937
+    }
+  ],
+  "selected_lambda": 100.0
+}
