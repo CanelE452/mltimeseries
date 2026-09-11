@@ -1,0 +1,183 @@
+{
+  "completed": true,
+  "effects": {
+    "UPDATE": {
+      "bike": {
+        "FULL90": {
+          "by_seed": [
+            4.4414205140280565,
+            4.123749073433613
+          ],
+          "mean": 4.282584793730835
+        },
+        "SPREAD30": {
+          "by_seed": [
+            0.6538516067944038,
+            1.046136880870624
+          ],
+          "mean": 0.8499942438325139
+        },
+        "RECENT30": {
+          "by_seed": [
+            1.3027131199340753,
+            3.1032730877811754
+          ],
+          "mean": 2.2029931038576254
+        },
+        "full_minus_spread": [
+          3.787568907233653,
+          3.077612192562989
+        ],
+        "recent_minus_spread": [
+          0.6488615131396716,
+          2.0571362069105517
+        ]
+      },
+      "household": {
+        "FULL90": {
+          "by_seed": [
+            1.1574884812084183,
+            0.7198725710446032
+          ],
+          "mean": 0.9386805261265108
+        },
+        "SPREAD30": {
+          "by_seed": [
+            -0.18853713303753541,
+            0.42142065462396244
+          ],
+          "mean": 0.11644176079321351
+        },
+        "RECENT30": {
+          "by_seed": [
+            0.6706359995760673,
+            1.220628172756246
+          ],
+          "mean": 0.9456320861661567
+        },
+        "full_minus_spread": [
+          1.3460256142459537,
+          0.2984519164206408
+        ],
+        "recent_minus_spread": [
+          0.8591731326136027,
+          0.7992075181322835
+        ]
+      }
+    },
+    "EXPOSURE": {
+      "bike": {
+        "FULL90": {
+          "by_seed": [
+            4.360873785809406,
+            3.2597236174111446
+          ],
+          "mean": 3.810298701610275
+        },
+        "SPREAD30": {
+          "by_seed": [
+            0.6538516067944038,
+            0.8759511956244967
+          ],
+          "mean": 0.7649014012094503
+        },
+        "RECENT30": {
+          "by_seed": [
+            1.4145467414393575,
+            3.191339596107875
+          ],
+          "mean": 2.3029431687736164
+        },
+        "full_minus_spread": [
+          3.707022179015002,
+          2.383772421786648
+        ],
+        "recent_minus_spread": [
+          0.7606951346449538,
+          2.3153884004833785
+        ]
+      },
+      "household": {
+        "FULL90": {
+          "by_seed": [
+            1.0345805923902067,
+            0.4951284979221958
+          ],
+          "mean": 0.7648545451562012
+        },
+        "SPREAD30": {
+          "by_seed": [
+            -0.18853713303753541,
+            0.42142065462396244
+          ],
+          "mean": 0.11644176079321351
+        },
+        "RECENT30": {
+          "by_seed": [
+            0.6706359995760673,
+            1.220628172756246
+          ],
+          "mean": 0.9456320861661567
+        },
+        "full_minus_spread": [
+          1.223117725427742,
+          0.07370784329823338
+        ],
+        "recent_minus_spread": [
+          0.8591731326136027,
+          0.7992075181322835
+        ]
+      }
+    }
+  },
+  "gate_details": {
+    "UPDATE": {
+      "full_positive_both": true,
+      "full_mean_ge_1": true,
+      "difference_positive_both": true,
+      "difference_mean_ge_1": true
+    },
+    "EXPOSURE": {
+      "full_positive_both": true,
+      "full_mean_ge_1": true,
+      "difference_positive_both": true,
+      "difference_mean_ge_1": true
+    }
+  },
+  "gate_passed": true,
+  "independent_score_max_error": 1.1102230246251565e-16,
+  "fits_verified": 48,
+  "evaluations_verified": 48,
+  "resource_audit": {
+    "guard_jobs": 98,
+    "minimum_ram_gib": 10.396099090576172,
+    "minimum_commit_gib": 9.73952865600586,
+    "maximum_gpu_mib": 2314.0,
+    "maximum_temperature_c": 54.0
+  },
+  "selected_steps": {
+    "10": 9,
+    "100": 3,
+    "60": 8,
+    "40": 3,
+    "140": 2,
+    "20": 10,
+    "180": 3,
+    "5": 6,
+    "15": 1,
+    "120": 1,
+    "30": 2
+  },
+  "selected_lr_counts": {
+    "0.0001": 40,
+    "1e-05": 8
+  },
+  "fresh_test": false,
+  "limits": [
+    "Two sources and two seeds; discovery E previously exposed.",
+    "Same MLP head but unequal total parameter counts.",
+    "Expected exposure matching does not match unique labels, optimization paths, or time coverage.",
+    "Two learning rates do not establish global optimization.",
+    "Gate is a prespecified practical follow-up rule, not a significance test."
+  ]
+}

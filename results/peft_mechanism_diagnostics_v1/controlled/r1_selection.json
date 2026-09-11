@@ -1,0 +1,234 @@
+[
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "MLP",
+      "seed": 25000,
+      "head": "mlp",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/MLP/r0_s25000",
+    "val_score": 0.21822437735874908
+  },
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "MLP",
+      "seed": 25001,
+      "head": "mlp",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/MLP/r0_s25001",
+    "val_score": 0.21505279632383661
+  },
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "ALL",
+      "seed": 25000,
+      "head": "mlp",
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/ALL/r0_s25000",
+    "val_score": 0.20903428093451698
+  },
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "ALL",
+      "seed": 25001,
+      "head": "mlp",
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/ALL/r0_s25001",
+    "val_score": 0.20499129628651802
+  },
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "LINEAR",
+      "seed": 25000,
+      "head": "linear",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/LINEAR/r0_s25000",
+    "val_score": 0.2177624027077651
+  },
+  {
+    "job": {
+      "dataset": "bike",
+      "arm": "LINEAR",
+      "seed": 25001,
+      "head": "linear",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/bike/LINEAR/r0_s25001",
+    "val_score": 0.2161100221284903
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "MLP",
+      "seed": 25000,
+      "head": "mlp",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/MLP/r0_s25000",
+    "val_score": 0.4360907733167681
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "MLP",
+      "seed": 25001,
+      "head": "mlp",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/MLP/r0_s25001",
+    "val_score": 0.43604448697938664
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "ALL",
+      "seed": 25000,
+      "head": "mlp",
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/ALL/r0_s25000",
+    "val_score": 0.4326992399885775
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "ALL",
+      "seed": 25001,
+      "head": "mlp",
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/ALL/r0_s25001",
+    "val_score": 0.43093716025632667
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "LINEAR",
+      "seed": 25000,
+      "head": "linear",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/LINEAR/r0_s25000",
+    "val_score": 0.43740376438354495
+  },
+  {
+    "job": {
+      "dataset": "household",
+      "arm": "LINEAR",
+      "seed": 25001,
+      "head": "linear",
+      "blocks": [],
+      "rank": 8,
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "recipe": 0
+    },
+    "key": "fits/household/LINEAR/r0_s25001",
+    "val_score": 0.43726829389737476
+  }
+]

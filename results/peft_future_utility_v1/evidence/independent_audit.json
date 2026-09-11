@@ -1,0 +1,219 @@
+{
+  "completed": true,
+  "audited_utc": "2026-09-10T22:07:56.545171+00:00",
+  "self_sha256": "5f8fdce7e53f2ced7c7fb932d4e5b9562a0fb98362373f4115eba05ef9563165",
+  "plan_sha256": "afee103fa43b91d63c50d7785a0b2d063d19434ea4e01b0c9fdb2fe80ffcd4e8",
+  "completed_sha256": "0c52a32cc829fd5ee22c601417cf5599977182dae25968b0acb5f03eef52b661",
+  "checked_plan_hashes": 115,
+  "guard_status_count": 13,
+  "guard_elapsed_seconds_sum": 660.1080000000001,
+  "main_results": 12,
+  "fork_rows": 24,
+  "unique_fork_keys": 24,
+  "raw_npz_score_checks": 1264,
+  "raw_score_max_abs_error": 1.6653345369377348e-16,
+  "metrics_csv_verified": true,
+  "summary_verified": true,
+  "histories_verified": true,
+  "prefix_npz_exact_verified": true,
+  "branch_start_npz_exact_verified": true,
+  "S_only_earliest_selection_verified": true,
+  "holdout_opened_all_false": true,
+  "E_paths_opened_by_audit": false,
+  "recomputed_summary": {
+    "metrics": {
+      "all": {
+        "forks": 24,
+        "joint_better_than_head": 7,
+        "head_better_than_joint": 16,
+        "negligible": 1,
+        "joint_better_than_head_and_STOP": 6,
+        "head_better_than_joint_and_STOP": 3,
+        "both_continuations_worse_than_STOP": 9,
+        "selection_reverses_meaningful_direction": 1,
+        "mean_U_final_pct_F0": -4.350300232395843,
+        "mean_U_selected_pct_F0": -0.7272749937488113,
+        "max_abs_clipping_control_difference_pct_F0": 1.1401948366455896,
+        "spearman_C_vs_U": -0.7260869565217389,
+        "spearman_C_slope_vs_U": -0.4313043478260869,
+        "meaningful_forks_for_rule_accuracy": 23,
+        "descriptive_rule_accuracy": {
+          "always_continue": 0.30434782608695654,
+          "always_freeze": 0.6956521739130435,
+          "positive_C": 0.17391304347826086,
+          "increasing_C": 0.43478260869565216,
+          "improving_S": 0.4782608695652174
+        }
+      },
+      "bdg2": {
+        "forks": 12,
+        "joint_better_than_head": 7,
+        "head_better_than_joint": 4,
+        "negligible": 1,
+        "joint_better_than_head_and_STOP": 6,
+        "head_better_than_joint_and_STOP": 0,
+        "both_continuations_worse_than_STOP": 1,
+        "selection_reverses_meaningful_direction": 1,
+        "mean_U_final_pct_F0": -0.2801921678342128,
+        "mean_U_selected_pct_F0": -0.37797796587455895,
+        "max_abs_clipping_control_difference_pct_F0": 0.14800075146208924,
+        "spearman_C_vs_U": -0.16083916083916086,
+        "spearman_C_slope_vs_U": 0.18881118881118883,
+        "meaningful_forks_for_rule_accuracy": 11,
+        "descriptive_rule_accuracy": {
+          "always_continue": 0.6363636363636364,
+          "always_freeze": 0.36363636363636365,
+          "positive_C": 0.36363636363636365,
+          "increasing_C": 0.5454545454545454,
+          "improving_S": 0.5454545454545454
+        }
+      },
+      "jena": {
+        "forks": 12,
+        "joint_better_than_head": 0,
+        "head_better_than_joint": 12,
+        "negligible": 0,
+        "joint_better_than_head_and_STOP": 0,
+        "head_better_than_joint_and_STOP": 3,
+        "both_continuations_worse_than_STOP": 8,
+        "selection_reverses_meaningful_direction": 0,
+        "mean_U_final_pct_F0": -8.420408296957474,
+        "mean_U_selected_pct_F0": -1.0765720216230636,
+        "max_abs_clipping_control_difference_pct_F0": 1.1401948366455896,
+        "spearman_C_vs_U": -0.4125874125874127,
+        "spearman_C_slope_vs_U": -0.8041958041958043,
+        "meaningful_forks_for_rule_accuracy": 12,
+        "descriptive_rule_accuracy": {
+          "always_continue": 0.0,
+          "always_freeze": 1.0,
+          "positive_C": 0.0,
+          "increasing_C": 0.3333333333333333,
+          "improving_S": 0.4166666666666667
+        }
+      }
+    },
+    "seed_sign_pairs": [
+      {
+        "dataset": "bdg2",
+        "condition": "FULL90",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "bdg2",
+        "condition": "FULL90",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "bdg2",
+        "condition": "SPREAD30",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          1,
+          1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "bdg2",
+        "condition": "SPREAD30",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          1,
+          1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "bdg2",
+        "condition": "RECENT30",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          0,
+          1
+        ],
+        "agrees": false
+      },
+      {
+        "dataset": "bdg2",
+        "condition": "RECENT30",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          1,
+          1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "RECENT30",
+        "fork_fraction": 0.3333333333333333,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "RECENT30",
+        "fork_fraction": 0.6666666666666666,
+        "classes": [
+          -1,
+          -1
+        ],
+        "agrees": true
+      }
+    ]
+  },
+  "result_payload_sha256": "55b569eacaaa20cc90e14df15dea8838e4443d1b97a2f13d5850a83cef9b52d8"
+}

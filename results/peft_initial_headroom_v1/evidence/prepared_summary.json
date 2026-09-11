@@ -1,0 +1,1197 @@
+{
+  "version": "peft_initial_headroom_v1.prepare.20260911",
+  "created_utc": "2026-09-11T00:55:16+00:00",
+  "study": "peft_initial_headroom_v1",
+  "episode": "diag",
+  "all_qc_passed": true,
+  "data": {
+    "jena": {
+      "dataset": "jena",
+      "panel": "jena",
+      "fit_path": "runs/peft_initial_headroom_v1/prepared/jena_fit.npz",
+      "holdout_path": "runs/peft_initial_headroom_v1/prepared/jena_holdout.npz",
+      "fit_sha256": "88490c7e77a6ff3a94348d2dde175a39b095e5082f82f87dc0efdc9595097a34",
+      "holdout_sha256": "20332ac65351323b5d001fb35f8c406a4527e6bf5bdcc854c40f6162453860f9",
+      "fit_data_path": "runs/peft_initial_headroom_v1/prepared/jena_fit.npz",
+      "holdout_data_path": "runs/peft_initial_headroom_v1/prepared/jena_holdout.npz",
+      "fit_data_sha256": "88490c7e77a6ff3a94348d2dde175a39b095e5082f82f87dc0efdc9595097a34",
+      "holdout_data_sha256": "20332ac65351323b5d001fb35f8c406a4527e6bf5bdcc854c40f6162453860f9",
+      "fit_std": [
+        5.311455249786377,
+        5.532333850860596,
+        5.615442752838135,
+        3.159619092941284
+      ],
+      "fit_mean": [
+        988.740478515625,
+        19.18395233154297,
+        293.294677734375,
+        11.315095901489258
+      ],
+      "fit_median": [
+        989.0,
+        18.654998779296875,
+        292.8349914550781,
+        11.734999656677246
+      ],
+      "context_fallback_median": [
+        989.89501953125,
+        7.849999904632568,
+        281.8299865722656,
+        1.7000000476837158
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "channels": [
+        "p (mbar)",
+        "T (degC)",
+        "Tpot (K)",
+        "Tdew (degC)"
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "boundaries": {
+        "precontext": [
+          "2019-05-04T00:00:00",
+          "2019-05-18T00:00:00"
+        ],
+        "train": [
+          "2019-05-18T00:00:00",
+          "2019-08-17T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2019-08-17T00:00:00",
+          "2019-08-19T00:00:00"
+        ],
+        "val": [
+          "2019-08-19T00:00:00",
+          "2019-09-19T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2019-09-19T00:00:00",
+          "2019-09-21T00:00:00"
+        ],
+        "cal": [
+          "2019-09-21T00:00:00",
+          "2019-10-12T00:00:00"
+        ],
+        "eval": [
+          "2019-10-12T00:00:00",
+          "2020-01-01T00:00:00"
+        ]
+      },
+      "contract": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2019-05-04T00:00:00",
+        "block_end_exclusive": "2020-01-01T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2019-05-04T00:00:00",
+            "2019-05-18T00:00:00"
+          ],
+          "train": [
+            "2019-05-18T00:00:00",
+            "2019-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2019-08-17T00:00:00",
+            "2019-08-19T00:00:00"
+          ],
+          "val": [
+            "2019-08-19T00:00:00",
+            "2019-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2019-09-19T00:00:00",
+            "2019-09-21T00:00:00"
+          ],
+          "cal": [
+            "2019-09-21T00:00:00",
+            "2019-10-12T00:00:00"
+          ],
+          "eval": [
+            "2019-10-12T00:00:00",
+            "2020-01-01T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2019-05-18T00:00:00",
+          "val": "2019-08-19T00:00:00",
+          "cal": "2019-09-21T00:00:00",
+          "eval": "2019-10-12T00:00:00"
+        },
+        "last_origin": {
+          "train": "2019-08-15T00:00:00",
+          "val": "2019-09-17T00:00:00",
+          "cal": "2019-10-10T00:00:00",
+          "eval": "2019-12-30T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2019-08-17T00:00:00",
+          "val": "2019-09-19T00:00:00",
+          "cal": "2019-10-12T00:00:00",
+          "eval": "2020-01-01T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "target_qc": {
+        "train": {
+          "p (mbar)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "p (mbar)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          }
+        },
+        "train": {
+          "p (mbar)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_train_val": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          }
+        }
+      },
+      "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+      "source_sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+      "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+      "raw_sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+      "source": {
+        "panel": "jena",
+        "episode": "diag",
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+        "source_sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+        "raw_sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+        "source_files": [
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2019a.csv",
+            "sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+            "bytes": 5473744
+          },
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019b.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2019b.csv",
+            "sha256": "42b0e31e5408d27a439296b8729876ef92cc0436f0b4360aaf00540e12c7378b",
+            "bytes": 5564464
+          }
+        ],
+        "source_url": "https://www.bgc-jena.mpg.de/wetter/",
+        "download_url": "local files data/jena_mpi_roof/mpi_roof_2021a.csv..mpi_roof_2022b.csv",
+        "citation": "Max Planck Institute for Biogeochemistry Jena roof weather observations.",
+        "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+        "parser": "latin1 csv.DictReader; date format %d.%m.%Y %H:%M:%S; top-of-hour rows only; required block reindexed hourly with missing hours left as NaN",
+        "source_notes": [
+          "Four-channel order follows Study31/33 Jena parser.",
+          "First two columns are scored targets; next two are context-only covariates masked from target loss/scoring.",
+          "The 2019 diagnostic block is nonoverlapping with checked local PEFT target-label windows; source/pretraining exposure is not ruled out."
+        ],
+        "channels": [
+          "p (mbar)",
+          "T (degC)",
+          "Tpot (K)",
+          "Tdew (degC)"
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "loader_metadata": {
+          "episode": "diag",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019a.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2019a.csv",
+              "sha256": "dfdec9fa2544351957407fe32d2ffd234e7a883365f4c917a924eed68a4bbd3a",
+              "bytes": 5473744
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2019b.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2019b.csv",
+              "sha256": "42b0e31e5408d27a439296b8729876ef92cc0436f0b4360aaf00540e12c7378b",
+              "bytes": 5564464
+            }
+          ],
+          "source_rows": 52560,
+          "top_of_hour_rows_seen": 8760,
+          "parse_failures": 0,
+          "raw_headers_consistent": true,
+          "source_columns": [
+            "Date Time",
+            "p (mbar)",
+            "T (degC)",
+            "Tpot (K)",
+            "Tdew (degC)",
+            "rh (%)",
+            "VPmax (mbar)",
+            "VPact (mbar)",
+            "VPdef (mbar)",
+            "sh (g/kg)",
+            "H2OC (mmol/mol)",
+            "rho (g/m**3)",
+            "wv (m/s)",
+            "max. wv (m/s)",
+            "wd (deg)",
+            "rain (mm)",
+            "raining (s)",
+            "SWDR (W/m²)",
+            "PAR (µmol/m²/s)",
+            "max. PAR (µmol/m²/s)",
+            "Tlog (degC)",
+            "CO2 (ppm)"
+          ],
+          "downsample_rule": "keep only top-of-hour rows; no six-row averaging",
+          "sentinel_rule": "values <= -9999 are treated as NaN",
+          "sentinel_count_selected_channels": 0,
+          "duplicate_rule": "exact duplicate top-of-hour rows are collapsed; conflicting duplicate cells become NaN",
+          "unique_top_hour_rows": 8760,
+          "duplicate_exact_rows_removed": 0,
+          "duplicate_conflict_rows_nan_merged": 0,
+          "source_offstep_count_after_dedup": 0,
+          "source_first_top_hour": "2019-01-01T01:00:00",
+          "source_last_top_hour": "2020-01-01T00:00:00",
+          "required_block": {
+            "start": "2019-05-04T00:00:00",
+            "end_exclusive": "2020-01-01T00:00:00",
+            "hours": 5808
+          },
+          "required_missing_hour_count": 0,
+          "required_missing_hour_examples": [],
+          "block_row_qc": {
+            "rows": 5808,
+            "start": "2019-05-04T00:00:00",
+            "end": "2019-12-31T23:00:00",
+            "end_exclusive": "2020-01-01T00:00:00",
+            "frequency_seconds": 3600,
+            "missing_cells_by_channel": {
+              "p (mbar)": 0,
+              "T (degC)": 0,
+              "Tpot (K)": 0,
+              "Tdew (degC)": 0
+            },
+            "finite_fraction_by_channel": {
+              "p (mbar)": 1.0,
+              "T (degC)": 1.0,
+              "Tpot (K)": 1.0,
+              "Tdew (degC)": 1.0
+            },
+            "nonconstant_by_channel": {
+              "p (mbar)": true,
+              "T (degC)": true,
+              "Tpot (K)": true,
+              "Tdew (degC)": true
+            }
+          }
+        }
+      }
+    },
+    "bmra": {
+      "dataset": "bmra",
+      "panel": "bmra",
+      "fit_path": "runs/peft_initial_headroom_v1/prepared/bmra_fit.npz",
+      "holdout_path": "runs/peft_initial_headroom_v1/prepared/bmra_holdout.npz",
+      "fit_sha256": "5093b62674b42fdb9055ebd27f4cf2003adc373f1985357e696586ce5f4fdb13",
+      "holdout_sha256": "720b44870b65feb199c0a91b664a6153b532084125dd0add517d1003e8ff9448",
+      "fit_data_path": "runs/peft_initial_headroom_v1/prepared/bmra_fit.npz",
+      "holdout_data_path": "runs/peft_initial_headroom_v1/prepared/bmra_holdout.npz",
+      "fit_data_sha256": "5093b62674b42fdb9055ebd27f4cf2003adc373f1985357e696586ce5f4fdb13",
+      "holdout_data_sha256": "720b44870b65feb199c0a91b664a6153b532084125dd0add517d1003e8ff9448",
+      "fit_std": [
+        7.857317924499512,
+        19.862817764282227,
+        31.118406295776367,
+        9.092548370361328
+      ],
+      "fit_mean": [
+        9.228818893432617,
+        22.08600616455078,
+        36.98432540893555,
+        9.321799278259277
+      ],
+      "fit_median": [
+        7.301499843597412,
+        15.480999946594238,
+        28.43400001525879,
+        6.074999809265137
+      ],
+      "context_fallback_median": [
+        10.048500061035156,
+        25.983501434326172,
+        39.60600280761719,
+        5.2779998779296875
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "channels": [
+        "E_BNWKW-1",
+        "E_BRYBW-1",
+        "E_BURBO",
+        "E_DALSW-1"
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "boundaries": {
+        "precontext": [
+          "2018-01-04T00:00:00",
+          "2018-01-18T00:00:00"
+        ],
+        "train": [
+          "2018-01-18T00:00:00",
+          "2018-04-19T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2018-04-19T00:00:00",
+          "2018-04-21T00:00:00"
+        ],
+        "val": [
+          "2018-04-21T00:00:00",
+          "2018-05-22T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2018-05-22T00:00:00",
+          "2018-05-24T00:00:00"
+        ],
+        "cal": [
+          "2018-05-24T00:00:00",
+          "2018-06-14T00:00:00"
+        ],
+        "eval": [
+          "2018-06-14T00:00:00",
+          "2018-09-03T00:00:00"
+        ]
+      },
+      "contract": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2018-01-04T00:00:00",
+        "block_end_exclusive": "2018-09-03T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2018-01-04T00:00:00",
+            "2018-01-18T00:00:00"
+          ],
+          "train": [
+            "2018-01-18T00:00:00",
+            "2018-04-19T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2018-04-19T00:00:00",
+            "2018-04-21T00:00:00"
+          ],
+          "val": [
+            "2018-04-21T00:00:00",
+            "2018-05-22T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2018-05-22T00:00:00",
+            "2018-05-24T00:00:00"
+          ],
+          "cal": [
+            "2018-05-24T00:00:00",
+            "2018-06-14T00:00:00"
+          ],
+          "eval": [
+            "2018-06-14T00:00:00",
+            "2018-09-03T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2018-01-18T00:00:00",
+          "val": "2018-04-21T00:00:00",
+          "cal": "2018-05-24T00:00:00",
+          "eval": "2018-06-14T00:00:00"
+        },
+        "last_origin": {
+          "train": "2018-04-17T00:00:00",
+          "val": "2018-05-20T00:00:00",
+          "cal": "2018-06-12T00:00:00",
+          "eval": "2018-09-01T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2018-04-19T00:00:00",
+          "val": "2018-05-22T00:00:00",
+          "cal": "2018-06-14T00:00:00",
+          "eval": "2018-09-03T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "target_qc": {
+        "train": {
+          "E_BNWKW-1": {
+            "valid": 4260,
+            "total": 4320,
+            "finite_fraction": 0.9861111111111112,
+            "pass_min_70pct": true
+          },
+          "E_BRYBW-1": {
+            "valid": 4314,
+            "total": 4320,
+            "finite_fraction": 0.9986111111111111,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "E_BNWKW-1": {
+            "valid": 1294,
+            "total": 1440,
+            "finite_fraction": 0.8986111111111111,
+            "pass_min_70pct": true
+          },
+          "E_BRYBW-1": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "E_BNWKW-1": {
+            "valid": 956,
+            "total": 960,
+            "finite_fraction": 0.9958333333333333,
+            "pass_min_70pct": true
+          },
+          "E_BRYBW-1": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "E_BNWKW-1": {
+            "valid": 3585,
+            "total": 3840,
+            "finite_fraction": 0.93359375,
+            "pass_min_70pct": true
+          },
+          "E_BRYBW-1": {
+            "valid": 3802,
+            "total": 3840,
+            "finite_fraction": 0.9901041666666667,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "E_BNWKW-1": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "E_BRYBW-1": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "E_BURBO": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "E_DALSW-1": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          }
+        },
+        "train": {
+          "E_BNWKW-1": {
+            "finite": 2154,
+            "total": 2184,
+            "finite_fraction": 0.9862637362637363
+          },
+          "E_BRYBW-1": {
+            "finite": 2181,
+            "total": 2184,
+            "finite_fraction": 0.9986263736263736
+          },
+          "E_BURBO": {
+            "finite": 2181,
+            "total": 2184,
+            "finite_fraction": 0.9986263736263736
+          },
+          "E_DALSW-1": {
+            "finite": 2181,
+            "total": 2184,
+            "finite_fraction": 0.9986263736263736
+          }
+        },
+        "embargo_train_val": {
+          "E_BNWKW-1": {
+            "finite": 46,
+            "total": 48,
+            "finite_fraction": 0.9583333333333334
+          },
+          "E_BRYBW-1": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "E_BURBO": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "E_DALSW-1": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "E_BNWKW-1": {
+            "finite": 671,
+            "total": 744,
+            "finite_fraction": 0.9018817204301075
+          },
+          "E_BRYBW-1": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "E_BURBO": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "E_DALSW-1": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "E_BNWKW-1": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "E_BRYBW-1": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "E_BURBO": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "E_DALSW-1": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "E_BNWKW-1": {
+            "finite": 502,
+            "total": 504,
+            "finite_fraction": 0.996031746031746
+          },
+          "E_BRYBW-1": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "E_BURBO": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "E_DALSW-1": {
+            "finite": 501,
+            "total": 504,
+            "finite_fraction": 0.9940476190476191
+          }
+        },
+        "eval": {
+          "E_BNWKW-1": {
+            "finite": 1813,
+            "total": 1944,
+            "finite_fraction": 0.9326131687242798
+          },
+          "E_BRYBW-1": {
+            "finite": 1925,
+            "total": 1944,
+            "finite_fraction": 0.9902263374485597
+          },
+          "E_BURBO": {
+            "finite": 1938,
+            "total": 1944,
+            "finite_fraction": 0.9969135802469136
+          },
+          "E_DALSW-1": {
+            "finite": 1898,
+            "total": 1944,
+            "finite_fraction": 0.9763374485596708
+          }
+        }
+      },
+      "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+      "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+      "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+      "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+      "source": {
+        "panel": "bmra",
+        "episode": "diag",
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "source_files": [
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+            "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+            "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+            "bytes": 53426661
+          },
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+            "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+            "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+            "bytes": 15084
+          }
+        ],
+        "source_url": "local BMRA standardFormat parquet from ucp_path_pilot_v1",
+        "download_url": "local file data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+        "citation": "BMRA generation/unit time series as locally prepared for ucp_path_pilot_v1.",
+        "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+        "parser": "pyarrow Parquet reader; raw 30min Time grid aggregated to hourly mean; required block reindexed hourly with missing hours left as NaN",
+        "source_notes": [
+          "First two fixed E_ generator columns are scored targets; next two are context-only covariates.",
+          "The 2018 diagnostic block is earlier than checked UCP 2019/2020/2021 and Study33 2022/2023 target-label windows; raw/source exposure is not ruled out."
+        ],
+        "channels": [
+          "E_BNWKW-1",
+          "E_BRYBW-1",
+          "E_BURBO",
+          "E_DALSW-1"
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "loader_metadata": {
+          "episode": "diag",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+              "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+              "bytes": 53426661
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+              "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+              "bytes": 15084
+            }
+          ],
+          "raw_rows_total": 157776,
+          "raw_time_range": {
+            "start": "2015-01-01 00:00:00",
+            "end": "2023-12-31 23:30:00"
+          },
+          "raw_duplicate_timestamp_count": 0,
+          "raw_frequency": "30min original BMRA Time grid",
+          "hourly_aggregation_rule": "mean of same-hour 30min rows using available finite values; hour is NaN for a channel only when all contributing raw values are missing",
+          "selection_rule": "fixed from pre-run availability audit: active E_ generator columns, all proposed split parts finite>=0.70 and nonconstant; first four by BMU ID among passing columns; no forecast performance used",
+          "selected_metadata": [
+            {
+              "BMU ID": "E_BNWKW-1",
+              "Name": "Burn of Whilk Windfarm ",
+              "Type": "Onshore wind",
+              "GSP Group": "North Scotland",
+              "lat": 58.3567589,
+              "lon": -3.203853799,
+              "startDate": "2017-03-24",
+              "endDate": "2023-12-31 12:30:00",
+              "length": 6.776769406392694
+            },
+            {
+              "BMU ID": "E_BRYBW-1",
+              "Name": "Berry Burn Windfarm ",
+              "Type": "Onshore wind",
+              "GSP Group": "North Scotland",
+              "lat": 57.44661104,
+              "lon": -3.475392595,
+              "startDate": "2015-01-01",
+              "endDate": "2023-12-31 23:30:00",
+              "length": 9.005422374429223
+            },
+            {
+              "BMU ID": "E_BURBO",
+              "Name": "Burbo Bank Offshore Windfarm ",
+              "Type": "Onshore wind",
+              "GSP Group": "Merseyside and North Wales",
+              "lat": 53.48818302,
+              "lon": -3.184922589,
+              "startDate": "2015-01-01",
+              "endDate": "2023-12-31 21:30:00",
+              "length": 9.005194063926941
+            },
+            {
+              "BMU ID": "E_DALSW-1",
+              "Name": "Dalswinton Wind Farm ",
+              "Type": "Onshore wind",
+              "GSP Group": "South Scotland",
+              "lat": 55.18409713,
+              "lon": -3.650562349,
+              "startDate": "2015-01-01",
+              "endDate": "2023-12-31 22:00:00",
+              "length": 9.005251141552511
+            }
+          ],
+          "required_block": {
+            "start": "2018-01-04T00:00:00",
+            "end_exclusive": "2018-09-03T00:00:00",
+            "hours": 5808
+          },
+          "block_halfhour_rows_seen": 11616,
+          "expected_halfhour_rows": 11616,
+          "required_missing_hour_count_all_channels": 3,
+          "required_missing_hour_examples": [
+            "2018-03-25 23:00:00",
+            "2018-03-26 00:00:00",
+            "2018-03-26 01:00:00"
+          ],
+          "block_row_qc": {
+            "rows": 5808,
+            "start": "2018-01-04T00:00:00",
+            "end": "2018-09-02T23:00:00",
+            "end_exclusive": "2018-09-03T00:00:00",
+            "frequency_seconds": 3600,
+            "missing_cells_by_channel": {
+              "E_BNWKW-1": 238,
+              "E_BRYBW-1": 22,
+              "E_BURBO": 9,
+              "E_DALSW-1": 52
+            },
+            "finite_fraction_by_channel": {
+              "E_BNWKW-1": 0.9590220385674931,
+              "E_BRYBW-1": 0.9962121212121212,
+              "E_BURBO": 0.9984504132231405,
+              "E_DALSW-1": 0.9910468319559229
+            },
+            "nonconstant_by_channel": {
+              "E_BNWKW-1": true,
+              "E_BRYBW-1": true,
+              "E_BURBO": true,
+              "E_DALSW-1": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "jena_fit": {
+      "path": "runs/peft_initial_headroom_v1/prepared/jena_fit.npz",
+      "sha256": "88490c7e77a6ff3a94348d2dde175a39b095e5082f82f87dc0efdc9595097a34"
+    },
+    "jena_holdout": {
+      "path": "runs/peft_initial_headroom_v1/prepared/jena_holdout.npz",
+      "sha256": "20332ac65351323b5d001fb35f8c406a4527e6bf5bdcc854c40f6162453860f9"
+    },
+    "bmra_fit": {
+      "path": "runs/peft_initial_headroom_v1/prepared/bmra_fit.npz",
+      "sha256": "5093b62674b42fdb9055ebd27f4cf2003adc373f1985357e696586ce5f4fdb13"
+    },
+    "bmra_holdout": {
+      "path": "runs/peft_initial_headroom_v1/prepared/bmra_holdout.npz",
+      "sha256": "720b44870b65feb199c0a91b664a6153b532084125dd0add517d1003e8ff9448"
+    }
+  },
+  "data_contract": {
+    "fit_archives": "train+validation only; physically truncated at validation end with no cal/D origin arrays",
+    "holdout_archives": "full 242-day block with calibration/D origins; read only after V selections and correction choices are sealed",
+    "context_target_alignment": "origin is first target timestamp; context [origin-336h, origin), target [origin, origin+48h)",
+    "origin_stride_hours": 24,
+    "target_window_overlap_hours_within_split": 24,
+    "between_split_target_overlap": "none across train/V and V/cal due 48h embargo; cal last target end equals D first origin under half-open windows",
+    "missing_policy": "target_values preserve raw hourly NaNs; context_values use precontext-only median fallback then causal forward fill; no future backfill and no target imputation",
+    "fit_statistics": "mean/std/median fitted from observed train interval rows only",
+    "score_columns": "only target_indices [0,1] are scored",
+    "diagnostic_subsample_note": "archives keep all 80 D origins; run.py forecasts eval_origins[::4] for the bounded initial screen"
+  },
+  "exposure_summary": {
+    "claim_limit": "new target-label periods under checked local PEFT histories only; not new raw source families; FM pretraining overlap unknown",
+    "selection_limit": "BMRA channel order reuses Study33 and has a pre-run availability screen for 2018; no forecast performance used",
+    "checked_previous_sources": {
+      "jena": [
+        {
+          "study": "peft_decision_transfer_v1",
+          "path": "runs/peft_decision_transfer_v1/prepared/summary.json",
+          "start": "2021-05-04T00:00:00",
+          "end_exclusive": "2023-01-01T00:00:00",
+          "label_use": "Study33 development/test target labels"
+        },
+        {
+          "study": "peft_contribution_freeze_v1",
+          "path": "runs/peft_contribution_freeze_v1/prepared/summary.json",
+          "start": "2023-05-04T00:00:00",
+          "end_exclusive": "2024-01-01T00:00:00",
+          "label_use": "Study31 development diagnostics"
+        },
+        {
+          "study": "peft_adaptation_scope_v1",
+          "path": "runs/peft_adaptation_scope_v1/prepared/manifest.json",
+          "start": "2024-09-07T00:00:00",
+          "end_exclusive": "2025-01-01T00:00:00",
+          "label_use": "Jena 2024 validation/evaluation target labels exposed in S1"
+        }
+      ],
+      "bmra": [
+        {
+          "study": "ucp_path_pilot_v1",
+          "path": "data_external/ucp_path_pilot_v1/processed/panel_test.npz",
+          "start": "2019-01-01T00:00:00",
+          "end_exclusive": "2022-01-01T00:00:00",
+          "label_use": "raw source was processed into 2019 train, 2020 val, 2021 test UCP panels"
+        },
+        {
+          "study": "peft_decision_transfer_v1",
+          "path": "runs/peft_decision_transfer_v1/prepared/summary.json",
+          "start": "2022-01-04T00:00:00",
+          "end_exclusive": "2023-09-03T00:00:00",
+          "label_use": "Study33 development/test target labels"
+        }
+      ]
+    }
+  },
+  "resource_snapshot": {
+    "source": "GlobalMemoryStatusEx",
+    "physical_available_gib": 15.611991882324219,
+    "commit_available_gib": 17.45450210571289,
+    "memory_load_percent": 50,
+    "gate": {
+      "physical_available_gib_min": 5.0,
+      "commit_available_gib_min": 6.0,
+      "passed": true
+    }
+  }
+}

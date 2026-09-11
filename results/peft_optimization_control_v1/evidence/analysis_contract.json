@@ -1,0 +1,11 @@
+{
+  "analysis_sha256": "3095689bb89032175a2783abdbf94dea04ec983ada1f1995ffeee13d3ac3da7b",
+  "verified_prior_predictions": 16,
+  "independent_score_max_error": 1.1102230246251565e-16,
+  "development_fixes": [
+    "normalized pinball factor2",
+    "resource logs include finish events without memory fields",
+    "native Python values for JSON serialization"
+  ],
+  "new_E_selection_exists": false
+}

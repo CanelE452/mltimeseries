@@ -1,0 +1,269 @@
+{
+  "selected_location": "EARLY",
+  "means": {
+    "EARLY": 0.20744227326933934,
+    "MIDDLE": 0.2079137596099527,
+    "LATE": 0.20914911482083123,
+    "RANDOM_A": 0.20932906475954485,
+    "RANDOM_B": 0.2078518060357124,
+    "ALL_LOW": 0.20690739133230726
+  },
+  "entries": [
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "EARLY",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/EARLY/s25000",
+      "val_score": 0.20722985704904984
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "EARLY",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/EARLY/s25001",
+      "val_score": 0.20765468948962887
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "MIDDLE",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/MIDDLE/s25000",
+      "val_score": 0.2096600326832534
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "MIDDLE",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/MIDDLE/s25001",
+      "val_score": 0.206167486536652
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "LATE",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/LATE/s25000",
+      "val_score": 0.21166178149686293
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "LATE",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/LATE/s25001",
+      "val_score": 0.20663644814479953
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "RANDOM_A",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          5,
+          7,
+          8,
+          9
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/RANDOM_A/s25000",
+      "val_score": 0.21192077617989813
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "RANDOM_A",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          5,
+          7,
+          8,
+          9
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/RANDOM_A/s25001",
+      "val_score": 0.20673735333919158
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "RANDOM_B",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          4,
+          6,
+          7,
+          9
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/RANDOM_B/s25000",
+      "val_score": 0.20963723580988267
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "RANDOM_B",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          4,
+          6,
+          7,
+          9
+        ],
+        "rank": 6,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/RANDOM_B/s25001",
+      "val_score": 0.20606637626154214
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "ALL_LOW",
+        "seed": 25000,
+        "head": "mlp",
+        "blocks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank": 2,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/ALL_LOW/s25000",
+      "val_score": 0.20758740126184816
+    },
+    {
+      "job": {
+        "dataset": "bike",
+        "arm": "ALL_LOW",
+        "seed": 25001,
+        "head": "mlp",
+        "blocks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank": 2,
+        "head_lr": 0.0001,
+        "lora_lr": 0.0001,
+        "recipe": 0
+      },
+      "key": "placement/ALL_LOW/s25001",
+      "val_score": 0.20622738140276636
+    }
+  ]
+}

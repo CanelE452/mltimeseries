@@ -1,0 +1,780 @@
+{
+  "version": "peft_contribution_freeze_v1.independent_data_audit.20260911",
+  "study": "peft_contribution_freeze_v1",
+  "created_utc": "2026-09-10T15:26:26+00:00",
+  "auditor": "future_split_audit child agent",
+  "audit_type": "read-only independent data/contract validation",
+  "scope": {
+    "owned_output": "runs/peft_contribution_freeze_v1/independent_data_audit.json",
+    "files_modified_by_this_audit": [
+      "runs/peft_contribution_freeze_v1/independent_data_audit.json"
+    ],
+    "gpu_used": false,
+    "training_started_by_this_audit": false,
+    "downloads_performed": false,
+    "prediction_or_E_performance_files_read": false,
+    "fit_eval_f0_run_outputs_read": false,
+    "prepared_label_arrays_read_for_data_validation": true,
+    "forecast_outcomes_interpreted": false
+  },
+  "decision": "PASS",
+  "blocking_issues": [],
+  "top_level_files": {
+    "runs/peft_contribution_freeze_v1/prepared/summary.json": {
+      "exists": true,
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6",
+      "bytes": 58319
+    },
+    "runs/peft_contribution_freeze_v1/prepared/manifest.json": {
+      "exists": true,
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6",
+      "bytes": 58319
+    },
+    "runs/peft_contribution_freeze_v1/data_audit.json": {
+      "exists": true,
+      "sha256": "b12cecbf2909b1bec711a20c2ff556f50a99b673441a1aea430ae0217093e315",
+      "bytes": 7467
+    },
+    "runs/peft_contribution_freeze_v1/plan.json": {
+      "exists": true,
+      "sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57",
+      "bytes": 75160
+    },
+    "runs/peft_contribution_freeze_v1/contract.json": {
+      "exists": true,
+      "sha256": "463354ee7cd43c43921769b73caddafb7be2930ce78b9d33db7d271774d0bfc9",
+      "bytes": 4544
+    },
+    "runs/peft_contribution_freeze_v1/preparation_failures.json": {
+      "exists": true,
+      "sha256": "88226eeed39ba6827c5a905dccdd5d4167ae47aa4bf9729278a6779afcbb417d",
+      "bytes": 8384
+    }
+  },
+  "top_level_status": {
+    "summary_all_qc_passed": true,
+    "manifest_all_qc_passed": true,
+    "data_audit_decision": "PASS",
+    "summary_manifest_same_sha256": true
+  },
+  "plan_contract": {
+    "plan_sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57",
+    "contract_sha256": "463354ee7cd43c43921769b73caddafb7be2930ce78b9d33db7d271774d0bfc9",
+    "contract_plan_sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57",
+    "contract_plan_sha_matches_actual_plan": true,
+    "plan_jobs": 48,
+    "expected_fits": 48,
+    "expected_forecasts": 50,
+    "expected_smokes": 1,
+    "datasets": [
+      "bdg2",
+      "jena"
+    ],
+    "conditions": [
+      "FULL90",
+      "RECENT30",
+      "SPREAD30"
+    ],
+    "arms": [
+      "CONTRIB_FREEZE",
+      "ES2",
+      "FIXED_FREEZE",
+      "FULL"
+    ],
+    "seeds": [
+      27000,
+      27001
+    ],
+    "contract_datasets": [
+      "bdg2",
+      "jena"
+    ],
+    "schedules": {
+      "FULL90": [
+        0,
+        15,
+        30,
+        60,
+        120,
+        180
+      ],
+      "SPREAD30": [
+        0,
+        5,
+        10,
+        20,
+        40,
+        60
+      ],
+      "RECENT30": [
+        0,
+        5,
+        10,
+        20,
+        40,
+        60
+      ]
+    }
+  },
+  "source_freeze_after_notice": {
+    "notice_from_parent": "source frozen at 2026-09-10T15:15:39Z; this audit revalidated current hashes after that notice",
+    "prepare_py_in_contract_source_hashes": true,
+    "prepare_py_hash_matches_contract": true
+  },
+  "protected_hash_revalidation": {
+    "checked_records": 115,
+    "unique_paths": 82,
+    "all_match": true,
+    "mismatches": [],
+    "conflicting_expectations": [],
+    "group_counts": {
+      "plan.source_hashes": 24,
+      "plan.original_input_hashes": 50,
+      "plan.prepared_hashes": 11,
+      "contract.source_hashes": 24,
+      "explicit.frozen_contract_files": 6
+    }
+  },
+  "dataset_summary": {
+    "bdg2": {
+      "source_family": "Building Data Genome 2 / Eagle electricity",
+      "start": "2017-05-04T00:00:00",
+      "end_exclusive": "2018-01-01T00:00:00",
+      "eval_interval": [
+        "2017-10-12T00:00:00",
+        "2018-01-01T00:00:00"
+      ],
+      "boundaries": {
+        "cal": [
+          "2017-09-21T00:00:00",
+          "2017-10-12T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2017-08-17T00:00:00",
+          "2017-08-19T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2017-09-19T00:00:00",
+          "2017-09-21T00:00:00"
+        ],
+        "eval": [
+          "2017-10-12T00:00:00",
+          "2018-01-01T00:00:00"
+        ],
+        "precontext": [
+          "2017-05-04T00:00:00",
+          "2017-05-18T00:00:00"
+        ],
+        "train": [
+          "2017-05-18T00:00:00",
+          "2017-08-17T00:00:00"
+        ],
+        "val": [
+          "2017-08-19T00:00:00",
+          "2017-09-19T00:00:00"
+        ]
+      },
+      "origin_counts": {
+        "cal": 20,
+        "eval": 80,
+        "train": 90,
+        "val": 30
+      },
+      "channels": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis",
+        "Eagle_office_Flossie",
+        "Eagle_office_Francis"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis"
+      ],
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "target_qc": {
+        "cal": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          }
+        },
+        "eval": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          }
+        },
+        "train": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4320
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 0.999537037037037,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4318
+          }
+        },
+        "val": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          }
+        }
+      },
+      "previous_exposure": {
+        "proposed_eval": {
+          "start": "2017-10-12T00:00:00",
+          "end_exclusive": "2018-01-01T00:00:00"
+        },
+        "known_previous_evaluations": [
+          {
+            "study": "peft_coarse_supervision_v1",
+            "source": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+            "start": "2017-04-01T00:00:00",
+            "end_exclusive": "2017-07-01T00:00:00",
+            "note": "BDG2 raw/QC were previously inspected; documented fine E used Apr-Jun 2017 and later energy was reserved.",
+            "overlaps_proposed_eval": false
+          }
+        ],
+        "any_known_eval_overlap": false,
+        "freshness_claim_allowed": false,
+        "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+      },
+      "source_files": [
+        {
+          "bytes": 174239039,
+          "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+          "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/electricity.csv",
+          "sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418"
+        },
+        {
+          "bytes": 272024,
+          "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\metadata.csv",
+          "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/metadata.csv",
+          "sha256": "992d0b29f24f96ad4332bc4dbb534b7bdd7dd2689aad093f94e93068ecddca02"
+        },
+        {
+          "bytes": 67185,
+          "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\qc.json",
+          "relative_path": "data_external/bdg2_coarse_supervision_v1/qc.json",
+          "sha256": "8ada313811b4daf619b251bdca13baab8ae96278609f78592a0557d1cd49384b"
+        }
+      ]
+    },
+    "jena": {
+      "source_family": "MPI/Jena roof weather",
+      "start": "2023-05-04T00:00:00",
+      "end_exclusive": "2024-01-01T00:00:00",
+      "eval_interval": [
+        "2023-10-12T00:00:00",
+        "2024-01-01T00:00:00"
+      ],
+      "boundaries": {
+        "precontext": [
+          "2023-05-04T00:00:00",
+          "2023-05-18T00:00:00"
+        ],
+        "train": [
+          "2023-05-18T00:00:00",
+          "2023-08-17T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2023-08-17T00:00:00",
+          "2023-08-19T00:00:00"
+        ],
+        "val": [
+          "2023-08-19T00:00:00",
+          "2023-09-19T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2023-09-19T00:00:00",
+          "2023-09-21T00:00:00"
+        ],
+        "cal": [
+          "2023-09-21T00:00:00",
+          "2023-10-12T00:00:00"
+        ],
+        "eval": [
+          "2023-10-12T00:00:00",
+          "2024-01-01T00:00:00"
+        ]
+      },
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "channels": [
+        "p (mbar)",
+        "T (degC)",
+        "Tpot (K)",
+        "Tdew (degC)"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "target_qc": {
+        "train": {
+          "p (mbar)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "previous_exposure": {
+        "proposed_eval": {
+          "start": "2023-10-12T00:00:00",
+          "end_exclusive": "2024-01-01T00:00:00"
+        },
+        "known_previous_evaluations": [
+          {
+            "study": "peft_adaptation_scope_v1",
+            "source": "runs/peft_adaptation_scope_v1/prepared/manifest.json",
+            "start": "2024-09-07T00:00:00",
+            "end_exclusive": "2025-01-01T00:00:00",
+            "note": "Jena 2024 was previously exposed; Jena 2023 is a different period in the same source family.",
+            "overlaps_proposed_eval": false
+          }
+        ],
+        "any_known_eval_overlap": false,
+        "freshness_claim_allowed": false,
+        "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+      },
+      "source_files": [
+        {
+          "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+          "relative_path": "data/jena_mpi_roof/mpi_roof_2023a.csv",
+          "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+          "bytes": 5473114
+        },
+        {
+          "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023b.csv",
+          "relative_path": "data/jena_mpi_roof/mpi_roof_2023b.csv",
+          "sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318",
+          "bytes": 5594494
+        }
+      ]
+    }
+  },
+  "jena_raw_duplicate_audit": {
+    "files": [
+      {
+        "path": "data/jena_mpi_roof/mpi_roof_2023a.csv",
+        "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+        "bytes": 5473114
+      },
+      {
+        "path": "data/jena_mpi_roof/mpi_roof_2023b.csv",
+        "sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318",
+        "bytes": 5594494
+      }
+    ],
+    "raw_rows_scanned": 52700,
+    "parse_failures": 0,
+    "headers_consistent": true,
+    "selected_channels": [
+      "p (mbar)",
+      "T (degC)",
+      "Tpot (K)",
+      "Tdew (degC)"
+    ],
+    "raw_top_hour_rows": 8784,
+    "unique_top_hour_timestamps": 8760,
+    "duplicate_timestamps": 24,
+    "duplicate_extra_rows": 24,
+    "duplicate_conflicts": 0,
+    "duplicate_conflict_examples": [],
+    "duplicate_selected_channel_max_abs_diff": 0.0,
+    "first_duplicate": "2023-10-20 06:00:00",
+    "last_duplicate": "2023-10-21 05:00:00",
+    "unique_first": "2023-01-01 01:00:00",
+    "unique_last": "2024-01-01 00:00:00",
+    "unique_offstep_count_after_exact_collapse": 0,
+    "unique_offstep_examples_after_exact_collapse": []
+  },
+  "bdg2_partial_reuse": {
+    "summary_marks_reused_existing_partial_archive": true,
+    "fit_embedded_contract_matches_summary": {
+      "dataset": true,
+      "panel": true,
+      "origin_counts": true,
+      "boundaries": true,
+      "channels": true,
+      "target_columns": true
+    },
+    "holdout_embedded_contract_matches_summary": {
+      "dataset": true,
+      "panel": true,
+      "origin_counts": true,
+      "boundaries": true,
+      "channels": true,
+      "target_columns": true
+    },
+    "current_archive_hashes": {
+      "fit": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "holdout": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81"
+    }
+  },
+  "archive_audit": {
+    "bdg2": {
+      "fit": {
+        "path": "runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz",
+        "sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+        "sha256_matches_summary": true,
+        "archive_role": "fit_train_val_only",
+        "included_origins": [
+          "train",
+          "val"
+        ],
+        "forbidden_for": [
+          "calibration",
+          "evaluation"
+        ],
+        "required_origin_arrays_present": {
+          "train_origins": true,
+          "val_origins": true
+        },
+        "forbidden_origin_arrays_absent": {
+          "cal_origins": true,
+          "eval_origins": true
+        },
+        "shape": [
+          3312,
+          4
+        ],
+        "timestamps": {
+          "first": "2017-05-04T00:00:00",
+          "last": "2017-09-18T23:00:00",
+          "rows": 3312,
+          "duplicate_count": 0,
+          "offstep_count": 0
+        },
+        "origin_counts_in_archive": {
+          "train": 90,
+          "val": 30
+        },
+        "embedded_manifest_matches_summary": {
+          "dataset": true,
+          "panel": true,
+          "origin_counts": true,
+          "boundaries": true,
+          "channels": true,
+          "target_columns": true
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0,
+          "context_values_all_finite": true
+        },
+        "mask_replay": {
+          "observed_mask_matches_isfinite_target": true,
+          "target_loss_mask_matches_target_indices_only": true
+        }
+      },
+      "holdout": {
+        "path": "runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz",
+        "sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+        "sha256_matches_summary": true,
+        "archive_role": "holdout_cal_eval_only_after_selection",
+        "included_origins": [
+          "cal",
+          "eval"
+        ],
+        "forbidden_for": [
+          "training",
+          "validation_selection",
+          "S0_smoke"
+        ],
+        "required_origin_arrays_present": {
+          "cal_origins": true,
+          "eval_origins": true
+        },
+        "forbidden_origin_arrays_absent": {
+          "train_origins": true,
+          "val_origins": true
+        },
+        "shape": [
+          5808,
+          4
+        ],
+        "timestamps": {
+          "first": "2017-05-04T00:00:00",
+          "last": "2017-12-31T23:00:00",
+          "rows": 5808,
+          "duplicate_count": 0,
+          "offstep_count": 0
+        },
+        "origin_counts_in_archive": {
+          "cal": 20,
+          "eval": 80
+        },
+        "embedded_manifest_matches_summary": {
+          "dataset": true,
+          "panel": true,
+          "origin_counts": true,
+          "boundaries": true,
+          "channels": true,
+          "target_columns": true
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0,
+          "context_values_all_finite": true
+        },
+        "mask_replay": {
+          "observed_mask_matches_isfinite_target": true,
+          "target_loss_mask_matches_target_indices_only": true
+        }
+      }
+    },
+    "jena": {
+      "fit": {
+        "path": "runs/peft_contribution_freeze_v1/prepared/jena_fit.npz",
+        "sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+        "sha256_matches_summary": true,
+        "archive_role": "fit_train_val_only",
+        "included_origins": [
+          "train",
+          "val"
+        ],
+        "forbidden_for": [
+          "calibration",
+          "evaluation"
+        ],
+        "required_origin_arrays_present": {
+          "train_origins": true,
+          "val_origins": true
+        },
+        "forbidden_origin_arrays_absent": {
+          "cal_origins": true,
+          "eval_origins": true
+        },
+        "shape": [
+          3312,
+          4
+        ],
+        "timestamps": {
+          "first": "2023-05-04T00:00:00",
+          "last": "2023-09-18T23:00:00",
+          "rows": 3312,
+          "duplicate_count": 0,
+          "offstep_count": 0
+        },
+        "origin_counts_in_archive": {
+          "train": 90,
+          "val": 30
+        },
+        "embedded_manifest_matches_summary": {
+          "dataset": true,
+          "panel": true,
+          "origin_counts": true,
+          "boundaries": true,
+          "channels": true,
+          "target_columns": true
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0,
+          "context_values_all_finite": true
+        },
+        "mask_replay": {
+          "observed_mask_matches_isfinite_target": true,
+          "target_loss_mask_matches_target_indices_only": true
+        }
+      },
+      "holdout": {
+        "path": "runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz",
+        "sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+        "sha256_matches_summary": true,
+        "archive_role": "holdout_cal_eval_only_after_selection",
+        "included_origins": [
+          "cal",
+          "eval"
+        ],
+        "forbidden_for": [
+          "training",
+          "validation_selection",
+          "S0_smoke"
+        ],
+        "required_origin_arrays_present": {
+          "cal_origins": true,
+          "eval_origins": true
+        },
+        "forbidden_origin_arrays_absent": {
+          "train_origins": true,
+          "val_origins": true
+        },
+        "shape": [
+          5808,
+          4
+        ],
+        "timestamps": {
+          "first": "2023-05-04T00:00:00",
+          "last": "2023-12-31T23:00:00",
+          "rows": 5808,
+          "duplicate_count": 0,
+          "offstep_count": 0
+        },
+        "origin_counts_in_archive": {
+          "cal": 20,
+          "eval": 80
+        },
+        "embedded_manifest_matches_summary": {
+          "dataset": true,
+          "panel": true,
+          "origin_counts": true,
+          "boundaries": true,
+          "channels": true,
+          "target_columns": true
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0,
+          "context_values_all_finite": true
+        },
+        "mask_replay": {
+          "observed_mask_matches_isfinite_target": true,
+          "target_loss_mask_matches_target_indices_only": true
+        }
+      }
+    }
+  },
+  "preparation_failures_record": {
+    "exists": true,
+    "sha256": "88226eeed39ba6827c5a905dccdd5d4167ae47aa4bf9729278a6779afcbb417d",
+    "version": "peft_contribution_freeze_v1.preparation_failures.20260911",
+    "scope": "post-hoc preparation failure record written after successful data preparation; no source code edits, no GPU, no training, no prediction, no E performance read in this logging step",
+    "attempt_count": 3,
+    "preservation_violation_recorded": true
+  },
+  "limitations": {
+    "raw_sources_not_wholly_unseen": true,
+    "freshness_claim_allowed": false,
+    "fm_pretraining_overlap": "UNKNOWN",
+    "independent_source_family_claim": "not made; BDG2 and Jena are existing source families with nonoverlapping evaluation blocks relative to documented prior E windows",
+    "no_performance_conclusion": true
+  }
+}

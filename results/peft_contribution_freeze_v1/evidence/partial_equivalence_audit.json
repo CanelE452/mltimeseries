@@ -1,0 +1,29 @@
+{
+  "E_read": false,
+  "pairs": [
+    {
+      "dataset": "bdg2",
+      "seed": 27000,
+      "condition": "FULL90",
+      "left": "FIXED_FREEZE",
+      "right": "CONTRIB_FREEZE",
+      "selected_V_predictions_exact_equal": true
+    },
+    {
+      "dataset": "bdg2",
+      "seed": 27000,
+      "condition": "FULL90",
+      "left": "FULL",
+      "right": "ES2",
+      "selected_V_predictions_exact_equal": true
+    },
+    {
+      "dataset": "bdg2",
+      "seed": 27000,
+      "condition": "SPREAD30",
+      "left": "FULL",
+      "right": "CONTRIB_FREEZE",
+      "selected_V_predictions_exact_equal": true
+    }
+  ]
+}

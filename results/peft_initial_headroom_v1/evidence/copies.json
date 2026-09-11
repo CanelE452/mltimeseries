@@ -1,0 +1,52 @@
+[
+  {
+    "source": "runs/peft_initial_headroom_v1/plan.json",
+    "copy": "plan.json",
+    "sha256": "82b4244377ecca692726554a6c85c21a64c8aaaa1a1ba86f29ce81001a4d6a5e"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/selection_sealed.json",
+    "copy": "selection_sealed.json",
+    "sha256": "c4dc6b07f86e215e6a581b6bf46c0825209ce76d5700f68ee5994f73dfecbf7a"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/completed.json",
+    "copy": "completed.json",
+    "sha256": "832d8ca4a33790600dfae3b2c1463cc95b39918e787d0428418221d969b0adf0"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/preflight_review.json",
+    "copy": "preflight_review.json",
+    "sha256": "95108334f19a58c72596d93b9033356c3785a2d1111f5e5b1bb2a6a0a3548889"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/environment.json",
+    "copy": "environment.json",
+    "sha256": "85b0b488384624a7b2ea1382aeb35017fe8ce547b5b1c024972201f119245936"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/independent_audit.json",
+    "copy": "independent_audit.json",
+    "sha256": "c0cb62bb3d468ba88d8983bb2900c9a8f7074c5d39baba089a277143df530667"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/prepared/summary.json",
+    "copy": "prepared_summary.json",
+    "sha256": "318a1b50544e9df4ca221ce36e01e93d6c5571fbcae05a40374dd67c0e0b6803"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/prepared/data_audit.json",
+    "copy": "prepared_data_audit.json",
+    "sha256": "e2e182b437e69818dba4f1a266b823eb9469ce4948e28fe8133f85f0fcfad8fc"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/windows_event_audit.json",
+    "copy": "windows_event_audit.json",
+    "sha256": "d17a24349e13b7431a157e96d9cea50ed7a91de95d01a36dd5ecb36367bbb68b"
+  },
+  {
+    "source": "runs/peft_initial_headroom_v1/independent_audit_failure.json",
+    "copy": "independent_audit_failure.json",
+    "sha256": "2c1d8f2637bf8d777b25f59bade5324c92791506d265c4163515c7097f25ed95"
+  }
+]

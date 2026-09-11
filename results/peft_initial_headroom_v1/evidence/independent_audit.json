@@ -1,0 +1,173 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-11T01:54:10+00:00",
+  "script_sha256_before_write": "6a4e8827c0bffe60199448041efa173c05c189c434fb896c3c5ccddb8f8bd75a",
+  "plan_sha256": "82b4244377ecca692726554a6c85c21a64c8aaaa1a1ba86f29ce81001a4d6a5e",
+  "hash_audit": {
+    "source_hashes": 46,
+    "input_hashes": 5,
+    "previous33_sources_preserved_in_study34_plan": 39,
+    "previous33_inputs_still_hash_valid": 9,
+    "previous33_inputs_present_in_study34_plan": 0,
+    "previous33_inputs_not_inherited_by_study34_plan": 9
+  },
+  "fit_audit": {
+    "fit_jobs": 96,
+    "checkpoint_hashes_checked": 96,
+    "selected_val_and_F0_val_max_abs_error": 2.220446049250313e-16,
+    "cells_with_12_equal_F0_predictions": 8,
+    "cells_with_equal_HEAD_JOINT_initial_head_hash": 8,
+    "cells_with_equal_sample_hash": 8
+  },
+  "selection_audit": {
+    "selection_cells": 8,
+    "fit_result_hashes": 96,
+    "forecast_indices": 24,
+    "correction_cells_recomputed": 8
+  },
+  "forecast_metric_audit": {
+    "rows": 40,
+    "forecast_result_checks": 24,
+    "raw_score_max_abs_error": 0.0
+  },
+  "rows": 40,
+  "family_mean_D_over_F0": {
+    "F0": 1.0,
+    "HEAD": 1.0061895704502088,
+    "WIDE": 1.0100945252062108,
+    "JOINT": 0.9858173551117098,
+    "CORRECTION": 1.000371393341253
+  },
+  "gates": {
+    "G1_useful_initial_lora_gap": true,
+    "G1_cells": [
+      {
+        "dataset": "bmra",
+        "condition": "FULL90",
+        "seed_values_pct_F0": [
+          0.5830173451364639,
+          0.47630504209542457
+        ],
+        "passes": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed_values_pct_F0": [
+          -0.16309044503036713,
+          -0.30257530402866295
+        ],
+        "passes": false
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "seed_values_pct_F0": [
+          3.508931146905454,
+          2.523199560008095
+        ],
+        "passes": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "seed_values_pct_F0": [
+          0.8096933070901733,
+          1.0672734186427122
+        ],
+        "passes": true
+      }
+    ],
+    "G2_controller_headroom": false,
+    "G2_seed_summary": {
+      "29000": {
+        "mean_gain_vs_global_pct_F0": 0.04077261125759178,
+        "mean_gain_vs_source_pct_F0": 0.04077261125759178
+      },
+      "29001": {
+        "mean_gain_vs_global_pct_F0": 0.07564382600716574,
+        "mean_gain_vs_source_pct_F0": 0.07564382600716574
+      }
+    },
+    "best_global_hindsight_family": "JOINT",
+    "best_source_hindsight_family": {
+      "bmra": "JOINT",
+      "jena": "JOINT"
+    },
+    "G2_per_seed_global_family": {
+      "29000": "JOINT",
+      "29001": "JOINT"
+    },
+    "G2_per_seed_source_family": {
+      "29000": {
+        "jena": "JOINT",
+        "bmra": "JOINT"
+      },
+      "29001": {
+        "jena": "JOINT",
+        "bmra": "JOINT"
+      }
+    },
+    "G3_descriptive_only": true
+  },
+  "conditional_intervals": {
+    "interval": 0.9,
+    "draws": 2000,
+    "block_origins": 2,
+    "scope": "Conditional on these two diagnostic periods; seeds and conditions share target labels.",
+    "intervals": {
+      "JOINT_minus_HEAD_pct_F0": [
+        0.1879658034324728,
+        3.8942390001166904
+      ],
+      "JOINT_minus_WIDE_pct_F0": [
+        0.45544102368657025,
+        4.477924803845519
+      ],
+      "JOINT_minus_CORRECTION_pct_F0": [
+        -0.7471015219125764,
+        3.5641551463598917
+      ]
+    },
+    "loss_record_count": 40
+  },
+  "main_output_comparison": {
+    "summary_sha256": "f45a32e4ad4114aa120c7cff5aa1bbf28334cce556b41e6675abd6fe57eb0009",
+    "metrics_sha256": "6d41e3ac1d0acc19b504a6f6e1c439ed53a61b180dcef81d224a9130c5706f2b",
+    "trajectory_sha256": "8226b384ce6e4679926d25c3092ee655a3f98b0960d318dd7586cbf7036a5ed6",
+    "per_example_losses_sha256": "dd891bbcd854c13420fe7e26da3fc615366665a3c8bdecbfce131c15f1382917",
+    "metrics_rows_checked": 40,
+    "trajectory_rows_checked": 96
+  },
+  "guard_chronology_audit": {
+    "guards_checked": 123,
+    "checks": {
+      "all_smoke_finished_before_any_fit_end": true,
+      "all_96_fits_finished_before_selection_seal": true,
+      "selection_seal_before_any_D_forecast": true,
+      "all_D_forecasts_finished_before_completed": true
+    },
+    "chronology_evidence": {
+      "completed_finished_utc_raw": "2026-09-11T01:51:02+00:00",
+      "completed_marker_precision": "second_floor_interval",
+      "completed_marker_interval_start_utc": "2026-09-11T01:51:02+00:00",
+      "completed_marker_interval_end_exclusive_utc": "2026-09-11T01:51:03+00:00",
+      "completed_json_mtime_utc": "2026-09-11T01:51:02.503112+00:00",
+      "last_forecast_key": "jena/SPREAD30/JOINT/r3/s29001",
+      "last_forecast_status_path": "runs/peft_initial_headroom_v1/forecast/jena/SPREAD30/JOINT/r3/s29001/guard/status.json",
+      "last_forecast_finished_at_raw": "2026-09-11T01:51:02.468248+00:00",
+      "last_forecast_finished_at_utc": "2026-09-11T01:51:02.468248+00:00",
+      "last_forecast_status_mtime_utc": "2026-09-11T01:51:02.468248+00:00",
+      "exact_completed_order": false,
+      "second_floor_interval_order": true,
+      "last_forecast_seconds_after_completed_marker_start": 0.468248,
+      "completed_file_mtime_seconds_after_last_forecast": 0.034864,
+      "interpretation": "completed.finished_utc is stored after replace(microsecond=0), so this audit treats a second-precision value t as the interval [t, t+1s) only for the final completed-marker boundary and requires the completed file mtime to be after the last forecast guard."
+    }
+  },
+  "claim_limits": [
+    "development-only diagnostic; no final-test labels prepared or opened",
+    "two source periods only; seeds and conditions share labels",
+    "same raw source families as prior work; checked target-label periods do not overlap known local exposures"
+  ]
+}

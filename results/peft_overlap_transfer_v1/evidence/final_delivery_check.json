@@ -1,0 +1,10 @@
+{
+  "reports_verified": 4,
+  "broken_links": [],
+  "guard_jobs": 149,
+  "all_guard_jobs_completed": true,
+  "plots_verified": 6,
+  "frozen_sources_verified": true,
+  "active_guard_lock": false,
+  "scope_complete": "optimization controls, fixed simple past-only rule, new-period pilot; not a trained meta-predictor or new adapter"
+}

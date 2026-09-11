@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\CODING\proj\mltimeseries\experiments\peft_r1_validation_v1\residual.py", line 127, in <module>
+    select() if args.stage=='select' else evaluate()
+                                          ^^^^^^^^^^
+  File "E:\CODING\proj\mltimeseries\experiments\peft_r1_validation_v1\residual.py", line 116, in evaluate
+    np.testing.assert_allclose(np.diff(corrected,axis=2),np.diff(pred,axis=2),atol=1e-10,rtol=1e-10)
+  File "C:\Users\User\anaconda3\envs\mlts\Lib\site-packages\numpy\testing\_private\utils.py", line 1768, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "C:\Users\User\anaconda3\envs\mlts\Lib\site-packages\numpy\testing\_private\utils.py", line 983, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-10, atol=1e-10
+
+Mismatched elements: 15462 / 153600 (10.1%)
+First 5 mismatches are at indices:
+ [0, 0, 0, 8]: 9.65231990814209 (ACTUAL), 9.652320861816406 (DESIRED)
+ [0, 0, 0, 13]: 14.52156925201416 (ACTUAL), 14.521568298339844 (DESIRED)
+ [0, 0, 0, 20]: 14.607378959655762 (ACTUAL), 14.607379913330078 (DESIRED)
+ [0, 0, 0, 32]: 12.80639362335205 (ACTUAL), 12.806392669677734 (DESIRED)
+ [0, 0, 0, 33]: 13.744362831115723 (ACTUAL), 13.744361877441406 (DESIRED)
+Max absolute difference among violations: 6.1035156e-05
+Max relative difference among violations: 3.1771247e-05
+ ACTUAL: array([[[[  4.175247,   3.525242,   3.93515 , ...,  13.311314,
+           11.655754,  11.87664 ],
+         [  1.023781,   1.039661,   1.402603, ...,   6.814031,...
+ DESIRED: array([[[[  4.175247,   3.525242,   3.93515 , ...,  13.311314,
+           11.655754,  11.87664 ],
+         [  1.023781,   1.039661,   1.402603, ...,   6.81403 ,...

@@ -1,0 +1,17 @@
+Captured controller stderr from exec session 83234 (exit code 1), 2026-09-11 KST.
+This is the returned exception text, not a continuously recorded stdout/stderr file.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\CODING\proj\mltimeseries\experiments\peft_contribution_freeze_v1\run.py", line 127, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "E:\CODING\proj\mltimeseries\experiments\peft_contribution_freeze_v1\run.py", line 108, in main
+    record=execute(e['key'],command(e,e['key']))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING\proj\mltimeseries\experiments\peft_contribution_freeze_v1\run.py", line 80, in execute
+    admission(RUN,key)
+  File "E:\CODING\proj\mltimeseries\experiments\hospital_shared_strength_v1\resume_monitored.py", line 50, in admission
+    raise RuntimeError('Admission timed out: need 13 GiB commit; no threshold relaxation')
+RuntimeError: Admission timed out: need 13 GiB commit; no threshold relaxation

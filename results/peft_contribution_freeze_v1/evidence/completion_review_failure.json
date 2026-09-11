@@ -1,0 +1,1016 @@
+{
+  "completed": false,
+  "stage": "post-outcome resource aggregation only",
+  "error": "KeyError: gpus",
+  "script_sha256": "8afe9e5df9758f9224b2eb962215a1cb3b9fffbe72f2dd09eb7621a159262288",
+  "non_gpu_rows": [
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:24:20.378271+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:30:08.172856+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:23:50.140207+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:29:37.940162+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:24:05.258553+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:29:53.054341+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:23:35.022210+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\FULL90\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:30:23.291128+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:25:51.108553+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:31:38.912633+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:26:21.344619+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:32:09.153721+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:25:35.992709+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:32:24.279471+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:26:06.227837+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\RECENT30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:31:54.028889+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:25:05.736283+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:30:53.546096+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:24:35.501177+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:31:23.791996+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:24:50.617183+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:30:38.417376+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:25:20.862597+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\bdg2\\SPREAD30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:31:08.669918+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:27:06.719742+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:32:54.512302+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:26:36.464525+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:33:24.747268+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:26:51.585949+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:32:39.395188+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:27:21.854618+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\FULL90\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:33:09.629666+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:28:37.465548+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:35:25.724611+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:29:07.700408+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:34:55.486245+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:29:22.819670+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:35:10.604158+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:28:52.582538+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\RECENT30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:34:40.368241+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:27:52.099745+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:33:39.872826+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:28:22.337265+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:34:10.120063+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:27:36.979228+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:34:25.245367+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:28:07.216731+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\eval\\jena\\SPREAD30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:33:54.989100+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\f0\\bdg2\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:23:06.773491+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\f0\\jena\\guard\\resource_log.jsonl",
+      "line": 2,
+      "row": {
+        "timestamp": "2026-09-10T20:23:19.887365+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 9,
+      "row": {
+        "timestamp": "2026-09-10T15:23:44.498586+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:13:01.595284+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 9,
+      "row": {
+        "timestamp": "2026-09-10T15:21:00.074215+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:11:48.958109+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 9,
+      "row": {
+        "timestamp": "2026-09-10T15:22:24.320956+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:12:22.238588+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 12,
+      "row": {
+        "timestamp": "2026-09-10T15:19:35.814044+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\FULL90\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:13:46.980324+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 6,
+      "row": {
+        "timestamp": "2026-09-10T15:28:59.252831+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:15:49.004321+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 7,
+      "row": {
+        "timestamp": "2026-09-10T15:30:52.968906+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:16:39.435373+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T15:28:07.481918+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:17:00.635291+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 6,
+      "row": {
+        "timestamp": "2026-09-10T15:29:55.085913+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\RECENT30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:16:14.210708+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 7,
+      "row": {
+        "timestamp": "2026-09-10T15:26:27.984751+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:14:33.388443+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 7,
+      "row": {
+        "timestamp": "2026-09-10T15:24:42.392189+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:15:23.798521+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T15:25:28.070773+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:14:08.179211+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 7,
+      "row": {
+        "timestamp": "2026-09-10T15:27:25.874760+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\bdg2\\SPREAD30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:14:58.590609+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:07:06.489121+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:18:21.265649+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 12,
+      "row": {
+        "timestamp": "2026-09-10T15:32:47.661507+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:19:48.014720+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:06:25.110570+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:17:35.915153+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:07:51.855252+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\FULL90\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:19:04.640040+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:09:51.975893+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:22:53.653400+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:10:42.395194+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:22:05.239840+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:11:03.598924+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:22:28.435539+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:10:17.182018+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\RECENT30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:21:42.039394+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:08:36.254571+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\CONTRIB_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:20:11.225332+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:09:24.683523+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\ES2\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:20:55.632088+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:08:13.047890+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\FIXED_FREEZE\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:21:16.830411+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:09:01.484863+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\fits\\jena\\SPREAD30\\FULL\\s27001\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:20:36.440826+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\smoke\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T15:17:22.218592+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\FULL90\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:38:57.875709+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:37:47.291259+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\FULL90\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:38:22.591818+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\FULL90\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:37:12.013761+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\RECENT30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:41:23.100289+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\RECENT30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:42:13.522359+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\RECENT30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:40:57.902625+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\RECENT30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:41:48.312052+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\SPREAD30\\CONTRIB_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 4,
+      "row": {
+        "timestamp": "2026-09-10T20:40:11.512506+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\SPREAD30\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:39:23.069691+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\SPREAD30\\FIXED_FREEZE\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:39:44.259223+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\bdg2\\SPREAD30\\FULL\\s27000\\guard\\resource_log.jsonl",
+      "line": 3,
+      "row": {
+        "timestamp": "2026-09-10T20:40:36.717462+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    },
+    {
+      "path": "runs\\peft_contribution_freeze_v1\\timing_replay\\jena\\FULL90\\ES2\\s27000\\guard\\resource_log.jsonl",
+      "line": 5,
+      "row": {
+        "timestamp": "2026-09-10T20:42:58.871780+00:00",
+        "event": "finish",
+        "state": "completed"
+      }
+    }
+  ]
+}

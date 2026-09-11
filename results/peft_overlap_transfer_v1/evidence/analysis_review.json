@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-10T11:05:20.662159+00:00",
+  "reviewer": "r1_data_audit data-engineer",
+  "scope": "read-only score/pairing/rule/cost implementation and frozen metadata; no E predictions/outcomes inspected",
+  "blocking_issue_found": false,
+  "regret_formula_verified": true,
+  "seed_source_macro_aggregation_verified": true,
+  "guard_clock_includes_imports_and_excludes_admission": true,
+  "clock_hash_and_note_hash_verified": true,
+  "selection_exists_at_review": false,
+  "final_additional_check": "verify clock_mtime <= selection_mtime <= first_forecast_start without changing frozen sources"
+}

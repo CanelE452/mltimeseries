@@ -1,0 +1,11 @@
+{
+  "python": "3.11.16",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "peft": "0.20.0",
+    "transformers": "5.16.1",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "plan_sha256": "afee103fa43b91d63c50d7785a0b2d063d19434ea4e01b0c9fdb2fe80ffcd4e8"
+}

@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-09-11T04:20:54.514585+00:00",
+  "plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+  "code_review": {
+    "reviewer": "study35_code_review",
+    "read_only": true,
+    "blockers_after_prefreeze_fix": [],
+    "fixed_before_freeze": "B smoke uses already-used fullV instead of train pseudoV to compare source head exact; no D"
+  },
+  "data_review": {
+    "reviewer": "study35_data_audit",
+    "read_only": true,
+    "final_prepared_consistent": true,
+    "target_roles_masks_disjoint_origin_roles": true,
+    "per_origin_each_target_above70": true,
+    "independent_minima_match_window_qc": true,
+    "known_bounded_target_period_overlap": false,
+    "limits": [
+      "BMRA targetpair and season changed by availability before outcomes",
+      "aggregate inherited QC and stricter new window QC distinguished",
+      "same sources and pretrainingoverlap unknown"
+    ]
+  },
+  "cpu_tests": {
+    "count": 3,
+    "passed": true
+  },
+  "smoke_A": {
+    "jobs": 3,
+    "all_exit_zero": true
+  },
+  "timing_note": "This receipt was recorded after A smoke and main launch; readonly code review/fixes preceded freeze, final data verification used no model outcomes."
+}

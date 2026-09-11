@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "finished_utc": "2026-09-10T14:19:44.883969+00:00",
+  "invocation_seconds": 2201.688882800001,
+  "wide_fits": 36,
+  "short_fits": 24,
+  "forecasts": 24,
+  "smokes": 1,
+  "selection_sha256": "6c4fa08107249dbf7d416f9b3b266c40ac1dfab07d8c9c5852c037e278ee47b0",
+  "fresh_test": false
+}

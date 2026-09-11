@@ -1,0 +1,54 @@
+{
+  "bike": {
+    "FULL90": {
+      "origins": 90,
+      "unique_target_hours": 2184,
+      "valid_target_fraction": 0.9967948717948718,
+      "first_origin": "2012-01-30T00:00:00",
+      "last_origin": "2012-04-28T00:00:00",
+      "full90_scaling_held_fixed": true
+    },
+    "SPREAD30": {
+      "origins": 30,
+      "unique_target_hours": 1440,
+      "valid_target_fraction": 0.9965277777777778,
+      "first_origin": "2012-01-30T00:00:00",
+      "last_origin": "2012-04-28T00:00:00",
+      "full90_scaling_held_fixed": true
+    },
+    "RECENT30": {
+      "origins": 30,
+      "unique_target_hours": 744,
+      "valid_target_fraction": 0.9973118279569892,
+      "first_origin": "2012-03-30T00:00:00",
+      "last_origin": "2012-04-28T00:00:00",
+      "full90_scaling_held_fixed": true
+    }
+  },
+  "household": {
+    "FULL90": {
+      "origins": 90,
+      "unique_target_hours": 2184,
+      "valid_target_fraction": 1.0,
+      "first_origin": "2008-01-15T00:00:00",
+      "last_origin": "2008-04-13T00:00:00",
+      "full90_scaling_held_fixed": true
+    },
+    "SPREAD30": {
+      "origins": 30,
+      "unique_target_hours": 1440,
+      "valid_target_fraction": 1.0,
+      "first_origin": "2008-01-15T00:00:00",
+      "last_origin": "2008-04-13T00:00:00",
+      "full90_scaling_held_fixed": true
+    },
+    "RECENT30": {
+      "origins": 30,
+      "unique_target_hours": 744,
+      "valid_target_fraction": 1.0,
+      "first_origin": "2008-03-15T00:00:00",
+      "last_origin": "2008-04-13T00:00:00",
+      "full90_scaling_held_fixed": true
+    }
+  }
+}

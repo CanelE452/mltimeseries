@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "reviewer": "future_split_audit",
+  "CPU_tests": 3,
+  "blockers_after_fix": [],
+  "resolved_before_freeze": "Best simple baseline explicitly restricted to FULL/HEAD/WIDE, in addition to separately required FIXED and EARLY_STOP; PURPOSE and code aligned.",
+  "verified": [
+    "fit/forecast/development-choice chronology",
+    "PROBE STOP HEAD JOINT reconstruction",
+    "ES trigger timing",
+    "checkpoint preservation",
+    "forecast fit-seal hash checks"
+  ],
+  "GPU_run_yet": false
+}

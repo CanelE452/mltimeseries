@@ -1,0 +1,209 @@
+{
+  "version": "peft_contribution_freeze_v1.prepare.20260911",
+  "study": "peft_contribution_freeze_v1",
+  "created_utc": "2026-09-10T15:13:43+00:00",
+  "scope": "data preparation only; no GPU/training/prediction/E performance read",
+  "outputs": {
+    "prepared_dir": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared",
+    "manifest": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\manifest.json",
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6"
+    },
+    "summary": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\summary.json",
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6"
+    },
+    "data_audit": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\data_audit.json"
+    }
+  },
+  "source_hashes": {
+    "bdg2_raw": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+    "bdg2_metadata": "992d0b29f24f96ad4332bc4dbb534b7bdd7dd2689aad093f94e93068ecddca02",
+    "bdg2_qc": "8ada313811b4daf619b251bdca13baab8ae96278609f78592a0557d1cd49384b",
+    "jena_2023a": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+    "jena_2023b": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318"
+  },
+  "prepared_hashes": {
+    "bdg2": {
+      "fit": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "holdout": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81"
+    },
+    "jena": {
+      "fit": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+      "holdout": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539"
+    }
+  },
+  "validations": {
+    "bdg2": {
+      "fit": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_fit.npz",
+        "sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+        "shape": [
+          3312,
+          4
+        ],
+        "included_origins": [
+          "train",
+          "val"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0
+        },
+        "masks_verified": true,
+        "hourly_grid_verified": true
+      },
+      "holdout": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_holdout.npz",
+        "sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+        "shape": [
+          5808,
+          4
+        ],
+        "included_origins": [
+          "cal",
+          "eval"
+        ],
+        "origin_counts": {
+          "cal": 20,
+          "eval": 80
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0
+        },
+        "masks_verified": true,
+        "hourly_grid_verified": true
+      }
+    },
+    "jena": {
+      "fit": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_fit.npz",
+        "sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+        "shape": [
+          3312,
+          4
+        ],
+        "included_origins": [
+          "train",
+          "val"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0
+        },
+        "masks_verified": true,
+        "hourly_grid_verified": true
+      },
+      "holdout": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_holdout.npz",
+        "sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+        "shape": [
+          5808,
+          4
+        ],
+        "included_origins": [
+          "cal",
+          "eval"
+        ],
+        "origin_counts": {
+          "cal": 20,
+          "eval": 80
+        },
+        "stats_replay": {
+          "fit_mean_max_abs_error": 0.0,
+          "fit_std_max_abs_error": 0.0,
+          "fit_median_max_abs_error": 0.0
+        },
+        "context_replay": {
+          "context_values_max_abs_error": 0.0,
+          "context_fallback_max_abs_error": 0.0
+        },
+        "masks_verified": true,
+        "hourly_grid_verified": true
+      }
+    }
+  },
+  "leakage_checks": {
+    "bdg2": {
+      "proposed_eval": {
+        "start": "2017-10-12T00:00:00",
+        "end_exclusive": "2018-01-01T00:00:00"
+      },
+      "known_previous_evaluations": [
+        {
+          "study": "peft_coarse_supervision_v1",
+          "source": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+          "start": "2017-04-01T00:00:00",
+          "end_exclusive": "2017-07-01T00:00:00",
+          "note": "BDG2 raw/QC were previously inspected; documented fine E used Apr-Jun 2017 and later energy was reserved.",
+          "overlaps_proposed_eval": false
+        }
+      ],
+      "any_known_eval_overlap": false,
+      "freshness_claim_allowed": false,
+      "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+    },
+    "jena": {
+      "proposed_eval": {
+        "start": "2023-10-12T00:00:00",
+        "end_exclusive": "2024-01-01T00:00:00"
+      },
+      "known_previous_evaluations": [
+        {
+          "study": "peft_adaptation_scope_v1",
+          "source": "runs/peft_adaptation_scope_v1/prepared/manifest.json",
+          "start": "2024-09-07T00:00:00",
+          "end_exclusive": "2025-01-01T00:00:00",
+          "note": "Jena 2024 was previously exposed; Jena 2023 is a different period in the same source family.",
+          "overlaps_proposed_eval": false
+        }
+      ],
+      "any_known_eval_overlap": false,
+      "freshness_claim_allowed": false,
+      "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+    }
+  },
+  "resource_gate_before_prepare": {
+    "source": "GlobalMemoryStatusEx",
+    "physical_available_gib": 11.980598449707031,
+    "commit_available_gib": 12.8330078125,
+    "memory_load_percent": 62,
+    "gate": {
+      "physical_available_gib_min": 5.0,
+      "commit_available_gib_min": 6.0,
+      "passed": true
+    }
+  },
+  "resource_snapshot_after_prepare": {
+    "source": "GlobalMemoryStatusEx",
+    "physical_available_gib": 11.95572280883789,
+    "commit_available_gib": 12.828109741210938,
+    "memory_load_percent": 62
+  },
+  "decision": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "trainable_count": 1768949,
+  "wide_initial_output_zero": true,
+  "original_protected_hashes": 67,
+  "old_model_forecast_checks": 48,
+  "f0_checks": 4,
+  "max_abs_score_error": 2.220446049250313e-16,
+  "GPU_check": "separate guarded smoke",
+  "analysis_sha256": "32defad82afe58718d408caac81aa519977c65d37eb74f01ac47cfc375ea1917"
+}

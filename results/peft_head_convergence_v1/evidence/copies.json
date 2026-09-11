@@ -1,0 +1,52 @@
+[
+  {
+    "source": "runs/peft_head_convergence_v1/plan.json",
+    "copy": "plan.json",
+    "sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/selection_A.json",
+    "copy": "selection_A.json",
+    "sha256": "24bba947995e31092f580f8858f4e11e7dfc54abad1747c6857a0bcbf70a0cee"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/completed.json",
+    "copy": "completed.json",
+    "sha256": "4dac8113d5c750dea80d77c8b3898e1cc19f57bd87cda64efd5e6ac0724fc9cf"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/independent_audit.json",
+    "copy": "independent_audit.json",
+    "sha256": "788fd016eee16cc6e51b6d74627024ce8d15d02bc009edaef9856fb60389989e"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/window_qc.json",
+    "copy": "window_qc.json",
+    "sha256": "18ac7fd1c43e017f989010e5169cde6afb541fdcdc1680b28b1f2dfc1b26d9c6"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/download_receipt.json",
+    "copy": "download_receipt.json",
+    "sha256": "fec8198204cddf24d1f0d7eb5e7aab4dd71fb474f3b6713a242a36077e6d91bb"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/preflight_review.json",
+    "copy": "preflight_review.json",
+    "sha256": "6f63148312f553d738abb879a5bcae66ab311a033180d659db7a01a233cbb218"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/environment.json",
+    "copy": "environment.json",
+    "sha256": "52a82ad497af5f674a154d538ce7b1b3f5013fefa071e0a25b561ad64570914e"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/prepared/summary.json",
+    "copy": "prepared_summary.json",
+    "sha256": "413468399e665622a7848cfa9fad609f35f6f5500615dc511c3ddc69c5d63196"
+  },
+  {
+    "source": "runs/peft_head_convergence_v1/prepared/data_audit.json",
+    "copy": "prepared_data_audit.json",
+    "sha256": "486387b67f630ab08ea73ca41f38d92dcaea685ebb8a3f371fffb0d25c5cf1ff"
+  }
+]

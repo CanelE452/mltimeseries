@@ -1,0 +1,37 @@
+{
+  "verified_at_utc": "2026-09-10T06:07:14.945357+00:00",
+  "markdown_files": 72,
+  "local_links_checked": 443,
+  "image_links_checked": 27,
+  "broken_local_links": [],
+  "moved_files": 50,
+  "figure_input_hashes_unchanged": 11,
+  "fullft_csv_records_read": 44,
+  "plotted_aggregates_recomputed": 6,
+  "maximum_number_difference": 1.1102230246251565e-16,
+  "decoded_figures": {
+    "01_fullft_benefit.png": [
+      2302,
+      934
+    ],
+    "02_fullft_contrasts.png": [
+      2112,
+      934
+    ],
+    "03_coarse_supervision.png": [
+      2492,
+      1105
+    ],
+    "04_hospital_validation_only.png": [
+      1922,
+      915
+    ],
+    "05_hospital_memory.png": [
+      2302,
+      934
+    ]
+  },
+  "historical_snapshot_hospital_status": "PAUSED_BY_USER_INCOMPLETE",
+  "new_model_training_or_inference": 0,
+  "scope": "Local link existence and saved-record consistency; not a new audit of original forecasts or public GitHub availability."
+}

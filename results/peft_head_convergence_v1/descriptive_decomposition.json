@@ -1,0 +1,1448 @@
+{
+  "created_utc": "2026-09-11T05:37:58.290363+00:00",
+  "scope": "posthoc descriptive diagnostic on existing Study35 outputs only",
+  "limitations": [
+    "post-hoc descriptive decomposition; not used for model selection",
+    "D is a development diagnostic, not an independent final test",
+    "two seeds per source share the same target labels/origins, so seed rows are dependent views of the same source period",
+    "loss decomposition localizes where JOINT worsened versus F0 but does not establish shift causality"
+  ],
+  "run_completed": {
+    "completed": true,
+    "seconds": 4546.777772000001,
+    "finished_utc": "2026-09-11T05:33:13.632106+00:00",
+    "plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+    "stage_B_executed": false
+  },
+  "G1": {
+    "passes": false,
+    "source_passes": {
+      "bmra": false,
+      "jena": false
+    },
+    "values": [
+      {
+        "cell": "bmra/s30000",
+        "dataset": "bmra",
+        "seed": 30000,
+        "gain_pct_F0": -6.353053481136845
+      },
+      {
+        "cell": "bmra/s30001",
+        "dataset": "bmra",
+        "seed": 30001,
+        "gain_pct_F0": -4.742160398424274
+      },
+      {
+        "cell": "jena/s30000",
+        "dataset": "jena",
+        "seed": 30000,
+        "gain_pct_F0": -2.9840818254906245
+      },
+      {
+        "cell": "jena/s30001",
+        "dataset": "jena",
+        "seed": 30001,
+        "gain_pct_F0": -3.1399412751436038
+      }
+    ]
+  },
+  "L720_family_mean_D_over_F0": {
+    "HEAD": 1.1643944147569596,
+    "WIDE": 1.1310913272638554,
+    "JOINT": 1.0430480924504884
+  },
+  "validation_development_rows": [
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "family": "HEAD",
+      "recipe": 3,
+      "selected_step": 120,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.4971120534329585,
+      "validation_gain_pct_initial": 7.293484681000089,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.44701868744109685,
+      "train_gain_pct_initial": 13.977570262238016,
+      "D_score": 0.47632712312983105,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -14.687788830331183,
+      "D_over_F0": 1.1468778883033117,
+      "selected_key": "A/bmra/HEAD/r3/s30000"
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "family": "WIDE",
+      "recipe": 2,
+      "selected_step": 120,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.49680861985059566,
+      "validation_gain_pct_initial": 7.350072063778997,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.4577700047506336,
+      "train_gain_pct_initial": 11.908631169015257,
+      "D_score": 0.4727811970060675,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -13.834017531695096,
+      "D_over_F0": 1.1383401753169509,
+      "selected_key": "A/bmra/WIDE/r2/s30000"
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "family": "JOINT",
+      "recipe": 2,
+      "selected_step": 120,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.4954794203489833,
+      "validation_gain_pct_initial": 7.597954715401027,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.45524790586422786,
+      "train_gain_pct_initial": 12.393973460831894,
+      "D_score": 0.4417108788773279,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -6.353053481136845,
+      "D_over_F0": 1.0635305348113684,
+      "selected_key": "A/bmra/JOINT/r2/s30000"
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "family": "HEAD",
+      "recipe": 2,
+      "selected_step": 360,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.4933355097287201,
+      "validation_gain_pct_initial": 7.997772988539722,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.43832375811066093,
+      "train_gain_pct_initial": 15.650786546961655,
+      "D_score": 0.4962458173960124,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -19.48371770115695,
+      "D_over_F0": 1.1948371770115696,
+      "selected_key": "A/bmra/HEAD/r2/s30001"
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "family": "WIDE",
+      "recipe": 1,
+      "selected_step": 360,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.49583266936517456,
+      "validation_gain_pct_initial": 7.532077243501477,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.45658425503428424,
+      "train_gain_pct_initial": 12.136811946523975,
+      "D_score": 0.483261077403291,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -16.357313501209497,
+      "D_over_F0": 1.163573135012095,
+      "selected_key": "A/bmra/WIDE/r1/s30001"
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "family": "JOINT",
+      "recipe": 0,
+      "selected_step": 360,
+      "initial_V": 0.5362212695865152,
+      "selected_V": 0.5065957736066495,
+      "validation_gain_pct_initial": 5.524864017928664,
+      "initial_train_score": 0.5196536401073839,
+      "selected_train_score": 0.4540492659147108,
+      "train_gain_pct_initial": 12.624634781566487,
+      "D_score": 0.43502043628022297,
+      "F0_score": 0.4153250559521277,
+      "development_gain_pct_F0": -4.742160398424274,
+      "D_over_F0": 1.0474216039842428,
+      "selected_key": "A/bmra/JOINT/r0/s30001"
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "family": "HEAD",
+      "recipe": 2,
+      "selected_step": 540,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.39214920065746917,
+      "validation_gain_pct_initial": 3.362298195711091,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.3079082293183384,
+      "train_gain_pct_initial": 18.12549382473283,
+      "D_score": 0.5403771901313714,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -13.691517844083384,
+      "D_over_F0": 1.1369151784408338,
+      "selected_key": "A/jena/HEAD/r2/s30000"
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "family": "WIDE",
+      "recipe": 3,
+      "selected_step": 180,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.3927770146042142,
+      "validation_gain_pct_initial": 3.207585405598545,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.30455580249072345,
+      "train_gain_pct_initial": 19.0169227144619,
+      "D_score": 0.5177084265253841,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -8.922171193113783,
+      "D_over_F0": 1.0892217119311378,
+      "selected_key": "A/jena/WIDE/r3/s30000"
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "family": "JOINT",
+      "recipe": 0,
+      "selected_step": 180,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.3947334089982058,
+      "validation_gain_pct_initial": 2.7254692678092414,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.3513532111866372,
+      "train_gain_pct_initial": 6.573232152041795,
+      "D_score": 0.489484614335404,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -2.9840818254906245,
+      "D_over_F0": 1.0298408182549061,
+      "selected_key": "A/jena/JOINT/r0/s30000"
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "family": "HEAD",
+      "recipe": 2,
+      "selected_step": 720,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.39631817072520337,
+      "validation_gain_pct_initial": 2.334934922851567,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.2833956858991369,
+      "train_gain_pct_initial": 24.643515093569984,
+      "D_score": 0.5603551642709882,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -17.89474152721237,
+      "D_over_F0": 1.1789474152721238,
+      "selected_key": "A/jena/HEAD/r2/s30001"
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "family": "WIDE",
+      "recipe": 3,
+      "selected_step": 120,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.39112641667774556,
+      "validation_gain_pct_initial": 3.6143438280291518,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.3215110622889359,
+      "train_gain_pct_initial": 14.508425081497448,
+      "D_score": 0.538625756575777,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -13.323028679523764,
+      "D_over_F0": 1.1332302867952377,
+      "selected_key": "A/jena/WIDE/r3/s30001"
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "family": "JOINT",
+      "recipe": 1,
+      "selected_step": 60,
+      "initial_V": 0.4057931773374034,
+      "selected_V": 0.39285528336111514,
+      "validation_gain_pct_initial": 3.1882975611319426,
+      "initial_train_score": 0.3760733880448759,
+      "selected_train_score": 0.3544323554184104,
+      "train_gain_pct_initial": 5.754470620474514,
+      "D_score": 0.490225416226838,
+      "F0_score": 0.4753012365200762,
+      "development_gain_pct_F0": -3.1399412751436038,
+      "D_over_F0": 1.031399412751436,
+      "selected_key": "A/jena/JOINT/r1/s30001"
+    }
+  ],
+  "joint_vs_f0_target_contributions": [
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "target_index": 0,
+      "target": "E_BRYBW-1",
+      "joint_target_score": 0.6409379282932071,
+      "f0_target_score": 0.6249530821852419,
+      "target_score_gap_joint_minus_f0": 0.015984846107965134,
+      "macro_gap_contribution": 0.007992423053982567,
+      "macro_gap_contribution_pct_F0": 1.9243777709630432
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "target_index": 1,
+      "target": "E_BURBO",
+      "joint_target_score": 0.2424838294614486,
+      "f0_target_score": 0.2056970297190135,
+      "target_score_gap_joint_minus_f0": 0.03678679974243512,
+      "macro_gap_contribution": 0.01839339987121756,
+      "macro_gap_contribution_pct_F0": 4.428675710173785
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "target_index": 0,
+      "target": "E_BRYBW-1",
+      "joint_target_score": 0.6428101504582304,
+      "f0_target_score": 0.6249530821852419,
+      "target_score_gap_joint_minus_f0": 0.017857068272988497,
+      "macro_gap_contribution": 0.008928534136494248,
+      "macro_gap_contribution_pct_F0": 2.149770164004599
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "target_index": 1,
+      "target": "E_BURBO",
+      "joint_target_score": 0.22723072210221543,
+      "f0_target_score": 0.2056970297190135,
+      "target_score_gap_joint_minus_f0": 0.021533692383201936,
+      "macro_gap_contribution": 0.010766846191600968,
+      "macro_gap_contribution_pct_F0": 2.5923902344196645
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "target_index": 0,
+      "target": "p (mbar)",
+      "joint_target_score": 0.6930388153726889,
+      "f0_target_score": 0.6699071795417957,
+      "target_score_gap_joint_minus_f0": 0.02313163583089317,
+      "macro_gap_contribution": 0.011565817915446586,
+      "macro_gap_contribution_pct_F0": 2.4333658376582106
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "target_index": 1,
+      "target": "T (degC)",
+      "joint_target_score": 0.2859304132981193,
+      "f0_target_score": 0.28069529349835665,
+      "target_score_gap_joint_minus_f0": 0.005235119799762655,
+      "macro_gap_contribution": 0.0026175598998813276,
+      "macro_gap_contribution_pct_F0": 0.5507159878324375
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "target_index": 0,
+      "target": "p (mbar)",
+      "joint_target_score": 0.695105234532391,
+      "f0_target_score": 0.6699071795417957,
+      "target_score_gap_joint_minus_f0": 0.025198054990595353,
+      "macro_gap_contribution": 0.012599027495297677,
+      "macro_gap_contribution_pct_F0": 2.650745785460524
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "target_index": 1,
+      "target": "T (degC)",
+      "joint_target_score": 0.28534559792128494,
+      "f0_target_score": 0.28069529349835665,
+      "target_score_gap_joint_minus_f0": 0.0046503044229282975,
+      "macro_gap_contribution": 0.0023251522114641487,
+      "macro_gap_contribution_pct_F0": 0.4891954896830858
+    }
+  ],
+  "joint_vs_f0_origin_rows": [
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 0,
+      "origin_index": 3864,
+      "origin_timestamp": "2017-10-12T00:00:00",
+      "macro_gap_contribution": 0.00979769778806475,
+      "macro_gap_contribution_pct_F0": 2.3590432716859917,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 1,
+      "origin_index": 3960,
+      "origin_timestamp": "2017-10-16T00:00:00",
+      "macro_gap_contribution": -0.0016183241922043037,
+      "macro_gap_contribution_pct_F0": -0.3896524346440681,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 2,
+      "origin_index": 4056,
+      "origin_timestamp": "2017-10-20T00:00:00",
+      "macro_gap_contribution": -0.0010336303823643657,
+      "macro_gap_contribution_pct_F0": -0.24887262821039785,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 3,
+      "origin_index": 4152,
+      "origin_timestamp": "2017-10-24T00:00:00",
+      "macro_gap_contribution": 0.0033083914545771866,
+      "macro_gap_contribution_pct_F0": 0.7965788259494093,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 4,
+      "origin_index": 4248,
+      "origin_timestamp": "2017-10-28T00:00:00",
+      "macro_gap_contribution": -0.00020312517176332957,
+      "macro_gap_contribution_pct_F0": -0.04890751685993699,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 5,
+      "origin_index": 4344,
+      "origin_timestamp": "2017-11-01T00:00:00",
+      "macro_gap_contribution": 0.000884001728344537,
+      "macro_gap_contribution_pct_F0": 0.2128457495341748,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 6,
+      "origin_index": 4440,
+      "origin_timestamp": "2017-11-05T00:00:00",
+      "macro_gap_contribution": 0.004021205648382558,
+      "macro_gap_contribution_pct_F0": 0.9682068516583937,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 7,
+      "origin_index": 4536,
+      "origin_timestamp": "2017-11-09T00:00:00",
+      "macro_gap_contribution": -0.00035534651544309157,
+      "macro_gap_contribution_pct_F0": -0.08555865107354621,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 8,
+      "origin_index": 4632,
+      "origin_timestamp": "2017-11-13T00:00:00",
+      "macro_gap_contribution": -0.0032395433723675406,
+      "macro_gap_contribution_pct_F0": -0.7800019107782761,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 9,
+      "origin_index": 4728,
+      "origin_timestamp": "2017-11-17T00:00:00",
+      "macro_gap_contribution": 0.0023431332508514983,
+      "macro_gap_contribution_pct_F0": 0.5641685271021979,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 10,
+      "origin_index": 4824,
+      "origin_timestamp": "2017-11-21T00:00:00",
+      "macro_gap_contribution": -0.0005144741434906816,
+      "macro_gap_contribution_pct_F0": -0.12387264772919991,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 11,
+      "origin_index": 4920,
+      "origin_timestamp": "2017-11-25T00:00:00",
+      "macro_gap_contribution": 0.002387080567489381,
+      "macro_gap_contribution_pct_F0": 0.5747499538685494,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 12,
+      "origin_index": 5016,
+      "origin_timestamp": "2017-11-29T00:00:00",
+      "macro_gap_contribution": 0.002842145074922694,
+      "macro_gap_contribution_pct_F0": 0.6843182307908465,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 13,
+      "origin_index": 5112,
+      "origin_timestamp": "2017-12-03T00:00:00",
+      "macro_gap_contribution": 0.003424442674042178,
+      "macro_gap_contribution_pct_F0": 0.8245210889556577,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 14,
+      "origin_index": 5208,
+      "origin_timestamp": "2017-12-07T00:00:00",
+      "macro_gap_contribution": 0.006354335813358978,
+      "macro_gap_contribution_pct_F0": 1.5299668831180289,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 15,
+      "origin_index": 5304,
+      "origin_timestamp": "2017-12-11T00:00:00",
+      "macro_gap_contribution": -0.0007411425248148625,
+      "macro_gap_contribution_pct_F0": -0.1784487870869727,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 16,
+      "origin_index": 5400,
+      "origin_timestamp": "2017-12-15T00:00:00",
+      "macro_gap_contribution": -0.004211965418370317,
+      "macro_gap_contribution_pct_F0": -1.014137085641134,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 17,
+      "origin_index": 5496,
+      "origin_timestamp": "2017-12-19T00:00:00",
+      "macro_gap_contribution": -0.003650547211944312,
+      "macro_gap_contribution_pct_F0": -0.8789614687646226,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 18,
+      "origin_index": 5592,
+      "origin_timestamp": "2017-12-23T00:00:00",
+      "macro_gap_contribution": 0.0033085112137079343,
+      "macro_gap_contribution_pct_F0": 0.7966076609857337,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "origin_order": 19,
+      "origin_index": 5688,
+      "origin_timestamp": "2017-12-27T00:00:00",
+      "macro_gap_contribution": 0.0032829766442212488,
+      "macro_gap_contribution_pct_F0": 0.7904595682760012,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 0,
+      "origin_index": 3864,
+      "origin_timestamp": "2017-10-12T00:00:00",
+      "macro_gap_contribution": 0.006751052662871026,
+      "macro_gap_contribution_pct_F0": 1.6254864872995245,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 1,
+      "origin_index": 3960,
+      "origin_timestamp": "2017-10-16T00:00:00",
+      "macro_gap_contribution": -0.001046954580743584,
+      "macro_gap_contribution_pct_F0": -0.2520807655929771,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 2,
+      "origin_index": 4056,
+      "origin_timestamp": "2017-10-20T00:00:00",
+      "macro_gap_contribution": 0.0005121997087829538,
+      "macro_gap_contribution_pct_F0": 0.12332502011195597,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 3,
+      "origin_index": 4152,
+      "origin_timestamp": "2017-10-24T00:00:00",
+      "macro_gap_contribution": 0.0020910521836768657,
+      "macro_gap_contribution_pct_F0": 0.5034736415993862,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 4,
+      "origin_index": 4248,
+      "origin_timestamp": "2017-10-28T00:00:00",
+      "macro_gap_contribution": 0.0014883705608443598,
+      "macro_gap_contribution_pct_F0": 0.35836281474333115,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 5,
+      "origin_index": 4344,
+      "origin_timestamp": "2017-11-01T00:00:00",
+      "macro_gap_contribution": 0.00011821211254549494,
+      "macro_gap_contribution_pct_F0": 0.028462552608220348,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 6,
+      "origin_index": 4440,
+      "origin_timestamp": "2017-11-05T00:00:00",
+      "macro_gap_contribution": 0.001029872460211701,
+      "macro_gap_contribution_pct_F0": 0.24796781351193242,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 7,
+      "origin_index": 4536,
+      "origin_timestamp": "2017-11-09T00:00:00",
+      "macro_gap_contribution": 0.0012861030632365944,
+      "macro_gap_contribution_pct_F0": 0.3096618046046412,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 8,
+      "origin_index": 4632,
+      "origin_timestamp": "2017-11-13T00:00:00",
+      "macro_gap_contribution": -0.0023502811734268858,
+      "macro_gap_contribution_pct_F0": -0.5658895700474642,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 9,
+      "origin_index": 4728,
+      "origin_timestamp": "2017-11-17T00:00:00",
+      "macro_gap_contribution": 0.002554415253672953,
+      "macro_gap_contribution_pct_F0": 0.615040007113702,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 10,
+      "origin_index": 4824,
+      "origin_timestamp": "2017-11-21T00:00:00",
+      "macro_gap_contribution": -0.0007379062559991717,
+      "macro_gap_contribution_pct_F0": -0.1776695736084428,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 11,
+      "origin_index": 4920,
+      "origin_timestamp": "2017-11-25T00:00:00",
+      "macro_gap_contribution": 0.0022295408651629178,
+      "macro_gap_contribution_pct_F0": 0.5368182904476404,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 12,
+      "origin_index": 5016,
+      "origin_timestamp": "2017-11-29T00:00:00",
+      "macro_gap_contribution": 0.0011742068427658043,
+      "macro_gap_contribution_pct_F0": 0.28271996257821463,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 13,
+      "origin_index": 5112,
+      "origin_timestamp": "2017-12-03T00:00:00",
+      "macro_gap_contribution": 0.001427713967074819,
+      "macro_gap_contribution_pct_F0": 0.3437582073640614,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 14,
+      "origin_index": 5208,
+      "origin_timestamp": "2017-12-07T00:00:00",
+      "macro_gap_contribution": 0.003289968888147763,
+      "macro_gap_contribution_pct_F0": 0.792143127653483,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 15,
+      "origin_index": 5304,
+      "origin_timestamp": "2017-12-11T00:00:00",
+      "macro_gap_contribution": -0.00023529940235568104,
+      "macro_gap_contribution_pct_F0": -0.0566542757253737,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 16,
+      "origin_index": 5400,
+      "origin_timestamp": "2017-12-15T00:00:00",
+      "macro_gap_contribution": -0.004087378092628576,
+      "macro_gap_contribution_pct_F0": -0.9841395393924189,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 17,
+      "origin_index": 5496,
+      "origin_timestamp": "2017-12-19T00:00:00",
+      "macro_gap_contribution": 0.0002479681454239732,
+      "macro_gap_contribution_pct_F0": 0.05970459568241295,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 18,
+      "origin_index": 5592,
+      "origin_timestamp": "2017-12-23T00:00:00",
+      "macro_gap_contribution": 0.0031493431768162576,
+      "macro_gap_contribution_pct_F0": 0.7582839348799765,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "origin_order": 19,
+      "origin_index": 5688,
+      "origin_timestamp": "2017-12-27T00:00:00",
+      "macro_gap_contribution": 0.0008031799420155853,
+      "macro_gap_contribution_pct_F0": 0.19338586259244703,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 0,
+      "origin_index": 3864,
+      "origin_timestamp": "2018-10-12T00:00:00",
+      "macro_gap_contribution": -0.002093663982896183,
+      "macro_gap_contribution_pct_F0": -0.4404920126496975,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 1,
+      "origin_index": 3960,
+      "origin_timestamp": "2018-10-16T00:00:00",
+      "macro_gap_contribution": 0.0004621074528653894,
+      "macro_gap_contribution_pct_F0": 0.09722412174828636,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 2,
+      "origin_index": 4056,
+      "origin_timestamp": "2018-10-20T00:00:00",
+      "macro_gap_contribution": 0.00039971805561091705,
+      "macro_gap_contribution_pct_F0": 0.08409783625589903,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 3,
+      "origin_index": 4152,
+      "origin_timestamp": "2018-10-24T00:00:00",
+      "macro_gap_contribution": 0.00031772384849352984,
+      "macro_gap_contribution_pct_F0": 0.06684683819039665,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 4,
+      "origin_index": 4248,
+      "origin_timestamp": "2018-10-28T00:00:00",
+      "macro_gap_contribution": 0.0029040883855324475,
+      "macro_gap_contribution_pct_F0": 0.6109995435304915,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 5,
+      "origin_index": 4344,
+      "origin_timestamp": "2018-11-01T00:00:00",
+      "macro_gap_contribution": 0.0014034364937540018,
+      "macro_gap_contribution_pct_F0": 0.2952730575727678,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 6,
+      "origin_index": 4440,
+      "origin_timestamp": "2018-11-05T00:00:00",
+      "macro_gap_contribution": -0.0011572793873485642,
+      "macro_gap_contribution_pct_F0": -0.24348335296192355,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 7,
+      "origin_index": 4536,
+      "origin_timestamp": "2018-11-09T00:00:00",
+      "macro_gap_contribution": 0.000470958187395886,
+      "macro_gap_contribution_pct_F0": 0.09908625335040408,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 8,
+      "origin_index": 4632,
+      "origin_timestamp": "2018-11-13T00:00:00",
+      "macro_gap_contribution": 0.0014838515585221675,
+      "macro_gap_contribution_pct_F0": 0.31219181531826107,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 9,
+      "origin_index": 4728,
+      "origin_timestamp": "2018-11-17T00:00:00",
+      "macro_gap_contribution": -0.00019304222098553522,
+      "macro_gap_contribution_pct_F0": -0.04061471045160669,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 10,
+      "origin_index": 4824,
+      "origin_timestamp": "2018-11-21T00:00:00",
+      "macro_gap_contribution": 0.000664031323713299,
+      "macro_gap_contribution_pct_F0": 0.13970746816797963,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 11,
+      "origin_index": 4920,
+      "origin_timestamp": "2018-11-25T00:00:00",
+      "macro_gap_contribution": 0.00044753844543409633,
+      "macro_gap_contribution_pct_F0": 0.09415890619404958,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 12,
+      "origin_index": 5016,
+      "origin_timestamp": "2018-11-29T00:00:00",
+      "macro_gap_contribution": -0.0005194168270799658,
+      "macro_gap_contribution_pct_F0": -0.10928160652029488,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 13,
+      "origin_index": 5112,
+      "origin_timestamp": "2018-12-03T00:00:00",
+      "macro_gap_contribution": 0.0006449896658975154,
+      "macro_gap_contribution_pct_F0": 0.1357012387806552,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 14,
+      "origin_index": 5208,
+      "origin_timestamp": "2018-12-07T00:00:00",
+      "macro_gap_contribution": 0.0036960806035967477,
+      "macro_gap_contribution_pct_F0": 0.7776290738601158,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 15,
+      "origin_index": 5304,
+      "origin_timestamp": "2018-12-11T00:00:00",
+      "macro_gap_contribution": 0.006957283500986257,
+      "macro_gap_contribution_pct_F0": 1.4637629710210922,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 16,
+      "origin_index": 5400,
+      "origin_timestamp": "2018-12-15T00:00:00",
+      "macro_gap_contribution": -0.001574966155812722,
+      "macro_gap_contribution_pct_F0": -0.33136167861540944,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 17,
+      "origin_index": 5496,
+      "origin_timestamp": "2018-12-19T00:00:00",
+      "macro_gap_contribution": 0.0010624993041643232,
+      "macro_gap_contribution_pct_F0": 0.22354229750030208,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 18,
+      "origin_index": 5592,
+      "origin_timestamp": "2018-12-23T00:00:00",
+      "macro_gap_contribution": -0.0008814588714310843,
+      "macro_gap_contribution_pct_F0": -0.18545267794476955,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "origin_order": 19,
+      "origin_index": 5688,
+      "origin_timestamp": "2018-12-27T00:00:00",
+      "macro_gap_contribution": -0.0003111015650847213,
+      "macro_gap_contribution_pct_F0": -0.06545355685637495,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 0,
+      "origin_index": 3864,
+      "origin_timestamp": "2018-10-12T00:00:00",
+      "macro_gap_contribution": -0.0030808072442092198,
+      "macro_gap_contribution_pct_F0": -0.6481799346379545,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 1,
+      "origin_index": 3960,
+      "origin_timestamp": "2018-10-16T00:00:00",
+      "macro_gap_contribution": 0.0006668607719709813,
+      "macro_gap_contribution_pct_F0": 0.14030276395942298,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 2,
+      "origin_index": 4056,
+      "origin_timestamp": "2018-10-20T00:00:00",
+      "macro_gap_contribution": -0.0008601040745643979,
+      "macro_gap_contribution_pct_F0": -0.1809597805513111,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 3,
+      "origin_index": 4152,
+      "origin_timestamp": "2018-10-24T00:00:00",
+      "macro_gap_contribution": 3.608924988303091e-05,
+      "macro_gap_contribution_pct_F0": 0.007592921522203223,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 4,
+      "origin_index": 4248,
+      "origin_timestamp": "2018-10-28T00:00:00",
+      "macro_gap_contribution": 0.0033307367091061782,
+      "macro_gap_contribution_pct_F0": 0.7007633166478185,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 5,
+      "origin_index": 4344,
+      "origin_timestamp": "2018-11-01T00:00:00",
+      "macro_gap_contribution": 0.001844072898482746,
+      "macro_gap_contribution_pct_F0": 0.3879798234871317,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 6,
+      "origin_index": 4440,
+      "origin_timestamp": "2018-11-05T00:00:00",
+      "macro_gap_contribution": -0.0014592845936393325,
+      "macro_gap_contribution_pct_F0": -0.30702310061793703,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 7,
+      "origin_index": 4536,
+      "origin_timestamp": "2018-11-09T00:00:00",
+      "macro_gap_contribution": -0.00040447271300284043,
+      "macro_gap_contribution_pct_F0": -0.08509818235782265,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 8,
+      "origin_index": 4632,
+      "origin_timestamp": "2018-11-13T00:00:00",
+      "macro_gap_contribution": 0.0015222524866340308,
+      "macro_gap_contribution_pct_F0": 0.3202710975000236,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 9,
+      "origin_index": 4728,
+      "origin_timestamp": "2018-11-17T00:00:00",
+      "macro_gap_contribution": -0.001308006502701008,
+      "macro_gap_contribution_pct_F0": -0.2751952661174613,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 10,
+      "origin_index": 4824,
+      "origin_timestamp": "2018-11-21T00:00:00",
+      "macro_gap_contribution": 0.00026882684483893856,
+      "macro_gap_contribution_pct_F0": 0.0565592563585901,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 11,
+      "origin_index": 4920,
+      "origin_timestamp": "2018-11-25T00:00:00",
+      "macro_gap_contribution": -0.00014746746614536835,
+      "macro_gap_contribution_pct_F0": -0.031026106143769622,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 12,
+      "origin_index": 5016,
+      "origin_timestamp": "2018-11-29T00:00:00",
+      "macro_gap_contribution": 0.0009888781194377176,
+      "macro_gap_contribution_pct_F0": 0.20805292380003065,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 13,
+      "origin_index": 5112,
+      "origin_timestamp": "2018-12-03T00:00:00",
+      "macro_gap_contribution": 0.0014525013575435127,
+      "macro_gap_contribution_pct_F0": 0.3055959559832032,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 14,
+      "origin_index": 5208,
+      "origin_timestamp": "2018-12-07T00:00:00",
+      "macro_gap_contribution": 0.0054725944569393795,
+      "macro_gap_contribution_pct_F0": 1.1513949547043147,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 15,
+      "origin_index": 5304,
+      "origin_timestamp": "2018-12-11T00:00:00",
+      "macro_gap_contribution": 0.007671610432050308,
+      "macro_gap_contribution_pct_F0": 1.6140522772922066,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 16,
+      "origin_index": 5400,
+      "origin_timestamp": "2018-12-15T00:00:00",
+      "macro_gap_contribution": -0.00019928022168773415,
+      "macro_gap_contribution_pct_F0": -0.04192714143703196,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 17,
+      "origin_index": 5496,
+      "origin_timestamp": "2018-12-19T00:00:00",
+      "macro_gap_contribution": 0.0005235219236493253,
+      "macro_gap_contribution_pct_F0": 0.1101452896445836,
+      "joint_worse_than_f0": true
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 18,
+      "origin_index": 5592,
+      "origin_timestamp": "2018-12-23T00:00:00",
+      "macro_gap_contribution": -0.0009250845255257751,
+      "macro_gap_contribution_pct_F0": -0.19463120531703065,
+      "joint_worse_than_f0": false
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "origin_order": 19,
+      "origin_index": 5688,
+      "origin_timestamp": "2018-12-27T00:00:00",
+      "macro_gap_contribution": -0.0004692582022987065,
+      "macro_gap_contribution_pct_F0": -0.09872858857561283,
+      "joint_worse_than_f0": false
+    }
+  ],
+  "joint_vs_f0_cell_summary": [
+    {
+      "cell": "bmra/s30000",
+      "dataset": "bmra",
+      "seed": 30000,
+      "f0_score": 0.4153250559521277,
+      "joint_score": 0.4417108788773279,
+      "macro_gap_joint_minus_f0": 0.026385822925200197,
+      "macro_gap_pct_F0": 6.353053481136845,
+      "target_contribution_sum": 0.026385822925200128,
+      "origin_contribution_sum": 0.02638582292520014,
+      "origin_deterioration_count": 11,
+      "origin_count": 20,
+      "worst_origins": [
+        {
+          "origin_order": 0,
+          "origin_timestamp": "2017-10-12T00:00:00",
+          "macro_gap_contribution_pct_F0": 2.3590432716859917
+        },
+        {
+          "origin_order": 14,
+          "origin_timestamp": "2017-12-07T00:00:00",
+          "macro_gap_contribution_pct_F0": 1.5299668831180289
+        },
+        {
+          "origin_order": 6,
+          "origin_timestamp": "2017-11-05T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.9682068516583937
+        },
+        {
+          "origin_order": 13,
+          "origin_timestamp": "2017-12-03T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.8245210889556577
+        },
+        {
+          "origin_order": 18,
+          "origin_timestamp": "2017-12-23T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.7966076609857337
+        }
+      ]
+    },
+    {
+      "cell": "bmra/s30001",
+      "dataset": "bmra",
+      "seed": 30001,
+      "f0_score": 0.4153250559521277,
+      "joint_score": 0.43502043628022297,
+      "macro_gap_joint_minus_f0": 0.019695380328095258,
+      "macro_gap_pct_F0": 4.742160398424274,
+      "target_contribution_sum": 0.019695380328095216,
+      "origin_contribution_sum": 0.01969538032809517,
+      "origin_deterioration_count": 15,
+      "origin_count": 20,
+      "worst_origins": [
+        {
+          "origin_order": 0,
+          "origin_timestamp": "2017-10-12T00:00:00",
+          "macro_gap_contribution_pct_F0": 1.6254864872995245
+        },
+        {
+          "origin_order": 14,
+          "origin_timestamp": "2017-12-07T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.792143127653483
+        },
+        {
+          "origin_order": 18,
+          "origin_timestamp": "2017-12-23T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.7582839348799765
+        },
+        {
+          "origin_order": 9,
+          "origin_timestamp": "2017-11-17T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.615040007113702
+        },
+        {
+          "origin_order": 11,
+          "origin_timestamp": "2017-11-25T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.5368182904476404
+        }
+      ]
+    },
+    {
+      "cell": "jena/s30000",
+      "dataset": "jena",
+      "seed": 30000,
+      "f0_score": 0.4753012365200762,
+      "joint_score": 0.489484614335404,
+      "macro_gap_joint_minus_f0": 0.014183377815327802,
+      "macro_gap_pct_F0": 2.9840818254906245,
+      "target_contribution_sum": 0.014183377815327913,
+      "origin_contribution_sum": 0.0141833778153278,
+      "origin_deterioration_count": 13,
+      "origin_count": 20,
+      "worst_origins": [
+        {
+          "origin_order": 15,
+          "origin_timestamp": "2018-12-11T00:00:00",
+          "macro_gap_contribution_pct_F0": 1.4637629710210922
+        },
+        {
+          "origin_order": 14,
+          "origin_timestamp": "2018-12-07T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.7776290738601158
+        },
+        {
+          "origin_order": 4,
+          "origin_timestamp": "2018-10-28T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.6109995435304915
+        },
+        {
+          "origin_order": 8,
+          "origin_timestamp": "2018-11-13T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.31219181531826107
+        },
+        {
+          "origin_order": 5,
+          "origin_timestamp": "2018-11-01T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.2952730575727678
+        }
+      ]
+    },
+    {
+      "cell": "jena/s30001",
+      "dataset": "jena",
+      "seed": 30001,
+      "f0_score": 0.4753012365200762,
+      "joint_score": 0.490225416226838,
+      "macro_gap_joint_minus_f0": 0.014924179706761798,
+      "macro_gap_pct_F0": 3.1399412751436038,
+      "target_contribution_sum": 0.014924179706761825,
+      "origin_contribution_sum": 0.014924179706761766,
+      "origin_deterioration_count": 11,
+      "origin_count": 20,
+      "worst_origins": [
+        {
+          "origin_order": 15,
+          "origin_timestamp": "2018-12-11T00:00:00",
+          "macro_gap_contribution_pct_F0": 1.6140522772922066
+        },
+        {
+          "origin_order": 14,
+          "origin_timestamp": "2018-12-07T00:00:00",
+          "macro_gap_contribution_pct_F0": 1.1513949547043147
+        },
+        {
+          "origin_order": 4,
+          "origin_timestamp": "2018-10-28T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.7007633166478185
+        },
+        {
+          "origin_order": 5,
+          "origin_timestamp": "2018-11-01T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.3879798234871317
+        },
+        {
+          "origin_order": 8,
+          "origin_timestamp": "2018-11-13T00:00:00",
+          "macro_gap_contribution_pct_F0": 0.3202710975000236
+        }
+      ]
+    }
+  ],
+  "consistency": {
+    "all_selected_validation_gain_positive": true,
+    "all_selected_train_gain_positive": true,
+    "all_selected_development_gain_negative": true,
+    "max_abs_target_sum_minus_macro_gap": 1.1102230246251565e-16,
+    "max_abs_origin_sum_minus_macro_gap": 8.673617379884035e-17,
+    "png_outputs": {
+      "06_validation_development.png": {
+        "exists": true,
+        "bytes": 117625
+      },
+      "07_target_origin_diagnostics.png": {
+        "exists": true,
+        "bytes": 311649
+      }
+    }
+  },
+  "outputs": {
+    "validation_development_png": "E:/CODING/proj/mltimeseries/results/peft_head_convergence_v1/06_validation_development.png",
+    "target_origin_diagnostics_png": "E:/CODING/proj/mltimeseries/results/peft_head_convergence_v1/07_target_origin_diagnostics.png"
+  }
+}

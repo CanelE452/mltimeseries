@@ -1,0 +1,243 @@
+{
+  "study": "peft_decision_transfer_v1",
+  "review": "independent_policy_review_v1",
+  "created_utc": "2026-09-10T23:47:33.863639+00:00",
+  "decision": "V_ONLY_POLICY_REVIEW_PASS_WITH_DESIGN_LIMITATION",
+  "scope": {
+    "policy_path": "experiments/peft_decision_transfer_v1/policy.py",
+    "policy_sha256": "9c78775d0435e10c6e3ced7ee84ca42819724a0373d43ed52441a2c3b78c6ba0",
+    "fit_result_scope": "runs/peft_decision_transfer_v1/fit/test/*/*/TREE/r0/*/output/result.json",
+    "fit_results_read": 12,
+    "test_E_or_forecast_files_read": false,
+    "forecast_directories_read": false,
+    "new_experiments_run": false,
+    "core_or_plan_files_modified": false,
+    "receipt_only_file_written": "runs/peft_decision_transfer_v1/independent_policy_review.json"
+  },
+  "code_line_references": [
+    {
+      "file": "experiments/peft_decision_transfer_v1/policy.py",
+      "lines": "31-41",
+      "meaning": "paths() defines fork prefix, qstep, and trial scores; STOP trial is fork V, HEAD trial is HEAD1 at qstep, JOINT trial is JOINT at qstep."
+    },
+    {
+      "file": "experiments/peft_decision_transfer_v1/policy.py",
+      "lines": "50-52",
+      "meaning": "After choosing an action, selected output is selected(options[action]) over the whole option history."
+    },
+    {
+      "file": "experiments/peft_decision_transfer_v1/policy.py",
+      "lines": "60",
+      "meaning": "STOP output is selected(prefix), so a non-STOP action can still return the same prefix-best checkpoint as STOP."
+    }
+  ],
+  "margin0_PROBE": {
+    "margin_pct_F0": 0.0,
+    "action_counts": {
+      "STOP": 10,
+      "HEAD": 2,
+      "JOINT": 0
+    },
+    "selected_after_fork_count": 0,
+    "selected_after_fork_fraction": 0.0,
+    "selected_same_checkpoint_as_STOP_count": 12,
+    "selected_same_checkpoint_as_STOP_fraction": 1.0,
+    "selected_same_model_hash_as_STOP_count": 12,
+    "selected_same_model_hash_as_STOP_fraction": 1.0,
+    "chosen_action_nonSTOP_but_selected_prefix_count": 2,
+    "chosen_action_nonSTOP_but_selected_prefix_cases": [
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed": 28002,
+        "fork": 20,
+        "qstep": 25,
+        "PROBE_action": "HEAD",
+        "PROBE_selected_checkpoint": "JOINT_5",
+        "PROBE_selected_step": 5,
+        "PROBE_selected_model_hash": "4433773bae9721209013cca52da448115616425b99a249324f224f5d8a602390",
+        "STOP_selected_checkpoint": "JOINT_5",
+        "STOP_selected_step": 5,
+        "STOP_selected_model_hash": "4433773bae9721209013cca52da448115616425b99a249324f224f5d8a602390",
+        "same_checkpoint_as_STOP": true,
+        "same_model_hash_as_STOP": true,
+        "initial_V": 0.3913454656813411,
+        "prefix_best_V": 0.3876353949299465,
+        "STOP_fork_V": 0.39061391150626235,
+        "HEAD_qstep_V": 0.3905815439923952,
+        "JOINT_qstep_V": 0.39379849380135845,
+        "source_result": "runs/peft_decision_transfer_v1/fit/test/bmra/SPREAD30/TREE/r0/s28002/output/result.json"
+      },
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed": 28003,
+        "fork": 20,
+        "qstep": 25,
+        "PROBE_action": "HEAD",
+        "PROBE_selected_checkpoint": "JOINT_10",
+        "PROBE_selected_step": 10,
+        "PROBE_selected_model_hash": "35085f367cdb917a13961d36dcd7c5a52f255457209174c0717ff06d88221146",
+        "STOP_selected_checkpoint": "JOINT_10",
+        "STOP_selected_step": 10,
+        "STOP_selected_model_hash": "35085f367cdb917a13961d36dcd7c5a52f255457209174c0717ff06d88221146",
+        "same_checkpoint_as_STOP": true,
+        "same_model_hash_as_STOP": true,
+        "initial_V": 0.3913454656813411,
+        "prefix_best_V": 0.38655432612197765,
+        "STOP_fork_V": 0.38761559292471826,
+        "HEAD_qstep_V": 0.3874964866121864,
+        "JOINT_qstep_V": 0.3881295659861408,
+        "source_result": "runs/peft_decision_transfer_v1/fit/test/bmra/SPREAD30/TREE/r0/s28003/output/result.json"
+      }
+    ],
+    "all_cases": [
+      {
+        "dataset": "bmra",
+        "condition": "FULL90",
+        "seed": 28002,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_30",
+        "selected_step": 30,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "FULL90",
+        "seed": 28003,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_30",
+        "selected_step": 30,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "FULL90",
+        "seed": 28004,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_15",
+        "selected_step": 15,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed": 28002,
+        "action": "HEAD",
+        "selected_checkpoint": "JOINT_5",
+        "selected_step": 5,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed": 28003,
+        "action": "HEAD",
+        "selected_checkpoint": "JOINT_10",
+        "selected_step": 10,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "bmra",
+        "condition": "SPREAD30",
+        "seed": 28004,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_10",
+        "selected_step": 10,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "seed": 28002,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_15",
+        "selected_step": 15,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "seed": 28003,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_30",
+        "selected_step": 30,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "FULL90",
+        "seed": 28004,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_15",
+        "selected_step": 15,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "seed": 28002,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_0",
+        "selected_step": 0,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "seed": 28003,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_5",
+        "selected_step": 5,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      },
+      {
+        "dataset": "jena",
+        "condition": "SPREAD30",
+        "seed": 28004,
+        "action": "STOP",
+        "selected_checkpoint": "JOINT_0",
+        "selected_step": 0,
+        "selected_after_fork": false,
+        "same_selected_checkpoint_as_STOP": true,
+        "same_selected_model_hash_as_STOP": true
+      }
+    ]
+  },
+  "interpretation": {
+    "classification": "prespecified_design_limitation_not_execution_bug",
+    "reason": "The frozen policy compares STOP using fork V, then returns the best validation checkpoint along the chosen path. Since HEAD1 contains the shared JOINT prefix, HEAD can win the fork+probe trial while the selected output remains the same prefix-best checkpoint as STOP.",
+    "if_final_gates_fail_can_conclude": [
+      "This frozen PROBE policy did not pass the pilot gates in this setting.",
+      "Action diversity, if present, should not be interpreted as effective post-fork adapted-output diversity unless selected_after_fork is reported."
+    ],
+    "if_final_gates_fail_cannot_conclude": [
+      "LoRA or HEAD continuation is generally useless.",
+      "Short validation probes contain no usable signal in other policies or datasets.",
+      "A non-STOP action necessarily means the final selected checkpoint used post-fork adapted weights."
+    ],
+    "recommended_reporting_note": "Report action counts together with selected_after_fork_count and STOP-equivalent selected checkpoint/model-hash counts."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "condition": "FULL90",
+      "regime": "UPDATE",
+      "max_steps": 180,
+      "train_origins": 90,
+      "unique_target_hours": 2184,
+      "expected_origin_exposures": 16.0,
+      "average_target_hour_exposures_before_missing_mask": 31.64835164835165
+    },
+    {
+      "condition": "FULL90",
+      "regime": "EXPOSURE",
+      "max_steps": 180,
+      "train_origins": 90,
+      "unique_target_hours": 2184,
+      "expected_origin_exposures": 16.0,
+      "average_target_hour_exposures_before_missing_mask": 31.64835164835165
+    },
+    {
+      "condition": "SPREAD30",
+      "regime": "UPDATE",
+      "max_steps": 180,
+      "train_origins": 30,
+      "unique_target_hours": 1440,
+      "expected_origin_exposures": 48.0,
+      "average_target_hour_exposures_before_missing_mask": 48.0
+    },
+    {
+      "condition": "SPREAD30",
+      "regime": "EXPOSURE",
+      "max_steps": 60,
+      "train_origins": 30,
+      "unique_target_hours": 1440,
+      "expected_origin_exposures": 16.0,
+      "average_target_hour_exposures_before_missing_mask": 16.0
+    },
+    {
+      "condition": "RECENT30",
+      "regime": "UPDATE",
+      "max_steps": 180,
+      "train_origins": 30,
+      "unique_target_hours": 744,
+      "expected_origin_exposures": 48.0,
+      "average_target_hour_exposures_before_missing_mask": 92.90322580645162
+    },
+    {
+      "condition": "RECENT30",
+      "regime": "EXPOSURE",
+      "max_steps": 60,
+      "train_origins": 30,
+      "unique_target_hours": 744,
+      "expected_origin_exposures": 16.0,
+      "average_target_hour_exposures_before_missing_mask": 30.967741935483872
+    }
+  ],
+  "note": "Origin exposure matching does not match unique-target-hour exposure. Deterministic schedule audit; no E predictions or outcomes used."
+}

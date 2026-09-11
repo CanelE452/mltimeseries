@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-11T02:06:50.241232+00:00",
+  "protected_hashes": {
+    "peft_initial_headroom_v1": 51,
+    "peft_decision_transfer_v1": 48
+  },
+  "rows": 40,
+  "archive_score_max_error": 0.0,
+  "verified_pngs": [
+    {
+      "path": "01_g1_initial_lora_gap.png",
+      "size": [
+        2160,
+        990
+      ],
+      "sha256": "36ae678e677d4b1b70df4ffae543db1056d65319bb21d3638a2017d11061884e"
+    },
+    {
+      "path": "02_family_heatmap.png",
+      "size": [
+        2340,
+        864
+      ],
+      "sha256": "938c68424d65f6ddf439dc1eb40bc44ed3f4cadc1afe64b3000fcbc37070bd34"
+    },
+    {
+      "path": "03_validation_cost.png",
+      "size": [
+        1620,
+        936
+      ],
+      "sha256": "9426c54fb2cd7b822f6ff512a061b21d1dfa3ec46fa2eda8fc140bbf7551890a"
+    },
+    {
+      "path": "04_selected_trajectories.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "aac708f055c0ed94f389db903c6bc137e6768e2724901e8f11f2784159ab0552"
+    },
+    {
+      "path": "05_quality_differences.png",
+      "size": [
+        1600,
+        880
+      ],
+      "sha256": "08f79a8d570cd0933d140a699807291cd07d6513226c3186f6ad6daf4ebcb602"
+    }
+  ],
+  "visual_review": "All five inspected; heatmap has imperfect text contrast; numeric CSV supplied. No frozen plots modified.",
+  "identical_evidence_copies": 10,
+  "local_links_verified": 35,
+  "python_ast": "pass",
+  "scoped_git_diff_check": 0,
+  "commit_push_performed": false
+}

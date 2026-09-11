@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-11T01:51:38+00:00",
+  "script_sha256": "937a9a8de00fe754cbbb5f3375a70ffdb3e0e0fd4687e2cf2d5bb794cf735184",
+  "error_type": "AssertionError",
+  "error_message": "chronology checks failed: {'all_smoke_finished_before_any_fit_end': True, 'all_96_fits_finished_before_selection_seal': True, 'selection_seal_before_any_D_forecast': True, 'all_D_forecasts_finished_before_completed': False}"
+}

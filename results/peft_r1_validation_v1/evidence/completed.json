@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "seconds": 1193.240913,
+  "timing_basis": "first admission sample to recovered completion, including CPU diagnosis delay",
+  "new_fits": 16,
+  "new_model_evaluations": 16,
+  "guard_jobs": 37,
+  "successful_guard_jobs": 36,
+  "original_controller_failed": true,
+  "cpu_dtype_recovery": true,
+  "fresh_test": false
+}

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-10T10:53:45.413213+00:00",
+  "reviewer": "future_split_audit data-engineer; root checked actual preparation result and contracts",
+  "blocking_issue_found": false,
+  "scope": "metadata, code paths, raw hashes, archive keys/shapes/origins/timestamps; no E forecast outcomes inspected",
+  "physical_fit_cutoff": {
+    "bike": "2012-08-22T00:00:00",
+    "household": "2009-01-15T00:00:00"
+  },
+  "E_ranges": {
+    "bike": [
+      "2012-09-14T00:00:00",
+      "2012-12-04T00:00:00"
+    ],
+    "household": [
+      "2009-02-07T00:00:00",
+      "2009-04-29T00:00:00"
+    ]
+  },
+  "origin_counts": {
+    "train": 90,
+    "val": 30,
+    "cal": 20,
+    "eval": 80
+  },
+  "fit_excludes_cal_eval_origins": true,
+  "raw_hashes_match": true,
+  "causal_fill_and_train_only_scaling_code_verified": true,
+  "subset_indices_within_train": true,
+  "limits": [
+    "Bike past train/V/cal/context reuse previous development observations; new E targets disjoint.",
+    "Familiar sources; pretraining overlap unknown.",
+    "Holdout archive has full historical rows, so fit-only access path is essential."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-10T15:39:08.0105597Z",
+  "source": "Win32_PerfFormattedData_PerfOS_Memory",
+  "available_bytes": 11442327552,
+  "committed_bytes": 26614898688,
+  "commit_limit_bytes": 39483990016,
+  "pool_nonpaged_bytes": 6447992832,
+  "pool_paged_bytes": 7264686080,
+  "last_boot": "2026-09-10T08:03:55.5000000+09:00",
+  "experiment_gpu_running": false
+}

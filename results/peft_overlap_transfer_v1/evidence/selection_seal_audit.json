@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-10T11:16:32.790261+00:00",
+  "selected_models": 24,
+  "selection_sha256": "1e072e35f09208d41d907febfcb2ea10baff6485399338312a3bcc96f0143e2d",
+  "clock_mtime_before_selection": true,
+  "diagnostic_mtime_before_selection": true,
+  "all_fit_finish_before_selection": true,
+  "selection_before_first_future_forecast": true,
+  "checkpoint_hashes_verified": 24,
+  "selection_utc": "2026-09-10T11:14:56.640029+00:00",
+  "first_future_forecast_utc": "2026-09-10T11:15:01.648107+00:00"
+}

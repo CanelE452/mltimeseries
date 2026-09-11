@@ -1,0 +1,357 @@
+{
+  "attempts": [
+    {
+      "path": "runs/hospital_shared_strength_v1_run/stages/s0/attempt_01/guard/status.json",
+      "state": "safety_stop",
+      "started_at": "2026-09-09T14:01:03.792677+00:00",
+      "elapsed_seconds": 2.297,
+      "min_sampled_commit_gib": 5.471866607666016,
+      "max_sampled_gpu_mib": 1373.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run/stages/s0/attempt_02/guard/status.json",
+      "state": "safety_stop",
+      "started_at": "2026-09-09T14:58:01.640158+00:00",
+      "elapsed_seconds": 16.453,
+      "min_sampled_commit_gib": 5.317173004150391,
+      "max_sampled_gpu_mib": 1120.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/analyse/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:58:35.286494+00:00",
+      "elapsed_seconds": 4.047,
+      "min_sampled_commit_gib": 13.150352478027344,
+      "max_sampled_gpu_mib": null
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr0/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-09T15:21:36.364825+00:00",
+      "elapsed_seconds": 288.734,
+      "min_sampled_commit_gib": 6.658855438232422,
+      "max_sampled_gpu_mib": 2068.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/guard/status.json",
+      "state": "safety_stop",
+      "started_at": "2026-09-09T15:26:25.179595+00:00",
+      "elapsed_seconds": 268.437,
+      "min_sampled_commit_gib": 5.981632232666016,
+      "max_sampled_gpu_mib": 2045.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_02/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:50:35.343998+00:00",
+      "elapsed_seconds": 115.421,
+      "min_sampled_commit_gib": 9.035636901855469,
+      "max_sampled_gpu_mib": 1580.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/fit_s1_lr0/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:52:35.824248+00:00",
+      "elapsed_seconds": 123.516,
+      "min_sampled_commit_gib": 8.734752655029297,
+      "max_sampled_gpu_mib": 1563.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/fit_s1_lr1/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:54:44.392415+00:00",
+      "elapsed_seconds": 121.391,
+      "min_sampled_commit_gib": 9.093280792236328,
+      "max_sampled_gpu_mib": 1521.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/forecast_eval/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:57:38.533002+00:00",
+      "elapsed_seconds": 56.687,
+      "min_sampled_commit_gib": 8.855270385742188,
+      "max_sampled_gpu_mib": 1281.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/forecast_gate/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:56:54.926936+00:00",
+      "elapsed_seconds": 34.453,
+      "min_sampled_commit_gib": 9.248531341552734,
+      "max_sampled_gpu_mib": 1290.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/s0/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-09T15:21:07.650739+00:00",
+      "elapsed_seconds": 28.641,
+      "min_sampled_commit_gib": 7.363109588623047,
+      "max_sampled_gpu_mib": 1920.0
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/select_gates/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:57:29.446046+00:00",
+      "elapsed_seconds": 4.047,
+      "min_sampled_commit_gib": 13.360061645507812,
+      "max_sampled_gpu_mib": null
+    },
+    {
+      "path": "runs/hospital_shared_strength_v1_run2/stages/select_models/attempt_01/guard/status.json",
+      "state": "completed",
+      "started_at": "2026-09-10T05:56:45.839111+00:00",
+      "elapsed_seconds": 4.062,
+      "min_sampled_commit_gib": 13.60886001586914,
+      "max_sampled_gpu_mib": null
+    }
+  ],
+  "scope": "Original run S0 attempts and all run2 stages; excludes data export/preparation.",
+  "all_listed_guard_seconds": 1068.1860000000001,
+  "new_invocation_seconds": 544.5,
+  "invocation_excludes_initial_admission_wait": true,
+  "monitor": "runs/hospital_shared_strength_v1_resume_monitor_20260910_144650",
+  "max_observed_python_private_gib": 4.572673797607422,
+  "fits": {
+    "fit_s0_lr0": {
+      "seed": 24000,
+      "learning_rate": 1e-05,
+      "best_step": 200,
+      "val_score": 0.8044162031398712,
+      "steps_completed": 200,
+      "checkpoint_replay": true,
+      "seconds": {
+        "total": 267.9216211999883,
+        "optimizer_steps": 120.90947840031004,
+        "mean_step": 0.6045473920015502,
+        "validation_after_step0": 102.19863769999938,
+        "best_capture": 0.07156700000632554
+      },
+      "unique_sampled_series": 685,
+      "unseen_train_series_this_fit": 82,
+      "nominal_window_exposure_ratio": 0.1604653495135894,
+      "history": [
+        {
+          "step": 0,
+          "validation_score": 0.8083393102315194
+        },
+        {
+          "step": 40,
+          "validation_score": 0.8073933986122819,
+          "train_loss": 12.329296827316284,
+          "gradient_norm_before_clip": 4.767118453979492
+        },
+        {
+          "step": 80,
+          "validation_score": 0.806275097671406,
+          "train_loss": 7.069663763046265,
+          "gradient_norm_before_clip": 3.5712435245513916
+        },
+        {
+          "step": 120,
+          "validation_score": 0.8049351178001806,
+          "train_loss": 8.121866226196289,
+          "gradient_norm_before_clip": 2.299107313156128
+        },
+        {
+          "step": 160,
+          "validation_score": 0.805509145565255,
+          "train_loss": 7.420500755310059,
+          "gradient_norm_before_clip": 4.30611515045166
+        },
+        {
+          "step": 200,
+          "validation_score": 0.8044162031398712,
+          "train_loss": 8.987380027770996,
+          "gradient_norm_before_clip": 5.277701377868652
+        }
+      ]
+    },
+    "fit_s0_lr1": {
+      "seed": 24000,
+      "learning_rate": 3e-05,
+      "best_step": 80,
+      "val_score": 0.8050274262533844,
+      "steps_completed": 200,
+      "checkpoint_replay": true,
+      "seconds": {
+        "total": 104.88252690000081,
+        "optimizer_steps": 46.56657659998382,
+        "mean_step": 0.23283288299991908,
+        "validation_after_step0": 39.42706889999681,
+        "best_capture": 0.017222800001036376
+      },
+      "unique_sampled_series": 685,
+      "unseen_train_series_this_fit": 82,
+      "nominal_window_exposure_ratio": 0.1604653495135894,
+      "history": [
+        {
+          "step": 0,
+          "validation_score": 0.8083393102315194
+        },
+        {
+          "step": 40,
+          "validation_score": 0.8062213424824,
+          "train_loss": 12.251380920410156,
+          "gradient_norm_before_clip": 5.007496356964111
+        },
+        {
+          "step": 80,
+          "validation_score": 0.8050274262533844,
+          "train_loss": 6.703717231750488,
+          "gradient_norm_before_clip": 3.6739273071289062
+        },
+        {
+          "step": 120,
+          "validation_score": 0.8071583792188278,
+          "train_loss": 8.125214338302612,
+          "gradient_norm_before_clip": 3.0091307163238525
+        },
+        {
+          "step": 160,
+          "validation_score": 0.8146998209108053,
+          "train_loss": 6.789458513259888,
+          "gradient_norm_before_clip": 4.834319591522217
+        },
+        {
+          "step": 200,
+          "validation_score": 0.813341274061967,
+          "train_loss": 9.116661548614502,
+          "gradient_norm_before_clip": 6.389001369476318
+        }
+      ]
+    },
+    "fit_s1_lr0": {
+      "seed": 24001,
+      "learning_rate": 1e-05,
+      "best_step": 200,
+      "val_score": 0.8014234927477959,
+      "steps_completed": 200,
+      "checkpoint_replay": true,
+      "seconds": {
+        "total": 112.14822360000107,
+        "optimizer_steps": 50.07924960000673,
+        "mean_step": 0.2503962480000337,
+        "validation_after_step0": 43.23579350000364,
+        "best_capture": 0.03955370000039693
+      },
+      "unique_sampled_series": 683,
+      "unseen_train_series_this_fit": 84,
+      "nominal_window_exposure_ratio": 0.1604653495135894,
+      "history": [
+        {
+          "step": 0,
+          "validation_score": 0.8083393102315194
+        },
+        {
+          "step": 40,
+          "validation_score": 0.8071843049701789,
+          "train_loss": 7.131025552749634,
+          "gradient_norm_before_clip": 3.2360026836395264
+        },
+        {
+          "step": 80,
+          "validation_score": 0.805697030041052,
+          "train_loss": 6.89914083480835,
+          "gradient_norm_before_clip": 3.238039970397949
+        },
+        {
+          "step": 120,
+          "validation_score": 0.8033502567945313,
+          "train_loss": 6.665138244628906,
+          "gradient_norm_before_clip": 2.4966158866882324
+        },
+        {
+          "step": 160,
+          "validation_score": 0.8014683290626695,
+          "train_loss": 10.221364498138428,
+          "gradient_norm_before_clip": 3.2460403442382812
+        },
+        {
+          "step": 200,
+          "validation_score": 0.8014234927477959,
+          "train_loss": 7.147231578826904,
+          "gradient_norm_before_clip": 5.380122661590576
+        }
+      ]
+    },
+    "fit_s1_lr1": {
+      "seed": 24001,
+      "learning_rate": 3e-05,
+      "best_step": 120,
+      "val_score": 0.8026954053120193,
+      "steps_completed": 200,
+      "checkpoint_replay": true,
+      "seconds": {
+        "total": 109.63096159999986,
+        "optimizer_steps": 48.71003629997722,
+        "mean_step": 0.24355018149988608,
+        "validation_after_step0": 41.69353349999801,
+        "best_capture": 0.02296300000307383
+      },
+      "unique_sampled_series": 683,
+      "unseen_train_series_this_fit": 84,
+      "nominal_window_exposure_ratio": 0.1604653495135894,
+      "history": [
+        {
+          "step": 0,
+          "validation_score": 0.8083393102315194
+        },
+        {
+          "step": 40,
+          "validation_score": 0.8052641669454763,
+          "train_loss": 6.84169340133667,
+          "gradient_norm_before_clip": 3.395535469055176
+        },
+        {
+          "step": 80,
+          "validation_score": 0.8039228774798891,
+          "train_loss": 6.9419755935668945,
+          "gradient_norm_before_clip": 4.180513381958008
+        },
+        {
+          "step": 120,
+          "validation_score": 0.8026954053120193,
+          "train_loss": 6.342278718948364,
+          "gradient_norm_before_clip": 2.2132303714752197
+        },
+        {
+          "step": 160,
+          "validation_score": 0.8053405044911489,
+          "train_loss": 10.147688627243042,
+          "gradient_norm_before_clip": 4.26932954788208
+        },
+        {
+          "step": 200,
+          "validation_score": 0.8115147167975124,
+          "train_loss": 6.361298322677612,
+          "gradient_norm_before_clip": 5.210577964782715
+        }
+      ]
+    }
+  },
+  "forecasts": {
+    "forecast_gate": {
+      "stage": "gate",
+      "elapsed_seconds": 30.177581399999326,
+      "forecast_origins": [
+        48
+      ],
+      "num_model_passes": 3,
+      "models_evaluated_separately": true,
+      "two_forecasters_needed_for_combination": true,
+      "model_and_strength_updates_during_eval": 0
+    },
+    "forecast_eval": {
+      "stage": "eval",
+      "elapsed_seconds": 52.1831459999994,
+      "forecast_origins": [
+        60,
+        72
+      ],
+      "num_model_passes": 3,
+      "models_evaluated_separately": true,
+      "two_forecasters_needed_for_combination": true,
+      "model_and_strength_updates_during_eval": 0
+    }
+  }
+}

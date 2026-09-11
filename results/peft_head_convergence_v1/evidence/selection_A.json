@@ -1,0 +1,788 @@
+{
+  "phase": "A",
+  "plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+  "cells": {
+    "bmra/s30000": {
+      "dataset": "bmra",
+      "seed": 30000,
+      "S180": {
+        "HEAD": {
+          "V": 0.4971120534329585,
+          "step": 120,
+          "selected_hash": "4fa1f4b30218349bfb452e1cf676030148c70ebbf8fd82680df0c032dcd2984c",
+          "checkpoint_sha256": "6bd1732baadd75d19740e3a02cc587546735dfb028b2ff2dccefc95620226f2b",
+          "index": 3,
+          "key": "A/bmra/HEAD/r3/s30000",
+          "recipe": 3,
+          "trainable": 589301,
+          "trajectory_seconds": 43.96286780000082
+        },
+        "WIDE": {
+          "V": 0.49680861985059566,
+          "step": 120,
+          "selected_hash": "fcce89f2db8587c74d7868c79a90e69c21868bbb55ef9bddf480ad62ea7d0c26",
+          "checkpoint_sha256": "8b80a4783936d7e2ce7a7995aac5c7ed2b092442b08a805a3da5d371d54c95a6",
+          "index": 6,
+          "key": "A/bmra/WIDE/r2/s30000",
+          "recipe": 2,
+          "trainable": 1768949,
+          "trajectory_seconds": 40.84581430000253
+        },
+        "JOINT": {
+          "V": 0.4954794203489833,
+          "step": 120,
+          "selected_hash": "0a08bcb6e7c08e4ae6369440964c8aded90f23c7ba1c0a696dcdc7913f5a3f87",
+          "checkpoint_sha256": "ffa438db87f4ea8759d3fb6694ddaef5690da32ca7fe47cacd03d560c132a248",
+          "index": 10,
+          "key": "A/bmra/JOINT/r2/s30000",
+          "recipe": 2,
+          "trainable": 1768949,
+          "trajectory_seconds": 123.68133419999504
+        }
+      },
+      "L720": {
+        "HEAD": {
+          "V": 0.4971120534329585,
+          "step": 120,
+          "selected_hash": "4fa1f4b30218349bfb452e1cf676030148c70ebbf8fd82680df0c032dcd2984c",
+          "checkpoint_sha256": "4105cb310d3b76c76d6ca3ebf78885c455c4250ad35873d42b962f133b19cc49",
+          "index": 3,
+          "key": "A/bmra/HEAD/r3/s30000",
+          "recipe": 3,
+          "trainable": 589301,
+          "trajectory_seconds": 43.96286780000082
+        },
+        "WIDE": {
+          "V": 0.49680861985059566,
+          "step": 120,
+          "selected_hash": "fcce89f2db8587c74d7868c79a90e69c21868bbb55ef9bddf480ad62ea7d0c26",
+          "checkpoint_sha256": "2ec27d5b9e18aa580693412602aee3c3ec9dadd460aaa248ad0c634221d47efe",
+          "index": 6,
+          "key": "A/bmra/WIDE/r2/s30000",
+          "recipe": 2,
+          "trainable": 1768949,
+          "trajectory_seconds": 40.84581430000253
+        },
+        "JOINT": {
+          "V": 0.4954794203489833,
+          "step": 120,
+          "selected_hash": "0a08bcb6e7c08e4ae6369440964c8aded90f23c7ba1c0a696dcdc7913f5a3f87",
+          "checkpoint_sha256": "c2ccef7de3d4f56df84d234be18bb202e63c93da235da0f4c20c8c80147cbfe7",
+          "index": 10,
+          "key": "A/bmra/JOINT/r2/s30000",
+          "recipe": 2,
+          "trainable": 1768949,
+          "trajectory_seconds": 123.68133419999504
+        }
+      },
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.3159560260496996,
+            0.31257136103617317
+          ],
+          "intercepts": [
+            10.473438633515146,
+            17.412967676804048
+          ],
+          "biases": [
+            2.015223525099352,
+            3.5231055290800413
+          ],
+          "fit_counts": [
+            4310,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.5362212695865152
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.5430612336582875
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.5749792312969847
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.6942020301112307
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.5397646802225387
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.5446126306083328
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.5579290048212487
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.5362212695865152
+        }
+      }
+    },
+    "jena/s30000": {
+      "dataset": "jena",
+      "seed": 30000,
+      "S180": {
+        "HEAD": {
+          "V": 0.4006603619737492,
+          "step": 180,
+          "selected_hash": "7516dc4662a1b93c2b316600895b39fdadc5dbde5c3ba043423f09d02afe1ab2",
+          "checkpoint_sha256": "586272661040fafc6eeb2e645dd7b85ad46d966f868262717dd1233b9bc947b4",
+          "index": 15,
+          "key": "A/jena/HEAD/r3/s30000",
+          "recipe": 3,
+          "trainable": 589301,
+          "trajectory_seconds": 40.16988570000103
+        },
+        "WIDE": {
+          "V": 0.3927770146042142,
+          "step": 180,
+          "selected_hash": "fa6b86faae2d58627dbf876be37eaa57e61e6d464e99910f5c890720c656ab86",
+          "checkpoint_sha256": "e6f9be8e814852b6b7ea0177ad34fdc33dc828266feec77b706917d6ab18c5ce",
+          "index": 19,
+          "key": "A/jena/WIDE/r3/s30000",
+          "recipe": 3,
+          "trainable": 1768949,
+          "trajectory_seconds": 43.67254719999619
+        },
+        "JOINT": {
+          "V": 0.3947334089982058,
+          "step": 180,
+          "selected_hash": "3a133acd147af8ccc25f8deb0905ed4a298933eedb3d7ba2bf141e431cfbb9ee",
+          "checkpoint_sha256": "6eaa8faaaf8da5f089f560a1fd9f5be3cacb2b886a877914394b63ba89610cf2",
+          "index": 20,
+          "key": "A/jena/JOINT/r0/s30000",
+          "recipe": 0,
+          "trainable": 1768949,
+          "trajectory_seconds": 124.03893869998865
+        }
+      },
+      "L720": {
+        "HEAD": {
+          "V": 0.39214920065746917,
+          "step": 540,
+          "selected_hash": "de5bdabd27a919794394abb6f8d155cce140e359ca8c535c9a335649e24ce4e5",
+          "checkpoint_sha256": "83fda2d06df0ee74db4489092a4eb1f7fe5ca5109a0cab35aa5c2ad147104bfb",
+          "index": 14,
+          "key": "A/jena/HEAD/r2/s30000",
+          "recipe": 2,
+          "trainable": 589301,
+          "trajectory_seconds": 40.32759400000214
+        },
+        "WIDE": {
+          "V": 0.3927770146042142,
+          "step": 180,
+          "selected_hash": "fa6b86faae2d58627dbf876be37eaa57e61e6d464e99910f5c890720c656ab86",
+          "checkpoint_sha256": "0ffbf5998c1ae6c27c51e66fb889d0e94d950e9cccf8d6420c5dc0cb289d5ed9",
+          "index": 19,
+          "key": "A/jena/WIDE/r3/s30000",
+          "recipe": 3,
+          "trainable": 1768949,
+          "trajectory_seconds": 43.67254719999619
+        },
+        "JOINT": {
+          "V": 0.3947334089982058,
+          "step": 180,
+          "selected_hash": "3a133acd147af8ccc25f8deb0905ed4a298933eedb3d7ba2bf141e431cfbb9ee",
+          "checkpoint_sha256": "2c4ebd0d1b1b7c492790eaa33bf70e4d6edf2274072958d66256bdf777825e6d",
+          "index": 20,
+          "key": "A/jena/JOINT/r0/s30000",
+          "recipe": 0,
+          "trainable": 1768949,
+          "trajectory_seconds": 124.03893869998865
+        }
+      },
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7321943573271872,
+            0.8227538650423133
+          ],
+          "intercepts": [
+            265.10121737149683,
+            3.6707625113203313
+          ],
+          "biases": [
+            -0.1372986404984094,
+            0.14601386454370288
+          ],
+          "fit_counts": [
+            4320,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.4057931773374034
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40706434227233634
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.41307907559114987
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.43786228609153144
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.40651588934036215
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.4073119906947879
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40913468760166793
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.4057931773374034
+        }
+      }
+    },
+    "bmra/s30001": {
+      "dataset": "bmra",
+      "seed": 30001,
+      "S180": {
+        "HEAD": {
+          "V": 0.5071926780962543,
+          "step": 120,
+          "selected_hash": "a7ec1ef5f2223726dc5902e0edc5d3b91fdaaac9339f53f697dae906570c1d5e",
+          "checkpoint_sha256": "404cab22c22eb247699b4a8d21c9aba7826034500b425188e03874eb6f181cd3",
+          "index": 27,
+          "key": "A/bmra/HEAD/r3/s30001",
+          "recipe": 3,
+          "trainable": 589301,
+          "trajectory_seconds": 44.11241020000307
+        },
+        "WIDE": {
+          "V": 0.5031984974922012,
+          "step": 60,
+          "selected_hash": "65aac7b834f3234d146d59c685eaa02e7f738c8e8e7c3a16f31f626f7ff9a082",
+          "checkpoint_sha256": "cb1f243043f2ad51025a8fb4029c0268c0b191caa1ee9c4ed6f749e745898ddd",
+          "index": 31,
+          "key": "A/bmra/WIDE/r3/s30001",
+          "recipe": 3,
+          "trainable": 1768949,
+          "trajectory_seconds": 45.08840429999691
+        },
+        "JOINT": {
+          "V": 0.5107673095562164,
+          "step": 120,
+          "selected_hash": "7641f600a448cc4c3d53344af4d93e7b11f8e9e0b2cdc91bd858d8320e7bbb3c",
+          "checkpoint_sha256": "bbe6a5e2b4eb42f059a1a726a8ce01bc286fe615bf557374be315e07624bc06c",
+          "index": 34,
+          "key": "A/bmra/JOINT/r2/s30001",
+          "recipe": 2,
+          "trainable": 1768949,
+          "trajectory_seconds": 136.27627269999357
+        }
+      },
+      "L720": {
+        "HEAD": {
+          "V": 0.4933355097287201,
+          "step": 360,
+          "selected_hash": "05cc10a86f0efd3475634058beaadf66b26bef247f00b56aa7128307934d4d9f",
+          "checkpoint_sha256": "d61b54be0fa6715ba2d2558cc7a02d7f73fb312a4bf53fb3d8dd3b0a3eb425a8",
+          "index": 26,
+          "key": "A/bmra/HEAD/r2/s30001",
+          "recipe": 2,
+          "trainable": 589301,
+          "trajectory_seconds": 43.59148059999279
+        },
+        "WIDE": {
+          "V": 0.49583266936517456,
+          "step": 360,
+          "selected_hash": "08c352e42292bc329a34c13a48addc26998f08dda6be8c12729d4b3401476905",
+          "checkpoint_sha256": "06cfebb7f3ad1db29b730e1788741fe7c065aa624108fb42c95ec7051e1f1150",
+          "index": 29,
+          "key": "A/bmra/WIDE/r1/s30001",
+          "recipe": 1,
+          "trainable": 1768949,
+          "trajectory_seconds": 44.839329899987206
+        },
+        "JOINT": {
+          "V": 0.5065957736066495,
+          "step": 360,
+          "selected_hash": "4be1494fbcd990a0c64eae7922cbcb478ca760165d2d828cf9485c823082bf1b",
+          "checkpoint_sha256": "7b7dd45b6ffadd799002db83b0febd9bfd74e74a1b15521d6d976c1e830b13ce",
+          "index": 32,
+          "key": "A/bmra/JOINT/r0/s30001",
+          "recipe": 0,
+          "trainable": 1768949,
+          "trajectory_seconds": 134.63954059999378
+        }
+      },
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.3159560260496996,
+            0.31257136103617317
+          ],
+          "intercepts": [
+            10.473438633515146,
+            17.412967676804048
+          ],
+          "biases": [
+            2.015223525099352,
+            3.5231055290800413
+          ],
+          "fit_counts": [
+            4310,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.5362212695865152
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.5430612336582875
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.5749792312969847
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.6942020301112307
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.5397646802225387
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.5446126306083328
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.5579290048212487
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.5362212695865152
+        }
+      }
+    },
+    "jena/s30001": {
+      "dataset": "jena",
+      "seed": 30001,
+      "S180": {
+        "HEAD": {
+          "V": 0.3963425240920596,
+          "step": 120,
+          "selected_hash": "08f3b19fcc7e2c9ab7ab0f90f0c22c5113fa7e925cd8f19e72ee383f7722b5f4",
+          "checkpoint_sha256": "6b8b091a05c3e50a970b4b13af3605df9e96e59bf09ea078ba3d66f477080a93",
+          "index": 39,
+          "key": "A/jena/HEAD/r3/s30001",
+          "recipe": 3,
+          "trainable": 589301,
+          "trajectory_seconds": 43.33202760000131
+        },
+        "WIDE": {
+          "V": 0.39112641667774556,
+          "step": 120,
+          "selected_hash": "189c7301abf1a31493b106855a543f30182dac14f086e5dedbe708cc95ab686a",
+          "checkpoint_sha256": "50e4bc08f82a7428b2ec98068614ce68b43b4360d76d2b5a86e93bf42cd43e41",
+          "index": 43,
+          "key": "A/jena/WIDE/r3/s30001",
+          "recipe": 3,
+          "trainable": 1768949,
+          "trajectory_seconds": 40.696904199998244
+        },
+        "JOINT": {
+          "V": 0.39285528336111514,
+          "step": 60,
+          "selected_hash": "701219e06e6ab68a6fca554645762c5ee223049365d35d29c2721a398f00ddea",
+          "checkpoint_sha256": "f9c0df6c5f510b008e6b684d551a8d68f4fc83fb4ddaa305940f99a9222361a7",
+          "index": 45,
+          "key": "A/jena/JOINT/r1/s30001",
+          "recipe": 1,
+          "trainable": 1768949,
+          "trajectory_seconds": 123.11116159999801
+        }
+      },
+      "L720": {
+        "HEAD": {
+          "V": 0.39631817072520337,
+          "step": 720,
+          "selected_hash": "7f73a177ca9e216748a0c4a75cf9de3f3dc42e547f47ddb68757c17d5ea2ba12",
+          "checkpoint_sha256": "680943192747465e2e3a641dc32a7346b6cb31fa8627fd4f2774c6ff3f0f109b",
+          "index": 38,
+          "key": "A/jena/HEAD/r2/s30001",
+          "recipe": 2,
+          "trainable": 589301,
+          "trajectory_seconds": 44.251143400004366
+        },
+        "WIDE": {
+          "V": 0.39112641667774556,
+          "step": 120,
+          "selected_hash": "189c7301abf1a31493b106855a543f30182dac14f086e5dedbe708cc95ab686a",
+          "checkpoint_sha256": "70a841ac7da835b32be361e5c04469848307a97d6a01f6b0a1f9f2b1c3f65048",
+          "index": 43,
+          "key": "A/jena/WIDE/r3/s30001",
+          "recipe": 3,
+          "trainable": 1768949,
+          "trajectory_seconds": 40.696904199998244
+        },
+        "JOINT": {
+          "V": 0.39285528336111514,
+          "step": 60,
+          "selected_hash": "701219e06e6ab68a6fca554645762c5ee223049365d35d29c2721a398f00ddea",
+          "checkpoint_sha256": "2cfc828ba13a1ba1fa8da689b3fdad5c4031e639e0a32d24d837d99d3ba45031",
+          "index": 45,
+          "key": "A/jena/JOINT/r1/s30001",
+          "recipe": 1,
+          "trainable": 1768949,
+          "trajectory_seconds": 123.11116159999801
+        }
+      },
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7321943573271872,
+            0.8227538650423133
+          ],
+          "intercepts": [
+            265.10121737149683,
+            3.6707625113203313
+          ],
+          "biases": [
+            -0.1372986404984094,
+            0.14601386454370288
+          ],
+          "fit_counts": [
+            4320,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.4057931773374034
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40706434227233634
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.41307907559114987
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.43786228609153144
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.40651588934036215
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.4073119906947879
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40913468760166793
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.4057931773374034
+        }
+      }
+    }
+  },
+  "fit_hashes": {
+    "A/bmra/HEAD/r0/s30000": "753fb235edc1cac38d98703610c005a6c47c4a0fda2e3b990f90e888f731fd84",
+    "A/bmra/HEAD/r1/s30000": "030039629c83d04ed24b1c53ab080c95c6275a8900e012f389ee67d494ed5d47",
+    "A/bmra/HEAD/r2/s30000": "5144204a183efa85af4851570ad7e7ed4be76ae1a52468e8769eb2f54ba200a5",
+    "A/bmra/HEAD/r3/s30000": "1243b039b21a62a28befe8989b26653a622c47283e7f6a172254f6a44fb89ff3",
+    "A/bmra/WIDE/r0/s30000": "4b599456fe05b1b2be661fbbd9ade4432b12b7014b160466e9ef6a0ec63f028d",
+    "A/bmra/WIDE/r1/s30000": "3c6ecc09f860fd4597e023bd7a14115bf0820e7bc5c8757462b447e6094cba64",
+    "A/bmra/WIDE/r2/s30000": "020c3c7b0e063e29a6d3d4fb071f50edbea466a7d344c5a87ed93e566bdbcc8c",
+    "A/bmra/WIDE/r3/s30000": "3ca87e6526af741f331b54ee8db1a361027331350a76c5dd2173ca01eac68eca",
+    "A/bmra/JOINT/r0/s30000": "491f121bbf8ef3d56933eff67854616057b88b9dfe2a36f338cfe264611044a7",
+    "A/bmra/JOINT/r1/s30000": "26cf2318117178e821abe6c978ea978c450349bd0df5fe34c54f7d231daff43f",
+    "A/bmra/JOINT/r2/s30000": "4e6d4cc7a62d605ec52e88b42931aa2b5f3364c376a90e72aef553de36a521d0",
+    "A/bmra/JOINT/r3/s30000": "fc1b6fbfcdf21afa4b2320772803f7e6da0dfede045f61a2005f3632c19dc56e",
+    "A/jena/HEAD/r0/s30000": "cf297f00dda577ca33a175d82a1ec1e068cbaefe720dc5c7769c7fa185ff8b42",
+    "A/jena/HEAD/r1/s30000": "e03c519c3a78a9e1a05e52328611bbbf867d83437295bfc3dae880b64d935dd6",
+    "A/jena/HEAD/r2/s30000": "e7f58bebee2f3e110e58e87cf3e33b4e409e562284847a8649ff4bcb0fd1672d",
+    "A/jena/HEAD/r3/s30000": "af27f2c18669802abf7324a0c6ee28787fc240192191145aa905402fc0f03682",
+    "A/jena/WIDE/r0/s30000": "37282ec6cfb1b6518c09fd42b7669620a05ee9cd80063165357c1f33d98243f7",
+    "A/jena/WIDE/r1/s30000": "5dd317b5d46c95877b89a190c3deb368c0720c1b11ae9a8b414435e5bb2f76b6",
+    "A/jena/WIDE/r2/s30000": "9dab310578ebceff13d200cc04fa7a9d50435694ac965cb5d0f72aee92020ec7",
+    "A/jena/WIDE/r3/s30000": "ae3c1cc38d44f667dbf705ca50f9dd3feb05a23032a4ca4a50b5cffcef81e2d8",
+    "A/jena/JOINT/r0/s30000": "91f8b8ad5c5e734a476eb01e9dec4ffcca6dbeaac36c59aba8b269e925951c92",
+    "A/jena/JOINT/r1/s30000": "d73d6fe1bd9856f93b62f48d5536934016d0fc887bb08ef7e7a92c33895a93ee",
+    "A/jena/JOINT/r2/s30000": "92697ff8631a0fe69c20a5a573d8c0e50d08fae20d403546355613aa9f6b18c4",
+    "A/jena/JOINT/r3/s30000": "f1e24667d1923e1373bced74c244e844f5986db72da9f2ab5c6218cfebef868e",
+    "A/bmra/HEAD/r0/s30001": "00dd92bd9a0f2c86b59d98e5d75e96e5f0e8de8ba797e5eceab50791717c126f",
+    "A/bmra/HEAD/r1/s30001": "7455d9a069e09fdfd12f01a081ed8e8ced6825d7e17ffd5f1fec0f11c69f3392",
+    "A/bmra/HEAD/r2/s30001": "eb78ecaf209190522c5c386e6273686eb94bca1563fdce20b8d70f37b76d02ef",
+    "A/bmra/HEAD/r3/s30001": "61a603d7354aae8c51b60af3b04b4202923c690e4f4b85a8e2ff2f72beabf19b",
+    "A/bmra/WIDE/r0/s30001": "51ea351c1c23c1d0ab72ec505bd4884cf3b5949279f8ef164774697f8f61c835",
+    "A/bmra/WIDE/r1/s30001": "d1b940e20a69a40ef5dd404edaa35376eabf404fa77656a8e689882081795bcb",
+    "A/bmra/WIDE/r2/s30001": "cf8e3c197ea7f5d4076d4e358f8f50b5d5cf547906cac087c72dd1d5ef897a1f",
+    "A/bmra/WIDE/r3/s30001": "757c9e5ff04cb133f976b110f242d965047573db5f9c0d46428ecc8f0f32e180",
+    "A/bmra/JOINT/r0/s30001": "65aa024c751b77db537bb1ee0f2835179caa5bd368b8260a0ed743ea3fe25c0a",
+    "A/bmra/JOINT/r1/s30001": "26e51c091a322dcadb49a70bc3236742852319d5e8d3b720426d1ab5627a443f",
+    "A/bmra/JOINT/r2/s30001": "82376e502ac95bcf64db4063ea91f02cd7dd866e488b8617333bdf0bb07e06d9",
+    "A/bmra/JOINT/r3/s30001": "5de46e20b28095d9bdefd6d818dba5b49d90779dde513fbcb80a07e719d8e54a",
+    "A/jena/HEAD/r0/s30001": "f613c300af4fa0a3cfd426497cd533d0c7daea90ef7419b3cc3de522885a08ed",
+    "A/jena/HEAD/r1/s30001": "87c413ae9ac20c66b4c89c6d15bf1786fc116d15b338e62bd0bcfd14294f5ad7",
+    "A/jena/HEAD/r2/s30001": "9cafbca35ea160bc19c92c59a5cb2839cb31d5f5a7674a6e9abc98ed125b3a4c",
+    "A/jena/HEAD/r3/s30001": "7a425bab1e04456d32d7ec55aa4aca829f881d336c2f56a0689f39c3ab868e6a",
+    "A/jena/WIDE/r0/s30001": "8d5184c06de295abd74ebffef8abfeda44deb39b7e4222e6570d19832d807640",
+    "A/jena/WIDE/r1/s30001": "083cc69164974c3ba78bd40609377831a879269c624cef258157a51e22f84487",
+    "A/jena/WIDE/r2/s30001": "2a45d110e34505ade077216311f0b3905e2989b5d7cc67de0a3ea0f34a78a373",
+    "A/jena/WIDE/r3/s30001": "a92d1ebdb6ea99a9991749a8a31b19d9356e044f04a1231a529e53d6f084976e",
+    "A/jena/JOINT/r0/s30001": "2b22b565122ae07d0488ca5730ce5afaa2f800b7fa16149d24bc8710af103fb5",
+    "A/jena/JOINT/r1/s30001": "cff86f6b4776e9645876d6f89887d2717edb1e750ecb1bcd9acb07ce47906a33",
+    "A/jena/JOINT/r2/s30001": "6366be55006f8789e3e9fbe0bf65f0c09ef28af19e51702b3186404f6119f1e4",
+    "A/jena/JOINT/r3/s30001": "2ea63ff09622bfa260e325f829a25e6560c7698884f5a463f2dfa03f9f7fe590"
+  },
+  "forecasts": [
+    [
+      3,
+      "L720"
+    ],
+    [
+      3,
+      "S180"
+    ],
+    [
+      6,
+      "L720"
+    ],
+    [
+      6,
+      "S180"
+    ],
+    [
+      10,
+      "L720"
+    ],
+    [
+      10,
+      "S180"
+    ],
+    [
+      14,
+      "L720"
+    ],
+    [
+      15,
+      "S180"
+    ],
+    [
+      19,
+      "L720"
+    ],
+    [
+      19,
+      "S180"
+    ],
+    [
+      20,
+      "L720"
+    ],
+    [
+      20,
+      "S180"
+    ],
+    [
+      26,
+      "L720"
+    ],
+    [
+      27,
+      "S180"
+    ],
+    [
+      29,
+      "L720"
+    ],
+    [
+      31,
+      "S180"
+    ],
+    [
+      32,
+      "L720"
+    ],
+    [
+      34,
+      "S180"
+    ],
+    [
+      38,
+      "L720"
+    ],
+    [
+      39,
+      "S180"
+    ],
+    [
+      43,
+      "L720"
+    ],
+    [
+      43,
+      "S180"
+    ],
+    [
+      45,
+      "L720"
+    ],
+    [
+      45,
+      "S180"
+    ]
+  ],
+  "sealed_utc": "2026-09-11T05:27:35.258804+00:00",
+  "selection_uses_V_only": true
+}

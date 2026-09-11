@@ -1,0 +1,30 @@
+{
+  "start_utc": "2026-09-10T22:55:41.0000000Z",
+  "end_utc": "2026-09-11T00:28:31.1917912Z",
+  "queries": [
+    {
+      "log": "System",
+      "ids": [
+        41,
+        4101,
+        153,
+        2004,
+        6008
+      ],
+      "status": "no_matching_events",
+      "count": 0
+    },
+    {
+      "log": "Application",
+      "ids": [
+        1000
+      ],
+      "status": "no_matching_events",
+      "count": 0
+    }
+  ],
+  "event_count": 0,
+  "events": [],
+  "query_errors": [],
+  "scope": "Selected Windows event IDs during this study only; not a guarantee against future crashes."
+}

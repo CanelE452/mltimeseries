@@ -1,0 +1,47 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-10T22:09:27.591411+00:00",
+  "script_sha256": "7b68eb00e8f54854964d4326a163e13bb595c284f6b385ea242ca60cd7975a22",
+  "protected_hashes": {
+    "peft_future_utility_v1": {
+      "checked_hashes": 115,
+      "scope": "source and registered inputs"
+    },
+    "peft_contribution_freeze_v1": {
+      "checked_hashes": 24,
+      "scope": "frozen sources only"
+    },
+    "peft_capacity_probe_v1": {
+      "checked_hashes": 23,
+      "scope": "frozen sources only"
+    }
+  },
+  "active_study_fit_or_controller": [],
+  "inaccessible_python_processes": [],
+  "guard_lock_exists": false,
+  "current_memory": {
+    "available_ram_gib": 13.24808120727539,
+    "available_commit_gib": 15.634342193603516,
+    "commit_limit_gib": 36.77233123779297
+  },
+  "resource": {
+    "guards": 13,
+    "samples": 71,
+    "finish_records": 13,
+    "minimum_available_ram_gib": 10.923908233642578,
+    "minimum_available_commit_gib": 11.616825103759766,
+    "maximum_child_rss_gib": 1.719757080078125,
+    "maximum_gpu_memory_mib": 1859.0,
+    "maximum_gpu_temperature_c": 55.0
+  },
+  "descriptive_counts": {
+    "role": "Post-outcome descriptive counts using existing estimands and band; not new confirmatory tests.",
+    "positive_current_contribution": 21,
+    "positive_contribution_but_HEAD_better": 16,
+    "exact_zero_selected_score_difference": 21,
+    "zero_selected_both_same_prefix_step": 21,
+    "clipping_control_same_band_class": 23,
+    "clipping_control_same_raw_sign": 24
+  },
+  "E_outcomes_used": false
+}

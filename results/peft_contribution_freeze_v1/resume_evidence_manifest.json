@@ -1,0 +1,67 @@
+[
+  {
+    "source": "runs/peft_contribution_freeze_v1/completed.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/completed.json",
+    "sha256": "1ad1a6ba561efd11f9ec5adc020359e8847b6bd720156871163db0716fc2546a"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/selection.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/selection.json",
+    "sha256": "53b9550916b88a0fa1cdb27de03b4f7341136bdc0e908dffcdb612f9781be2de"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/timing_contract.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/timing_contract.json",
+    "sha256": "26f0fff19f777f401213ae56c4a5aa705730a778961643a9ff833bccd00483c8"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/timing_completed.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/timing_completed.json",
+    "sha256": "e76e1fdd3df35b64c108e4b5a317560463faabc09e1867d17b039234fe7243cf"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/independent_fit_audit.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/independent_fit_audit.json",
+    "sha256": "494eac7933820ade775801dd2a1122c539249b3791217cf994c338c36d6aa6ee"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/independent_forecast_audit.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/independent_forecast_audit.json",
+    "sha256": "64b5c3869f4a68abd40b4b69d8060efcaf56bd1b4dc6bf0d601b08d2259687db"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/independent_timing_replay_audit.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/independent_timing_replay_audit.json",
+    "sha256": "9264b2822594bf007dc2ed7a8cd65b7286691074051fec12d2a2a15b026be1fe"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/independent_timing_analysis_audit.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/independent_timing_analysis_audit.json",
+    "sha256": "8c1e655053f500d0ce9cbc974175aec67ec97729c07294c96f9090d1660b8cca"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/resume_20260911_0505/cleanup_plan.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/resume_cleanup_plan.json",
+    "sha256": "803d1e5f02503778919e86b28ec848984a57b5264d81df10cfe854848063d434"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/resume_20260911_0505/cleanup_result.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/resume_cleanup_result.json",
+    "sha256": "b5fa1766ac041690c360f90e17935d5b85b1c986e9c810d9b7b47bbc6b77f3bf"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/resume_20260911_0505/system_event_audit.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/resume_system_event_audit.json",
+    "sha256": "acec54dfbbd4b1c479002338942771d91aa1a4944a727a03c57598c15648b2c9"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/resume_20260911_0505/final_resource_integrity.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/final_resource_integrity.json",
+    "sha256": "b844ac7b4721f538ab6d0e38c3fc4736e7c37acfd4b68df3713dfdd71ef6c6f8"
+  },
+  {
+    "source": "runs/peft_contribution_freeze_v1/resume_20260911_0505/completion_review_failure.json",
+    "copy": "results/peft_contribution_freeze_v1/evidence/completion_review_failure.json",
+    "sha256": "3b58f0149d191093c90b87402722492dcbca007a6bf9bf02567d1f4d19ff6aa4"
+  }
+]

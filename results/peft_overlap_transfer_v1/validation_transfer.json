@@ -1,0 +1,109 @@
+{
+  "records": [
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "seed": 26000,
+      "V_gain_pct_F0V": 2.100279489410892,
+      "E_gain_pct_F0E": 3.969590715212279,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "seed": 26001,
+      "V_gain_pct_F0V": 5.851788444663161,
+      "E_gain_pct_F0E": 5.667710568288891,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "seed": 26000,
+      "V_gain_pct_F0V": 2.4973583743978787,
+      "E_gain_pct_F0E": 1.8415265404425258,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "seed": 26001,
+      "V_gain_pct_F0V": 3.303715712483878,
+      "E_gain_pct_F0E": 2.3187420343938965,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "seed": 26000,
+      "V_gain_pct_F0V": 1.6921143808460537,
+      "E_gain_pct_F0E": 0.6828130808562602,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "seed": 26001,
+      "V_gain_pct_F0V": 2.6589544953047652,
+      "E_gain_pct_F0E": 0.9467113353940942,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "seed": 26000,
+      "V_gain_pct_F0V": 1.3693118282631396,
+      "E_gain_pct_F0E": 0.8886119903061164,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "seed": 26001,
+      "V_gain_pct_F0V": 1.6390680698961373,
+      "E_gain_pct_F0E": 0.8923545459867945,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "seed": 26000,
+      "V_gain_pct_F0V": 0.5674907232326155,
+      "E_gain_pct_F0E": 1.1750419878388128,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "seed": 26001,
+      "V_gain_pct_F0V": 0.587174749409452,
+      "E_gain_pct_F0E": 1.722292264872429,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "seed": 26000,
+      "V_gain_pct_F0V": 0.3980053284404101,
+      "E_gain_pct_F0E": 1.0672320364109291,
+      "V_positive_E_nonpositive": false
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "seed": 26001,
+      "V_gain_pct_F0V": 0.2981511574941004,
+      "E_gain_pct_F0E": 1.1560600049964664,
+      "V_positive_E_nonpositive": false
+    }
+  ],
+  "positive_V_to_nonpositive_E_pairs": 0,
+  "pairs": 12,
+  "decision_or_threshold_changed": false,
+  "limits": [
+    "V selected checkpoints and is optimistic.",
+    "V and E use their own F0 denominators.",
+    "Selection bias, optimization and distribution shift are not separated.",
+    "Two familiar sources and two seeds; pairs are not independent datasets."
+  ]
+}

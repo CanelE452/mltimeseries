@@ -1,0 +1,1364 @@
+{
+  "version": "peft_overlap_transfer_v1.prepare.20260910",
+  "created_utc": "2026-09-10T10:49:09+00:00",
+  "study": "peft_overlap_transfer_v1",
+  "all_qc_passed": true,
+  "datasets": {
+    "bike": {
+      "dataset": "bike",
+      "panel": "bike",
+      "fit_data_path": "runs/peft_overlap_transfer_v1/prepared/bike_fit.npz",
+      "holdout_data_path": "runs/peft_overlap_transfer_v1/prepared/bike_holdout.npz",
+      "fit_data_sha256": "c12b12aa7cd8149cf06c7652466c77b4677022ed98414214da8a2cc76fcce5e9",
+      "holdout_data_sha256": "ef45549ff01bca8612cf80a6057f6aa239321a9c3ed5c495049a04d83d30706b",
+      "fit_std": [
+        63.008201599121094,
+        178.1078643798828,
+        0.13108091056346893,
+        0.18841376900672913,
+        0.109988734126091
+      ],
+      "fit_mean": [
+        56.41162872314453,
+        208.15017700195312,
+        0.647188663482666,
+        0.6014743447303772,
+        0.18413008749485016
+      ],
+      "fit_median": [
+        39.0,
+        180.0,
+        0.6399999856948853,
+        0.6100000143051147,
+        0.16419999301433563
+      ],
+      "context_fallback_median": [
+        33.0,
+        159.0,
+        0.47999998927116394,
+        0.4099999964237213,
+        0.25369998812675476
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "casual",
+        "registered"
+      ],
+      "channels": [
+        "casual",
+        "registered",
+        "temp",
+        "hum",
+        "windspeed"
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "boundaries": {
+        "precontext": [
+          "2012-04-06T00:00:00",
+          "2012-04-20T00:00:00"
+        ],
+        "train": [
+          "2012-04-20T00:00:00",
+          "2012-07-20T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2012-07-20T00:00:00",
+          "2012-07-22T00:00:00"
+        ],
+        "val": [
+          "2012-07-22T00:00:00",
+          "2012-08-22T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2012-08-22T00:00:00",
+          "2012-08-24T00:00:00"
+        ],
+        "cal": [
+          "2012-08-24T00:00:00",
+          "2012-09-14T00:00:00"
+        ],
+        "eval": [
+          "2012-09-14T00:00:00",
+          "2012-12-04T00:00:00"
+        ]
+      },
+      "source_path": "data_external\\uci_bike_sharing\\raw\\hour.csv",
+      "source_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+      "raw_source_path": "data_external\\uci_bike_sharing\\raw\\hour.csv",
+      "raw_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f"
+    },
+    "household": {
+      "dataset": "household",
+      "panel": "household",
+      "fit_data_path": "runs/peft_overlap_transfer_v1/prepared/household_fit.npz",
+      "holdout_data_path": "runs/peft_overlap_transfer_v1/prepared/household_holdout.npz",
+      "fit_data_sha256": "4603274edf0d1ce8a42d40fc9afcd571ec3e35e44263406e5bdf3a78a399e6cc",
+      "holdout_data_sha256": "a65a4b7e20e9c8efe3f4bb67ac844d3703a6678c58dc697e2677e5574d111bff",
+      "fit_std": [
+        0.9438966512680054,
+        0.05670050531625748,
+        2.5689406394958496,
+        3.966435670852661
+      ],
+      "fit_mean": [
+        1.229077935218811,
+        0.10654076933860779,
+        240.78671264648438,
+        5.188470363616943
+      ],
+      "fit_median": [
+        0.9881333112716675,
+        0.09269999712705612,
+        240.87857055664062,
+        4.178333282470703
+      ],
+      "context_fallback_median": [
+        0.46826666593551636,
+        0.11638332903385162,
+        239.79225158691406,
+        2.1500000953674316
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "Global_active_power",
+        "Global_reactive_power"
+      ],
+      "channels": [
+        "Global_active_power",
+        "Global_reactive_power",
+        "Voltage",
+        "Global_intensity"
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "boundaries": {
+        "precontext": [
+          "2008-08-30T00:00:00",
+          "2008-09-13T00:00:00"
+        ],
+        "train": [
+          "2008-09-13T00:00:00",
+          "2008-12-13T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2008-12-13T00:00:00",
+          "2008-12-15T00:00:00"
+        ],
+        "val": [
+          "2008-12-15T00:00:00",
+          "2009-01-15T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2009-01-15T00:00:00",
+          "2009-01-17T00:00:00"
+        ],
+        "cal": [
+          "2009-01-17T00:00:00",
+          "2009-02-07T00:00:00"
+        ],
+        "eval": [
+          "2009-02-07T00:00:00",
+          "2009-04-29T00:00:00"
+        ]
+      },
+      "source_path": "data\\uci_household_power\\household_power_consumption.txt",
+      "source_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+      "raw_source_path": "data\\uci_household_power\\household_power_consumption.txt",
+      "raw_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7"
+    }
+  },
+  "files": {
+    "bike_fit": {
+      "path": "runs/peft_overlap_transfer_v1/prepared/bike_fit.npz",
+      "sha256": "c12b12aa7cd8149cf06c7652466c77b4677022ed98414214da8a2cc76fcce5e9"
+    },
+    "bike_holdout": {
+      "path": "runs/peft_overlap_transfer_v1/prepared/bike_holdout.npz",
+      "sha256": "ef45549ff01bca8612cf80a6057f6aa239321a9c3ed5c495049a04d83d30706b"
+    },
+    "household_fit": {
+      "path": "runs/peft_overlap_transfer_v1/prepared/household_fit.npz",
+      "sha256": "4603274edf0d1ce8a42d40fc9afcd571ec3e35e44263406e5bdf3a78a399e6cc"
+    },
+    "household_holdout": {
+      "path": "runs/peft_overlap_transfer_v1/prepared/household_holdout.npz",
+      "sha256": "a65a4b7e20e9c8efe3f4bb67ac844d3703a6678c58dc697e2677e5574d111bff"
+    }
+  },
+  "panels": {
+    "bike": {
+      "panel": "bike",
+      "dataset": "bike",
+      "fit_path": "runs/peft_overlap_transfer_v1/prepared/bike_fit.npz",
+      "holdout_path": "runs/peft_overlap_transfer_v1/prepared/bike_holdout.npz",
+      "fit_data_path": "runs/peft_overlap_transfer_v1/prepared/bike_fit.npz",
+      "holdout_data_path": "runs/peft_overlap_transfer_v1/prepared/bike_holdout.npz",
+      "fit_sha256": "c12b12aa7cd8149cf06c7652466c77b4677022ed98414214da8a2cc76fcce5e9",
+      "holdout_sha256": "ef45549ff01bca8612cf80a6057f6aa239321a9c3ed5c495049a04d83d30706b",
+      "fit_data_sha256": "c12b12aa7cd8149cf06c7652466c77b4677022ed98414214da8a2cc76fcce5e9",
+      "holdout_data_sha256": "ef45549ff01bca8612cf80a6057f6aa239321a9c3ed5c495049a04d83d30706b",
+      "fit_shape": [
+        3312,
+        5
+      ],
+      "holdout_shape": [
+        5808,
+        5
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "target_qc": {
+        "train": {
+          "casual": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "registered": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "casual": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "registered": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "casual": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "registered": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "casual": {
+            "valid": 3764,
+            "total": 3840,
+            "finite_fraction": 0.9802083333333333,
+            "pass_min_70pct": true
+          },
+          "registered": {
+            "valid": 3764,
+            "total": 3840,
+            "finite_fraction": 0.9802083333333333,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "casual": {
+            "finite": 335,
+            "total": 336,
+            "finite_fraction": 0.9970238095238095
+          },
+          "registered": {
+            "finite": 335,
+            "total": 336,
+            "finite_fraction": 0.9970238095238095
+          },
+          "temp": {
+            "finite": 335,
+            "total": 336,
+            "finite_fraction": 0.9970238095238095
+          },
+          "hum": {
+            "finite": 335,
+            "total": 336,
+            "finite_fraction": 0.9970238095238095
+          },
+          "windspeed": {
+            "finite": 335,
+            "total": 336,
+            "finite_fraction": 0.9970238095238095
+          }
+        },
+        "train": {
+          "casual": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "registered": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "temp": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "hum": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "windspeed": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_train_val": {
+          "casual": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "registered": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "temp": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "hum": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "windspeed": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "casual": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "registered": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "temp": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "hum": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "windspeed": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "casual": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "registered": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "temp": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "hum": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "windspeed": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "casual": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "registered": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "temp": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "hum": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "windspeed": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          }
+        },
+        "eval": {
+          "casual": {
+            "finite": 1906,
+            "total": 1944,
+            "finite_fraction": 0.9804526748971193
+          },
+          "registered": {
+            "finite": 1906,
+            "total": 1944,
+            "finite_fraction": 0.9804526748971193
+          },
+          "temp": {
+            "finite": 1906,
+            "total": 1944,
+            "finite_fraction": 0.9804526748971193
+          },
+          "hum": {
+            "finite": 1906,
+            "total": 1944,
+            "finite_fraction": 0.9804526748971193
+          },
+          "windspeed": {
+            "finite": 1906,
+            "total": 1944,
+            "finite_fraction": 0.9804526748971193
+          }
+        }
+      },
+      "contract": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2012-04-06T00:00:00",
+        "block_end_exclusive": "2012-12-04T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2012-04-06T00:00:00",
+            "2012-04-20T00:00:00"
+          ],
+          "train": [
+            "2012-04-20T00:00:00",
+            "2012-07-20T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2012-07-20T00:00:00",
+            "2012-07-22T00:00:00"
+          ],
+          "val": [
+            "2012-07-22T00:00:00",
+            "2012-08-22T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2012-08-22T00:00:00",
+            "2012-08-24T00:00:00"
+          ],
+          "cal": [
+            "2012-08-24T00:00:00",
+            "2012-09-14T00:00:00"
+          ],
+          "eval": [
+            "2012-09-14T00:00:00",
+            "2012-12-04T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2012-04-20T00:00:00",
+          "val": "2012-07-22T00:00:00",
+          "cal": "2012-08-24T00:00:00",
+          "eval": "2012-09-14T00:00:00"
+        },
+        "last_origin": {
+          "train": "2012-07-18T00:00:00",
+          "val": "2012-08-20T00:00:00",
+          "cal": "2012-09-12T00:00:00",
+          "eval": "2012-12-02T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2012-07-20T00:00:00",
+          "val": "2012-08-22T00:00:00",
+          "cal": "2012-09-14T00:00:00",
+          "eval": "2012-12-04T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "source": {
+        "panel": "bike",
+        "source_path": "data_external\\uci_bike_sharing\\raw\\hour.csv",
+        "source_exists": true,
+        "source_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+        "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+        "download_url": "https://archive.ics.uci.edu/static/public/275/bike%2Bsharing%2Bdataset.zip",
+        "citation": "Fanaee-T, Hadi, and Gama, Joao. Bike Sharing Dataset. UCI Machine Learning Repository, 2013.",
+        "license_note": "UCI public dataset; repository metadata should be consulted for the current terms before redistribution.",
+        "parser": "hour.csv dteday+hr hourly rows; cnt retained only for source consistency audit, not as a model input.",
+        "source_notes": [
+          "cnt is excluded because it is the sum of the two targets.",
+          "Weather/calendar futures are not provided."
+        ],
+        "channels": [
+          "casual",
+          "registered",
+          "temp",
+          "hum",
+          "windspeed"
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "archive_path": "data_external\\uci_bike_sharing\\bike_sharing_dataset.zip",
+        "archive_sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+        "raw_source_path": "data_external\\uci_bike_sharing\\raw\\hour.csv",
+        "raw_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+        "reused_parser_namespace": "experiments.peft_external_gap_v1.data",
+        "source_qc": {
+          "source_rows": 17379,
+          "source_columns": [
+            "instant",
+            "dteday",
+            "season",
+            "yr",
+            "mnth",
+            "hr",
+            "holiday",
+            "weekday",
+            "workingday",
+            "weathersit",
+            "temp",
+            "atemp",
+            "hum",
+            "windspeed",
+            "casual",
+            "registered",
+            "cnt"
+          ],
+          "cnt_consistency_checked_rows": 17379,
+          "cnt_mismatch_count": 0,
+          "missing_hours_inserted": 165,
+          "duplicate_timestamp_groups": 0,
+          "duplicate_rows_collapsed": 0
+        }
+      },
+      "channels": [
+        "casual",
+        "registered",
+        "temp",
+        "hum",
+        "windspeed"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "casual",
+        "registered"
+      ],
+      "fit_mean": [
+        56.41162872314453,
+        208.15017700195312,
+        0.647188663482666,
+        0.6014743447303772,
+        0.18413008749485016
+      ],
+      "fit_std": [
+        63.008201599121094,
+        178.1078643798828,
+        0.13108091056346893,
+        0.18841376900672913,
+        0.109988734126091
+      ],
+      "fit_median": [
+        39.0,
+        180.0,
+        0.6399999856948853,
+        0.6100000143051147,
+        0.16419999301433563
+      ],
+      "context_fallback_median": [
+        33.0,
+        159.0,
+        0.47999998927116394,
+        0.4099999964237213,
+        0.25369998812675476
+      ]
+    },
+    "household": {
+      "panel": "household",
+      "dataset": "household",
+      "fit_path": "runs/peft_overlap_transfer_v1/prepared/household_fit.npz",
+      "holdout_path": "runs/peft_overlap_transfer_v1/prepared/household_holdout.npz",
+      "fit_data_path": "runs/peft_overlap_transfer_v1/prepared/household_fit.npz",
+      "holdout_data_path": "runs/peft_overlap_transfer_v1/prepared/household_holdout.npz",
+      "fit_sha256": "4603274edf0d1ce8a42d40fc9afcd571ec3e35e44263406e5bdf3a78a399e6cc",
+      "holdout_sha256": "a65a4b7e20e9c8efe3f4bb67ac844d3703a6678c58dc697e2677e5574d111bff",
+      "fit_data_sha256": "4603274edf0d1ce8a42d40fc9afcd571ec3e35e44263406e5bdf3a78a399e6cc",
+      "holdout_data_sha256": "a65a4b7e20e9c8efe3f4bb67ac844d3703a6678c58dc697e2677e5574d111bff",
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "target_qc": {
+        "train": {
+          "Global_active_power": {
+            "valid": 4316,
+            "total": 4320,
+            "finite_fraction": 0.9990740740740741,
+            "pass_min_70pct": true
+          },
+          "Global_reactive_power": {
+            "valid": 4316,
+            "total": 4320,
+            "finite_fraction": 0.9990740740740741,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "Global_active_power": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "Global_reactive_power": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "Global_active_power": {
+            "valid": 958,
+            "total": 960,
+            "finite_fraction": 0.9979166666666667,
+            "pass_min_70pct": true
+          },
+          "Global_reactive_power": {
+            "valid": 958,
+            "total": 960,
+            "finite_fraction": 0.9979166666666667,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "Global_active_power": {
+            "valid": 3838,
+            "total": 3840,
+            "finite_fraction": 0.9994791666666667,
+            "pass_min_70pct": true
+          },
+          "Global_reactive_power": {
+            "valid": 3838,
+            "total": 3840,
+            "finite_fraction": 0.9994791666666667,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "Global_active_power": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Global_reactive_power": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Voltage": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Global_intensity": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          }
+        },
+        "train": {
+          "Global_active_power": {
+            "finite": 2182,
+            "total": 2184,
+            "finite_fraction": 0.9990842490842491
+          },
+          "Global_reactive_power": {
+            "finite": 2182,
+            "total": 2184,
+            "finite_fraction": 0.9990842490842491
+          },
+          "Voltage": {
+            "finite": 2182,
+            "total": 2184,
+            "finite_fraction": 0.9990842490842491
+          },
+          "Global_intensity": {
+            "finite": 2182,
+            "total": 2184,
+            "finite_fraction": 0.9990842490842491
+          }
+        },
+        "embargo_train_val": {
+          "Global_active_power": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Global_reactive_power": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Voltage": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Global_intensity": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "Global_active_power": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Global_reactive_power": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Voltage": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Global_intensity": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "Global_active_power": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Global_reactive_power": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Voltage": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Global_intensity": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "Global_active_power": {
+            "finite": 503,
+            "total": 504,
+            "finite_fraction": 0.998015873015873
+          },
+          "Global_reactive_power": {
+            "finite": 503,
+            "total": 504,
+            "finite_fraction": 0.998015873015873
+          },
+          "Voltage": {
+            "finite": 503,
+            "total": 504,
+            "finite_fraction": 0.998015873015873
+          },
+          "Global_intensity": {
+            "finite": 503,
+            "total": 504,
+            "finite_fraction": 0.998015873015873
+          }
+        },
+        "eval": {
+          "Global_active_power": {
+            "finite": 1943,
+            "total": 1944,
+            "finite_fraction": 0.9994855967078189
+          },
+          "Global_reactive_power": {
+            "finite": 1943,
+            "total": 1944,
+            "finite_fraction": 0.9994855967078189
+          },
+          "Voltage": {
+            "finite": 1943,
+            "total": 1944,
+            "finite_fraction": 0.9994855967078189
+          },
+          "Global_intensity": {
+            "finite": 1943,
+            "total": 1944,
+            "finite_fraction": 0.9994855967078189
+          }
+        }
+      },
+      "contract": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2008-08-30T00:00:00",
+        "block_end_exclusive": "2009-04-29T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2008-08-30T00:00:00",
+            "2008-09-13T00:00:00"
+          ],
+          "train": [
+            "2008-09-13T00:00:00",
+            "2008-12-13T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2008-12-13T00:00:00",
+            "2008-12-15T00:00:00"
+          ],
+          "val": [
+            "2008-12-15T00:00:00",
+            "2009-01-15T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2009-01-15T00:00:00",
+            "2009-01-17T00:00:00"
+          ],
+          "cal": [
+            "2009-01-17T00:00:00",
+            "2009-02-07T00:00:00"
+          ],
+          "eval": [
+            "2009-02-07T00:00:00",
+            "2009-04-29T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2008-09-13T00:00:00",
+          "val": "2008-12-15T00:00:00",
+          "cal": "2009-01-17T00:00:00",
+          "eval": "2009-02-07T00:00:00"
+        },
+        "last_origin": {
+          "train": "2008-12-11T00:00:00",
+          "val": "2009-01-13T00:00:00",
+          "cal": "2009-02-05T00:00:00",
+          "eval": "2009-04-27T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2008-12-13T00:00:00",
+          "val": "2009-01-15T00:00:00",
+          "cal": "2009-02-07T00:00:00",
+          "eval": "2009-04-29T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "source": {
+        "panel": "household",
+        "source_path": "data\\uci_household_power\\household_power_consumption.txt",
+        "source_exists": true,
+        "source_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+        "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+        "download_url": "https://archive.ics.uci.edu/static/public/235/individual%2Bhousehold%2Belectric%2Bpower%2Bconsumption.zip",
+        "citation": "Hebrail, Georges, and Berard, Alice. Individual household electric power consumption. UCI Machine Learning Repository, 2012.",
+        "license_note": "UCI public dataset; repository metadata should be consulted for the current terms before redistribution.",
+        "parser": "semicolon-delimited minute rows aggregated to hourly means with per-column finite-minute thresholds.",
+        "source_notes": [
+          "Energy sub-metering channels are not used.",
+          "Hourly values are means of observed minute measurements, not energy sums."
+        ],
+        "channels": [
+          "Global_active_power",
+          "Global_reactive_power",
+          "Voltage",
+          "Global_intensity"
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "archive_path": "data\\uci_household_power\\_zip\\household_power_consumption.zip",
+        "archive_sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff",
+        "raw_source_path": "data\\uci_household_power\\household_power_consumption.txt",
+        "raw_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+        "reused_parser_namespace": "experiments.peft_external_gap_v1.data",
+        "source_qc": {
+          "source_rows": 2075259,
+          "source_columns": [
+            "Date",
+            "Time",
+            "Global_active_power",
+            "Global_reactive_power",
+            "Voltage",
+            "Global_intensity",
+            "Sub_metering_1",
+            "Sub_metering_2",
+            "Sub_metering_3"
+          ],
+          "parse_failures": 0,
+          "missing_hours_inserted": 0,
+          "min_finite_minutes_per_hour": 45,
+          "hours_below_threshold_by_channel": {
+            "Global_active_power": 438,
+            "Global_reactive_power": 438,
+            "Voltage": 438,
+            "Global_intensity": 438
+          },
+          "finite_minute_count_by_channel": {
+            "Global_active_power": 2049280,
+            "Global_reactive_power": 2049280,
+            "Voltage": 2049280,
+            "Global_intensity": 2049280
+          }
+        }
+      },
+      "channels": [
+        "Global_active_power",
+        "Global_reactive_power",
+        "Voltage",
+        "Global_intensity"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "Global_active_power",
+        "Global_reactive_power"
+      ],
+      "fit_mean": [
+        1.229077935218811,
+        0.10654076933860779,
+        240.78671264648438,
+        5.188470363616943
+      ],
+      "fit_std": [
+        0.9438966512680054,
+        0.05670050531625748,
+        2.5689406394958496,
+        3.966435670852661
+      ],
+      "fit_median": [
+        0.9881333112716675,
+        0.09269999712705612,
+        240.87857055664062,
+        4.178333282470703
+      ],
+      "context_fallback_median": [
+        0.46826666593551636,
+        0.11638332903385162,
+        239.79225158691406,
+        2.1500000953674316
+      ]
+    }
+  },
+  "data_contract": {
+    "fit_archives": "train+validation only; physically truncated at validation end with no cal/eval origin arrays",
+    "holdout_archives": "full 242-day block with calibration/evaluation origins; read only after global selection is frozen",
+    "fixed_blocks": {
+      "bike": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2012-04-06T00:00:00",
+        "block_end_exclusive": "2012-12-04T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2012-04-06T00:00:00",
+            "2012-04-20T00:00:00"
+          ],
+          "train": [
+            "2012-04-20T00:00:00",
+            "2012-07-20T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2012-07-20T00:00:00",
+            "2012-07-22T00:00:00"
+          ],
+          "val": [
+            "2012-07-22T00:00:00",
+            "2012-08-22T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2012-08-22T00:00:00",
+            "2012-08-24T00:00:00"
+          ],
+          "cal": [
+            "2012-08-24T00:00:00",
+            "2012-09-14T00:00:00"
+          ],
+          "eval": [
+            "2012-09-14T00:00:00",
+            "2012-12-04T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2012-04-20T00:00:00",
+          "val": "2012-07-22T00:00:00",
+          "cal": "2012-08-24T00:00:00",
+          "eval": "2012-09-14T00:00:00"
+        },
+        "last_origin": {
+          "train": "2012-07-18T00:00:00",
+          "val": "2012-08-20T00:00:00",
+          "cal": "2012-09-12T00:00:00",
+          "eval": "2012-12-02T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2012-07-20T00:00:00",
+          "val": "2012-08-22T00:00:00",
+          "cal": "2012-09-14T00:00:00",
+          "eval": "2012-12-04T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "household": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2008-08-30T00:00:00",
+        "block_end_exclusive": "2009-04-29T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2008-08-30T00:00:00",
+            "2008-09-13T00:00:00"
+          ],
+          "train": [
+            "2008-09-13T00:00:00",
+            "2008-12-13T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2008-12-13T00:00:00",
+            "2008-12-15T00:00:00"
+          ],
+          "val": [
+            "2008-12-15T00:00:00",
+            "2009-01-15T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2009-01-15T00:00:00",
+            "2009-01-17T00:00:00"
+          ],
+          "cal": [
+            "2009-01-17T00:00:00",
+            "2009-02-07T00:00:00"
+          ],
+          "eval": [
+            "2009-02-07T00:00:00",
+            "2009-04-29T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2008-09-13T00:00:00",
+          "val": "2008-12-15T00:00:00",
+          "cal": "2009-01-17T00:00:00",
+          "eval": "2009-02-07T00:00:00"
+        },
+        "last_origin": {
+          "train": "2008-12-11T00:00:00",
+          "val": "2009-01-13T00:00:00",
+          "cal": "2009-02-05T00:00:00",
+          "eval": "2009-04-27T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2008-12-13T00:00:00",
+          "val": "2009-01-15T00:00:00",
+          "cal": "2009-02-07T00:00:00",
+          "eval": "2009-04-29T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      }
+    },
+    "context_target_alignment": "origin is first target timestamp; context [origin-336h, origin), target [origin, origin+48h)",
+    "origin_stride_hours": 24,
+    "target_window_overlap_hours": 24,
+    "missing_policy": "target_values preserve raw NaNs; context_values use precontext-only median fallback then causal forward fill, never future backfill",
+    "fit_statistics": "mean/std/median fitted from observed train interval rows only",
+    "score_columns": "only target_indices [0,1] are scored"
+  },
+  "source_contract": {
+    "parser_reused_from": "experiments.peft_external_gap_v1.data",
+    "raw_hashes_recorded": true,
+    "pretraining_overlap": "UNKNOWN",
+    "holdout_selection": "next unused local temporal block fixed by timestamps; no magnitude-based choice"
+  }
+}

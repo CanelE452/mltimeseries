@@ -1,0 +1,86 @@
+{
+  "completed": true,
+  "finished_utc": "2026-09-10T20:42:58.889607+00:00",
+  "seconds": 392.2344740999979,
+  "contract_sha256": "26f0fff19f777f401213ae56c4a5aa705730a778961643a9ff833bccd00483c8",
+  "rows": [
+    {
+      "key": "fits/bdg2/FULL90/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/FULL/s27000",
+      "fit_seconds": 40.36,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/FULL90/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/ES2/s27000",
+      "fit_seconds": 30.25,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/FULL90/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/FIXED_FREEZE/s27000",
+      "fit_seconds": 30.266,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/FULL90/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/CONTRIB_FREEZE/s27000",
+      "fit_seconds": 30.266,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/ES2/s27000",
+      "fit_seconds": 20.171,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/FIXED_FREEZE/s27000",
+      "fit_seconds": 16.156,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/CONTRIB_FREEZE/s27000",
+      "fit_seconds": 22.235,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/FULL/s27000",
+      "fit_seconds": 20.188,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/FIXED_FREEZE/s27000",
+      "fit_seconds": 16.172,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/CONTRIB_FREEZE/s27000",
+      "fit_seconds": 20.172,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/FULL/s27000",
+      "fit_seconds": 20.187,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/bdg2/RECENT30/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/ES2/s27000",
+      "fit_seconds": 20.172,
+      "checkpoint_exact_match": true
+    },
+    {
+      "key": "fits/jena/FULL90/ES2/s27000",
+      "replay_key": "timing_replay/jena/FULL90/ES2/s27000",
+      "fit_seconds": 40.328,
+      "checkpoint_exact_match": true
+    }
+  ]
+}

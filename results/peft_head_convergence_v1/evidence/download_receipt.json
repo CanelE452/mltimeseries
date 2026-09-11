@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-11T04:12:03.635880+00:00",
+  "source": "MPI Biogeochemistry Jena",
+  "license_page": "https://www.bgc-jena.mpg.de/wetter/weather_data.html",
+  "initial_attempt": "Python urllib certificate trust failed; retried via Windows Invoke-WebRequest with normal certificate validation",
+  "files": [
+    {
+      "url": "https://www.bgc-jena.mpg.de/wetter/mpi_roof_2018a.zip",
+      "csv_path": "data/jena_mpi_roof/mpi_roof_2018a.csv",
+      "csv_sha256": "5aa298d7c996a03119a477ad1183249f933b65ba5df43c6d0ece7a9c6b2fbb3d",
+      "zip_sha256": "2ee25464140eae2db2cb35559bcc9cdc833a1505051110ae0c50b1efad5948bc",
+      "bytes": 5473744
+    },
+    {
+      "url": "https://www.bgc-jena.mpg.de/wetter/mpi_roof_2018b.zip",
+      "csv_path": "data/jena_mpi_roof/mpi_roof_2018b.csv",
+      "csv_sha256": "6d7187cec12517904a1fce35528b50c8e14ed5b7414194783f85f5009e1fc1a9",
+      "zip_sha256": "a01826f4fbdebfc561dab7983ce2b47b103ba5b616b99ff7937f859d1cdbac64",
+      "bytes": 5555434
+    }
+  ]
+}

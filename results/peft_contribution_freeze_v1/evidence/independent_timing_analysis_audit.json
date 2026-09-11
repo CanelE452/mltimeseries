@@ -1,0 +1,137 @@
+{
+  "completed": true,
+  "mode": "analysis",
+  "created_utc": "2026-09-10T20:44:00+00:00",
+  "contract_status": {
+    "path": "runs/peft_contribution_freeze_v1/timing_contract.json",
+    "sha256": "26f0fff19f777f401213ae56c4a5aa705730a778961643a9ff833bccd00483c8",
+    "job_count": 13,
+    "source_hash_checks": {
+      "experiments/peft_contribution_freeze_v1/timing_replay.py": true,
+      "experiments/peft_contribution_freeze_v1/analyse_resource_matched.py": true
+    },
+    "input_hash_checks": {
+      "runs/peft_contribution_freeze_v1/plan.json": true,
+      "runs/peft_contribution_freeze_v1/contract.json": true,
+      "runs/peft_contribution_freeze_v1/partial_validation_audit.json": true,
+      "runs/peft_contribution_freeze_v1/resume_20260911_0505/cleanup_result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/guard/status.json": true
+    }
+  },
+  "timing_status": {
+    "timing_completed_rows": 13,
+    "exact_contract_key_set": true
+  },
+  "inputs": {
+    "raw_summary": {
+      "path": "results/peft_contribution_freeze_v1/summary.json",
+      "sha256": "b103301add50d47336b30dc22cc3fbb0133704269c7abc9a2e08ab0fb9ed23b0"
+    },
+    "matched_summary": {
+      "path": "results/peft_contribution_freeze_v1/resource_matched/summary.json",
+      "sha256": "3fa52d1ff433504b9564a5ad6ee877ce803ef87f428864d1771d521844c3bf1f"
+    },
+    "raw_metrics": {
+      "path": "results/peft_contribution_freeze_v1/metrics.csv",
+      "sha256": "7003ee5f9ebbe568d8b474c507179f8f252b613655174f9f50e73a21033eb936"
+    },
+    "matched_metrics": {
+      "path": "results/peft_contribution_freeze_v1/resource_matched/metrics.csv",
+      "sha256": "7d1759324d8b243b6ff925a4821fd7111f58b73d47cfd35cfb94eab892d23d79"
+    }
+  },
+  "counts": {
+    "raw_rows": 48,
+    "matched_rows": 48,
+    "summary_metrics": 6,
+    "dominance_rows": 4
+  },
+  "raw_vs_resource_matched_quality_fields": {
+    "rows": 48,
+    "stable_fields_checked": [
+      "E_score",
+      "F0_score",
+      "adapter_updates",
+      "arm",
+      "best_V_score",
+      "best_step",
+      "condition",
+      "dataset",
+      "eval_seconds",
+      "frozen_step",
+      "regret_pct_F0",
+      "seed",
+      "steps",
+      "toggle_checks"
+    ],
+    "stable_field_max_abs_error": 0.0,
+    "original_fit_seconds_max_abs_error": 0.0
+  },
+  "raw_vs_resource_matched_summary_quality_fields": {
+    "stable_summary_fields_checked": [
+      "F0",
+      "gates",
+      "independent_source_count",
+      "seeds",
+      "cells_not_independent",
+      "new_method_claim",
+      "closest_prior_AFLoRA_implemented"
+    ],
+    "quality_metric_rows_checked": 6
+  },
+  "cell_recompute": {
+    "cell_regret_max_abs_error": 0.0,
+    "cell_savings_max_abs_error": 0.0
+  },
+  "resource_matched_metric_recompute": {
+    "metric_count": 6,
+    "max_abs_error": 0.0
+  },
+  "resource_matched_dominance_recompute": {
+    "dominance_count": 4
+  },
+  "cost_substitution": {
+    "replay_substituted_rows": 13,
+    "original_time_rows": 35,
+    "max_abs_error": 0.0
+  },
+  "candidate_gate_passed": false
+}

@@ -1,0 +1,11 @@
+{
+  "prediction_dtype": "float32",
+  "offset_dtype": "float32",
+  "old_corrected_dtype": "float32",
+  "float32_width_difference": 6.103515625e-05,
+  "float64_width_difference": 0.0,
+  "prediction_rounding_change_max": 6.103515625e-05,
+  "bike_eval_score_float32": 0.1828827311234386,
+  "bike_eval_score_float64": 0.18288273118016302,
+  "score_rounding_difference": 5.67244029525682e-11
+}

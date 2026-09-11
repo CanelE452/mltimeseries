@@ -1,0 +1,28 @@
+{
+  "started_at": "2026-09-10T08:54:12.425273+00:00",
+  "guard_pid": 32032,
+  "command": [
+    "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+    "-m",
+    "experiments.peft_r1_validation_v1.residual_dtypefix",
+    "evaluate"
+  ],
+  "cwd": "E:\\CODING\\proj\\mltimeseries",
+  "require_gpu": false,
+  "thresholds": {
+    "min_available_ram_gib": 5.0,
+    "min_available_commit_gib": 6.0,
+    "max_child_rss_gib": 8.0,
+    "max_git_processes": 32,
+    "max_gpu_memory_mib": 10500.0,
+    "max_gpu_temperature_c": 85.0
+  },
+  "completed": true,
+  "returncode": 0,
+  "state": "completed",
+  "child_pid": 23080,
+  "child_create_time": 1789030452.43897,
+  "finished_at": "2026-09-10T08:54:14.478823+00:00",
+  "elapsed_seconds": 2.062,
+  "reasons": []
+}

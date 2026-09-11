@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-10T11:30:08.557369+00:00",
+  "absolute_F0_comparison": {
+    "bike": {
+      "MLP": {
+        "mean_gain_pct_F0": 0.8258200740283533,
+        "minimum_gain_pct_F0": 0.5684534169523612,
+        "positive": 6,
+        "models": 6
+      },
+      "ALL": {
+        "mean_gain_pct_F0": 3.3970024531263445,
+        "minimum_gain_pct_F0": 1.3083500518769728,
+        "positive": 6,
+        "models": 6
+      }
+    },
+    "household": {
+      "MLP": {
+        "mean_gain_pct_F0": 1.0975072268031083,
+        "minimum_gain_pct_F0": 0.4388993060292239,
+        "positive": 6,
+        "models": 6
+      },
+      "ALL": {
+        "mean_gain_pct_F0": 2.247772698538366,
+        "minimum_gain_pct_F0": 1.6139412938680366,
+        "positive": 6,
+        "models": 6
+      }
+    }
+  },
+  "old_recent_gt_spread_pairs": 4,
+  "new_V_spread_gt_recent_pairs": 4,
+  "new_E_spread_gt_recent_pairs": 4,
+  "rank_checks_are_not_independent_dataset_trials": true,
+  "limitation": "New period and new seeds; no identified causal effect of time alone."
+}

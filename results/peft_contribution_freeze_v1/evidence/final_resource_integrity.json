@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "study31_protected_hashes_ok": true,
+  "study30_protected_hashes_ok": true,
+  "active_study_python": [],
+  "guard_lock_exists": false,
+  "memory": {
+    "available_ram_gib": 12.316886901855469,
+    "available_commit_gib": 15.74966812133789,
+    "commit_limit_gib": 36.77233123779297
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-11T01:03:23.024726+00:00",
+  "plan_sha256": "82b4244377ecca692726554a6c85c21a64c8aaaa1a1ba86f29ce81001a4d6a5e",
+  "source_hashes_checked": 46,
+  "input_hashes_checked": 5,
+  "cpu_tests_passed": 2,
+  "code_review": {
+    "reported_by": "future_split_audit",
+    "blockers": [],
+    "checks": [
+      "V-only seal before D",
+      "flat data interface",
+      "paired initialization and samples",
+      "correction train-only coefficients",
+      "G1 and per-seed G2 formula"
+    ],
+    "caveat": "completed.json marks GPU execution; analysis has separate receipt"
+  },
+  "data_review": {
+    "reported_by": "r1_data_audit",
+    "blockers": [],
+    "checks": [
+      "four prepared archives",
+      "fit truncated/no cal-D origins",
+      "train statistics recomputed",
+      "precontext fallback",
+      "hourly grid and masks",
+      "split target boundaries"
+    ],
+    "exposure_limit": "no matching old target period found in bounded history; raw source family reused; pretraining unknown"
+  },
+  "preflight_conflict": {
+    "resolution": "Stopped data task which exceeded read-only scope. Preserved alternate run/analyse and first plan. Root reconciled implementations and reran tests/review before any GPU job.",
+    "archive": "runs/peft_initial_headroom_v1/preflight_conflict"
+  },
+  "scientific_outcomes_opened_before_freeze": false
+}

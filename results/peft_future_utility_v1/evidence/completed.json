@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "main_jobs": 12,
+  "forks": 24,
+  "smokes": 1,
+  "plan_sha256": "afee103fa43b91d63c50d7785a0b2d063d19434ea4e01b0c9fdb2fe80ffcd4e8",
+  "seconds": 702.1397444999893,
+  "finished_utc": "2026-09-10T22:07:28.396905+00:00"
+}

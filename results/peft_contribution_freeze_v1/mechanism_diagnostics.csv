@@ -1,0 +1,13 @@
+dataset,condition,seed,frozen_step,selected_step,cap,adapter_updates,toggle_checks,selected_before_freeze,selected_after_freeze,E_prediction_exact_FULL,E_prediction_exact_FIXED,V_prediction_exact_FULL,V_prediction_exact_FIXED
+bdg2,FULL90,27000,60,120,180,60,3,False,True,False,True,False,True
+bdg2,SPREAD30,27000,,60,60,60,4,False,False,True,False,True,False
+bdg2,RECENT30,27000,40,20,60,40,4,True,False,True,True,True,True
+jena,FULL90,27000,120,60,180,120,4,True,False,True,True,True,True
+jena,SPREAD30,27000,20,10,60,20,3,True,False,True,True,True,True
+jena,RECENT30,27000,,20,60,60,4,False,False,True,True,True,True
+bdg2,FULL90,27001,120,60,180,120,4,True,False,True,False,True,False
+bdg2,SPREAD30,27001,,40,60,60,4,False,False,True,False,True,False
+bdg2,RECENT30,27001,40,20,60,40,4,True,False,True,True,True,True
+jena,FULL90,27001,,60,180,180,4,False,False,True,True,True,True
+jena,SPREAD30,27001,40,5,60,40,4,True,False,True,True,True,True
+jena,RECENT30,27001,40,10,60,40,4,True,False,True,True,True,True

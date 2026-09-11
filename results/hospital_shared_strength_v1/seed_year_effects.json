@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 24000,
+    "year": 2005,
+    "individual_over_global_pctF0": -0.37963980149121307,
+    "individual_over_shuffled_pctF0": 0.023438824629388205
+  },
+  {
+    "seed": 24000,
+    "year": 2006,
+    "individual_over_global_pctF0": -0.4334322256786563,
+    "individual_over_shuffled_pctF0": -0.10312985854267882
+  },
+  {
+    "seed": 24001,
+    "year": 2005,
+    "individual_over_global_pctF0": -0.5008699219763991,
+    "individual_over_shuffled_pctF0": -0.10695773788746976
+  },
+  {
+    "seed": 24001,
+    "year": 2006,
+    "individual_over_global_pctF0": -0.327532814940623,
+    "individual_over_shuffled_pctF0": -0.03773357715062449
+  }
+]

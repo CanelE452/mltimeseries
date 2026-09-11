@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "independent_rows": 48,
+  "compared_fields": [
+    "f0_v_score",
+    "all_v_score",
+    "wide_v_score",
+    "probe_g_pct_F0",
+    "front_g_pct_F0",
+    "back_g_pct_F0",
+    "all_prefix_wall_seconds",
+    "wide_prefix_wall_seconds"
+  ],
+  "max_abs_error": 0.0,
+  "P1_clock": [
+    {
+      "endpoint": 1,
+      "ALL_prefix_seconds_range": [
+        16.24623203277588,
+        23.568253993988037
+      ],
+      "ALL_prefix_fraction_percent_range": [
+        16.17654165377039,
+        41.090889224340636
+      ],
+      "ALL_prefix_fraction_percent_median": 28.854388104937424,
+      "WIDE_prefix_fraction_percent_median": 55.58309608558051
+    },
+    {
+      "endpoint": 2,
+      "ALL_prefix_seconds_range": [
+        19.59345507621765,
+        30.96821117401123
+      ],
+      "ALL_prefix_fraction_percent_range": [
+        23.221497910714223,
+        47.216789523320685
+      ],
+      "ALL_prefix_fraction_percent_median": 34.736427622586035,
+      "WIDE_prefix_fraction_percent_median": 59.49792142436066
+    }
+  ],
+  "initial_ad_hoc_key_error": "Used probe_rows instead of actual probe_raw; corrected reader, no model/analysis change"
+}

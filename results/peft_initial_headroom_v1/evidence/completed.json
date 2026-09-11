@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "finished_utc": "2026-09-11T01:51:02+00:00",
+  "seconds": 2839.7387918999884,
+  "plan_sha256": "82b4244377ecca692726554a6c85c21a64c8aaaa1a1ba86f29ce81001a4d6a5e",
+  "fit_jobs": 96,
+  "forecast_jobs": 24,
+  "meaning": "GPU execution complete; analysis has a separate summary.json receipt"
+}

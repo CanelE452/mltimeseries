@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "finished_utc": "2026-09-10T11:25:36.930806+00:00",
+  "invocation_seconds": 2145.906606999997,
+  "fits": 24,
+  "evaluations": 26,
+  "selection_sha256": "1e072e35f09208d41d907febfcb2ea10baff6485399338312a3bcc96f0143e2d",
+  "plan_sha256": "c77f96d363460f52cc5e04ba2420bd6fc031b97818f026b1a42f98cf0d1abbc2"
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-10T10:51:13.304468+00:00",
+  "analysis_sha256": "f51a32764a9027f545eecaf41a2306dd08b3e1c8056950837d9d4b398e870831",
+  "note_sha256": "c26b651732ab7bfd32a793a3fdbb3982658f8e6bee5a59fcb8e68a950b735099",
+  "original_analysis_sha256": "05eb7f5d914d9746a8746628cf22b9c5f771af776f0faf1256d269b0e4d951bf",
+  "new_E_selection_exists": false,
+  "accuracy_and_decision_thresholds_unchanged": true,
+  "cost_clock": "guard elapsed excluding admission; includes imports and guard overhead"
+}

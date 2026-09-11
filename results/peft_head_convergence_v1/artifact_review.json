@@ -1,0 +1,412 @@
+{
+  "completed": true,
+  "verified_utc": "2026-09-11T05:42:08.972770+00:00",
+  "protected_hashes": {
+    "peft_head_convergence_v1": 59,
+    "peft_initial_headroom_v1": 51,
+    "peft_decision_transfer_v1": 48
+  },
+  "metrics_rows": 40,
+  "archive_max_score_error": 0.0,
+  "plots": [
+    {
+      "path": "results/peft_head_convergence_v1/01_budget_gap.png",
+      "size": [
+        1920,
+        640
+      ],
+      "bytes": 60426,
+      "sha256": "ca05e2e6c72a881c9281e987768755f7c339aff92a2cf3baf88c09695ffe9901"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/02_validation_trajectories.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "bytes": 240250,
+      "sha256": "954bf54846c64b3f9aed5c59712f1d2a8dae7c71a2cb1191e992dd877a99d989"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/03_family_scores.png",
+      "size": [
+        1600,
+        640
+      ],
+      "bytes": 63411,
+      "sha256": "5a05eb1d5cd7fd0a68ae845e9dd5a5ab49b2ad13525c331dbc17ddbca9fb4ed4"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/04_train_trajectories.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "bytes": 262910,
+      "sha256": "66113bd1b1bcd7319633c959a56cd4cb3536f58da41a047a652bf618c706b8a8"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/05_budget_effect.png",
+      "size": [
+        1600,
+        640
+      ],
+      "bytes": 44308,
+      "sha256": "8174a6b0b7d875f0fce857a61c158f431806e438c14b56c0964721fe57ed9183"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/06_validation_development.png",
+      "size": [
+        1730,
+        1136
+      ],
+      "bytes": 117588,
+      "sha256": "32fa44802fa56bd0224790152f1eeb9cbc9a92e2c961130e4475d1b8986f7103"
+    },
+    {
+      "path": "results/peft_head_convergence_v1/07_target_origin_diagnostics.png",
+      "size": [
+        2180,
+        1640
+      ],
+      "bytes": 317761,
+      "sha256": "38204f9e33bcca88a10ae5518c12cc872d95d68db801e3ae30bc67e5a805aff2"
+    }
+  ],
+  "plots_visually_inspected": 7,
+  "plot_review": "Axes, data labels, readable contrast, zero baselines and target names inspected. 06/07 labels refined after initial creation; descriptive JSON unchanged.",
+  "local_links": [
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "34_initial_headroom_20260911.md",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/README.md",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/metrics.csv",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/evidence/independent_audit.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/03_family_scores.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/01_budget_gap.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/05_budget_effect.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/02_validation_trajectories.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/04_train_trajectories.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/06_validation_development.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/07_target_origin_diagnostics.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/descriptive_decomposition.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../experiments/peft_head_convergence_v1/PURPOSE.md",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/completion_review.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "target": "../../../../results/peft_head_convergence_v1/evidence/windows_event_audit.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "../../_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "../../experiments/peft_head_convergence_v1/PURPOSE.md",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "03_family_scores.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "metrics.csv",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "summary_A.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "per_example_losses.npz",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "fit_histories.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "intervals.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "descriptive_decomposition.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "completion_review.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "completed.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/completed.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "01_budget_gap.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "02_validation_trajectories.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "03_family_scores.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "04_train_trajectories.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "05_budget_effect.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "06_validation_development.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "07_target_origin_diagnostics.png",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/plan.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/selection_A.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/independent_audit.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/guard_statuses.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/environment.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/copies.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/windows_event_audit.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/prepared_summary.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/prepared_data_audit.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/window_qc.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/download_receipt.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "evidence/preflight_review.json",
+      "exists": true,
+      "pending_self_receipt": false
+    },
+    {
+      "document": "results/peft_head_convergence_v1/README.md",
+      "target": "artifact_review.json",
+      "exists": false,
+      "pending_self_receipt": true
+    }
+  ],
+  "document_hashes": {
+    "_docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md": "6452474861e5572b7181fbae8cdfb4307d50ba8f31ba3803e6b1b3bf0ddf4330",
+    "results/peft_head_convergence_v1/README.md": "ec50758ffda01852e9b3064b0b641e0d52fbcecbe91e9aec902884657aec94ce",
+    "README.md": "c40417b65e476a776cd1204f21044d4a4dc2f7c4f0ee4029b9138b51799a7471",
+    "_docs/PROJECT_LOG.md": "8af100e414e1d271eb408f96078a2870db418935188e500892c5f9c2e8fc24f2",
+    "_docs/notes/tsfm_topics/README.md": "20520331f597c4a2cb6873883a26f1e12e67fbf0e2796dbfddddc039c4c9a36a",
+    "_docs/notes/tsfm_topics/07_research_direction/README.md": "fe05882d5bc9867cc7385fad92955f75db0c07b3a562d246322a47f51c0218b4"
+  },
+  "scripts": [
+    {
+      "path": "experiments/peft_head_convergence_v1/analyse.py",
+      "sha256": "77a2ee0bc339dd672de3e815b2d803e4d04f17add5ef693357e4f01dbc582078"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/completion_diagnostics.py",
+      "sha256": "d333134a4bd3756bd64a9431139e5318171948419614d512c51ee22fa80a37e7"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/completion_review.py",
+      "sha256": "cc9692cbecfd37d9e3df610505cc600e2bd96cfaf95816b6d9a586f037c0d45d"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/fit.py",
+      "sha256": "19543ce100bda7f5ad88a629bdd5982acd0d201e510d49d69aa6371843f42204"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/independent_audit.py",
+      "sha256": "798413aab4b85f65e23ecdf5fb11b5e1197bbe104c820b8868a973e9f2e70db6"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/prepare.py",
+      "sha256": "84e454fb7ad4e43db7cf2c235f30bfadfd489c00093f0207d5d2e1fbdca59cde"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/run.py",
+      "sha256": "c05669d12ba01964df9b5f3a78777caa9aa9e750e06251612824b09cc55097d5"
+    },
+    {
+      "path": "experiments/peft_head_convergence_v1/test_contract.py",
+      "sha256": "9e992ae35d499ce1a26f8653f4a10f45390a5b31c91c9d9cff2b049c66157f7f"
+    }
+  ],
+  "copied_evidence_verified": 10,
+  "diagnostic_json_sha256": "07cac28a4554ce0ca8261ca79fb2412f5544e4553be3a4c44b298ccaac9d4751",
+  "diagnostic_json_png_bytes_are_initial_render_metadata": true,
+  "scoped_git_diff_check_exit": 0,
+  "windows_event_count": 0,
+  "windows_query_errors": 0,
+  "independent_audit_pass": true,
+  "stage_B_executed": false
+}

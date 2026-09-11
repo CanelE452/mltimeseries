@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "mode": "run",
+  "created_utc": "2026-09-11T05:34:00.296294+00:00",
+  "plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+  "expected_plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+  "stage_B_executed": false,
+  "pass": true,
+  "issue_count": 0,
+  "issues": [],
+  "notes": [],
+  "counts": {
+    "fit_results_seen": 48,
+    "guard_statuses": 75,
+    "guard_categories": {
+      "smoke_A": 3,
+      "fit_A": 48,
+      "forecast_A": 24,
+      "smoke_B": 0,
+      "fit_B": 0,
+      "forecast_B": 0,
+      "other": 0
+    }
+  },
+  "implementation": "stdlib+numpy independent audit; no torch or Study35 analyse import"
+}

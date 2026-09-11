@@ -1,0 +1,29 @@
+{
+  "sources_sha256": {
+    "results/peft_fullft_reference_v3/summary.json": "41c6b00d0696756b3d683a0525e581904d9d28c9c12dd94df469ecddf9093204",
+    "results/peft_method_pilot_screen_v1/pattern_preserving_control.json": "a9590f457b473003643d0457b3c9b987584f52826070ac7990cf7d385fc7fc99",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr0/attempt_01/output/fit/result.json": "4d4aad47e1da33465498d12da54f259c7d598629427149076ba6936bc6697875",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/output/fit/progress.jsonl": "661f7218472d2689804e694ad5d40b8313fb222dc3a18abd2e2c67f54e05798c",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/guard/safety_stop.json": "788fc767274bf4e0e8163005655e2d8370bf4a1c381079aea45cd49f8c91a1d9",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/output/failure.json": "be39f593100e28ee099e73fac78481a4d4a09666a0a2f2e54805a8ac00ea6cd7",
+    "runs/hospital_shared_strength_v1_run2/stages/s0/attempt_01/guard/status.json": "2f613048f58538439a70abad3eafb9076ae4826b60fac48a6c3949236f7d4d6b",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr0/attempt_01/guard/status.json": "cef441c231a533a5c3179ac0b4e9af6ba82f8946f975b80c22b3e61517b1c40b",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/guard/status.json": "00dcabc18925dc602a6a8261b44b4df06d275c4bdb0206ac891cd0a38d25cdd6",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr0/attempt_01/guard/resource_log.jsonl": "f6a478bcfb7ac9f483e23676e1017934c25e7e03a528f1dfd1369a61a70f0f00",
+    "runs/hospital_shared_strength_v1_run2/stages/fit_s0_lr1/attempt_01/guard/resource_log.jsonl": "bd00b4b1638ef84b75523ded71c161eb0d21bcb89250d8c8b624d0b92959a926"
+  },
+  "no_training": true,
+  "script_sha256": "8d9e5d3c29f47e0152d5682a1afee24a18400af453a13d873838fdcffc189dc7",
+  "outputs": [
+    "01_fullft_benefit.png",
+    "01_fullft_benefit.svg",
+    "02_fullft_contrasts.png",
+    "02_fullft_contrasts.svg",
+    "03_coarse_supervision.png",
+    "03_coarse_supervision.svg",
+    "04_hospital_validation_only.png",
+    "04_hospital_validation_only.svg",
+    "05_hospital_memory.png",
+    "05_hospital_memory.svg"
+  ]
+}

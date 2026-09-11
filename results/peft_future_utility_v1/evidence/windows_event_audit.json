@@ -1,0 +1,19 @@
+{
+  "queried_utc": "2026-09-10T22:09:47.2119637Z",
+  "start_utc": "2026-09-10T21:54:45.0488580Z",
+  "end_utc": "2026-09-10T22:09:47.0548691Z",
+  "system_ids": [
+    41,
+    4101,
+    153,
+    2004,
+    6008
+  ],
+  "application_ids": [
+    1000
+  ],
+  "event_count": 0,
+  "events": [],
+  "query_errors": [],
+  "scope": "Selected Windows event IDs during Study32 only; absence does not prove system-wide crash immunity."
+}

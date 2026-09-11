@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "command": "python -m unittest experiments.peft_decision_transfer_v1.test_policy -v",
+  "tests": 3,
+  "result": "PASS",
+  "focus": [
+    "future-outcome invariance of probe action",
+    "early-stop cannot see later recovery",
+    "near-tie cost ordering and head-only probe"
+  ],
+  "exit_code": 0
+}

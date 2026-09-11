@@ -1,0 +1,19 @@
+{
+  "conditional_90pct": {
+    "JOINT_vs_HEAD": [
+      7.408713227164163,
+      17.091212816994886
+    ],
+    "JOINT_vs_WIDE": [
+      5.070370215067174,
+      12.802777110581614
+    ],
+    "JOINT_vs_CORRECTION": [
+      -7.309368422985198,
+      -1.3739636977821559
+    ]
+  },
+  "draws": 2000,
+  "block_origins": 2,
+  "fixed_source_periods": true
+}

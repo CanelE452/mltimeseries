@@ -1,0 +1,28 @@
+{
+  "start_utc": "2026-09-11T04:16:07.5437450Z",
+  "queries": [
+    {
+      "count": 0,
+      "ids": [
+        41,
+        4101,
+        153,
+        2004,
+        6008
+      ],
+      "log": "System",
+      "status": "ok"
+    },
+    {
+      "count": 0,
+      "ids": [
+        1000
+      ],
+      "log": "Application",
+      "status": "ok"
+    }
+  ],
+  "events": [],
+  "end_utc": "2026-09-11T05:35:21.5841206Z",
+  "scope": "Limited IDs from first Study35 smoke through post-run review; absence does not prove permanent system stability"
+}

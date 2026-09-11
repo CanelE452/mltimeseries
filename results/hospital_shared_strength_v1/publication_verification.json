@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "verified_receipts": 10,
+  "verified_rows": 3068,
+  "main_effect_csv_recomputed": -0.41188989715424934,
+  "difference": 1.3822276656583199e-14,
+  "sources_sha256": {
+    "runs/hospital_shared_strength_v1_run2/stages/analyse/attempt_01/output/summary.json": "50d547f8805c3057ca24ba9ed611c641286b6b3e2ccd24e118577e653e05a82d",
+    "runs/hospital_shared_strength_v1_run2/stages/analyse/attempt_01/output/metrics.csv": "cfbc64d5bb3524085ecfde92cb6790241822904ac9a28916d50064ede2d96611",
+    "runs/hospital_shared_strength_v1_run2/stages/analyse/attempt_01/output/series_effects.csv": "de9842f6e60240291c3713ed3825d7d19b29fa871fcc5fb163dbc4f437ba6695",
+    "runs/hospital_shared_strength_v1_run2/independent_audit.json": "4fd6729392f447473d3caab9b67123cd5b4ba899d94f9ec7b7bdf3f90be1e425",
+    "runs/hospital_shared_strength_v1_run2/stages/select_models/attempt_01/output/selected.json": "a2a338201cf40c0444cb305b1174c8973cbfd9f0f95d520d93995f9d2fbc04c9",
+    "runs/hospital_shared_strength_v1_run2/stages/select_gates/attempt_01/output/policies.json": "2c98781686b8eb4a1999deb592a85c89770918bbf62c7f88278a75322bb66370"
+  },
+  "run_contract_sha256": "7e14995086c5ee7d7e6e02e5a72d730fedb6ea4bda63391fa625c540961e9f9f",
+  "new_training_by_this_script": 0,
+  "figures": [
+    "01_scores.png",
+    "02_seed_year_effects.png",
+    "03_alpha_histogram.png"
+  ]
+}

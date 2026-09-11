@@ -1,0 +1,241 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-11T05:34:14.107492+00:00",
+  "script_sha256": "cc9692cbecfd37d9e3df610505cc600e2bd96cfaf95816b6d9a586f037c0d45d",
+  "scope": "Post-freeze packaging/descriptive plots only; no changes to frozen training/analysis",
+  "protected_hashes": {
+    "peft_head_convergence_v1": 59,
+    "peft_initial_headroom_v1": 51,
+    "peft_decision_transfer_v1": 48
+  },
+  "guards": 75,
+  "categories": {
+    "fit": {
+      "jobs": 48,
+      "seconds": 3966.5370000000003
+    },
+    "forecast": {
+      "jobs": 24,
+      "seconds": 216.53300000000004
+    },
+    "smoke": {
+      "jobs": 3,
+      "seconds": 32.373000000000005
+    }
+  },
+  "phase_family_costs": {
+    "fit/A/HEAD": {
+      "jobs": 16,
+      "guard_seconds": 841.582
+    },
+    "fit/A/JOINT": {
+      "jobs": 16,
+      "guard_seconds": 2277.283
+    },
+    "fit/A/WIDE": {
+      "jobs": 16,
+      "guard_seconds": 847.6720000000001
+    },
+    "forecast/A/HEAD": {
+      "jobs": 8,
+      "guard_seconds": 74.845
+    },
+    "forecast/A/JOINT": {
+      "jobs": 8,
+      "guard_seconds": 72.86
+    },
+    "forecast/A/WIDE": {
+      "jobs": 8,
+      "guard_seconds": 68.828
+    },
+    "smoke/A/HEAD": {
+      "jobs": 1,
+      "guard_seconds": 12.171
+    },
+    "smoke/A/JOINT": {
+      "jobs": 1,
+      "guard_seconds": 10.109
+    },
+    "smoke/A/WIDE": {
+      "jobs": 1,
+      "guard_seconds": 10.093
+    }
+  },
+  "prefix_search_costs": {
+    "bmra/s30000/HEAD": {
+      "trials": 4,
+      "full_fit_seconds": 183.16396499999973,
+      "trajectory_seconds": 172.3309622000088
+    },
+    "bmra/s30000/JOINT": {
+      "trials": 4,
+      "full_fit_seconds": 541.2033714999852,
+      "trajectory_seconds": 529.223362699995
+    },
+    "bmra/s30001/HEAD": {
+      "trials": 4,
+      "full_fit_seconds": 186.83100130000093,
+      "trajectory_seconds": 175.9483110000001
+    },
+    "bmra/s30001/JOINT": {
+      "trials": 4,
+      "full_fit_seconds": 556.9024748999946,
+      "trajectory_seconds": 544.7893768999784
+    },
+    "jena/s30000/HEAD": {
+      "trials": 4,
+      "full_fit_seconds": 175.28998649999266,
+      "trajectory_seconds": 164.5489790000138
+    },
+    "jena/s30000/JOINT": {
+      "trials": 4,
+      "full_fit_seconds": 523.9975462999864,
+      "trajectory_seconds": 512.1260699000122
+    },
+    "jena/s30001/HEAD": {
+      "trials": 4,
+      "full_fit_seconds": 180.2952074000059,
+      "trajectory_seconds": 169.409273199999
+    },
+    "jena/s30001/JOINT": {
+      "trials": 4,
+      "full_fit_seconds": 534.3324806000019,
+      "trajectory_seconds": 522.3088898999995
+    }
+  },
+  "cost_scope": "Guard totals include child startup but exclude admission/CPU preparation. Parent run time includes admission gaps. Prefix search is already part of A; shared WARM_HEAD/WARM_JOINT prefixes are not duplicated in actual total. S180 selection comes from full720 trajectories, not a separately timed180 run.",
+  "resource_extrema_scope": "Sampled extrema, device-wide GPU memory; not continuous per-process peaks.",
+  "resource_samples": 442,
+  "finish_records": 75,
+  "minimum_available_ram_gib": 14.275310516357422,
+  "minimum_available_commit_gib": 13.430198669433594,
+  "maximum_child_rss_gib": 1.6953086853027344,
+  "maximum_gpu_memory_mib": 1828.0,
+  "maximum_gpu_temperature_c": 58.0,
+  "current_memory": {
+    "available_ram_gib": 16.317501068115234,
+    "available_commit_gib": 17.122329711914062,
+    "commit_limit_gib": 36.77233123779297
+  },
+  "active_study_processes": [],
+  "guard_lock_exists": false,
+  "selected_at_cap": {
+    "S180/HEAD": 1,
+    "S180/WIDE": 1,
+    "S180/JOINT": 1,
+    "L720/HEAD": 1,
+    "L720/WIDE": 0,
+    "L720/JOINT": 0
+  },
+  "budget_changes": [
+    {
+      "cell": "bmra/s30000",
+      "family": "HEAD",
+      "S180_D": 0.47632712312983105,
+      "L720_D": 0.47632712312983105,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "bmra/s30000",
+      "family": "WIDE",
+      "S180_D": 0.4727811970060675,
+      "L720_D": 0.4727811970060675,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "bmra/s30000",
+      "family": "JOINT",
+      "S180_D": 0.4417108788773279,
+      "L720_D": 0.4417108788773279,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "bmra/s30001",
+      "family": "HEAD",
+      "S180_D": 0.4845469475457163,
+      "L720_D": 0.4962458173960124,
+      "improvement_pct_F0": -2.816798476912642
+    },
+    {
+      "cell": "bmra/s30001",
+      "family": "WIDE",
+      "S180_D": 0.4919388200814807,
+      "L720_D": 0.483261077403291,
+      "improvement_pct_F0": 2.089385784417965
+    },
+    {
+      "cell": "bmra/s30001",
+      "family": "JOINT",
+      "S180_D": 0.4340053847092906,
+      "L720_D": 0.43502043628022297,
+      "improvement_pct_F0": -0.24439930998272003
+    },
+    {
+      "cell": "jena/s30000",
+      "family": "HEAD",
+      "S180_D": 0.5206084164265918,
+      "L720_D": 0.5403771901313714,
+      "improvement_pct_F0": -4.159209399394141
+    },
+    {
+      "cell": "jena/s30000",
+      "family": "WIDE",
+      "S180_D": 0.5177084265253841,
+      "L720_D": 0.5177084265253841,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "jena/s30000",
+      "family": "JOINT",
+      "S180_D": 0.489484614335404,
+      "L720_D": 0.489484614335404,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "jena/s30001",
+      "family": "HEAD",
+      "S180_D": 0.5038094802920154,
+      "L720_D": 0.5603551642709882,
+      "improvement_pct_F0": -11.896809777515553
+    },
+    {
+      "cell": "jena/s30001",
+      "family": "WIDE",
+      "S180_D": 0.538625756575777,
+      "L720_D": 0.538625756575777,
+      "improvement_pct_F0": 0.0
+    },
+    {
+      "cell": "jena/s30001",
+      "family": "JOINT",
+      "S180_D": 0.490225416226838,
+      "L720_D": 0.490225416226838,
+      "improvement_pct_F0": 0.0
+    }
+  ],
+  "prediction_equality": [
+    {
+      "cell": "bmra/s30000",
+      "L720_JOINT_equals_HEAD": false,
+      "L720_JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "bmra/s30001",
+      "L720_JOINT_equals_HEAD": false,
+      "L720_JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/s30000",
+      "L720_JOINT_equals_HEAD": false,
+      "L720_JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/s30001",
+      "L720_JOINT_equals_HEAD": false,
+      "L720_JOINT_equals_WIDE": false
+    }
+  ],
+  "copied_evidence": 10,
+  "independent_refit_saved_adapter_tensor_checks": 0,
+  "tensor_check_scope": "CPU checkpoint comparison for REFIT saved adapters if B ran; initial WARM head ownership uses runtime restoration assertions and independent initial prediction equality, not a separately saved initial head tensor."
+}

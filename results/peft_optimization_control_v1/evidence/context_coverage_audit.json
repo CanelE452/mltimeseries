@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-10T10:19:06.705437+00:00",
+  "rows": [
+    {
+      "condition": "FULL90",
+      "unique_context_hours": 2472,
+      "first_context_index": 0,
+      "last_context_index_inclusive": 2471
+    },
+    {
+      "condition": "SPREAD30",
+      "unique_context_hours": 2472,
+      "first_context_index": 0,
+      "last_context_index_inclusive": 2471
+    },
+    {
+      "condition": "RECENT30",
+      "unique_context_hours": 1032,
+      "first_context_index": 1440,
+      "last_context_index_inclusive": 2471
+    }
+  ],
+  "FULL90_SPREAD30_context_timestamp_union_identical": true,
+  "new_selection_exists": false,
+  "scope": "Union of past context timestamps, not a count of independent observations; origin-weighted window feature distributions can differ. Any deterministic descriptor computed solely on deduplicated context union with common preprocessing is identical for FULL90 and SPREAD30."
+}

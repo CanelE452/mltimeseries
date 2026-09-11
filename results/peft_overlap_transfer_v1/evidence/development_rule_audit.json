@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-09-10T10:51:47.408651+00:00",
+  "new_E_selection_exists": false,
+  "development_only": true,
+  "independent_cells": 6,
+  "seed_independence": false,
+  "rules": {
+    "ALWAYS_ALL": [
+      {
+        "seed": 25000,
+        "macro_regret_pct_F0": 0.0,
+        "source_regret_pct_F0": {
+          "bike": 0.0,
+          "household": 0.0
+        }
+      },
+      {
+        "seed": 25001,
+        "macro_regret_pct_F0": 0.0,
+        "source_regret_pct_F0": {
+          "bike": 0.0,
+          "household": 0.0
+        }
+      }
+    ],
+    "ALWAYS_MLP": [
+      {
+        "seed": 25000,
+        "macro_regret_pct_F0": 1.3243252654953177,
+        "source_regret_pct_F0": {
+          "bike": 2.1430907113477224,
+          "household": 0.5055598196429129
+        }
+      },
+      {
+        "seed": 25001,
+        "macro_regret_pct_F0": 1.57736528907432,
+        "source_regret_pct_F0": {
+          "bike": 2.442338136381172,
+          "household": 0.712392441767468
+        }
+      }
+    ],
+    "COUNT": [
+      {
+        "seed": 25000,
+        "macro_regret_pct_F0": 0.4250828691287155,
+        "source_regret_pct_F0": {
+          "bike": 0.6894661160779204,
+          "household": 0.16069962217951064
+        }
+      },
+      {
+        "seed": 25001,
+        "macro_regret_pct_F0": 0.9515566031854301,
+        "source_regret_pct_F0": {
+          "bike": 1.355763597244124,
+          "household": 0.5473496091267361
+        }
+      }
+    ],
+    "OVERLAP": [
+      {
+        "seed": 25000,
+        "macro_regret_pct_F0": 0.0775524122928114,
+        "source_regret_pct_F0": {
+          "bike": 0.2179505355981346,
+          "household": -0.06284571101251181
+        }
+      },
+      {
+        "seed": 25001,
+        "macro_regret_pct_F0": 0.21622864170807654,
+        "source_regret_pct_F0": {
+          "bike": 0.29198373187483223,
+          "household": 0.14047355154132082
+        }
+      }
+    ]
+  },
+  "cost_not_estimated": "old subsets trained180 updates, future deployment60; old cost is not comparable"
+}

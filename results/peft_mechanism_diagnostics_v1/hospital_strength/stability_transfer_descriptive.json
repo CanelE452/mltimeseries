@@ -1,0 +1,33 @@
+{
+  "scope": "Posthoc descriptive join; not a tested selection rule or causal separation of noise and drift",
+  "rows": [
+    {
+      "seed": 24000,
+      "stable_all_month_deletions": true,
+      "n": 575,
+      "mean_eval_regret_individual_minus_global": 0.0030268628724079726,
+      "sum_eval_regret": 1.7404461516345844
+    },
+    {
+      "seed": 24000,
+      "stable_all_month_deletions": false,
+      "n": 192,
+      "mean_eval_regret_individual_minus_global": 0.0009492650851705645,
+      "sum_eval_regret": 0.1822588963527484
+    },
+    {
+      "seed": 24001,
+      "stable_all_month_deletions": true,
+      "n": 575,
+      "mean_eval_regret_individual_minus_global": 0.002410558607973126,
+      "sum_eval_regret": 1.3860711995845474
+    },
+    {
+      "seed": 24001,
+      "stable_all_month_deletions": false,
+      "n": 192,
+      "mean_eval_regret_individual_minus_global": 0.0031272937727168187,
+      "sum_eval_regret": 0.6004404043616292
+    }
+  ]
+}

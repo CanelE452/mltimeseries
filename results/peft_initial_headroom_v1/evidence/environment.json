@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-09-11T01:12:36.831267+00:00",
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "peft": "0.20.0",
+    "transformers": "5.16.1",
+    "chronos-forecasting": "2.3.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "psutil": "7.2.2",
+    "pyarrow": "25.0.1"
+  },
+  "checkpoint": "C:\\Users\\User\\.cache\\huggingface\\hub\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c"
+}

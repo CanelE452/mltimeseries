@@ -1,0 +1,55 @@
+{
+  "finished_utc": "2026-09-11T07:02:30.111192+00:00",
+  "plan_sha256_before_execution_update": "71ba9837ace86bb54e4d3792d7e7a2c4f2c9d10c25d4938f4fec9a6c92a20f04",
+  "source_sha256": "6cbea820232fb95129b7ae08568f17a7b95cf0681656364775ae2eeceb17b1b9",
+  "checks": {
+    "stationary_uniform_error": 0.0,
+    "reflection_conjugacy_error": 0.0,
+    "observation_sign_flip_error": 0.0,
+    "conditional_mean_sign_conjugacy_error": 0.0,
+    "acf_difference_h1_to_128": 5.551115123125783e-17,
+    "risk_difference_h1_to_128": 2.220446049250313e-16,
+    "psd_difference_257_frequencies": 2.220446049250313e-16,
+    "quadratic_forward_error": 5.551115123125783e-17,
+    "quadratic_reverse_error": 1.1102230246251565e-16
+  },
+  "technical_checks_pass": true,
+  "construct_validity": "FAIL_FOR_ISOLATING_TEMPORAL_DIRECTION_FROM_AMPLITUDE_SIGN",
+  "risk_h1": {
+    "forward": 0.45999999999999996,
+    "reverse": 0.45999999999999996
+  },
+  "quadratic_coefficients_intercept_x_x2": {
+    "forward": [
+      0.6,
+      -0.19999999999999996,
+      -0.8999999999999999
+    ],
+    "reverse": [
+      -0.5999999999999999,
+      -0.19999999999999996,
+      0.8999999999999999
+    ]
+  },
+  "conditional_means": {
+    "forward": [
+      -0.1,
+      0.6,
+      -0.49999999999999994
+    ],
+    "reverse": [
+      0.49999999999999994,
+      -0.6,
+      0.1
+    ]
+  },
+  "population_implications": [
+    "Reverse process is exactly the sign-relabelled forward process in law; independent finite samples need not be exact sign flips.",
+    "Any forward/reverse model score asymmetry could reflect amplitude-sign equivariance, not a uniquely temporal mechanism.",
+    "The observed first-order Markov state is sufficient at every horizon; older observations provide no additional conditional information.",
+    "A quadratic of the latest observation represents the one-step Bayes predictor exactly with three coefficients.",
+    "These are representability and identification results, not measurements of trained LoRA or learned-head performance."
+  ],
+  "gpu_started": false,
+  "seconds": 0.0581467000010889
+}

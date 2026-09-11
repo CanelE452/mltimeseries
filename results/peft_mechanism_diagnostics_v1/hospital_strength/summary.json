@@ -1,0 +1,152 @@
+{
+  "completed": true,
+  "source": "runs/hospital_shared_strength_v1_run2",
+  "new_training": 0,
+  "published_main_effect_pctF0_individual_over_global": -0.4118898971542355,
+  "published_matching_effect_pctF0_individual_over_shuffled": -0.05536587816908198,
+  "publication_verification_completed": true,
+  "seed_summaries": [
+    {
+      "seed": 24000,
+      "global_alpha": 1.0,
+      "v2_f0_mean": 0.6336331495944391,
+      "v2_global_mean": 0.6274906749222097,
+      "v2_individual_best_mean": 0.6225398778628942,
+      "v2_individual_over_global_pctF0_optimistic": 0.7813349195010137,
+      "v2_median_second_best_gap_pctF0": 0.13211473288262934,
+      "v2_series_with_gap_lt_0p1pctF0": 0.4041720990873533,
+      "eval_individual_vs_global_pctF0": -0.4051669963504204,
+      "eval_oracle_vs_global_pctF0_posthoc": 0.3202927979932292,
+      "eval_chosen_rank_mean_of_11": 5.084745762711864,
+      "eval_chosen_rank_top1_fraction": 0.529335071707953,
+      "v2_alpha_vs_eval_oracle_alpha_spearman": 0.03031252636921538,
+      "v2_lora_direction_vs_eval_direction_spearman": 0.01970495360173747,
+      "v2_lora_direction_sign_agreement_with_eval": 0.6049543676662321,
+      "endpoint_flip_fraction_0_to_1_or_1_to_0": 0.3285528031290743,
+      "future_oracle_alpha_histogram_posthoc": {
+        "0.0": 168,
+        "0.1": 6,
+        "0.2": 6,
+        "0.3": 8,
+        "0.4": 8,
+        "0.5": 3,
+        "0.6": 6,
+        "0.7": 4,
+        "0.8": 10,
+        "0.9": 13,
+        "1.0": 535
+      },
+      "v2_alpha_histogram": {
+        "0.0": 213,
+        "0.1": 4,
+        "0.2": 5,
+        "0.3": 10,
+        "0.4": 5,
+        "0.5": 6,
+        "0.6": 5,
+        "0.7": 5,
+        "0.8": 8,
+        "0.9": 6,
+        "1.0": 500
+      },
+      "eval_window_effects": [
+        {
+          "origin": 60,
+          "year": 2005,
+          "individual_vs_global_pctF0": -0.379639801491215,
+          "oracle_vs_global_pctF0_posthoc": 0.6006399021964062,
+          "exact_alpha_match_fraction_posthoc": 0.5228161668839635
+        },
+        {
+          "origin": 72,
+          "year": 2006,
+          "individual_vs_global_pctF0": -0.43343222567867,
+          "oracle_vs_global_pctF0_posthoc": 0.5144125622224263,
+          "exact_alpha_match_fraction_posthoc": 0.5032594524119948
+        }
+      ]
+    },
+    {
+      "seed": 24001,
+      "global_alpha": 1.0,
+      "v2_f0_mean": 0.6336331495944391,
+      "v2_global_mean": 0.6249051970916633,
+      "v2_individual_best_mean": 0.6213625502504315,
+      "v2_individual_over_global_pctF0_optimistic": 0.5591006157899452,
+      "v2_median_second_best_gap_pctF0": 0.1375635394183304,
+      "v2_series_with_gap_lt_0p1pctF0": 0.4198174706649283,
+      "eval_individual_vs_global_pctF0": -0.41861279795808654,
+      "eval_oracle_vs_global_pctF0_posthoc": 0.3195100005604771,
+      "eval_chosen_rank_mean_of_11": 5.089960886571056,
+      "eval_chosen_rank_top1_fraction": 0.5358539765319427,
+      "v2_alpha_vs_eval_oracle_alpha_spearman": 0.04020709828893182,
+      "v2_lora_direction_vs_eval_direction_spearman": 0.019880452349018418,
+      "v2_lora_direction_sign_agreement_with_eval": 0.6010430247718384,
+      "endpoint_flip_fraction_0_to_1_or_1_to_0": 0.3194263363754889,
+      "future_oracle_alpha_histogram_posthoc": {
+        "0.0": 184,
+        "0.1": 9,
+        "0.2": 6,
+        "0.3": 7,
+        "0.4": 7,
+        "0.5": 3,
+        "0.6": 5,
+        "0.7": 8,
+        "0.8": 7,
+        "0.9": 5,
+        "1.0": 526
+      },
+      "v2_alpha_histogram": {
+        "0.0": 196,
+        "0.1": 5,
+        "0.2": 7,
+        "0.3": 8,
+        "0.4": 6,
+        "0.5": 5,
+        "0.6": 5,
+        "0.7": 8,
+        "0.8": 7,
+        "0.9": 8,
+        "1.0": 512
+      },
+      "eval_window_effects": [
+        {
+          "origin": 60,
+          "year": 2005,
+          "individual_vs_global_pctF0": -0.500869921976386,
+          "oracle_vs_global_pctF0_posthoc": 0.601612620287713,
+          "exact_alpha_match_fraction_posthoc": 0.5202086049543677
+        },
+        {
+          "origin": 72,
+          "year": 2006,
+          "individual_vs_global_pctF0": -0.32753281494063896,
+          "oracle_vs_global_pctF0_posthoc": 0.48433766394769145,
+          "exact_alpha_match_fraction_posthoc": 0.5032594524119948
+        }
+      ]
+    }
+  ],
+  "aggregate_eval_individual_vs_global_pctF0": -0.4118898971542535,
+  "aggregate_eval_oracle_vs_global_pctF0_posthoc": 0.3199013992768531,
+  "interpretation": {
+    "v2_selection_optimism": "Individual alpha improves V2 by construction but fails to transfer to E.",
+    "future_oracle_status": "E oracle alpha is posthoc diagnostic, not a valid method result.",
+    "likely_primary_cause": "selection noise and temporal instability dominate this direct per-series alpha rule",
+    "method_implication": "No automatic method test: first establish historically predictable heterogeneity; oracle gain alone does not identify noise, shift, or stable heterogeneity."
+  },
+  "limits": [
+    "E1/E2 were already inspected; all E oracle analyses are descriptive only",
+    "767 series are related series in one panel, not 767 independent hospitals",
+    "two training seeds are not enough to decompose optimizer noise from series heterogeneity",
+    "no new model training or new test split is created here"
+  ],
+  "source_hashes": {
+    "policies.json": "2c98781686b8eb4a1999deb592a85c89770918bbf62c7f88278a75322bb66370",
+    "losses.npz": "3562729363c18ab8a535e3d130fe3d4df026c99ce478bf09a13cca0ba9a818fd",
+    "eval.npz": "80f045ddcc165500aaf286d65f58b5102f7b3bc8f45f6ada054616f53c6b40d0",
+    "published_publication_verification.json": "6f6d5a5a7bd4d30b07b98a38738d3774b7e65cd6eccd1e802e146cfcbe7334f5",
+    "runs/hospital_shared_strength_v1_run2/stages/select_gates/attempt_01/output/strengths_24000.npz": "d98bae184605ca8e9b0a243062ea7012fb43058b4d5a035a2e4d485c56bba75f",
+    "runs/hospital_shared_strength_v1_run2/stages/select_gates/attempt_01/output/strengths_24001.npz": "f70109cb3474a4fe2600875e83b9f7a686ffe697c2e8002a0eed5ea84287fb93"
+  }
+}

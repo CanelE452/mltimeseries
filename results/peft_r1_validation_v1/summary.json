@@ -1,0 +1,233 @@
+{
+  "completed": true,
+  "independent_score_max_error": 5.551115123125783e-17,
+  "new_fits_verified": 16,
+  "reused_full90_fits_verified": 8,
+  "model_evaluations_verified": 24,
+  "effects": {
+    "bike": {
+      "FULL90": {
+        "matched_gain_pct_f0": [
+          4.445360828350647,
+          3.896050946605546
+        ],
+        "mean": 4.170705887478096,
+        "chronological_blocks_20origins": [
+          -0.2134192231249277,
+          5.495829679737598,
+          4.216925720528261,
+          7.1834873727714905
+        ],
+        "both_all_better_than_f0": true
+      },
+      "SPREAD30": {
+        "matched_gain_pct_f0": [
+          0.0,
+          -2.0384531351455086
+        ],
+        "mean": -1.0192265675727543,
+        "chronological_blocks_20origins": [
+          -4.110644547228126,
+          0.2952610610313759,
+          0.02055975403553412,
+          -0.2820825381297465
+        ],
+        "both_all_better_than_f0": false
+      },
+      "RECENT30": {
+        "matched_gain_pct_f0": [
+          1.117849026976555,
+          1.41704667084273
+        ],
+        "mean": 1.2674478489096426,
+        "chronological_blocks_20origins": [
+          -3.577061218194881,
+          4.2972639710953775,
+          0.12079229450363782,
+          4.2287963482343836
+        ],
+        "both_all_better_than_f0": true
+      },
+      "spread_minus_full_by_seed": [
+        -4.445360828350647,
+        -5.934504081751054
+      ],
+      "recent_minus_spread_by_seed": [
+        1.117849026976555,
+        3.4554998059882385
+      ]
+    },
+    "household": {
+      "FULL90": {
+        "matched_gain_pct_f0": [
+          0.6074102127465769,
+          0.2285210982752734
+        ],
+        "mean": 0.4179656555109251,
+        "chronological_blocks_20origins": [
+          0.5940922152454643,
+          -0.6883046406748481,
+          1.1473404839258734,
+          0.6187345635471618
+        ],
+        "both_all_better_than_f0": true
+      },
+      "SPREAD30": {
+        "matched_gain_pct_f0": [
+          -0.05460597775626822,
+          -0.22374749314561745
+        ],
+        "mean": -0.13917673545094283,
+        "chronological_blocks_20origins": [
+          0.6991822572405086,
+          -0.1994828762070521,
+          -1.143934144529236,
+          0.08752782169204043
+        ],
+        "both_all_better_than_f0": false
+      },
+      "RECENT30": {
+        "matched_gain_pct_f0": [
+          0.0,
+          0.33414439105595994
+        ],
+        "mean": 0.16707219552797997,
+        "chronological_blocks_20origins": [
+          0.3571365948484077,
+          0.06480371882351917,
+          0.13819995774114532,
+          0.10814851069880427
+        ],
+        "both_all_better_than_f0": false
+      },
+      "spread_minus_full_by_seed": [
+        -0.6620161905028451,
+        -0.4522685914208908
+      ],
+      "recent_minus_spread_by_seed": [
+        0.05460597775626822,
+        0.5578918842015774
+      ]
+    }
+  },
+  "residual": {
+    "records": [
+      {
+        "dataset": "bike",
+        "method": "BIAS",
+        "lambda": null,
+        "f0_score": 0.1837970583922437,
+        "score": 0.18288273118016302,
+        "gain_pct_f0": 0.4974656395911415,
+        "selection_sha256": "7985c09d27595d833df8427abb052bc77da2915f28335d5b886acaad412283b2",
+        "previously_exposed_E": true
+      },
+      {
+        "dataset": "household",
+        "method": "ZERO",
+        "lambda": null,
+        "f0_score": 0.2979875498818401,
+        "score": 0.2979875498818401,
+        "gain_pct_f0": 0.0,
+        "selection_sha256": "7985c09d27595d833df8427abb052bc77da2915f28335d5b886acaad412283b2",
+        "previously_exposed_E": true
+      }
+    ],
+    "completed": true
+  },
+  "resources": {
+    "min_ram_gib": 10.625049591064453,
+    "min_commit_gib": 9.994041442871094,
+    "max_gpu_mib": 1856.0,
+    "max_gpu_temp_c": 53.0
+  },
+  "runner_seconds": 1193.240913,
+  "timing_basis": "first admission sample to recovered completion, including CPU diagnosis delay",
+  "guard_jobs": 37,
+  "successful_guard_jobs": 36,
+  "cpu_assertion_failures": 1,
+  "safety_stops": 0,
+  "guard_seconds": 839.548,
+  "source_hashes": {
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\bike\\MLP\\r0_s25000\\output\\result.json": "12848898e663604d8489e7c92a44772f23797a78a0e8ecd589df1d82dbb06b9a",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\MLP\\r0_s25000\\output\\result.json": "2b080f5e49593c85c5a60470663be44852d932b385a00f143acaa5a9d5916e22",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\MLP\\r0_s25000\\output\\predictions.npz": "5ff14e834ef4fe5402eadbac8ced1796b4c505b71cd704c152883806b52d1a6e",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\bike\\MLP\\r0_s25001\\output\\result.json": "403bdd1cb3085400de8ca504bc843c8026dc346aa34a6a06957c3f422d876dd4",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\MLP\\r0_s25001\\output\\result.json": "c4e4ecbb332bbde8a968deb32bbbf63a5b61e4a9ea0ee80352d726d0da75616d",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\MLP\\r0_s25001\\output\\predictions.npz": "a7c9159473cec9b3a9dda8e2f569959badf0793157dc7ca40a9e0e977eb081b5",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\bike\\ALL\\r0_s25000\\output\\result.json": "41ea977c3310c276b2d95eaa69bd0177354714c5bb2d5890f4c48b079775df7e",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\ALL\\r0_s25000\\output\\result.json": "3488ae7788f036b4c9e67cf6a65d441cc54bdde43aabf66fa8b3f5c4457c2294",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\ALL\\r0_s25000\\output\\predictions.npz": "f50b9672270c00a245c0acdc80e5857859d988150340713362364992a127b48b",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\bike\\ALL\\r0_s25001\\output\\result.json": "2222d342ef482058e2afa2a74f396210d2d0aa18dcd62e188873678b2e692f03",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\ALL\\r0_s25001\\output\\result.json": "28500236ca90a5aa0030722b5c0fc8903b8dec86b2de5d31ed89b81af5929ad0",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\bike\\ALL\\r0_s25001\\output\\predictions.npz": "09f3dd204776a2fa567784a1c3f0e138cfac43087eb8101663e6eb059e0e67bc",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\SPREAD30\\MLP\\s25000\\output\\result.json": "3903655ce478b3b06658999c1fc24e6c1d4c4c20c95a698b45abaa1fcb6474ec",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\MLP\\s25000\\output\\result.json": "2153e25d992885685fdb9cd4d0cceaa9d44537f85b6422941bf0f7808119fbd4",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\MLP\\s25000\\output\\predictions.npz": "f6e9ad90fe1997ea021cdc4bf745d661938c8c87d3cbf941147dbbbe31d04d8d",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\SPREAD30\\MLP\\s25001\\output\\result.json": "e2860046d60b6ecd1e6d562b52891ead9b333e27b517c04b047e50c4948dec38",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\MLP\\s25001\\output\\result.json": "f835397b2c628dcb272cd81f0993cfc1084ee6ca337b5bbb5f2232e675225bf2",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\MLP\\s25001\\output\\predictions.npz": "f6e9ad90fe1997ea021cdc4bf745d661938c8c87d3cbf941147dbbbe31d04d8d",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\SPREAD30\\ALL\\s25000\\output\\result.json": "f371c2bf46ba873ff8251cdba49e30b8b970f462da237a025c3c78e8bd122654",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\ALL\\s25000\\output\\result.json": "df123ab1f346ffc6296b0c7483cfb3f9cf1dd2b4f82a44ec665c8eebfdc7f4cc",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\ALL\\s25000\\output\\predictions.npz": "f6e9ad90fe1997ea021cdc4bf745d661938c8c87d3cbf941147dbbbe31d04d8d",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\SPREAD30\\ALL\\s25001\\output\\result.json": "9549e98fe9cc8543c3efc252d42e5b5a0bd131d0421ecae56d252dbcd6afcd39",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\ALL\\s25001\\output\\result.json": "2ef79fafebff8a4f8b20c6dd35bc81c26fccb9d48346dd380932d79d692901eb",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\SPREAD30\\ALL\\s25001\\output\\predictions.npz": "c3667a60f69c3a2fdcf95caa4e3d7a5ef9f8e428ab03e0487729a1d902f41dcb",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\RECENT30\\MLP\\s25000\\output\\result.json": "978ad22510ac0d176b8dcdc2d49efb60c7a90230c20db072bafcacb5b27b3a5c",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\MLP\\s25000\\output\\result.json": "6877bd955428d138df7cca607bfc3b5f4c28ac494253fe3cf7866c238cbfcf05",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\MLP\\s25000\\output\\predictions.npz": "f6e9ad90fe1997ea021cdc4bf745d661938c8c87d3cbf941147dbbbe31d04d8d",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\RECENT30\\MLP\\s25001\\output\\result.json": "d1c2e882a84b7477e91a629aa20c178e6948701b5b5ab826b341435d6cc86830",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\MLP\\s25001\\output\\result.json": "a99b01a4eced8f46637f6c5afbdcdb3b6dda35ff1ff01e6e205ef557bbbd7f8d",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\MLP\\s25001\\output\\predictions.npz": "57e96b78a1aba444358760b55544d9fb4935351384dc684f709401de593e2524",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\RECENT30\\ALL\\s25000\\output\\result.json": "474bafede350e501cd987eb2f19c1e4b9b0bce9960463614c6e1bda78464ba22",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\ALL\\s25000\\output\\result.json": "2aba2c78a201129b1706d8b0a8c1bbf7f26ba0dfb66593ee5f6cf43f7b3f649f",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\ALL\\s25000\\output\\predictions.npz": "bcbe7a0ef434415f7381c42208f39fba72520f14d2366a1959bfabea806fd413",
+    "runs\\peft_r1_validation_v1\\fits\\bike\\RECENT30\\ALL\\s25001\\output\\result.json": "31b53039a49a651baa00389b865258a97364a0255e5361640dde3d11267bf8cf",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\ALL\\s25001\\output\\result.json": "38b9754d06ea59689290011ce154d54b733318fcfffb52f7d249e02f2111b856",
+    "runs\\peft_r1_validation_v1\\eval\\bike\\RECENT30\\ALL\\s25001\\output\\predictions.npz": "24a824640854fae03f2cbacd04f3b76d629befcb6cc0b2eef8a5ba294999830d",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\household\\MLP\\r0_s25000\\output\\result.json": "af0c5d727b77d39b0793fa2bc0039917e8707b74702d002fa4b893bcf39158dd",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\MLP\\r0_s25000\\output\\result.json": "08a370d20c54909031d5edcdd69d650de39c948a6fb3bb10739b1cc596f619dc",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\MLP\\r0_s25000\\output\\predictions.npz": "deba962f58e8bc0dd1f493ca29e27472c13696f1df59218fa5e5936062534f4f",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\household\\MLP\\r0_s25001\\output\\result.json": "26ebee1b3965547cfec3ecd4ae859cb0332236419dd0f995928373fa6dcf2131",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\MLP\\r0_s25001\\output\\result.json": "4342f0d73569ea8487810757eb2b2a9522aaddc224f217f4367563fd31649d86",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\MLP\\r0_s25001\\output\\predictions.npz": "5ef372cc1d6330942d93b7e9eaa972d88461f59f57ca7bbacedbce65ca1fa6ff",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\household\\ALL\\r0_s25000\\output\\result.json": "f3ec3d134ad2313519bfc12d3c0e5656689816f0eb9bbcf9223ac1d281357e61",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\ALL\\r0_s25000\\output\\result.json": "f1785d9f5c313496d5ec294cc1160bd1e7e75b8c14222a7ef9be91d277c73d85",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\ALL\\r0_s25000\\output\\predictions.npz": "d714b2ebb21544ee870c3d98ee6f03555274b94a410021d2a3f0928eb9a2601c",
+    "runs\\peft_mechanism_diagnostics_v1\\fits\\household\\ALL\\r0_s25001\\output\\result.json": "24d853f9aede03b1596eab51da3886cc24068f0803c5c920724669c0557a7b43",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\ALL\\r0_s25001\\output\\result.json": "eff34f7d383ce578f3956eb3011e8f8b086f1efc07a8c58931edf68f1669afaa",
+    "runs\\peft_mechanism_diagnostics_v1\\eval\\household\\ALL\\r0_s25001\\output\\predictions.npz": "dad0d748e9e8006b7fc36c24b38bc037e07791d5995c30020dcc318c8ad14fa6",
+    "runs\\peft_r1_validation_v1\\fits\\household\\SPREAD30\\MLP\\s25000\\output\\result.json": "a3715a05f1fc455153437082a574cde3bb190448885c53762e15b69efd05ae0d",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\MLP\\s25000\\output\\result.json": "8f7b08960a1ef9bd6dfbdd95e622ffa40863f90e182be6b34d967f3ded678387",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\MLP\\s25000\\output\\predictions.npz": "6b29f9ecd140acb4b2a6c61e9d3962397a159b0ba3b496a5befd3d788932daef",
+    "runs\\peft_r1_validation_v1\\fits\\household\\SPREAD30\\MLP\\s25001\\output\\result.json": "0691762c33b3a7606e0e38d0a0b949ee89bde3cd64bbaf1bdacf65fca99ba79f",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\MLP\\s25001\\output\\result.json": "ad481f58380eb0b3249a8a4ec794fe13b130a0cb65bbf71564a8e9691e6adf10",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\MLP\\s25001\\output\\predictions.npz": "6b29f9ecd140acb4b2a6c61e9d3962397a159b0ba3b496a5befd3d788932daef",
+    "runs\\peft_r1_validation_v1\\fits\\household\\SPREAD30\\ALL\\s25000\\output\\result.json": "0e930812556e3c68557c7caa91be5f670ad24235291280cf119c6aefd6cef61a",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\ALL\\s25000\\output\\result.json": "9ec2be3552c4b233e55b640bcd078aa68eb60493320708987aa14e4ff21305d2",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\ALL\\s25000\\output\\predictions.npz": "e9c0991d2ce112656d4c7896c7635a2d42a1f07e387ad2eeea4b8bce590fab4b",
+    "runs\\peft_r1_validation_v1\\fits\\household\\SPREAD30\\ALL\\s25001\\output\\result.json": "edc55e4a353533e98cd5a07d78eab26d76f1bee9857ca2824e191b47cc1bcf29",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\ALL\\s25001\\output\\result.json": "c554eb14d1e00af1983f18fcdc15cd6c4652931806042c032775e0fc5d2ea45f",
+    "runs\\peft_r1_validation_v1\\eval\\household\\SPREAD30\\ALL\\s25001\\output\\predictions.npz": "dd8f2f9a7bbbd09dac498f34ad4b94a48900ae2b9abda373b329f3378b19c373",
+    "runs\\peft_r1_validation_v1\\fits\\household\\RECENT30\\MLP\\s25000\\output\\result.json": "0c81a19732e5ac4c7b4fd40989aa42065024dbdd0b4ef36edf4a78d3fcc4c18a",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\MLP\\s25000\\output\\result.json": "a5f3c04b99cc1446c9400cc30f72cf364ba629ea0a1721a7c182e97ef94f22a0",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\MLP\\s25000\\output\\predictions.npz": "6b29f9ecd140acb4b2a6c61e9d3962397a159b0ba3b496a5befd3d788932daef",
+    "runs\\peft_r1_validation_v1\\fits\\household\\RECENT30\\MLP\\s25001\\output\\result.json": "b80d3b333c47b9213b55ab3eb26fb5a7c44dd4dd4883a7300e9c297638c8930b",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\MLP\\s25001\\output\\result.json": "f8e4120c7575d890782c5211b0ce8abfa286475668137b4649af09464aad9e28",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\MLP\\s25001\\output\\predictions.npz": "6b29f9ecd140acb4b2a6c61e9d3962397a159b0ba3b496a5befd3d788932daef",
+    "runs\\peft_r1_validation_v1\\fits\\household\\RECENT30\\ALL\\s25000\\output\\result.json": "edefb9b61e11f388cb248fcb81ec8ce78bd886468c8619a78323c0d10a1b2976",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\ALL\\s25000\\output\\result.json": "8cf045bf819e0dd60c80fc9bbb3a470252cba53dc376f8233ff4f505443833f0",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\ALL\\s25000\\output\\predictions.npz": "6b29f9ecd140acb4b2a6c61e9d3962397a159b0ba3b496a5befd3d788932daef",
+    "runs\\peft_r1_validation_v1\\fits\\household\\RECENT30\\ALL\\s25001\\output\\result.json": "4e83a1576fce4d7c51d83bd6c604cd02208095dd95d2ac7426d836c6bad94a0a",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\ALL\\s25001\\output\\result.json": "7bececc9717f5c7e0c884c8b637f1d642082462f6a28e3f302c83a5559ef4979",
+    "runs\\peft_r1_validation_v1\\eval\\household\\RECENT30\\ALL\\s25001\\output\\predictions.npz": "c65e89f11daeb7f45afb78c2e41f2dcd8ae94bbfd98c301bb6e964beb3e5ab03"
+  },
+  "analysis_sha256": "43e6c03710b45683d88f3f7a9713b862b4b74ac82191f9528650847be82a58b7",
+  "fresh_test": false,
+  "limits": [
+    "Fixed LR and updates; not optimal sample complexity",
+    "SPREAD30 vs RECENT30 changes coverage and recency jointly",
+    "Ridge grid limited; failure cannot exclude all simple corrections",
+    "No synthetic frequency intervention or independent source confirmation"
+  ]
+}

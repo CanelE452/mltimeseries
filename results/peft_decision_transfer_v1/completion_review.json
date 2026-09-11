@@ -1,0 +1,480 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-11T00:28:04.997357+00:00",
+  "script_sha256": "7cce1e7976fe5b7ba2fe1fdf17f96838d5d88d7e296fa95d3c7f833fadee30d4",
+  "guards": 177,
+  "categories": {
+    "fit/dev": {
+      "jobs": 20,
+      "seconds": 924.827
+    },
+    "fit/test": {
+      "jobs": 32,
+      "seconds": 1493.7650000000003
+    },
+    "forecast/dev": {
+      "jobs": 20,
+      "seconds": 198.54500000000004
+    },
+    "forecast/test": {
+      "jobs": 32,
+      "seconds": 323.69100000000003
+    },
+    "replay": {
+      "jobs": 72,
+      "seconds": 1547.5289999999993
+    },
+    "smoke": {
+      "jobs": 1,
+      "seconds": 22.266
+    }
+  },
+  "resource_samples": 508,
+  "finish_records": 177,
+  "minimum_available_ram_gib": 12.792427062988281,
+  "minimum_available_commit_gib": 12.419647216796875,
+  "maximum_child_rss_gib": 1.8632125854492188,
+  "maximum_gpu_memory_mib": 1864.0,
+  "maximum_gpu_temperature_c": 54.0,
+  "current_memory": {
+    "available_ram_gib": 15.546756744384766,
+    "available_commit_gib": 16.316177368164062,
+    "commit_limit_gib": 36.77233123779297
+  },
+  "active_study_processes": [],
+  "inaccessible_python": [],
+  "guard_lock_exists": false,
+  "protected_hash_checks": {
+    "peft_decision_transfer_v1": 48,
+    "peft_future_utility_v1": 115,
+    "peft_contribution_freeze_v1": 24,
+    "peft_capacity_probe_v1": 23
+  },
+  "reproducible_loss_rows": 144,
+  "loss_archive_sha256": "57a89fe66e2b5a1cb158849d601a846c4444dd6cd14ce38f0a959ceb5e6bed26",
+  "prepared_failure_preserved": true,
+  "decision_output_comparisons": [
+    {
+      "fit_key": "test/bmra/FULL90/TREE/r0/s28002",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.16666666666666666,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 30,
+          "V": 0.3857620238959556,
+          "checkpoint": "JOINT_30",
+          "model_hash": "c7fdb2e9403b9d6c09d49deec3f24fd8ad49d18c488f0ece6aae49883cef679a",
+          "evaluation_seconds": 0.2907054999959655,
+          "trajectory_seconds": 6.044317699968815
+        },
+        "HEAD": {
+          "step": 30,
+          "V": 0.3857620238959556,
+          "checkpoint": "JOINT_30",
+          "model_hash": "c7fdb2e9403b9d6c09d49deec3f24fd8ad49d18c488f0ece6aae49883cef679a",
+          "evaluation_seconds": 0.2907054999959655,
+          "trajectory_seconds": 6.044317699968815
+        },
+        "STOP": {
+          "step": 30,
+          "V": 0.3857620238959556,
+          "checkpoint": "JOINT_30",
+          "model_hash": "c7fdb2e9403b9d6c09d49deec3f24fd8ad49d18c488f0ece6aae49883cef679a",
+          "evaluation_seconds": 0.2907054999959655,
+          "trajectory_seconds": 6.044317699968815
+        }
+      }
+    },
+    {
+      "fit_key": "test/bmra/FULL90/TREE/r0/s28003",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.16666666666666666,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 30,
+          "V": 0.37777301956539944,
+          "checkpoint": "JOINT_30",
+          "model_hash": "0a086c4a3687840eec6067626a48d79ab88c53a659211dc40c19c674e3d9fc5b",
+          "evaluation_seconds": 0.26650440000230446,
+          "trajectory_seconds": 5.409161799965659
+        },
+        "HEAD": {
+          "step": 30,
+          "V": 0.37777301956539944,
+          "checkpoint": "JOINT_30",
+          "model_hash": "0a086c4a3687840eec6067626a48d79ab88c53a659211dc40c19c674e3d9fc5b",
+          "evaluation_seconds": 0.26650440000230446,
+          "trajectory_seconds": 5.409161799965659
+        },
+        "STOP": {
+          "step": 30,
+          "V": 0.37777301956539944,
+          "checkpoint": "JOINT_30",
+          "model_hash": "0a086c4a3687840eec6067626a48d79ab88c53a659211dc40c19c674e3d9fc5b",
+          "evaluation_seconds": 0.26650440000230446,
+          "trajectory_seconds": 5.409161799965659
+        }
+      }
+    },
+    {
+      "fit_key": "test/bmra/FULL90/TREE/r0/s28004",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.08333333333333333,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 15,
+          "V": 0.3796905940719363,
+          "checkpoint": "JOINT_15",
+          "model_hash": "2f58865da6ccabe24abc2f0c11d1f2689cf137f7caabcfceaa5afddd418d7fc5",
+          "evaluation_seconds": 0.2873552999953972,
+          "trajectory_seconds": 3.2608047000539955
+        },
+        "HEAD": {
+          "step": 15,
+          "V": 0.3796905940719363,
+          "checkpoint": "JOINT_15",
+          "model_hash": "2f58865da6ccabe24abc2f0c11d1f2689cf137f7caabcfceaa5afddd418d7fc5",
+          "evaluation_seconds": 0.2873552999953972,
+          "trajectory_seconds": 3.2608047000539955
+        },
+        "STOP": {
+          "step": 15,
+          "V": 0.3796905940719363,
+          "checkpoint": "JOINT_15",
+          "model_hash": "2f58865da6ccabe24abc2f0c11d1f2689cf137f7caabcfceaa5afddd418d7fc5",
+          "evaluation_seconds": 0.2873552999953972,
+          "trajectory_seconds": 3.2608047000539955
+        }
+      }
+    },
+    {
+      "fit_key": "test/bmra/SPREAD30/TREE/r0/s28002",
+      "chosen_action": "HEAD",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.08333333333333333,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 5,
+          "V": 0.3876353949299465,
+          "checkpoint": "JOINT_5",
+          "model_hash": "4433773bae9721209013cca52da448115616425b99a249324f224f5d8a602390",
+          "evaluation_seconds": 0.2666291000059573,
+          "trajectory_seconds": 1.5762403000117047
+        },
+        "HEAD": {
+          "step": 5,
+          "V": 0.3876353949299465,
+          "checkpoint": "JOINT_5",
+          "model_hash": "4433773bae9721209013cca52da448115616425b99a249324f224f5d8a602390",
+          "evaluation_seconds": 0.2666291000059573,
+          "trajectory_seconds": 1.5762403000117047
+        },
+        "STOP": {
+          "step": 5,
+          "V": 0.3876353949299465,
+          "checkpoint": "JOINT_5",
+          "model_hash": "4433773bae9721209013cca52da448115616425b99a249324f224f5d8a602390",
+          "evaluation_seconds": 0.2666291000059573,
+          "trajectory_seconds": 1.5762403000117047
+        }
+      }
+    },
+    {
+      "fit_key": "test/bmra/SPREAD30/TREE/r0/s28003",
+      "chosen_action": "HEAD",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.16666666666666666,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 10,
+          "V": 0.38655432612197765,
+          "checkpoint": "JOINT_10",
+          "model_hash": "35085f367cdb917a13961d36dcd7c5a52f255457209174c0717ff06d88221146",
+          "evaluation_seconds": 0.28315489999658894,
+          "trajectory_seconds": 2.7430548999545863
+        },
+        "HEAD": {
+          "step": 10,
+          "V": 0.38655432612197765,
+          "checkpoint": "JOINT_10",
+          "model_hash": "35085f367cdb917a13961d36dcd7c5a52f255457209174c0717ff06d88221146",
+          "evaluation_seconds": 0.28315489999658894,
+          "trajectory_seconds": 2.7430548999545863
+        },
+        "STOP": {
+          "step": 10,
+          "V": 0.38655432612197765,
+          "checkpoint": "JOINT_10",
+          "model_hash": "35085f367cdb917a13961d36dcd7c5a52f255457209174c0717ff06d88221146",
+          "evaluation_seconds": 0.28315489999658894,
+          "trajectory_seconds": 2.7430548999545863
+        }
+      }
+    },
+    {
+      "fit_key": "test/bmra/SPREAD30/TREE/r0/s28004",
+      "chosen_action": "STOP",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.16666666666666666,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 10,
+          "V": 0.3816027381737431,
+          "checkpoint": "JOINT_10",
+          "model_hash": "9a35a3aad3ce6f4a7da3f208acb886b06a9644370418d94a953176be9011f655",
+          "evaluation_seconds": 0.29331290000118315,
+          "trajectory_seconds": 2.8170273000141606
+        },
+        "HEAD": {
+          "step": 10,
+          "V": 0.3816027381737431,
+          "checkpoint": "JOINT_10",
+          "model_hash": "9a35a3aad3ce6f4a7da3f208acb886b06a9644370418d94a953176be9011f655",
+          "evaluation_seconds": 0.29331290000118315,
+          "trajectory_seconds": 2.8170273000141606
+        },
+        "STOP": {
+          "step": 10,
+          "V": 0.3816027381737431,
+          "checkpoint": "JOINT_10",
+          "model_hash": "9a35a3aad3ce6f4a7da3f208acb886b06a9644370418d94a953176be9011f655",
+          "evaluation_seconds": 0.29331290000118315,
+          "trajectory_seconds": 2.8170273000141606
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/FULL90/TREE/r0/s28002",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.08333333333333333,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 15,
+          "V": 0.28447631589573186,
+          "checkpoint": "JOINT_15",
+          "model_hash": "154919538a6eb0b20869f8f1bf9afd8a6f621100874f2f0e18c895394c8258fa",
+          "evaluation_seconds": 0.30857019999530166,
+          "trajectory_seconds": 3.3263748999888776
+        },
+        "HEAD": {
+          "step": 15,
+          "V": 0.28447631589573186,
+          "checkpoint": "JOINT_15",
+          "model_hash": "154919538a6eb0b20869f8f1bf9afd8a6f621100874f2f0e18c895394c8258fa",
+          "evaluation_seconds": 0.30857019999530166,
+          "trajectory_seconds": 3.3263748999888776
+        },
+        "STOP": {
+          "step": 15,
+          "V": 0.28447631589573186,
+          "checkpoint": "JOINT_15",
+          "model_hash": "154919538a6eb0b20869f8f1bf9afd8a6f621100874f2f0e18c895394c8258fa",
+          "evaluation_seconds": 0.30857019999530166,
+          "trajectory_seconds": 3.3263748999888776
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/FULL90/TREE/r0/s28003",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.16666666666666666,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 30,
+          "V": 0.28091401112055725,
+          "checkpoint": "JOINT_30",
+          "model_hash": "9d86c6dd0dbbaa7a4c3f601823d1640c39d8f77a8c02439331ea6f93ce80263e",
+          "evaluation_seconds": 0.2710360000055516,
+          "trajectory_seconds": 6.3670660000207135
+        },
+        "HEAD": {
+          "step": 30,
+          "V": 0.28091401112055725,
+          "checkpoint": "JOINT_30",
+          "model_hash": "9d86c6dd0dbbaa7a4c3f601823d1640c39d8f77a8c02439331ea6f93ce80263e",
+          "evaluation_seconds": 0.2710360000055516,
+          "trajectory_seconds": 6.3670660000207135
+        },
+        "STOP": {
+          "step": 30,
+          "V": 0.28091401112055725,
+          "checkpoint": "JOINT_30",
+          "model_hash": "9d86c6dd0dbbaa7a4c3f601823d1640c39d8f77a8c02439331ea6f93ce80263e",
+          "evaluation_seconds": 0.2710360000055516,
+          "trajectory_seconds": 6.3670660000207135
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/FULL90/TREE/r0/s28004",
+      "chosen_action": "STOP",
+      "cap": 180,
+      "fork": 60,
+      "selected_budget_fraction": 0.08333333333333333,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 15,
+          "V": 0.2810465109592478,
+          "checkpoint": "JOINT_15",
+          "model_hash": "6874895af5ace378bd19287ae43c1662bf49c46dcc39da0811ec28f73ce90209",
+          "evaluation_seconds": 0.28712850000010803,
+          "trajectory_seconds": 3.770868200008408
+        },
+        "HEAD": {
+          "step": 15,
+          "V": 0.2810465109592478,
+          "checkpoint": "JOINT_15",
+          "model_hash": "6874895af5ace378bd19287ae43c1662bf49c46dcc39da0811ec28f73ce90209",
+          "evaluation_seconds": 0.28712850000010803,
+          "trajectory_seconds": 3.770868200008408
+        },
+        "STOP": {
+          "step": 15,
+          "V": 0.2810465109592478,
+          "checkpoint": "JOINT_15",
+          "model_hash": "6874895af5ace378bd19287ae43c1662bf49c46dcc39da0811ec28f73ce90209",
+          "evaluation_seconds": 0.28712850000010803,
+          "trajectory_seconds": 3.770868200008408
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/SPREAD30/TREE/r0/s28002",
+      "chosen_action": "STOP",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.0,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "8fd713992210c2eaa071c2c9120017f965554eb12a420f45a36a0e2b8801cd69",
+          "evaluation_seconds": 0.511708499994711,
+          "trajectory_seconds": 0.511708499994711
+        },
+        "HEAD": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "8fd713992210c2eaa071c2c9120017f965554eb12a420f45a36a0e2b8801cd69",
+          "evaluation_seconds": 0.511708499994711,
+          "trajectory_seconds": 0.511708499994711
+        },
+        "STOP": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "8fd713992210c2eaa071c2c9120017f965554eb12a420f45a36a0e2b8801cd69",
+          "evaluation_seconds": 0.511708499994711,
+          "trajectory_seconds": 0.511708499994711
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/SPREAD30/TREE/r0/s28003",
+      "chosen_action": "STOP",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.08333333333333333,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 5,
+          "V": 0.2859883213562558,
+          "checkpoint": "JOINT_5",
+          "model_hash": "0b6eab5e60e7c3ea0979490b4208606e299777d3a0ead07f00db540b10ebd754",
+          "evaluation_seconds": 0.2966506000084337,
+          "trajectory_seconds": 1.6936312999896472
+        },
+        "HEAD": {
+          "step": 5,
+          "V": 0.2859883213562558,
+          "checkpoint": "JOINT_5",
+          "model_hash": "0b6eab5e60e7c3ea0979490b4208606e299777d3a0ead07f00db540b10ebd754",
+          "evaluation_seconds": 0.2966506000084337,
+          "trajectory_seconds": 1.6936312999896472
+        },
+        "STOP": {
+          "step": 5,
+          "V": 0.2859883213562558,
+          "checkpoint": "JOINT_5",
+          "model_hash": "0b6eab5e60e7c3ea0979490b4208606e299777d3a0ead07f00db540b10ebd754",
+          "evaluation_seconds": 0.2966506000084337,
+          "trajectory_seconds": 1.6936312999896472
+        }
+      }
+    },
+    {
+      "fit_key": "test/jena/SPREAD30/TREE/r0/s28004",
+      "chosen_action": "STOP",
+      "cap": 60,
+      "fork": 20,
+      "selected_budget_fraction": 0.0,
+      "selected_after_fork": false,
+      "all_three_selected_model_hashes_equal": true,
+      "selected_points": {
+        "JOINT": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "fe0afa2bb67ef0df8863a6a244893b24de21e9087e209b76b4ce8df6aa2aa12e",
+          "evaluation_seconds": 0.5446511000045575,
+          "trajectory_seconds": 0.5446511000045575
+        },
+        "HEAD": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "fe0afa2bb67ef0df8863a6a244893b24de21e9087e209b76b4ce8df6aa2aa12e",
+          "evaluation_seconds": 0.5446511000045575,
+          "trajectory_seconds": 0.5446511000045575
+        },
+        "STOP": {
+          "step": 0,
+          "V": 0.28714735385710355,
+          "checkpoint": "JOINT_0",
+          "model_hash": "fe0afa2bb67ef0df8863a6a244893b24de21e9087e209b76b4ce8df6aa2aa12e",
+          "evaluation_seconds": 0.5446511000045575,
+          "trajectory_seconds": 0.5446511000045575
+        }
+      }
+    }
+  ],
+  "same_three_action_model_count": 12,
+  "scope": "post-outcome descriptive/resource audit only; no policy or thresholds changed"
+}

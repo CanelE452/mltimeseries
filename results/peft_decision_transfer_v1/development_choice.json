@@ -1,0 +1,333 @@
+{
+  "completed": true,
+  "sealed_utc": "2026-09-10T23:18:39.914620+00:00",
+  "methods": {
+    "FULL": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "JOINT",
+      "margin": 0.0,
+      "development_normalized_E": 0.9904564570127948
+    },
+    "HEAD": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "HEAD0",
+      "margin": 0.0,
+      "development_normalized_E": 0.9927019014690365
+    },
+    "FIXED": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "HEAD1",
+      "margin": 0.0,
+      "development_normalized_E": 0.9904564570127948
+    },
+    "EARLY_STOP": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "ES2",
+      "margin": 0.0,
+      "development_normalized_E": 0.9904564570127948
+    },
+    "PROBE": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "PROBE",
+      "margin": 0.0,
+      "development_normalized_E": 0.9904564570127948
+    },
+    "WIDE": {
+      "family": "WIDE",
+      "recipe": 2,
+      "path": "WIDE",
+      "development_normalized_E": 0.994780594315867
+    },
+    "CURRENT_C": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "CURRENT_C",
+      "margin": 0.0
+    },
+    "RANDOM": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "RANDOM",
+      "margin": 0.0
+    },
+    "HEAD_PROBE": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "HEAD_PROBE",
+      "margin": 0.0
+    },
+    "MASKED1": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "MASKED1",
+      "margin": 0.0
+    },
+    "CONSTANT": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "CONSTANT",
+      "constant": "STOP",
+      "margin": 0.0,
+      "development_normalized_E": 0.9904564570127948
+    },
+    "SOURCE_CONSTANT": {
+      "family": "TREE",
+      "recipe": 0,
+      "path": "CONSTANT",
+      "source_actions": {
+        "bmra": "STOP",
+        "jena": "STOP"
+      },
+      "margin": 0.0
+    }
+  },
+  "development_grids": {
+    "FULL": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "JOINT",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "JOINT",
+        "margin": 0.0,
+        "development_normalized_E": 1.000957154898129
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "JOINT",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      }
+    ],
+    "HEAD": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "HEAD0",
+        "margin": 0.0,
+        "development_normalized_E": 0.9927019014690365
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "HEAD0",
+        "margin": 0.0,
+        "development_normalized_E": 0.9927019014690365
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "HEAD0",
+        "margin": 0.0,
+        "development_normalized_E": 0.9968214837864735
+      }
+    ],
+    "FIXED": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "HEAD1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "HEAD2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "HEAD1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9975474318692205
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "HEAD2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9998047413170454
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "HEAD1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9962010196891429
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "HEAD2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      }
+    ],
+    "EARLY_STOP": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "ES1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9924914450858494
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "ES2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "ES3",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "ES1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9975266824323709
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "ES2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9975266824323709
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "ES3",
+        "margin": 0.0,
+        "development_normalized_E": 0.9975266824323709
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "ES1",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "ES2",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "ES3",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      }
+    ],
+    "PROBE": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "PROBE",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "PROBE",
+        "margin": 0.25,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "PROBE",
+        "margin": 0.0,
+        "development_normalized_E": 0.9975266824323709
+      },
+      {
+        "family": "TREE",
+        "recipe": 1,
+        "path": "PROBE",
+        "margin": 0.25,
+        "development_normalized_E": 0.9975266824323709
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "PROBE",
+        "margin": 0.0,
+        "development_normalized_E": 0.9959781773538066
+      },
+      {
+        "family": "TREE",
+        "recipe": 2,
+        "path": "PROBE",
+        "margin": 0.25,
+        "development_normalized_E": 0.9959781773538066
+      }
+    ],
+    "WIDE": [
+      {
+        "family": "WIDE",
+        "recipe": 0,
+        "path": "WIDE",
+        "development_normalized_E": 0.9973772813148905
+      },
+      {
+        "family": "WIDE",
+        "recipe": 2,
+        "path": "WIDE",
+        "development_normalized_E": 0.994780594315867
+      }
+    ],
+    "CONSTANT": [
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "CONSTANT",
+        "constant": "STOP",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "CONSTANT",
+        "constant": "HEAD",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      },
+      {
+        "family": "TREE",
+        "recipe": 0,
+        "path": "CONSTANT",
+        "constant": "JOINT",
+        "margin": 0.0,
+        "development_normalized_E": 0.9904564570127948
+      }
+    ]
+  },
+  "development_cells": 4,
+  "test_E_used": false,
+  "tie_rule": "exact normalized mean ties: recipe order, path lexical, margin order; constant STOP/HEAD/JOINT"
+}

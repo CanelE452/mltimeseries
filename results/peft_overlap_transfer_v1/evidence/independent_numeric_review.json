@@ -1,0 +1,9 @@
+{
+  "reviewer": "r1_data_audit data-engineer independent NumPy calculation; project score function not imported",
+  "forecast_files": 26,
+  "maximum_score_record_error": 2.220446049250313e-16,
+  "maximum_summary_numeric_difference": 1.07e-14,
+  "overlap_gate_passed": false,
+  "all_rule_verdicts_match": true,
+  "method": "quantile pinball times2 / observed target count / train fit std; direct NPZ reads; guard elapsed cost"
+}

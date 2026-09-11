@@ -1,0 +1,456 @@
+{
+  "verified": true,
+  "common_validation_points": 56,
+  "max_difference": 0.0,
+  "rows": [
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "bike",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "FULL90",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 120,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "RECENT30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "ALL",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25000,
+      "step": 40,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 0,
+      "difference": 0.0
+    },
+    {
+      "dataset": "household",
+      "condition": "SPREAD30",
+      "arm": "MLP",
+      "seed": 25001,
+      "step": 40,
+      "difference": 0.0
+    }
+  ],
+  "note": "All recipe0 common V checkpoints match the earlier 200-step implementation. No E outcomes used."
+}

@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "method": "Independent per-channel/per-quantile absolute-error weighted loop; no project score imports",
+  "forecast_checks": 52,
+  "paired_capacity_comparisons": 24,
+  "max_abs_score_or_gain_error": 4.529709940470639e-14,
+  "primary_gain_by_seed": [
+    4.358129501730926,
+    5.199722931719689
+  ],
+  "primary_mean": 4.778926216725308,
+  "selection_sha256": "6c4fa08107249dbf7d416f9b3b266c40ac1dfab07d8c9c5852c037e278ee47b0"
+}

@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "checks": [
+    "AST parse fit.py/run.py/analyse.py",
+    "Adam state_dict CPU clone/restore hash equality",
+    "Restored Adam produces identical next parameter update",
+    "Saved optimizer snapshot remains immutable after both continuations"
+  ],
+  "observed_exit_code": 0,
+  "source": "Executed inline CPU checks before plan preparation and GPU smoke"
+}

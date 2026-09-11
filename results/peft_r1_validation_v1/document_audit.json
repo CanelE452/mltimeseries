@@ -1,0 +1,12 @@
+{
+  "checked_links": 108,
+  "broken_links": [],
+  "copied_evidence_hashes_match": true,
+  "report_bytes": 13922,
+  "figures_verified": [
+    "origin_coverage.png",
+    "validation_learning_curves.png",
+    "residual_correction.png",
+    "training_coverage.png"
+  ]
+}

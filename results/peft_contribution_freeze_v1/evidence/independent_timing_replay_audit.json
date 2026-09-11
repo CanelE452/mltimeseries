@@ -1,0 +1,647 @@
+{
+  "completed": true,
+  "mode": "replay",
+  "created_utc": "2026-09-10T20:43:14+00:00",
+  "contract_status": {
+    "path": "runs/peft_contribution_freeze_v1/timing_contract.json",
+    "sha256": "26f0fff19f777f401213ae56c4a5aa705730a778961643a9ff833bccd00483c8",
+    "job_count": 13,
+    "source_hash_checks": {
+      "experiments/peft_contribution_freeze_v1/timing_replay.py": true,
+      "experiments/peft_contribution_freeze_v1/analyse_resource_matched.py": true
+    },
+    "input_hash_checks": {
+      "runs/peft_contribution_freeze_v1/plan.json": true,
+      "runs/peft_contribution_freeze_v1/contract.json": true,
+      "runs/peft_contribution_freeze_v1/partial_validation_audit.json": true,
+      "runs/peft_contribution_freeze_v1/resume_20260911_0505/cleanup_result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/guard/status.json": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/output/result.json": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/output/best.pt": true,
+      "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/guard/status.json": true
+    }
+  },
+  "timing_completed_path": "runs/peft_contribution_freeze_v1/timing_completed.json",
+  "timing_completed_sha256": "e76e1fdd3df35b64c108e4b5a317560463faabc09e1867d17b039234fe7243cf",
+  "counts": {
+    "contract_jobs": 13,
+    "timing_completed_rows": 13,
+    "duplicate_contract_keys": 0,
+    "duplicate_timing_completed_keys": 0,
+    "npz_files_checked": 90,
+    "npz_arrays_checked": 371
+  },
+  "exact_key_set_match": true,
+  "all_original_and_replay_guards_exit0": true,
+  "all_histories_equal_utc_excluded": true,
+  "all_prediction_npz_arrays_equal_nan": true,
+  "rows": [
+    {
+      "key": "fits/bdg2/FULL90/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/FULL/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 105.64,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/FULL90/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 40.36,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e31d0dbb5d608ecdd1a8aa71616369d2facbc54dfc8d64ccb62936b7fea43f71",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/FULL90/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/ES2/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 79.234,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/FULL90/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 30.25,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e31d0dbb5d608ecdd1a8aa71616369d2facbc54dfc8d64ccb62936b7fea43f71",
+      "npz_files_checked": 6,
+      "npz_arrays_checked": 24
+    },
+    {
+      "key": "fits/bdg2/FULL90/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/FIXED_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 79.219,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/FULL90/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 30.266,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "db4bb7d2f672600ee0b3178ad231ae63bc64b0ca3606e0a24c2d603df1a5bad8",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/FULL90/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/FULL90/CONTRIB_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/FULL90/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 75.141,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/FULL90/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 30.266,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "db4bb7d2f672600ee0b3178ad231ae63bc64b0ca3606e0a24c2d603df1a5bad8",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 31
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/ES2/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 52.859,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/SPREAD30/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 20.171,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/FIXED_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 40.656,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/SPREAD30/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 16.156,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "42b09907fee2163273c52f7cfeccf7b48c4d18c57f81ee5bbb8972150b1efcd6",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/CONTRIB_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 54.875,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/SPREAD30/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 22.235,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 32
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/SPREAD30/FULL/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/SPREAD30/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 52.86,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/SPREAD30/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 20.188,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FIXED_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/FIXED_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 36.562,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/RECENT30/FIXED_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 16.172,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/CONTRIB_FREEZE/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 46.75,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/RECENT30/CONTRIB_FREEZE/s27000/guard/status.json",
+        "elapsed_seconds": 20.172,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 32
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FULL/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/FULL/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 50.813,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/RECENT30/FULL/s27000/guard/status.json",
+        "elapsed_seconds": 20.187,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/bdg2/RECENT30/ES2/s27000",
+      "replay_key": "timing_replay/bdg2/RECENT30/ES2/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/bdg2/RECENT30/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 52.86,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/bdg2/RECENT30/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 20.172,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    },
+    {
+      "key": "fits/jena/FULL90/ES2/s27000",
+      "replay_key": "timing_replay/jena/FULL90/ES2/s27000",
+      "original_guard": {
+        "path": "runs/peft_contribution_freeze_v1/fits/jena/FULL90/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 109.641,
+        "returncode": 0
+      },
+      "replay_guard": {
+        "path": "runs/peft_contribution_freeze_v1/timing_replay/jena/FULL90/ES2/s27000/guard/status.json",
+        "elapsed_seconds": 40.328,
+        "returncode": 0
+      },
+      "result_science": {
+        "fields_checked": [
+          "completed",
+          "job",
+          "best_score",
+          "best_step",
+          "steps",
+          "cap",
+          "stop_reason",
+          "frozen_step",
+          "adapter_updates",
+          "frozen_tail_verified",
+          "toggle_checks",
+          "trainable",
+          "snapshot_names",
+          "initial_head_hash",
+          "identity_error",
+          "frozen_hash",
+          "frozen_verified",
+          "checkpoint_sha256",
+          "replay_verified",
+          "contract_sha256",
+          "holdout_opened",
+          "sample_index_sha256"
+        ],
+        "history_equal_utc_excluded": true
+      },
+      "checkpoint_sha256": "54e08784cf455f2e465a5230ec611fdca303202059a69f5f9ad0a36573a3dc38",
+      "npz_files_checked": 7,
+      "npz_arrays_checked": 28
+    }
+  ]
+}

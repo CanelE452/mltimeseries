@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "finished_utc": "2026-09-10T20:35:25.912287+00:00",
+  "invocation_seconds": 1780.9509391000029,
+  "fits": 48,
+  "forecasts": 50,
+  "smokes": 1,
+  "selection_sha256": "53b9550916b88a0fa1cdb27de03b4f7341136bdc0e908dffcdb612f9781be2de",
+  "plan_sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57"
+}

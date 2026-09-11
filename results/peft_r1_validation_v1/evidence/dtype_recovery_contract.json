@@ -1,0 +1,23 @@
+{
+  "change": "Cast stored F0 prediction to float64 before adding the unchanged selected offset; remove float32 addition rounding, assertion tolerance unchanged",
+  "fixed_source_sha256": "1e6360c5f64e01243829427560ee2daad1befa2cad20b1ac0803c6b99829906a",
+  "protected_selection": {
+    "results\\peft_r1_validation_v1\\residual\\selection.json": "7985c09d27595d833df8427abb052bc77da2915f28335d5b886acaad412283b2",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate0.npz": "a1a3321f52f50b3cb0d60c234c9d629482f26b4239ee0b8a5cad3b671af69d51",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate1.npz": "32374bbff9947ad9f36cbb8db0c9539b720faae1d2d36df9f8aa6229f4b78075",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate2.npz": "67572a4d0193c395bac142695d4486c2d1c078ca8d6eee18af283742615d44c4",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate3.npz": "3457b1f8c1da385c92f9ba631ee49f7ab13bfb5e62a3f857b54cdca7df7172c6",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate4.npz": "3bcb08f6d819db8f58e219b45b4dd7f6fda4579e4b18a115ee2a12cc7aa85e26",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate5.npz": "3a9a88033d1b9a3b3eac41aa0060e5a7006ca409e5e83e5b145d20bb5df5e53f",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate6.npz": "87d54fa528a94c073cbe9b00c090029fac8fbffa7283338200b98df56ed687d0",
+    "results\\peft_r1_validation_v1\\residual\\bike_candidate7.npz": "7e9b9fcbaeeeee3c431fb3c8d821296caa4ea6c2c340b938eeae27bc793d1b21",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate0.npz": "a1a3321f52f50b3cb0d60c234c9d629482f26b4239ee0b8a5cad3b671af69d51",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate1.npz": "e96fb18bcdb15699ab051b4e7baf679d3dc2d259ce988a842dc44222b2972fb5",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate2.npz": "1daa15d235a27ae443f339c915ebf41bca8db36a377fb743afbf1d865d4eeb66",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate3.npz": "55fdc04b0c25db2fa8a9b69aa2390eead8dc8059c001361c653e04eded9114ad",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate4.npz": "97d7485e79d0f0d8366ec7dd7d84028b5c63930d7973ffbb3d1c908ce2531cb8",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate5.npz": "49ce052cade128ab2377d856a5b091a363fc31d02e480e45587618be7b2fe308",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate6.npz": "f7ac4c9feba8d9dbdeb4250be628354b65540bc3042558a38e77f36f2dbccfeb",
+    "results\\peft_r1_validation_v1\\residual\\household_candidate7.npz": "58cfc7d2a466f600391942090bf1e3f15c33a99b7f945bdab333a9f147622436"
+  }
+}

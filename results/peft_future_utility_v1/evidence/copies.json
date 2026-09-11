@@ -1,0 +1,41 @@
+{
+  "byte_identical_copies": [
+    {
+      "file": "plan.json",
+      "source": "runs/peft_future_utility_v1/plan.json",
+      "bytes": 35230,
+      "sha256": "afee103fa43b91d63c50d7785a0b2d063d19434ea4e01b0c9fdb2fe80ffcd4e8"
+    },
+    {
+      "file": "completed.json",
+      "source": "runs/peft_future_utility_v1/completed.json",
+      "bytes": 251,
+      "sha256": "0c52a32cc829fd5ee22c601417cf5599977182dae25968b0acb5f03eef52b661"
+    },
+    {
+      "file": "independent_audit.json",
+      "source": "runs/peft_future_utility_v1/independent_audit.json",
+      "bytes": 6534,
+      "sha256": "e63e2fe274a17cfa027e8253ce3ab0871b8fddffe8103ffbb5baf6313a35911b"
+    },
+    {
+      "file": "environment.json",
+      "source": "runs/peft_future_utility_v1/environment.json",
+      "bytes": 271,
+      "sha256": "af9207c0a623df8604f4f281eaaeb41f3610b1a78e2148fb9018420b88e64edc"
+    },
+    {
+      "file": "cpu_checks.json",
+      "source": "runs/peft_future_utility_v1/cpu_checks.json",
+      "bytes": 392,
+      "sha256": "44ddbb90c0c6c6c6cc80d2bff7e0c5888d5c1d2efba28a63eda7a80cb12d3fda"
+    },
+    {
+      "file": "windows_event_audit.json",
+      "source": "runs/peft_future_utility_v1/windows_event_audit.json",
+      "bytes": 440,
+      "sha256": "713a98e15a9b91382b9edf7417df151ccd1692227eca128fd3dd7379f1319633"
+    }
+  ],
+  "guard_statuses": "Aggregate of 13 original guard/status.json files, not a byte-copy."
+}

@@ -1,0 +1,2329 @@
+{
+  "version": "peft_decision_transfer_v1.prepare.20260911",
+  "created_utc": "2026-09-10T22:50:13+00:00",
+  "study": "peft_decision_transfer_v1",
+  "all_qc_passed": true,
+  "data": {
+    "dev": {
+      "jena": {
+        "dataset": "jena",
+        "panel": "jena",
+        "fit_path": "runs/peft_decision_transfer_v1/prepared/dev/jena_fit.npz",
+        "holdout_path": "runs/peft_decision_transfer_v1/prepared/dev/jena_holdout.npz",
+        "fit_sha256": "bb58da04f9f107eeb28d61dda84197a5210d18a9b670d1f44d6d7b25f91532b2",
+        "holdout_sha256": "55d74fc1e912359306be4f8e8889303f53aa745f0a58ad381981c2c748dc04e7",
+        "fit_data_path": "runs/peft_decision_transfer_v1/prepared/dev/jena_fit.npz",
+        "holdout_data_path": "runs/peft_decision_transfer_v1/prepared/dev/jena_holdout.npz",
+        "fit_data_sha256": "bb58da04f9f107eeb28d61dda84197a5210d18a9b670d1f44d6d7b25f91532b2",
+        "holdout_data_sha256": "55d74fc1e912359306be4f8e8889303f53aa745f0a58ad381981c2c748dc04e7",
+        "fit_std": [
+          4.816338539123535,
+          4.9481658935546875,
+          5.039645671844482,
+          3.5885870456695557
+        ],
+        "fit_mean": [
+          989.4553833007812,
+          18.0422306060791,
+          292.0787048339844,
+          12.612046241760254
+        ],
+        "fit_median": [
+          989.8699951171875,
+          17.6299991607666,
+          291.75,
+          13.520000457763672
+        ],
+        "context_fallback_median": [
+          980.4200439453125,
+          11.350000381469727,
+          286.0249938964844,
+          7.315000057220459
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "target_columns": [
+          "p (mbar)",
+          "T (degC)"
+        ],
+        "channels": [
+          "p (mbar)",
+          "T (degC)",
+          "Tpot (K)",
+          "Tdew (degC)"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "boundary_indices": {
+          "precontext": [
+            0,
+            336
+          ],
+          "train": [
+            336,
+            2520
+          ],
+          "embargo_train_val": [
+            2520,
+            2568
+          ],
+          "val": [
+            2568,
+            3312
+          ],
+          "embargo_val_cal": [
+            3312,
+            3360
+          ],
+          "cal": [
+            3360,
+            3864
+          ],
+          "eval": [
+            3864,
+            5808
+          ]
+        },
+        "boundaries": {
+          "precontext": [
+            "2021-05-04T00:00:00",
+            "2021-05-18T00:00:00"
+          ],
+          "train": [
+            "2021-05-18T00:00:00",
+            "2021-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2021-08-17T00:00:00",
+            "2021-08-19T00:00:00"
+          ],
+          "val": [
+            "2021-08-19T00:00:00",
+            "2021-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2021-09-19T00:00:00",
+            "2021-09-21T00:00:00"
+          ],
+          "cal": [
+            "2021-09-21T00:00:00",
+            "2021-10-12T00:00:00"
+          ],
+          "eval": [
+            "2021-10-12T00:00:00",
+            "2022-01-01T00:00:00"
+          ]
+        },
+        "contract": {
+          "context": 336,
+          "horizon": 48,
+          "origin_stride_hours": 24,
+          "target_window_overlap_hours": 24,
+          "block_days": 242,
+          "block_start": "2021-05-04T00:00:00",
+          "block_end_exclusive": "2022-01-01T00:00:00",
+          "boundaries": {
+            "precontext": [
+              "2021-05-04T00:00:00",
+              "2021-05-18T00:00:00"
+            ],
+            "train": [
+              "2021-05-18T00:00:00",
+              "2021-08-17T00:00:00"
+            ],
+            "embargo_train_val": [
+              "2021-08-17T00:00:00",
+              "2021-08-19T00:00:00"
+            ],
+            "val": [
+              "2021-08-19T00:00:00",
+              "2021-09-19T00:00:00"
+            ],
+            "embargo_val_cal": [
+              "2021-09-19T00:00:00",
+              "2021-09-21T00:00:00"
+            ],
+            "cal": [
+              "2021-09-21T00:00:00",
+              "2021-10-12T00:00:00"
+            ],
+            "eval": [
+              "2021-10-12T00:00:00",
+              "2022-01-01T00:00:00"
+            ]
+          },
+          "split_duration_days": {
+            "precontext": 14,
+            "train": 91,
+            "embargo_train_val": 2,
+            "val": 31,
+            "embargo_val_cal": 2,
+            "cal": 21,
+            "eval": 81
+          },
+          "origin_counts": {
+            "train": 90,
+            "val": 30,
+            "cal": 20,
+            "eval": 80
+          },
+          "first_origin": {
+            "train": "2021-05-18T00:00:00",
+            "val": "2021-08-19T00:00:00",
+            "cal": "2021-09-21T00:00:00",
+            "eval": "2021-10-12T00:00:00"
+          },
+          "last_origin": {
+            "train": "2021-08-15T00:00:00",
+            "val": "2021-09-17T00:00:00",
+            "cal": "2021-10-10T00:00:00",
+            "eval": "2021-12-30T00:00:00"
+          },
+          "last_target_end_exclusive": {
+            "train": "2021-08-17T00:00:00",
+            "val": "2021-09-19T00:00:00",
+            "cal": "2021-10-12T00:00:00",
+            "eval": "2022-01-01T00:00:00"
+          },
+          "between_split_embargo_hours": {
+            "train_to_val": 48,
+            "val_to_cal": 48,
+            "cal_to_eval": 0
+          }
+        },
+        "target_qc": {
+          "train": {
+            "p (mbar)": {
+              "valid": 4320,
+              "total": 4320,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 4320,
+              "total": 4320,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          },
+          "val": {
+            "p (mbar)": {
+              "valid": 1440,
+              "total": 1440,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 1440,
+              "total": 1440,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          },
+          "cal": {
+            "p (mbar)": {
+              "valid": 960,
+              "total": 960,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 960,
+              "total": 960,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          },
+          "eval": {
+            "p (mbar)": {
+              "valid": 3840,
+              "total": 3840,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 3840,
+              "total": 3840,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          }
+        },
+        "row_qc": {
+          "precontext": {
+            "p (mbar)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            }
+          },
+          "train": {
+            "p (mbar)": {
+              "finite": 2184,
+              "total": 2184,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 2184,
+              "total": 2184,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 2184,
+              "total": 2184,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 2184,
+              "total": 2184,
+              "finite_fraction": 1.0
+            }
+          },
+          "embargo_train_val": {
+            "p (mbar)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            }
+          },
+          "val": {
+            "p (mbar)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            }
+          },
+          "embargo_val_cal": {
+            "p (mbar)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            }
+          },
+          "cal": {
+            "p (mbar)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            }
+          },
+          "eval": {
+            "p (mbar)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+        "source_sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+        "raw_sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+        "source": {
+          "panel": "jena",
+          "episode": "dev",
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+          "source_sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+          "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+          "raw_sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2021a.csv",
+              "sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+              "bytes": 5473744
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021b.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2021b.csv",
+              "sha256": "4fdf78435ee9238eb583f6e17f21a5a982c19f4e711e70f0b5b557955c3b0871",
+              "bytes": 5564464
+            }
+          ],
+          "source_url": "https://www.bgc-jena.mpg.de/wetter/",
+          "download_url": "local files data/jena_mpi_roof/mpi_roof_2021a.csv..mpi_roof_2022b.csv",
+          "citation": "Max Planck Institute for Biogeochemistry Jena roof weather observations.",
+          "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+          "parser": "latin1 csv.DictReader; date format %d.%m.%Y %H:%M:%S; top-of-hour rows only; required block reindexed hourly with missing hours left as NaN",
+          "source_notes": [
+            "Four-channel order follows Study31 Jena parser.",
+            "First two columns are scored targets; next two are context-only covariates masked from target loss/scoring.",
+            "2021/2022 periods are new target-label windows under checked local study histories, but source/pretraining exposure is not ruled out."
+          ],
+          "channels": [
+            "p (mbar)",
+            "T (degC)",
+            "Tpot (K)",
+            "Tdew (degC)"
+          ],
+          "target_indices": [
+            0,
+            1
+          ],
+          "loader_metadata": {
+            "episode": "dev",
+            "source_files": [
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021a.csv",
+                "relative_path": "data/jena_mpi_roof/mpi_roof_2021a.csv",
+                "sha256": "e9e4eb704294c83f19a155660e9840a623cc9de245e4e0b9d988297534f86924",
+                "bytes": 5473744
+              },
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2021b.csv",
+                "relative_path": "data/jena_mpi_roof/mpi_roof_2021b.csv",
+                "sha256": "4fdf78435ee9238eb583f6e17f21a5a982c19f4e711e70f0b5b557955c3b0871",
+                "bytes": 5564464
+              }
+            ],
+            "source_rows": 52560,
+            "top_of_hour_rows_seen": 8760,
+            "parse_failures": 0,
+            "raw_headers_consistent": true,
+            "source_columns": [
+              "Date Time",
+              "p (mbar)",
+              "T (degC)",
+              "Tpot (K)",
+              "Tdew (degC)",
+              "rh (%)",
+              "VPmax (mbar)",
+              "VPact (mbar)",
+              "VPdef (mbar)",
+              "sh (g/kg)",
+              "H2OC (mmol/mol)",
+              "rho (g/m**3)",
+              "wv (m/s)",
+              "max. wv (m/s)",
+              "wd (deg)",
+              "rain (mm)",
+              "raining (s)",
+              "SWDR (W/m²)",
+              "PAR (µmol/m²/s)",
+              "max. PAR (µmol/m²/s)",
+              "Tlog (degC)",
+              "CO2 (ppm)"
+            ],
+            "downsample_rule": "keep only top-of-hour rows; no six-row averaging",
+            "sentinel_rule": "values <= -9999 are treated as NaN",
+            "sentinel_count_selected_channels": 0,
+            "duplicate_rule": "exact duplicate top-of-hour rows are collapsed; conflicting duplicate cells become NaN",
+            "unique_top_hour_rows": 8760,
+            "duplicate_exact_rows_removed": 0,
+            "duplicate_conflict_rows_nan_merged": 0,
+            "source_offstep_count_after_dedup": 0,
+            "source_first_top_hour": "2021-01-01T01:00:00",
+            "source_last_top_hour": "2022-01-01T00:00:00",
+            "required_block": {
+              "start": "2021-05-04T00:00:00",
+              "end_exclusive": "2022-01-01T00:00:00",
+              "hours": 5808
+            },
+            "required_missing_hour_count": 0,
+            "required_missing_hour_examples": [],
+            "block_row_qc": {
+              "rows": 5808,
+              "start": "2021-05-04T00:00:00",
+              "end": "2021-12-31T23:00:00",
+              "end_exclusive": "2022-01-01T00:00:00",
+              "frequency_seconds": 3600,
+              "missing_cells_by_channel": {
+                "p (mbar)": 0,
+                "T (degC)": 0,
+                "Tpot (K)": 0,
+                "Tdew (degC)": 0
+              },
+              "finite_fraction_by_channel": {
+                "p (mbar)": 1.0,
+                "T (degC)": 1.0,
+                "Tpot (K)": 1.0,
+                "Tdew (degC)": 1.0
+              },
+              "nonconstant_by_channel": {
+                "p (mbar)": true,
+                "T (degC)": true,
+                "Tpot (K)": true,
+                "Tdew (degC)": true
+              }
+            }
+          }
+        }
+      },
+      "bmra": {
+        "dataset": "bmra",
+        "panel": "bmra",
+        "fit_path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_fit.npz",
+        "holdout_path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_holdout.npz",
+        "fit_sha256": "04d699e9e77e26c04fb46bd6ccd262dcb03a509dc3166f4536c9c1fdf996ea74",
+        "holdout_sha256": "87465578b2188300a06ac002e6a7acf0a731c9afefa16ff135ee892b4fa50992",
+        "fit_data_path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_fit.npz",
+        "holdout_data_path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_holdout.npz",
+        "fit_data_sha256": "04d699e9e77e26c04fb46bd6ccd262dcb03a509dc3166f4536c9c1fdf996ea74",
+        "holdout_data_sha256": "87465578b2188300a06ac002e6a7acf0a731c9afefa16ff135ee892b4fa50992",
+        "fit_std": [
+          5.541322231292725,
+          20.986814498901367,
+          25.453813552856445,
+          8.005483627319336
+        ],
+        "fit_mean": [
+          8.706730842590332,
+          26.279695510864258,
+          34.400760650634766,
+          9.32684326171875
+        ],
+        "fit_median": [
+          9.20199966430664,
+          21.5989990234375,
+          29.319000244140625,
+          7.08050012588501
+        ],
+        "context_fallback_median": [
+          11.40999984741211,
+          26.98900032043457,
+          16.79800033569336,
+          4.318999767303467
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "target_columns": [
+          "E_BNWKW-1",
+          "E_BRYBW-1"
+        ],
+        "channels": [
+          "E_BNWKW-1",
+          "E_BRYBW-1",
+          "E_BURBO",
+          "E_DALSW-1"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "boundary_indices": {
+          "precontext": [
+            0,
+            336
+          ],
+          "train": [
+            336,
+            2520
+          ],
+          "embargo_train_val": [
+            2520,
+            2568
+          ],
+          "val": [
+            2568,
+            3312
+          ],
+          "embargo_val_cal": [
+            3312,
+            3360
+          ],
+          "cal": [
+            3360,
+            3864
+          ],
+          "eval": [
+            3864,
+            5808
+          ]
+        },
+        "boundaries": {
+          "precontext": [
+            "2022-01-04T00:00:00",
+            "2022-01-18T00:00:00"
+          ],
+          "train": [
+            "2022-01-18T00:00:00",
+            "2022-04-19T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2022-04-19T00:00:00",
+            "2022-04-21T00:00:00"
+          ],
+          "val": [
+            "2022-04-21T00:00:00",
+            "2022-05-22T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2022-05-22T00:00:00",
+            "2022-05-24T00:00:00"
+          ],
+          "cal": [
+            "2022-05-24T00:00:00",
+            "2022-06-14T00:00:00"
+          ],
+          "eval": [
+            "2022-06-14T00:00:00",
+            "2022-09-03T00:00:00"
+          ]
+        },
+        "contract": {
+          "context": 336,
+          "horizon": 48,
+          "origin_stride_hours": 24,
+          "target_window_overlap_hours": 24,
+          "block_days": 242,
+          "block_start": "2022-01-04T00:00:00",
+          "block_end_exclusive": "2022-09-03T00:00:00",
+          "boundaries": {
+            "precontext": [
+              "2022-01-04T00:00:00",
+              "2022-01-18T00:00:00"
+            ],
+            "train": [
+              "2022-01-18T00:00:00",
+              "2022-04-19T00:00:00"
+            ],
+            "embargo_train_val": [
+              "2022-04-19T00:00:00",
+              "2022-04-21T00:00:00"
+            ],
+            "val": [
+              "2022-04-21T00:00:00",
+              "2022-05-22T00:00:00"
+            ],
+            "embargo_val_cal": [
+              "2022-05-22T00:00:00",
+              "2022-05-24T00:00:00"
+            ],
+            "cal": [
+              "2022-05-24T00:00:00",
+              "2022-06-14T00:00:00"
+            ],
+            "eval": [
+              "2022-06-14T00:00:00",
+              "2022-09-03T00:00:00"
+            ]
+          },
+          "split_duration_days": {
+            "precontext": 14,
+            "train": 91,
+            "embargo_train_val": 2,
+            "val": 31,
+            "embargo_val_cal": 2,
+            "cal": 21,
+            "eval": 81
+          },
+          "origin_counts": {
+            "train": 90,
+            "val": 30,
+            "cal": 20,
+            "eval": 80
+          },
+          "first_origin": {
+            "train": "2022-01-18T00:00:00",
+            "val": "2022-04-21T00:00:00",
+            "cal": "2022-05-24T00:00:00",
+            "eval": "2022-06-14T00:00:00"
+          },
+          "last_origin": {
+            "train": "2022-04-17T00:00:00",
+            "val": "2022-05-20T00:00:00",
+            "cal": "2022-06-12T00:00:00",
+            "eval": "2022-09-01T00:00:00"
+          },
+          "last_target_end_exclusive": {
+            "train": "2022-04-19T00:00:00",
+            "val": "2022-05-22T00:00:00",
+            "cal": "2022-06-14T00:00:00",
+            "eval": "2022-09-03T00:00:00"
+          },
+          "between_split_embargo_hours": {
+            "train_to_val": 48,
+            "val_to_cal": 48,
+            "cal_to_eval": 0
+          }
+        },
+        "target_qc": {
+          "train": {
+            "E_BNWKW-1": {
+              "valid": 4022,
+              "total": 4320,
+              "finite_fraction": 0.9310185185185185,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 3800,
+              "total": 4320,
+              "finite_fraction": 0.8796296296296297,
+              "pass_min_70pct": true
+            }
+          },
+          "val": {
+            "E_BNWKW-1": {
+              "valid": 1180,
+              "total": 1440,
+              "finite_fraction": 0.8194444444444444,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 1240,
+              "total": 1440,
+              "finite_fraction": 0.8611111111111112,
+              "pass_min_70pct": true
+            }
+          },
+          "cal": {
+            "E_BNWKW-1": {
+              "valid": 763,
+              "total": 960,
+              "finite_fraction": 0.7947916666666667,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 812,
+              "total": 960,
+              "finite_fraction": 0.8458333333333333,
+              "pass_min_70pct": true
+            }
+          },
+          "eval": {
+            "E_BNWKW-1": {
+              "valid": 3395,
+              "total": 3840,
+              "finite_fraction": 0.8841145833333334,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 3536,
+              "total": 3840,
+              "finite_fraction": 0.9208333333333333,
+              "pass_min_70pct": true
+            }
+          }
+        },
+        "row_qc": {
+          "precontext": {
+            "E_BNWKW-1": {
+              "finite": 317,
+              "total": 336,
+              "finite_fraction": 0.9434523809523809
+            },
+            "E_BRYBW-1": {
+              "finite": 300,
+              "total": 336,
+              "finite_fraction": 0.8928571428571429
+            },
+            "E_BURBO": {
+              "finite": 308,
+              "total": 336,
+              "finite_fraction": 0.9166666666666666
+            },
+            "E_DALSW-1": {
+              "finite": 303,
+              "total": 336,
+              "finite_fraction": 0.9017857142857143
+            }
+          },
+          "train": {
+            "E_BNWKW-1": {
+              "finite": 2035,
+              "total": 2184,
+              "finite_fraction": 0.9317765567765568
+            },
+            "E_BRYBW-1": {
+              "finite": 1924,
+              "total": 2184,
+              "finite_fraction": 0.8809523809523809
+            },
+            "E_BURBO": {
+              "finite": 2011,
+              "total": 2184,
+              "finite_fraction": 0.9207875457875457
+            },
+            "E_DALSW-1": {
+              "finite": 1994,
+              "total": 2184,
+              "finite_fraction": 0.913003663003663
+            }
+          },
+          "embargo_train_val": {
+            "E_BNWKW-1": {
+              "finite": 47,
+              "total": 48,
+              "finite_fraction": 0.9791666666666666
+            },
+            "E_BRYBW-1": {
+              "finite": 45,
+              "total": 48,
+              "finite_fraction": 0.9375
+            },
+            "E_BURBO": {
+              "finite": 20,
+              "total": 48,
+              "finite_fraction": 0.4166666666666667
+            },
+            "E_DALSW-1": {
+              "finite": 35,
+              "total": 48,
+              "finite_fraction": 0.7291666666666666
+            }
+          },
+          "val": {
+            "E_BNWKW-1": {
+              "finite": 614,
+              "total": 744,
+              "finite_fraction": 0.8252688172043011
+            },
+            "E_BRYBW-1": {
+              "finite": 644,
+              "total": 744,
+              "finite_fraction": 0.8655913978494624
+            },
+            "E_BURBO": {
+              "finite": 646,
+              "total": 744,
+              "finite_fraction": 0.8682795698924731
+            },
+            "E_DALSW-1": {
+              "finite": 680,
+              "total": 744,
+              "finite_fraction": 0.9139784946236559
+            }
+          },
+          "embargo_val_cal": {
+            "E_BNWKW-1": {
+              "finite": 44,
+              "total": 48,
+              "finite_fraction": 0.9166666666666666
+            },
+            "E_BRYBW-1": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "E_BURBO": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "E_DALSW-1": {
+              "finite": 47,
+              "total": 48,
+              "finite_fraction": 0.9791666666666666
+            }
+          },
+          "cal": {
+            "E_BNWKW-1": {
+              "finite": 405,
+              "total": 504,
+              "finite_fraction": 0.8035714285714286
+            },
+            "E_BRYBW-1": {
+              "finite": 429,
+              "total": 504,
+              "finite_fraction": 0.8511904761904762
+            },
+            "E_BURBO": {
+              "finite": 465,
+              "total": 504,
+              "finite_fraction": 0.9226190476190477
+            },
+            "E_DALSW-1": {
+              "finite": 415,
+              "total": 504,
+              "finite_fraction": 0.8234126984126984
+            }
+          },
+          "eval": {
+            "E_BNWKW-1": {
+              "finite": 1720,
+              "total": 1944,
+              "finite_fraction": 0.8847736625514403
+            },
+            "E_BRYBW-1": {
+              "finite": 1792,
+              "total": 1944,
+              "finite_fraction": 0.9218106995884774
+            },
+            "E_BURBO": {
+              "finite": 1470,
+              "total": 1944,
+              "finite_fraction": 0.7561728395061729
+            },
+            "E_DALSW-1": {
+              "finite": 1689,
+              "total": 1944,
+              "finite_fraction": 0.8688271604938271
+            }
+          }
+        },
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "source": {
+          "panel": "bmra",
+          "episode": "dev",
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+          "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+          "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+          "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+              "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+              "bytes": 53426661
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+              "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+              "bytes": 15084
+            }
+          ],
+          "source_url": "local BMRA standardFormat parquet from ucp_path_pilot_v1",
+          "download_url": "local file data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+          "citation": "BMRA generation/unit time series as locally prepared for ucp_path_pilot_v1.",
+          "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+          "parser": "pyarrow Parquet reader; raw 30min Time grid aggregated to hourly mean; required block reindexed hourly with missing hours left as NaN",
+          "source_notes": [
+            "First two fixed E_ generator columns are scored targets; next two are context-only covariates.",
+            "2022/2023 periods are after the checked local UCP 2019/2020/2021 processed panels, but raw/source exposure is not ruled out."
+          ],
+          "channels": [
+            "E_BNWKW-1",
+            "E_BRYBW-1",
+            "E_BURBO",
+            "E_DALSW-1"
+          ],
+          "target_indices": [
+            0,
+            1
+          ],
+          "loader_metadata": {
+            "episode": "dev",
+            "source_files": [
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+                "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+                "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+                "bytes": 53426661
+              },
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+                "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+                "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+                "bytes": 15084
+              }
+            ],
+            "raw_rows_total": 157776,
+            "raw_time_range": {
+              "start": "2015-01-01 00:00:00",
+              "end": "2023-12-31 23:30:00"
+            },
+            "raw_duplicate_timestamp_count": 0,
+            "raw_frequency": "30min original BMRA Time grid",
+            "hourly_aggregation_rule": "mean of same-hour 30min rows using available finite values; hour is NaN for a channel only when all contributing raw values are missing",
+            "selection_rule": "fixed from pre-run availability audit: active E_ generator columns, all proposed split parts finite>=0.70 and nonconstant; first four by BMU ID among passing columns; no forecast performance used",
+            "selected_metadata": [
+              {
+                "BMU ID": "E_BNWKW-1",
+                "Name": "Burn of Whilk Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "North Scotland",
+                "lat": 58.3567589,
+                "lon": -3.203853799,
+                "startDate": "2017-03-24",
+                "endDate": "2023-12-31 12:30:00",
+                "length": 6.776769406392694
+              },
+              {
+                "BMU ID": "E_BRYBW-1",
+                "Name": "Berry Burn Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "North Scotland",
+                "lat": 57.44661104,
+                "lon": -3.475392595,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 23:30:00",
+                "length": 9.005422374429223
+              },
+              {
+                "BMU ID": "E_BURBO",
+                "Name": "Burbo Bank Offshore Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "Merseyside and North Wales",
+                "lat": 53.48818302,
+                "lon": -3.184922589,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 21:30:00",
+                "length": 9.005194063926941
+              },
+              {
+                "BMU ID": "E_DALSW-1",
+                "Name": "Dalswinton Wind Farm ",
+                "Type": "Onshore wind",
+                "GSP Group": "South Scotland",
+                "lat": 55.18409713,
+                "lon": -3.650562349,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 22:00:00",
+                "length": 9.005251141552511
+              }
+            ],
+            "required_block": {
+              "start": "2022-01-04T00:00:00",
+              "end_exclusive": "2022-09-03T00:00:00",
+              "hours": 5808
+            },
+            "block_halfhour_rows_seen": 11616,
+            "expected_halfhour_rows": 11616,
+            "required_missing_hour_count_all_channels": 10,
+            "required_missing_hour_examples": [
+              "2022-03-27 23:00:00",
+              "2022-03-28 00:00:00",
+              "2022-03-28 14:00:00",
+              "2022-03-28 15:00:00",
+              "2022-03-29 02:00:00",
+              "2022-03-29 03:00:00",
+              "2022-03-29 05:00:00",
+              "2022-04-14 04:00:00",
+              "2022-08-28 05:00:00",
+              "2022-08-28 06:00:00"
+            ],
+            "block_row_qc": {
+              "rows": 5808,
+              "start": "2022-01-04T00:00:00",
+              "end": "2022-09-02T23:00:00",
+              "end_exclusive": "2022-09-03T00:00:00",
+              "frequency_seconds": 3600,
+              "missing_cells_by_channel": {
+                "E_BNWKW-1": 626,
+                "E_BRYBW-1": 626,
+                "E_BURBO": 840,
+                "E_DALSW-1": 645
+              },
+              "finite_fraction_by_channel": {
+                "E_BNWKW-1": 0.8922176308539945,
+                "E_BRYBW-1": 0.8922176308539945,
+                "E_BURBO": 0.8553719008264463,
+                "E_DALSW-1": 0.8889462809917356
+              },
+              "nonconstant_by_channel": {
+                "E_BNWKW-1": true,
+                "E_BRYBW-1": true,
+                "E_BURBO": true,
+                "E_DALSW-1": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "jena": {
+        "dataset": "jena",
+        "panel": "jena",
+        "fit_path": "runs/peft_decision_transfer_v1/prepared/test/jena_fit.npz",
+        "holdout_path": "runs/peft_decision_transfer_v1/prepared/test/jena_holdout.npz",
+        "fit_sha256": "9996ce064d80a15b25b36201e416d9683a216de8881c8f9ba2a9f6ca9cfc2d38",
+        "holdout_sha256": "7479725c32ca8143338c6ad6c4b7deb8f984495fb47cd59f7b9dac74b237e08c",
+        "fit_data_path": "runs/peft_decision_transfer_v1/prepared/test/jena_fit.npz",
+        "holdout_data_path": "runs/peft_decision_transfer_v1/prepared/test/jena_holdout.npz",
+        "fit_data_sha256": "9996ce064d80a15b25b36201e416d9683a216de8881c8f9ba2a9f6ca9cfc2d38",
+        "holdout_data_sha256": "7479725c32ca8143338c6ad6c4b7deb8f984495fb47cd59f7b9dac74b237e08c",
+        "fit_std": [
+          4.9478559494018555,
+          5.69374942779541,
+          5.816371440887451,
+          3.3775970935821533
+        ],
+        "fit_mean": [
+          991.19921875,
+          19.51532554626465,
+          293.4092102050781,
+          10.670465469360352
+        ],
+        "fit_median": [
+          991.5599975585938,
+          19.049999237060547,
+          292.9200134277344,
+          10.539999961853027
+        ],
+        "context_fallback_median": [
+          993.7949829101562,
+          16.3700008392334,
+          289.9849853515625,
+          7.765000343322754
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "target_columns": [
+          "p (mbar)",
+          "T (degC)"
+        ],
+        "channels": [
+          "p (mbar)",
+          "T (degC)",
+          "Tpot (K)",
+          "Tdew (degC)"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "boundary_indices": {
+          "precontext": [
+            0,
+            336
+          ],
+          "train": [
+            336,
+            2520
+          ],
+          "embargo_train_val": [
+            2520,
+            2568
+          ],
+          "val": [
+            2568,
+            3312
+          ],
+          "embargo_val_cal": [
+            3312,
+            3360
+          ],
+          "cal": [
+            3360,
+            3864
+          ],
+          "eval": [
+            3864,
+            5808
+          ]
+        },
+        "boundaries": {
+          "precontext": [
+            "2022-05-04T00:00:00",
+            "2022-05-18T00:00:00"
+          ],
+          "train": [
+            "2022-05-18T00:00:00",
+            "2022-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2022-08-17T00:00:00",
+            "2022-08-19T00:00:00"
+          ],
+          "val": [
+            "2022-08-19T00:00:00",
+            "2022-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2022-09-19T00:00:00",
+            "2022-09-21T00:00:00"
+          ],
+          "cal": [
+            "2022-09-21T00:00:00",
+            "2022-10-12T00:00:00"
+          ],
+          "eval": [
+            "2022-10-12T00:00:00",
+            "2023-01-01T00:00:00"
+          ]
+        },
+        "contract": {
+          "context": 336,
+          "horizon": 48,
+          "origin_stride_hours": 24,
+          "target_window_overlap_hours": 24,
+          "block_days": 242,
+          "block_start": "2022-05-04T00:00:00",
+          "block_end_exclusive": "2023-01-01T00:00:00",
+          "boundaries": {
+            "precontext": [
+              "2022-05-04T00:00:00",
+              "2022-05-18T00:00:00"
+            ],
+            "train": [
+              "2022-05-18T00:00:00",
+              "2022-08-17T00:00:00"
+            ],
+            "embargo_train_val": [
+              "2022-08-17T00:00:00",
+              "2022-08-19T00:00:00"
+            ],
+            "val": [
+              "2022-08-19T00:00:00",
+              "2022-09-19T00:00:00"
+            ],
+            "embargo_val_cal": [
+              "2022-09-19T00:00:00",
+              "2022-09-21T00:00:00"
+            ],
+            "cal": [
+              "2022-09-21T00:00:00",
+              "2022-10-12T00:00:00"
+            ],
+            "eval": [
+              "2022-10-12T00:00:00",
+              "2023-01-01T00:00:00"
+            ]
+          },
+          "split_duration_days": {
+            "precontext": 14,
+            "train": 91,
+            "embargo_train_val": 2,
+            "val": 31,
+            "embargo_val_cal": 2,
+            "cal": 21,
+            "eval": 81
+          },
+          "origin_counts": {
+            "train": 90,
+            "val": 30,
+            "cal": 20,
+            "eval": 80
+          },
+          "first_origin": {
+            "train": "2022-05-18T00:00:00",
+            "val": "2022-08-19T00:00:00",
+            "cal": "2022-09-21T00:00:00",
+            "eval": "2022-10-12T00:00:00"
+          },
+          "last_origin": {
+            "train": "2022-08-15T00:00:00",
+            "val": "2022-09-17T00:00:00",
+            "cal": "2022-10-10T00:00:00",
+            "eval": "2022-12-30T00:00:00"
+          },
+          "last_target_end_exclusive": {
+            "train": "2022-08-17T00:00:00",
+            "val": "2022-09-19T00:00:00",
+            "cal": "2022-10-12T00:00:00",
+            "eval": "2023-01-01T00:00:00"
+          },
+          "between_split_embargo_hours": {
+            "train_to_val": 48,
+            "val_to_cal": 48,
+            "cal_to_eval": 0
+          }
+        },
+        "target_qc": {
+          "train": {
+            "p (mbar)": {
+              "valid": 4294,
+              "total": 4320,
+              "finite_fraction": 0.9939814814814815,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 4294,
+              "total": 4320,
+              "finite_fraction": 0.9939814814814815,
+              "pass_min_70pct": true
+            }
+          },
+          "val": {
+            "p (mbar)": {
+              "valid": 1440,
+              "total": 1440,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 1440,
+              "total": 1440,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          },
+          "cal": {
+            "p (mbar)": {
+              "valid": 960,
+              "total": 960,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 960,
+              "total": 960,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          },
+          "eval": {
+            "p (mbar)": {
+              "valid": 3840,
+              "total": 3840,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            },
+            "T (degC)": {
+              "valid": 3840,
+              "total": 3840,
+              "finite_fraction": 1.0,
+              "pass_min_70pct": true
+            }
+          }
+        },
+        "row_qc": {
+          "precontext": {
+            "p (mbar)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 336,
+              "total": 336,
+              "finite_fraction": 1.0
+            }
+          },
+          "train": {
+            "p (mbar)": {
+              "finite": 2171,
+              "total": 2184,
+              "finite_fraction": 0.9940476190476191
+            },
+            "T (degC)": {
+              "finite": 2171,
+              "total": 2184,
+              "finite_fraction": 0.9940476190476191
+            },
+            "Tpot (K)": {
+              "finite": 2171,
+              "total": 2184,
+              "finite_fraction": 0.9940476190476191
+            },
+            "Tdew (degC)": {
+              "finite": 2171,
+              "total": 2184,
+              "finite_fraction": 0.9940476190476191
+            }
+          },
+          "embargo_train_val": {
+            "p (mbar)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            }
+          },
+          "val": {
+            "p (mbar)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 744,
+              "total": 744,
+              "finite_fraction": 1.0
+            }
+          },
+          "embargo_val_cal": {
+            "p (mbar)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            }
+          },
+          "cal": {
+            "p (mbar)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 504,
+              "total": 504,
+              "finite_fraction": 1.0
+            }
+          },
+          "eval": {
+            "p (mbar)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "T (degC)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "Tpot (K)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            },
+            "Tdew (degC)": {
+              "finite": 1944,
+              "total": 1944,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+        "source_sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+        "raw_sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+        "source": {
+          "panel": "jena",
+          "episode": "test",
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+          "source_sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+          "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+          "raw_sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2022a.csv",
+              "sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+              "bytes": 5475004
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022b.csv",
+              "relative_path": "data/jena_mpi_roof/mpi_roof_2022b.csv",
+              "sha256": "7b1b3254992dffd234f3acddee17473cb3693ada5722c2259ae2f029ec1470c8",
+              "bytes": 5547454
+            }
+          ],
+          "source_url": "https://www.bgc-jena.mpg.de/wetter/",
+          "download_url": "local files data/jena_mpi_roof/mpi_roof_2021a.csv..mpi_roof_2022b.csv",
+          "citation": "Max Planck Institute for Biogeochemistry Jena roof weather observations.",
+          "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+          "parser": "latin1 csv.DictReader; date format %d.%m.%Y %H:%M:%S; top-of-hour rows only; required block reindexed hourly with missing hours left as NaN",
+          "source_notes": [
+            "Four-channel order follows Study31 Jena parser.",
+            "First two columns are scored targets; next two are context-only covariates masked from target loss/scoring.",
+            "2021/2022 periods are new target-label windows under checked local study histories, but source/pretraining exposure is not ruled out."
+          ],
+          "channels": [
+            "p (mbar)",
+            "T (degC)",
+            "Tpot (K)",
+            "Tdew (degC)"
+          ],
+          "target_indices": [
+            0,
+            1
+          ],
+          "loader_metadata": {
+            "episode": "test",
+            "source_files": [
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022a.csv",
+                "relative_path": "data/jena_mpi_roof/mpi_roof_2022a.csv",
+                "sha256": "c6f21f4a7e30244e6977dde48a8d7603dcc0c07224ee8491b5cec396f906b19b",
+                "bytes": 5475004
+              },
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2022b.csv",
+                "relative_path": "data/jena_mpi_roof/mpi_roof_2022b.csv",
+                "sha256": "7b1b3254992dffd234f3acddee17473cb3693ada5722c2259ae2f029ec1470c8",
+                "bytes": 5547454
+              }
+            ],
+            "source_rows": 52485,
+            "top_of_hour_rows_seen": 8749,
+            "parse_failures": 0,
+            "raw_headers_consistent": true,
+            "source_columns": [
+              "Date Time",
+              "p (mbar)",
+              "T (degC)",
+              "Tpot (K)",
+              "Tdew (degC)",
+              "rh (%)",
+              "VPmax (mbar)",
+              "VPact (mbar)",
+              "VPdef (mbar)",
+              "sh (g/kg)",
+              "H2OC (mmol/mol)",
+              "rho (g/m**3)",
+              "wv (m/s)",
+              "max. wv (m/s)",
+              "wd (deg)",
+              "rain (mm)",
+              "raining (s)",
+              "SWDR (W/m²)",
+              "PAR (µmol/m²/s)",
+              "max. PAR (µmol/m²/s)",
+              "Tlog (degC)",
+              "CO2 (ppm)"
+            ],
+            "downsample_rule": "keep only top-of-hour rows; no six-row averaging",
+            "sentinel_rule": "values <= -9999 are treated as NaN",
+            "sentinel_count_selected_channels": 0,
+            "duplicate_rule": "exact duplicate top-of-hour rows are collapsed; conflicting duplicate cells become NaN",
+            "unique_top_hour_rows": 8747,
+            "duplicate_exact_rows_removed": 2,
+            "duplicate_conflict_rows_nan_merged": 0,
+            "source_offstep_count_after_dedup": 1,
+            "source_first_top_hour": "2022-01-01T01:00:00",
+            "source_last_top_hour": "2023-01-01T00:00:00",
+            "required_block": {
+              "start": "2022-05-04T00:00:00",
+              "end_exclusive": "2023-01-01T00:00:00",
+              "hours": 5808
+            },
+            "required_missing_hour_count": 13,
+            "required_missing_hour_examples": [
+              "2022-08-10T21:00:00",
+              "2022-08-10T22:00:00",
+              "2022-08-10T23:00:00",
+              "2022-08-11T00:00:00",
+              "2022-08-11T01:00:00",
+              "2022-08-11T02:00:00",
+              "2022-08-11T03:00:00",
+              "2022-08-11T04:00:00",
+              "2022-08-11T05:00:00",
+              "2022-08-11T06:00:00"
+            ],
+            "block_row_qc": {
+              "rows": 5808,
+              "start": "2022-05-04T00:00:00",
+              "end": "2022-12-31T23:00:00",
+              "end_exclusive": "2023-01-01T00:00:00",
+              "frequency_seconds": 3600,
+              "missing_cells_by_channel": {
+                "p (mbar)": 13,
+                "T (degC)": 13,
+                "Tpot (K)": 13,
+                "Tdew (degC)": 13
+              },
+              "finite_fraction_by_channel": {
+                "p (mbar)": 0.9977617079889807,
+                "T (degC)": 0.9977617079889807,
+                "Tpot (K)": 0.9977617079889807,
+                "Tdew (degC)": 0.9977617079889807
+              },
+              "nonconstant_by_channel": {
+                "p (mbar)": true,
+                "T (degC)": true,
+                "Tpot (K)": true,
+                "Tdew (degC)": true
+              }
+            }
+          }
+        }
+      },
+      "bmra": {
+        "dataset": "bmra",
+        "panel": "bmra",
+        "fit_path": "runs/peft_decision_transfer_v1/prepared/test/bmra_fit.npz",
+        "holdout_path": "runs/peft_decision_transfer_v1/prepared/test/bmra_holdout.npz",
+        "fit_sha256": "b6ff003a489ee28ea8f6adfc702447a986a3218ff07af13c672f1ec81d2327ff",
+        "holdout_sha256": "c850f2fd3e9c7b818aca56aeb6828e7ed10ef20a9dc0544e86c87a1bc2cc13f1",
+        "fit_data_path": "runs/peft_decision_transfer_v1/prepared/test/bmra_fit.npz",
+        "holdout_data_path": "runs/peft_decision_transfer_v1/prepared/test/bmra_holdout.npz",
+        "fit_data_sha256": "b6ff003a489ee28ea8f6adfc702447a986a3218ff07af13c672f1ec81d2327ff",
+        "holdout_data_sha256": "c850f2fd3e9c7b818aca56aeb6828e7ed10ef20a9dc0544e86c87a1bc2cc13f1",
+        "fit_std": [
+          6.916083335876465,
+          16.847320556640625,
+          28.627681732177734,
+          6.68251895904541
+        ],
+        "fit_mean": [
+          8.325218200683594,
+          17.262388229370117,
+          32.872371673583984,
+          6.460145950317383
+        ],
+        "fit_median": [
+          6.34499979019165,
+          11.444000244140625,
+          22.872501373291016,
+          4.010000228881836
+        ],
+        "context_fallback_median": [
+          12.754499435424805,
+          20.47800064086914,
+          74.05499267578125,
+          9.656499862670898
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "target_columns": [
+          "E_BNWKW-1",
+          "E_BRYBW-1"
+        ],
+        "channels": [
+          "E_BNWKW-1",
+          "E_BRYBW-1",
+          "E_BURBO",
+          "E_DALSW-1"
+        ],
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "boundary_indices": {
+          "precontext": [
+            0,
+            336
+          ],
+          "train": [
+            336,
+            2520
+          ],
+          "embargo_train_val": [
+            2520,
+            2568
+          ],
+          "val": [
+            2568,
+            3312
+          ],
+          "embargo_val_cal": [
+            3312,
+            3360
+          ],
+          "cal": [
+            3360,
+            3864
+          ],
+          "eval": [
+            3864,
+            5808
+          ]
+        },
+        "boundaries": {
+          "precontext": [
+            "2023-01-04T00:00:00",
+            "2023-01-18T00:00:00"
+          ],
+          "train": [
+            "2023-01-18T00:00:00",
+            "2023-04-19T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2023-04-19T00:00:00",
+            "2023-04-21T00:00:00"
+          ],
+          "val": [
+            "2023-04-21T00:00:00",
+            "2023-05-22T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2023-05-22T00:00:00",
+            "2023-05-24T00:00:00"
+          ],
+          "cal": [
+            "2023-05-24T00:00:00",
+            "2023-06-14T00:00:00"
+          ],
+          "eval": [
+            "2023-06-14T00:00:00",
+            "2023-09-03T00:00:00"
+          ]
+        },
+        "contract": {
+          "context": 336,
+          "horizon": 48,
+          "origin_stride_hours": 24,
+          "target_window_overlap_hours": 24,
+          "block_days": 242,
+          "block_start": "2023-01-04T00:00:00",
+          "block_end_exclusive": "2023-09-03T00:00:00",
+          "boundaries": {
+            "precontext": [
+              "2023-01-04T00:00:00",
+              "2023-01-18T00:00:00"
+            ],
+            "train": [
+              "2023-01-18T00:00:00",
+              "2023-04-19T00:00:00"
+            ],
+            "embargo_train_val": [
+              "2023-04-19T00:00:00",
+              "2023-04-21T00:00:00"
+            ],
+            "val": [
+              "2023-04-21T00:00:00",
+              "2023-05-22T00:00:00"
+            ],
+            "embargo_val_cal": [
+              "2023-05-22T00:00:00",
+              "2023-05-24T00:00:00"
+            ],
+            "cal": [
+              "2023-05-24T00:00:00",
+              "2023-06-14T00:00:00"
+            ],
+            "eval": [
+              "2023-06-14T00:00:00",
+              "2023-09-03T00:00:00"
+            ]
+          },
+          "split_duration_days": {
+            "precontext": 14,
+            "train": 91,
+            "embargo_train_val": 2,
+            "val": 31,
+            "embargo_val_cal": 2,
+            "cal": 21,
+            "eval": 81
+          },
+          "origin_counts": {
+            "train": 90,
+            "val": 30,
+            "cal": 20,
+            "eval": 80
+          },
+          "first_origin": {
+            "train": "2023-01-18T00:00:00",
+            "val": "2023-04-21T00:00:00",
+            "cal": "2023-05-24T00:00:00",
+            "eval": "2023-06-14T00:00:00"
+          },
+          "last_origin": {
+            "train": "2023-04-17T00:00:00",
+            "val": "2023-05-20T00:00:00",
+            "cal": "2023-06-12T00:00:00",
+            "eval": "2023-09-01T00:00:00"
+          },
+          "last_target_end_exclusive": {
+            "train": "2023-04-19T00:00:00",
+            "val": "2023-05-22T00:00:00",
+            "cal": "2023-06-14T00:00:00",
+            "eval": "2023-09-03T00:00:00"
+          },
+          "between_split_embargo_hours": {
+            "train_to_val": 48,
+            "val_to_cal": 48,
+            "cal_to_eval": 0
+          }
+        },
+        "target_qc": {
+          "train": {
+            "E_BNWKW-1": {
+              "valid": 3910,
+              "total": 4320,
+              "finite_fraction": 0.9050925925925926,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 3706,
+              "total": 4320,
+              "finite_fraction": 0.8578703703703704,
+              "pass_min_70pct": true
+            }
+          },
+          "val": {
+            "E_BNWKW-1": {
+              "valid": 1290,
+              "total": 1440,
+              "finite_fraction": 0.8958333333333334,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 1327,
+              "total": 1440,
+              "finite_fraction": 0.9215277777777777,
+              "pass_min_70pct": true
+            }
+          },
+          "cal": {
+            "E_BNWKW-1": {
+              "valid": 737,
+              "total": 960,
+              "finite_fraction": 0.7677083333333333,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 789,
+              "total": 960,
+              "finite_fraction": 0.821875,
+              "pass_min_70pct": true
+            }
+          },
+          "eval": {
+            "E_BNWKW-1": {
+              "valid": 3260,
+              "total": 3840,
+              "finite_fraction": 0.8489583333333334,
+              "pass_min_70pct": true
+            },
+            "E_BRYBW-1": {
+              "valid": 3361,
+              "total": 3840,
+              "finite_fraction": 0.8752604166666667,
+              "pass_min_70pct": true
+            }
+          }
+        },
+        "row_qc": {
+          "precontext": {
+            "E_BNWKW-1": {
+              "finite": 334,
+              "total": 336,
+              "finite_fraction": 0.9940476190476191
+            },
+            "E_BRYBW-1": {
+              "finite": 311,
+              "total": 336,
+              "finite_fraction": 0.9255952380952381
+            },
+            "E_BURBO": {
+              "finite": 332,
+              "total": 336,
+              "finite_fraction": 0.9880952380952381
+            },
+            "E_DALSW-1": {
+              "finite": 332,
+              "total": 336,
+              "finite_fraction": 0.9880952380952381
+            }
+          },
+          "train": {
+            "E_BNWKW-1": {
+              "finite": 1979,
+              "total": 2184,
+              "finite_fraction": 0.9061355311355311
+            },
+            "E_BRYBW-1": {
+              "finite": 1877,
+              "total": 2184,
+              "finite_fraction": 0.8594322344322345
+            },
+            "E_BURBO": {
+              "finite": 2006,
+              "total": 2184,
+              "finite_fraction": 0.9184981684981685
+            },
+            "E_DALSW-1": {
+              "finite": 2000,
+              "total": 2184,
+              "finite_fraction": 0.9157509157509157
+            }
+          },
+          "embargo_train_val": {
+            "E_BNWKW-1": {
+              "finite": 47,
+              "total": 48,
+              "finite_fraction": 0.9791666666666666
+            },
+            "E_BRYBW-1": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "E_BURBO": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "E_DALSW-1": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            }
+          },
+          "val": {
+            "E_BNWKW-1": {
+              "finite": 666,
+              "total": 744,
+              "finite_fraction": 0.8951612903225806
+            },
+            "E_BRYBW-1": {
+              "finite": 683,
+              "total": 744,
+              "finite_fraction": 0.918010752688172
+            },
+            "E_BURBO": {
+              "finite": 590,
+              "total": 744,
+              "finite_fraction": 0.793010752688172
+            },
+            "E_DALSW-1": {
+              "finite": 596,
+              "total": 744,
+              "finite_fraction": 0.8010752688172043
+            }
+          },
+          "embargo_val_cal": {
+            "E_BNWKW-1": {
+              "finite": 44,
+              "total": 48,
+              "finite_fraction": 0.9166666666666666
+            },
+            "E_BRYBW-1": {
+              "finite": 48,
+              "total": 48,
+              "finite_fraction": 1.0
+            },
+            "E_BURBO": {
+              "finite": 41,
+              "total": 48,
+              "finite_fraction": 0.8541666666666666
+            },
+            "E_DALSW-1": {
+              "finite": 46,
+              "total": 48,
+              "finite_fraction": 0.9583333333333334
+            }
+          },
+          "cal": {
+            "E_BNWKW-1": {
+              "finite": 390,
+              "total": 504,
+              "finite_fraction": 0.7738095238095238
+            },
+            "E_BRYBW-1": {
+              "finite": 416,
+              "total": 504,
+              "finite_fraction": 0.8253968253968254
+            },
+            "E_BURBO": {
+              "finite": 431,
+              "total": 504,
+              "finite_fraction": 0.8551587301587301
+            },
+            "E_DALSW-1": {
+              "finite": 425,
+              "total": 504,
+              "finite_fraction": 0.8432539682539683
+            }
+          },
+          "eval": {
+            "E_BNWKW-1": {
+              "finite": 1654,
+              "total": 1944,
+              "finite_fraction": 0.8508230452674898
+            },
+            "E_BRYBW-1": {
+              "finite": 1702,
+              "total": 1944,
+              "finite_fraction": 0.8755144032921811
+            },
+            "E_BURBO": {
+              "finite": 1792,
+              "total": 1944,
+              "finite_fraction": 0.9218106995884774
+            },
+            "E_DALSW-1": {
+              "finite": 1715,
+              "total": 1944,
+              "finite_fraction": 0.882201646090535
+            }
+          }
+        },
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+        "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+        "source": {
+          "panel": "bmra",
+          "episode": "test",
+          "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+          "source_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+          "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+          "raw_sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+          "source_files": [
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+              "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+              "bytes": 53426661
+            },
+            {
+              "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+              "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+              "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+              "bytes": 15084
+            }
+          ],
+          "source_url": "local BMRA standardFormat parquet from ucp_path_pilot_v1",
+          "download_url": "local file data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+          "citation": "BMRA generation/unit time series as locally prepared for ucp_path_pilot_v1.",
+          "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+          "parser": "pyarrow Parquet reader; raw 30min Time grid aggregated to hourly mean; required block reindexed hourly with missing hours left as NaN",
+          "source_notes": [
+            "First two fixed E_ generator columns are scored targets; next two are context-only covariates.",
+            "2022/2023 periods are after the checked local UCP 2019/2020/2021 processed panels, but raw/source exposure is not ruled out."
+          ],
+          "channels": [
+            "E_BNWKW-1",
+            "E_BRYBW-1",
+            "E_BURBO",
+            "E_DALSW-1"
+          ],
+          "target_indices": [
+            0,
+            1
+          ],
+          "loader_metadata": {
+            "episode": "test",
+            "source_files": [
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_data.parquet",
+                "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_data.parquet",
+                "sha256": "bc94d6b3eb86d7d6dbbab6826a8ade553a563145508d0278b6885c0c99dd0a4e",
+                "bytes": 53426661
+              },
+              {
+                "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\ucp_path_pilot_v1\\extracted\\bmra\\BMRA_Data\\standardFormat\\BMRA_metadata.parquet",
+                "relative_path": "data_external/ucp_path_pilot_v1/extracted/bmra/BMRA_Data/standardFormat/BMRA_metadata.parquet",
+                "sha256": "ee601468ec306b2b63745881b21fd45a33dca50f48b0bfccb720f96533c6c870",
+                "bytes": 15084
+              }
+            ],
+            "raw_rows_total": 157776,
+            "raw_time_range": {
+              "start": "2015-01-01 00:00:00",
+              "end": "2023-12-31 23:30:00"
+            },
+            "raw_duplicate_timestamp_count": 0,
+            "raw_frequency": "30min original BMRA Time grid",
+            "hourly_aggregation_rule": "mean of same-hour 30min rows using available finite values; hour is NaN for a channel only when all contributing raw values are missing",
+            "selection_rule": "fixed from pre-run availability audit: active E_ generator columns, all proposed split parts finite>=0.70 and nonconstant; first four by BMU ID among passing columns; no forecast performance used",
+            "selected_metadata": [
+              {
+                "BMU ID": "E_BNWKW-1",
+                "Name": "Burn of Whilk Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "North Scotland",
+                "lat": 58.3567589,
+                "lon": -3.203853799,
+                "startDate": "2017-03-24",
+                "endDate": "2023-12-31 12:30:00",
+                "length": 6.776769406392694
+              },
+              {
+                "BMU ID": "E_BRYBW-1",
+                "Name": "Berry Burn Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "North Scotland",
+                "lat": 57.44661104,
+                "lon": -3.475392595,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 23:30:00",
+                "length": 9.005422374429223
+              },
+              {
+                "BMU ID": "E_BURBO",
+                "Name": "Burbo Bank Offshore Windfarm ",
+                "Type": "Onshore wind",
+                "GSP Group": "Merseyside and North Wales",
+                "lat": 53.48818302,
+                "lon": -3.184922589,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 21:30:00",
+                "length": 9.005194063926941
+              },
+              {
+                "BMU ID": "E_DALSW-1",
+                "Name": "Dalswinton Wind Farm ",
+                "Type": "Onshore wind",
+                "GSP Group": "South Scotland",
+                "lat": 55.18409713,
+                "lon": -3.650562349,
+                "startDate": "2015-01-01",
+                "endDate": "2023-12-31 22:00:00",
+                "length": 9.005251141552511
+              }
+            ],
+            "required_block": {
+              "start": "2023-01-04T00:00:00",
+              "end_exclusive": "2023-09-03T00:00:00",
+              "hours": 5808
+            },
+            "block_halfhour_rows_seen": 11616,
+            "expected_halfhour_rows": 11616,
+            "required_missing_hour_count_all_channels": 33,
+            "required_missing_hour_examples": [
+              "2023-03-26 23:00:00",
+              "2023-03-27 00:00:00",
+              "2023-06-04 01:00:00",
+              "2023-06-04 02:00:00",
+              "2023-06-04 03:00:00",
+              "2023-06-04 04:00:00",
+              "2023-06-04 05:00:00",
+              "2023-06-04 06:00:00",
+              "2023-06-04 07:00:00",
+              "2023-06-04 08:00:00"
+            ],
+            "block_row_qc": {
+              "rows": 5808,
+              "start": "2023-01-04T00:00:00",
+              "end": "2023-09-02T23:00:00",
+              "end_exclusive": "2023-09-03T00:00:00",
+              "frequency_seconds": 3600,
+              "missing_cells_by_channel": {
+                "E_BNWKW-1": 694,
+                "E_BRYBW-1": 723,
+                "E_BURBO": 568,
+                "E_DALSW-1": 646
+              },
+              "finite_fraction_by_channel": {
+                "E_BNWKW-1": 0.8805096418732782,
+                "E_BRYBW-1": 0.8755165289256198,
+                "E_BURBO": 0.9022038567493113,
+                "E_DALSW-1": 0.8887741046831956
+              },
+              "nonconstant_by_channel": {
+                "E_BNWKW-1": true,
+                "E_BRYBW-1": true,
+                "E_BURBO": true,
+                "E_DALSW-1": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "dev_jena_fit": {
+      "path": "runs/peft_decision_transfer_v1/prepared/dev/jena_fit.npz",
+      "sha256": "bb58da04f9f107eeb28d61dda84197a5210d18a9b670d1f44d6d7b25f91532b2"
+    },
+    "dev_jena_holdout": {
+      "path": "runs/peft_decision_transfer_v1/prepared/dev/jena_holdout.npz",
+      "sha256": "55d74fc1e912359306be4f8e8889303f53aa745f0a58ad381981c2c748dc04e7"
+    },
+    "dev_bmra_fit": {
+      "path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_fit.npz",
+      "sha256": "04d699e9e77e26c04fb46bd6ccd262dcb03a509dc3166f4536c9c1fdf996ea74"
+    },
+    "dev_bmra_holdout": {
+      "path": "runs/peft_decision_transfer_v1/prepared/dev/bmra_holdout.npz",
+      "sha256": "87465578b2188300a06ac002e6a7acf0a731c9afefa16ff135ee892b4fa50992"
+    },
+    "test_jena_fit": {
+      "path": "runs/peft_decision_transfer_v1/prepared/test/jena_fit.npz",
+      "sha256": "9996ce064d80a15b25b36201e416d9683a216de8881c8f9ba2a9f6ca9cfc2d38"
+    },
+    "test_jena_holdout": {
+      "path": "runs/peft_decision_transfer_v1/prepared/test/jena_holdout.npz",
+      "sha256": "7479725c32ca8143338c6ad6c4b7deb8f984495fb47cd59f7b9dac74b237e08c"
+    },
+    "test_bmra_fit": {
+      "path": "runs/peft_decision_transfer_v1/prepared/test/bmra_fit.npz",
+      "sha256": "b6ff003a489ee28ea8f6adfc702447a986a3218ff07af13c672f1ec81d2327ff"
+    },
+    "test_bmra_holdout": {
+      "path": "runs/peft_decision_transfer_v1/prepared/test/bmra_holdout.npz",
+      "sha256": "c850f2fd3e9c7b818aca56aeb6828e7ed10ef20a9dc0544e86c87a1bc2cc13f1"
+    }
+  },
+  "data_contract": {
+    "fit_archives": "train+validation only; physically truncated at validation end with no cal/eval origin arrays",
+    "holdout_archives": "full 242-day block with calibration/evaluation origins; read only after selection gates allow forecast stage",
+    "context_target_alignment": "origin is first target timestamp; context [origin-336h, origin), target [origin, origin+48h)",
+    "origin_stride_hours": 24,
+    "target_window_overlap_hours_within_split": 24,
+    "between_split_target_overlap": "none across train/V and V/cal due 48h embargo; cal last target end equals eval first origin under half-open windows",
+    "missing_policy": "target_values preserve raw hourly NaNs; context_values use precontext-only median fallback then causal forward fill; no future backfill and no target imputation",
+    "fit_statistics": "mean/std/median fitted from observed train interval rows only",
+    "score_columns": "only target_indices [0,1] are scored",
+    "forecast_subsample_note": "archives keep all 80 E origins; run.py may predeclaredly forecast eval_origins[::4] for the bounded initial screen"
+  },
+  "exposure_summary": {
+    "claim_limit": "new target-label periods under checked local study history; not new raw sources; FM pretraining overlap unknown",
+    "selection_limit": "BMRA channel selection used future-window availability/QC only, not forecast performance; claims must disclose this availability screen",
+    "checked_previous_sources": {
+      "jena": [
+        {
+          "study": "peft_contribution_freeze_v1",
+          "path": "runs/peft_contribution_freeze_v1/prepared/summary.json",
+          "start": "2023-05-04T00:00:00",
+          "end_exclusive": "2024-01-01T00:00:00",
+          "label_use": "train/V/cal/E target labels used in Study31 development diagnostics"
+        },
+        {
+          "study": "peft_adaptation_scope_v1",
+          "path": "runs/peft_adaptation_scope_v1/prepared/manifest.json",
+          "start": "2024-09-07T00:00:00",
+          "end_exclusive": "2025-01-01T00:00:00",
+          "label_use": "Jena 2024 validation/evaluation target labels exposed in S1"
+        }
+      ],
+      "bmra": [
+        {
+          "study": "ucp_path_pilot_v1",
+          "path": "data_external/ucp_path_pilot_v1/processed/panel_test.npz",
+          "start": "2019-01-01T00:00:00",
+          "end_exclusive": "2022-01-01T00:00:00",
+          "label_use": "raw source was processed into 2019 train, 2020 val, 2021 test UCP panels"
+        }
+      ]
+    }
+  },
+  "resource_snapshot": {
+    "source": "GlobalMemoryStatusEx",
+    "physical_available_gib": 14.23150634765625,
+    "commit_available_gib": 16.05731964111328,
+    "memory_load_percent": 55,
+    "gate": {
+      "physical_available_gib_min": 5.0,
+      "commit_available_gib_min": 6.0,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "from_utc": "2026-09-10T09:12:57.0000000Z",
+  "to_utc": "2026-09-10T11:27:14.4565652Z",
+  "system_event_count": 0,
+  "application_event_count": 0,
+  "query_errors": [],
+  "events": [],
+  "active_study_training_process_count": 0,
+  "guard_lock_exists": false,
+  "scope": "Selected system events and relevant application crashes; not a root-cause diagnosis"
+}

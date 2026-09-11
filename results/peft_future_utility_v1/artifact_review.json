@@ -1,0 +1,151 @@
+{
+  "completed": true,
+  "python_AST_files": 5,
+  "frozen_hash_checks": 115,
+  "local_link_checks": 31,
+  "images": [
+    {
+      "path": "01_current_vs_future.png",
+      "dimensions": [
+        2080,
+        880
+      ]
+    },
+    {
+      "path": "02_selection_clipping_stop.png",
+      "dimensions": [
+        2560,
+        864
+      ]
+    }
+  ],
+  "evidence_copies": 6,
+  "guard_aggregate_matches": 13,
+  "report_links": [
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "31_contribution_freeze_20260911.md"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/01_current_vs_future.png"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/02_selection_clipping_stop.png"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "31_contribution_freeze_20260911.md"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../experiments/peft_future_utility_v1/PURPOSE.md"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/README.md"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/metrics.csv"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/summary.json"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/completion_review.json"
+    },
+    {
+      "from": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md",
+      "target": "../../../../results/peft_future_utility_v1/evidence/independent_audit.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/PURPOSE.md"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "01_current_vs_future.png"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "02_selection_clipping_stop.png"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "metrics.csv"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "summary.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "histories.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/independent_audit.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/plan.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/completed.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/environment.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/cpu_checks.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/guard_statuses.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "completion_review.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/windows_event_audit.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "evidence/copies.json"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/fit.py"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/run.py"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/analyse.py"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/independent_audit.py"
+    },
+    {
+      "from": "results/peft_future_utility_v1/README.md",
+      "target": "../../experiments/peft_future_utility_v1/completion_review.py"
+    }
+  ],
+  "scope": "Existence/structure/hash checks; both PNGs were also visually inspected in the assistant session."
+}

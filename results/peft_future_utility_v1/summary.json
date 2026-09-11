@@ -1,0 +1,205 @@
+{
+  "completed": true,
+  "analysed_utc": "2026-09-10T22:07:35.488119+00:00",
+  "band_pct_F0": 0.25,
+  "metrics": {
+    "all": {
+      "forks": 24,
+      "joint_better_than_head": 7,
+      "head_better_than_joint": 16,
+      "negligible": 1,
+      "joint_better_than_head_and_STOP": 6,
+      "head_better_than_joint_and_STOP": 3,
+      "both_continuations_worse_than_STOP": 9,
+      "selection_reverses_meaningful_direction": 1,
+      "mean_U_final_pct_F0": -4.350300232395843,
+      "mean_U_selected_pct_F0": -0.7272749937488113,
+      "max_abs_clipping_control_difference_pct_F0": 1.1401948366455896,
+      "spearman_C_vs_U": -0.7260869565217389,
+      "spearman_C_slope_vs_U": -0.4313043478260869,
+      "meaningful_forks_for_rule_accuracy": 23,
+      "descriptive_rule_accuracy": {
+        "always_continue": 0.30434782608695654,
+        "always_freeze": 0.6956521739130435,
+        "positive_C": 0.17391304347826086,
+        "increasing_C": 0.43478260869565216,
+        "improving_S": 0.4782608695652174
+      }
+    },
+    "bdg2": {
+      "forks": 12,
+      "joint_better_than_head": 7,
+      "head_better_than_joint": 4,
+      "negligible": 1,
+      "joint_better_than_head_and_STOP": 6,
+      "head_better_than_joint_and_STOP": 0,
+      "both_continuations_worse_than_STOP": 1,
+      "selection_reverses_meaningful_direction": 1,
+      "mean_U_final_pct_F0": -0.2801921678342128,
+      "mean_U_selected_pct_F0": -0.37797796587455895,
+      "max_abs_clipping_control_difference_pct_F0": 0.14800075146208924,
+      "spearman_C_vs_U": -0.16083916083916086,
+      "spearman_C_slope_vs_U": 0.18881118881118883,
+      "meaningful_forks_for_rule_accuracy": 11,
+      "descriptive_rule_accuracy": {
+        "always_continue": 0.6363636363636364,
+        "always_freeze": 0.36363636363636365,
+        "positive_C": 0.36363636363636365,
+        "increasing_C": 0.5454545454545454,
+        "improving_S": 0.5454545454545454
+      }
+    },
+    "jena": {
+      "forks": 12,
+      "joint_better_than_head": 0,
+      "head_better_than_joint": 12,
+      "negligible": 0,
+      "joint_better_than_head_and_STOP": 0,
+      "head_better_than_joint_and_STOP": 3,
+      "both_continuations_worse_than_STOP": 8,
+      "selection_reverses_meaningful_direction": 0,
+      "mean_U_final_pct_F0": -8.420408296957474,
+      "mean_U_selected_pct_F0": -1.0765720216230636,
+      "max_abs_clipping_control_difference_pct_F0": 1.1401948366455896,
+      "spearman_C_vs_U": -0.4125874125874127,
+      "spearman_C_slope_vs_U": -0.8041958041958043,
+      "meaningful_forks_for_rule_accuracy": 12,
+      "descriptive_rule_accuracy": {
+        "always_continue": 0.0,
+        "always_freeze": 1.0,
+        "positive_C": 0.0,
+        "increasing_C": 0.3333333333333333,
+        "improving_S": 0.4166666666666667
+      }
+    }
+  },
+  "seed_sign_pairs": [
+    {
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        1,
+        1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        1,
+        1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        0,
+        1
+      ],
+      "agrees": false
+    },
+    {
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        1,
+        1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "fork_fraction": 0.3333333333333333,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "fork_fraction": 0.6666666666666666,
+      "classes": [
+        -1,
+        -1
+      ],
+      "agrees": true
+    }
+  ],
+  "raw_score_max_abs_error": 1.6653345369377348e-16,
+  "guard_jobs": 13,
+  "diagnostic_guard_seconds": 660.1080000000001,
+  "publication_ready": false,
+  "policy_trained": false,
+  "evaluation_E_used": false,
+  "limitation": "24 dependent forks from12 cells/two previously observed source families; descriptive development evidence only"
+}

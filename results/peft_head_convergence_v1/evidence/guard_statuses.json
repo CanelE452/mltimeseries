@@ -1,0 +1,3005 @@
+[
+  {
+    "key": "fit/A/bmra/HEAD/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:17:31.858990+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "0",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 6652,
+      "child_create_time": 1789100251.9239476,
+      "finished_at": "2026-09-11T04:18:22.314794+00:00",
+      "elapsed_seconds": 50.453,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:52:19.251543+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "24",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5168,
+      "child_create_time": 1789102339.3100417,
+      "finished_at": "2026-09-11T04:53:13.742708+00:00",
+      "elapsed_seconds": 54.485,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:18:27.332101+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "1",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 1988,
+      "child_create_time": 1789100307.383727,
+      "finished_at": "2026-09-11T04:19:21.826873+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:53:18.758236+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "25",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 29592,
+      "child_create_time": 1789102398.809571,
+      "finished_at": "2026-09-11T04:54:13.244199+00:00",
+      "elapsed_seconds": 54.485,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:19:26.845562+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "2",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32488,
+      "child_create_time": 1789100366.8958175,
+      "finished_at": "2026-09-11T04:20:21.324422+00:00",
+      "elapsed_seconds": 54.469,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:54:18.258601+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "26",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 25232,
+      "child_create_time": 1789102458.3097036,
+      "finished_at": "2026-09-11T04:55:10.745754+00:00",
+      "elapsed_seconds": 52.485,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:20:26.340177+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "3",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 9888,
+      "child_create_time": 1789100426.390617,
+      "finished_at": "2026-09-11T04:21:20.819913+00:00",
+      "elapsed_seconds": 54.485,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/HEAD/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:55:15.758057+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "27",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\HEAD\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 27964,
+      "child_create_time": 1789102515.8087163,
+      "finished_at": "2026-09-11T04:56:10.257596+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:25:15.798722+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "8",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 26576,
+      "child_create_time": 1789100715.8488567,
+      "finished_at": "2026-09-11T04:27:41.010549+00:00",
+      "elapsed_seconds": 145.203,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:00:13.354161+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "32",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 34764,
+      "child_create_time": 1789102813.4045744,
+      "finished_at": "2026-09-11T05:02:38.582717+00:00",
+      "elapsed_seconds": 145.234,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:27:46.025828+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "9",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 30468,
+      "child_create_time": 1789100866.0813303,
+      "finished_at": "2026-09-11T04:30:13.218954+00:00",
+      "elapsed_seconds": 147.203,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:02:43.598923+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "33",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23540,
+      "child_create_time": 1789102963.652163,
+      "finished_at": "2026-09-11T05:05:10.852627+00:00",
+      "elapsed_seconds": 147.25,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:30:18.233975+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "10",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 12696,
+      "child_create_time": 1789101018.2842543,
+      "finished_at": "2026-09-11T04:32:31.343390+00:00",
+      "elapsed_seconds": 133.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:05:15.866595+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "34",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 27208,
+      "child_create_time": 1789103115.9218495,
+      "finished_at": "2026-09-11T05:07:43.121959+00:00",
+      "elapsed_seconds": 147.25,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:32:36.362489+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "11",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 7928,
+      "child_create_time": 1789101156.4129572,
+      "finished_at": "2026-09-11T04:35:01.567388+00:00",
+      "elapsed_seconds": 145.203,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/JOINT/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:07:48.136788+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "35",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\JOINT\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22172,
+      "child_create_time": 1789103268.1864,
+      "finished_at": "2026-09-11T05:10:15.364257+00:00",
+      "elapsed_seconds": 147.235,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:21:25.834756+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "4",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 20524,
+      "child_create_time": 1789100485.8852243,
+      "finished_at": "2026-09-11T04:22:20.333351+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:56:15.274131+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "28",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 33832,
+      "child_create_time": 1789102575.3276148,
+      "finished_at": "2026-09-11T04:57:11.801174+00:00",
+      "elapsed_seconds": 56.531,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:22:25.346624+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "5",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 13360,
+      "child_create_time": 1789100545.3976257,
+      "finished_at": "2026-09-11T04:23:19.844360+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:57:16.819052+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "29",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23200,
+      "child_create_time": 1789102636.8723755,
+      "finished_at": "2026-09-11T04:58:11.313715+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:23:24.856217+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "6",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 13004,
+      "child_create_time": 1789100604.916713,
+      "finished_at": "2026-09-11T04:24:15.305027+00:00",
+      "elapsed_seconds": 50.453,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:58:16.328499+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "30",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 3032,
+      "child_create_time": 1789102696.3790133,
+      "finished_at": "2026-09-11T04:59:08.815370+00:00",
+      "elapsed_seconds": 52.485,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:24:20.320246+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "7",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 31956,
+      "child_create_time": 1789100660.380604,
+      "finished_at": "2026-09-11T04:25:10.781212+00:00",
+      "elapsed_seconds": 50.469,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/bmra/WIDE/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T04:59:13.829086+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "31",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\bmra\\WIDE\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 24540,
+      "child_create_time": 1789102753.8772943,
+      "finished_at": "2026-09-11T05:00:08.339092+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:35:06.588600+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "12",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 29280,
+      "child_create_time": 1789101306.6388192,
+      "finished_at": "2026-09-11T04:35:57.021546+00:00",
+      "elapsed_seconds": 50.438,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:10:20.381560+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "36",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 15712,
+      "child_create_time": 1789103420.4323032,
+      "finished_at": "2026-09-11T05:11:10.815217+00:00",
+      "elapsed_seconds": 50.438,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:36:02.034714+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "13",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 30344,
+      "child_create_time": 1789101362.086978,
+      "finished_at": "2026-09-11T04:36:54.531362+00:00",
+      "elapsed_seconds": 52.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:11:15.829211+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "37",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 20872,
+      "child_create_time": 1789103475.87869,
+      "finished_at": "2026-09-11T05:12:06.261806+00:00",
+      "elapsed_seconds": 50.422,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:36:59.545237+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "14",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 12444,
+      "child_create_time": 1789101419.5980537,
+      "finished_at": "2026-09-11T04:37:49.967697+00:00",
+      "elapsed_seconds": 50.422,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:12:11.276795+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "38",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22744,
+      "child_create_time": 1789103531.3438883,
+      "finished_at": "2026-09-11T05:13:05.795131+00:00",
+      "elapsed_seconds": 54.531,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:37:54.984189+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "15",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11496,
+      "child_create_time": 1789101475.0412087,
+      "finished_at": "2026-09-11T04:38:45.441385+00:00",
+      "elapsed_seconds": 50.453,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/HEAD/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:13:10.809574+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "39",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\HEAD\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32364,
+      "child_create_time": 1789103590.8665757,
+      "finished_at": "2026-09-11T05:14:03.314087+00:00",
+      "elapsed_seconds": 52.516,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:42:44.456599+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "20",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22280,
+      "child_create_time": 1789101764.510512,
+      "finished_at": "2026-09-11T04:44:59.580059+00:00",
+      "elapsed_seconds": 135.125,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:17:54.182123+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "44",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 19264,
+      "child_create_time": 1789103874.2336605,
+      "finished_at": "2026-09-11T05:20:11.370970+00:00",
+      "elapsed_seconds": 137.188,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:45:04.597769+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "21",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 3416,
+      "child_create_time": 1789101904.6490884,
+      "finished_at": "2026-09-11T04:47:19.725389+00:00",
+      "elapsed_seconds": 135.125,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:20:16.387217+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "45",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11432,
+      "child_create_time": 1789104016.4410076,
+      "finished_at": "2026-09-11T05:22:29.539635+00:00",
+      "elapsed_seconds": 133.157,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:47:24.740009+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "22",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32124,
+      "child_create_time": 1789102044.7932072,
+      "finished_at": "2026-09-11T04:49:54.073847+00:00",
+      "elapsed_seconds": 149.328,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:22:34.553341+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "46",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5516,
+      "child_create_time": 1789104154.6036983,
+      "finished_at": "2026-09-11T05:25:01.819226+00:00",
+      "elapsed_seconds": 147.266,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:49:59.086009+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "23",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 18324,
+      "child_create_time": 1789102199.1487672,
+      "finished_at": "2026-09-11T04:52:14.237394+00:00",
+      "elapsed_seconds": 135.157,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/JOINT/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:25:06.833109+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "47",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\JOINT\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5548,
+      "child_create_time": 1789104306.8856096,
+      "finished_at": "2026-09-11T05:27:34.084076+00:00",
+      "elapsed_seconds": 147.25,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r0/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:38:50.457113+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "16",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r0\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22536,
+      "child_create_time": 1789101530.5062096,
+      "finished_at": "2026-09-11T04:39:44.960256+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r0/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:14:08.327935+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "40",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r0\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23508,
+      "child_create_time": 1789103648.3823838,
+      "finished_at": "2026-09-11T05:14:58.781326+00:00",
+      "elapsed_seconds": 50.454,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r1/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:39:49.973609+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "17",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r1\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11432,
+      "child_create_time": 1789101590.0251188,
+      "finished_at": "2026-09-11T04:40:44.471780+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r1/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:15:03.793780+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "41",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r1\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23284,
+      "child_create_time": 1789103703.8440523,
+      "finished_at": "2026-09-11T05:15:54.225228+00:00",
+      "elapsed_seconds": 50.437,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r2/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:40:49.486753+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "18",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r2\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5340,
+      "child_create_time": 1789101649.5374048,
+      "finished_at": "2026-09-11T04:41:39.925271+00:00",
+      "elapsed_seconds": 50.437,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r2/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:15:59.240634+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "42",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r2\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 24420,
+      "child_create_time": 1789103759.290483,
+      "finished_at": "2026-09-11T05:16:53.726618+00:00",
+      "elapsed_seconds": 54.484,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r3/s30000",
+    "status": {
+      "started_at": "2026-09-11T04:41:44.937660+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "19",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r3\\s30000\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 16268,
+      "child_create_time": 1789101704.9912283,
+      "finished_at": "2026-09-11T04:42:39.444275+00:00",
+      "elapsed_seconds": 54.5,
+      "reasons": []
+    }
+  },
+  {
+    "key": "fit/A/jena/WIDE/r3/s30001",
+    "status": {
+      "started_at": "2026-09-11T05:16:58.740949+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "43",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\fit\\A\\jena\\WIDE\\r3\\s30001\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22928,
+      "child_create_time": 1789103818.7919214,
+      "finished_at": "2026-09-11T05:17:49.166937+00:00",
+      "elapsed_seconds": 50.422,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/HEAD/r2/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:30:25.717134+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "26",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\HEAD\\r2\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11880,
+      "child_create_time": 1789104625.767246,
+      "finished_at": "2026-09-11T05:30:33.816751+00:00",
+      "elapsed_seconds": 8.094,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/HEAD/r3/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:27:40.263824+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "3",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\HEAD\\r3\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23764,
+      "child_create_time": 1789104460.314699,
+      "finished_at": "2026-09-11T05:27:48.364669+00:00",
+      "elapsed_seconds": 8.094,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/HEAD/r3/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:27:53.379705+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "3",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\HEAD\\r3\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 21676,
+      "child_create_time": 1789104473.431068,
+      "finished_at": "2026-09-11T05:28:03.487088+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/HEAD/r3/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:30:38.828683+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "27",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\HEAD\\r3\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22456,
+      "child_create_time": 1789104638.887962,
+      "finished_at": "2026-09-11T05:30:48.944173+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/JOINT/r0/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:31:24.209594+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "32",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\JOINT\\r0\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 24700,
+      "child_create_time": 1789104684.2652173,
+      "finished_at": "2026-09-11T05:31:34.322336+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/JOINT/r2/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:28:34.745277+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "10",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\JOINT\\r2\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32476,
+      "child_create_time": 1789104514.7983503,
+      "finished_at": "2026-09-11T05:28:42.849189+00:00",
+      "elapsed_seconds": 8.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/JOINT/r2/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:28:47.863180+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "10",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\JOINT\\r2\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32064,
+      "child_create_time": 1789104527.9148197,
+      "finished_at": "2026-09-11T05:28:55.964450+00:00",
+      "elapsed_seconds": 8.093,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/JOINT/r2/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:31:39.335338+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "34",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\JOINT\\r2\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 9112,
+      "child_create_time": 1789104699.391136,
+      "finished_at": "2026-09-11T05:31:47.440306+00:00",
+      "elapsed_seconds": 8.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/WIDE/r1/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:30:53.958039+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "29",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\WIDE\\r1\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 34216,
+      "child_create_time": 1789104654.0132124,
+      "finished_at": "2026-09-11T05:31:04.070013+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/WIDE/r2/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:28:08.500839+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "6",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\WIDE\\r2\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22096,
+      "child_create_time": 1789104488.555168,
+      "finished_at": "2026-09-11T05:28:16.604525+00:00",
+      "elapsed_seconds": 8.094,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/WIDE/r2/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:28:21.617583+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "6",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\WIDE\\r2\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 3892,
+      "child_create_time": 1789104501.6802857,
+      "finished_at": "2026-09-11T05:28:29.729961+00:00",
+      "elapsed_seconds": 8.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/bmra/WIDE/r3/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:31:09.083427+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "31",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\bmra\\WIDE\\r3\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 15984,
+      "child_create_time": 1789104669.1376336,
+      "finished_at": "2026-09-11T05:31:19.195015+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/HEAD/r2/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:29:00.978272+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "14",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\HEAD\\r2\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 16620,
+      "child_create_time": 1789104541.0320635,
+      "finished_at": "2026-09-11T05:29:11.105673+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/HEAD/r2/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:31:52.451508+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "38",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\HEAD\\r2\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 27296,
+      "child_create_time": 1789104712.507224,
+      "finished_at": "2026-09-11T05:32:00.558037+00:00",
+      "elapsed_seconds": 8.094,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/HEAD/r3/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:29:16.118708+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "15",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\HEAD\\r3\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 18248,
+      "child_create_time": 1789104556.172172,
+      "finished_at": "2026-09-11T05:29:26.227465+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/HEAD/r3/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:32:05.573745+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "39",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\HEAD\\r3\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 28304,
+      "child_create_time": 1789104725.623188,
+      "finished_at": "2026-09-11T05:32:15.678914+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/JOINT/r0/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:29:57.471837+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "20",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\JOINT\\r0\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 35776,
+      "child_create_time": 1789104597.5227845,
+      "finished_at": "2026-09-11T05:30:07.579600+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/JOINT/r0/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:30:12.600523+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "20",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\JOINT\\r0\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 9292,
+      "child_create_time": 1789104612.6517446,
+      "finished_at": "2026-09-11T05:30:20.702340+00:00",
+      "elapsed_seconds": 8.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/JOINT/r1/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:32:46.928380+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "45",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\JOINT\\r1\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 9832,
+      "child_create_time": 1789104766.9842935,
+      "finished_at": "2026-09-11T05:32:57.039599+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/JOINT/r1/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:33:02.051790+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "45",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\JOINT\\r1\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 31852,
+      "child_create_time": 1789104782.110508,
+      "finished_at": "2026-09-11T05:33:12.167071+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/WIDE/r3/s30000/L720",
+    "status": {
+      "started_at": "2026-09-11T05:29:31.239366+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "19",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\WIDE\\r3\\s30000\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 2116,
+      "child_create_time": 1789104571.2902184,
+      "finished_at": "2026-09-11T05:29:39.339554+00:00",
+      "elapsed_seconds": 8.093,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/WIDE/r3/s30000/S180",
+    "status": {
+      "started_at": "2026-09-11T05:29:44.355694+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "19",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\WIDE\\r3\\s30000\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11296,
+      "child_create_time": 1789104584.4062967,
+      "finished_at": "2026-09-11T05:29:52.455650+00:00",
+      "elapsed_seconds": 8.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/WIDE/r3/s30001/L720",
+    "status": {
+      "started_at": "2026-09-11T05:32:20.690980+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "43",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\WIDE\\r3\\s30001\\L720\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 19608,
+      "child_create_time": 1789104740.746595,
+      "finished_at": "2026-09-11T05:32:28.796735+00:00",
+      "elapsed_seconds": 8.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "forecast/A/jena/WIDE/r3/s30001/S180",
+    "status": {
+      "started_at": "2026-09-11T05:32:33.813558+00:00",
+      "guard_pid": 35060,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "43",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\forecast\\A\\jena\\WIDE\\r3\\s30001\\S180\\output",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 16800,
+      "child_create_time": 1789104753.86616,
+      "finished_at": "2026-09-11T05:32:41.915642+00:00",
+      "elapsed_seconds": 8.094,
+      "reasons": []
+    }
+  },
+  {
+    "key": "smoke/A/HEAD",
+    "status": {
+      "started_at": "2026-09-11T04:16:07.543745+00:00",
+      "guard_pid": 9900,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "0",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\smoke\\A\\HEAD\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--smoke"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 8172,
+      "child_create_time": 1789100167.603855,
+      "finished_at": "2026-09-11T04:16:19.714913+00:00",
+      "elapsed_seconds": 12.171,
+      "reasons": []
+    }
+  },
+  {
+    "key": "smoke/A/JOINT",
+    "status": {
+      "started_at": "2026-09-11T04:16:24.734951+00:00",
+      "guard_pid": 9900,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "8",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\smoke\\A\\JOINT\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--smoke"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 21584,
+      "child_create_time": 1789100184.789606,
+      "finished_at": "2026-09-11T04:16:34.843880+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    }
+  },
+  {
+    "key": "smoke/A/WIDE",
+    "status": {
+      "started_at": "2026-09-11T04:16:39.857349+00:00",
+      "guard_pid": 9900,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_head_convergence_v1.fit",
+        "--plan",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\plan.json",
+        "--index",
+        "4",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_head_convergence_v1\\smoke\\A\\WIDE\\output",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--smoke"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 17004,
+      "child_create_time": 1789100199.9084408,
+      "finished_at": "2026-09-11T04:16:49.962306+00:00",
+      "elapsed_seconds": 10.093,
+      "reasons": []
+    }
+  }
+]

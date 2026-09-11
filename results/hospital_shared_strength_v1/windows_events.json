@@ -1,0 +1,61 @@
+{
+  "start": "2026-09-10T14:46:50.0000000",
+  "end": "2026-09-10T15:01:17.3955271+09:00",
+  "queries": [
+    {
+      "query": {
+        "StartTime": "2026-09-10T14:46:50",
+        "LogName": "Application",
+        "Id": [
+          1000,
+          1001
+        ]
+      },
+      "count": 0,
+      "errors": [],
+      "events": []
+    },
+    {
+      "query": {
+        "ProviderName": "nvlddmkm",
+        "LogName": "System",
+        "StartTime": "2026-09-10T14:46:50"
+      },
+      "count": 0,
+      "errors": [],
+      "events": []
+    },
+    {
+      "query": {
+        "ProviderName": "Display",
+        "StartTime": "2026-09-10T14:46:50",
+        "LogName": "System",
+        "Id": 4101
+      },
+      "count": 0,
+      "errors": [],
+      "events": []
+    },
+    {
+      "query": {
+        "ProviderName": "Microsoft-Windows-WHEA-Logger",
+        "LogName": "System",
+        "StartTime": "2026-09-10T14:46:50"
+      },
+      "count": 0,
+      "errors": [],
+      "events": []
+    },
+    {
+      "query": {
+        "ProviderName": "Microsoft-Windows-Resource-Exhaustion-Detector",
+        "StartTime": "2026-09-10T14:46:50",
+        "LogName": "System",
+        "Id": 2004
+      },
+      "count": 0,
+      "errors": [],
+      "events": []
+    }
+  ]
+}

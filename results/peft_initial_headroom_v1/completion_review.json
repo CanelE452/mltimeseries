@@ -1,0 +1,505 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-11T01:55:14.561320+00:00",
+  "script_sha256": "eaed72967d892de9b6876eb23b163cd7f0dac87bdb62153b8d0024fb922c329d",
+  "scope": "Post-freeze audit/packaging only; not imported by frozen training or analysis",
+  "guards": 123,
+  "categories": {
+    "fit": {
+      "jobs": 96,
+      "guard_seconds": 2039.2979999999998
+    },
+    "forecast": {
+      "jobs": 24,
+      "guard_seconds": 196.51399999999998
+    },
+    "smoke": {
+      "jobs": 3,
+      "guard_seconds": 30.344
+    }
+  },
+  "resource_samples": 270,
+  "finish_records": 123,
+  "protected_hash_checks": {
+    "peft_initial_headroom_v1": 51,
+    "peft_decision_transfer_v1": 48
+  },
+  "minimum_available_ram_gib": 13.92889404296875,
+  "minimum_available_commit_gib": 13.591350555419922,
+  "maximum_child_rss_gib": 1.6865043640136719,
+  "maximum_gpu_memory_mib": 1785.0,
+  "maximum_gpu_temperature_c": 53.0,
+  "current_memory": {
+    "available_ram_gib": 16.5032958984375,
+    "available_commit_gib": 16.992210388183594,
+    "commit_limit_gib": 36.77233123779297
+  },
+  "active_study_processes": [],
+  "guard_lock_exists": false,
+  "selected_output_comparisons": [
+    {
+      "cell": "bmra/FULL90/s29000",
+      "selected_steps": {
+        "HEAD": 120,
+        "WIDE": 15,
+        "JOINT": 15
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "bmra/SPREAD30/s29000",
+      "selected_steps": {
+        "HEAD": 40,
+        "WIDE": 40,
+        "JOINT": 40
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/FULL90/s29000",
+      "selected_steps": {
+        "HEAD": 120,
+        "WIDE": 15,
+        "JOINT": 30
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/SPREAD30/s29000",
+      "selected_steps": {
+        "HEAD": 60,
+        "WIDE": 60,
+        "JOINT": 60
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "bmra/FULL90/s29001",
+      "selected_steps": {
+        "HEAD": 60,
+        "WIDE": 60,
+        "JOINT": 60
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "bmra/SPREAD30/s29001",
+      "selected_steps": {
+        "HEAD": 20,
+        "WIDE": 20,
+        "JOINT": 10
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/FULL90/s29001",
+      "selected_steps": {
+        "HEAD": 180,
+        "WIDE": 180,
+        "JOINT": 60
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    },
+    {
+      "cell": "jena/SPREAD30/s29001",
+      "selected_steps": {
+        "HEAD": 40,
+        "WIDE": 40,
+        "JOINT": 20
+      },
+      "same_as_F0": {
+        "HEAD": false,
+        "WIDE": false,
+        "JOINT": false
+      },
+      "JOINT_equals_HEAD": false,
+      "JOINT_equals_WIDE": false
+    }
+  ],
+  "copied_evidence": 8,
+  "target_gain_contributions": [
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "HEAD",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        1.3577620145609315,
+        -0.7747446694244754
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "WIDE",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        2.296973438444558,
+        0.5142254281359633
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.8508737805344675,
+        0.05692361607675106
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "HEAD",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.8854285669357297,
+        0.37942533442548015
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "WIDE",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.9160721171256713,
+        -0.274386790118241
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.43476428066545364,
+        0.1900980979311671
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "HEAD",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        1.102297243669788,
+        0.8376509213153625
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "WIDE",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        1.6776032670095145,
+        1.7016400965122933
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.24267120958525337,
+        -0.405761654615636
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "HEAD",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        1.0481935926085055,
+        1.37475384853985
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "WIDE",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        1.1306438974890884,
+        1.7373396067731475
+      ]
+    },
+    {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "E_BNWKW-1",
+        "E_BRYBW-1"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.02525608908764858,
+        -0.32783139311631154
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "HEAD",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        3.778955756580399,
+        1.8171154448975064
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "WIDE",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        2.1390005406383863,
+        1.3699306062670427
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29000,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        3.710188048010853,
+        1.3779822146209453
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "HEAD",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.6385527357901527,
+        1.8846468242179322
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "WIDE",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        2.10700956948728,
+        2.118783980877888
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29001,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        2.148795134869643,
+        1.166992959965556
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "HEAD",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.46224141134228564,
+        0.3474518957478379
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "WIDE",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.583827849814177,
+        0.3357990485013576
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.5508559005636976,
+        0.45265579266821343
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "HEAD",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.6714378908563452,
+        0.4866034587353721
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "WIDE",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.696048842566773,
+        0.3712245760759294
+      ]
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "comparator": "CORRECTION",
+      "target_names": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "contributions_to_total_gain_pct_F0": [
+        0.7410545823104967,
+        0.4277119244763618
+      ]
+    }
+  ],
+  "selected_at_budget_cap": {
+    "HEAD": 2,
+    "WIDE": 2,
+    "JOINT": 1
+  }
+}

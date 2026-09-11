@@ -1,0 +1,363 @@
+{
+  "scope": "Markdown notes, history, PROJECT_LOG and root README only; no experiment/run/result mutation",
+  "relocations": [
+    {
+      "old": "_docs/notes/tsfm_topics/01_forecast_query_tokenization.md",
+      "new": "_docs/notes/tsfm_topics/01_initial_topics/01_forecast_query_tokenization.md",
+      "before_sha256": "1ba02f6108735e0c08c75f42525cf18c14889999e60ceb0cd5ef80c7b3006730",
+      "after_sha256": "a51ea498b5176e99e48e892d05ac57af2e70a7a10eff9bf7025df33d3ca07429"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/02_observation_aware_resolution.md",
+      "new": "_docs/notes/tsfm_topics/01_initial_topics/02_observation_aware_resolution.md",
+      "before_sha256": "52efb8d234f7be2479b06655ada2befb984dea4117859d87bb381eeb3e2d7d73",
+      "after_sha256": "868bc029b5809516932c2aa4aabebe247ab6060079642a83eb8f957d4736920e"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/03_uncertain_future_covariates.md",
+      "new": "_docs/notes/tsfm_topics/01_initial_topics/03_uncertain_future_covariates.md",
+      "before_sha256": "faf424d9a406c94c89197b78bd41324ebb24515163906be7a7de93af8ff08734",
+      "after_sha256": "0a9280ad28045b7e45f20323d5f118773a9506a5e8fbca0cc52a03d0bf5313f4"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/04_peft_adaptation_scope.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope.md",
+      "before_sha256": "88f207921c43fcc55473366927b8fab83ea910d922d3fcf1a33a820bcd077d64",
+      "after_sha256": "9d1ac0e4980145cc030ace5371b09777f00e7337f5fc554df81c679822d7c528"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/04_peft_adaptation_scope_experiment_plan.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_experiment_plan.md",
+      "before_sha256": "cfe2741879cf01fe1d7abd3d27f48e8cced1d3889a2453841ba61cb618700cc9",
+      "after_sha256": "3b4997b738dde308ed29cc1cf2cfeecf0c175abc54fca2a939d92e5f4511aafe"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/04_peft_adaptation_scope_s1_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_s1_results_20260908.md",
+      "before_sha256": "94c89832b1e5808808d8942ad10341ce71a782a745b8911ac3bc114c72560ed5",
+      "after_sha256": "488b6a092ed8158d6f219fa90a948e374d716cb3f8a92831602324c91a553a18"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/05_peft_selection_reliability.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/05_peft_selection_reliability.md",
+      "before_sha256": "6a64dd04c40c45a68a68db8fa9b83911a0e87fc4bbb16fb744f65b7f19edc789",
+      "after_sha256": "b8e3786ec7f54ef071dbd6f2c4f8b9a2cffbe5e538350342f5ca8010792751a7"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/06_peft_forecasting_ability_preservation.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/06_peft_forecasting_ability_preservation.md",
+      "before_sha256": "3801b35c567384b4444e80acd745b7e1df79a63198a8d69b7c7897cc8543bc03",
+      "after_sha256": "438430ca618f081ee13fc2c3d0460736ddd922171c3265461cbb90493341f324"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/07_head_complement_method_gate_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_plan_20260908.md",
+      "before_sha256": "67c7aa0d45fb79bb5fa2b7da16294f63f6691a5320b41e863595151263abdbb9",
+      "after_sha256": "a37b5ab093a27d93d7acf323c6286c1127511dbef2e210b3b235650e59495eae"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/07_head_complement_method_gate_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_results_20260908.md",
+      "before_sha256": "898fdfd7b3bda189c48fc73bb1eea62a2add48ec3fa5098a47db75949175e292",
+      "after_sha256": "ee2dac73f128556b76bfcddf94ca1b3b61b3ae133803a9a222374f09707718b3"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/08_peft_shift_mechanism_diagnostic_addendum_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_diagnostic_addendum_20260908.md",
+      "before_sha256": "90419727fe8b9d700585660e2d922422e7880f48f9673cfc797fefe9853b536b",
+      "after_sha256": "f383cd40a9653a4aa6b712a611f34951322bbf803070277c6b5a174b7fc0a82d"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/08_peft_shift_mechanism_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_plan_20260908.md",
+      "before_sha256": "e2d2766365d7be7643de092ad958a16db6139936b0f9a42135ab19a94cf9cb6b",
+      "after_sha256": "ba8281dbc8e17072c388e07a47053230d93476727352d82a789e456d0762c79d"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/08_peft_shift_mechanism_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_results_20260908.md",
+      "before_sha256": "e9bdd637290d47d281d1fd9c1c617b4e7a1f9cc7e8cc8829a567e0588dca6544",
+      "after_sha256": "061794827f2248208f1805236150c4bae46448f6402c1c99320f6258fab68df7"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/09_peft_module_ablation_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_plan_20260908.md",
+      "before_sha256": "8186d36fe02cb83575456992594570f2ad8361641751bcee450885a7026ec5d3",
+      "after_sha256": "040ceb8133f757d21873346458060619c0fa4ca56b6fef4f7b9476a7144959bf"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/09_peft_module_ablation_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_results_20260908.md",
+      "before_sha256": "653eaf1c092d49dcb746a8eeba4df36d77a66a16617469adf021b58aee9e0ddb",
+      "after_sha256": "39cfe425626c505b91f31c1c1ea75dde22f4845000f47f14fcaf9bbca9285ecb"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/10_peft_trainlag_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_plan_20260908.md",
+      "before_sha256": "203c31b0511cb6d3b60084b00c77cc8e05726e95ba21f61fc02ea9f0d3810596",
+      "after_sha256": "66078469241fd32a10325f0c937aa98e886e403cb8f6efe7f8c3170422949573"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/10_peft_trainlag_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_results_20260908.md",
+      "before_sha256": "19b5d4b8507af36773752becf0e7ad7902df49bbe1d5310002e170f211d12cbc",
+      "after_sha256": "89a6f901a3189204c6f0507a76fbd101d74c15d9415c3c7451ef5980bb75aade"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/11_peft_calibration_closure_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_plan_20260908.md",
+      "before_sha256": "07bf81766ff9b88b2cc1be60beb99d14e57b4861ef45fa3c445b9006a6bd27a4",
+      "after_sha256": "a4f4b6e661b7dc4ccca420ffcb576410b36c6c083e9f9452d4d8c569bc3c1f2e"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/11_peft_calibration_closure_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_results_20260908.md",
+      "before_sha256": "a43ce25d80d3fed91dcffea328d82fe6ffe432e868449a53632e7245f5d41aeb",
+      "after_sha256": "040de5b86da901d6ef89e547ab8fbb969996303dae8e0adea957caf1f233ea87"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/11_peft_topic_search_protocol_20260908.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/11_peft_topic_search_protocol_20260908.md",
+      "before_sha256": "37298c34bb43766d6fe864448fd2d4a68300e469715c508867f4ea10c71ccb47",
+      "after_sha256": "5a00489fd3943be427a1e28218681014c3540e61f049d6b9d03a078a64af3707"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/12_peft_external_gap_literature_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_literature_20260908.md",
+      "before_sha256": "7f18c5f949f1c5841e5bcc54f6bc44934b8eef046b3449ba376d16b0e02db89a",
+      "after_sha256": "7ce1fa7375851c06f61c4f3c891540cb5882c62ffe30706c9e8a92f5b5eb53e5"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/12_peft_external_gap_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_plan_20260908.md",
+      "before_sha256": "192448fef43594c98f95574a99b0cd05ebec9de38756f2508b8eeca1b336f972",
+      "after_sha256": "d28fe7aa3d1cd424f7ca74e1c50200358d1b547f9079044a56007e1b2f504b56"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/12_peft_external_gap_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_results_20260908.md",
+      "before_sha256": "76b490fe3eee87b9a8c796dd950acd632eb1d0e7b378bc83fa9209a15447b1f4",
+      "after_sha256": "a666a0e87002d0d128502d8ec6ff92d3c5621107ecd8d2a2e4c6e8e28d0044e3"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/13_peft_next_candidate_review_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_next_candidate_review_20260908.md",
+      "before_sha256": "0468c78daa84735b943a6127024602bc3b7cc7db1c2fccc885a74ad862206525",
+      "after_sha256": "699a5303f8061b45e2690598f88942bd584916bd50001b96c14b756121195980"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/13_peft_temporal_replication_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_plan_20260908.md",
+      "before_sha256": "8084e10bac59e8878b76f86cca69801955c83f2b3979fb7c9f6e18ef0ae81b8c",
+      "after_sha256": "c10c4b019629f23d58eb3b4cdeb71f7e6b7da0e837a80b803c1eff253ed9ebea"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/13_peft_temporal_replication_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_results_20260908.md",
+      "before_sha256": "757147bcfbd478367cda4d4234067b6b859fe38d88ec2a5dab075b41ebe95483",
+      "after_sha256": "5f461f0bb7be372f19cb97a988643dc47cec0a3bd154a1d378ae528ab815223e"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/14_next_method_literature_boundary_20260908.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/14_next_method_literature_boundary_20260908.md",
+      "before_sha256": "db8bbd85d4064afdb75bc38bdeb1155cd3bc99afca3e406f03d3a52686a96c3f",
+      "after_sha256": "b7fdaf53a102184f07da5a7582973b57f95e85d2ab853a1aa33df296e475e3db"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/14_peft_selection_regret_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_plan_20260908.md",
+      "before_sha256": "02208eefdae2406f1e5c73470e201e517e820f7333bc66382100d0f6cf74f254",
+      "after_sha256": "215f9d3a5eb3a59c02304a325470bc5abd99141cf61c568763df772174c91433"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/14_peft_selection_regret_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_results_20260908.md",
+      "before_sha256": "65fcf27902d19fc334274add774b2c0f98519f2c5c89d632a615520b98a6a040",
+      "after_sha256": "dd0c8a91716d79ea8ae59f507becd58cf59eaa27c7d6964ee0a02d59564a7085"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/15_peft_objective_alignment_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_plan_20260908.md",
+      "before_sha256": "4fc6d4bcab37157181e20894fa39be489c443d39922dfc5b169c6e68b8b4ecf6",
+      "after_sha256": "a9c6ace6d172d8412b776b1f2c4a2cc8d887777704e7b55747da8f76f193955a"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/15_peft_objective_alignment_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_results_20260908.md",
+      "before_sha256": "5aabcc8e03b76027189e9cbfd5095c491181c4c2d724b38dff15a01b17087cf1",
+      "after_sha256": "c230e3ba5a6fc790319e3c39ee71095bd1924032359e217286e9bc9964b48ca2"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/16_observation_operator_entry_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/16_observation_operator_entry_plan_20260908.md",
+      "before_sha256": "e591bcb9d4b07b443a8d6d234544a8a995c24e6719436e9844e52da9384b73cc",
+      "after_sha256": "f81838d6c9f1eb0e9fe4eb3cab90c526cf97c8da3e84294746a74abdaf8bc58d"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/16_observation_operator_entry_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/16_observation_operator_entry_results_20260908.md",
+      "before_sha256": "06ab2459c5ef7a006b5e64b0a1751bcf582a1772a6c9e3ec63140fbdad8322ad",
+      "after_sha256": "b41634b0df5850c511f0388847b1aa275eac095f6bb6c16956c3f5d9b66bf218"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/17_coarse_supervision_data_entry_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_data_entry_plan_20260908.md",
+      "before_sha256": "23b080bb073154914e223e575b63c033470a377faaa263913f6ccf098b3a32ff",
+      "after_sha256": "bba87ab952a97d211899efeb48ad20f25abdf85721573acd27448cc6e71e98e9"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/17_coarse_supervision_learning_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_learning_plan_20260908.md",
+      "before_sha256": "b31ca566280d746144e9c86159b324f22173461d11761910cb7d1759a10588d3",
+      "after_sha256": "d994752adcb7a823f6c2db8ea993a4b6e6e421ef0c315f68892460cf819d8f41"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/17_coarse_supervision_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+      "before_sha256": "3eed31052192250ba801b3731fb2cf82b4353296530b2d011fdfc0e73cecf9d1",
+      "after_sha256": "998c50d39de04fa78e88c0292db04eb80356304f11e4316a8325c65bc7121ae2"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/18_peft_problem_first_candidates_20260908.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/18_peft_problem_first_candidates_20260908.md",
+      "before_sha256": "e73b4cd88d6c726821026ea1201975d73c4fd7df05626e5f727a27cf27ad0a39",
+      "after_sha256": "42ec93aa959fbe89ff648a9ca2eb849069cbc2cbaf261c6fc42794705ac3c4f5"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/19a_revision_download_transport_20260908.md",
+      "new": "_docs/notes/tsfm_topics/05_revision/19a_revision_download_transport_20260908.md",
+      "before_sha256": "21f047ad0564e985e4a5ed38cf7f5896f989dcdbf4c549e9a88203ce09cf670a",
+      "after_sha256": "321febd5143e63eaff0d06c4071135203c2f061c2c81f546b6030d1cbff732f4"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/19b_revision_browser_download_20260908.md",
+      "new": "_docs/notes/tsfm_topics/05_revision/19b_revision_browser_download_20260908.md",
+      "before_sha256": "6fa551f4d63df0bad4f2ef6b196e41397bafd322c39edc6f146cc439e77876ef",
+      "after_sha256": "b117b6faca3f1b7be0379ec89ed0e3ddc26e99981c9e62ee4dbb02063c95fad2"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/19c_revision_posthoc_diagnostic_20260908.md",
+      "new": "_docs/notes/tsfm_topics/05_revision/19c_revision_posthoc_diagnostic_20260908.md",
+      "before_sha256": "17e3589fccd1de11f642faf7239a219ce9245eba66a06b84e3d491ee324aa041",
+      "after_sha256": "6efb703adb1a2065ebb19f9d3123618ea9248b7b58f1d20ec0046f75ff5c48fe"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/19_peft_revision_entry_plan_20260908.md",
+      "new": "_docs/notes/tsfm_topics/05_revision/19_peft_revision_entry_plan_20260908.md",
+      "before_sha256": "b050218343760845ef9db75941c6307d5ee40dd284fa0b14d8b7a9a1ffdfb864",
+      "after_sha256": "97c133435f2ffa7ce0d7cc4bd50782d501ac1c5dc3483ee71ef07c4a8ee72d82"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/19_peft_revision_entry_results_20260908.md",
+      "new": "_docs/notes/tsfm_topics/05_revision/19_peft_revision_entry_results_20260908.md",
+      "before_sha256": "6bd95c02b0fada2ce67b7b8979acc18e3102f4b6227f223e5a71208a36630365",
+      "after_sha256": "737a2a5a07673c4de224956be0180e87065803a3f6e0bcf157f5fd6c1d824f82"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/20a_peft_fullft_memory_recovery_20260909.md",
+      "new": "_docs/notes/tsfm_topics/06_fullft_reference/20a_peft_fullft_memory_recovery_20260909.md",
+      "before_sha256": "7c3e6f7a5b06cd1d0b7b40ca6612141fee460a91ab7f4c45cad69a89744c5edb",
+      "after_sha256": "1fb2f19db0e75ce39ad715efef3e77ed8a583418b785b6f57afc675d072694e4"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/20b_peft_fullft_active_memory_recovery_20260909.md",
+      "new": "_docs/notes/tsfm_topics/06_fullft_reference/20b_peft_fullft_active_memory_recovery_20260909.md",
+      "before_sha256": "89dba3c34d9b1aa4f470c33ef747bcd471f118f413ea50bcb63b2845f8ebb1df",
+      "after_sha256": "8070ec2ecb63f88ddb7e2234f6c5746fddf0e0870dc14a0d7412d45ce7e6eadb"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/20_peft_fullft_reference_plan_20260909.md",
+      "new": "_docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_plan_20260909.md",
+      "before_sha256": "3ff406fd085cf2509c47578753d8fc985460f8085f3286a3f41046fa06ff1fb2",
+      "after_sha256": "b852657c6d45c24373d6adf5462d84fb92fc263f089576d56ef94684a18cef63"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/20_peft_fullft_reference_results_20260909.md",
+      "new": "_docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_results_20260909.md",
+      "before_sha256": "5c29bc11eefb48b97d7c0c1d301dd6f8d799029a17afd4e1d54f59fed7cd96ad",
+      "after_sha256": "abeddca2b157df8ebd264471639d98d4bfe3b051431a8db8a1abe5258e5d3d5c"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/21_peft_method_pilot_local_inventory_20260909.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/21_peft_method_pilot_local_inventory_20260909.md",
+      "before_sha256": "d3af5d55d1a1497e5f16d95a3155d0c17daaca25b984cf76635c4c6457253611",
+      "after_sha256": "a22e57eee039b99c0cd67e2e307d2a4adfbd6b0213704771551551a9ddcbd9b1"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/22_peft_method_candidate_screen_20260909.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/22_peft_method_candidate_screen_20260909.md",
+      "before_sha256": "3a91e1da9380301183e5106f67fe217b5a8d54513e955a2aefe9ea5b41ddcafc",
+      "after_sha256": "3a91e1da9380301183e5106f67fe217b5a8d54513e955a2aefe9ea5b41ddcafc"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/23_peft_next_paths_and_opinion_20260909.md",
+      "new": "_docs/notes/tsfm_topics/07_research_direction/23_peft_next_paths_and_opinion_20260909.md",
+      "before_sha256": "c04d12b756e8e186efeda10524f57bba1720ae2c05c8850d0631940fa5dcd0f2",
+      "after_sha256": "354482c0980f7c8e90ff63b7cf555f5a45a873b16a5db6cb2b749b8c8fe4baa1"
+    },
+    {
+      "old": "_docs/notes/tsfm_topics/24_hospital_shared_strength_plan_20260909.md",
+      "new": "_docs/notes/tsfm_topics/08_hospital_shared_strength/24_hospital_shared_strength_plan_20260909.md",
+      "before_sha256": "3e129bf2d6b0b16fa5703a935e48d6699f5972d16408fd5363b29e2de77f2bf1",
+      "after_sha256": "b57f0d8bd574bda067c5f99a50dbd13a277167e08118d166c53b343204d556d8"
+    }
+  ],
+  "changed_markdown": [
+    "_docs/notes/tsfm_topics/01_initial_topics/01_forecast_query_tokenization.md",
+    "_docs/notes/tsfm_topics/01_initial_topics/02_observation_aware_resolution.md",
+    "_docs/notes/tsfm_topics/01_initial_topics/03_uncertain_future_covariates.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_experiment_plan.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_s1_results_20260908.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/05_peft_selection_reliability.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/06_peft_forecasting_ability_preservation.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_results_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_diagnostic_addendum_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_results_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_results_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_results_20260908.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_plan_20260908.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_results_20260908.md",
+    "_docs/notes/tsfm_topics/07_research_direction/11_peft_topic_search_protocol_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_literature_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_results_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_next_candidate_review_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_plan_20260908.md",
+    "_docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_results_20260908.md",
+    "_docs/notes/tsfm_topics/07_research_direction/14_next_method_literature_boundary_20260908.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_plan_20260908.md",
+    "_docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_results_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_plan_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_results_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/16_observation_operator_entry_plan_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/16_observation_operator_entry_results_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_data_entry_plan_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_learning_plan_20260908.md",
+    "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+    "_docs/notes/tsfm_topics/07_research_direction/18_peft_problem_first_candidates_20260908.md",
+    "_docs/notes/tsfm_topics/05_revision/19a_revision_download_transport_20260908.md",
+    "_docs/notes/tsfm_topics/05_revision/19b_revision_browser_download_20260908.md",
+    "_docs/notes/tsfm_topics/05_revision/19c_revision_posthoc_diagnostic_20260908.md",
+    "_docs/notes/tsfm_topics/05_revision/19_peft_revision_entry_plan_20260908.md",
+    "_docs/notes/tsfm_topics/05_revision/19_peft_revision_entry_results_20260908.md",
+    "_docs/notes/tsfm_topics/06_fullft_reference/20a_peft_fullft_memory_recovery_20260909.md",
+    "_docs/notes/tsfm_topics/06_fullft_reference/20b_peft_fullft_active_memory_recovery_20260909.md",
+    "_docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_plan_20260909.md",
+    "_docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_results_20260909.md",
+    "_docs/notes/tsfm_topics/07_research_direction/21_peft_method_pilot_local_inventory_20260909.md",
+    "_docs/notes/tsfm_topics/07_research_direction/22_peft_method_candidate_screen_20260909.md",
+    "_docs/notes/tsfm_topics/07_research_direction/23_peft_next_paths_and_opinion_20260909.md",
+    "_docs/notes/tsfm_topics/08_hospital_shared_strength/24_hospital_shared_strength_plan_20260909.md",
+    "_docs/history/2026-09-06.md",
+    "_docs/history/2026-09-07.md",
+    "_docs/history/2026-09-08.md",
+    "_docs/history/2026-09-09.md",
+    "README.md",
+    "_docs/PROJECT_LOG.md"
+  ]
+}

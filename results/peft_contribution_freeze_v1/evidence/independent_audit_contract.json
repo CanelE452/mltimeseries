@@ -1,0 +1,109 @@
+{
+  "version": "peft_contribution_freeze_v1.independent_audit_contract.20260911.rev2",
+  "study": "peft_contribution_freeze_v1",
+  "created_utc": "2026-09-10T15:28:58+00:00",
+  "scope": "contract for future independent fit/forecast numerical audits; updated after adding smoke contribution and same-freeze FIXED/CONTRIB trajectory checks, before executing independent audit modes",
+  "supersedes_sha256": "d1172c0e80bf0c6a60ebe7bfd5d4a922ebb0746404e417513735f8d1d95af500",
+  "supersedes": {
+    "independent_audit_py_sha256": "3acafaa5883b400568341e228c1ee64b29d9522b26c7f238cf1fb61360f6c717",
+    "created_utc": "2026-09-10T15:24:32+00:00"
+  },
+  "independent_audit_py_path": "experiments/peft_contribution_freeze_v1/independent_audit.py",
+  "independent_audit_py_sha256": "1f697dfb3da9c8c2dc12a46533d407c910fdc6afb6214bd842451c04dc31725d",
+  "run_contract_path": "runs/peft_contribution_freeze_v1/contract.json",
+  "run_contract_sha256": "463354ee7cd43c43921769b73caddafb7be2930ce78b9d33db7d271774d0bfc9",
+  "plan_path": "runs/peft_contribution_freeze_v1/plan.json",
+  "plan_sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57",
+  "input_hashes": [
+    {
+      "path": "experiments/peft_contribution_freeze_v1/fit.py",
+      "sha256": "a8bcf6a13c721f295472b2aa97f48bd0c9adb507112dbdc78b5e188a98524881",
+      "bytes": 12698
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/run.py",
+      "sha256": "9d3d55fc4aac8d10a4e94f85f53952842d2b9f80b6fe8cb4dccc42b08f27fed3",
+      "bytes": 7262
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/panel.py",
+      "sha256": "366d37b4ff3280291f8d398b04c1357c95938563dd5226984a5f6d879dd7da6b",
+      "bytes": 6309
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/f0.py",
+      "sha256": "89dbbeb7dd2e6f801453e5ef862e949cf60b38b4893bbe5314b4f80a80d30325",
+      "bytes": 260
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/policy.py",
+      "sha256": "4076af69e62f05100d705ac07966ee3294a4a5b3dc66338ca8cb885f616134a8",
+      "bytes": 904
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/prepare.py",
+      "sha256": "11fb480dd8dde37a80748197678c38d08ae310cd10afdf7f22da36c00a5eb5cb",
+      "bytes": 31810
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/PURPOSE.md",
+      "sha256": "f11e8a59be41319a306fe898a4bc00440b81bc399a8ea45d43169dc0dd59be98",
+      "bytes": 5350
+    },
+    {
+      "path": "experiments/peft_contribution_freeze_v1/PURPOSE_DATA.md",
+      "sha256": "0f00a0bbeeca9062ef9b95091c4f4eaf87ed1b271d1b4b414bb0126e88f20437",
+      "bytes": 4496
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/prepared/summary.json",
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6",
+      "bytes": 58319
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/data_audit.json",
+      "sha256": "b12cecbf2909b1bec711a20c2ff556f50a99b673441a1aea430ae0217093e315",
+      "bytes": 7467
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/preparation_failures.json",
+      "sha256": "88226eeed39ba6827c5a905dccdd5d4167ae47aa4bf9729278a6779afcbb417d",
+      "bytes": 8384
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz",
+      "sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "bytes": 64293
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz",
+      "sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+      "bytes": 114819
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/prepared/jena_fit.npz",
+      "sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+      "bytes": 83107
+    },
+    {
+      "path": "runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz",
+      "sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+      "bytes": 139584
+    }
+  ],
+  "prohibited_imports": [
+    "torch",
+    "experiments.peft_contribution_freeze_v1.policy",
+    "experiments.peft_contribution_freeze_v1.analyse",
+    "controlled_fit shared scores"
+  ],
+  "allowed_runtime": "CPU numpy/json/hash only; --fit only after 48 fits+smoke completed; --forecast only after 50 forecasts and completed.json exist",
+  "outputs": {
+    "fit_audit": "runs/peft_contribution_freeze_v1/independent_fit_audit.json",
+    "forecast_audit": "runs/peft_contribution_freeze_v1/independent_forecast_audit.json"
+  },
+  "audit_checks_added_in_rev2": [
+    "smoke point and contribution score replay",
+    "FIXED_FREEZE vs CONTRIB_FREEZE exact on-prediction trajectory and selected validation prediction equality when frozen_step matches"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "score_rows_recomputed": 48,
+  "score_max_abs_error": 1.1102230246251565e-16,
+  "v2_global_and_individual_selections_recomputed": true,
+  "seeds": [
+    24000,
+    24001
+  ],
+  "main_effect_pctF0": -0.41188989715424945,
+  "matching_effect_pctF0": -0.05536587816909658,
+  "limits": "Does not retrain weights, authenticate source data, validate system guard, or certify bootstrap inferential assumptions"
+}

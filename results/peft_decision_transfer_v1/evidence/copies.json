@@ -1,0 +1,85 @@
+{
+  "byte_identical_copies": 16,
+  "copies": [
+    {
+      "source": "runs/peft_decision_transfer_v1/plan.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/plan.json",
+      "sha256": "da59b75a053268a6a25086b847db5f5a1077b84b150487693e186dac49e6abd3"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/development_choice.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/development_choice.json",
+      "sha256": "ebaaebeff05be24df516a39af0470ee9083b3f2012c7a82b987e28e52eca352b"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/dev_fits_sealed.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/dev_fits_sealed.json",
+      "sha256": "85e1b63cb6b8a364b9a242a9d7e20c1fe5c821ddf78b4b4066c4a5d4864badb7"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/test_fits_sealed.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/test_fits_sealed.json",
+      "sha256": "f8aff043241da6ac2bac594751c4183e5507a6909839f983fdcac8dc7ba2d57c"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/completed.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/completed.json",
+      "sha256": "1b74362226045da23557f07dacab681b19ce0c1b7cb209ddcf87f73cf6e51a24"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/timing_completed.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/timing_completed.json",
+      "sha256": "0ec2b57b9526e7d5e41a8f3a1bb241316d34721fb7107df90d5741bd52d029f3"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/environment.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/environment.json",
+      "sha256": "f2c42547bb74904ecf1df49d5eb66b85b1ce7bb42f96a6cc23daf0532f7bf617"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/cpu_checks.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/cpu_checks.json",
+      "sha256": "e53cbe718df4cd3d19bae12176d1efde6f69c3b5762ce703674753d3d506f23c"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/preflight_review.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/preflight_review.json",
+      "sha256": "a8880b636e9925d55f87717ee59655a8ecc44a8eedb01cd0f0521cf4d1ddfeef"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/independent_audit.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/independent_audit.json",
+      "sha256": "6073e4fa49f1f1c92ab0c79135f21e59c1a6d4f802e59e77bf3a922f569f3c9d"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/independent_policy_review.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/independent_policy_review.json",
+      "sha256": "ceab2ee654359d4a2d108809a601555e712b54f50499c9d695aad785b1a9d56c"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/prepared/data_audit.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/prepared_data_audit.json",
+      "sha256": "7cd4b292c5c04020510e7ed2ff0d12eb553395608d1213615b34146db2a7838b"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/prepared/summary.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/prepared_summary.json",
+      "sha256": "8b9d4067ee8a0166a7ee1ca2c593dc762d49c5fd1101e288f20e5ea1cb33fc4d"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/prepared/attempt01_failed/preparation_failures.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/prepared_attempt01_failed_preparation_failures.json",
+      "sha256": "9d2f657cac72e5f08ee3acdc65f38389f788a77e6c657f78ea9034ac5db06192"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/windows_event_audit.json",
+      "copy": "results/peft_decision_transfer_v1/evidence/windows_event_audit.json",
+      "sha256": "a2673df714e600d36c5931711707f02459205cdce3872a197ec0ce1ab3789289"
+    },
+    {
+      "source": "runs/peft_decision_transfer_v1/development_choice.json",
+      "copy": "results/peft_decision_transfer_v1/development_choice.json",
+      "sha256": "ebaaebeff05be24df516a39af0470ee9083b3f2012c7a82b987e28e52eca352b"
+    }
+  ]
+}

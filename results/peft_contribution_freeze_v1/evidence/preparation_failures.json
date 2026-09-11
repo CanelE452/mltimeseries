@@ -1,0 +1,159 @@
+{
+  "version": "peft_contribution_freeze_v1.preparation_failures.20260911",
+  "study": "peft_contribution_freeze_v1",
+  "created_utc": "2026-09-10T15:16:21+00:00",
+  "scope": "post-hoc preparation failure record written after successful data preparation; no source code edits, no GPU, no training, no prediction, no E performance read in this logging step",
+  "failure_log_files_available": false,
+  "failure_log_note": "No dedicated failure log file was written at the time of the two failed attempts. Tracebacks and file listings are from the agent tool outputs in the active conversation, plus current filesystem state after recovery.",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "python -m experiments.peft_contribution_freeze_v1.prepare --output runs/peft_contribution_freeze_v1/prepared",
+      "started_local": "unknown",
+      "failed_local": "unknown",
+      "partial_output_mtime_local_from_agent_listing": "2026-09-11T00:11:02",
+      "outcome": "failed",
+      "error_type": "AttributeError",
+      "error_message": "'str' object has no attribute 'isoformat'",
+      "failure_location": "experiments/peft_contribution_freeze_v1/prepare.py exposure_audit(), proposed eval boundary serialization",
+      "diagnosis": "archive_data.write_panel_archives returned a JSON-ready contract whose eval boundary values were strings; exposure_audit attempted datetime.isoformat() on those strings.",
+      "partial_outputs": [
+        "bdg2_fit.npz",
+        "bdg2_holdout.npz"
+      ],
+      "partial_outputs_preserved": false,
+      "preservation_violation": true,
+      "violation_detail": "The first-attempt BDG2 partial archive pair was deleted by this subagent using Python Path.unlink() before the later root instruction clarified failure-output preservation. No hashes are available for that deleted pair.",
+      "recovery_action": "prepare.py was revised to accept either string or datetime contract boundary values. This source change happened before the current hash freeze request."
+    },
+    {
+      "attempt": 2,
+      "command": "python -m experiments.peft_contribution_freeze_v1.prepare --output runs/peft_contribution_freeze_v1/prepared",
+      "started_local": "unknown",
+      "failed_local": "unknown",
+      "current_preserved_partial_output_mtime_local": "2026-09-11T00:12:03",
+      "outcome": "failed",
+      "error_type": "ValueError",
+      "error_message": "not a complete hourly grid: duplicates=24, offstep=24",
+      "failure_location": "experiments/peft_contribution_freeze_v1/prepare.py load_jena() -> hourly_qc()",
+      "diagnosis": "Jena 2023b has 24 duplicate top-of-hour records from 2023-10-20T06:00:00 through 2023-10-21T05:00:00. After unique timestamps there is no hourly gap.",
+      "partial_outputs": [
+        "bdg2_fit.npz",
+        "bdg2_holdout.npz"
+      ],
+      "partial_outputs_preserved": true,
+      "recovery_action": "prepare.py was revised to collapse only exact duplicate top-of-hour Jena rows and to fail on conflicting duplicate values; it was also revised to reuse an existing complete panel archive pair instead of deleting it. These source changes happened before the current hash freeze request."
+    },
+    {
+      "attempt": 3,
+      "command": "python -m experiments.peft_contribution_freeze_v1.prepare --output runs/peft_contribution_freeze_v1/prepared",
+      "started_local": "unknown",
+      "completed_local_from_output_mtime": "2026-09-11T00:13:43",
+      "outcome": "success",
+      "bdg2_archive_handling": "reused the preserved complete BDG2 archive pair from attempt 2 after hash/manifest validation; did not rewrite it in attempt 3",
+      "jena_archive_handling": "created Jena fit/holdout after exact duplicate collapse; raw source files unchanged"
+    }
+  ],
+  "jena_duplicate_evidence_recomputed": {
+    "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023b.csv",
+    "source_sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318",
+    "selected_channels_checked": [
+      "p (mbar)",
+      "T (degC)",
+      "Tpot (K)",
+      "Tdew (degC)"
+    ],
+    "duplicate_top_of_hour_groups": 24,
+    "duplicate_rows_removed_by_current_prepare": 24,
+    "duplicate_start": "2023-10-20T06:00:00",
+    "duplicate_end": "2023-10-21T05:00:00",
+    "max_abs_diff_across_duplicate_selected_channel_values": 0.0,
+    "non_equal_duplicate_groups": [],
+    "unique_top_of_hour_gap_count_after_collapse": 0,
+    "rule_adopted": "collapse exact duplicate timestamp rows only when all four selected channel values are identical including NaN equality; raise an error rather than first/last/mean if conflicting values appear"
+  },
+  "current_successful_outputs": {
+    "prepare_py": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_contribution_freeze_v1\\prepare.py",
+      "exists": true,
+      "bytes": 31810,
+      "mtime_local": "2026-09-11T00:13:33",
+      "sha256": "11fb480dd8dde37a80748197678c38d08ae310cd10afdf7f22da36c00a5eb5cb"
+    },
+    "purpose_data_md": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\experiments\\peft_contribution_freeze_v1\\PURPOSE_DATA.md",
+      "exists": true,
+      "bytes": 4496,
+      "mtime_local": "2026-09-11T00:15:38",
+      "sha256": "0f00a0bbeeca9062ef9b95091c4f4eaf87ed1b271d1b4b414bb0126e88f20437"
+    },
+    "bdg2_fit": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_fit.npz",
+      "exists": true,
+      "bytes": 64293,
+      "mtime_local": "2026-09-11T00:12:03",
+      "sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20"
+    },
+    "bdg2_holdout": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_holdout.npz",
+      "exists": true,
+      "bytes": 114819,
+      "mtime_local": "2026-09-11T00:12:03",
+      "sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81"
+    },
+    "jena_fit": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_fit.npz",
+      "exists": true,
+      "bytes": 83107,
+      "mtime_local": "2026-09-11T00:13:43",
+      "sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3"
+    },
+    "jena_holdout": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_holdout.npz",
+      "exists": true,
+      "bytes": 139584,
+      "mtime_local": "2026-09-11T00:13:43",
+      "sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539"
+    },
+    "summary_json": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\summary.json",
+      "exists": true,
+      "bytes": 58319,
+      "mtime_local": "2026-09-11T00:13:43",
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6"
+    },
+    "manifest_json": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\manifest.json",
+      "exists": true,
+      "bytes": 58319,
+      "mtime_local": "2026-09-11T00:13:43",
+      "sha256": "c5462446157040b87622b32ba132ba3033f96478537b282968f695a3708390b6"
+    },
+    "data_audit_json": {
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\data_audit.json",
+      "exists": true,
+      "bytes": 7467,
+      "mtime_local": "2026-09-11T00:13:43",
+      "sha256": "b12cecbf2909b1bec711a20c2ff556f50a99b673441a1aea430ae0217093e315"
+    }
+  },
+  "source_change_sequence": [
+    "Initial prepare.py/PURPOSE_DATA.md were created for BDG2/Jena four-channel preparation.",
+    "After attempt 1, exposure_audit was changed to handle JSON string boundaries as well as datetime boundaries.",
+    "After attempt 2, Jena exact duplicate collapse and complete existing archive-pair reuse were added.",
+    "After the parent instruction to freeze current sources, this logging step did not modify prepare.py or PURPOSE_DATA.md."
+  ],
+  "final_data_status": {
+    "all_qc_passed": true,
+    "known_previous_eval_overlap": {
+      "bdg2": false,
+      "jena": false
+    },
+    "freshness_claim_allowed": {
+      "bdg2": false,
+      "jena": false
+    },
+    "e_performance_read": false,
+    "raw_sources_modified": false
+  }
+}

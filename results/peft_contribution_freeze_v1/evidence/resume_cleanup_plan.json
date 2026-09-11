@@ -1,0 +1,288 @@
+{
+  "utc": "2026-09-10T20:05:21.457788+00:00",
+  "authorization": "User: \ub2e4\uc2dc\ud574\uc918 \ud544\uc694\uc5c6\ub294\uac70\ub294 \uaebc\ub3c4 \ub3fc",
+  "scope": "unused browser automation helpers, template helpers, M365/Phone/Riot background clients; no security services, drivers, ChatGPT/Codex host, remote access, or file edits",
+  "before": {
+    "available_ram_gib": 8.665870666503906,
+    "available_commit_gib": 10.532642364501953,
+    "commit_limit_gib": 36.77233123779297
+  },
+  "targets": [
+    {
+      "pid": 2696,
+      "name": "node.exe",
+      "create_time": 1789031130.487885,
+      "private_mib": 113.38671875
+    },
+    {
+      "pid": 24108,
+      "name": "node.exe",
+      "create_time": 1789031131.004738,
+      "private_mib": 61.5390625
+    },
+    {
+      "pid": 6056,
+      "name": "node.exe",
+      "create_time": 1789031129.3995535,
+      "private_mib": 72.59765625
+    },
+    {
+      "pid": 29116,
+      "name": "cmd.exe",
+      "create_time": 1789031130.4462752,
+      "private_mib": 4.15625
+    },
+    {
+      "pid": 8712,
+      "name": "node.exe",
+      "create_time": 1789011464.5513184,
+      "private_mib": 113.19921875
+    },
+    {
+      "pid": 22796,
+      "name": "node.exe",
+      "create_time": 1789011465.1029568,
+      "private_mib": 62.09765625
+    },
+    {
+      "pid": 12720,
+      "name": "node.exe",
+      "create_time": 1789011463.4633796,
+      "private_mib": 72.33984375
+    },
+    {
+      "pid": 31208,
+      "name": "cmd.exe",
+      "create_time": 1789011464.5040734,
+      "private_mib": 4.52734375
+    },
+    {
+      "pid": 16308,
+      "name": "node.exe",
+      "create_time": 1789011464.5520515,
+      "private_mib": 63.375
+    },
+    {
+      "pid": 14680,
+      "name": "PhoneExperienceHost.exe",
+      "create_time": 1789024641.6013308,
+      "private_mib": 95.18359375
+    },
+    {
+      "pid": 15520,
+      "name": "node.exe",
+      "create_time": 1789024838.2522852,
+      "private_mib": 112.64453125
+    },
+    {
+      "pid": 27880,
+      "name": "node.exe",
+      "create_time": 1789024838.7448423,
+      "private_mib": 62.109375
+    },
+    {
+      "pid": 15656,
+      "name": "node.exe",
+      "create_time": 1789028874.3368251,
+      "private_mib": 63.1484375
+    },
+    {
+      "pid": 16116,
+      "name": "node.exe",
+      "create_time": 1789024832.9019713,
+      "private_mib": 53.14453125
+    },
+    {
+      "pid": 16180,
+      "name": "node.exe",
+      "create_time": 1789011463.193964,
+      "private_mib": 19.77734375
+    },
+    {
+      "pid": 16216,
+      "name": "node.exe",
+      "create_time": 1789028865.198151,
+      "private_mib": 19.6875
+    },
+    {
+      "pid": 19856,
+      "name": "node.exe",
+      "create_time": 1789024833.5824263,
+      "private_mib": 72.30078125
+    },
+    {
+      "pid": 26304,
+      "name": "cmd.exe",
+      "create_time": 1789024838.2107644,
+      "private_mib": 4.16015625
+    },
+    {
+      "pid": 22280,
+      "name": "node.exe",
+      "create_time": 1789011463.4633574,
+      "private_mib": 72.8515625
+    },
+    {
+      "pid": 31428,
+      "name": "cmd.exe",
+      "create_time": 1789011464.50005,
+      "private_mib": 4.17578125
+    },
+    {
+      "pid": 24860,
+      "name": "node.exe",
+      "create_time": 1789028865.190858,
+      "private_mib": 53.07421875
+    },
+    {
+      "pid": 28016,
+      "name": "node.exe",
+      "create_time": 1789011463.2042544,
+      "private_mib": 53.35546875
+    },
+    {
+      "pid": 28624,
+      "name": "node.exe",
+      "create_time": 1789031129.4076788,
+      "private_mib": 72.796875
+    },
+    {
+      "pid": 35752,
+      "name": "cmd.exe",
+      "create_time": 1789031130.4547987,
+      "private_mib": 4.1796875
+    },
+    {
+      "pid": 9128,
+      "name": "node.exe",
+      "create_time": 1789031130.4959939,
+      "private_mib": 63.02734375
+    },
+    {
+      "pid": 28764,
+      "name": "RiotClientServices.exe",
+      "create_time": 1788995113.4417872,
+      "private_mib": 93.6171875
+    },
+    {
+      "pid": 29508,
+      "name": "RiotClientCrashHandler.exe",
+      "create_time": 1788995115.31118,
+      "private_mib": 1.50390625
+    },
+    {
+      "pid": 28940,
+      "name": "node.exe",
+      "create_time": 1789028865.8085027,
+      "private_mib": 72.515625
+    },
+    {
+      "pid": 17720,
+      "name": "cmd.exe",
+      "create_time": 1789028872.305442,
+      "private_mib": 4.5234375
+    },
+    {
+      "pid": 35772,
+      "name": "node.exe",
+      "create_time": 1789028872.3597078,
+      "private_mib": 63.30078125
+    },
+    {
+      "pid": 29940,
+      "name": "node.exe",
+      "create_time": 1789031129.1709385,
+      "private_mib": 52.97265625
+    },
+    {
+      "pid": 31416,
+      "name": "node.exe",
+      "create_time": 1789031129.158542,
+      "private_mib": 19.5078125
+    },
+    {
+      "pid": 31904,
+      "name": "node.exe",
+      "create_time": 1789028865.8085012,
+      "private_mib": 71.25
+    },
+    {
+      "pid": 16268,
+      "name": "cmd.exe",
+      "create_time": 1789028872.3055437,
+      "private_mib": 4.15625
+    },
+    {
+      "pid": 33244,
+      "name": "node.exe",
+      "create_time": 1789028872.3582637,
+      "private_mib": 113.33203125
+    },
+    {
+      "pid": 31944,
+      "name": "node.exe",
+      "create_time": 1789024832.8818326,
+      "private_mib": 19.54296875
+    },
+    {
+      "pid": 33324,
+      "name": "M365Copilot.exe",
+      "create_time": 1788995131.866737,
+      "private_mib": 98.47265625
+    },
+    {
+      "pid": 28884,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.1465986,
+      "private_mib": 34.61328125
+    },
+    {
+      "pid": 18720,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.1968808,
+      "private_mib": 2.86328125
+    },
+    {
+      "pid": 25068,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.3506048,
+      "private_mib": 100.3125
+    },
+    {
+      "pid": 18980,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.3599844,
+      "private_mib": 13.31640625
+    },
+    {
+      "pid": 31604,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.4089937,
+      "private_mib": 8.83984375
+    },
+    {
+      "pid": 31628,
+      "name": "msedgewebview2.exe",
+      "create_time": 1788995132.4844997,
+      "private_mib": 174.31640625
+    },
+    {
+      "pid": 33640,
+      "name": "node.exe",
+      "create_time": 1789024833.5824237,
+      "private_mib": 72.359375
+    },
+    {
+      "pid": 28208,
+      "name": "cmd.exe",
+      "create_time": 1789024838.2348864,
+      "private_mib": 4.5234375
+    },
+    {
+      "pid": 35004,
+      "name": "node.exe",
+      "create_time": 1789024838.2735598,
+      "private_mib": 63.359375
+    }
+  ]
+}

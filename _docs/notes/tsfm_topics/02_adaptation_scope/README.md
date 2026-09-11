@@ -1,0 +1,22 @@
+# A: 적응 위치·메커니즘·외부 반복
+
+[전체 정리](../research_review_20260910/README.md) · [전체 목록](../README.md)
+
+- [---](04_peft_adaptation_scope.md)
+- [---](04_peft_adaptation_scope_experiment_plan.md)
+- [PEFT A — S1 개발 실험 결과 (2026-09-08)](04_peft_adaptation_scope_s1_results_20260908.md)
+- [출력부 보완 LoRA 후보: 방법론 진입 검사](07_head_complement_method_gate_plan_20260908.md)
+- [출력부 보완 LoRA 후보의 선행연구·최소 구현 판정](07_head_complement_method_gate_results_20260908.md)
+- [통제 screen의 추가 추론 진단](08_peft_shift_mechanism_diagnostic_addendum_20260908.md)
+- [PEFT 실패 조건의 통제 screen](08_peft_shift_mechanism_plan_20260908.md)
+- [통제 PEFT 실험 결과와 방법론 주제 판단](08_peft_shift_mechanism_results_20260908.md)
+- [Q00 native LoRA 모듈 삭제 대조 계획](09_peft_module_ablation_plan_20260908.md)
+- [Q00 native LoRA 삭제 대조: 결과와 연구 방향](09_peft_module_ablation_results_20260908.md)
+- [Train-only 지연 추정 후속 실행 계약](10_peft_trainlag_plan_20260908.md)
+- [Train-only 지연 추정: 결과와 PEFT 주제 판단](10_peft_trainlag_results_20260908.md)
+- [실제 원천 screen과 후속 방법의 신규성 경계](12_peft_external_gap_literature_20260908.md)
+- [실제 원천의 출력 적응 대비 내부 PEFT 효용 screen](12_peft_external_gap_plan_20260908.md)
+- [실제 수요·전력 데이터의 PEFT 비교 결과](12_peft_external_gap_results_20260908.md)
+- [후속 후보의 관측 근거와 선행연구 경계](13_peft_next_candidate_review_20260908.md)
+- [다음 시간 블록에서 동일 PEFT 절차 재현](13_peft_temporal_replication_plan_20260908.md)
+- [시간 블록 반복 결과와 현재 A 분기의 종료](13_peft_temporal_replication_results_20260908.md)

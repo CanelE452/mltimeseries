@@ -1,0 +1,73 @@
+{
+  "reference": {
+    "checkpoint": "C:\\Users\\User\\.cache\\huggingface\\hub\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "datasets": {
+      "bdg2": {
+        "fit_data_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz",
+        "fit_data_sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+        "holdout_data_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz",
+        "holdout_data_sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81"
+      },
+      "jena": {
+        "fit_data_path": "runs/peft_contribution_freeze_v1/prepared/jena_fit.npz",
+        "fit_data_sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+        "holdout_data_path": "runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz",
+        "holdout_data_sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539"
+      }
+    },
+    "provenance": "prepared/summary.json; old contract used only for checkpoint and protected input hashes"
+  },
+  "source_hashes": {
+    "experiments\\peft_mechanism_diagnostics_v1\\controlled_fit.py": "b9102038e71b2b0bfbd8ce0c48cf8441c2699edf9cfab9e26361dd9861af1e15",
+    "experiments\\peft_mechanism_diagnostics_v1\\run_controlled.py": "bab89768914869ae50807de8195b2a50be70060dfdd2f285091fb0358ea73198",
+    "experiments\\peft_adaptation_scope_v1\\modeling.py": "35db520cb7b9a832f70b8c0f12b6bd22f848973817766e40e482c231eb44ecbf",
+    "experiments\\peft_adaptation_scope_v1\\train.py": "ed6fdfbe6c198edb20af925b5f959e81269f555d2ae1e89e7ea8d04a4f0facbd",
+    "experiments\\peft_adaptation_scope_v1\\guard.py": "6ccaf5813aa00ec0ea76160f37287d5c1accf096e7ebd02becce985750ddadfd",
+    "experiments\\peft_external_gap_v1\\train.py": "b7be19e9e8773f05b06647667ee269f2e57bb0b970dccfada7d8e5072d6400b9",
+    "experiments\\peft_fullft_reference_v3\\model.py": "e3a83453cf5bab0d923aff7b86b65b9b9046250f545ea4ac78b160ec537ec464",
+    "experiments\\peft_optimization_control_v1\\fit.py": "21564850ba44146359e34737771b2e1c9c7b0b786abfc9b849b8d846bd6d8a9c",
+    "experiments\\peft_optimization_control_v1\\run.py": "c4e99d4d207af22f66c6de6c8905d6ab154a5bc2c94c94b0a6bff2c221ad84d3",
+    "experiments\\peft_optimization_control_v1\\PURPOSE.md": "7a91c95fd1cfbbab7c7e919d164258b90e3b4effa006307d30bcc27699016921",
+    "experiments\\hospital_shared_strength_v1\\resume_monitored.py": "b01ade191fb613534000cc3f0529d4349e15f23003b6ff57184f038da8410087",
+    "experiments/peft_contribution_freeze_v1/analyse.py": "34f291d18be42d30e73b512d718664879a41de07c17a7e401e94def8890f6abd",
+    "experiments/peft_contribution_freeze_v1/f0.py": "89dbbeb7dd2e6f801453e5ef862e949cf60b38b4893bbe5314b4f80a80d30325",
+    "experiments/peft_contribution_freeze_v1/fit.py": "a8bcf6a13c721f295472b2aa97f48bd0c9adb507112dbdc78b5e188a98524881",
+    "experiments/peft_contribution_freeze_v1/panel.py": "366d37b4ff3280291f8d398b04c1357c95938563dd5226984a5f6d879dd7da6b",
+    "experiments/peft_contribution_freeze_v1/policy.py": "4076af69e62f05100d705ac07966ee3294a4a5b3dc66338ca8cb885f616134a8",
+    "experiments/peft_contribution_freeze_v1/prepare.py": "11fb480dd8dde37a80748197678c38d08ae310cd10afdf7f22da36c00a5eb5cb",
+    "experiments/peft_contribution_freeze_v1/run.py": "9d3d55fc4aac8d10a4e94f85f53952842d2b9f80b6fe8cb4dccc42b08f27fed3",
+    "experiments/peft_contribution_freeze_v1/test_policy.py": "0d44be0c72e5f2df9a9300858dac9e27506226a9ca0bd79d345d79c9054b5548",
+    "experiments/peft_contribution_freeze_v1/PURPOSE.md": "f11e8a59be41319a306fe898a4bc00440b81bc399a8ea45d43169dc0dd59be98",
+    "experiments/peft_contribution_freeze_v1/PURPOSE_DATA.md": "0f00a0bbeeca9062ef9b95091c4f4eaf87ed1b271d1b4b414bb0126e88f20437",
+    "experiments/peft_overlap_transfer_v1/f0.py": "ba7de21214a5cb0cd8e78db9ee3397af447ce62b2cea0cf2dc2d3decc36eb929",
+    "experiments/peft_fullft_reference_v3/data.py": "aadf5194d0eddfa5428ebd596847898ff100ac5bdea2de4d4b24d4d48da881c7",
+    "experiments/peft_external_gap_v1/data.py": "1ec6f3ab92924d98e36d4707c66f6310eab04668dfd90c73667e9fd37e8cddbb"
+  },
+  "schedules": {
+    "FULL90": [
+      0,
+      15,
+      30,
+      60,
+      120,
+      180
+    ],
+    "SPREAD30": [
+      0,
+      5,
+      10,
+      20,
+      40,
+      60
+    ],
+    "RECENT30": [
+      0,
+      5,
+      10,
+      20,
+      40,
+      60
+    ]
+  },
+  "plan_sha256": "f5d0f9222c15d2e35e6f6facbb730f6e8a35bf67435e33f57635b9d75780fc57"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "gain_pct_f0_by_seed": [
+    4.445360828350647,
+    3.896050946605546
+  ],
+  "rule": "Bike matched MLP mean gain >1% F0 and both paired seeds positive",
+  "exploratory_only": true
+}

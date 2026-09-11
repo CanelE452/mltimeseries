@@ -1,0 +1,28 @@
+{
+  "selected": [
+    {
+      "seed": 24000,
+      "learning_rate": 1e-05,
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\hospital_shared_strength_v1_run2\\stages\\fit_s0_lr0\\attempt_01\\output\\fit",
+      "checkpoint_sha256": "e2c6c698a58d0fa43664a2647add1e9f305fc8b8ec8003e006ee6cf914894373",
+      "best_step": 200,
+      "val_score": 0.8044162031398712
+    },
+    {
+      "seed": 24001,
+      "learning_rate": 1e-05,
+      "path": "E:\\CODING\\proj\\mltimeseries\\runs\\hospital_shared_strength_v1_run2\\stages\\fit_s1_lr0\\attempt_01\\output\\fit",
+      "checkpoint_sha256": "cb9ab84f3373f4dda506ddd48063aa137a70628e6548ab667d2cbd68fc8082c2",
+      "best_step": 200,
+      "val_score": 0.8014234927477959
+    }
+  ],
+  "learning_rate_mean_v1": {
+    "1e-05": 0.8029198479438335,
+    "3e-05": 0.8038614157827019
+  },
+  "one_learning_rate_for_both_seeds": true,
+  "seed_ensemble": false,
+  "selected_without_v2_or_e": true,
+  "lr_boundary_is_not_optimum_proof": true
+}

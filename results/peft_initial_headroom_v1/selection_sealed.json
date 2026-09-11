@@ -1,0 +1,1140 @@
+{
+  "cells": {
+    "bmra/FULL90/s29000": {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29000,
+      "families": {
+        "HEAD": {
+          "index": 2,
+          "key": "bmra/FULL90/HEAD/r2/s29000",
+          "recipe": 2,
+          "best_V": 0.3664073676130163,
+          "best_step": 120,
+          "selected_hash": "bb97aafdcab68b64d44659b9707b0cd57298c43fbe7d840c7f193ce92bfdf4c2",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 10.960917299991706,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 7,
+          "key": "bmra/FULL90/WIDE/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.36459624459784834,
+          "best_step": 15,
+          "selected_hash": "2dc09c76d1ee039bb82a041bc09027f66149dfc528e05845a3b7cb4bcd7c15d6",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 10.353224000005866,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 11,
+          "key": "bmra/FULL90/JOINT/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.3712761095449335,
+          "best_step": 15,
+          "selected_hash": "884299ff624fd5de913a11355b1e3d76aacaf606e5500ff863804194fac98c20",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 32.60153519999585,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 2,
+      "f0_key": "bmra/FULL90/HEAD/r2/s29000",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.47902397935990754,
+            0.4739327299946945
+          ],
+          "intercepts": [
+            4.689343019327792,
+            12.16093706518775
+          ],
+          "biases": [
+            -0.26274239535814037,
+            1.1661814591796302
+          ],
+          "fit_counts": [
+            4260,
+            4314
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.39063238299081326
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40145531257090716
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4283510813149981
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.515288004655685
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.3903316489089835
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.3902101949353607
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.39050361387074206
+          }
+        ],
+        "selected": {
+          "name": "bias_s0.5",
+          "kind": "bias",
+          "shrinkage": 0.5,
+          "order": 5,
+          "V": 0.3902101949353607
+        }
+      }
+    },
+    "bmra/SPREAD30/s29000": {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "families": {
+        "HEAD": {
+          "index": 15,
+          "key": "bmra/SPREAD30/HEAD/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.36324095952479196,
+          "best_step": 40,
+          "selected_hash": "8b06ffc95ac9ecee83cad9ed94c9b94599e1282dd147053e2e7cb2fbee0ae2b4",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 4.508747899992159,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 19,
+          "key": "bmra/SPREAD30/WIDE/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.35829493544549096,
+          "best_step": 40,
+          "selected_hash": "ee08eea9318d9baef48038a428674044578c323cc86efb3d56fbcf2720bb426d",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 4.392572099997778,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 22,
+          "key": "bmra/SPREAD30/JOINT/r2/s29000",
+          "recipe": 2,
+          "best_V": 0.37790563045071557,
+          "best_step": 40,
+          "selected_hash": "9e5541e4841ba81d60ea55a570278222e6cdb8068977cbc364e2d286867240c5",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 12.22161180000694,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 15,
+      "f0_key": "bmra/SPREAD30/HEAD/r3/s29000",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.351915216523222,
+            0.3773681700233704
+          ],
+          "intercepts": [
+            5.804158429959589,
+            14.304593506949002
+          ],
+          "biases": [
+            0.09929597039221,
+            2.5030199424554858
+          ],
+          "fit_counts": [
+            1419,
+            1437
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.39063238299081326
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.4059788632998257
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.44341850473846506
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.5626445759751524
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.39270046510127843
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.3953255904592014
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40206476611621944
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.39063238299081326
+        }
+      }
+    },
+    "jena/FULL90/s29000": {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29000,
+      "families": {
+        "HEAD": {
+          "index": 27,
+          "key": "jena/FULL90/HEAD/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.39652487816139304,
+          "best_step": 120,
+          "selected_hash": "fd5cdf04e2a18b73ee6709bc9640ff07308358801c71a5f8b6ec5be57e3a023c",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 9.976063800000702,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 31,
+          "key": "jena/FULL90/WIDE/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.3986524944473666,
+          "best_step": 15,
+          "selected_hash": "00df95018b2eca1be35e40aa814c5e89acf5e95f11cf2f2399ee85ad04111240",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 10.106666200008476,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 35,
+          "key": "jena/FULL90/JOINT/r3/s29000",
+          "recipe": 3,
+          "best_V": 0.3884205346014349,
+          "best_step": 30,
+          "selected_hash": "b34f6dd7bb2a239ff2677ab967d8fdf9d8697be241e9ef5cff934d79646ab77d",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 29.793354699999327,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 27,
+      "f0_key": "jena/FULL90/HEAD/r3/s29000",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7447172332026186,
+            0.7549032687808359
+          ],
+          "intercepts": [
+            252.2484521467011,
+            4.845867300743826
+          ],
+          "biases": [
+            -0.22879757351345656,
+            0.18051027622487809
+          ],
+          "fit_counts": [
+            4320,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.40657388728450755
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40749715831146055
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4160772794276354
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.45287282014855973
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.4071757469830758
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.40790846413300763
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.4097462449726074
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.40657388728450755
+        }
+      }
+    },
+    "jena/SPREAD30/s29000": {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29000,
+      "families": {
+        "HEAD": {
+          "index": 37,
+          "key": "jena/SPREAD30/HEAD/r1/s29000",
+          "recipe": 1,
+          "best_V": 0.40362109465387697,
+          "best_step": 60,
+          "selected_hash": "12fab76728891c1fc542cf59f9ed4e62814d71173d4eb882dbb23b328e96b082",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 4.362254600011511,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 41,
+          "key": "jena/SPREAD30/WIDE/r1/s29000",
+          "recipe": 1,
+          "best_V": 0.40341950781650693,
+          "best_step": 60,
+          "selected_hash": "dbfafe99a7317d8eef7b01f1f95c411bc42c1504f054459cad5fb23beab75674",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 4.28763560000516,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 45,
+          "key": "jena/SPREAD30/JOINT/r1/s29000",
+          "recipe": 1,
+          "best_V": 0.40024152078311104,
+          "best_step": 60,
+          "selected_hash": "9749160317a42b062dd20960927aa5d0a99ed0b7b6d375a3d8e06f37f30795be",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 11.284175299995695,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 37,
+      "f0_key": "jena/SPREAD30/HEAD/r1/s29000",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7688288893323747,
+            0.7534414720489803
+          ],
+          "intercepts": [
+            228.32962247607375,
+            4.871452791273699
+          ],
+          "biases": [
+            -0.2656361050075974,
+            0.14022014058298532
+          ],
+          "fit_counts": [
+            1440,
+            1440
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.40657388728450755
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40775888512776426
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4161517196150225
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.45148848793756136
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.4071963297022436
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.4079615856231661
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40989476781802636
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.40657388728450755
+        }
+      }
+    },
+    "bmra/FULL90/s29001": {
+      "dataset": "bmra",
+      "condition": "FULL90",
+      "seed": 29001,
+      "families": {
+        "HEAD": {
+          "index": 50,
+          "key": "bmra/FULL90/HEAD/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.3649484548292651,
+          "best_step": 60,
+          "selected_hash": "754a7b7f046d40294434d388cf74885d12f27262cc57b1d5e4a65f17d416b587",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 9.292292400001315,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 54,
+          "key": "bmra/FULL90/WIDE/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.36267577426539627,
+          "best_step": 60,
+          "selected_hash": "e5af887dea3d3ba36c5977f445a88bc1eec6f5ecfee31ed3abd72a1b9a69d186",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 9.661254399994505,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 58,
+          "key": "bmra/FULL90/JOINT/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.3671188224537668,
+          "best_step": 60,
+          "selected_hash": "1392ab0782cf3691d0c488598f04df511cda7bd2b3e5a63c408d3b967dc81cc5",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 32.74501689999306,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 50,
+      "f0_key": "bmra/FULL90/HEAD/r2/s29001",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.47902397935990754,
+            0.4739327299946945
+          ],
+          "intercepts": [
+            4.689343019327792,
+            12.16093706518775
+          ],
+          "biases": [
+            -0.26274239535814037,
+            1.1661814591796302
+          ],
+          "fit_counts": [
+            4260,
+            4314
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.39063238299081326
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40145531257090716
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4283510813149981
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.515288004655685
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.3903316489089835
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.3902101949353607
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.39050361387074206
+          }
+        ],
+        "selected": {
+          "name": "bias_s0.5",
+          "kind": "bias",
+          "shrinkage": 0.5,
+          "order": 5,
+          "V": 0.3902101949353607
+        }
+      }
+    },
+    "bmra/SPREAD30/s29001": {
+      "dataset": "bmra",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "families": {
+        "HEAD": {
+          "index": 63,
+          "key": "bmra/SPREAD30/HEAD/r3/s29001",
+          "recipe": 3,
+          "best_V": 0.3621783030751595,
+          "best_step": 20,
+          "selected_hash": "b326d75d2edbe90de822024ed3e951b2c20f452c82114755a946900b03223b05",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 4.014278699993156,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 67,
+          "key": "bmra/SPREAD30/WIDE/r3/s29001",
+          "recipe": 3,
+          "best_V": 0.36216806350252667,
+          "best_step": 20,
+          "selected_hash": "ca1725842fd8d2e8c661a89dff7b0bc9df16ff5af749d1919add45c3f9b64ca7",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 4.487314600002719,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 71,
+          "key": "bmra/SPREAD30/JOINT/r3/s29001",
+          "recipe": 3,
+          "best_V": 0.37019029320742125,
+          "best_step": 10,
+          "selected_hash": "6407ff20c612c4fd309e6ffa29f39b3c872e4434b534c06030124e4c29e9112a",
+          "initial_V": 0.3906323829908134,
+          "trajectory_seconds": 12.322190999999293,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 63,
+      "f0_key": "bmra/SPREAD30/HEAD/r3/s29001",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.351915216523222,
+            0.3773681700233704
+          ],
+          "intercepts": [
+            5.804158429959589,
+            14.304593506949002
+          ],
+          "biases": [
+            0.09929597039221,
+            2.5030199424554858
+          ],
+          "fit_counts": [
+            1419,
+            1437
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.39063238299081326
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.4059788632998257
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.44341850473846506
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.5626445759751524
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.39270046510127843
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.3953255904592014
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40206476611621944
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.39063238299081326
+        }
+      }
+    },
+    "jena/FULL90/s29001": {
+      "dataset": "jena",
+      "condition": "FULL90",
+      "seed": 29001,
+      "families": {
+        "HEAD": {
+          "index": 74,
+          "key": "jena/FULL90/HEAD/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.3991052119641893,
+          "best_step": 180,
+          "selected_hash": "d23938a8b2831a6b05d0d94b5f614c208c466ef785177042b43937e427d75d51",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 9.989032500001485,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 78,
+          "key": "jena/FULL90/WIDE/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.39882030213649694,
+          "best_step": 180,
+          "selected_hash": "f92e0c6084249a4eab02e18801058ff04bd214b31cdd265a6aca8e5dac71ade1",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 10.287427599992952,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 81,
+          "key": "jena/FULL90/JOINT/r1/s29001",
+          "recipe": 1,
+          "best_V": 0.39313551840912453,
+          "best_step": 60,
+          "selected_hash": "1b958f6211c7ae15af144008c3ce1bb82ce1dfbfa96cd04855c5b2c2f0830551",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 29.224551300008898,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 74,
+      "f0_key": "jena/FULL90/HEAD/r2/s29001",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7447172332026186,
+            0.7549032687808359
+          ],
+          "intercepts": [
+            252.2484521467011,
+            4.845867300743826
+          ],
+          "biases": [
+            -0.22879757351345656,
+            0.18051027622487809
+          ],
+          "fit_counts": [
+            4320,
+            4320
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.40657388728450755
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40749715831146055
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4160772794276354
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.45287282014855973
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.4071757469830758
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.40790846413300763
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.4097462449726074
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.40657388728450755
+        }
+      }
+    },
+    "jena/SPREAD30/s29001": {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 29001,
+      "families": {
+        "HEAD": {
+          "index": 86,
+          "key": "jena/SPREAD30/HEAD/r2/s29001",
+          "recipe": 2,
+          "best_V": 0.4040986645092509,
+          "best_step": 40,
+          "selected_hash": "1a06e07fd13cdbc1362216fbb6738165311a9c202099f26edfc15dba7d74f12d",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 3.888911400004872,
+          "trainable": 589301
+        },
+        "WIDE": {
+          "index": 89,
+          "key": "jena/SPREAD30/WIDE/r1/s29001",
+          "recipe": 1,
+          "best_V": 0.40376933994670305,
+          "best_step": 40,
+          "selected_hash": "12336df790da50c88dc7a79b923755794512d1879644ca4aa14e034756689cb3",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 4.309886799994274,
+          "trainable": 1768949
+        },
+        "JOINT": {
+          "index": 95,
+          "key": "jena/SPREAD30/JOINT/r3/s29001",
+          "recipe": 3,
+          "best_V": 0.40115089497129275,
+          "best_step": 20,
+          "selected_hash": "ba3720f67550905c257634fb024871010f6baad9ba5dea91e4722d4c407a2a06",
+          "initial_V": 0.4065738872845076,
+          "trajectory_seconds": 12.098794199991971,
+          "trainable": 1768949
+        }
+      },
+      "f0_index": 86,
+      "f0_key": "jena/SPREAD30/HEAD/r2/s29001",
+      "correction": {
+        "parameters": {
+          "median_quantile_index": 10,
+          "ridge": 1e-06,
+          "slope_clip": [
+            0.25,
+            4.0
+          ],
+          "slopes": [
+            0.7688288893323747,
+            0.7534414720489803
+          ],
+          "intercepts": [
+            228.32962247607375,
+            4.871452791273699
+          ],
+          "biases": [
+            -0.2656361050075974,
+            0.14022014058298532
+          ],
+          "fit_counts": [
+            1440,
+            1440
+          ]
+        },
+        "candidates": [
+          {
+            "name": "identity",
+            "kind": "identity",
+            "shrinkage": 0.0,
+            "order": 0,
+            "V": 0.40657388728450755
+          },
+          {
+            "name": "affine_s0.25",
+            "kind": "affine",
+            "shrinkage": 0.25,
+            "order": 1,
+            "V": 0.40775888512776426
+          },
+          {
+            "name": "affine_s0.5",
+            "kind": "affine",
+            "shrinkage": 0.5,
+            "order": 2,
+            "V": 0.4161517196150225
+          },
+          {
+            "name": "affine_s1",
+            "kind": "affine",
+            "shrinkage": 1.0,
+            "order": 3,
+            "V": 0.45148848793756136
+          },
+          {
+            "name": "bias_s0.25",
+            "kind": "bias",
+            "shrinkage": 0.25,
+            "order": 4,
+            "V": 0.4071963297022436
+          },
+          {
+            "name": "bias_s0.5",
+            "kind": "bias",
+            "shrinkage": 0.5,
+            "order": 5,
+            "V": 0.4079615856231661
+          },
+          {
+            "name": "bias_s1",
+            "kind": "bias",
+            "shrinkage": 1.0,
+            "order": 6,
+            "V": 0.40989476781802636
+          }
+        ],
+        "selected": {
+          "name": "identity",
+          "kind": "identity",
+          "shrinkage": 0.0,
+          "order": 0,
+          "V": 0.40657388728450755
+        }
+      }
+    }
+  },
+  "fit_result_hashes": {
+    "bmra/FULL90/HEAD/r0/s29000": "bacac4bfe11c17ea3c7c464844c06d9985c044694400552eb6775ce13df90e4c",
+    "bmra/FULL90/HEAD/r1/s29000": "3204f10e00575f24c854f73873e1e3f4d649f02b87b1c9115be0054788f2fa0d",
+    "bmra/FULL90/HEAD/r2/s29000": "d86c4713fb5808b54f44029e8136060545a6f75115d1131f881c399175b1e259",
+    "bmra/FULL90/HEAD/r3/s29000": "cc30784931cd7d40a14213370ba524142ce76d3acffcaa6657e39edc4f679341",
+    "bmra/FULL90/WIDE/r0/s29000": "e17cfb16caf928412fdcae111d9b9bf4838f266cb150f9aef340187131a1b267",
+    "bmra/FULL90/WIDE/r1/s29000": "25828e71e745c51ed60bfc27db64c3459d7134faede4b626cd2b9aa07fc47113",
+    "bmra/FULL90/WIDE/r2/s29000": "4c497c9396366040f1b7335b1b3d681434dbe24968cd9e45d18fefd5688c73ea",
+    "bmra/FULL90/WIDE/r3/s29000": "33fca35153e3eaffb31839c2d19dc77b36d8ea188948dd00645b4f2b74abcbc0",
+    "bmra/FULL90/JOINT/r0/s29000": "df9a92b1e4cc902b0cfdb0fd008266c2e0d15cd4886906ad989aafde09a6f85e",
+    "bmra/FULL90/JOINT/r1/s29000": "9e72e9cec9f7bd0b839a1e700280d457a65838820a67c056a12248817712330b",
+    "bmra/FULL90/JOINT/r2/s29000": "b1f66a9f2f4239713c94c437cc0b57dba2c639accb980a799f65599cdb3c8b1d",
+    "bmra/FULL90/JOINT/r3/s29000": "73784b26723e66f9497ad845d9095b29cc234cad9a99f23a5645a5b75399c750",
+    "bmra/SPREAD30/HEAD/r0/s29000": "b5cf8a1a90257afa3056bcceb0b548204949cbf280a9e1a43c25dc5bbafd01e4",
+    "bmra/SPREAD30/HEAD/r1/s29000": "2ec8721bfc0b49e561a4fd82fe336470d7eaab09c8ec55873c69414eab508232",
+    "bmra/SPREAD30/HEAD/r2/s29000": "91f47095c6156713c345616c4c57aa65f460dbfaa8ff36aea1ef2d304a62e35a",
+    "bmra/SPREAD30/HEAD/r3/s29000": "a21b412188a18702a89e3cc41f668495229f90ccbb27e5856c57de4d3df5a2dc",
+    "bmra/SPREAD30/WIDE/r0/s29000": "cdd52710684be0a2404c32ba2b66872e4133b769ad903cd04840542266b1efd0",
+    "bmra/SPREAD30/WIDE/r1/s29000": "378f2d89caccbea6558907188cce23f7acb1ce715d3fdef0c293cd516b1a8921",
+    "bmra/SPREAD30/WIDE/r2/s29000": "738bed8db45e7c31d8cfe5954d49a94605277455e7869e7895cf5eb86f8e3d85",
+    "bmra/SPREAD30/WIDE/r3/s29000": "990150d61494af8e93157d3955f21f9deb1e69be83b4d740b4f3cd6f0bc7fbd4",
+    "bmra/SPREAD30/JOINT/r0/s29000": "079f4894bf8999264052e251d560384582c3d95db602008ff1a8ee1370023b1e",
+    "bmra/SPREAD30/JOINT/r1/s29000": "16ca52c7ca67d60ab042b26ebebbeab57498d502beccf3c78ee1ae78d59f2fd9",
+    "bmra/SPREAD30/JOINT/r2/s29000": "051e523ca2912459f251012731c0180e673f31644022b24e8570fbcc640ab10c",
+    "bmra/SPREAD30/JOINT/r3/s29000": "74011c0ada07804faf3cd1327262fb24047c427544575ed2282cd5fa243678be",
+    "jena/FULL90/HEAD/r0/s29000": "c0389894338f188a28230932cf5881d9a878614229f98289b6899b96d23ce9c7",
+    "jena/FULL90/HEAD/r1/s29000": "faf19d64d9345a37e5652d1560946ae578a6e5fc0817bf349777887215670302",
+    "jena/FULL90/HEAD/r2/s29000": "23816b257c102d769e1894f005d7f3027a8ae2776af24cb8e7a1527373591a40",
+    "jena/FULL90/HEAD/r3/s29000": "7801c1fc1702e8522912195548d3cb0d4c5ac9dd4e0230390fdb07d28be46cae",
+    "jena/FULL90/WIDE/r0/s29000": "7cfc09b2865492d62f2813d5da39b617ca9b264746f6cb3a51ab425b567c6dad",
+    "jena/FULL90/WIDE/r1/s29000": "d2fdb06fa3ba41e7ffc02ae4ad99a80c49d1eacf1cf5b28d966df39bf2b4f91e",
+    "jena/FULL90/WIDE/r2/s29000": "f57a12ccd262bcadf79a1559d4fc7048c989d11ee55728b6bf57b6fe13bb8d50",
+    "jena/FULL90/WIDE/r3/s29000": "8904b3ae7f4c95a649cbcc0def4c36001a69e717a9c4ae0fb160d9c8d1ab3773",
+    "jena/FULL90/JOINT/r0/s29000": "47e7bc09a5a037579c7b117013eeb54e568b629416f3e6249de057785562a15d",
+    "jena/FULL90/JOINT/r1/s29000": "9b4abda1d4856302c0ae6ebe6d8f30849bf376208a625456b1eab26bdba398dd",
+    "jena/FULL90/JOINT/r2/s29000": "8c8d6cc197efaf8c237fdfee515397d141c07f63a9cc0fe296cd5564c844abbb",
+    "jena/FULL90/JOINT/r3/s29000": "d208e413f6b669ba499d74c60d008daf16b71bcef4a942ef314ed2129c7135f4",
+    "jena/SPREAD30/HEAD/r0/s29000": "a62291184f2abd6dbdb825d540674882e9378bb4854fd4e342319075460feceb",
+    "jena/SPREAD30/HEAD/r1/s29000": "df2be1b41f882f1d394b85b5658eb7de199d38dde53349093bd577e08ce06968",
+    "jena/SPREAD30/HEAD/r2/s29000": "44252fc65ce4842b4d71078340155fa714f92077a66d76e528598e001a7f50c4",
+    "jena/SPREAD30/HEAD/r3/s29000": "c17b91a99723fbf82a98c66905206cce08d878db648253114965222256008c34",
+    "jena/SPREAD30/WIDE/r0/s29000": "8d3ebe9c6884b975cf4d1395e80acf1860114d79aeef24506725698ea950ebe1",
+    "jena/SPREAD30/WIDE/r1/s29000": "d5d97267184bff1835494f71a85404f73ae8a0dc6b20db3c4a333ca29c73b2e1",
+    "jena/SPREAD30/WIDE/r2/s29000": "c39550b833f10cfc67372aef61acd614b48d017a2806848a8549551dc26db08d",
+    "jena/SPREAD30/WIDE/r3/s29000": "53f309edd14cfe34a2c094c254509cdef8184cf4e05e591b453eedcca47208a7",
+    "jena/SPREAD30/JOINT/r0/s29000": "dcc5fee4ff446ac340c8372750c745370771dd81b12df7bfc36568f8ceff9a19",
+    "jena/SPREAD30/JOINT/r1/s29000": "c103079742c8545aad2a88e833fccf469688b130c58c9301f1c972493968ebd1",
+    "jena/SPREAD30/JOINT/r2/s29000": "1446e2d515ca468a48e5d426b937b830dfdbbcbc696e2b126bdc3aa606b73523",
+    "jena/SPREAD30/JOINT/r3/s29000": "fffa1d3d0f65823448ba1c59617c5b808709d3925ce7875679da5caf6eb0c0b2",
+    "bmra/FULL90/HEAD/r0/s29001": "930df5573603c925e7d773f183e494ed1c7625a6dcae62c49a9965fc740b5618",
+    "bmra/FULL90/HEAD/r1/s29001": "4868dc9ff07f7fe5989202822de0d9924b625a43b55876b93726014c1654ca0e",
+    "bmra/FULL90/HEAD/r2/s29001": "badc152fdeb60d14fa7275f92933562e9593468b3e28081e095d43c1e4227763",
+    "bmra/FULL90/HEAD/r3/s29001": "4c4cc058ab4a10441469c454a532a0228b86565bf0b2391830b2fc55a5fb66a6",
+    "bmra/FULL90/WIDE/r0/s29001": "d8905b0c39b96b26f3d259b42ff21c605d83dae55a29c44ca32d7ff291cc7114",
+    "bmra/FULL90/WIDE/r1/s29001": "e398fc9b91bc8cd2e915436907b81f1f2b2d6d829dd9bb533316fda62357d956",
+    "bmra/FULL90/WIDE/r2/s29001": "ef24aa04b9aea3c63e807afe47e1f17c3720a6ae08499d97b84c76e4fbe51722",
+    "bmra/FULL90/WIDE/r3/s29001": "33e3338a1052345dada999953fc8f209fd520f0f2224fe738bf38f33cbb7ce48",
+    "bmra/FULL90/JOINT/r0/s29001": "2c48c873d70d8552dd19067ff87f70d89ae7766870ba6a782b6836dd31a154a6",
+    "bmra/FULL90/JOINT/r1/s29001": "6a16fc3d1722af04bb8eb36718992eede8a55310d07206c1b70d5366b41d7bb2",
+    "bmra/FULL90/JOINT/r2/s29001": "bf9154f927631971858af384723b166c9beaa771921aecb169e1f2144868cbff",
+    "bmra/FULL90/JOINT/r3/s29001": "8613febedce077a33520174689a797d1e4131f3081ee12a289f93efc046bb37e",
+    "bmra/SPREAD30/HEAD/r0/s29001": "3fde8da89beaa5b43349dfc3a8b9bac9ebfef13ca9f3ce110730da8ad2718252",
+    "bmra/SPREAD30/HEAD/r1/s29001": "d0715b71f13273b7144b039d33896f081ca3c1f462e8d672de58baa3ac6699c0",
+    "bmra/SPREAD30/HEAD/r2/s29001": "846f285d7f97c4c69783cd39ca12823a026fec30dee8d9ea5487ddb792bce6fc",
+    "bmra/SPREAD30/HEAD/r3/s29001": "fc5eb6344b0bfc57f4ba6e9c0f3499cb4d4004933fb0aaaba24e0f9401831cea",
+    "bmra/SPREAD30/WIDE/r0/s29001": "68682f24ffa79871a924febb7a8d9bf632bb262ac693b90e587610120ebc38d4",
+    "bmra/SPREAD30/WIDE/r1/s29001": "f13db45b3dc7e81e9a134a9a8eba90e02c932721ecc52b54df26e2fcac59149c",
+    "bmra/SPREAD30/WIDE/r2/s29001": "714372035516dae729851fad1073399b9e10c92cd78cf538d4b06b2eef87ccd8",
+    "bmra/SPREAD30/WIDE/r3/s29001": "af8edffe29be90b4891b14d677282298209f1369cd5b805432221b6c8eacb141",
+    "bmra/SPREAD30/JOINT/r0/s29001": "6691c3bfd05476ab319ce557596a1dd0e569b940f7f8962f2704da8e02314dc0",
+    "bmra/SPREAD30/JOINT/r1/s29001": "9c57a4ff44ddc389a6b3fda05714d34b99d2b371d374abf311ccfc2b1500cfec",
+    "bmra/SPREAD30/JOINT/r2/s29001": "e42133c38e0ead46f6e5e2331fa8776598c21ec6cce50abeab1adb3fd91709a7",
+    "bmra/SPREAD30/JOINT/r3/s29001": "9b136065679d397c001a6c264d1207b5e0e9ea1469fe238ede7c7930f1136f23",
+    "jena/FULL90/HEAD/r0/s29001": "216e2b7691d48bdc01c377e7e5b1277f5edc37d4cffeb1fbd4cf3c1ae6a18975",
+    "jena/FULL90/HEAD/r1/s29001": "ca501b82f002c11212135d0db38dd3a26bc15a1825b48bd578b894548108b5b9",
+    "jena/FULL90/HEAD/r2/s29001": "d72e4382fdce748bb7dae1cf9f3fe3e76e168fb48a4bca9af7d3fc25fd8289cd",
+    "jena/FULL90/HEAD/r3/s29001": "45df35f02bc69d901d10323a5ef4bec2e7682916f545730cb441656a48ad4bb6",
+    "jena/FULL90/WIDE/r0/s29001": "8975919212c8c586ebb138a41c1fe4445057aec9451bb8f84e824efe738511fd",
+    "jena/FULL90/WIDE/r1/s29001": "5041126ab102ca3372bdaab3d234bcc0d2ce0b8155678d586886e52fc66142e5",
+    "jena/FULL90/WIDE/r2/s29001": "f5e3ae0b807b612d904666a13cae80b1d2f1f3504f2f9d9dded8de6998ae5ebc",
+    "jena/FULL90/WIDE/r3/s29001": "fe3628c2768b964de0c20b9282af53ab4e4422488c86e7091240694fe64c34e1",
+    "jena/FULL90/JOINT/r0/s29001": "8f4ce4930f312f7d5057d880f7bf55e200e25eb686f20b4bd25b2a3e932a0830",
+    "jena/FULL90/JOINT/r1/s29001": "e4fe4a604ddfe11d1cf9e7ff69fa1742619209faa7159c08066b0f0ce62040a9",
+    "jena/FULL90/JOINT/r2/s29001": "bae687e812ffb6767535bbd4424ccf489b949aa8e2827ca9e95f59e1ea853123",
+    "jena/FULL90/JOINT/r3/s29001": "37d25e52a720f678e52c70b70e90f2b60b55a6b99e8aaa6cece26ffe1c805c5a",
+    "jena/SPREAD30/HEAD/r0/s29001": "0d32e94e1bcb869c75b1e377f4d66c8824e4b039787bbd07ea3b59667103dfd1",
+    "jena/SPREAD30/HEAD/r1/s29001": "6c32cd612ee608a46139f13e1a8e352eb9f37a89f264c9d3e344c095839275b7",
+    "jena/SPREAD30/HEAD/r2/s29001": "4bb6e1e964626541ac92fc92d72beac281a60e9aa9aee143c0f35fb8226de1c2",
+    "jena/SPREAD30/HEAD/r3/s29001": "7e11608178d3fb4bb097c7ae6d2ecb9e59fb8ffa6c6d54d5263285dbdaeda7bc",
+    "jena/SPREAD30/WIDE/r0/s29001": "2daf9f19e8c33095c74f845aca031172db6a63e4ef5ef6fdb7aa6a30b015c8b4",
+    "jena/SPREAD30/WIDE/r1/s29001": "d00385491d4913d28873f5257bd473c8c179135ea121ef1be73995e6872af2fd",
+    "jena/SPREAD30/WIDE/r2/s29001": "79673c3e84ffb75a6f5d7d668abe39724610b1ff71b15e0fd3102878607703d1",
+    "jena/SPREAD30/WIDE/r3/s29001": "e26eca18be2d9adefcb07f45abdfa8650313151e46c17ea0ba5553f40004734e",
+    "jena/SPREAD30/JOINT/r0/s29001": "68c37d338f30e11d201c0986b3caedc4d58b8a7374655437dfa6cedaba1c1cfb",
+    "jena/SPREAD30/JOINT/r1/s29001": "e53928540a235b79caafa923d2fb1455ea4ed1529cc1c69778e9a89148354f38",
+    "jena/SPREAD30/JOINT/r2/s29001": "e00946ea51a2f73d860ebc3e979e7c4b5da1495f0930ca7eada5dbdac45213f1",
+    "jena/SPREAD30/JOINT/r3/s29001": "b985e780bf9a82c1e4e18713d52ef451df2cdf7624491833cfb0837bc15ae840"
+  },
+  "forecast_indices": [
+    2,
+    7,
+    11,
+    15,
+    19,
+    22,
+    27,
+    31,
+    35,
+    37,
+    41,
+    45,
+    50,
+    54,
+    58,
+    63,
+    67,
+    71,
+    74,
+    78,
+    81,
+    86,
+    89,
+    95
+  ],
+  "fit_only_selection": true,
+  "D_opened": false,
+  "sealed_utc": "2026-09-11T01:45:45+00:00",
+  "plan_sha256": "82b4244377ecca692726554a6c85c21a64c8aaaa1a1ba86f29ce81001a4d6a5e"
+}

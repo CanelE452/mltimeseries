@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "utc": "2026-09-11T00:36:50.494562+00:00",
+  "source_hashes": 39,
+  "input_hashes": 9,
+  "python_ast_files": 10,
+  "byte_identical_copies": 16,
+  "local_links_checked": 56,
+  "loss_rows": 144,
+  "loss_max_abs_error": 1.1102230246251565e-16,
+  "loss_archive_bytes": 174498,
+  "pngs": [
+    {
+      "file": "01_selected_quality.png",
+      "size": [
+        1760,
+        880
+      ],
+      "sha256": "e2eec399ae82e20464379acff15469d928a583127aedcfd6a12360823b5a6f54"
+    },
+    {
+      "file": "02_signal_and_cost.png",
+      "size": [
+        1920,
+        800
+      ],
+      "sha256": "565fe9f8f3575070a0e0d3fbac91638903953a235af4569bbc132e50be14241d"
+    },
+    {
+      "file": "03_validation_paths.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "e7fc2e7a163f112a13f7c076baff99579ba292c793140c14ae12186fae1c5927"
+    },
+    {
+      "file": "04_quality_advantages.png",
+      "size": [
+        1760,
+        960
+      ],
+      "sha256": "cca1155a5918d9b877f8d40724f7e0f19f1d9173be2974a41a146f43dbc01c09"
+    }
+  ],
+  "active_study_processes": [],
+  "guard_lock_exists": false,
+  "summary_sha256": "667df1b77db775876fbf9c2552c792c2b5608dfa2f5da5bb5913642f99ad40ff",
+  "metrics_sha256": "d003835f5a40dc4846f6350f3956bb69b63f7411eaa69baf07c59aeb982061e8"
+}

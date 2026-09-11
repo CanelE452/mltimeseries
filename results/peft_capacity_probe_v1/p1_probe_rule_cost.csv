@@ -1,0 +1,5 @@
+endpoint_index,seed,macro_regret_pct_F0,bike_source_regret_pct_F0,household_source_regret_pct_F0,selected_cost_seconds,all_full_cost_seconds,savings_percent,quality_passed,cost_passed,passed,chosen_arms
+1,26000,0.11846450582418899,0.23692901164837799,0.0,506.034907995224,475.61,-6.397028656929837,True,False,False,bike/FULL90=ALL;bike/SPREAD30=ALL;bike/RECENT30=WIDE;household/FULL90=ALL;household/SPREAD30=ALL;household/RECENT30=ALL
+1,26001,0.0,0.0,0.0,545.7276839923858,481.72,-13.287321263884767,True,False,False,bike/FULL90=ALL;bike/SPREAD30=ALL;bike/RECENT30=ALL;household/FULL90=ALL;household/SPREAD30=ALL;household/RECENT30=ALL
+2,26000,0.11846450582418899,0.23692901164837799,0.0,513.1928531513214,475.61,-7.902031738466686,True,False,False,bike/FULL90=ALL;bike/SPREAD30=ALL;bike/RECENT30=WIDE;household/FULL90=ALL;household/SPREAD30=ALL;household/RECENT30=ALL
+2,26001,0.0,0.0,0.0,550.5789732646941,481.72,-14.294397837892149,True,False,False,bike/FULL90=ALL;bike/SPREAD30=ALL;bike/RECENT30=ALL;household/FULL90=ALL;household/SPREAD30=ALL;household/RECENT30=ALL

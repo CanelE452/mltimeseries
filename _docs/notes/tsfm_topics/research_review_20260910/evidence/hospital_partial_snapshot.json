@@ -1,0 +1,153 @@
+{
+  "status": "PAUSED_BY_USER_INCOMPLETE",
+  "completed_main_fits": 1,
+  "planned_main_fits": 4,
+  "completed_eval_forecasts": 0,
+  "no_completed_json": true,
+  "stages": {
+    "s0": {
+      "completed": true,
+      "state": "completed",
+      "returncode": 0,
+      "started_at": "2026-09-09T15:21:07.650739+00:00",
+      "finished_at": "2026-09-09T15:21:36.286197+00:00",
+      "elapsed_seconds": 28.641,
+      "reasons": []
+    },
+    "fit_s0_lr0": {
+      "completed": true,
+      "state": "completed",
+      "returncode": 0,
+      "started_at": "2026-09-09T15:21:36.364825+00:00",
+      "finished_at": "2026-09-09T15:26:25.111573+00:00",
+      "elapsed_seconds": 288.734,
+      "reasons": []
+    },
+    "fit_s0_lr1": {
+      "completed": false,
+      "state": "safety_stop",
+      "returncode": 1,
+      "started_at": "2026-09-09T15:26:25.179595+00:00",
+      "finished_at": "2026-09-09T15:30:53.621698+00:00",
+      "elapsed_seconds": 268.437,
+      "reasons": [
+        "available_commit_below_limit"
+      ]
+    }
+  },
+  "fit0": {
+    "seed": 24000,
+    "learning_rate": 1e-05,
+    "best_step": 200,
+    "val_score": 0.8044162031398712,
+    "steps_completed": 200,
+    "history": [
+      {
+        "step": 0,
+        "validation_score": 0.8083393102315194
+      },
+      {
+        "step": 40,
+        "validation_score": 0.8073933986122819,
+        "train_loss": 12.329296827316284,
+        "gradient_norm_before_clip": 4.767118453979492
+      },
+      {
+        "step": 80,
+        "validation_score": 0.806275097671406,
+        "train_loss": 7.069663763046265,
+        "gradient_norm_before_clip": 3.5712435245513916
+      },
+      {
+        "step": 120,
+        "validation_score": 0.8049351178001806,
+        "train_loss": 8.121866226196289,
+        "gradient_norm_before_clip": 2.299107313156128
+      },
+      {
+        "step": 160,
+        "validation_score": 0.805509145565255,
+        "train_loss": 7.420500755310059,
+        "gradient_norm_before_clip": 4.30611515045166
+      },
+      {
+        "step": 200,
+        "validation_score": 0.8044162031398712,
+        "train_loss": 8.987380027770996,
+        "gradient_norm_before_clip": 5.277701377868652
+      }
+    ],
+    "checkpoint_replay": true,
+    "seconds": {
+      "total": 267.9216211999883,
+      "optimizer_steps": 120.90947840031004,
+      "mean_step": 0.6045473920015502,
+      "validation_after_step0": 102.19863769999938,
+      "best_capture": 0.07156700000632554
+    },
+    "unique_sampled_series": 685,
+    "unseen_train_series_this_fit": 82,
+    "nominal_window_exposure_ratio": 0.1604653495135894
+  },
+  "fit1_progress_only": [
+    {
+      "step": 40,
+      "validation_score": 0.8062213424824,
+      "train_loss": 12.251380920410156,
+      "gradient_norm_before_clip": 5.007496356964111
+    },
+    {
+      "step": 80,
+      "validation_score": 0.8050274262533844,
+      "train_loss": 6.703717231750488,
+      "gradient_norm_before_clip": 3.6739273071289062
+    },
+    {
+      "step": 120,
+      "validation_score": 0.8071583792188278,
+      "train_loss": 8.125214338302612,
+      "gradient_norm_before_clip": 3.0091307163238525
+    },
+    {
+      "step": 160,
+      "validation_score": 0.8146998209108053,
+      "train_loss": 6.789458513259888,
+      "gradient_norm_before_clip": 4.834319591522217
+    },
+    {
+      "step": 200,
+      "validation_score": 0.813341274061967,
+      "train_loss": 9.116661548614502,
+      "gradient_norm_before_clip": 6.389001369476318
+    }
+  ],
+  "stop": {
+    "timestamp": "2026-09-09T15:30:53.619674+00:00",
+    "reasons": [
+      "available_commit_below_limit"
+    ],
+    "last_sample": {
+      "timestamp": "2026-09-09T15:30:53.617632+00:00",
+      "available_ram_gib": 9.029308319091797,
+      "available_commit_gib": 5.981632232666016,
+      "child_tree_rss_gib": 1.6795082092285156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2045.0,
+          "temperature_c": 42.0
+        }
+      ]
+    },
+    "artifacts_preserved": true,
+    "resume_requires_checkpoint": true,
+    "error": null
+  },
+  "failure": {
+    "completed": false,
+    "error": "RuntimeError: Available Windows commit < 6 GiB",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\CODING\\proj\\mltimeseries\\third_party\\hospital_shared_adaptation_kit\\scripts\\worker.py\", line 17, in <module>\n    execute_job(job)\n  File \"E:\\CODING\\proj\\mltimeseries\\third_party\\hospital_shared_adaptation_kit\\hospital_pilot\\stages.py\", line 179, in execute_job\n    r=fit(model,panel,out/'fit',lr,seed,s0=action=='s0')\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CODING\\proj\\mltimeseries\\third_party\\hospital_shared_adaptation_kit\\hospital_pilot\\training.py\", line 91, in fit\n    restored,_=predict_panel(model,values,val_origin,c['micro_batch'])\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CODING\\proj\\mltimeseries\\third_party\\hospital_shared_adaptation_kit\\hospital_pilot\\training.py\", line 18, in predict_panel\n    model.resource_check();indices=np.arange(start,min(start+micro,len(a)))\n    ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CODING\\proj\\mltimeseries\\third_party\\hospital_shared_adaptation_kit\\hospital_pilot\\backend.py\", line 108, in resource_check\n    if s.availPageFile/1024**3<6:raise RuntimeError('Available Windows commit < 6 GiB')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Available Windows commit < 6 GiB\n"
+  },
+  "interpretation": "V1 is for selection, not final evaluation; no hypothesis verdict. RSS is not private commit."
+}

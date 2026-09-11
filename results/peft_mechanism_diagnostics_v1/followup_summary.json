@@ -1,0 +1,195 @@
+{
+  "completed": true,
+  "created_at_local": "2026-09-10 16:41:06",
+  "domain_context": {
+    "domain": "time-series foundation model adaptation",
+    "downstream_decision": "choose a thesis-worthy PEFT mechanism rather than tune another isolated result",
+    "quality_bar": "exploratory mechanism diagnosis; not independent publication confirmation",
+    "leakage_constraints": [
+      "past-only features for R1",
+      "V2-only alpha selection for R3; E oracle only descriptive",
+      "do not count overlapping windows or related series as independent domains"
+    ]
+  },
+  "r1": {
+    "bike_head_lora_gain_pctF0_by_seed": [
+      2.3861802795354348,
+      4.405856087578095,
+      5.0683036029035575
+    ],
+    "household_head_lora_gain_pctF0_by_seed": [
+      0.043067847006441395,
+      -0.26448154888597414,
+      0.5843517654092582
+    ],
+    "bike_positive_origin_fraction": 0.7625,
+    "household_positive_origin_fraction": 0.575,
+    "bike_feature_mean": {
+      "spectral_entropy": 0.5496932388699203,
+      "acf24": 0.7537507754979811,
+      "acf168": 0.8708370867366085,
+      "level_shift": 0.09655954558611332
+    },
+    "household_feature_mean": {
+      "spectral_entropy": 0.8121112797268033,
+      "acf24": 0.23650452928152835,
+      "acf168": 0.2356385256686478,
+      "level_shift": 0.24314406565148952
+    },
+    "bike_feature_gain_corr": {
+      "spectral_entropy": -0.01924333934538247,
+      "acf24": 0.07341189915405426,
+      "acf168": -0.2655627748901167,
+      "level_shift": 0.07089809969947991
+    },
+    "household_feature_gain_corr": {
+      "spectral_entropy": -0.01300610972232917,
+      "acf24": -0.09801968137895826,
+      "acf168": -0.23897445085887037,
+      "level_shift": -0.06818645163434206
+    },
+    "interpretation": "Bike is more structured and shows repeated LoRA-over-head gain, but within-dataset raw complexity correlations are weak; matched head/probe controls remain necessary."
+  },
+  "r2": {
+    "attn_only_improvement_pctF0": 6.505963628566046,
+    "both_improvement_pctF0": 6.464398762428355,
+    "attn_only_saves_params_pct_of_both": 2.258988227807827,
+    "attention_deletion_penalty_pctF0": 6.461513901957866,
+    "output_deletion_penalty_pctF0": -0.04156486613768542,
+    "interpretation": "Attention module scope is promising as a mechanism clue, but not yet an efficient layer/rank selection method."
+  },
+  "r3": {
+    "published_individual_over_global_pctF0": -0.4118898971542355,
+    "aggregate_eval_individual_vs_global_pctF0": -0.4118898971542535,
+    "aggregate_eval_oracle_vs_global_pctF0_posthoc": 0.3199013992768531,
+    "seed_summaries": [
+      {
+        "seed": 24000,
+        "global_alpha": 1.0,
+        "v2_f0_mean": 0.6336331495944391,
+        "v2_global_mean": 0.6274906749222097,
+        "v2_individual_best_mean": 0.6225398778628942,
+        "v2_individual_over_global_pctF0_optimistic": 0.7813349195010137,
+        "v2_median_second_best_gap_pctF0": 0.13211473288262934,
+        "v2_series_with_gap_lt_0p1pctF0": 0.4041720990873533,
+        "eval_individual_vs_global_pctF0": -0.4051669963504204,
+        "eval_oracle_vs_global_pctF0_posthoc": 0.3202927979932292,
+        "eval_chosen_rank_mean_of_11": 5.084745762711864,
+        "eval_chosen_rank_top1_fraction": 0.529335071707953,
+        "v2_alpha_vs_eval_oracle_alpha_spearman": 0.03031252636921538,
+        "v2_lora_direction_vs_eval_direction_spearman": 0.01970495360173747,
+        "v2_lora_direction_sign_agreement_with_eval": 0.6049543676662321,
+        "endpoint_flip_fraction_0_to_1_or_1_to_0": 0.3285528031290743,
+        "future_oracle_alpha_histogram_posthoc": {
+          "0.0": 168,
+          "0.1": 6,
+          "0.2": 6,
+          "0.3": 8,
+          "0.4": 8,
+          "0.5": 3,
+          "0.6": 6,
+          "0.7": 4,
+          "0.8": 10,
+          "0.9": 13,
+          "1.0": 535
+        },
+        "v2_alpha_histogram": {
+          "0.0": 213,
+          "0.1": 4,
+          "0.2": 5,
+          "0.3": 10,
+          "0.4": 5,
+          "0.5": 6,
+          "0.6": 5,
+          "0.7": 5,
+          "0.8": 8,
+          "0.9": 6,
+          "1.0": 500
+        },
+        "eval_window_effects": [
+          {
+            "origin": 60,
+            "year": 2005,
+            "individual_vs_global_pctF0": -0.379639801491215,
+            "oracle_vs_global_pctF0_posthoc": 0.6006399021964062,
+            "exact_alpha_match_fraction_posthoc": 0.5228161668839635
+          },
+          {
+            "origin": 72,
+            "year": 2006,
+            "individual_vs_global_pctF0": -0.43343222567867,
+            "oracle_vs_global_pctF0_posthoc": 0.5144125622224263,
+            "exact_alpha_match_fraction_posthoc": 0.5032594524119948
+          }
+        ]
+      },
+      {
+        "seed": 24001,
+        "global_alpha": 1.0,
+        "v2_f0_mean": 0.6336331495944391,
+        "v2_global_mean": 0.6249051970916633,
+        "v2_individual_best_mean": 0.6213625502504315,
+        "v2_individual_over_global_pctF0_optimistic": 0.5591006157899452,
+        "v2_median_second_best_gap_pctF0": 0.1375635394183304,
+        "v2_series_with_gap_lt_0p1pctF0": 0.4198174706649283,
+        "eval_individual_vs_global_pctF0": -0.41861279795808654,
+        "eval_oracle_vs_global_pctF0_posthoc": 0.3195100005604771,
+        "eval_chosen_rank_mean_of_11": 5.089960886571056,
+        "eval_chosen_rank_top1_fraction": 0.5358539765319427,
+        "v2_alpha_vs_eval_oracle_alpha_spearman": 0.04020709828893182,
+        "v2_lora_direction_vs_eval_direction_spearman": 0.019880452349018418,
+        "v2_lora_direction_sign_agreement_with_eval": 0.6010430247718384,
+        "endpoint_flip_fraction_0_to_1_or_1_to_0": 0.3194263363754889,
+        "future_oracle_alpha_histogram_posthoc": {
+          "0.0": 184,
+          "0.1": 9,
+          "0.2": 6,
+          "0.3": 7,
+          "0.4": 7,
+          "0.5": 3,
+          "0.6": 5,
+          "0.7": 8,
+          "0.8": 7,
+          "0.9": 5,
+          "1.0": 526
+        },
+        "v2_alpha_histogram": {
+          "0.0": 196,
+          "0.1": 5,
+          "0.2": 7,
+          "0.3": 8,
+          "0.4": 6,
+          "0.5": 5,
+          "0.6": 5,
+          "0.7": 8,
+          "0.8": 7,
+          "0.9": 8,
+          "1.0": 512
+        },
+        "eval_window_effects": [
+          {
+            "origin": 60,
+            "year": 2005,
+            "individual_vs_global_pctF0": -0.500869921976386,
+            "oracle_vs_global_pctF0_posthoc": 0.601612620287713,
+            "exact_alpha_match_fraction_posthoc": 0.5202086049543677
+          },
+          {
+            "origin": 72,
+            "year": 2006,
+            "individual_vs_global_pctF0": -0.32753281494063896,
+            "oracle_vs_global_pctF0_posthoc": 0.48433766394769145,
+            "exact_alpha_match_fraction_posthoc": 0.5032594524119948
+          }
+        ]
+      }
+    ],
+    "interpretation": "Positive selected-V2 gain and negative E transfer; sampling noise, temporal shift, and absent stable heterogeneity remain unresolved."
+  },
+  "next_decision": [
+    "Run a matched frozen-MLP vs LoRA+same-MLP control for Bike/Household before claiming backbone necessity.",
+    "If R1 survives, test pre-declared attention layer groups with random/fixed budget-matched controls.",
+    "For Hospital, require longer historical replication of predictable heterogeneity before any shrinkage or group adapter experiment."
+  ],
+  "seconds": 1.7468121000019892
+}

@@ -1,0 +1,85 @@
+{
+  "policies": [
+    {
+      "seed": 24000,
+      "global_alpha": 1.0,
+      "alpha_histogram": {
+        "0.0": 213,
+        "0.1": 4,
+        "0.2": 5,
+        "0.3": 10,
+        "0.4": 5,
+        "0.5": 6,
+        "0.6": 5,
+        "0.7": 5,
+        "0.8": 8,
+        "0.9": 6,
+        "1.0": 500
+      },
+      "strengths_path": "E:\\CODING\\proj\\mltimeseries\\runs\\hospital_shared_strength_v1_run2\\stages\\select_gates\\attempt_01\\output\\strengths_24000.npz",
+      "strengths_sha256": "d98bae184605ca8e9b0a243062ea7012fb43058b4d5a035a2e4d485c56bba75f",
+      "checkpoint_sha256": "e2c6c698a58d0fa43664a2647add1e9f305fc8b8ec8003e006ee6cf914894373",
+      "gate_forecast_sha256": "a852fc09e175cd8091fcd66955c28675ad0bd05a33f8d580d98081b9776cfb12",
+      "gate_f0_sha256": "baf17ab995069710dc103129908322b7e851e8c7e2eb3129c6425fed91a1a32f",
+      "global_validation_curve": [
+        0.6336331495944392,
+        0.6328115066425769,
+        0.6320329517589699,
+        0.6312982302547696,
+        0.630608508222417,
+        0.6299652416307009,
+        0.6293691823644127,
+        0.6288231824648552,
+        0.6283259807184903,
+        0.6278790774497134,
+        0.6274906749222103
+      ]
+    },
+    {
+      "seed": 24001,
+      "global_alpha": 1.0,
+      "alpha_histogram": {
+        "0.0": 196,
+        "0.1": 5,
+        "0.2": 7,
+        "0.3": 8,
+        "0.4": 6,
+        "0.5": 5,
+        "0.6": 5,
+        "0.7": 8,
+        "0.8": 7,
+        "0.9": 8,
+        "1.0": 512
+      },
+      "strengths_path": "E:\\CODING\\proj\\mltimeseries\\runs\\hospital_shared_strength_v1_run2\\stages\\select_gates\\attempt_01\\output\\strengths_24001.npz",
+      "strengths_sha256": "f70109cb3474a4fe2600875e83b9f7a686ffe697c2e8002a0eed5ea84287fb93",
+      "checkpoint_sha256": "cb9ab84f3373f4dda506ddd48063aa137a70628e6548ab667d2cbd68fc8082c2",
+      "gate_forecast_sha256": "f83aeaf2445149f1c0c3b932a7ca29cba560aa17b2cad0885e561aea16844db7",
+      "gate_f0_sha256": "baf17ab995069710dc103129908322b7e851e8c7e2eb3129c6425fed91a1a32f",
+      "global_validation_curve": [
+        0.6336331495944392,
+        0.6325764171570564,
+        0.6315590990243355,
+        0.6305783603413394,
+        0.6296382804918418,
+        0.6287384933662317,
+        0.6278806524444422,
+        0.6270699714892832,
+        0.6263036549405973,
+        0.6255821990098297,
+        0.6249051970916629
+      ]
+    }
+  ],
+  "selected_on_months": [
+    49,
+    60
+  ],
+  "no_e_read": true,
+  "quantile_interpolation_not_probability_mixture": true,
+  "permutations_are_diagnostic_not_formal_pvalue": true,
+  "individual_fitted_coefficients_per_seed": 767,
+  "global_fitted_coefficients_per_seed": 1,
+  "permutation_seed": 2026090924,
+  "selection_protocol": "V1 selects models; V2 selects alphas; E never selects"
+}

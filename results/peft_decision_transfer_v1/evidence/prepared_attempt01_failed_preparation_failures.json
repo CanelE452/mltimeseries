@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-10T22:49:29+00:00",
+  "study": "peft_decision_transfer_v1",
+  "error_type": "KeyError",
+  "error_message": "'train_origins_origins is not a file in the archive'",
+  "existing_files_at_failure": [
+    "runs/peft_decision_transfer_v1/prepared/dev/jena_fit.npz",
+    "runs/peft_decision_transfer_v1/prepared/dev/jena_holdout.npz"
+  ]
+}

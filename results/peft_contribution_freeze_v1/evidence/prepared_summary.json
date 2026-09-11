@@ -1,0 +1,1931 @@
+{
+  "version": "peft_contribution_freeze_v1.prepare.20260911",
+  "study": "peft_contribution_freeze_v1",
+  "created_utc": "2026-09-10T15:13:43+00:00",
+  "domain_context": {
+    "domain": "hourly multivariate time-series forecasting",
+    "downstream_decision": "single-trajectory LoRA contribution/freezing diagnostic",
+    "quality_bar": "development ML; temporal leakage zero tolerance; scored target finite window fraction >=70%"
+  },
+  "all_qc_passed": true,
+  "datasets": {
+    "bdg2": {
+      "dataset": "bdg2",
+      "panel": "bdg2",
+      "fit_data": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_fit.npz",
+        "sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20"
+      },
+      "holdout_data": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_holdout.npz",
+        "sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81"
+      },
+      "fit_data_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_fit.npz",
+      "holdout_data_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\bdg2_holdout.npz",
+      "fit_data_sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "holdout_data_sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+      "source": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+        "sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+        "files": [
+          {
+            "bytes": 174239039,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/electricity.csv",
+            "sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418"
+          },
+          {
+            "bytes": 272024,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\metadata.csv",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/metadata.csv",
+            "sha256": "992d0b29f24f96ad4332bc4dbb534b7bdd7dd2689aad093f94e93068ecddca02"
+          },
+          {
+            "bytes": 67185,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\qc.json",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/qc.json",
+            "sha256": "8ada313811b4daf619b251bdca13baab8ae96278609f78592a0557d1cd49384b"
+          }
+        ]
+      },
+      "provenance": {
+        "source_url": "https://github.com/buds-lab/building-data-genome-project-2",
+        "download_url": "https://media.githubusercontent.com/media/buds-lab/building-data-genome-project-2/9b97ccbe90096aff42ed4fd6493bf7ae692d7118/data/meters/raw/electricity.csv",
+        "citation": "Building Data Genome Project 2 public building electricity meter data.",
+        "license_note": "Public research data; verify upstream redistribution terms before packaging raw files.",
+        "parser": "streaming csv.DictReader over raw electricity.csv; local-naive hourly timestamps; blank cells to NaN",
+        "source_notes": [
+          "First two fixed Eagle office meters are scored targets.",
+          "Next two fixed Eagle office meters are context-only covariates masked from target loss/scoring.",
+          "Late-2017 E is nonoverlapping with the documented Apr-Jun 2017 fine E, but source/QC were previously exposed."
+        ],
+        "previous_exposure": {
+          "proposed_eval": {
+            "start": "2017-10-12T00:00:00",
+            "end_exclusive": "2018-01-01T00:00:00"
+          },
+          "known_previous_evaluations": [
+            {
+              "study": "peft_coarse_supervision_v1",
+              "source": "_docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+              "start": "2017-04-01T00:00:00",
+              "end_exclusive": "2017-07-01T00:00:00",
+              "note": "BDG2 raw/QC were previously inspected; documented fine E used Apr-Jun 2017 and later energy was reserved.",
+              "overlaps_proposed_eval": false
+            }
+          ],
+          "any_known_eval_overlap": false,
+          "freshness_claim_allowed": false,
+          "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+        }
+      },
+      "start": "2017-05-04T00:00:00",
+      "end_exclusive": "2018-01-01T00:00:00",
+      "boundaries": {
+        "cal": [
+          "2017-09-21T00:00:00",
+          "2017-10-12T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2017-08-17T00:00:00",
+          "2017-08-19T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2017-09-19T00:00:00",
+          "2017-09-21T00:00:00"
+        ],
+        "eval": [
+          "2017-10-12T00:00:00",
+          "2018-01-01T00:00:00"
+        ],
+        "precontext": [
+          "2017-05-04T00:00:00",
+          "2017-05-18T00:00:00"
+        ],
+        "train": [
+          "2017-05-18T00:00:00",
+          "2017-08-17T00:00:00"
+        ],
+        "val": [
+          "2017-08-19T00:00:00",
+          "2017-09-19T00:00:00"
+        ]
+      },
+      "origin_counts": {
+        "cal": 20,
+        "eval": 80,
+        "train": 90,
+        "val": 30
+      },
+      "boundary_indices": {
+        "cal": [
+          3360,
+          3864
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "eval": [
+          3864,
+          5808
+        ],
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "val": [
+          2568,
+          3312
+        ]
+      },
+      "channels": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis",
+        "Eagle_office_Flossie",
+        "Eagle_office_Francis"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis"
+      ],
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "target_qc": {
+        "cal": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          }
+        },
+        "eval": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          }
+        },
+        "train": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4320
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 0.999537037037037,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4318
+          }
+        },
+        "val": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          }
+        }
+      },
+      "row_qc": {
+        "cal": {
+          "Eagle_office_Elias": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Elvis": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Flossie": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Francis": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          }
+        },
+        "embargo_train_val": {
+          "Eagle_office_Elias": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Elvis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Flossie": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Francis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          }
+        },
+        "embargo_val_cal": {
+          "Eagle_office_Elias": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Elvis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Flossie": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Francis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          }
+        },
+        "eval": {
+          "Eagle_office_Elias": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Elvis": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Flossie": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Francis": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          }
+        },
+        "precontext": {
+          "Eagle_office_Elias": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Elvis": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Flossie": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Francis": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          }
+        },
+        "train": {
+          "Eagle_office_Elias": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          },
+          "Eagle_office_Elvis": {
+            "finite": 2183,
+            "finite_fraction": 0.9995421245421245,
+            "total": 2184
+          },
+          "Eagle_office_Flossie": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          },
+          "Eagle_office_Francis": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          }
+        },
+        "val": {
+          "Eagle_office_Elias": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Elvis": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Flossie": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Francis": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          }
+        }
+      },
+      "fit_mean": [
+        86.92935943603516,
+        44.704078674316406,
+        102.63790893554688,
+        339.82098388671875
+      ],
+      "fit_std": [
+        23.861127853393555,
+        15.780457496643066,
+        86.66780090332031,
+        33.720741271972656
+      ],
+      "fit_median": [
+        89.75279998779297,
+        49.0,
+        135.875,
+        335.0
+      ],
+      "context_fallback_median": [
+        89.11170196533203,
+        53.0,
+        143.4375,
+        357.0
+      ]
+    },
+    "jena": {
+      "dataset": "jena",
+      "panel": "jena",
+      "fit_data": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_fit.npz",
+        "sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3"
+      },
+      "holdout_data": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_holdout.npz",
+        "sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539"
+      },
+      "fit_data_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_fit.npz",
+      "holdout_data_path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\prepared\\jena_holdout.npz",
+      "fit_data_sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+      "holdout_data_sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+      "source": {
+        "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+        "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+        "files": [
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2023a.csv",
+            "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+            "bytes": 5473114
+          },
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023b.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2023b.csv",
+            "sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318",
+            "bytes": 5594494
+          }
+        ]
+      },
+      "provenance": {
+        "source_url": "https://www.bgc-jena.mpg.de/wetter/",
+        "download_url": "local files data/jena_mpi_roof/mpi_roof_2023a.csv and mpi_roof_2023b.csv",
+        "citation": "Max Planck Institute for Biogeochemistry Jena roof weather observations.",
+        "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+        "parser": "latin1 csv.DictReader over 2023a+2023b; date format %d.%m.%Y %H:%M:%S; top-of-hour rows only",
+        "source_notes": [
+          "Four-channel order follows the previous Jena parser's first four numeric variables.",
+          "First two columns are scored targets; next two are context-only covariates masked from target loss/scoring.",
+          "Jena 2024 was previously exposed; this is a nonoverlapping 2023 period in the same source family."
+        ],
+        "previous_exposure": {
+          "proposed_eval": {
+            "start": "2023-10-12T00:00:00",
+            "end_exclusive": "2024-01-01T00:00:00"
+          },
+          "known_previous_evaluations": [
+            {
+              "study": "peft_adaptation_scope_v1",
+              "source": "runs/peft_adaptation_scope_v1/prepared/manifest.json",
+              "start": "2024-09-07T00:00:00",
+              "end_exclusive": "2025-01-01T00:00:00",
+              "note": "Jena 2024 was previously exposed; Jena 2023 is a different period in the same source family.",
+              "overlaps_proposed_eval": false
+            }
+          ],
+          "any_known_eval_overlap": false,
+          "freshness_claim_allowed": false,
+          "recommended_wording": "nonoverlapping evaluation block from an already inspected local source family; FM pretraining overlap unknown"
+        }
+      },
+      "start": "2023-05-04T00:00:00",
+      "end_exclusive": "2024-01-01T00:00:00",
+      "boundaries": {
+        "precontext": [
+          "2023-05-04T00:00:00",
+          "2023-05-18T00:00:00"
+        ],
+        "train": [
+          "2023-05-18T00:00:00",
+          "2023-08-17T00:00:00"
+        ],
+        "embargo_train_val": [
+          "2023-08-17T00:00:00",
+          "2023-08-19T00:00:00"
+        ],
+        "val": [
+          "2023-08-19T00:00:00",
+          "2023-09-19T00:00:00"
+        ],
+        "embargo_val_cal": [
+          "2023-09-19T00:00:00",
+          "2023-09-21T00:00:00"
+        ],
+        "cal": [
+          "2023-09-21T00:00:00",
+          "2023-10-12T00:00:00"
+        ],
+        "eval": [
+          "2023-10-12T00:00:00",
+          "2024-01-01T00:00:00"
+        ]
+      },
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "channels": [
+        "p (mbar)",
+        "T (degC)",
+        "Tpot (K)",
+        "Tdew (degC)"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "target_qc": {
+        "train": {
+          "p (mbar)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "p (mbar)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          }
+        },
+        "train": {
+          "p (mbar)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_train_val": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          }
+        }
+      },
+      "fit_mean": [
+        989.37353515625,
+        18.516172409057617,
+        292.5621643066406,
+        11.328768730163574
+      ],
+      "fit_std": [
+        5.573361873626709,
+        5.173470497131348,
+        5.308923721313477,
+        4.0583319664001465
+      ],
+      "fit_median": [
+        989.9949951171875,
+        18.28499984741211,
+        292.4599914550781,
+        11.329999923706055
+      ],
+      "context_fallback_median": [
+        991.1400146484375,
+        12.905000686645508,
+        286.8349914550781,
+        7.845000267028809
+      ]
+    }
+  },
+  "panels": {
+    "bdg2": {
+      "panel": "bdg2",
+      "dataset": "bdg2",
+      "fit_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz",
+      "holdout_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz",
+      "fit_data_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz",
+      "holdout_data_path": "runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz",
+      "fit_sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "holdout_sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+      "fit_data_sha256": "2981b29bcb340cd89c13ddd5313e884e0213bf2cd5714614acc775f5786b0b20",
+      "holdout_data_sha256": "7469858350fc3bd294ad9fec6df8f930ea26b48d63b73e774ef54540dd01eb81",
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "origin_counts": {
+        "cal": 20,
+        "eval": 80,
+        "train": 90,
+        "val": 30
+      },
+      "boundary_indices": {
+        "cal": [
+          3360,
+          3864
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "eval": [
+          3864,
+          5808
+        ],
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "val": [
+          2568,
+          3312
+        ]
+      },
+      "target_qc": {
+        "cal": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 960,
+            "valid": 960
+          }
+        },
+        "eval": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 3840,
+            "valid": 3840
+          }
+        },
+        "train": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4320
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 0.999537037037037,
+            "pass_min_70pct": true,
+            "total": 4320,
+            "valid": 4318
+          }
+        },
+        "val": {
+          "Eagle_office_Elias": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          },
+          "Eagle_office_Elvis": {
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true,
+            "total": 1440,
+            "valid": 1440
+          }
+        }
+      },
+      "row_qc": {
+        "cal": {
+          "Eagle_office_Elias": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Elvis": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Flossie": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          },
+          "Eagle_office_Francis": {
+            "finite": 504,
+            "finite_fraction": 1.0,
+            "total": 504
+          }
+        },
+        "embargo_train_val": {
+          "Eagle_office_Elias": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Elvis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Flossie": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Francis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          }
+        },
+        "embargo_val_cal": {
+          "Eagle_office_Elias": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Elvis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Flossie": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          },
+          "Eagle_office_Francis": {
+            "finite": 48,
+            "finite_fraction": 1.0,
+            "total": 48
+          }
+        },
+        "eval": {
+          "Eagle_office_Elias": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Elvis": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Flossie": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          },
+          "Eagle_office_Francis": {
+            "finite": 1944,
+            "finite_fraction": 1.0,
+            "total": 1944
+          }
+        },
+        "precontext": {
+          "Eagle_office_Elias": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Elvis": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Flossie": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          },
+          "Eagle_office_Francis": {
+            "finite": 336,
+            "finite_fraction": 1.0,
+            "total": 336
+          }
+        },
+        "train": {
+          "Eagle_office_Elias": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          },
+          "Eagle_office_Elvis": {
+            "finite": 2183,
+            "finite_fraction": 0.9995421245421245,
+            "total": 2184
+          },
+          "Eagle_office_Flossie": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          },
+          "Eagle_office_Francis": {
+            "finite": 2184,
+            "finite_fraction": 1.0,
+            "total": 2184
+          }
+        },
+        "val": {
+          "Eagle_office_Elias": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Elvis": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Flossie": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          },
+          "Eagle_office_Francis": {
+            "finite": 744,
+            "finite_fraction": 1.0,
+            "total": 744
+          }
+        }
+      },
+      "contract": {
+        "between_split_embargo_hours": {
+          "cal_to_eval": 0,
+          "train_to_val": 48,
+          "val_to_cal": 48
+        },
+        "block_days": 242,
+        "block_end_exclusive": "2018-01-01T00:00:00",
+        "block_start": "2017-05-04T00:00:00",
+        "boundaries": {
+          "cal": [
+            "2017-09-21T00:00:00",
+            "2017-10-12T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2017-08-17T00:00:00",
+            "2017-08-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2017-09-19T00:00:00",
+            "2017-09-21T00:00:00"
+          ],
+          "eval": [
+            "2017-10-12T00:00:00",
+            "2018-01-01T00:00:00"
+          ],
+          "precontext": [
+            "2017-05-04T00:00:00",
+            "2017-05-18T00:00:00"
+          ],
+          "train": [
+            "2017-05-18T00:00:00",
+            "2017-08-17T00:00:00"
+          ],
+          "val": [
+            "2017-08-19T00:00:00",
+            "2017-09-19T00:00:00"
+          ]
+        },
+        "context": 336,
+        "first_origin": {
+          "cal": "2017-09-21T00:00:00",
+          "eval": "2017-10-12T00:00:00",
+          "train": "2017-05-18T00:00:00",
+          "val": "2017-08-19T00:00:00"
+        },
+        "horizon": 48,
+        "last_origin": {
+          "cal": "2017-10-10T00:00:00",
+          "eval": "2017-12-30T00:00:00",
+          "train": "2017-08-15T00:00:00",
+          "val": "2017-09-17T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "cal": "2017-10-12T00:00:00",
+          "eval": "2018-01-01T00:00:00",
+          "train": "2017-08-17T00:00:00",
+          "val": "2017-09-19T00:00:00"
+        },
+        "origin_counts": {
+          "cal": 20,
+          "eval": 80,
+          "train": 90,
+          "val": 30
+        },
+        "origin_stride_hours": 24,
+        "split_duration_days": {
+          "cal": 21,
+          "embargo_train_val": 2,
+          "embargo_val_cal": 2,
+          "eval": 81,
+          "precontext": 14,
+          "train": 91,
+          "val": 31
+        },
+        "target_window_overlap_hours": 24
+      },
+      "source": {
+        "channels": [
+          "Eagle_office_Elias",
+          "Eagle_office_Elvis",
+          "Eagle_office_Flossie",
+          "Eagle_office_Francis"
+        ],
+        "citation": "Building Data Genome Project 2 public building electricity meter data.",
+        "download_url": "https://media.githubusercontent.com/media/buds-lab/building-data-genome-project-2/9b97ccbe90096aff42ed4fd6493bf7ae692d7118/data/meters/raw/electricity.csv",
+        "license_note": "Public research data; verify upstream redistribution terms before packaging raw files.",
+        "loader_metadata": {
+          "hourly_grid": {
+            "duplicate_count": 0,
+            "end": "2017-12-31T23:00:00",
+            "frequency_seconds": 3600,
+            "offstep_count": 0,
+            "rows": 17544,
+            "sort_changes": 0,
+            "start": "2016-01-01T00:00:00"
+          },
+          "missing_by_channel": {
+            "Eagle_office_Elias": 0,
+            "Eagle_office_Elvis": 1,
+            "Eagle_office_Flossie": 0,
+            "Eagle_office_Francis": 0
+          },
+          "parse_failures": 0,
+          "selection_qc": {
+            "qc_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\qc.json",
+            "qc_sha256": "8ada313811b4daf619b251bdca13baab8ae96278609f78592a0557d1cd49384b",
+            "selected_eagle_targets_prefix4": [
+              "Eagle_office_Elias",
+              "Eagle_office_Elvis",
+              "Eagle_office_Flossie",
+              "Eagle_office_Francis"
+            ],
+            "selection_basis": "first four Eagle target_ids from the pre-existing QC selected-target order; no current E performance used",
+            "source_energy_after_2017_06_processed": null
+          },
+          "source_columns_count": 1579,
+          "source_rows": 17544
+        },
+        "panel": "bdg2",
+        "parser": "streaming csv.DictReader over raw electricity.csv; local-naive hourly timestamps; blank cells to NaN",
+        "raw_sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+        "source_files": [
+          {
+            "bytes": 174239039,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/electricity.csv",
+            "sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418"
+          },
+          {
+            "bytes": 272024,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\metadata.csv",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/raw/metadata.csv",
+            "sha256": "992d0b29f24f96ad4332bc4dbb534b7bdd7dd2689aad093f94e93068ecddca02"
+          },
+          {
+            "bytes": 67185,
+            "path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\qc.json",
+            "relative_path": "data_external/bdg2_coarse_supervision_v1/qc.json",
+            "sha256": "8ada313811b4daf619b251bdca13baab8ae96278609f78592a0557d1cd49384b"
+          }
+        ],
+        "source_notes": [
+          "First two fixed Eagle office meters are scored targets.",
+          "Next two fixed Eagle office meters are context-only covariates masked from target loss/scoring.",
+          "Late-2017 E is nonoverlapping with the documented Apr-Jun 2017 fine E, but source/QC were previously exposed."
+        ],
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data_external\\bdg2_coarse_supervision_v1\\raw\\electricity.csv",
+        "source_sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+        "source_url": "https://github.com/buds-lab/building-data-genome-project-2",
+        "target_indices": [
+          0,
+          1
+        ]
+      },
+      "channels": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis",
+        "Eagle_office_Flossie",
+        "Eagle_office_Francis"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "Eagle_office_Elias",
+        "Eagle_office_Elvis"
+      ],
+      "fit_mean": [
+        86.92935943603516,
+        44.704078674316406,
+        102.63790893554688,
+        339.82098388671875
+      ],
+      "fit_std": [
+        23.861127853393555,
+        15.780457496643066,
+        86.66780090332031,
+        33.720741271972656
+      ],
+      "fit_median": [
+        89.75279998779297,
+        49.0,
+        135.875,
+        335.0
+      ],
+      "context_fallback_median": [
+        89.11170196533203,
+        53.0,
+        143.4375,
+        357.0
+      ],
+      "reused_existing_partial_archive": true
+    },
+    "jena": {
+      "panel": "jena",
+      "dataset": "jena",
+      "fit_path": "runs/peft_contribution_freeze_v1/prepared/jena_fit.npz",
+      "holdout_path": "runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz",
+      "fit_data_path": "runs/peft_contribution_freeze_v1/prepared/jena_fit.npz",
+      "holdout_data_path": "runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz",
+      "fit_sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+      "holdout_sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+      "fit_data_sha256": "61a0767a13a2a5d7a8e2754fb0cc578e2e6654b8a38ed10069cfa38d2dd378a3",
+      "holdout_data_sha256": "c2c03ea7ba0c15e59811069411f61eee6a42d0474da795831dc22b38efea1539",
+      "fit_shape": [
+        3312,
+        4
+      ],
+      "holdout_shape": [
+        5808,
+        4
+      ],
+      "origin_counts": {
+        "train": 90,
+        "val": 30,
+        "cal": 20,
+        "eval": 80
+      },
+      "boundary_indices": {
+        "precontext": [
+          0,
+          336
+        ],
+        "train": [
+          336,
+          2520
+        ],
+        "embargo_train_val": [
+          2520,
+          2568
+        ],
+        "val": [
+          2568,
+          3312
+        ],
+        "embargo_val_cal": [
+          3312,
+          3360
+        ],
+        "cal": [
+          3360,
+          3864
+        ],
+        "eval": [
+          3864,
+          5808
+        ]
+      },
+      "target_qc": {
+        "train": {
+          "p (mbar)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 4320,
+            "total": 4320,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 1440,
+            "total": 1440,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 960,
+            "total": 960,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          },
+          "T (degC)": {
+            "valid": 3840,
+            "total": 3840,
+            "finite_fraction": 1.0,
+            "pass_min_70pct": true
+          }
+        }
+      },
+      "row_qc": {
+        "precontext": {
+          "p (mbar)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 336,
+            "total": 336,
+            "finite_fraction": 1.0
+          }
+        },
+        "train": {
+          "p (mbar)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 2184,
+            "total": 2184,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_train_val": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "val": {
+          "p (mbar)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 744,
+            "total": 744,
+            "finite_fraction": 1.0
+          }
+        },
+        "embargo_val_cal": {
+          "p (mbar)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 48,
+            "total": 48,
+            "finite_fraction": 1.0
+          }
+        },
+        "cal": {
+          "p (mbar)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 504,
+            "total": 504,
+            "finite_fraction": 1.0
+          }
+        },
+        "eval": {
+          "p (mbar)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "T (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tpot (K)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          },
+          "Tdew (degC)": {
+            "finite": 1944,
+            "total": 1944,
+            "finite_fraction": 1.0
+          }
+        }
+      },
+      "contract": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2023-05-04T00:00:00",
+        "block_end_exclusive": "2024-01-01T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2023-05-04T00:00:00",
+            "2023-05-18T00:00:00"
+          ],
+          "train": [
+            "2023-05-18T00:00:00",
+            "2023-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2023-08-17T00:00:00",
+            "2023-08-19T00:00:00"
+          ],
+          "val": [
+            "2023-08-19T00:00:00",
+            "2023-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2023-09-19T00:00:00",
+            "2023-09-21T00:00:00"
+          ],
+          "cal": [
+            "2023-09-21T00:00:00",
+            "2023-10-12T00:00:00"
+          ],
+          "eval": [
+            "2023-10-12T00:00:00",
+            "2024-01-01T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2023-05-18T00:00:00",
+          "val": "2023-08-19T00:00:00",
+          "cal": "2023-09-21T00:00:00",
+          "eval": "2023-10-12T00:00:00"
+        },
+        "last_origin": {
+          "train": "2023-08-15T00:00:00",
+          "val": "2023-09-17T00:00:00",
+          "cal": "2023-10-10T00:00:00",
+          "eval": "2023-12-30T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2023-08-17T00:00:00",
+          "val": "2023-09-19T00:00:00",
+          "cal": "2023-10-12T00:00:00",
+          "eval": "2024-01-01T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "source": {
+        "panel": "jena",
+        "source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+        "source_sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+        "raw_source_path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+        "raw_sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+        "source_files": [
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023a.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2023a.csv",
+            "sha256": "adf75b95288d5b21210a481bd28a80407544baeeae3da1790a14cfb43eb6eff1",
+            "bytes": 5473114
+          },
+          {
+            "path": "E:\\CODING\\proj\\mltimeseries\\data\\jena_mpi_roof\\mpi_roof_2023b.csv",
+            "relative_path": "data/jena_mpi_roof/mpi_roof_2023b.csv",
+            "sha256": "df5c36c604ec5c6275d27ec8bcf7e65c26ad0956886463154acd9b67e87d5318",
+            "bytes": 5594494
+          }
+        ],
+        "source_url": "https://www.bgc-jena.mpg.de/wetter/",
+        "download_url": "local files data/jena_mpi_roof/mpi_roof_2023a.csv and mpi_roof_2023b.csv",
+        "citation": "Max Planck Institute for Biogeochemistry Jena roof weather observations.",
+        "license_note": "Local research copy; verify upstream redistribution terms before packaging raw files.",
+        "parser": "latin1 csv.DictReader over 2023a+2023b; date format %d.%m.%Y %H:%M:%S; top-of-hour rows only",
+        "source_notes": [
+          "Four-channel order follows the previous Jena parser's first four numeric variables.",
+          "First two columns are scored targets; next two are context-only covariates masked from target loss/scoring.",
+          "Jena 2024 was previously exposed; this is a nonoverlapping 2023 period in the same source family."
+        ],
+        "channels": [
+          "p (mbar)",
+          "T (degC)",
+          "Tpot (K)",
+          "Tdew (degC)"
+        ],
+        "target_indices": [
+          0,
+          1
+        ],
+        "loader_metadata": {
+          "source_rows": 52700,
+          "top_of_hour_rows": 8760,
+          "parse_failures": 0,
+          "raw_headers_consistent": true,
+          "source_columns": [
+            "Date Time",
+            "p (mbar)",
+            "T (degC)",
+            "Tpot (K)",
+            "Tdew (degC)",
+            "rh (%)",
+            "VPmax (mbar)",
+            "VPact (mbar)",
+            "VPdef (mbar)",
+            "sh (g/kg)",
+            "H2OC (mmol/mol)",
+            "rho (g/m**3)",
+            "wv (m/s)",
+            "max. wv (m/s)",
+            "wd (deg)",
+            "rain (mm)",
+            "raining (s)",
+            "SWDR (W/m²)",
+            "PAR (µmol/m²/s)",
+            "max. PAR (µmol/m²/s)",
+            "Tlog (degC)",
+            "CO2 (ppm)"
+          ],
+          "downsample_rule": "keep only top-of-hour rows; no six-row averaging",
+          "sentinel_rule": "values <= -9999 treated as NaN",
+          "sentinel_count_selected_channels": 0,
+          "duplicate_exact_top_of_hour_rows_removed": 24,
+          "hourly_grid": {
+            "rows": 8760,
+            "start": "2023-01-01T01:00:00",
+            "end": "2024-01-01T00:00:00",
+            "frequency_seconds": 3600,
+            "duplicate_count": 0,
+            "offstep_count": 0,
+            "sort_changes": 0
+          },
+          "missing_by_channel": {
+            "p (mbar)": 0,
+            "T (degC)": 0,
+            "Tpot (K)": 0,
+            "Tdew (degC)": 0
+          }
+        }
+      },
+      "channels": [
+        "p (mbar)",
+        "T (degC)",
+        "Tpot (K)",
+        "Tdew (degC)"
+      ],
+      "target_indices": [
+        0,
+        1
+      ],
+      "target_columns": [
+        "p (mbar)",
+        "T (degC)"
+      ],
+      "fit_mean": [
+        989.37353515625,
+        18.516172409057617,
+        292.5621643066406,
+        11.328768730163574
+      ],
+      "fit_std": [
+        5.573361873626709,
+        5.173470497131348,
+        5.308923721313477,
+        4.0583319664001465
+      ],
+      "fit_median": [
+        989.9949951171875,
+        18.28499984741211,
+        292.4599914550781,
+        11.329999923706055
+      ],
+      "context_fallback_median": [
+        991.1400146484375,
+        12.905000686645508,
+        286.8349914550781,
+        7.845000267028809
+      ]
+    }
+  },
+  "data_contract": {
+    "context": 336,
+    "horizon": 48,
+    "origin_stride_hours": 24,
+    "expected_origin_counts": {
+      "train": 90,
+      "val": 30,
+      "cal": 20,
+      "eval": 80
+    },
+    "fixed_blocks": {
+      "bdg2": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2017-05-04T00:00:00",
+        "block_end_exclusive": "2018-01-01T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2017-05-04T00:00:00",
+            "2017-05-18T00:00:00"
+          ],
+          "train": [
+            "2017-05-18T00:00:00",
+            "2017-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2017-08-17T00:00:00",
+            "2017-08-19T00:00:00"
+          ],
+          "val": [
+            "2017-08-19T00:00:00",
+            "2017-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2017-09-19T00:00:00",
+            "2017-09-21T00:00:00"
+          ],
+          "cal": [
+            "2017-09-21T00:00:00",
+            "2017-10-12T00:00:00"
+          ],
+          "eval": [
+            "2017-10-12T00:00:00",
+            "2018-01-01T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2017-05-18T00:00:00",
+          "val": "2017-08-19T00:00:00",
+          "cal": "2017-09-21T00:00:00",
+          "eval": "2017-10-12T00:00:00"
+        },
+        "last_origin": {
+          "train": "2017-08-15T00:00:00",
+          "val": "2017-09-17T00:00:00",
+          "cal": "2017-10-10T00:00:00",
+          "eval": "2017-12-30T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2017-08-17T00:00:00",
+          "val": "2017-09-19T00:00:00",
+          "cal": "2017-10-12T00:00:00",
+          "eval": "2018-01-01T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      },
+      "jena": {
+        "context": 336,
+        "horizon": 48,
+        "origin_stride_hours": 24,
+        "target_window_overlap_hours": 24,
+        "block_days": 242,
+        "block_start": "2023-05-04T00:00:00",
+        "block_end_exclusive": "2024-01-01T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2023-05-04T00:00:00",
+            "2023-05-18T00:00:00"
+          ],
+          "train": [
+            "2023-05-18T00:00:00",
+            "2023-08-17T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2023-08-17T00:00:00",
+            "2023-08-19T00:00:00"
+          ],
+          "val": [
+            "2023-08-19T00:00:00",
+            "2023-09-19T00:00:00"
+          ],
+          "embargo_val_cal": [
+            "2023-09-19T00:00:00",
+            "2023-09-21T00:00:00"
+          ],
+          "cal": [
+            "2023-09-21T00:00:00",
+            "2023-10-12T00:00:00"
+          ],
+          "eval": [
+            "2023-10-12T00:00:00",
+            "2024-01-01T00:00:00"
+          ]
+        },
+        "split_duration_days": {
+          "precontext": 14,
+          "train": 91,
+          "embargo_train_val": 2,
+          "val": 31,
+          "embargo_val_cal": 2,
+          "cal": 21,
+          "eval": 81
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "cal": 20,
+          "eval": 80
+        },
+        "first_origin": {
+          "train": "2023-05-18T00:00:00",
+          "val": "2023-08-19T00:00:00",
+          "cal": "2023-09-21T00:00:00",
+          "eval": "2023-10-12T00:00:00"
+        },
+        "last_origin": {
+          "train": "2023-08-15T00:00:00",
+          "val": "2023-09-17T00:00:00",
+          "cal": "2023-10-10T00:00:00",
+          "eval": "2023-12-30T00:00:00"
+        },
+        "last_target_end_exclusive": {
+          "train": "2023-08-17T00:00:00",
+          "val": "2023-09-19T00:00:00",
+          "cal": "2023-10-12T00:00:00",
+          "eval": "2024-01-01T00:00:00"
+        },
+        "between_split_embargo_hours": {
+          "train_to_val": 48,
+          "val_to_cal": 48,
+          "cal_to_eval": 0
+        }
+      }
+    },
+    "fit_archives": "train+validation only; physically truncated at validation end; no cal/eval origin arrays",
+    "holdout_archives": "calibration+evaluation origins only; read only after selection is frozen",
+    "score_columns": "target_indices [0,1] only",
+    "missing_policy": "target_values preserve raw NaNs; context_values use precontext-only median fallback and causal forward fill",
+    "fit_statistics": "mean/std/median fit from observed train rows only",
+    "source_freshness": "not wholly unseen; known previous E windows are audited for nonoverlap only"
+  },
+  "resource_gate_before_prepare": {
+    "source": "GlobalMemoryStatusEx",
+    "physical_available_gib": 11.980598449707031,
+    "commit_available_gib": 12.8330078125,
+    "memory_load_percent": 62,
+    "gate": {
+      "physical_available_gib_min": 5.0,
+      "commit_available_gib_min": 6.0,
+      "passed": true
+    }
+  }
+}

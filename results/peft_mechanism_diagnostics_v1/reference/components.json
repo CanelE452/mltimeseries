@@ -1,0 +1,104 @@
+{
+  "bike": {
+    "target_names": [
+      "casual",
+      "registered"
+    ],
+    "additional_gain_by_target_pct_f0": {
+      "casual": 5.7148696768468765,
+      "registered": 2.1920236364978822
+    },
+    "additional_gain_by_quantile_pct_f0": {
+      "0.01": 0.8133077803694795,
+      "0.05": 1.400751592420518,
+      "0.1": 2.0149323363094473,
+      "0.15": 2.635266714996487,
+      "0.2": 3.3454902622371923,
+      "0.25": 3.6857322884909873,
+      "0.3": 4.17859585772939,
+      "0.35": 4.407958872788557,
+      "0.4": 4.9677595250217506,
+      "0.45": 5.199487889247253,
+      "0.5": 5.502580781358796,
+      "0.55": 5.430715618559675,
+      "0.6": 5.56356927066854,
+      "0.65": 5.8101727152083145,
+      "0.7": 5.896881155898101,
+      "0.75": 5.74118463840938,
+      "0.8": 5.335971527316502,
+      "0.85": 4.652608552068219,
+      "0.9": 3.772181698953111,
+      "0.95": 2.3943179997956077,
+      "0.99": 0.27291271227266434
+    },
+    "first24_gain_pct_f0": 2.9993584356201506,
+    "second24_gain_pct_f0": 4.907534877724609,
+    "mean_gain_pct_f0": 3.953446656672379,
+    "largest_benefit_origin": 77,
+    "largest_harm_origin": 9,
+    "gain_without_largest_benefit_origin_pct_f0": 3.036566280868663,
+    "gain_without_largest_harm_origin_pct_f0": 4.449877913568002,
+    "loss_mask_all_valid": true,
+    "sources_sha256": {
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\F0\\Epredictions.npz": "c9b36ab41c285da3cf9bcc314dc6ce7a8c234947c954854812ab52fa0abc8551",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\HEAD_ONLY_seed_20000\\Epredictions.npz": "cfa15bcb624349080c3583595fe8a73d6b34cc2e3ab2975bfc5ba1d32e1fd3c9",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\HEAD_ONLY_seed_20001\\Epredictions.npz": "4a6f383c7dd009d8d1277f9add55878f61cf8c2262991ef6d40578fbf9755f08",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\HEAD_ONLY_seed_20002\\Epredictions.npz": "c9b36ab41c285da3cf9bcc314dc6ce7a8c234947c954854812ab52fa0abc8551",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\LORA_seed_20000\\Epredictions.npz": "b0419048b0759f542177e91c345f31f12e1d13f1a2dffc4e98110cca11b3d7c0",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\LORA_seed_20001\\Epredictions.npz": "98c4318f921a49be7be594bda81ce0e0273d3efa7706889436fb7fc4a1f3ddf0",
+      "runs\\peft_fullft_reference_v3\\forecasts\\bike\\LORA_seed_20002\\Epredictions.npz": "66a250e2e21871dfb8abc0b2d984bf4b8742d18e11220d97b867aac9c6bb35a5"
+    },
+    "limits": "Component profiles and deletion diagnostics are descriptive; omitted origins are not a new primary evaluation."
+  },
+  "household": {
+    "target_names": [
+      "Global_active_power",
+      "Global_reactive_power"
+    ],
+    "additional_gain_by_target_pct_f0": {
+      "Global_active_power": 0.9594008372148859,
+      "Global_reactive_power": -0.7174421281950453
+    },
+    "additional_gain_by_quantile_pct_f0": {
+      "0.01": 0.5112868175472234,
+      "0.05": 0.6871561227808882,
+      "0.1": 0.8568806226111987,
+      "0.15": 1.0051845605810432,
+      "0.2": 0.6818491734380288,
+      "0.25": 0.35479675457649146,
+      "0.3": -0.13015771539024226,
+      "0.35": -0.3339221420546068,
+      "0.4": -0.31544684705852827,
+      "0.45": -0.37103278459637157,
+      "0.5": -0.30931608175691966,
+      "0.55": -0.1826269584487827,
+      "0.6": -0.08980745597475444,
+      "0.65": -0.0675318351830685,
+      "0.7": -0.13073290536989343,
+      "0.75": 0.043127888975615404,
+      "0.8": 0.07578373102871101,
+      "0.85": 0.09346074775657483,
+      "0.9": 0.46025973168989054,
+      "0.95": -0.12153885707720907,
+      "0.99": -0.17710612336696585
+    },
+    "first24_gain_pct_f0": 0.21597824589527007,
+    "second24_gain_pct_f0": 0.025980463124570075,
+    "mean_gain_pct_f0": 0.12097935450992,
+    "largest_benefit_origin": 16,
+    "largest_harm_origin": 18,
+    "gain_without_largest_benefit_origin_pct_f0": -0.016586408694574457,
+    "gain_without_largest_harm_origin_pct_f0": 0.37917206931359587,
+    "loss_mask_all_valid": true,
+    "sources_sha256": {
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\F0\\Epredictions.npz": "9db47eae8d64d58342663b20488b498f9627e227429c0ecd0d718c1db708523e",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\HEAD_ONLY_seed_20000\\Epredictions.npz": "c09aad60a0c9716a41af9d301fd919fe0153105d6c4a41c97b8387b9593260c7",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\HEAD_ONLY_seed_20001\\Epredictions.npz": "ac901cbacae2d59adf4035d4313de7192a20a029ae6d815ebe647a18463cf6c9",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\HEAD_ONLY_seed_20002\\Epredictions.npz": "d857a3f4467f95631596780c91fbaf9cccd5d093a4197cff874873600e980ee5",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\LORA_seed_20000\\Epredictions.npz": "560dbc3769e7c6c632eb2e1a8be029ffaf28e9cf4ea952527f5c0d31cf20436d",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\LORA_seed_20001\\Epredictions.npz": "3c04b74118e88b9dfb1fce3e07fcc4fd1aa346e2bd148db0912a6eefd6e7bab9",
+      "runs\\peft_fullft_reference_v3\\forecasts\\household\\LORA_seed_20002\\Epredictions.npz": "c8ede7c86080bb24a4e66f339aeaabe3934c46019a0868b3afc466321de3c7e9"
+    },
+    "limits": "Component profiles and deletion diagnostics are descriptive; omitted origins are not a new primary evaluation."
+  }
+}

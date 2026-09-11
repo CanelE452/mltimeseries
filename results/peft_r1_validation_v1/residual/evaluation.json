@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "dataset": "bike",
+      "method": "BIAS",
+      "lambda": null,
+      "f0_score": 0.1837970583922437,
+      "score": 0.18288273118016302,
+      "gain_pct_f0": 0.4974656395911415,
+      "selection_sha256": "7985c09d27595d833df8427abb052bc77da2915f28335d5b886acaad412283b2",
+      "previously_exposed_E": true
+    },
+    {
+      "dataset": "household",
+      "method": "ZERO",
+      "lambda": null,
+      "f0_score": 0.2979875498818401,
+      "score": 0.2979875498818401,
+      "gain_pct_f0": 0.0,
+      "selection_sha256": "7985c09d27595d833df8427abb052bc77da2915f28335d5b886acaad412283b2",
+      "previously_exposed_E": true
+    }
+  ],
+  "completed": true
+}

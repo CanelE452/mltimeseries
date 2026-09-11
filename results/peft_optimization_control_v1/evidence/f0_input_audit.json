@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "utc": "2026-09-10T10:11:10.474711+00:00",
+  "hashes": {
+    "runs\\peft_fullft_reference_v3\\forecasts\\bike\\F0\\Epredictions.npz": "c9b36ab41c285da3cf9bcc314dc6ce7a8c234947c954854812ab52fa0abc8551",
+    "runs\\peft_fullft_reference_v3\\forecasts\\bike\\F0\\result.json": "5ac9b025033dc0961b824423fafbfdc862b3c6403fa362ed25ad133ace44261f",
+    "runs\\peft_fullft_reference_v3\\forecasts\\household\\F0\\Epredictions.npz": "9db47eae8d64d58342663b20488b498f9627e227429c0ecd0d718c1db708523e",
+    "runs\\peft_fullft_reference_v3\\forecasts\\household\\F0\\result.json": "72503dbc5e4ae81ee945aec545a8cf1aecca48c6a31493fdac355b3b994f8e91"
+  },
+  "new_selection_exists": false
+}

@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "decision": "STOP_CURRENT_DESIGN_AT_PHASE0",
+  "gpu_fits": 0,
+  "lora_performance_measured": false,
+  "recomputed": [
+    {
+      "condition": "markov_forward",
+      "seed": 36000,
+      "population_mse": 0.4616105022141361,
+      "finite_sample_D_mse": 0.480344049422133,
+      "max_possible_population_improvement_pct": 0.34888768916894186
+    },
+    {
+      "condition": "markov_forward",
+      "seed": 36001,
+      "population_mse": 0.46022191648652144,
+      "finite_sample_D_mse": 0.49155463114086023,
+      "max_possible_population_improvement_pct": 0.048219452088593684
+    },
+    {
+      "condition": "markov_reverse",
+      "seed": 36000,
+      "population_mse": 0.4608073350448598,
+      "finite_sample_D_mse": 0.4607037994573655,
+      "max_possible_population_improvement_pct": 0.17520012887407566
+    },
+    {
+      "condition": "markov_reverse",
+      "seed": 36001,
+      "population_mse": 0.4617169252070446,
+      "finite_sample_D_mse": 0.45503355790169514,
+      "max_possible_population_improvement_pct": 0.3718566752290209
+    }
+  ],
+  "unique_paths_checked": 2688,
+  "predictor_csv_rows_checked": 108,
+  "old_protected_files_unchanged": 59,
+  "linked_artifacts_checked": 11,
+  "data_summary_sha256": "f61350d74869d4bc8b6aeb65e255eaa0a1c24e4107e685c9e0a9e04ab88eca2b",
+  "independent_audit_sha256": "95b4fddbf6570d7111160ef4a6eea75f5aaa21f2d9ae8eade2c9116cea052b40"
+}

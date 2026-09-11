@@ -1,0 +1,209 @@
+{
+  "completed": true,
+  "effects": {
+    "bike": {
+      "FULL90": {
+        "by_seed": [
+          3.969590715212279,
+          5.667710568288891
+        ],
+        "mean": 4.818650641750585
+      },
+      "SPREAD30": {
+        "by_seed": [
+          1.8415265404425258,
+          2.3187420343938965
+        ],
+        "mean": 2.080134287418211
+      },
+      "RECENT30": {
+        "by_seed": [
+          0.6828130808562602,
+          0.9467113353940942
+        ],
+        "mean": 0.8147622081251773
+      }
+    },
+    "household": {
+      "FULL90": {
+        "by_seed": [
+          0.8886119903061164,
+          0.8923545459867945
+        ],
+        "mean": 0.8904832681464554
+      },
+      "SPREAD30": {
+        "by_seed": [
+          1.1750419878388128,
+          1.722292264872429
+        ],
+        "mean": 1.448667126355621
+      },
+      "RECENT30": {
+        "by_seed": [
+          1.0672320364109291,
+          1.1560600049964664
+        ],
+        "mean": 1.1116460207036978
+      }
+    }
+  },
+  "rules": {
+    "ALWAYS_ALL": {
+      "by_seed": [
+        {
+          "seed": 26000,
+          "macro_regret_pct_F0": 0.0,
+          "source_regret_pct_F0": {
+            "bike": 0.0,
+            "household": 0.0
+          },
+          "fit_seconds": 475.61,
+          "savings_percent": 0.0,
+          "quality_passed": true,
+          "cost_passed": false,
+          "passed": false
+        },
+        {
+          "seed": 26001,
+          "macro_regret_pct_F0": 0.0,
+          "source_regret_pct_F0": {
+            "bike": 0.0,
+            "household": 0.0
+          },
+          "fit_seconds": 481.72,
+          "savings_percent": 0.0,
+          "quality_passed": true,
+          "cost_passed": false,
+          "passed": false
+        }
+      ],
+      "quality_both": true,
+      "passed_both": false
+    },
+    "ALWAYS_MLP": {
+      "by_seed": [
+        {
+          "seed": 26000,
+          "macro_regret_pct_F0": 1.6041360585111537,
+          "source_regret_pct_F0": {
+            "bike": 2.1646434455036885,
+            "household": 1.0436286715186194
+          },
+          "fit_seconds": 213.71799999999996,
+          "savings_percent": 55.06444355669562,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        },
+        {
+          "seed": 26001,
+          "macro_regret_pct_F0": 2.117311792322095,
+          "source_regret_pct_F0": {
+            "bike": 2.9777213126922937,
+            "household": 1.2569022719518967
+          },
+          "fit_seconds": 213.751,
+          "savings_percent": 55.6275429710205,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        }
+      ],
+      "quality_both": false,
+      "passed_both": false
+    },
+    "COUNT": {
+      "by_seed": [
+        {
+          "seed": 26000,
+          "macro_regret_pct_F0": 0.7944356075914213,
+          "source_regret_pct_F0": {
+            "bike": 0.8414465404329287,
+            "household": 0.7474246747499139
+          },
+          "fit_seconds": 367.92300000000006,
+          "savings_percent": 22.641870440066437,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        },
+        {
+          "seed": 26001,
+          "macro_regret_pct_F0": 1.023967606609481,
+          "source_regret_pct_F0": {
+            "bike": 1.088484456595997,
+            "household": 0.9594507566229652
+          },
+          "fit_seconds": 368.07900000000006,
+          "savings_percent": 23.59067508095989,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        }
+      ],
+      "quality_both": false,
+      "passed_both": false
+    },
+    "OVERLAP": {
+      "by_seed": [
+        {
+          "seed": 26000,
+          "macro_regret_pct_F0": 0.5027614213802231,
+          "source_regret_pct_F0": {
+            "bike": 0.6138421801475086,
+            "household": 0.3916806626129376
+          },
+          "fit_seconds": 420.736,
+          "savings_percent": 11.537604339690088,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        },
+        {
+          "seed": 26001,
+          "macro_regret_pct_F0": 0.6735057165443875,
+          "source_regret_pct_F0": {
+            "bike": 0.7729140114646321,
+            "household": 0.574097421624143
+          },
+          "fit_seconds": 420.876,
+          "savings_percent": 12.630573777298027,
+          "quality_passed": false,
+          "cost_passed": true,
+          "passed": false
+        }
+      ],
+      "quality_both": false,
+      "passed_both": false
+    }
+  },
+  "overlap_gate_passed": false,
+  "cheaper_quality_passing_controls": [],
+  "overlap_unique_practical_support": false,
+  "f0_scores": {
+    "bike": 0.168012163988169,
+    "household": 0.41873548676005384
+  },
+  "independent_score_max_error": 2.220446049250313e-16,
+  "fits_verified": 24,
+  "forecasts_verified": 26,
+  "resources": {
+    "guard_jobs": 51,
+    "minimum_ram_gib": 11.54947280883789,
+    "minimum_commit_gib": 10.684700012207031,
+    "maximum_gpu_mib": 2149.0,
+    "maximum_temperature_c": 51.0
+  },
+  "campaign_fit_seconds": 1384.799,
+  "campaign_invocation_seconds": 2145.906606999997,
+  "new_E_only": true,
+  "new_sources": false,
+  "limitations": [
+    "Two familiar sources, one new E period each; two seeds are not independent datasets.",
+    "Overlap rule is a development heuristic and may encode the sampling condition; no causal identification.",
+    "Same head but unequal total capacity; fixed development LR may not be future optimal.",
+    "Time savings are retrospective counterfactuals, not realized research-campaign savings.",
+    "Practical thresholds are not statistical noninferiority tests; pretraining overlap unknown."
+  ]
+}

@@ -1,0 +1,33 @@
+# Exact parameter-count head control and short adaptation response
+
+User authorized both measurements on 2026-09-10. Aim: distinguish extra trainable parameter count from backbone adaptation, and measure whether short measured adaptation responses track final additional LoRA utility. This is diagnostic research on two already exposed E periods, not an independent test or a new PEFT method.
+
+## Design choices and prior work
+
+Keep Chronos-2, native pinball loss, data splits, causal preprocessing and existing guards to change only the head comparison and observation budget. LoRA is a low-rank update to frozen pretrained weights; parameter efficiency alone does not equate representational capacity ([LoRA](https://arxiv.org/abs/2106.09685)). Frozen-head probing and full adaptation can behave differently under distribution shift ([Kumar et al., ICLR 2022](https://openreview.net/pdf?id=UYneFzXSJWh)); that result motivates controls, not an assertion that our time-series mechanism is the same. Early learning responses/resource allocation are established ideas ([Hyperband, JMLR](https://jmlr.org/papers/v18/16-558.html)); a short probe alone is not novelty.
+
+Alternatives: retain a narrow head (fails to control count); use width1600 (misses target by613 parameters); exact-count wide ReLU head (chosen). A gradient-only zero-update diagnostic could avoid probe training, but its relation to selected future quantile loss is unverified; do not introduce that additional mechanism now. No filler parameters or inactive learnable padding.
+
+## A: exact trainable count, not equal function class or FLOPs
+
+LoRA+MLP has1,768,949 trainable parameters. WIDE uses768→1601→336 with ReLU,1109 trainable hidden biases and492 fixed-zero hidden biases, plus336 output biases:768*1601+1109+1601*336+336=1,768,949. All listed parameters participate in the forward map. Output layer starts at zero so initial prediction equals native F0. Original backbone remains frozen. This is a wider ReLU head with a partial hidden-bias constraint, not a proof that two architectures have equal expressive capacity. Track real execution cost.
+
+- P0: prior optimization-control data/seeds25000/25001. WIDE2LR(1e-4,1e-5)×2sources×3conditions×2seeds=24fits. Choose LR by mean best V across seeds, ties favor1e-5. Same six EXPOSURE checkpoint candidates as original ALL comparison.
+- P1: prior overlap-transfer data/seeds26000/26001. Transfer WIDE's P0-selected LR, no P1 LR grid:12fits. ALL comparison uses its previously selected P0 recipe, already transferred in P1.
+- FULL90 max180 steps/checks[0,15,30,60,120,180]; SPREAD30/RECENT30 max60/checks[0,5,10,20,40,60]. Batch8/micro4, identical sampled indices within condition/seed. All WIDE selections sealed before24 new WIDE E forecasts. Reuse and hash-audit24 previously selected ALL E forecasts. Initial head weights differ by architecture; only initial F0 output and sample stream are matched.
+- Describe G=100*(WIDE score−ALL score)/F0, per source/condition/seed and period. Prespecified practical support for remaining backbone utility: in P1 FULL90, both seeds positive and mean>=1%F0 on Bike; report Household and all smaller-data cells regardless. It is a continuation threshold, not a statistical test. Failure weakens this particular head/backbone claim, not all PEFT. One wide-head family, no repeated architecture search this turn.
+
+## B: short raw response, fixed endpoints and actual clock
+
+- Probe budgets1/2 are1/12 and1/6 of the full update cap: FULL90 steps15/30; subsets5/10. These budget indices differ from data periods P0/P1. Use raw V score at the fixed step, not best-so-far V. V before/after two budgets and F0 are saved as predictions.
+- Reuse WIDE prefixes from A: P0 uses fixed r0=1e-4 to avoid late-V LR-selection leakage; P1 uses only the P0-transferred WIDE recipe. Run24 actual short ALL trajectories (2periods×2sources×3conditions×2seeds), with fixed1e-4, exactly the original selected ALL recipe. End at second probe budget. Compare raw checkpoint V scores against original ALL trajectories; require exact trajectory score replay within1e-10.
+- Probe g_k=100*(WIDE V loss at k−ALL V loss at k)/F0 V loss. Compare descriptively with selected final G_E above. Report both endpoints, sign agreement, seed disagreement, rank correlation on six cell means per period, and scale error. No trained threshold/regressor, no E-based endpoint choice, no claim of calibrated utility prediction.
+- V stability: first14 origins versus last14 (indices0:14 and16:30), dropping middle two origins. Target intervals are disjoint; shared contexts/serial dependence remain, so these are not independent folds or confidence intervals. Score each half separately using the same train scales.
+- Log UTC after every checkpoint prediction/export. Prefix wall time is checkpoint UTC minus guard start; includes imports/model loading/F0 V and elapsed earlier checks. Whole fit cost is guard elapsed, excluding admission. Actual short trajectory total also recorded. Do not equate1/12 updates with1/12 wall time.
+- Cost comparison only for P1: original P0 ALL trajectories had extra checks and subset updates beyond the EXPOSURE cap. For an illustrative fixed rule choose ALL iff raw g_k>0 (otherwise WIDE). An optimistic reuse cost is full WIDE+ALL prefix if choosing WIDE, full ALL+WIDE prefix if choosing ALL. It excludes pause/resume/switch overhead and is a lower-bound counterfactual, not a realized selector. Report actual measurement campaign cost separately. Practical quality/cost yardstick: each seed macro regret<=0.25%F0, each source mean<=0.5%F0, savings>5%; do not tune to pass it.
+
+## Execution and limits
+
+36 WIDE fits +24 ALL short fits +24 WIDE E forecasts +1 WIDE3step smoke =85 GPU guard jobs. Reuse existing prepared data; no new E period is opened. Estimated45–60 minutes plus preparation/admission, refine from observed times. CPU analysis threads2; GPU serial. Admission RAM>=5GiB/commit>=13GiB twice; run guard RAM5/commit6GiB/GPU10500MiB/temp85C/900s unchanged. Preserve failures. No OS/GPU/security changes, global cleanup, commits or pushes.
+
+Original code/results immutable; new code/run/results separate. Source/contract/checkpoint hashes, F0 identity, trainable count, frozen weights, active head tensor updates and exact V replay required before claims. Two familiar sources and two seeds per period, already exposed E, unknown foundation pretraining overlap. Completion means both requested measurements and honest analysis, not a paper-ready method. Stop this turn after the fixed study; further source/probe/architecture search needs its own protocol.

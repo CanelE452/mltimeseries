@@ -1,0 +1,93 @@
+{
+  "finished_utc": "2026-09-11T07:07:41.808872+00:00",
+  "seconds": 0.16801370000757743,
+  "source_sha256": "ea8fd97091b7da637083cc6ebfc94317d6782e46895cadb7f73694f9f2a66939",
+  "plan_sha256_at_execution": "71ba9837ace86bb54e4d3792d7e7a2c4f2c9d10c25d4938f4fec9a6c92a20f04",
+  "independent_population_audit_json": "E:\\CODING\\proj\\mltimeseries\\results\\peft_dependence_screen_v1\\independent_gate_audit\\audit.json",
+  "domain": "time-series forecasting PEFT design gate",
+  "downstream_decision": "whether to proceed to GPU Phase 1 and method development",
+  "quality_bar": "publication-oriented pretraining/fine-tuning design screen",
+  "splits": {
+    "train": 64,
+    "val": 32,
+    "devtest": 128
+  },
+  "length": 512,
+  "context": 128,
+  "origins": [
+    128,
+    153,
+    179,
+    204,
+    230,
+    255,
+    281,
+    306,
+    332,
+    357,
+    383,
+    408,
+    434,
+    459,
+    485,
+    511
+  ],
+  "seeds": [
+    36000,
+    36001
+  ],
+  "population_checks": {
+    "stationary_uniform_error": 0.0,
+    "reflection_conjugacy_error": 0.0,
+    "observation_sign_flip_error": 0.0,
+    "conditional_mean_sign_conjugacy_error": 0.0,
+    "acf_difference_h1_to_128": 5.551115123125783e-17,
+    "risk_difference_h1_to_128": 2.220446049250313e-16,
+    "psd_difference_257_frequencies": 2.220446049250313e-16,
+    "risk_h1_forward": 0.4600000000000001,
+    "risk_h1_reverse": 0.4600000000000001,
+    "quadratic_forward_intercept_x_x2": [
+      0.6,
+      -0.19999999999999996,
+      -0.8999999999999999
+    ],
+    "quadratic_reverse_intercept_x_x2": [
+      -0.5999999999999999,
+      -0.19999999999999996,
+      0.8999999999999999
+    ],
+    "conditional_mean_forward": [
+      -0.1,
+      0.6,
+      -0.49999999999999994
+    ],
+    "conditional_mean_reverse": [
+      0.49999999999999994,
+      -0.6,
+      0.1
+    ]
+  },
+  "predictor_summary": {
+    "forward_reverse_full_transition_population_excess_pct_max": 0.032991707889062916,
+    "forward_reverse_full_transition_population_excess_pct_mean": 0.011972142301402977,
+    "forward_reverse_origin_transition_population_excess_pct_max": 0.3612393224314392,
+    "forward_reverse_origin_transition_population_excess_pct_mean": 0.2456598993403336,
+    "forward_reverse_quadratic_population_excess_pct_max": 0.3612393224315058,
+    "forward_reverse_quadratic_population_excess_pct_mean": 0.2456598993403225
+  },
+  "old_real_data_support": {
+    "source": "E:\\CODING\\proj\\covariate-trust-pilot\\_docs\\reference\\rho_definition_synthetic_vs_real.md",
+    "readable": true,
+    "recorded_interval_support": "M5 and Favorita had zero series with |rho_I| >= 0.8 in the referenced train descriptors.",
+    "recorded_magnitude_support": "Magnitude persistence had thin support; this does not rescue the interval/direction contrast."
+  },
+  "overall_decision": "STOP_BEFORE_GPU_PHASE1",
+  "reason_codes": [
+    "FORWARD_REVERSE_IS_EXACT_SIGN_RELABELING",
+    "LATEST_STATE_SUFFICIENT_FOR_ONE_STEP_ORACLE",
+    "TRAIN_ONLY_TRANSITION_CONTROL_NEAR_ORACLE",
+    "OLD_REAL_RECORDS_DO_NOT_SUPPORT_STRONG_INTERVAL_DEPENDENCE"
+  ],
+  "gpu_started": false,
+  "lora_or_adapter_result": "NOT_MEASURED"
+}

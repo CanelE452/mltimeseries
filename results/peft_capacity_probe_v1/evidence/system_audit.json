@@ -1,0 +1,19 @@
+{
+  "start_utc": "2026-09-10T13:34:11.0000000Z",
+  "end_utc": "2026-09-10T14:23:32.4699837Z",
+  "system_ids": [
+    41,
+    4101,
+    153,
+    2004,
+    6008
+  ],
+  "application_ids": [
+    1000
+  ],
+  "events": [],
+  "query_errors": [],
+  "study_training_processes": [],
+  "guard_lock_present": false,
+  "scope": "Target event IDs in observed interval; not proof of past crash root cause resolution"
+}

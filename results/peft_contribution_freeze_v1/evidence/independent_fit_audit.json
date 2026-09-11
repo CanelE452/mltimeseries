@@ -1,0 +1,2969 @@
+{
+  "completed": true,
+  "mode": "fit",
+  "created_utc": "2026-09-10T20:23:52+00:00",
+  "contract_status": {
+    "path": "E:\\CODING\\proj\\mltimeseries\\runs\\peft_contribution_freeze_v1\\independent_audit_contract.json",
+    "sha256": "ae359ccbed039475193ee3919eb07ff4454bf324e7bf88f171059601dccfafee",
+    "checks": {
+      "independent_audit_py": true,
+      "run_contract": true,
+      "plan": true,
+      "input:experiments/peft_contribution_freeze_v1/fit.py": true,
+      "input:experiments/peft_contribution_freeze_v1/run.py": true,
+      "input:experiments/peft_contribution_freeze_v1/panel.py": true,
+      "input:experiments/peft_contribution_freeze_v1/f0.py": true,
+      "input:experiments/peft_contribution_freeze_v1/policy.py": true,
+      "input:experiments/peft_contribution_freeze_v1/prepare.py": true,
+      "input:experiments/peft_contribution_freeze_v1/PURPOSE.md": true,
+      "input:experiments/peft_contribution_freeze_v1/PURPOSE_DATA.md": true,
+      "input:runs/peft_contribution_freeze_v1/prepared/summary.json": true,
+      "input:runs/peft_contribution_freeze_v1/data_audit.json": true,
+      "input:runs/peft_contribution_freeze_v1/preparation_failures.json": true,
+      "input:runs/peft_contribution_freeze_v1/prepared/bdg2_fit.npz": true,
+      "input:runs/peft_contribution_freeze_v1/prepared/bdg2_holdout.npz": true,
+      "input:runs/peft_contribution_freeze_v1/prepared/jena_fit.npz": true,
+      "input:runs/peft_contribution_freeze_v1/prepared/jena_holdout.npz": true
+    }
+  },
+  "counts": {
+    "fit_jobs": 48,
+    "smoke_jobs": 1
+  },
+  "max_abs_errors": {
+    "point_score": 1.6653345369377348e-16,
+    "contribution": 8.89843754237063e-14,
+    "best_selection": 1.1102230246251565e-16,
+    "smoke_point_score": 1.1102230246251565e-16,
+    "smoke_contribution": 1.2809198146612744e-14
+  },
+  "frozen_backbone_hash_unique_count": 1,
+  "frozen_backbone_hashes": [
+    "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836"
+  ],
+  "snapshot_name_counts": [
+    196
+  ],
+  "lora_snapshot_name_counts": [
+    192
+  ],
+  "trainable_counts": [
+    1768949
+  ],
+  "initial_hash_groups_verified": true,
+  "same_freeze_fixed_vs_contrib_checks": [
+    {
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "seed": 27000,
+      "frozen_step": 60,
+      "common_point_steps": [
+        0,
+        15,
+        30,
+        60,
+        120,
+        180
+      ],
+      "on_prediction_trajectory_identical": true,
+      "selected_val_prediction_identical": true
+    },
+    {
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "seed": 27000,
+      "frozen_step": 20,
+      "common_point_steps": [
+        0,
+        5,
+        10,
+        20,
+        40,
+        60
+      ],
+      "on_prediction_trajectory_identical": true,
+      "selected_val_prediction_identical": true
+    }
+  ],
+  "rows": [
+    {
+      "key": "fits/bdg2/FULL90/FULL/s27000",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 30,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e31d0dbb5d608ecdd1a8aa71616369d2facbc54dfc8d64ccb62936b7fea43f71",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/FULL90/ES2/s27000",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 120,
+      "best_step": 30,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 120,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e31d0dbb5d608ecdd1a8aa71616369d2facbc54dfc8d64ccb62936b7fea43f71",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 15,
+          "would_stop": false
+        },
+        {
+          "step": 30,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        },
+        {
+          "step": 120,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/bdg2/FULL90/FIXED_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 120,
+      "frozen_step": 60,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        2.7755575615628914e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "db4bb7d2f672600ee0b3178ad231ae63bc64b0ca3606e0a24c2d603df1a5bad8",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/FULL90/CONTRIB_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 120,
+      "frozen_step": 60,
+      "stop_reason": "cap",
+      "toggle_checks": 3,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 5.10702591327572e-14,
+      "best_selection_errors": [
+        0.0,
+        2.7755575615628914e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "db4bb7d2f672600ee0b3178ad231ae63bc64b0ca3606e0a24c2d603df1a5bad8",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.044485109946719024,
+              0.00769359572501358
+            ],
+            [
+              0.019074829556364355,
+              0.07146543319274931
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/ES2/s27000",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        }
+      ]
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FIXED_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        2.7755575615628914e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "42b09907fee2163273c52f7cfeccf7b48c4d18c57f81ee5bbb8972150b1efcd6",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 3.8413716652030416e-14,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.09556255903166788,
+              0.26522460102541406
+            ],
+            [
+              0.013943440680436108,
+              0.04841538643444249
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": false,
+          "details": [
+            [
+              -0.04994940837364414,
+              0.07911786667080167
+            ],
+            [
+              0.02389063975791697,
+              0.06630615025635352
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FULL/s27000",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "28ea3d5433595f8e12ad5f4c2bd7f14219c9826e250a446bf3e507393cf55988",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FIXED_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 2.7755575615628914e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/CONTRIB_FREEZE/s27000",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 40,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 3.8413716652030416e-14,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.0425182647130193,
+              0.17144141640689115
+            ],
+            [
+              0.0006382870317116248,
+              0.023242313507792475
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.04668540106121712,
+              -0.019596719745862544
+            ],
+            [
+              0.010629566178254826,
+              0.042860354101722786
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FULL/s27000",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 2.7755575615628914e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/ES2/s27000",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 2.7755575615628914e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "e99ae7d16e6d6239c668f5ebd7f82a0f57b5029ca00abeaf4833e06773bf6d94",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/FULL90/ES2/s27000",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "54e08784cf455f2e465a5230ec611fdca303202059a69f5f9ad0a36573a3dc38",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120,
+          180
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 15,
+          "would_stop": false
+        },
+        {
+          "step": 30,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        },
+        {
+          "step": 120,
+          "would_stop": false
+        },
+        {
+          "step": 180,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/FULL90/FIXED_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": 60,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "54e08784cf455f2e465a5230ec611fdca303202059a69f5f9ad0a36573a3dc38",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/CONTRIB_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": 120,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 120,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 3.552713678800501e-14,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "54e08784cf455f2e465a5230ec611fdca303202059a69f5f9ad0a36573a3dc38",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": false,
+          "details": [
+            [
+              0.06835316078396848,
+              -0.011492178742089083
+            ],
+            [
+              0.011202845419828255,
+              0.031655409572675756
+            ]
+          ]
+        },
+        {
+          "step": 120,
+          "should_freeze": true,
+          "details": [
+            [
+              0.0045062427986094725,
+              -0.06930728346541909
+            ],
+            [
+              0.01708829019599212,
+              0.031655409572675756
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/FULL/s27000",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "54e08784cf455f2e465a5230ec611fdca303202059a69f5f9ad0a36573a3dc38",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/FIXED_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "6af4c221191c86f6b0e8d0a04c58389ca03eb9f50e97409c73cf2a2d6485bc82",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/CONTRIB_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 3,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 5.340172748447003e-14,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "6af4c221191c86f6b0e8d0a04c58389ca03eb9f50e97409c73cf2a2d6485bc82",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.02821149176022201,
+              -0.0579316400882917
+            ],
+            [
+              0.02566924111156279,
+              0.033186021536166684
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/FULL/s27000",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "6af4c221191c86f6b0e8d0a04c58389ca03eb9f50e97409c73cf2a2d6485bc82",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/ES2/s27000",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 40,
+      "best_step": 10,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "6af4c221191c86f6b0e8d0a04c58389ca03eb9f50e97409c73cf2a2d6485bc82",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/RECENT30/CONTRIB_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.6653345369377348e-16,
+      "contribution_max_abs_error": 3.574918139293004e-14,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "ec04a96834fb7374e6504a8ebce3db3988526d96032cc0608cda992958299158",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.10238797360831527,
+              -0.10578256538270214
+            ],
+            [
+              0.026587712674826347,
+              0.06602975613993352
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": false,
+          "details": [
+            [
+              0.06615351469809004,
+              -0.13043065102574977
+            ],
+            [
+              0.026587712674826347,
+              0.06602975613993352
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/RECENT30/FULL/s27000",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "FULL",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.6653345369377348e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "ec04a96834fb7374e6504a8ebce3db3988526d96032cc0608cda992958299158",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/RECENT30/ES2/s27000",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "ES2",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.6653345369377348e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "ec04a96834fb7374e6504a8ebce3db3988526d96032cc0608cda992958299158",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/RECENT30/FIXED_FREEZE/s27000",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27000,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "ea6c9362c7133f560532a052acc3791bcbc9f485cba79d71c38e2c513a145cb8",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "ec04a96834fb7374e6504a8ebce3db3988526d96032cc0608cda992958299158",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/FULL90/ES2/s27001",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        8.326672684688674e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "2f342e809f8a9ce104fbdee3226943d3e371966a17420d14058bc2acfe40af53",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120,
+          180
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 15,
+          "would_stop": false
+        },
+        {
+          "step": 30,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        },
+        {
+          "step": 120,
+          "would_stop": false
+        },
+        {
+          "step": 180,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/bdg2/FULL90/FIXED_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 180,
+      "frozen_step": 60,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "1b836a108ae024b179bd171367066672fee21aac856a08d4e8bf4777a21096a1",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/FULL90/CONTRIB_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": 120,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 120,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 7.682743330406083e-14,
+      "best_selection_errors": [
+        0.0,
+        8.326672684688674e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "2f342e809f8a9ce104fbdee3226943d3e371966a17420d14058bc2acfe40af53",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": false,
+          "details": [
+            [
+              -0.027744523597712466,
+              0.0649944151776762
+            ],
+            [
+              0.018676524217783666,
+              0.06479279332440224
+            ]
+          ]
+        },
+        {
+          "step": 120,
+          "should_freeze": true,
+          "details": [
+            [
+              0.0040034966198701765,
+              -0.006495626335863699
+            ],
+            [
+              0.018676524217783666,
+              0.06479279332440224
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/FULL90/FULL/s27001",
+      "dataset": "bdg2",
+      "condition": "FULL90",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        8.326672684688674e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "2f342e809f8a9ce104fbdee3226943d3e371966a17420d14058bc2acfe40af53",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FIXED_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 40,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 1.3877787807814457e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "eca6ce23a2724f503902670eff82ef9a960abe056cc5a5e7633784e41b607305",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/CONTRIB_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 40,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.3877787807814457e-16,
+      "contribution_max_abs_error": 7.682743330406083e-14,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "78548b759e8d487ecf6df098c18d75b36b363ae7ebff10b173320525f526d983",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.0012061080476478525,
+              0.2172746473970971
+            ],
+            [
+              0.009606372591100433,
+              0.05668574728252527
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": false,
+          "details": [
+            [
+              0.01670539865262204,
+              0.08422628795853951
+            ],
+            [
+              0.009606372591100433,
+              0.05668574728252527
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/FULL/s27001",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 40,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.3877787807814457e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "78548b759e8d487ecf6df098c18d75b36b363ae7ebff10b173320525f526d983",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/SPREAD30/ES2/s27001",
+      "dataset": "bdg2",
+      "condition": "SPREAD30",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 40,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.3877787807814457e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "78548b759e8d487ecf6df098c18d75b36b363ae7ebff10b173320525f526d983",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        }
+      ]
+    },
+    {
+      "key": "fits/bdg2/RECENT30/CONTRIB_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 40,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 6.394884621840902e-14,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "a88f3421f73542c06496b42e6648a2cadd123575aa03b0141b1d00d2ec91fdd0",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.028956646601677107,
+              0.13860842549350263
+            ],
+            [
+              0.0,
+              0.019139378530060935
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.022014888289867918,
+              -0.008485985570737898
+            ],
+            [
+              0.007239161650419277,
+              0.03465210637337566
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FULL/s27001",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "a88f3421f73542c06496b42e6648a2cadd123575aa03b0141b1d00d2ec91fdd0",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/bdg2/RECENT30/ES2/s27001",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "a88f3421f73542c06496b42e6648a2cadd123575aa03b0141b1d00d2ec91fdd0",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/bdg2/RECENT30/FIXED_FREEZE/s27001",
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 20,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 8.326672684688674e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "8b3885cb6d6aa53f9b6dfc284c47d7c484bc6a4e739367877b6b01a1e12f7c08",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "a88f3421f73542c06496b42e6648a2cadd123575aa03b0141b1d00d2ec91fdd0",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/FIXED_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": 60,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "03bc63849d7170593b0b88d4d40eef91e0a9038f1108b85fbb9807cdebb60c67",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/CONTRIB_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 5.3290705182007514e-14,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "03bc63849d7170593b0b88d4d40eef91e0a9038f1108b85fbb9807cdebb60c67",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120,
+          180
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 15,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 30,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 60,
+          "should_freeze": false,
+          "details": [
+            [
+              0.04126704948939687,
+              0.009848317670099771
+            ],
+            [
+              0.012150336201099584,
+              0.04324754209633007
+            ]
+          ]
+        },
+        {
+          "step": 120,
+          "should_freeze": false,
+          "details": [
+            [
+              0.0399696429734419,
+              -0.12806120200344956
+            ],
+            [
+              0.012150336201099584,
+              0.04324754209633007
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/FULL/s27001",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "03bc63849d7170593b0b88d4d40eef91e0a9038f1108b85fbb9807cdebb60c67",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/FULL90/ES2/s27001",
+      "dataset": "jena",
+      "condition": "FULL90",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 180,
+      "best_step": 60,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 180,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "03bc63849d7170593b0b88d4d40eef91e0a9038f1108b85fbb9807cdebb60c67",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          15,
+          30,
+          60,
+          120,
+          180
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 15,
+          "would_stop": false
+        },
+        {
+          "step": 30,
+          "would_stop": false
+        },
+        {
+          "step": 60,
+          "would_stop": false
+        },
+        {
+          "step": 120,
+          "would_stop": false
+        },
+        {
+          "step": 180,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/SPREAD30/CONTRIB_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 5,
+      "frozen_step": 40,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 3.597122599785507e-14,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "c0f5d1c838ce28cb360732d40fb2053b2c45117b95b8b968ec161295852f02dd",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.0307904443898399,
+              -0.07173505465404847
+            ],
+            [
+              0.015494780595385662,
+              0.02564400128446089
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.008125078833305432,
+              -0.11327160383468604
+            ],
+            [
+              0.015494780595385662,
+              0.02564400128446089
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/FULL/s27001",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 5,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "c0f5d1c838ce28cb360732d40fb2053b2c45117b95b8b968ec161295852f02dd",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/SPREAD30/ES2/s27001",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 20,
+      "best_step": 5,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "c0f5d1c838ce28cb360732d40fb2053b2c45117b95b8b968ec161295852f02dd",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/SPREAD30/FIXED_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "SPREAD30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 5,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 5.551115123125783e-17,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "c0f5d1c838ce28cb360732d40fb2053b2c45117b95b8b968ec161295852f02dd",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/RECENT30/FULL/s27001",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "FULL",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": null,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 60,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "9966a111bc47bc3fc7f446498a1373018fd59dc71da4720df499c75952e29772",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/RECENT30/ES2/s27001",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "ES2",
+      "seed": 27001,
+      "steps": 40,
+      "best_step": 10,
+      "frozen_step": null,
+      "stop_reason": "validation_patience2",
+      "toggle_checks": 0,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "9966a111bc47bc3fc7f446498a1373018fd59dc71da4720df499c75952e29772",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [],
+      "es2_policy_checks": [
+        {
+          "step": 5,
+          "would_stop": false
+        },
+        {
+          "step": 10,
+          "would_stop": false
+        },
+        {
+          "step": 20,
+          "would_stop": false
+        },
+        {
+          "step": 40,
+          "would_stop": true
+        }
+      ]
+    },
+    {
+      "key": "fits/jena/RECENT30/FIXED_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "FIXED_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": 20,
+      "stop_reason": "cap",
+      "toggle_checks": 0,
+      "adapter_updates": 20,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 0.0,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "9966a111bc47bc3fc7f446498a1373018fd59dc71da4720df499c75952e29772",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": true,
+          "details": []
+        }
+      ],
+      "es2_policy_checks": []
+    },
+    {
+      "key": "fits/jena/RECENT30/CONTRIB_FREEZE/s27001",
+      "dataset": "jena",
+      "condition": "RECENT30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27001,
+      "steps": 60,
+      "best_step": 10,
+      "frozen_step": 40,
+      "stop_reason": "cap",
+      "toggle_checks": 4,
+      "adapter_updates": 40,
+      "point_score_max_abs_error": 1.1102230246251565e-16,
+      "contribution_max_abs_error": 8.89843754237063e-14,
+      "best_selection_errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ],
+      "sample_index_sha256_verified": true,
+      "initial_head_hash": "de10b39fb4d265f8d91eb4f6ecd1abbfcbfbac47a719f9c8bb58fd1090ad8c81",
+      "initial_prediction_sha256": "a17588e07fbda8f78e60b79d01ea28a8a1d7d0932ac841e740ba95a51daa53d5",
+      "frozen_backbone_hash": "ec6aee7caa7eab33a1a4349cec32ce90bbc07a84ffc80340098c9ab2c5d02836",
+      "trainable": 1768949,
+      "snapshot_name_count": 196,
+      "lora_snapshot_name_count": 192,
+      "snapshot_names_include_lora": true,
+      "checkpoint_sha256": "9966a111bc47bc3fc7f446498a1373018fd59dc71da4720df499c75952e29772",
+      "checkpoint_lora_storage_note": "best.pt is not opened by this CPU audit; result snapshot_names include LoRA entries and fit.py execution asserts set(state)==names",
+      "prefix_vs_full": {
+        "compared_steps": [
+          0,
+          5,
+          10,
+          20,
+          40
+        ],
+        "mismatches": []
+      },
+      "freeze_policy_decisions": [
+        {
+          "step": 5,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 10,
+          "should_freeze": false,
+          "details": []
+        },
+        {
+          "step": 20,
+          "should_freeze": false,
+          "details": [
+            [
+              0.06585013633306736,
+              -0.05800024943368971
+            ],
+            [
+              0.02073387774052253,
+              0.04232642775709121
+            ]
+          ]
+        },
+        {
+          "step": 40,
+          "should_freeze": true,
+          "details": [
+            [
+              -0.0035026615115863356,
+              -0.18680504473621848
+            ],
+            [
+              0.02073387774052253,
+              0.04232642775709121
+            ]
+          ]
+        }
+      ],
+      "es2_policy_checks": []
+    }
+  ],
+  "smoke": {
+    "completed": true,
+    "job": {
+      "dataset": "bdg2",
+      "condition": "RECENT30",
+      "arm": "CONTRIB_FREEZE",
+      "seed": 27000,
+      "head": "mlp",
+      "rank": 8,
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "head_lr": 0.0001,
+      "lora_lr": 0.0001,
+      "training_rows": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    "steps": 3,
+    "frozen_step": 1,
+    "toggle_checks": 1,
+    "point_score_max_abs_error": 1.1102230246251565e-16,
+    "contribution_max_abs_error": 1.2809198146612744e-14,
+    "force_freeze_decisions": [
+      {
+        "step": 1,
+        "should_freeze": true,
+        "details": []
+      }
+    ],
+    "trainable": 1768949,
+    "snapshot_name_count": 196,
+    "sample_index_sha256_verified": true
+  }
+}

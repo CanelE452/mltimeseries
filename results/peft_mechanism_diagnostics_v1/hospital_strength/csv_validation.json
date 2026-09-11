@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "csv_rows": 1534,
+  "seeds": {
+    "24000": {
+      "csv_effect_pct_f0": -0.4051669963504127,
+      "archive_effect_pct_f0": -0.4051669963504204,
+      "global_oracle_match": 0.6975228161668839,
+      "individual_top1": 0.529335071707953
+    },
+    "24001": {
+      "csv_effect_pct_f0": -0.418612797958086,
+      "archive_effect_pct_f0": -0.41861279795808654,
+      "global_oracle_match": 0.6857887874837028,
+      "individual_top1": 0.5358539765319427
+    }
+  },
+  "scope": "independent CSV vs archived loss aggregate; oracle match is posthoc and class-imbalanced",
+  "csv_sha256": "f7a78160100064758c930d0f1c9993add4fea5b17133ccea48c51ff6e8881c9d"
+}

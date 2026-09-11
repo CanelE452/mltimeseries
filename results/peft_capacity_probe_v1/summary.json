@@ -1,0 +1,521 @@
+{
+  "completed": true,
+  "fresh_test": false,
+  "periods": {
+    "P0": "peft_optimization_control_v1 exposed development E",
+    "P1": "peft_overlap_transfer_v1 exposed development E"
+  },
+  "independent_score_max_abs_error": 2.7755575615628914e-16,
+  "f0_scores": {
+    "P0": {
+      "bike": 0.18379705839224364,
+      "household": 0.29798754988184006
+    },
+    "P1": {
+      "bike": 0.168012163988169,
+      "household": 0.41873548676005384
+    }
+  },
+  "capacity_effects": {
+    "P0": {
+      "bike": {
+        "FULL90": {
+          "by_seed": [
+            4.168700713271469,
+            3.910957213158088
+          ],
+          "mean": 4.039828963214778,
+          "both_positive": true
+        },
+        "SPREAD30": {
+          "by_seed": [
+            0.5619566998351208,
+            1.0322522664783274
+          ],
+          "mean": 0.797104483156724,
+          "both_positive": true
+        },
+        "RECENT30": {
+          "by_seed": [
+            1.3429969700614188,
+            3.117300124794445
+          ],
+          "mean": 2.230148547427932,
+          "both_positive": true
+        }
+      },
+      "household": {
+        "FULL90": {
+          "by_seed": [
+            0.9962341889138335,
+            0.8061467489515175
+          ],
+          "mean": 0.9011904689326755,
+          "both_positive": true
+        },
+        "SPREAD30": {
+          "by_seed": [
+            -0.19681935614522791,
+            0.40236279627252386
+          ],
+          "mean": 0.10277172006364797,
+          "both_positive": false
+        },
+        "RECENT30": {
+          "by_seed": [
+            0.7861153218479802,
+            1.2996231790347001
+          ],
+          "mean": 1.0428692504413402,
+          "both_positive": true
+        }
+      }
+    },
+    "P1": {
+      "bike": {
+        "FULL90": {
+          "by_seed": [
+            4.358129501730926,
+            5.199722931719689
+          ],
+          "mean": 4.778926216725308,
+          "both_positive": true
+        },
+        "SPREAD30": {
+          "by_seed": [
+            1.9603048679207173,
+            2.422860343836394
+          ],
+          "mean": 2.1915826058785557,
+          "both_positive": true
+        },
+        "RECENT30": {
+          "by_seed": [
+            0.710787034945134,
+            0.9617479311246375
+          ],
+          "mean": 0.8362674830348857,
+          "both_positive": true
+        }
+      },
+      "household": {
+        "FULL90": {
+          "by_seed": [
+            1.309466599710713,
+            0.7401941748230081
+          ],
+          "mean": 1.0248303872668605,
+          "both_positive": true
+        },
+        "SPREAD30": {
+          "by_seed": [
+            1.1738544580493184,
+            1.8611242996274058
+          ],
+          "mean": 1.517489378838362,
+          "both_positive": true
+        },
+        "RECENT30": {
+          "by_seed": [
+            1.7530471423516205,
+            1.590631024998464
+          ],
+          "mean": 1.6718390836750423,
+          "both_positive": true
+        }
+      }
+    }
+  },
+  "capacity_gate": {
+    "passed": true,
+    "P1_bike_FULL90_by_seed": [
+      4.358129501730926,
+      5.199722931719689
+    ],
+    "P1_bike_FULL90_mean": 4.778926216725308
+  },
+  "wide_p0_recipe_means": {
+    "P0/bike/FULL90": {
+      "means": {
+        "0": 0.21775115188221827,
+        "1": 0.21647724172280897
+      },
+      "chosen_recipe": 1
+    },
+    "P0/bike/SPREAD30": {
+      "means": {
+        "0": 0.21843371189102972,
+        "1": 0.21755463853279144
+      },
+      "chosen_recipe": 1
+    },
+    "P0/bike/RECENT30": {
+      "means": {
+        "0": 0.21853729936893418,
+        "1": 0.21750213762427542
+      },
+      "chosen_recipe": 1
+    },
+    "P0/household/FULL90": {
+      "means": {
+        "0": 0.4365546672394913,
+        "1": 0.4375745767849369
+      },
+      "chosen_recipe": 0
+    },
+    "P0/household/SPREAD30": {
+      "means": {
+        "0": 0.4379068867942315,
+        "1": 0.4378059809438055
+      },
+      "chosen_recipe": 1
+    },
+    "P0/household/RECENT30": {
+      "means": {
+        "0": 0.43804830634195147,
+        "1": 0.4379311171638445
+      },
+      "chosen_recipe": 1
+    }
+  },
+  "probe_alignment": {
+    "P0/endpoint1": {
+      "sign_agreement_rate": 0.9166666666666666,
+      "always_all_sign_agreement_rate": 0.9166666666666666,
+      "always_wide_sign_agreement_rate": 0.08333333333333333,
+      "final_positive_label_count": 11,
+      "final_negative_label_count": 1,
+      "final_zero_label_count": 0,
+      "total_label_count": 12,
+      "probe_seed_direction_disagreement_count": 0,
+      "final_seed_direction_disagreement_count": 1,
+      "probe_seed_direction_disagreements": [],
+      "final_seed_direction_disagreements": [
+        {
+          "dataset": "household",
+          "condition": "SPREAD30",
+          "sign_by_seed": {
+            "25000": -1,
+            "25001": 1
+          }
+        }
+      ],
+      "front_back_sign_agreement_rate": 1.0,
+      "mean_abs_error_pct_F0": 0.5981842177397828,
+      "mean_front_back_abs_gap_pct_F0": 0.7042452017278906,
+      "pearson_cell_mean": 0.9232005821041694,
+      "spearman_cell_mean": 0.7714285714285715,
+      "cell_mean_probe": [
+        3.3107509977039524,
+        1.6450551230006893,
+        1.7551193963502258,
+        1.0905199312843807,
+        0.36214665127852824,
+        0.5831382139183332
+      ],
+      "cell_mean_final": [
+        4.039828963214778,
+        0.797104483156724,
+        2.230148547427932,
+        0.9011904689326755,
+        0.10277172006364797,
+        1.0428692504413402
+      ]
+    },
+    "P0/endpoint2": {
+      "sign_agreement_rate": 0.9166666666666666,
+      "always_all_sign_agreement_rate": 0.9166666666666666,
+      "always_wide_sign_agreement_rate": 0.08333333333333333,
+      "final_positive_label_count": 11,
+      "final_negative_label_count": 1,
+      "final_zero_label_count": 0,
+      "total_label_count": 12,
+      "probe_seed_direction_disagreement_count": 0,
+      "final_seed_direction_disagreement_count": 1,
+      "probe_seed_direction_disagreements": [],
+      "final_seed_direction_disagreements": [
+        {
+          "dataset": "household",
+          "condition": "SPREAD30",
+          "sign_by_seed": {
+            "25000": -1,
+            "25001": 1
+          }
+        }
+      ],
+      "front_back_sign_agreement_rate": 1.0,
+      "mean_abs_error_pct_F0": 0.7577242190816725,
+      "mean_front_back_abs_gap_pct_F0": 0.7566067024666419,
+      "pearson_cell_mean": 0.8780435935803953,
+      "spearman_cell_mean": 0.7714285714285715,
+      "cell_mean_probe": [
+        4.546531434215176,
+        2.8049362655367562,
+        2.8176434576767404,
+        1.5436216461627363,
+        0.7414856595685344,
+        0.8796982163154901
+      ],
+      "cell_mean_final": [
+        4.039828963214778,
+        0.797104483156724,
+        2.230148547427932,
+        0.9011904689326755,
+        0.10277172006364797,
+        1.0428692504413402
+      ]
+    },
+    "P1/endpoint1": {
+      "sign_agreement_rate": 0.9166666666666666,
+      "always_all_sign_agreement_rate": 1.0,
+      "always_wide_sign_agreement_rate": 0.0,
+      "final_positive_label_count": 12,
+      "final_negative_label_count": 0,
+      "final_zero_label_count": 0,
+      "total_label_count": 12,
+      "probe_seed_direction_disagreement_count": 1,
+      "final_seed_direction_disagreement_count": 0,
+      "probe_seed_direction_disagreements": [
+        {
+          "dataset": "bike",
+          "condition": "RECENT30",
+          "sign_by_seed": {
+            "26000": -1,
+            "26001": 1
+          }
+        }
+      ],
+      "final_seed_direction_disagreements": [],
+      "front_back_sign_agreement_rate": 1.0,
+      "mean_abs_error_pct_F0": 1.0654411081897899,
+      "mean_front_back_abs_gap_pct_F0": 0.9869196437644138,
+      "pearson_cell_mean": 0.8978316597358094,
+      "spearman_cell_mean": 0.5428571428571429,
+      "cell_mean_probe": [
+        2.446208340597325,
+        1.657630820413547,
+        0.4825964813380528,
+        0.7407303462292449,
+        0.3834146928025791,
+        0.39809507623873586
+      ],
+      "cell_mean_final": [
+        4.778926216725308,
+        2.1915826058785557,
+        0.8362674830348857,
+        1.0248303872668605,
+        1.517489378838362,
+        1.6718390836750423
+      ]
+    },
+    "P1/endpoint2": {
+      "sign_agreement_rate": 0.9166666666666666,
+      "always_all_sign_agreement_rate": 1.0,
+      "always_wide_sign_agreement_rate": 0.0,
+      "final_positive_label_count": 12,
+      "final_negative_label_count": 0,
+      "final_zero_label_count": 0,
+      "total_label_count": 12,
+      "probe_seed_direction_disagreement_count": 1,
+      "final_seed_direction_disagreement_count": 0,
+      "probe_seed_direction_disagreements": [
+        {
+          "dataset": "bike",
+          "condition": "RECENT30",
+          "sign_by_seed": {
+            "26000": -1,
+            "26001": 1
+          }
+        }
+      ],
+      "final_seed_direction_disagreements": [],
+      "front_back_sign_agreement_rate": 0.8333333333333334,
+      "mean_abs_error_pct_F0": 0.8760864955392047,
+      "mean_front_back_abs_gap_pct_F0": 1.9504770958399622,
+      "pearson_cell_mean": 0.8736007312592923,
+      "spearman_cell_mean": 0.5428571428571429,
+      "cell_mean_probe": [
+        3.523861720041068,
+        2.2275941216238233,
+        1.0894571301507618,
+        1.3081226826806258,
+        0.5874266981797701,
+        0.5949674733045427
+      ],
+      "cell_mean_final": [
+        4.778926216725308,
+        2.1915826058785557,
+        0.8362674830348857,
+        1.0248303872668605,
+        1.517489378838362,
+        1.6718390836750423
+      ]
+    }
+  },
+  "p1_probe_rule_cost": {
+    "endpoint1": {
+      "quality_both": true,
+      "cost_both": false,
+      "passed_both": false,
+      "macro_regret_by_seed": [
+        0.11846450582418899,
+        0.0
+      ],
+      "savings_by_seed": [
+        -6.397028656929837,
+        -13.287321263884767
+      ]
+    },
+    "endpoint2": {
+      "quality_both": true,
+      "cost_both": false,
+      "passed_both": false,
+      "macro_regret_by_seed": [
+        0.11846450582418899,
+        0.0
+      ],
+      "savings_by_seed": [
+        -7.902031738466686,
+        -14.294397837892149
+      ]
+    }
+  },
+  "resources": {
+    "guard_jobs": 85,
+    "resource_samples": 218,
+    "total_guard_seconds": 1798.613,
+    "wide_fit_guard_seconds": 694.9880000000003,
+    "short_all_guard_seconds": 700.124,
+    "wide_eval_guard_seconds": 383.17300000000006,
+    "smoke_guard_seconds": 20.328,
+    "minimum_ram_gib": 10.871807098388672,
+    "minimum_commit_gib": 9.822078704833984,
+    "maximum_gpu_mib": 2269.0,
+    "maximum_temperature_c": 54.0
+  },
+  "old_small_head_context_hashes": {
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25000/output/result.json": "47afa58d0a90bc269c0dcf8cd80a161beb79f004e4f878ecc749521a7b542c9e",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25000/output/predictions.npz": "b0e53699993cb56d8f5dc6d10a3d453964bf2ec25aa757ec64180e1bea067825",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25001/output/result.json": "453b030363f80677653470f0162f4a5526683605c807c37cb4c55b3554ae4d42",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25001/output/predictions.npz": "16c8d3acfd02421bcc2947e4b3259f0ad151c6b8cbd02f83d9279336c6c10440",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25000/output/result.json": "7422a68c9e84d112b964fe7cd4956b7b372596f8be597a241968600afd6d7772",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25000/output/predictions.npz": "7df4285f44e5b5c91b277a210c072e077cf3125650bbb361e9fa0b49171b6395",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25001/output/result.json": "aef70ffec5032fab4ad18ab9e7a736f8b48aeec3fa6d92a919d6cde73d4bb16d",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25001/output/predictions.npz": "6f82b0fcc25347880901674c76282920991496c05317261cc373f54f41f36f32",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25000/output/result.json": "c383b4589a43c456b814526f71023126c44d09263707b26c2b2d8830866c12a7",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25000/output/predictions.npz": "93b084cd4eab46fd788c99d9b0180879e5eee04750f730cd8cbf20ea76893f46",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25001/output/result.json": "966bd2149277ef436d30a71559246e8b4e26ceaa58b9ac33db8b28eb55e3d909",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25001/output/predictions.npz": "64d7197460b859dbd271943e53ee51c6da0b3815c0bce00a6b14efccd5032274",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25000/output/result.json": "5f6c19ffb385463d674e8a20dfcad8f1e4bb33b76e7fdf3ca5d0797dc8abde87",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25000/output/predictions.npz": "9d4d16dd56042c2bec9a88ba517b4606736aa8d3b76bf64e9aa5d64aaf6b8138",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25001/output/result.json": "ff7b3335637f1819a74de31902e2c915466463b59ab1af8212849bee776bb900",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25001/output/predictions.npz": "c20ddae9fa27dca4e4d7502a36c6e8df7d22b13fd4ec6faedf4babe6800f25c3",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25000/output/result.json": "11edccf0bc0c1b9d6a43cd4556084b82bd5f946b5abc6ed41e4cd51751c59418",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25000/output/predictions.npz": "74cd53eec3fec7feeca1ff5b0d31bdb31291975283ea0ba9d676902e3596c209",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25001/output/result.json": "ac2f1cc07851f6c19bd88962e4dc6721fb3218709036608ae69c860b2a49255b",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25001/output/predictions.npz": "76de24235d28c37bcd553e13550512790bbaaf523e417450cbb1fb60f0f610af",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25000/output/result.json": "b5dd0ee1b36d3234f6b36fea935136dfc49a2e71c765b9ab4f0569f748f15bfe",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25000/output/predictions.npz": "7a6a9076e8fec4d18c36048f1fc96d31163a1d1d7eb4a3d3790fe9a975a3ca6e",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25001/output/result.json": "422a57af9fffb32883c65f487cd16fc5ee96bce90012785e5ca1a65a88d24740",
+    "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25001/output/predictions.npz": "0a28fc158faa1ead505bec3c6e76609ee3be82db577de5ac0c327d084d6182eb",
+    "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26000/output/result.json": "cea0c07654f9d25c71f1d5e815af874b0655304c3297b26c5383e76ce203d6a5",
+    "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26000/output/predictions.npz": "513f1ab2686f7bd829c1ae3a74e45995e26f153d17d94c01394f255947837792",
+    "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26001/output/result.json": "f59c2a4d6194a315d4658547ac8513ee05f236a2351209092267252a5796a4d9",
+    "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26001/output/predictions.npz": "383c9e62626298327a4fdb4fa01015a79dafba9654108c8d86e6927db99b83cc",
+    "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26000/output/result.json": "3e2c5e80f66d0eb0a548a0a8905f78f47ed510c016a4cc9dc854d36ec2937b66",
+    "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26000/output/predictions.npz": "a3ba9f596290660507c7e3398433531bd67ef393fb079e60ba4c1717a8136b4c",
+    "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26001/output/result.json": "98bbc2f0934d8e4c81410dfbe1b3ed65e7f27878c44041c235fe23b6c374903c",
+    "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26001/output/predictions.npz": "35dac02dd1c6801e3a90ba63dea42e172a1d306eb1858097c9d144c2533f1efa",
+    "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26000/output/result.json": "dfa89f8cd6952675e59ad94672f4a36234ee1bf24e222cb99f473f86d65aba85",
+    "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26000/output/predictions.npz": "52a813eaccb7118dc0d449c698b16a8eda492cda7584f387f85b529f837ac243",
+    "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26001/output/result.json": "b05704f7c2969946057ce9f90a06bc3839541733b9acd3ff71bd5df532d6aa79",
+    "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26001/output/predictions.npz": "631dbfc87360942ecadb031e38c125e4772d541bda9573883d34c81a41a99bd6",
+    "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26000/output/result.json": "f96a947cd402de4908e658551245b683b95532abefb5bdf4e553b9971c73c3a1",
+    "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26000/output/predictions.npz": "e91039d5b348ad1464ff7bc693a975574f4ab3ed63ef45c0951a065668442b36",
+    "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26001/output/result.json": "05e7f810e0fb9eeeb54e48b3144868ee7af81ef3939ab6a2a1847d2548308903",
+    "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26001/output/predictions.npz": "e2a10883be616253d1e7ee699fe8c9bc83d32b173d541b4053571c4ce69d418c",
+    "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26000/output/result.json": "308730e66651d1f0074afaca1e9ee37c4cbcd9d0055e2fb087d2e7894916ea7e",
+    "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26000/output/predictions.npz": "14aad0d324ec6d94d1d590765019f7946d4d417c44edb311e3e34d65df31439a",
+    "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26001/output/result.json": "3be5f6aee325bb8f3fe7f351ee22999ade7ede32303a2c2a9d63ebe756c4e8f0",
+    "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26001/output/predictions.npz": "92db475efdbab3930e60acc255c225837b1916de2ad45b3aac06a4d77ef090b4",
+    "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26000/output/result.json": "332120f83d4d601e43422fcdfc6085fc1c479396c0d1c8d088f407c2e6c6a416",
+    "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26000/output/predictions.npz": "fa1592ec272a2ec1ec5611096b5e3cbb48946b852e259e405e7395a9450b3bae",
+    "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26001/output/result.json": "52a7367f280999c3fc34af17089429e3a347e487fccc03a71126f909325fdde3",
+    "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26001/output/predictions.npz": "a90c170755bda7c5a7d34991d30ee15d8578d69d2c2c04387a37fe34a7cb9774"
+  },
+  "analysis_contract": {
+    "created_utc": "2026-09-10T13:42:49.737995+00:00",
+    "analysis_sha256": "32defad82afe58718d408caac81aa519977c65d37eb74f01ac47cfc375ea1917",
+    "plan_sha256": "c4c9c19cb2f55aaa84f3adae69fd2c6eb18d0c96d99e9cf600084517a481ec6f",
+    "context_input_hashes": {
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25000/output/result.json": "47afa58d0a90bc269c0dcf8cd80a161beb79f004e4f878ecc749521a7b542c9e",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25000/output/predictions.npz": "b0e53699993cb56d8f5dc6d10a3d453964bf2ec25aa757ec64180e1bea067825",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25001/output/result.json": "453b030363f80677653470f0162f4a5526683605c807c37cb4c55b3554ae4d42",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/FULL90/MLP/r0_s25001/output/predictions.npz": "16c8d3acfd02421bcc2947e4b3259f0ad151c6b8cbd02f83d9279336c6c10440",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25000/output/result.json": "7422a68c9e84d112b964fe7cd4956b7b372596f8be597a241968600afd6d7772",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25000/output/predictions.npz": "7df4285f44e5b5c91b277a210c072e077cf3125650bbb361e9fa0b49171b6395",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25001/output/result.json": "aef70ffec5032fab4ad18ab9e7a736f8b48aeec3fa6d92a919d6cde73d4bb16d",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/SPREAD30/MLP/r1_s25001/output/predictions.npz": "6f82b0fcc25347880901674c76282920991496c05317261cc373f54f41f36f32",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25000/output/result.json": "c383b4589a43c456b814526f71023126c44d09263707b26c2b2d8830866c12a7",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25000/output/predictions.npz": "93b084cd4eab46fd788c99d9b0180879e5eee04750f730cd8cbf20ea76893f46",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25001/output/result.json": "966bd2149277ef436d30a71559246e8b4e26ceaa58b9ac33db8b28eb55e3d909",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/bike/RECENT30/MLP/r1_s25001/output/predictions.npz": "64d7197460b859dbd271943e53ee51c6da0b3815c0bce00a6b14efccd5032274",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25000/output/result.json": "5f6c19ffb385463d674e8a20dfcad8f1e4bb33b76e7fdf3ca5d0797dc8abde87",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25000/output/predictions.npz": "9d4d16dd56042c2bec9a88ba517b4606736aa8d3b76bf64e9aa5d64aaf6b8138",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25001/output/result.json": "ff7b3335637f1819a74de31902e2c915466463b59ab1af8212849bee776bb900",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/FULL90/MLP/r0_s25001/output/predictions.npz": "c20ddae9fa27dca4e4d7502a36c6e8df7d22b13fd4ec6faedf4babe6800f25c3",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25000/output/result.json": "11edccf0bc0c1b9d6a43cd4556084b82bd5f946b5abc6ed41e4cd51751c59418",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25000/output/predictions.npz": "74cd53eec3fec7feeca1ff5b0d31bdb31291975283ea0ba9d676902e3596c209",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25001/output/result.json": "ac2f1cc07851f6c19bd88962e4dc6721fb3218709036608ae69c860b2a49255b",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/SPREAD30/MLP/r0_s25001/output/predictions.npz": "76de24235d28c37bcd553e13550512790bbaaf523e417450cbb1fb60f0f610af",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25000/output/result.json": "b5dd0ee1b36d3234f6b36fea935136dfc49a2e71c765b9ab4f0569f748f15bfe",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25000/output/predictions.npz": "7a6a9076e8fec4d18c36048f1fc96d31163a1d1d7eb4a3d3790fe9a975a3ca6e",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25001/output/result.json": "422a57af9fffb32883c65f487cd16fc5ee96bce90012785e5ca1a65a88d24740",
+      "runs/peft_optimization_control_v1/eval/EXPOSURE/household/RECENT30/MLP/r0_s25001/output/predictions.npz": "0a28fc158faa1ead505bec3c6e76609ee3be82db577de5ac0c327d084d6182eb",
+      "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26000/output/result.json": "cea0c07654f9d25c71f1d5e815af874b0655304c3297b26c5383e76ce203d6a5",
+      "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26000/output/predictions.npz": "513f1ab2686f7bd829c1ae3a74e45995e26f153d17d94c01394f255947837792",
+      "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26001/output/result.json": "f59c2a4d6194a315d4658547ac8513ee05f236a2351209092267252a5796a4d9",
+      "runs/peft_overlap_transfer_v1/eval/bike/FULL90/MLP/s26001/output/predictions.npz": "383c9e62626298327a4fdb4fa01015a79dafba9654108c8d86e6927db99b83cc",
+      "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26000/output/result.json": "3e2c5e80f66d0eb0a548a0a8905f78f47ed510c016a4cc9dc854d36ec2937b66",
+      "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26000/output/predictions.npz": "a3ba9f596290660507c7e3398433531bd67ef393fb079e60ba4c1717a8136b4c",
+      "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26001/output/result.json": "98bbc2f0934d8e4c81410dfbe1b3ed65e7f27878c44041c235fe23b6c374903c",
+      "runs/peft_overlap_transfer_v1/eval/bike/SPREAD30/MLP/s26001/output/predictions.npz": "35dac02dd1c6801e3a90ba63dea42e172a1d306eb1858097c9d144c2533f1efa",
+      "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26000/output/result.json": "dfa89f8cd6952675e59ad94672f4a36234ee1bf24e222cb99f473f86d65aba85",
+      "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26000/output/predictions.npz": "52a813eaccb7118dc0d449c698b16a8eda492cda7584f387f85b529f837ac243",
+      "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26001/output/result.json": "b05704f7c2969946057ce9f90a06bc3839541733b9acd3ff71bd5df532d6aa79",
+      "runs/peft_overlap_transfer_v1/eval/bike/RECENT30/MLP/s26001/output/predictions.npz": "631dbfc87360942ecadb031e38c125e4772d541bda9573883d34c81a41a99bd6",
+      "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26000/output/result.json": "f96a947cd402de4908e658551245b683b95532abefb5bdf4e553b9971c73c3a1",
+      "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26000/output/predictions.npz": "e91039d5b348ad1464ff7bc693a975574f4ab3ed63ef45c0951a065668442b36",
+      "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26001/output/result.json": "05e7f810e0fb9eeeb54e48b3144868ee7af81ef3939ab6a2a1847d2548308903",
+      "runs/peft_overlap_transfer_v1/eval/household/FULL90/MLP/s26001/output/predictions.npz": "e2a10883be616253d1e7ee699fe8c9bc83d32b173d541b4053571c4ce69d418c",
+      "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26000/output/result.json": "308730e66651d1f0074afaca1e9ee37c4cbcd9d0055e2fb087d2e7894916ea7e",
+      "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26000/output/predictions.npz": "14aad0d324ec6d94d1d590765019f7946d4d417c44edb311e3e34d65df31439a",
+      "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26001/output/result.json": "3be5f6aee325bb8f3fe7f351ee22999ade7ede32303a2c2a9d63ebe756c4e8f0",
+      "runs/peft_overlap_transfer_v1/eval/household/SPREAD30/MLP/s26001/output/predictions.npz": "92db475efdbab3930e60acc255c225837b1916de2ad45b3aac06a4d77ef090b4",
+      "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26000/output/result.json": "332120f83d4d601e43422fcdfc6085fc1c479396c0d1c8d088f407c2e6c6a416",
+      "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26000/output/predictions.npz": "fa1592ec272a2ec1ec5611096b5e3cbb48946b852e259e405e7395a9450b3bae",
+      "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26001/output/result.json": "52a7367f280999c3fc34af17089429e3a347e487fccc03a71126f909325fdde3",
+      "runs/peft_overlap_transfer_v1/eval/household/RECENT30/MLP/s26001/output/predictions.npz": "a90c170755bda7c5a7d34991d30ee15d8578d69d2c2c04387a37fe34a7cb9774"
+    },
+    "stage": "before main fits and new WIDE E; separate from training source contract"
+  },
+  "analysis_sha256": "32defad82afe58718d408caac81aa519977c65d37eb74f01ac47cfc375ea1917",
+  "run_completed": {
+    "completed": true,
+    "finished_utc": "2026-09-10T14:19:44.883969+00:00",
+    "invocation_seconds": 2201.688882800001,
+    "wide_fits": 36,
+    "short_fits": 24,
+    "forecasts": 24,
+    "smokes": 1,
+    "selection_sha256": "6c4fa08107249dbf7d416f9b3b266c40ac1dfab07d8c9c5852c037e278ee47b0",
+    "fresh_test": false
+  },
+  "limitations": [
+    "Both E periods are already exposed development evaluations, not independent tests.",
+    "WIDE and LoRA+MLP have equal trainable counts but different function classes and FLOPs.",
+    "Small-head context rows are descriptive and are not used for gates.",
+    "Probe response is descriptive; no trained threshold, regression, p-value or confidence interval.",
+    "P1 optimistic reuse cost excludes pause/resume/switch overhead and is not realized campaign savings."
+  ]
+}
