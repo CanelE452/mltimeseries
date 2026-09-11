@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-09-11T09:33:00.704243+00:00",
+  "scope": "PEFT paper closure v1 data exposure and holdout availability audit",
+  "original_ledger_preservation": {
+    "backup_path": "results/peft_paper_closure_v1/data_exposure_ledger.original_20260911_181304.csv",
+    "backup_sha256": "b4b0edca0df8b74ca088e3e27fced2568270158767ec45aa7fc1b0f0a8103bd9",
+    "preservation_status": "[확인] Original untracked ledger was copied byte-for-byte before replacement."
+  },
+  "verdicts": {
+    "stage_a": {
+      "status": "[판정] CLEAN_FRESH_UNITS_NOT_YET_CERTIFIED",
+      "certified_clean_fresh_units_count": 0,
+      "minimum_required": 2,
+      "notes": [
+        "[확인] Every locally audited PEFT unit with opened results is development-exposed and cannot be reused as Stage A clean-fresh evidence.",
+        "[확인] Parent novelty audit reports Stage A is already blocked by method novelty gate UNKNOWN; no target downloads or training are justified just to force a data conclusion.",
+        "[판정] Candidate metadata exists, but candidate existence is not a clean manifest."
+      ]
+    },
+    "sealed_final": {
+      "status": "[판정] SEALED_FINAL_NOT_AVAILABLE_LOCALLY_YET",
+      "certified_sealed_final_units_count": 0,
+      "minimum_required": 2,
+      "notes": [
+        "[확인] Final holdout requires frozen claim/method/hparams/thresholds before opening target labels.",
+        "[확인] The existing PEFT studies opened validation/evaluation/D results during development.",
+        "[판정] Do not report NO_CLEAN_HOLDOUT_AVAILABLE from this audit; the correct local conclusion is missing certified clean manifests plus unknown external availability."
+      ]
+    }
+  },
+  "candidate_inventory": [
+    {
+      "candidate": "Household later chronological period after 2009-04-29",
+      "status": "[추정] metadata-time candidate",
+      "reason": "[추정] Local source timestamp span extends to 2010-11-26, so a later block may fit; no target coverage or prior-exposure clean manifest was produced.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "Bike later chronological period after 2012-12-04",
+      "status": "[추정] weak local candidate",
+      "reason": "[추정] Local Bike source ends 2012-12-31, leaving too little post-P1 calendar for a comparable 242-day block; this is local/timestamp reasoning only.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "BDG2 alternate buildings or periods",
+      "status": "[미검증] possible but uncertified",
+      "reason": "[미검증] Current audit did not build a target-blind manifest for other meters/periods and did not audit GIFT/Chronos pretraining overlap.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "BMRA unexposed PEFT periods or alternate unit pairs",
+      "status": "[미검증] possible but uncertified",
+      "reason": "[확인] PEFT exposed 2017/2018/2022/2023 BMRA windows; prepared summaries also record non-PEFT UCP processing for 2019~2021. Clean Stage A use would need a separate target-blind manifest and exposure decision.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "Jena unused local years",
+      "status": "[판정] not certified from current local set",
+      "reason": "[확인] Jena 2018/2019/2021/2022/2023/2024 were exposed in PEFT development or S1; Jena2020 was excluded due prior weather exposure. Other external Jena-derived sources were not audited here.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "Hospital future months",
+      "status": "[판정] no local future period in canonical artifact",
+      "reason": "[확인] Local canonical manifest spans 2000-01~2006-12 and E1/E2 were opened; this does not rule out other hospital datasets outside the local artifact.",
+      "not_absence_claim": true
+    },
+    {
+      "candidate": "New external source families",
+      "status": "[미검증] not searched/downloaded",
+      "reason": "[미검증] This audit intentionally avoided new target downloads; global data availability remains unknown.",
+      "not_absence_claim": true
+    }
+  ]
+}

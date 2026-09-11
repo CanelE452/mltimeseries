@@ -1,0 +1,9 @@
+{
+  "status": "FAILED_AUDIT_HELPER_CHECK",
+  "reason": "PAPER_READINESS links verification.json, which the verifier writes only after all checks. The verifier mistakenly required its own future output to pre-exist.",
+  "experiment_failure": false,
+  "evidence_mismatch": false,
+  "GPU_fits": 0,
+  "GPU_forecasts": 0,
+  "correction": "Treat only the verifier's exact own output as a deferred link, then assert its existence after writing. All other local links remain required before completion."
+}

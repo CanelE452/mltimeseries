@@ -1,0 +1,552 @@
+[
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_adaptation_scope_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "adaptation_scope_s1_ettm2; adaptation_scope_s1_jena2024",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "ETTm2 2018-03-02~2018-06-25; Jena 2024-09-07~2024-12-31",
+    "evidence_refs": "results/peft_adaptation_scope_v1/summary_and_costs.json; _docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_s1_results_20260908.md",
+    "notes": "[확인] S1 opened validation/evaluation target results for both units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_calibration_closure_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "Study11 CPU calibration reuses Study10 synthetic predictions; no new calendar source",
+    "evidence_refs": "results/peft_calibration_closure_v1/summary.json; _docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_results_20260908.md",
+    "notes": "[확인] Calibration closure does not certify a fresh real holdout."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_capacity_probe_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike/Household; overlap_transfer_P1 Bike/Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Capacity probe uses P0 and P1 Bike/Household contracts and opened probe metrics",
+    "evidence_refs": "results/peft_capacity_probe_v1/evidence/plan.json; results/peft_capacity_probe_v1/evidence/P0_FULL90_contract.json; results/peft_capacity_probe_v1/evidence/P1_FULL90_contract.json; results/peft_capacity_probe_v1/summary.json",
+    "notes": "[확인] Study30 is covered by P0/P1 ledger rows."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_coarse_supervision_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "coarse_supervision_bdg2_eagle_lamb_2016_2017",
+    "coverage_status": "[확인] mapped_to_ledger_row",
+    "source_range_summary": "BDG2 raw 2016-01-01~2017-12-31; train 2016-02~2016-12; validation 2017-01~2017-03; evaluation 2017-04~2017-06",
+    "evidence_refs": "runs/peft_coarse_supervision_v1/data/metadata.json; runs/peft_coarse_supervision_v1/data/data_build_contract.json; results/peft_coarse_supervision_v1/independent_evaluation_audit.json; _docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+    "notes": "[확인] Missing BDG2 coarse-supervision ledger gap filled."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_contribution_freeze_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "contribution_freeze_bdg2_eagle2017; contribution_freeze_jena2023",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "BDG2 2017-05-04~2018-01-01; Jena 2023-05-04~2024-01-01",
+    "evidence_refs": "results/peft_contribution_freeze_v1/evidence/prepared_summary.json; _docs/notes/tsfm_topics/07_research_direction/31_contribution_freeze_20260911.md",
+    "notes": "[확인] Corrects previous BMRA mislabel for Study31."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_decision_transfer_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "decision_transfer_dev_jena2021; decision_transfer_test_jena2022; decision_transfer_dev_bmra2022; decision_transfer_test_bmra2023",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Jena 2021/2022 and BMRA 2022/2023 development/test transfer windows",
+    "evidence_refs": "results/peft_decision_transfer_v1/evidence/prepared_summary.json; experiments/peft_decision_transfer_v1/PURPOSE_DATA.md; _docs/notes/tsfm_topics/07_research_direction/33_decision_transfer_20260911.md",
+    "notes": "[확인] Study33 opened transfer evidence; final status is NO."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_dependence_screen_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "dependence_screen_v1 synthetic Markov DGP",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic length 512; context 128; train 64; val 32; devtest 128",
+    "evidence_refs": "results/peft_dependence_screen_v1/data_gate/summary.json; _docs/history/2026-09-11.md",
+    "notes": "[판정] Data gate stopped before GPU Phase 1; not a real fresh holdout."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_external_gap_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "external_gap_first_block Bike; external_gap_first_block Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows_with_manifest_boundaries",
+    "source_range_summary": "Bike 2011-01-01~2011-07-10; Household 2006-12-17~2007-06-25, with train/V/C/eval split boundaries from manifest",
+    "evidence_refs": "runs/peft_external_gap_v1/prepared/manifest.json; results/peft_external_gap_v1/diagnostics.json; _docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_results_20260908.md",
+    "notes": "[확인] Parent spot-check gap fixed: exact retained timestamp boundaries exist in prepared manifest."
+  },
+  {
+    "evidence_status": "[미검증]",
+    "peft_dir": "experiments/peft_fullft_reference_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[미검증] version_specific_outputs_UNKNOWN_superseded_experiment_version_mapped_via_v3_manifest",
+    "source_range_summary": "UNKNOWN for version-specific v1 outputs because no local results/peft_fullft_reference_v1 directory exists; P0 exposure represented by v3 manifest: Bike 2012-01-16~2012-09-14, Household 2008-01-01~2008-08-30",
+    "evidence_refs": "runs/peft_fullft_reference_v3/prepared/manifest.json; results/peft_fullft_reference_v3/summary.json",
+    "notes": "[미검증] Experiment directory is mapped by study lineage, but this audit did not replay v1 separately and does not certify version-specific v1 outputs."
+  },
+  {
+    "evidence_status": "[미검증]",
+    "peft_dir": "experiments/peft_fullft_reference_v2",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[미검증] version_specific_outputs_UNKNOWN_superseded_experiment_version_mapped_via_v3_manifest",
+    "source_range_summary": "UNKNOWN for version-specific v2 outputs because no local results/peft_fullft_reference_v2 directory exists; P0 exposure represented by v3 manifest: Bike 2012-01-16~2012-09-14, Household 2008-01-01~2008-08-30",
+    "evidence_refs": "runs/peft_fullft_reference_v3/prepared/manifest.json; results/peft_fullft_reference_v3/summary.json",
+    "notes": "[미검증] Experiment directory is mapped by study lineage, but this audit did not replay v2 separately and does not certify version-specific v2 outputs."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_fullft_reference_v3",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Bike 2012-01-16~2012-09-14; Household 2008-01-01~2008-08-30",
+    "evidence_refs": "runs/peft_fullft_reference_v3/prepared/manifest.json; results/peft_fullft_reference_v3/summary.json; _docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_results_20260909.md",
+    "notes": "[확인] Full fine-tuning reference results are development-exposed P0 units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_future_utility_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "contribution_freeze_bdg2_eagle2017; contribution_freeze_jena2023",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Reuses Study31 BDG2/Jena development units",
+    "evidence_refs": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md; results/peft_future_utility_v1/summary.json",
+    "notes": "[확인] Future-utility artifacts do not introduce sealed final data."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_head_complement_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "adaptation_scope_s1_ettm2; synthetic geometry checks",
+    "coverage_status": "[확인] mapped_real_features_no_new_targets",
+    "source_range_summary": "ETTm2 train-origin feature cache from S1; synthetic CPU checks; validation/evaluation target values marked unused in entry gate",
+    "evidence_refs": "results/peft_head_complement_v1/entry_gate.json; results/peft_head_complement_v1/entry_gate_verified.json; _docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_results_20260908.md",
+    "notes": "[확인] Directory does not add a clean holdout; ETTm2 source is already development-exposed by S1."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_head_convergence_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "head_convergence_jena2018; head_convergence_bmra2017; excluded_jena2020",
+    "coverage_status": "[확인] mapped_to_ledger_rows_and_exclusion_row",
+    "source_range_summary": "Jena 2018-05-04~2019-01-01; BMRA 2017-05-04~2018-01-01; Jena2020 excluded due prior raw exposure",
+    "evidence_refs": "results/peft_head_convergence_v1/evidence/prepared_summary.json; experiments/peft_head_convergence_v1/PURPOSE.md; _docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+    "notes": "[확인] Includes excluded Jena2020 so it is not silently treated as fresh."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_initial_headroom_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "initial_headroom_jena2019; initial_headroom_bmra2018",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Jena 2019-05-04~2020-01-01; BMRA 2018-01-04~2018-09-03",
+    "evidence_refs": "results/peft_initial_headroom_v1/evidence/prepared_summary.json; _docs/notes/tsfm_topics/07_research_direction/34_initial_headroom_20260911.md",
+    "notes": "[확인] Study34 opened development evidence."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_mechanism_diagnostics_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike/Household; hospital_monthly_2000_2006",
+    "coverage_status": "[확인] mapped_to_development_rows",
+    "source_range_summary": "P0 Bike/Household via reference summaries; hospital strength eval years 2005/2006",
+    "evidence_refs": "results/peft_mechanism_diagnostics_v1/reference/summary.json; results/peft_mechanism_diagnostics_v1/hospital_strength/summary.json",
+    "notes": "[확인] Diagnostics are downstream analyses of already-opened development outputs."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_method_pilot_screen_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "external_gap_first_block Bike/Household; temporal_replication_block Bike/Household; coarse_supervision_bdg2_eagle_lamb_2016_2017",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Uses Study12/13 selected_results, Study17 BDG2 evaluation truth/predictions, and Bike raw covariate correlation screen",
+    "evidence_refs": "results/peft_method_pilot_screen_v1/source_hashes.json; results/peft_method_pilot_screen_v1/adaptation_abstain_control.json; results/peft_method_pilot_screen_v1/covariate_lag_control.json; results/peft_method_pilot_screen_v1/pattern_preserving_control.json",
+    "notes": "[확인] Method pilot screen reuses already-opened development artifacts; [미검증] exact covariate-lag raw Bike analysis window is not separately frozen in the artifact, so it is conservatively mapped to the already exposed Bike raw/source family rather than certified as a clean unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_module_ablation_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_objective_alignment_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "external_gap_first_block Bike; external_gap_first_block Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Study15 reuses Study12 Bike/Household train63/V13/C13/E83 origins at L336/H48",
+    "evidence_refs": "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_results_20260908.md",
+    "notes": "[확인] Objective alignment is not a new clean holdout source."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_observation_operator_entry_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "observation_operator_entry_uscrn_az_tucson_2024; synthetic operator semantics checks",
+    "coverage_status": "[확인] mapped_to_qc_entry_row",
+    "source_range_summary": "USCRN AZ_Tucson_11_W hourly 2024-01-01 01:00~2025-01-01 00:00 UTC; subhourly 2024-01-01 00:05~2025-01-01 00:00 UTC",
+    "evidence_refs": "experiments/peft_observation_operator_entry_v1/README.md; data_external/uscrn_operator_entry_v1/contract.json; data_external/uscrn_operator_entry_v1/qc.json; results/peft_observation_operator_entry_v1/final_audit.json",
+    "notes": "[확인] Data were downloaded/QC'd for observation-operator semantics and no forecast score was treated as sealed final."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_optimization_control_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "P0 Bike/Household from fullft reference v3 contract; FULL90/SPREAD30/RECENT30 training-row controls",
+    "evidence_refs": "results/peft_optimization_control_v1/evidence/contract.json; results/peft_optimization_control_v1/summary.json; results/peft_optimization_control_v1/exposure_unit_audit.json",
+    "notes": "[확인] Optimization-control artifacts are development exposure over P0 units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_overlap_transfer_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "overlap_transfer_P1 Bike; overlap_transfer_P1 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Bike 2012-04-06~2012-12-04; Household 2008-08-30~2009-04-29",
+    "evidence_refs": "runs/peft_overlap_transfer_v1/prepared/manifest.json; results/peft_overlap_transfer_v1/evidence/prepared_manifest.json; _docs/notes/tsfm_topics/07_research_direction/29_overlap_transfer_20260910.md",
+    "notes": "[확인] P1 overlap-transfer results are development exposure."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_r1_validation_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "P0 Bike/Household from fullft reference v3 contract",
+    "evidence_refs": "results/peft_r1_validation_v1/evidence/contract.json; results/peft_r1_validation_v1/summary.json",
+    "notes": "[확인] R1 validation opened metrics/residual artifacts on P0 and cannot serve as final."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_revision_entry_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "revision_entry_payems_indpro_2020_2024",
+    "coverage_status": "[확인] mapped_to_ledger_row",
+    "source_range_summary": "ALFRED PAYEMS/INDPRO event months 1989-12-01~2024-12-01; evaluation origins/target events 2020-01-01~2024-12-01",
+    "evidence_refs": "results/peft_revision_entry_v1/data_qc.json; results/peft_revision_entry_v1/origin_audit.json; runs/peft_revision_entry_v1/validation_selection.json; results/peft_revision_entry_v1/cpu_results.json",
+    "notes": "[확인] Missing ALFRED revision-entry ledger gap filled."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_selection_regret_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "external_gap_first_block Bike/Household; temporal_replication_block Bike/Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Study14 uses Study12 and Study13 four cells; no separate fresh unit",
+    "evidence_refs": "results/peft_selection_regret_v1/selected_results.csv; _docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_results_20260908.md",
+    "notes": "[확인] Selection/calibration artifacts reuse already-opened Bike/Household cells."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_shift_mechanism_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_temporal_replication_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "temporal_replication_block Bike; temporal_replication_block Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows_with_manifest_boundaries",
+    "source_range_summary": "Bike 2011-07-10~2012-01-16; Household 2007-06-25~2008-01-01",
+    "evidence_refs": "runs/peft_temporal_replication_v1/prepared/manifest.json; results/peft_temporal_replication_v1/selected_results.csv; _docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_results_20260908.md",
+    "notes": "[확인] Study13 opened selected results for both units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "experiments/peft_trainlag_v1",
+    "dir_kind": "experiments",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_adaptation_scope_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "adaptation_scope_s1_ettm2; adaptation_scope_s1_jena2024",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "ETTm2 2018-03-02~2018-06-25; Jena 2024-09-07~2024-12-31",
+    "evidence_refs": "results/peft_adaptation_scope_v1/summary_and_costs.json; _docs/notes/tsfm_topics/02_adaptation_scope/04_peft_adaptation_scope_s1_results_20260908.md",
+    "notes": "[확인] S1 opened validation/evaluation target results for both units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_calibration_closure_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "Study11 CPU calibration reuses Study10 synthetic predictions; no new calendar source",
+    "evidence_refs": "results/peft_calibration_closure_v1/summary.json; _docs/notes/tsfm_topics/03_selection_calibration/11_peft_calibration_closure_results_20260908.md",
+    "notes": "[확인] Calibration closure does not certify a fresh real holdout."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_capacity_probe_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "fullft_reference_P0 Bike/Household; overlap_transfer_P1 Bike/Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Capacity probe uses P0 and P1 Bike/Household contracts and opened probe metrics",
+    "evidence_refs": "results/peft_capacity_probe_v1/evidence/plan.json; results/peft_capacity_probe_v1/evidence/P0_FULL90_contract.json; results/peft_capacity_probe_v1/evidence/P1_FULL90_contract.json; results/peft_capacity_probe_v1/summary.json",
+    "notes": "[확인] Study30 is covered by P0/P1 ledger rows."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_coarse_supervision_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "coarse_supervision_bdg2_eagle_lamb_2016_2017",
+    "coverage_status": "[확인] mapped_to_ledger_row",
+    "source_range_summary": "BDG2 raw 2016-01-01~2017-12-31; train 2016-02~2016-12; validation 2017-01~2017-03; evaluation 2017-04~2017-06",
+    "evidence_refs": "runs/peft_coarse_supervision_v1/data/metadata.json; runs/peft_coarse_supervision_v1/data/data_build_contract.json; results/peft_coarse_supervision_v1/independent_evaluation_audit.json; _docs/notes/tsfm_topics/04_objective_observation/17_coarse_supervision_results_20260908.md",
+    "notes": "[확인] Missing BDG2 coarse-supervision ledger gap filled."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_contribution_freeze_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "contribution_freeze_bdg2_eagle2017; contribution_freeze_jena2023",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "BDG2 2017-05-04~2018-01-01; Jena 2023-05-04~2024-01-01",
+    "evidence_refs": "results/peft_contribution_freeze_v1/evidence/prepared_summary.json; _docs/notes/tsfm_topics/07_research_direction/31_contribution_freeze_20260911.md",
+    "notes": "[확인] Corrects previous BMRA mislabel for Study31."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_decision_transfer_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "decision_transfer_dev_jena2021; decision_transfer_test_jena2022; decision_transfer_dev_bmra2022; decision_transfer_test_bmra2023",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Jena 2021/2022 and BMRA 2022/2023 development/test transfer windows",
+    "evidence_refs": "results/peft_decision_transfer_v1/evidence/prepared_summary.json; experiments/peft_decision_transfer_v1/PURPOSE_DATA.md; _docs/notes/tsfm_topics/07_research_direction/33_decision_transfer_20260911.md",
+    "notes": "[확인] Study33 opened transfer evidence; final status is NO."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_dependence_screen_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "dependence_screen_v1 synthetic Markov DGP",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic length 512; context 128; train 64; val 32; devtest 128",
+    "evidence_refs": "results/peft_dependence_screen_v1/data_gate/summary.json; _docs/history/2026-09-11.md",
+    "notes": "[판정] Data gate stopped before GPU Phase 1; not a real fresh holdout."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_external_gap_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "external_gap_first_block Bike; external_gap_first_block Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows_with_manifest_boundaries",
+    "source_range_summary": "Bike 2011-01-01~2011-07-10; Household 2006-12-17~2007-06-25, with train/V/C/eval split boundaries from manifest",
+    "evidence_refs": "runs/peft_external_gap_v1/prepared/manifest.json; results/peft_external_gap_v1/diagnostics.json; _docs/notes/tsfm_topics/02_adaptation_scope/12_peft_external_gap_results_20260908.md",
+    "notes": "[확인] Parent spot-check gap fixed: exact retained timestamp boundaries exist in prepared manifest."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_fullft_reference_v3",
+    "dir_kind": "results",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Bike 2012-01-16~2012-09-14; Household 2008-01-01~2008-08-30",
+    "evidence_refs": "runs/peft_fullft_reference_v3/prepared/manifest.json; results/peft_fullft_reference_v3/summary.json; _docs/notes/tsfm_topics/06_fullft_reference/20_peft_fullft_reference_results_20260909.md",
+    "notes": "[확인] Full fine-tuning reference results are development-exposed P0 units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_future_utility_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "contribution_freeze_bdg2_eagle2017; contribution_freeze_jena2023",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Reuses Study31 BDG2/Jena development units",
+    "evidence_refs": "_docs/notes/tsfm_topics/07_research_direction/32_future_utility_20260911.md; results/peft_future_utility_v1/summary.json",
+    "notes": "[확인] Future-utility artifacts do not introduce sealed final data."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_head_complement_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "adaptation_scope_s1_ettm2; synthetic geometry checks",
+    "coverage_status": "[확인] mapped_real_features_no_new_targets",
+    "source_range_summary": "ETTm2 train-origin feature cache from S1; synthetic CPU checks; validation/evaluation target values marked unused in entry gate",
+    "evidence_refs": "results/peft_head_complement_v1/entry_gate.json; results/peft_head_complement_v1/entry_gate_verified.json; _docs/notes/tsfm_topics/02_adaptation_scope/07_head_complement_method_gate_results_20260908.md",
+    "notes": "[확인] Directory does not add a clean holdout; ETTm2 source is already development-exposed by S1."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_head_convergence_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "head_convergence_jena2018; head_convergence_bmra2017; excluded_jena2020",
+    "coverage_status": "[확인] mapped_to_ledger_rows_and_exclusion_row",
+    "source_range_summary": "Jena 2018-05-04~2019-01-01; BMRA 2017-05-04~2018-01-01; Jena2020 excluded due prior raw exposure",
+    "evidence_refs": "results/peft_head_convergence_v1/evidence/prepared_summary.json; experiments/peft_head_convergence_v1/PURPOSE.md; _docs/notes/tsfm_topics/07_research_direction/35_head_convergence_20260911.md",
+    "notes": "[확인] Includes excluded Jena2020 so it is not silently treated as fresh."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_initial_headroom_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "initial_headroom_jena2019; initial_headroom_bmra2018",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Jena 2019-05-04~2020-01-01; BMRA 2018-01-04~2018-09-03",
+    "evidence_refs": "results/peft_initial_headroom_v1/evidence/prepared_summary.json; _docs/notes/tsfm_topics/07_research_direction/34_initial_headroom_20260911.md",
+    "notes": "[확인] Study34 opened development evidence."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_mechanism_diagnostics_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "fullft_reference_P0 Bike/Household; hospital_monthly_2000_2006",
+    "coverage_status": "[확인] mapped_to_development_rows",
+    "source_range_summary": "P0 Bike/Household via reference summaries; hospital strength eval years 2005/2006",
+    "evidence_refs": "results/peft_mechanism_diagnostics_v1/reference/summary.json; results/peft_mechanism_diagnostics_v1/hospital_strength/summary.json",
+    "notes": "[확인] Diagnostics are downstream analyses of already-opened development outputs."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_method_pilot_screen_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "external_gap_first_block Bike/Household; temporal_replication_block Bike/Household; coarse_supervision_bdg2_eagle_lamb_2016_2017",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Uses Study12/13 selected_results, Study17 BDG2 evaluation truth/predictions, and Bike raw covariate correlation screen",
+    "evidence_refs": "results/peft_method_pilot_screen_v1/source_hashes.json; results/peft_method_pilot_screen_v1/adaptation_abstain_control.json; results/peft_method_pilot_screen_v1/covariate_lag_control.json; results/peft_method_pilot_screen_v1/pattern_preserving_control.json",
+    "notes": "[확인] Method pilot screen reuses already-opened development artifacts; [미검증] exact covariate-lag raw Bike analysis window is not separately frozen in the artifact, so it is conservatively mapped to the already exposed Bike raw/source family rather than certified as a clean unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_module_ablation_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/09_peft_module_ablation_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_objective_alignment_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "external_gap_first_block Bike; external_gap_first_block Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Study15 reuses Study12 Bike/Household train63/V13/C13/E83 origins at L336/H48",
+    "evidence_refs": "_docs/notes/tsfm_topics/04_objective_observation/15_peft_objective_alignment_results_20260908.md",
+    "notes": "[확인] Objective alignment is not a new clean holdout source."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_observation_operator_entry_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "observation_operator_entry_uscrn_az_tucson_2024; synthetic operator semantics checks",
+    "coverage_status": "[확인] mapped_to_qc_entry_row",
+    "source_range_summary": "USCRN AZ_Tucson_11_W hourly 2024-01-01 01:00~2025-01-01 00:00 UTC; subhourly 2024-01-01 00:05~2025-01-01 00:00 UTC",
+    "evidence_refs": "experiments/peft_observation_operator_entry_v1/README.md; data_external/uscrn_operator_entry_v1/contract.json; data_external/uscrn_operator_entry_v1/qc.json; results/peft_observation_operator_entry_v1/final_audit.json",
+    "notes": "[확인] Data were downloaded/QC'd for observation-operator semantics and no forecast score was treated as sealed final."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_optimization_control_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "P0 Bike/Household from fullft reference v3 contract; FULL90/SPREAD30/RECENT30 training-row controls",
+    "evidence_refs": "results/peft_optimization_control_v1/evidence/contract.json; results/peft_optimization_control_v1/summary.json; results/peft_optimization_control_v1/exposure_unit_audit.json",
+    "notes": "[확인] Optimization-control artifacts are development exposure over P0 units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_overlap_transfer_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "overlap_transfer_P1 Bike; overlap_transfer_P1 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "Bike 2012-04-06~2012-12-04; Household 2008-08-30~2009-04-29",
+    "evidence_refs": "runs/peft_overlap_transfer_v1/prepared/manifest.json; results/peft_overlap_transfer_v1/evidence/prepared_manifest.json; _docs/notes/tsfm_topics/07_research_direction/29_overlap_transfer_20260910.md",
+    "notes": "[확인] P1 overlap-transfer results are development exposure."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_paper_closure_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "audit package only",
+    "coverage_status": "[확인] audit_output_not_data_source",
+    "source_range_summary": "No PEFT target exposure introduced by this audit script; outputs summarize existing metadata/artifacts only",
+    "evidence_refs": "results/peft_paper_closure_v1/build_data_exposure_audit.py; results/peft_paper_closure_v1/data_exposure_ledger.csv; results/peft_paper_closure_v1/holdout_availability.json",
+    "notes": "[확인] Owned closure artifacts only."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_r1_validation_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "fullft_reference_P0 Bike; fullft_reference_P0 Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows",
+    "source_range_summary": "P0 Bike/Household from fullft reference v3 contract",
+    "evidence_refs": "results/peft_r1_validation_v1/evidence/contract.json; results/peft_r1_validation_v1/summary.json",
+    "notes": "[확인] R1 validation opened metrics/residual artifacts on P0 and cannot serve as final."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_revision_entry_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "revision_entry_payems_indpro_2020_2024",
+    "coverage_status": "[확인] mapped_to_ledger_row",
+    "source_range_summary": "ALFRED PAYEMS/INDPRO event months 1989-12-01~2024-12-01; evaluation origins/target events 2020-01-01~2024-12-01",
+    "evidence_refs": "results/peft_revision_entry_v1/data_qc.json; results/peft_revision_entry_v1/origin_audit.json; runs/peft_revision_entry_v1/validation_selection.json; results/peft_revision_entry_v1/cpu_results.json",
+    "notes": "[확인] Missing ALFRED revision-entry ledger gap filled."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_selection_regret_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "external_gap_first_block Bike/Household; temporal_replication_block Bike/Household",
+    "coverage_status": "[확인] mapped_to_existing_development_rows",
+    "source_range_summary": "Study14 uses Study12 and Study13 four cells; no separate fresh unit",
+    "evidence_refs": "results/peft_selection_regret_v1/selected_results.csv; _docs/notes/tsfm_topics/03_selection_calibration/14_peft_selection_regret_results_20260908.md",
+    "notes": "[확인] Selection/calibration artifacts reuse already-opened Bike/Household cells."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_shift_mechanism_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/08_peft_shift_mechanism_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_temporal_replication_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "temporal_replication_block Bike; temporal_replication_block Household",
+    "coverage_status": "[확인] mapped_to_ledger_rows_with_manifest_boundaries",
+    "source_range_summary": "Bike 2011-07-10~2012-01-16; Household 2007-06-25~2008-01-01",
+    "evidence_refs": "runs/peft_temporal_replication_v1/prepared/manifest.json; results/peft_temporal_replication_v1/selected_results.csv; _docs/notes/tsfm_topics/02_adaptation_scope/13_peft_temporal_replication_results_20260908.md",
+    "notes": "[확인] Study13 opened selected results for both units."
+  },
+  {
+    "evidence_status": "[확인]",
+    "peft_dir": "results/peft_trainlag_v1",
+    "dir_kind": "results",
+    "mapped_exposure_units": "peft_shift_module_trainlag_synthetic",
+    "coverage_status": "[확인] mapped_to_synthetic_ledger_row",
+    "source_range_summary": "synthetic episodes, no calendar source",
+    "evidence_refs": "_docs/notes/tsfm_topics/02_adaptation_scope/10_peft_trainlag_results_20260908.md",
+    "notes": "[판정] Synthetic data is not a real fresh source/period unit."
+  }
+]

@@ -1,0 +1,14 @@
+source_dataset,target,chronological_range,roles,study_id,source_ref,seen_in_results,status,final_holdout_candidate
+bike (fullft),bike or household targets (all),train None~,"T,V,C,D (E as final)",20_fullft_reference,runs/peft_fullft_reference_v3/prepared/manifest.json,yes,E seen in development,no(used in development only)
+household (fullft),bike or household targets (all),train None~,"T,V,C,D (E as final)",20_fullft_reference,runs/peft_fullft_reference_v3/prepared/manifest.json,yes,E seen in development,no(used in development only)
+bike,target columns per dataset,same as Study20 exposed windows,"Train/V for selection, E for diagnosis",26_mechanism_diagnostics,results/peft_mechanism_diagnostics_v1/reference/summary.json,yes,E used for development validation,no
+household,target columns per dataset,same as Study20 exposed windows,"Train/V for selection, E for diagnosis",26_mechanism_diagnostics,results/peft_mechanism_diagnostics_v1/reference/summary.json,yes,E used for development validation,no
+P0,unknown,P0/P1 periods from existing exposure,"T,V,E",30_capacity_probe,results/peft_capacity_probe_v1/summary.json,yes,P1/P0 E already exposed,no (no new source/period)
+P1,unknown,P0/P1 periods from existing exposure,"T,V,E",30_capacity_probe,results/peft_capacity_probe_v1/summary.json,yes,P1/P0 E already exposed,no (no new source/period)
+bmra+jena from overlap experiments,shared channels per study config,Fresh/independent source blocks,"T,V,D",31_contribution_freeze,results/peft_contribution_freeze_v1/summary.json,yes,D used to compare rule quality; not final holdout,no
+bmra+jena blocks,same as contribution/future utilities,validation/future split within same blocks,"V, D (future utility)",32_future_utility,results/peft_future_utility_v1/summary.json,yes,chronological split from shared source; exposed,no
+"bmra, jena, jena/ BMRA overlap",forecast channels in decision cells,development transfer window,"V,D,development",33_decision_transfer,results/peft_decision_transfer_v1/summary.json,yes,transfer rules and thresholds tested only,no
+"bmra, jena",same channels as prior,same windows as overlap/phase,"V,D",34_initial_headroom,results/peft_initial_headroom_v1/summary.json,yes,overlapping with prior studies,no
+"bmra, jena",same as 34,development period newly selected (not unseen),"T,V,D",35_head_convergence,results/peft_head_convergence_v1/summary_A.json,yes,new period used without final seal,no
+synthetic Markov test,synthetic,T64/V32/D128 synthetic,synthetic pretraining control,36_dependence_screen,results/peft_dependence_screen_v1/data_gate/summary.json,yes,STOP before GPU phase,not applicable (design screen only)
+hospital (M5-like),hospital series,V1 2003 / V2 2004 / E1 2005 / E2 2006,"T,V1,V2,E1,E2",24_hospital_shared_strength,results/hospital_shared_strength_v1/summary.json,yes,"E1,E2 exposed in this pilot",no (needs new source)
