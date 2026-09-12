@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/plan.json",
+      "sha256": "40226cc6e1ce7b293140faba3e08663cfb075c3fcae631b0040c4594d76747dd",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "results/peft_lora_only_diagnostic_v1/prelaunch_plan.json",
+      "sha256": "a0d096d50058feacf63e4bbd89411d2d6af2ea4f9d2b6945aec7427e9713512d",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/analyse.py",
+      "sha256": "880a9d49d0c37f6d22d0d2b05e11457db5e63398e670bcc6ad872376702705dd",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/audit.py",
+      "sha256": "05c26321444405f9b8a48eb02d409f64d021cc6c927311a4c5f4f1e26d21d276",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/fit.py",
+      "sha256": "e36e16e1dce9b4bf92d606501e049fa11bfc94be65174c86d5f1f83345016432",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/run.py",
+      "sha256": "ccfc9cb64e52b3eca8e5a8ca39e4ec174ab81fbfb048cb929649357bb14afa01",
+      "staged_bytes_equal": true
+    },
+    {
+      "path": "experiments/peft_lora_only_diagnostic_v1/PURPOSE.md",
+      "sha256": "1630f439a972cdb5d977b682b0301de933c9b80d2f8f3a07474047e010438148",
+      "staged_bytes_equal": true
+    }
+  ]
+}

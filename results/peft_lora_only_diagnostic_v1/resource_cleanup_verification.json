@@ -1,0 +1,12 @@
+[
+  {
+    "record": "results/peft_lora_only_diagnostic_v1/resource_cleanup.json",
+    "recorded_count": 87,
+    "original_processes_still_alive": 0
+  },
+  {
+    "record": "results/peft_lora_only_diagnostic_v1/unused_browser_helpers_cleanup.json",
+    "recorded_count": 36,
+    "original_processes_still_alive": 0
+  }
+]

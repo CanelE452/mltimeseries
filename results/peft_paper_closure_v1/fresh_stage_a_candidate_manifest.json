@@ -1,0 +1,372 @@
+{
+  "version": "fresh_stage_a_candidate_manifest.20260912.v1",
+  "generated_local_date": "2026-09-12",
+  "scope": "Target-blind fresh Stage A candidate manifest for Household post-P1 and BDG2 alternate building/period preparation.",
+  "no_target_performance_calculated": true,
+  "no_gpu_training_or_forecasting": true,
+  "domain_context": {
+    "domain": "hourly multivariate time-series forecasting for PEFT Stage A development replication",
+    "downstream_decision": "decide whether source-period units are ready for a future F0/HEAD/WIDE/LORA_ONLY/JOINT Stage A run without using target loss or forecast performance",
+    "quality_bar": "publication-directed development data gate; temporal leakage zero tolerance; target-blind metadata and availability only"
+  },
+  "evidence_sources_checked": [
+    "results/peft_paper_closure_v1/data_exposure_ledger.csv",
+    "results/peft_paper_closure_v1/holdout_availability.json",
+    "results/peft_paper_closure_v1/preregistered_stage_a.json",
+    "runs/peft_overlap_transfer_v1/prepared/manifest.json",
+    "results/peft_contribution_freeze_v1/evidence/prepared_summary.json",
+    "results/peft_coarse_supervision_v1/independent_evaluation_audit.json"
+  ],
+  "ready_policy": {
+    "status_values": [
+      "READY",
+      "BLOCKED",
+      "UNKNOWN"
+    ],
+    "ready_requires": [
+      "source files exist and hashes are recorded",
+      "candidate source-period and target/context series are fixed without target-performance inspection",
+      "local PEFT target-label exposure does not overlap the proposed target series and time range",
+      "context 336h / horizon 48h split is feasible with train/V/E1/E2 origin counts",
+      "aggregate target finite fraction is at least 70% in train, V, E1, and E2",
+      "each 48h target origin window has at least 70% finite target cells for the scored target series",
+      "all selected channels are nonconstant in the proposed precontext/train/V/E1/E2 intervals"
+    ],
+    "pretraining_overlap_policy": "Foundation-model pretraining overlap is recorded. UNKNOWN overlap does not make Stage A development impossible, but it prevents sealed-final claims."
+  },
+  "split_design": {
+    "context_hours": 336,
+    "horizon_hours": 48,
+    "origin_stride_hours": 24,
+    "target_window_overlap_hours_within_split": 24,
+    "layout": "precontext14 + train91 + gap2 + V31 + gap2 + E1_41 + E2_41 days",
+    "origin_counts_expected": {
+      "train": 90,
+      "val": 30,
+      "e1": 40,
+      "e2": 40
+    },
+    "embargo_hours": {
+      "train_to_val": 48,
+      "val_to_e1": 48,
+      "e1_to_e2": 0
+    },
+    "context_target_alignment": "origin is first target timestamp; context [origin-336h, origin), target [origin, origin+48h)",
+    "note": "This removes the old calibration role for this manifest. It is intentionally separate from the earlier train90/V30/cal20/eval80 contract and must be frozen before any Stage A execution."
+  },
+  "candidates": [
+    {
+      "candidate_id": "household_post_p1_earliest_20090429",
+      "source_dataset": "Household Power",
+      "status": "BLOCKED",
+      "status_reason": "[판정] The post-P1 source-period is target-blind and length-feasible, but not READY under the per-origin 48h target-window availability gate. A target-blind origin-exclusion or shorter split policy must be frozen before use.",
+      "stage_a_role": "development candidate only; not sealed final",
+      "source_provenance": {
+        "source_path": "data/uci_household_power/household_power_consumption.txt",
+        "source_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+        "source_rows": 2075259,
+        "source_timestamp_range": {
+          "first": "2006-12-16T17:24:00",
+          "last": "2010-11-26T21:02:00"
+        },
+        "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+        "parser": "semicolon-delimited minute rows; hourly means retained only when at least 45 finite minutes are available per channel"
+      },
+      "proposed_period": {
+        "selection_rule": "Earliest block starting at the prior Household P1 end-exclusive timestamp.",
+        "block_start": "2009-04-29T00:00:00",
+        "block_end_exclusive": "2009-12-07T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2009-04-29T00:00:00",
+            "2009-05-13T00:00:00"
+          ],
+          "train": [
+            "2009-05-13T00:00:00",
+            "2009-08-12T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2009-08-12T00:00:00",
+            "2009-08-14T00:00:00"
+          ],
+          "val": [
+            "2009-08-14T00:00:00",
+            "2009-09-14T00:00:00"
+          ],
+          "embargo_val_e1": [
+            "2009-09-14T00:00:00",
+            "2009-09-16T00:00:00"
+          ],
+          "e1": [
+            "2009-09-16T00:00:00",
+            "2009-10-27T00:00:00"
+          ],
+          "e2": [
+            "2009-10-27T00:00:00",
+            "2009-12-07T00:00:00"
+          ]
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "e1": 40,
+          "e2": 40
+        }
+      },
+      "series": {
+        "channels": [
+          "Global_active_power",
+          "Global_reactive_power",
+          "Voltage",
+          "Global_intensity"
+        ],
+        "target_columns": [
+          "Global_active_power",
+          "Global_reactive_power"
+        ],
+        "context_only_columns": [
+          "Voltage",
+          "Global_intensity"
+        ]
+      },
+      "availability_summary": {
+        "aggregate_target_finite_fraction": {
+          "train": 0.9740740740740741,
+          "val": 1.0,
+          "e1": 1.0,
+          "e2": 1.0
+        },
+        "min_origin_window_finite_fraction": {
+          "train": 0.0,
+          "val": 1.0,
+          "e1": 1.0,
+          "e2": 1.0
+        },
+        "row_finite_fraction_min_by_split": {
+          "precontext": 1.0,
+          "train": 0.9743589743589743,
+          "embargo_train_val": 0.6875,
+          "val": 1.0,
+          "embargo_val_e1": 1.0,
+          "e1": 1.0,
+          "e2": 1.0
+        },
+        "nonconstant_selected_channels": true,
+        "blocking_observation": "[확인] The train split contains at least one 48h target origin window with 0 finite target fraction under the 45-minute hourly aggregation rule."
+      },
+      "origin_gap": {
+        "needed": true,
+        "reason": "[확인] Post-P1 Household contains multi-hour/multi-day missing target runs. A daily-shift scan found no full 222-day post-P1 block through the local source end that satisfies the per-origin 70% gate without origin exclusions.",
+        "post_p1_missing_target_runs_checked": [
+          {
+            "start": "2009-06-13T00:00:00",
+            "end_exclusive": "2009-06-15T08:00:00",
+            "hours": 56
+          },
+          {
+            "start": "2009-08-13T05:00:00",
+            "end_exclusive": "2009-08-13T20:00:00",
+            "hours": 15
+          },
+          {
+            "start": "2010-01-12T15:00:00",
+            "end_exclusive": "2010-01-14T19:00:00",
+            "hours": 52
+          },
+          {
+            "start": "2010-03-20T04:00:00",
+            "end_exclusive": "2010-03-21T14:00:00",
+            "hours": 34
+          },
+          {
+            "start": "2010-08-17T21:00:00",
+            "end_exclusive": "2010-08-22T22:00:00",
+            "hours": 121
+          },
+          {
+            "start": "2010-09-25T04:00:00",
+            "end_exclusive": "2010-09-28T19:00:00",
+            "hours": 87
+          }
+        ]
+      },
+      "exposure_audit": {
+        "local_peft_target_overlap": false,
+        "known_prior_household_exposure_end_exclusive": "2009-04-29T00:00:00",
+        "known_prior_units": [
+          "Study12 external_gap_first_block 2006-12-17~2007-06-25",
+          "Study13 temporal_replication_block 2007-06-25~2008-01-01",
+          "Study20/26/30 P0 2008-01-01~2008-08-30",
+          "Study29/30 P1 2008-08-30~2009-04-29"
+        ],
+        "source_family_exposed": true,
+        "pretraining_overlap": "UNKNOWN"
+      },
+      "next_required_action_before_training": "Freeze either a target-blind origin-exclusion policy or a shorter Household split; then regenerate this manifest before any Stage A fit."
+    },
+    {
+      "candidate_id": "bdg2_bull_office_2016a",
+      "source_dataset": "BDG2",
+      "status": "READY",
+      "status_reason": "[판정] The candidate has fixed target-blind source/period/series, no local PEFT target-label overlap for the selected Bull office meters, feasible L336/H48 train/V/E1/E2 splits, and passes aggregate plus per-origin availability gates.",
+      "stage_a_role": "development candidate only; not sealed final",
+      "source_provenance": {
+        "electricity_path": "data_external/bdg2_coarse_supervision_v1/raw/electricity.csv",
+        "electricity_sha256": "039d909d8981e2d69eaeb366144e6ab7e84fa5e7e216aee42bddd95384a66418",
+        "metadata_path": "data_external/bdg2_coarse_supervision_v1/raw/metadata.csv",
+        "metadata_sha256": "992d0b29f24f96ad4332bc4dbb534b7bdd7dd2689aad093f94e93068ecddca02",
+        "source_url": "https://github.com/buds-lab/building-data-genome-project-2",
+        "parser": "hourly wide electricity CSV; blank cells treated as missing; local-naive timestamps"
+      },
+      "proposed_period": {
+        "selection_rule": "Exclude previously exposed Eagle/Lamb sites; prefer Office usage to stay close to prior BDG2 office diagnostics; iterate site_id alphabetically; choose the first site whose first four metadata-order office electricity meters pass target-blind availability/nonconstant gates. Bobcat was checked first and failed availability; Bull was the first passing site.",
+        "site_id": "Bull",
+        "primaryspaceusage": "Office",
+        "block_start": "2016-01-01T00:00:00",
+        "block_end_exclusive": "2016-08-10T00:00:00",
+        "boundaries": {
+          "precontext": [
+            "2016-01-01T00:00:00",
+            "2016-01-15T00:00:00"
+          ],
+          "train": [
+            "2016-01-15T00:00:00",
+            "2016-04-15T00:00:00"
+          ],
+          "embargo_train_val": [
+            "2016-04-15T00:00:00",
+            "2016-04-17T00:00:00"
+          ],
+          "val": [
+            "2016-04-17T00:00:00",
+            "2016-05-18T00:00:00"
+          ],
+          "embargo_val_e1": [
+            "2016-05-18T00:00:00",
+            "2016-05-20T00:00:00"
+          ],
+          "e1": [
+            "2016-05-20T00:00:00",
+            "2016-06-30T00:00:00"
+          ],
+          "e2": [
+            "2016-06-30T00:00:00",
+            "2016-08-10T00:00:00"
+          ]
+        },
+        "origin_counts": {
+          "train": 90,
+          "val": 30,
+          "e1": 40,
+          "e2": 40
+        }
+      },
+      "series": {
+        "channels": [
+          "Bull_office_Lilla",
+          "Bull_office_Hilton",
+          "Bull_office_Myron",
+          "Bull_office_Nicolas"
+        ],
+        "target_columns": [
+          "Bull_office_Lilla",
+          "Bull_office_Hilton"
+        ],
+        "context_only_columns": [
+          "Bull_office_Myron",
+          "Bull_office_Nicolas"
+        ],
+        "office_meter_count_at_site": 17
+      },
+      "availability_summary": {
+        "aggregate_target_finite_fraction": {
+          "train": {
+            "Bull_office_Lilla": 0.9967592592592592,
+            "Bull_office_Hilton": 0.9949074074074075
+          },
+          "val": {
+            "Bull_office_Lilla": 1.0,
+            "Bull_office_Hilton": 0.9972222222222222
+          },
+          "e1": {
+            "Bull_office_Lilla": 1.0,
+            "Bull_office_Hilton": 1.0
+          },
+          "e2": {
+            "Bull_office_Lilla": 0.9947916666666666,
+            "Bull_office_Hilton": 0.9947916666666666
+          }
+        },
+        "min_origin_window_finite_fraction": {
+          "train": 0.9583333333333334,
+          "val": 0.9583333333333334,
+          "e1": 1.0,
+          "e2": 0.9375
+        },
+        "row_finite_fraction_min_by_split": {
+          "precontext": 0.9970238095238095,
+          "train": 0.99496336996337,
+          "embargo_train_val": 1.0,
+          "val": 0.9973118279569892,
+          "embargo_val_e1": 1.0,
+          "e1": 1.0,
+          "e2": 0.9949186991869918
+        },
+        "nonconstant_selected_channels": true
+      },
+      "origin_gap": {
+        "needed": false,
+        "reason": "[확인] All train/V/E1/E2 target origin windows pass the 70% finite target-cell gate. E1 last target end equals E2 first origin under half-open windows, so there is no E1/E2 target overlap."
+      },
+      "selection_trace": [
+        {
+          "site_id": "Bobcat",
+          "candidate_columns": [
+            "Bobcat_office_Justine",
+            "Bobcat_office_Melody",
+            "Bobcat_office_Nikita",
+            "Bobcat_office_Alma"
+          ],
+          "office_meter_count": 5,
+          "availability_result": "BLOCKED",
+          "min_origin_window_finite_fraction": {
+            "train": 0.0,
+            "val": 0.0,
+            "e1": 0.0,
+            "e2": 0.0
+          }
+        },
+        {
+          "site_id": "Bull",
+          "candidate_columns": [
+            "Bull_office_Lilla",
+            "Bull_office_Hilton",
+            "Bull_office_Myron",
+            "Bull_office_Nicolas"
+          ],
+          "office_meter_count": 17,
+          "availability_result": "READY"
+        }
+      ],
+      "exposure_audit": {
+        "local_peft_target_overlap": false,
+        "known_prior_bdg2_exposure": [
+          "Study17 peft_coarse_supervision_v1 used Eagle and Lamb targets/donors over the local BDG2 source family, with fine evaluation truth in 2017-04~2017-06.",
+          "Study31/32 peft_contribution_freeze_v1 used Eagle_office_Elias and Eagle_office_Elvis over 2017-05-04~2018-01-01."
+        ],
+        "selected_site_or_building_seen_in_prior_peft_targets": false,
+        "source_family_exposed": true,
+        "pretraining_overlap": "UNKNOWN",
+        "claim_limit": "READY only as Stage A development under local target-label exposure audit. Not a clean sealed-final reserve because the BDG2 source family has been inspected and foundation-model pretraining overlap remains UNKNOWN."
+      },
+      "next_required_action_before_training": "Freeze this manifest as an input-selection artifact and copy the candidate into the future Stage A plan; do not inspect E1/E2 losses before model and selection rules are sealed."
+    }
+  ],
+  "overall": {
+    "ready_candidate_count": 1,
+    "blocked_candidate_count": 1,
+    "unknown_candidate_count": 0,
+    "stage_a_data_gate_status": "PARTIAL_READY_ONE_OF_TWO",
+    "interpretation": "[판정] BDG2 Bull Office can be used as one target-blind prepared Stage A development unit. Household post-P1 still needs a target-blind gap/exclusion or split revision before it is READY."
+  }
+}

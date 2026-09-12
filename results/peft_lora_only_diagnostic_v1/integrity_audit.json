@@ -1,0 +1,2268 @@
+{
+  "status": "PASS",
+  "old": {
+    "passed": true,
+    "study35_hash_count": 59,
+    "closure_hash_count": 486,
+    "old_rows_recomputed": 32,
+    "old_V_selection_verified": true,
+    "study35_plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+    "selection_sha256": "24bba947995e31092f580f8858f4e11e7dfc54abad1747c6857a0bcbf70a0cee",
+    "closure_sha256": "5695623dcd80794fc8d334d79a08b201b156e7d53965077a856cf427288ff92d"
+  },
+  "gate_count": 28,
+  "step0_max_abs_error": 0.0,
+  "trainable_counts": [
+    1179648
+  ],
+  "gate_example": {
+    "step0_max_abs_error": 0.0,
+    "F0_score": 0.5362212695865152,
+    "initial_score": 0.5362212695865152,
+    "trainable_count": 1179648,
+    "trainable_parameters": [
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.0.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.1.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.2.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.3.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.4.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.5.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.6.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.7.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.8.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.9.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.10.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.0.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.q.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.q.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.k.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.k.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.v.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.v.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.o.lora_A.default.weight",
+        "shape": [
+          8,
+          768
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "base.encoder.block.11.layer.1.self_attention.o.lora_B.default.weight",
+        "shape": [
+          768,
+          8
+        ],
+        "count": 6144,
+        "dtype": "torch.float32"
+      }
+    ],
+    "actual_modules": [
+      "encoder.block.0.layer.0.self_attention.q",
+      "encoder.block.0.layer.0.self_attention.k",
+      "encoder.block.0.layer.0.self_attention.v",
+      "encoder.block.0.layer.0.self_attention.o",
+      "encoder.block.0.layer.1.self_attention.q",
+      "encoder.block.0.layer.1.self_attention.k",
+      "encoder.block.0.layer.1.self_attention.v",
+      "encoder.block.0.layer.1.self_attention.o",
+      "encoder.block.1.layer.0.self_attention.q",
+      "encoder.block.1.layer.0.self_attention.k",
+      "encoder.block.1.layer.0.self_attention.v",
+      "encoder.block.1.layer.0.self_attention.o",
+      "encoder.block.1.layer.1.self_attention.q",
+      "encoder.block.1.layer.1.self_attention.k",
+      "encoder.block.1.layer.1.self_attention.v",
+      "encoder.block.1.layer.1.self_attention.o",
+      "encoder.block.2.layer.0.self_attention.q",
+      "encoder.block.2.layer.0.self_attention.k",
+      "encoder.block.2.layer.0.self_attention.v",
+      "encoder.block.2.layer.0.self_attention.o",
+      "encoder.block.2.layer.1.self_attention.q",
+      "encoder.block.2.layer.1.self_attention.k",
+      "encoder.block.2.layer.1.self_attention.v",
+      "encoder.block.2.layer.1.self_attention.o",
+      "encoder.block.3.layer.0.self_attention.q",
+      "encoder.block.3.layer.0.self_attention.k",
+      "encoder.block.3.layer.0.self_attention.v",
+      "encoder.block.3.layer.0.self_attention.o",
+      "encoder.block.3.layer.1.self_attention.q",
+      "encoder.block.3.layer.1.self_attention.k",
+      "encoder.block.3.layer.1.self_attention.v",
+      "encoder.block.3.layer.1.self_attention.o",
+      "encoder.block.4.layer.0.self_attention.q",
+      "encoder.block.4.layer.0.self_attention.k",
+      "encoder.block.4.layer.0.self_attention.v",
+      "encoder.block.4.layer.0.self_attention.o",
+      "encoder.block.4.layer.1.self_attention.q",
+      "encoder.block.4.layer.1.self_attention.k",
+      "encoder.block.4.layer.1.self_attention.v",
+      "encoder.block.4.layer.1.self_attention.o",
+      "encoder.block.5.layer.0.self_attention.q",
+      "encoder.block.5.layer.0.self_attention.k",
+      "encoder.block.5.layer.0.self_attention.v",
+      "encoder.block.5.layer.0.self_attention.o",
+      "encoder.block.5.layer.1.self_attention.q",
+      "encoder.block.5.layer.1.self_attention.k",
+      "encoder.block.5.layer.1.self_attention.v",
+      "encoder.block.5.layer.1.self_attention.o",
+      "encoder.block.6.layer.0.self_attention.q",
+      "encoder.block.6.layer.0.self_attention.k",
+      "encoder.block.6.layer.0.self_attention.v",
+      "encoder.block.6.layer.0.self_attention.o",
+      "encoder.block.6.layer.1.self_attention.q",
+      "encoder.block.6.layer.1.self_attention.k",
+      "encoder.block.6.layer.1.self_attention.v",
+      "encoder.block.6.layer.1.self_attention.o",
+      "encoder.block.7.layer.0.self_attention.q",
+      "encoder.block.7.layer.0.self_attention.k",
+      "encoder.block.7.layer.0.self_attention.v",
+      "encoder.block.7.layer.0.self_attention.o",
+      "encoder.block.7.layer.1.self_attention.q",
+      "encoder.block.7.layer.1.self_attention.k",
+      "encoder.block.7.layer.1.self_attention.v",
+      "encoder.block.7.layer.1.self_attention.o",
+      "encoder.block.8.layer.0.self_attention.q",
+      "encoder.block.8.layer.0.self_attention.k",
+      "encoder.block.8.layer.0.self_attention.v",
+      "encoder.block.8.layer.0.self_attention.o",
+      "encoder.block.8.layer.1.self_attention.q",
+      "encoder.block.8.layer.1.self_attention.k",
+      "encoder.block.8.layer.1.self_attention.v",
+      "encoder.block.8.layer.1.self_attention.o",
+      "encoder.block.9.layer.0.self_attention.q",
+      "encoder.block.9.layer.0.self_attention.k",
+      "encoder.block.9.layer.0.self_attention.v",
+      "encoder.block.9.layer.0.self_attention.o",
+      "encoder.block.9.layer.1.self_attention.q",
+      "encoder.block.9.layer.1.self_attention.k",
+      "encoder.block.9.layer.1.self_attention.v",
+      "encoder.block.9.layer.1.self_attention.o",
+      "encoder.block.10.layer.0.self_attention.q",
+      "encoder.block.10.layer.0.self_attention.k",
+      "encoder.block.10.layer.0.self_attention.v",
+      "encoder.block.10.layer.0.self_attention.o",
+      "encoder.block.10.layer.1.self_attention.q",
+      "encoder.block.10.layer.1.self_attention.k",
+      "encoder.block.10.layer.1.self_attention.v",
+      "encoder.block.10.layer.1.self_attention.o",
+      "encoder.block.11.layer.0.self_attention.q",
+      "encoder.block.11.layer.0.self_attention.k",
+      "encoder.block.11.layer.0.self_attention.v",
+      "encoder.block.11.layer.0.self_attention.o",
+      "encoder.block.11.layer.1.self_attention.q",
+      "encoder.block.11.layer.1.self_attention.k",
+      "encoder.block.11.layer.1.self_attention.v",
+      "encoder.block.11.layer.1.self_attention.o"
+    ],
+    "no_probe": true,
+    "native_head_frozen": true,
+    "native_encode_inherited": true,
+    "initialization_source": "    def reset_lora_parameters(self, adapter_name, init_lora_weights):\n        if init_lora_weights is not False:\n            if adapter_name in self.lora_A.keys():\n                if init_lora_weights is True:\n                    # initialize A the same way as the default for nn.Linear and B to zero\n                    # https://github.com/microsoft/LoRA/blob/a0a92e0f26c067cf94747bdbf1ce73793fa44d19/loralib/layers.py#L124\n                    nn.init.kaiming_uniform_(self.lora_A[adapter_name].weight, a=math.sqrt(5))\n                elif init_lora_weights.lower() == \"gaussian\":\n                    nn.init.normal_(self.lora_A[adapter_name].weight, std=1 / self.r[adapter_name])\n                else:\n                    raise ValueError(f\"Unknown initialization {init_lora_weights=}\")\n                nn.init.zeros_(self.lora_B[adapter_name].weight)\n                if self.lora_bias[adapter_name]:\n                    nn.init.zeros_(self.lora_B[adapter_name].bias)\n            if adapter_name in self.lora_embedding_A.keys():\n                # Initialize A to zeros and B the same way as the default for nn.Embedding, see:\n                # https://github.com/microsoft/LoRA/blob/4c0333854cb905966f8cc4e9a74068c1e507c7b7/loralib/layers.py#L59-L60\n                nn.init.zeros_(self.lora_embedding_A[adapter_name])\n                nn.init.normal_(self.lora_embedding_B[adapter_name])\n                if self.lora_bias[adapter_name]:\n                    # embeddings are not supported at the moment, but still adding this for consistency\n                    nn.init.zeros_(self.lora_embedding_B[adapter_name].bias)\n\n        # Always synchronize non-sharded LoRA weights across TP ranks, regardless of\n        # init_lora_weights, since each rank initializes weights independently.\n        # We could skip some broadcast, for instance when the lora weights are initialized to zero,\n        # but this is a minor optimization and would add extra complexity to the code.\n        if dist.is_available() and dist.is_initialized():\n            base_layer = self.get_base_layer()\n            tp_plan = getattr(base_layer, \"_hf_tp_plan\", None)\n            device_mesh = getattr(base_layer, \"_hf_device_mesh\", None)\n            if device_mesh is not None:\n                if tp_plan not in [\"colwise\", \"rowwise\", \"embedding_rowwise\"]:\n                    warnings.warn(\n                        f'tp_plan \"{tp_plan}\" found on the base layer is not supported for LoRA weight '\n                        'synchronization. Expected one of \"colwise\", \"rowwise\", \"embedding_rowwise\". '\n                        \"LoRA weights may not be synchronized across ranks.\"\n                    )\n                pg = device_mesh.get_group()\n                src = dist.get_global_rank(pg, 0)\n                if tp_plan == \"colwise\" and adapter_name in self.lora_A:\n                    # The adapter weights need to be on device for broadcasting\n                    self._move_adapter_to_device_of_base_layer(adapter_name)\n                    dist.broadcast(self.lora_A[adapter_name].weight.data, src=src, group=pg)\n                elif tp_plan == \"rowwise\" and adapter_name in self.lora_B:\n                    # The adapter weights need to be on device for broadcasting\n                    self._move_adapter_to_device_of_base_layer(adapter_name)\n                    dist.broadcast(self.lora_B[adapter_name].weight.data, src=src, group=pg)\n                elif tp_plan == \"embedding_rowwise\" and adapter_name in self.lora_embedding_B:\n                    self._move_adapter_to_device_of_base_layer(adapter_name)\n                    dist.broadcast(self.lora_embedding_B[adapter_name].data, src=src, group=pg)\n",
+    "initialization_source_file_sha256": "1ef4e7033ebd01c9c6fbf0fc3837695b75b795c54f8a837b7578e8dfba2251a4",
+    "passed": true
+  },
+  "metric_audit": "same Study35 implementation + score_npz recomputation",
+  "native_F0_D_exact": true,
+  "target_scale_quantile_origin_exact": true,
+  "plan_sha256": "40226cc6e1ce7b293140faba3e08663cfb075c3fcae631b0040c4594d76747dd",
+  "selection_sha256": "efa517f76fc86dff6d0b304b2056e61dc0f57d894de325cd1e8567f9f3514e00",
+  "artifact_hashes": {
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/L720.pt": "4b8328f179217dc8136d8da9a5c74cef461865ce1ff0710f84a345412645ecfe",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/L720_val.npz": "41c9cdd8bcaca68b8de37b086e08fb40dba66418f6ab74b889309b935b40d670",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_1.npz": "d067d01482b4e69b4e73409496620626150cc1d148941ee6e5b4324c96d5302d",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_120.npz": "3b1b127ace25c05b1352b6553f77a7d9373456d7b9b99a4d363101fb862df209",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_15.npz": "8d9a3c76f55ebcd5701003cbed4015a32e06e742a3030581462bf33401c78b41",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_180.npz": "79a81bd39533e901a48ddb5b82c1af13443f028c8b47122afdd14518b70e2ba1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_2.npz": "293a7593e432daf75b60e5ad9f084d99ba1261445e50e80d1b0d03dbea1efb23",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_240.npz": "3dfc883a70edfff07d4707cfaeccd0143bde8510e0f3f34dd1580492b1498fe4",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_30.npz": "a2c5120b4386d1f585b22f7935d53a0efe98cfd3a13ed17752f57fb3f188772f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_360.npz": "41c9cdd8bcaca68b8de37b086e08fb40dba66418f6ab74b889309b935b40d670",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_4.npz": "614bea70bb52ea7ae1ffdc7536801c4fce20a2ecbd381eaad79b6ed8c530cf4a",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_540.npz": "e02a2c62b8b946970cd75c8718f25a0dcac24f505334b6fc43d4a3e1faa8ebf5",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_60.npz": "6034866d15b9342bb8fbbc9f40684d8db767ce9a0995a397e6fc3894d442610e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_720.npz": "7c39e2706b10e0f60f56fda89da1d8dbb60915fd965637d76b66a618af2f9c47",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/point_8.npz": "488e3d9084dd04d3e13248408c9b65dc964967a06d51ed4fc1b3f551a41ef37e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/progress.json": "b075381d5ec308874bbc90e73c6af7b75349fefe2c1310ebcf2866341c022567",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/result.json": "7b52be4c34bdb482807e6bdd558377ca97a2dab3cd20a999cf60dfb7ee1844d1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/S180.pt": "4c16bb31f6f0e738c04699caa351763f20a642787bb6bd5b89516bb88af2fcb9",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r0/output/S180_val.npz": "79a81bd39533e901a48ddb5b82c1af13443f028c8b47122afdd14518b70e2ba1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/L720.pt": "b583b3d7ed320b3cf969a33be67fc33be9baa3127592f6209ace7fb4715d5d53",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/L720_val.npz": "123de5713be4d84aaa6b309de8a2fd0a128f10b9b87d272c3b55ab27bf7099c3",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_1.npz": "d29b03d1077aacbc17dc8dfcd27639ba6da490de672766d625cbedd245e75d58",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_120.npz": "8c65394f5193fd4d3b0259ccfe82dcbff8dcdeea8c1b4735305c4cb554dfc831",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_15.npz": "f2887db14a115547eb46f988d16f86a9bfaa52cd6f4ddd81a49ec3d742dd5856",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_180.npz": "123de5713be4d84aaa6b309de8a2fd0a128f10b9b87d272c3b55ab27bf7099c3",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_2.npz": "4a590a7c7d99f33dc61d66315ff82edebbd41007cdbbd0fa06f53d5a435bf79e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_240.npz": "b338f36eadd0274f212fc655f2fc08894782b6b31b81a0acafe71efbd481ccb6",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_30.npz": "a5b09454530666093eb9fc40cc240bd5d5ba32621ed13c4b8e9cb019a5845822",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_360.npz": "3c88874fcbb6053c3c0f8a0860da70454f973a1aa16888eda99a345e37b4405a",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_4.npz": "f5fbc0f782368b94a8cec9e5e9eff6d556a2ee4487e487095e771b0c5bdcc67f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_540.npz": "1c565f49dacc82484903ec27e66c729ead628354e2b09cc9fd462c1fa879f4b1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_60.npz": "acc32a663b3b018483ea1f5e0a1ee3201f77f7d8774cffa31fb559fa2a2a3d98",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_720.npz": "74393f5669ed4600c1144154b46664fc3c33e7c3457c6748f38eb82cf3484228",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/point_8.npz": "97278535f8421288c30b9ce1ad2ba770e1e2a26e468db2e8825bf4992c920c5e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/progress.json": "444aa8b615865d3292c59065e1b64df74cb83a4dd0509dbd30057fb9638fc0ba",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/result.json": "782278f2b8e6deadb2d0c46d2007df5a6848dcc3218b28d013e387edea5b6ed6",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/S180.pt": "c59f36f7e9c0a0227fb31f05e85e26f7902dfd93c38dacf291bbbfccdc81fc5f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r1/output/S180_val.npz": "123de5713be4d84aaa6b309de8a2fd0a128f10b9b87d272c3b55ab27bf7099c3",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/L720.pt": "cd5a1c2c9d57f0c9fea4dfd3aea1213339b2098879aef5b6d1a8abae0cc00f46",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/L720_val.npz": "80a812256adee8022a1d9cd8b921c443c417de82d2e24db8c28184eea40a01f2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_1.npz": "3efa3f31ed66189fa5f4023a361bb6571a719d475d20d8a5375835753c65be50",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_120.npz": "3404943e0d53992685ed720bddac101f91b73a69e89ac98cf982502d1dabe8ba",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_15.npz": "f8b8047baf3bb4b27727d0a3598877145db1bab1b58cb77cc8bf9106209044a4",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_180.npz": "dca37a2fd8f6816455b20e65f6057b183718ae162c4b45001eac0af79e0b2916",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_2.npz": "bc77d94dde863c98191c7acc1a3e8fb6b6697f4c2f443e98913fe3b6fa73ad83",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_240.npz": "3cd145b77026ff82aabc1519330f08b6b963a19463bc6064d1f79e86347f0478",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_30.npz": "9440f1f562943acf9052455caa11145949611b0838f00e0663f534d304c95e67",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_360.npz": "a0dcfddc7be603c88db20eaa350a73e7d47947b974014379b3db69b4e265c958",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_4.npz": "dc0b9ce4360816fc06e3a8a4fad69d4d13a7c1fe0a7f5e992bc8e334bf854ce9",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_540.npz": "b6b3ab92c85d0420eca861128e0bc0c537ef235f44b952767235a835c4e70a51",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_60.npz": "80a812256adee8022a1d9cd8b921c443c417de82d2e24db8c28184eea40a01f2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_720.npz": "4e5a6497ebd8a8651ed407e09e40a96e2abd9c9818bcc9253c5cbd001bc19135",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/point_8.npz": "c55de4c24c17d63cfad958bb159e083408861dd23195a8674532e277cb271318",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/progress.json": "2205d63c33573fa4b75b5836f2bd2d6c00145e456f661f13ce23ad1c03ff72f4",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/result.json": "1356ec039172cd957f846c933bb8e65b93626805fa7986d0e6f943f78a331514",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/S180.pt": "648cf1247fc69e1799773ae3055fc88bbda8eca047af6a12caeca744cce25763",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r2/output/S180_val.npz": "80a812256adee8022a1d9cd8b921c443c417de82d2e24db8c28184eea40a01f2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/L720.pt": "8f87ef845995910f8f5a7f7ddcc7f65f09fdef7f6fb2fe1d0127d64d6b283f2d",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/L720_val.npz": "778078b1938a8007685221c2c8b14ffd5a173e515e901c2eb7f209882cfb938f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_1.npz": "22c16f101b075a1298705928260a73a20b71b181bb4a4706acc911e97bb74ce4",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_120.npz": "8483554e2edc50921929513c046959d3020b042631714f67362e85efb45a35cf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_15.npz": "6a1e66789793feb202864572111c8cd41eaf18a315dddcf975041dc72e98e457",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_180.npz": "8fe06083e4ff15fbfc9f2c761185a8a4e6607eae114dc596585b5cb7b977b966",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_2.npz": "e25e3cb4a756422f85041ab2dbf10b30c3e7219e75e98464b44537a81274391f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_240.npz": "aff9f96999ab9e1d521e1716d150075c0e3fa226188003e417131bb8f08d686c",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_30.npz": "778078b1938a8007685221c2c8b14ffd5a173e515e901c2eb7f209882cfb938f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_360.npz": "fcfdf7b521d3b6130a65b0dcdd832a307b664fe3fe956d40edcb24c46b558570",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_4.npz": "2ef3a819b68fdb2c5fdf6c2b4932e077bd2fe7f74489c8435ca305dded407bd9",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_540.npz": "9b337c5f23d0ee823636464d041174749c84a9fec7d964c8d01b65b883ddd4c7",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_60.npz": "5a76670030967f02a6899d195be35b7aab78c229215656c8be13678a74c98d55",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_720.npz": "48dec60051d6e0228a0918c277e4192558dd18d130e4dc7d8a876d53a1f8a694",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/point_8.npz": "b7affc4847bbf5d052c500617de90003c3a6e7ae40440bee92d70ca763648213",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/progress.json": "594802379f9926ac551ccf258bbe14378a202caa74f6d716756a5a1b58267a50",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/result.json": "77ffd744486d568889d142ecd79823fa1b8c273134e023b826585db648239b40",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/S180.pt": "53c40c5c6de6c4eda375217a0253f0fad9597a6bb0e31b3e8cc7bb7e3c5b4f4b",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30000_r3/output/S180_val.npz": "778078b1938a8007685221c2c8b14ffd5a173e515e901c2eb7f209882cfb938f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/L720.pt": "b936c9d3348aa988ba37c5de287baced4f45bd3efd041ce8cf287a6af35b7337",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/L720_val.npz": "64b24ef75b2d9845ff1f54182cafb6b3b67bdfd4dcddba86d2f67615129d3d7f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_1.npz": "26714f5433fcb3272a574954aab352b0327a14e3298244a55418af1772204bcc",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_120.npz": "43d42120dac09db1c9a7bc6901ca59021842285a2c447639b1a967c57b8f332e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_15.npz": "b00a3078d5a2c9190cf32b540e2a9a8f1114b293cd1c180863be32d4d96bb2bb",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_180.npz": "894f13fc396a2c4686d10c6c4b14e08047b54e59329045bbdcb5b3aed5afacb2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_2.npz": "21db2468d0ad081cf1c3804d2562736c9721dc2609c7aee7bb0a3d9aff3994c6",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_240.npz": "634f3d34fcc5d1b8dcac6bdb99aed83f892fbbd2f33518acc224ae1aea036508",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_30.npz": "bf1288516f3185c24aa53ac591930f545ea47667c5d0080c0c5525c899b36076",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_360.npz": "64b24ef75b2d9845ff1f54182cafb6b3b67bdfd4dcddba86d2f67615129d3d7f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_4.npz": "fe2e134f83e32358d114e0a92cd976a6f636ac8212de97c9c21e55c27baddaa4",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_540.npz": "2955ede680252738be4697789ac29f66c4afec2c570aaa960c0bfcfb12c8c488",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_60.npz": "f01beeeecad318fefccbae4497142194a061f78b7ae944bdbd064927735fd7a1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_720.npz": "9c9426e461b5b489a8e188ec4d4bfd55cc06bad21e1f4516bbe58833eff38fd9",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/point_8.npz": "d58a20d0ff4b7d6338da7bc08ffa5084be892c59d7fbe0d3be348ca54cad0e04",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/progress.json": "c374f0922937e538266dd21bd731004a4bd1429c168d1d957089de4d4247e11c",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/result.json": "5b248d9d1e28ca107347dbea13e98d0302d8d0e0cbea191dcd5da4d362cc0ebe",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/S180.pt": "ef0b258cc80633b64df0a5c7072ab5087ddd907ac644b6e716ae71813def0b39",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r0/output/S180_val.npz": "894f13fc396a2c4686d10c6c4b14e08047b54e59329045bbdcb5b3aed5afacb2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/L720.pt": "08abca43eddf1663126b3677c0b79c05461577e233c94ceabb1501289af9fd47",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/L720_val.npz": "fb7286eb882f8335f94288f7fea05c4b4970dd5692911afaa765dc7b027ee976",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_1.npz": "c88e97c12218f077849c5fc7213818cef7dd130dec376b94ccbf300788a43db2",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_120.npz": "fb7286eb882f8335f94288f7fea05c4b4970dd5692911afaa765dc7b027ee976",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_15.npz": "8adcc75e6c3bfeb275266936617b33d89124ba53e05eb5106aea2db99890ed69",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_180.npz": "4023f45297c631d2433dc678c8430fd766914a060968a090d4640988b8242d55",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_2.npz": "551e32f8cc11366ff2bc0a9cfdb741344d70ac005fb514a1ef1c43f505fb10e5",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_240.npz": "04ba32b1d03b6e77a944d446a8a1dd81dbf463d79a70a20910c5319bc2533051",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_30.npz": "d32997a2c88c168ada41a6c501f14128b3ec1efd8861cd67e2d0e0681f120a8f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_360.npz": "6d443a118cfa745b9d8e375cc10a16fd83877f2e47ae3e9397c284cb42b4d43d",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_4.npz": "f3ba416772fbf9d76092d3bea65529d144240e3fe43fa47f7ab1896f53e5faab",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_540.npz": "5877d6262dd5d41ddcbc71f02ccbd8da7008dcc94bedb0a013ee6f0f322dd67d",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_60.npz": "9ab6cbc0faac73b0482f0fee8b9507cdf703740370329e1b8da36e69ed3e9e7e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_720.npz": "7306f19210ae1242e77aa8c6021366e22ce2febc4a75cf0baad992b32bbd05c6",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/point_8.npz": "81f16b242d05b22e55200bc6d1e2f1bb9e1716dfa57bb757e2c5b0f1de669016",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/progress.json": "f8f6f342b1f6584cecc32673dd50d2d230c94596396ce10d02648a5f91e427b7",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/result.json": "1ea95cda0ce468099d8830e0a8e4ae891a0cbc0bbae0bdda52f9928d05549e90",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/S180.pt": "d7156c847a0a0e49a9fcc13056c15f093c320b4becc53d22f7438325b7a42806",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r1/output/S180_val.npz": "fb7286eb882f8335f94288f7fea05c4b4970dd5692911afaa765dc7b027ee976",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/L720.pt": "2d56f86a9629338360482c4a87955008fa3ac8f1a376f3578a8e652e9576d277",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/L720_val.npz": "99df195b9ffd7fa559af5e02aefa493f79bf6435f1576082c512852d345460cd",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_1.npz": "878c9b5680b05508ffdb655dd44514d1c220357bd1e67683cb506b3c2151fb7a",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_120.npz": "7312c3bae04d541b6c5ddfd37f8f55e86ab3334815eafaed596044e603e3c218",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_15.npz": "030a4f9deb4d72648059ca3156e5f341238e13510de9ab4e70a3d212af95dc9c",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_180.npz": "0131df580c7caf3bdc92e91b862ba347b13c4cab3cc356f795ddb2124e25306b",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_2.npz": "ebe587dee787fa36aa66d3d47b0d9b19b41cac4276965a6fe0d378556c624918",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_240.npz": "65d5fe04d24dae0d62775d32a10ad04f4cf3f138de7f902703540dc8c8e75c06",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_30.npz": "99df195b9ffd7fa559af5e02aefa493f79bf6435f1576082c512852d345460cd",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_360.npz": "48b6e5045a69a35b688fce23cc310719ef7957305b2e040d7bdd788c3434fb98",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_4.npz": "59fe8c3c02fad736bf08838b4dee03166188070ac6f00de2e5aec973a1fa2619",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_540.npz": "d241ef5cc76a2c06d9672eb6b0775eb3b2951b416bc52125061fef8bd2aeff9e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_60.npz": "16fac60067198ff5dcce84dbe4c78c8671037fc5edbe29d260a447a63eb46fdd",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_720.npz": "82b59783ce95f9569cc8e5c91b522272581fa1085597611f4f666c1e8ad02738",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/point_8.npz": "0259d548d2165da8028c0a4b7d1781c9f3f7e850cca4db02c4b1582d28543aa5",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/progress.json": "61bfec308a1c6d4147ec7b5c3c38aaaae2aa497b69a30c54fac06e06aa405e20",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/result.json": "12c0791d3b8705dc837db61fdf746484fe589f68eb2cdade1d3cddd396e0498b",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/S180.pt": "b08291486df93127ea1a5362a3ccfacf55d1e36c14a231cbd9bc9fb0d2b53157",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r2/output/S180_val.npz": "99df195b9ffd7fa559af5e02aefa493f79bf6435f1576082c512852d345460cd",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/L720.pt": "19b0576cea332ded871b55e5250284faf1714eabc0bbad103779222b1b7497ef",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/L720_val.npz": "ad276dbe499722a9bc90f5089967cc85dff467f8e1ec4dbc3a992d0c5a2840b1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_0.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_1.npz": "8a0cb5958e1c7322762a82f7dfb35ed07e661fe462ea187713e05092fea187b7",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_120.npz": "d51ca2ae981129710fd55bcdcb84dae7e5f737a3befa2b829ff5bfcd1df24827",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_15.npz": "74314f17defeaa8253da60dd263acc883c60d39603bb726291086a79fcae3020",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_180.npz": "fa2d2ec19f4a71c549d77f46cdb380e6b6379cae36cab2fbaba1444d3a2699ab",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_2.npz": "0a95632302dcae4739182c2d24f96bff243626e81d8a792e8e4c5ccf2a0e7564",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_240.npz": "a5d5d6dfbfddc94501cd9d5114e4103d10b2a886c56a8df34a318355ee5a965f",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_30.npz": "ad276dbe499722a9bc90f5089967cc85dff467f8e1ec4dbc3a992d0c5a2840b1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_360.npz": "6b8dfa05b13f10bbbbe2b8f78f5df8357c1cc9d45831595959cfbebe8f36ad5d",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_4.npz": "e8be2f50c55e36e0b6f654ad25573e39147ce6aaac3de615df9f83a8fcea1da9",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_540.npz": "f26b006028ef6bfaf775035281cd4f856b281803250555a8bb123c8d63474827",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_60.npz": "c027fa4c11d7e5f3ecaa0357260b1a6fea6ba23169559c89f78881777c54330a",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_720.npz": "3b1b23e2ba1469f6cf50e0fac52308fbee96a613707cb01e62059a34e0fbf4e5",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/point_8.npz": "b352e106e9b73db0f7507b3e95963b5a7a5964e9cf62f25c8a0392841e78c6d1",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/progress.json": "ea96e65f5f6c866084485d5942fd8fa8b41e24548ebbb67d18f2c3eb99545f8e",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/result.json": "e3657d013acf7bcee648da864e84786059bacca1d753a69611c15878e0cdd7e5",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/S180.pt": "4a84f28a9fd4b4687ee1e39f3dbe03888994c0217c41b7f79c63194d4c01b103",
+    "runs/peft_lora_only_diagnostic_v1/fit/bmra_s30001_r3/output/S180_val.npz": "ad276dbe499722a9bc90f5089967cc85dff467f8e1ec4dbc3a992d0c5a2840b1",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/L720.pt": "dab2e16bb1287efc17ab1377b0f69cb2e179563f47a382ad2dc1ec049c78dbb0",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/L720_val.npz": "bb12250ca5647dd7220ea7244308865a9ba29d35a23855b7ea8290e338af694d",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_1.npz": "976736bfe004d97456437a59fb09a323e876457511c97271856d78833507e597",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_120.npz": "d4f99d55025fb4c46066a91dbf91ef64811f121fdb8b3da39823df55620b235b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_15.npz": "53d070aa44782ad19cb18ac664387a1f393141cc4e35ba0da749771e000e9933",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_180.npz": "b52dadf1125ed4675ae32662b7f2c4ce5f6f99dc61dddcba8ad81dbceb9ed821",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_2.npz": "c4dc4e2b7d4057d220f39ed22837783257fcf73cbb3220ff494ed3bf06349a18",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_240.npz": "bb12250ca5647dd7220ea7244308865a9ba29d35a23855b7ea8290e338af694d",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_30.npz": "830d6b3bcdbfb0307be183d339dc6094ddd77a390a94f10f1bd69e3b800e69ff",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_360.npz": "b53e6128d8dbf081c14433fa439b8f9c88c9931193d41054f00d43fa81344096",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_4.npz": "77e0e87b16ebe6e04d6049a0bb6f6dfd354ebc467dcd1a05e2e2bf1a53069800",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_540.npz": "b3f5063cb7db923803c8ee6ce1391ba5a1143c3131e2472630fe6cf7581891f5",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_60.npz": "278a118ca8454b5103a64f616b901151b864c2f47aaac342f47ca3eecd212759",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_720.npz": "93a6c0c88716509eb6244d964ddfde42887b08aee20f75476710d2b59bb2bb59",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/point_8.npz": "a47cba49752c6f8609240f2a6a5760e13b612ebce38889fc28a5cad9abb90a9e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/progress.json": "e208f84cde66f81a14abb819ff2d99b4a2ec16a543a4be69e6e81d8f413d37e2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/result.json": "e69034aa5d964ccefd30315ecc0e5d251580f301540d7e8cd1896a118b321c34",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/S180.pt": "5634db47eb4cc04554dfce2e2f4b1e5aa3af9ffb4a8e162842c7ab299b2d3b37",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r0/output/S180_val.npz": "b52dadf1125ed4675ae32662b7f2c4ce5f6f99dc61dddcba8ad81dbceb9ed821",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/L720.pt": "205d8c7b057812c0580d71d5b8f332061dd1ce19fa29e5213ec47cf6c40c3f50",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/L720_val.npz": "488ff73f11a89a0335b4ec830fb1dbf552d19ca7d0946e1b3be1f9ff3f1b6319",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_1.npz": "734922b6ef0678484b139c2315b6f20c56f1eb5f3a457ec84b157f2a95f176d5",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_120.npz": "f09eaef9ba1b3687c3691afbed33e3e0fd6ac71f11e49e99467bd19d7db5c9fa",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_15.npz": "9e2f082d470bd0a702960ec65c51ad917a34a3d8bb616c929075eeb490ac99c3",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_180.npz": "5e9fb96c79edf8452ab0a149b6b5b0d768aab5ea7c2d4c50a409e2111588a49d",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_2.npz": "3c0fd29acb76bde7932e9c99b3499b18a5d873e4d95a509973b778d5b5f3a37c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_240.npz": "62dc9646a893d9a1804d929e1f28d406e564456eaaaa4112125ce2c093022ba4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_30.npz": "835c5823ffa6a9ccd759692dd4bf556600e34a0dd51012c30692de083851f1e5",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_360.npz": "f07a324f74d4a94fa53804f2d83a7e057bd32e90698a1df447f240613618259a",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_4.npz": "281d3d766ce95a410230418c0b499ec5ba873957b2c470fd5e2027b61a2cbe01",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_540.npz": "0eb7f8519d0ad5a9cbafa293f9b2b8ea34c988c640c31d0f250055d0677813f0",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_60.npz": "488ff73f11a89a0335b4ec830fb1dbf552d19ca7d0946e1b3be1f9ff3f1b6319",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_720.npz": "e9360f1ea72d5c7f357a77bf8ee6614a3a1d0c829cc841bb49d218c2216477c0",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/point_8.npz": "0bab5fee63288ec996054b54ec0ef9b8c4f799188ea5157ebe3190dfc71deb6e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/progress.json": "0a9c2be9db4e25f58e665fe4a312adf2f132afa705870dcdce28f6ef1f166733",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/result.json": "dd7866dacecaf810ef374114b2bd1b2eddaaa8256c3ac0cf9602b569a5938253",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/S180.pt": "cc73526931da8e1978b9e5e544a5c5f96a214986043f639f72fcacf018c61799",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r1/output/S180_val.npz": "488ff73f11a89a0335b4ec830fb1dbf552d19ca7d0946e1b3be1f9ff3f1b6319",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/L720.pt": "90e14c28d5887a9c3b12a625eb5f0c97ce1a0bfba3eb90e3f9464edff42908af",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/L720_val.npz": "c97d7f24cdcbde57ccef70159fa069126118d8768e8a199a9eace30771b5ac8c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_1.npz": "acb3d8273bfba1a7fe195f5518713e6a81461d5109601d73831fe66943112a55",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_120.npz": "8ca32e901177914787fd33981b77c32e9f15263f4085a5f4e72490230cb4ba46",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_15.npz": "c97d7f24cdcbde57ccef70159fa069126118d8768e8a199a9eace30771b5ac8c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_180.npz": "faa9f9d30de1380deb62d7848fc10eab82ca63a3075066938f98826d10ff7291",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_2.npz": "12f28906b6c6e94997376495c4fefad3a258f44b9b73e3acd2a2e39748245896",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_240.npz": "e7e16e71f5692b6a7ccad5b6cbcab0f5fcb374c45b1e624aa7500811a2ba6eb6",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_30.npz": "2caeb59fdc1bcad02ac72480813427c8a72b994bd5346fd270ffe81f5c7e055e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_360.npz": "e03f9aa416642c56447ee7e6394e08992007cbbccc7b1d32d9116e2bbb7a4830",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_4.npz": "e4a1f6d6e3753b297a7b7a13be45365444fc020afaa86d0d205d5c3ca532354c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_540.npz": "010c95beb20d72ef594caec9ecd0de8e56253b60acbbe8e9875d0f2c1937f71e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_60.npz": "82b8270b8f81bdcbb939d53364092e6e4be8a673a23a98f5c231ffb1ea23938b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_720.npz": "0ac95ac47869d1cb63a40f6e247827d239846ab685bcc8a87022d0b178283777",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/point_8.npz": "bc2babb8a9933e8c4fdee93aa4cb76999e24f2a89f262aff2fd4c13b7afd9ca3",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/progress.json": "f5db672c6e47c948856ee185b4cf5a4133f7a21429722f99b9a0270ab9ccd4b6",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/result.json": "e1209627a05e676938c74b90e23060326d42b3d0b7973b3376cab71927de1042",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/S180.pt": "afbddf51fe4f7639f522e7aa265809be9a0ec06bd9d974541dfcfd8b48152ca0",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r2/output/S180_val.npz": "c97d7f24cdcbde57ccef70159fa069126118d8768e8a199a9eace30771b5ac8c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/L720.pt": "199af34a8b4af657383e14a647e74083d3460d4f11e860f1492f84787dadfb6f",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/L720_val.npz": "0b929bc0f2693a44806b20af70b609a26c2bbf605282a7e13a4bae75769eb01e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_1.npz": "dc8d599be9f6e714416838cc710b616d0446874144d3077a305b599727220153",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_120.npz": "3074815880ef99bcdbd160e4d321debe82b7e13f5b206a75070e6389f91f2e64",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_15.npz": "04aa78f862fb90ed79524d1061bffb62a5d5b39830bd3e80c2f1362f89b9902e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_180.npz": "920acf77c1499441281ae5bf59bc215fdb736b7ada53c0292c6a830078a32cf4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_2.npz": "75c778028f198a1cfc87e13624c51c2823d54401f0480ecda1d0c78970862b26",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_240.npz": "fec8b663fdfaa62315ed5aa716be5c182cc60c578c252af6138bd7d1243155c2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_30.npz": "37e012f67be233c0287b651519783a1a879e2435e5d924665e93fe4f424dff9b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_360.npz": "11954b6167794d93f875f1dd3da7edccfbedb284fb18106584a8441f1f85fdfb",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_4.npz": "0b929bc0f2693a44806b20af70b609a26c2bbf605282a7e13a4bae75769eb01e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_540.npz": "4197c07413e7f1e4b7b05acc640aab27bb6cb587ec338d1205847f0233538981",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_60.npz": "3242e7c67354ceaf8baf409546fa3eb1295cf00f20ef20bbf07bfcb987e0a2b2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_720.npz": "2887fac8347c5228fbc2299de08c72af675f5af70c768d61af51501ed1f1eb55",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/point_8.npz": "dcbd3cd69aafa866a2341fe09213e1c88767b4514022fba9c4d8c231c6c5c83f",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/progress.json": "beab92b184705ba3e09604a937d35301f99f71018e025bdf2ee433953f416e1e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/result.json": "fe4dea602d257391494f331ccb7638d9d377ecdb9918093893ee5e5bcec59eb3",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/S180.pt": "084f74b278152d85da49a786cda0fa82c112a56d60a79764f0492635d64cb3a1",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30000_r3/output/S180_val.npz": "0b929bc0f2693a44806b20af70b609a26c2bbf605282a7e13a4bae75769eb01e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/L720.pt": "f681f13b78f4396a17ce8bb5f863fda01ca25a73bbae5a73f70fb3f9df867ec7",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/L720_val.npz": "5c840e4b84e5c9a62cc5236efc251a37cbad2150cdf94abdbc5e73f2225f7edd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_1.npz": "5c9da23a37d4b1a43de0f597f73343eb8aff68f6e491ee4678d6851536e212bb",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_120.npz": "ce78441ebc3d8a83fa2712bcb380f9fdb3dad81ba21972d95c5df4a5e485655f",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_15.npz": "f7ddba00d86d74ecfc9015725cb27d56fceba8069dab288ff2ed030f369e99a1",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_180.npz": "7c74a3b51935147a1a89a49908bf2c904f20496f668a42f319f220731e6c3944",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_2.npz": "0c1d1997be2c7712e01b2fbc9d5bfe79190219285546bb58237fccd817de3384",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_240.npz": "5c840e4b84e5c9a62cc5236efc251a37cbad2150cdf94abdbc5e73f2225f7edd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_30.npz": "6f530425245cbbae437c3881d5e59f418f5d95d9bae79a762aeaa8a0dec21c92",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_360.npz": "9c23ea6ac91fbce523603dccb7abcaa4f59f570b4b04d61e4903af1d4183f015",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_4.npz": "0dd69f9a439ab1a2863aed3724f58f38f9dedb5bf172d611b9d12693a2810a73",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_540.npz": "f31b6f12eff3b0262a8d2f4653eec78d2f1fa83c30e1364298b0ea0ebc615cc5",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_60.npz": "ccbae693c47601f5c052b35a552284d9bd13eb2ea9fff4c57f178574e10091d0",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_720.npz": "64920d30121bf09883e8cc068843f2502ccc1fe95342454e9471da1788b9b0bb",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/point_8.npz": "8da9c1c76bf06be448e788b68c5dfa2a996e873d314d110fc9313ff3645f8d65",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/progress.json": "2cd086f4b345a011d47da18daea4cc33d5d99ff3e54dfe7d31184ce9e9a0908d",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/result.json": "4d7848b1335070ebe884f0b8bc38927534a4dfad38c830862e09f3ff208cdc62",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/S180.pt": "ba073eae62e195ee499a88ef3200e052377f8e9e4e8641c8c602848717efdfa9",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r0/output/S180_val.npz": "7c74a3b51935147a1a89a49908bf2c904f20496f668a42f319f220731e6c3944",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/L720.pt": "408f2712338cd49907c17d6cf6fbaf783abba75ab45ec3b6c708dad95ff72948",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/L720_val.npz": "24a510348721c3f1ec20c0b852eb6175b150a7e1d4260004bfaf700e18569ea4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_1.npz": "9158528716459445a026e1904658b303c2bb812c1d52bdc0adf9eae89d656941",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_120.npz": "875db22e7e75f4c7a100a39782faa20bdd0ce47db8ab92b0524f2972773d5a99",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_15.npz": "2fcde4117c7a8f51c885c028a7feba587f78cc42a006c1cca7ec3ea23fcad867",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_180.npz": "8483f2df75ff7003ae11b624c97f0dcf2c1eadc0ed83b97a6e6c22754b340388",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_2.npz": "5ed7bbdaa11b5690268031086898816146a9527b071c7aa81587bb02936d3f97",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_240.npz": "ec9bf174050ae22cb2c14069151c0de36ae38bb8bb5f24c80e906e9a7cf966de",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_30.npz": "ba0b306915bf9489e7934bce430a2e2a8f79a83071e6d54d3605a760007ed769",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_360.npz": "684b71a460c462570c13be7fa72b9b2c81af26a7399dce57c42c4f687e698d72",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_4.npz": "e9a9627f4930d8c8d737faeeba3feebcc3261011a3b3253d0c1fa71896592d79",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_540.npz": "eac92654daa998f53524c62e559bfb457b96dd1e94e16876d2a47755dbafd1a6",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_60.npz": "24a510348721c3f1ec20c0b852eb6175b150a7e1d4260004bfaf700e18569ea4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_720.npz": "4e894f9dd0530436cec29938c06f1f9c494a01a64b240c318cc33e27a488dda8",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/point_8.npz": "edeb50a9966c3128ec6b0afe0eb26f35341f6ecd42e1f87f6d8ae9c4611475c2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/progress.json": "9218f81966e824c3ae2fae08065c39387d2255b2b43c93aded2b1df3e1f5f1cf",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/result.json": "a4073dde4cc458e5e497eb00ca6e83e2418584fa81d67676c5baa1ac0945133c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/S180.pt": "809b854e6fa09112f347d66e9931ae9a85912270c8aefcd627d86cd4a617a23e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r1/output/S180_val.npz": "24a510348721c3f1ec20c0b852eb6175b150a7e1d4260004bfaf700e18569ea4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/L720.pt": "cff099c6ec4e775ec0c0c222eb9c791e1cd9eb1f547a4573da91e698de5f8d26",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/L720_val.npz": "0731635c12ee5c071c7fa7b07d58ebd96095b1e658ad8eb93041e970347c0b47",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_1.npz": "2651b582b6aa0a2065eb0038969c798e8cac0f6aeffc1b442931341bd4cb3678",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_120.npz": "f0cf0c4d49ee2443e7fc875ece50645fa16b5f835a158ce987455b50bc2c9c11",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_15.npz": "0a75f9b859aa546390e8c98721b4e7bc0c55576e5e1f20648f6a532699dfb51f",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_180.npz": "c93bf1f15fc706e37eec931f81762a98bf762ffcbc08ff7ca4c8aedb7a78a9eb",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_2.npz": "4985b0d5c86fa4e314c1b3b5f7b9ded9e989545a01454b057286953e2611d9d2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_240.npz": "78bdef3bf4745d83e366b8b31e65cb4f423192b989653cf0b465daefb9f4f05b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_30.npz": "0731635c12ee5c071c7fa7b07d58ebd96095b1e658ad8eb93041e970347c0b47",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_360.npz": "b923b001d64a69f3166a7e179facd7e683ba8ded91ba2b4411a80699727b91b5",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_4.npz": "5629ce786d75f816ea8ad753ed55547beac3ba8aa866faf4e422f1cd4889609f",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_540.npz": "e766cae7b2414d93ca96b44b55c55cb0a5589236bd0b76d1db8f8b6719372c4e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_60.npz": "db34c496859b5d09140d7f50fe14bc95b251823d452a8a123c2e52181ad9dbde",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_720.npz": "28bf92663f1440d42a190f0a9b9ba6622e6e94005bc59c4e606cff71993282e4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/point_8.npz": "98673b25273bec82b0d17e3fe8886c0de471efcc378ab062a1d41d3ad1610ba3",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/progress.json": "7bb82375b84313c0bb4b930bd49584f8697e8bdc7b40e50d6b3ab7e3de424d67",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/result.json": "6c73ee9d5b5502f1008203aa9c75cdc3e281d79e6ba1438310400c1636293c70",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/S180.pt": "d2a8deb691c04e9c6c7e8691cde70858aca0aeb82e59aab2abe1ec9cc1ae6f4e",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r2/output/S180_val.npz": "0731635c12ee5c071c7fa7b07d58ebd96095b1e658ad8eb93041e970347c0b47",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/L720.pt": "a08f56df7937b07450a850fec515d51661262d15002033e3ae75435e691b8b56",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/L720_val.npz": "3b89f3ddb00ebcc9cbf148c3b0c3ad9f1ece71698fd2d1f7c53cfa5fe95d6b88",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_0.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_1.npz": "85863221f8b69b69baec59c96154006dad8c77726b0c1a5def5d791e4de978e1",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_120.npz": "8c100529f0d39e33616b0b06860c66a172da43947333449b0e9e2e8393d6ffdd",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_15.npz": "3b89f3ddb00ebcc9cbf148c3b0c3ad9f1ece71698fd2d1f7c53cfa5fe95d6b88",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_180.npz": "69c4dbc01c494cc1d6a502a0d5bf5ad0d23f414944e555a98fe40310e9efb45c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_2.npz": "fcdd9e45b89e22b51094da1516f58c6a7f324ba77ea9359dd00ef090e5283909",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_240.npz": "18ceef1d3f0ee159bbfa484238098c91c378ae359534a4d1bfa526522b863b43",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_30.npz": "a14b20e06ba71d9dcd02a2346dcfbc2c8227c5a23534ad89662a5005cbd653cf",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_360.npz": "19b784f465558e3a7402aeb11a2af5c82e4f37e4d3da213d5d1eaab8a6d4de71",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_4.npz": "c988cd13c023bb926f595ca3ea2be0a7b61c9a796b32b91090ff84b81865ab7c",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_540.npz": "a7e59be667af6ae279a23b43af94d5d9e0c53f0f7357d9f17668db1750a002d2",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_60.npz": "aac45d13ef1fddf8d583e623cabd1dd1e412633bce1d2d704df3693f5406fc89",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_720.npz": "da9cf845153c6eeb45a340bb064585808835599c7b3c390bdfff627481e6d8b4",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/point_8.npz": "eecac16cb9c649607a70154be8b1492a4090e926f0cf516dfaba309ceedacc2b",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/progress.json": "d3fa3f034ab65ac0193a9756f9cb5607c9d8849e3b423de51d6461be882b92c9",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/result.json": "8f46bb01503b3adf9cbbf83bbb6c3dcd4af7bf67efbedfd3eb0f92189d3ce466",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/S180.pt": "559803f0400836091b2335f53ce6b4b36d0d8d962862cd1c203a8da32c18adb3",
+    "runs/peft_lora_only_diagnostic_v1/fit/jena_s30001_r3/output/S180_val.npz": "3b89f3ddb00ebcc9cbf148c3b0c3ad9f1ece71698fd2d1f7c53cfa5fe95d6b88",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/L720/output/F0.npz": "b536144586c1923aa9af9cbba7237366722cb5899690b0d8bc7e1ac2454e9e8a",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/L720/output/gate.json": "1c912dc5b580042f6a5a0de057231cc96ecd2ad03847e63d4e1a8b39ee39cd61",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/L720/output/result.json": "de3e5f75bf3f3b38d465b9adf78f40d36f48b5b8346d51abd4975657f86ece6b",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/L720/output/selected.npz": "0652c787e7290f81ff0159bac5887d1d1410c2678fba8075ef133af5b92bcfc2",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/S180/output/F0.npz": "b536144586c1923aa9af9cbba7237366722cb5899690b0d8bc7e1ac2454e9e8a",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/S180/output/gate.json": "1c912dc5b580042f6a5a0de057231cc96ecd2ad03847e63d4e1a8b39ee39cd61",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/S180/output/result.json": "3910f9ff99c8bfdf653f1cfd0089cbebd3ce049537438693454f150a697a0dca",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30000_r3/S180/output/selected.npz": "0652c787e7290f81ff0159bac5887d1d1410c2678fba8075ef133af5b92bcfc2",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r0/L720/output/F0.npz": "b536144586c1923aa9af9cbba7237366722cb5899690b0d8bc7e1ac2454e9e8a",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r0/L720/output/gate.json": "1c912dc5b580042f6a5a0de057231cc96ecd2ad03847e63d4e1a8b39ee39cd61",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r0/L720/output/result.json": "361428289ebb6a2f3ebc1f5e9f47e382a06658f4b36253080d25de1456c45625",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r0/L720/output/selected.npz": "307d972b545c262b9dbaef6eb712668bbbc8724bd37fed45715d7051568f3458",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r3/S180/output/F0.npz": "b536144586c1923aa9af9cbba7237366722cb5899690b0d8bc7e1ac2454e9e8a",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r3/S180/output/gate.json": "1c912dc5b580042f6a5a0de057231cc96ecd2ad03847e63d4e1a8b39ee39cd61",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r3/S180/output/result.json": "f0c4e31f71ad5166b820771e10a40ab652e16cea4c98d805898f0e576c719927",
+    "runs/peft_lora_only_diagnostic_v1/forecast/bmra_s30001_r3/S180/output/selected.npz": "1f4059ea7c95a9daf83f7f4fa2b04b28a1f5070f6121b4ce7fadfa11773d57f5",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/L720/output/F0.npz": "61a5b6e1b8dbd1e732d7aa542a6f1ef9218d7e9328b9e1f43d4f6b229a281073",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/L720/output/gate.json": "cde00101d264b74e2f914a4fbf9ec08c9ad80ce0c8a237f11b38cf5db904646b",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/L720/output/result.json": "e4d88620951ad81fb8effd6f50c54e28f39a8fd80631f517ea3b4f4952bec92e",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/L720/output/selected.npz": "7c86097dbf143a62195325052ba7b99d12fbd2c0fb94e016789edf913378d953",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/S180/output/F0.npz": "61a5b6e1b8dbd1e732d7aa542a6f1ef9218d7e9328b9e1f43d4f6b229a281073",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/S180/output/gate.json": "cde00101d264b74e2f914a4fbf9ec08c9ad80ce0c8a237f11b38cf5db904646b",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/S180/output/result.json": "bd774e4030caf41078e37996d949b34adc513846952d4e2d057b5cc86dfb9fcc",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30000_r3/S180/output/selected.npz": "7c86097dbf143a62195325052ba7b99d12fbd2c0fb94e016789edf913378d953",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/L720/output/F0.npz": "61a5b6e1b8dbd1e732d7aa542a6f1ef9218d7e9328b9e1f43d4f6b229a281073",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/L720/output/gate.json": "cde00101d264b74e2f914a4fbf9ec08c9ad80ce0c8a237f11b38cf5db904646b",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/L720/output/result.json": "739a8f50d83ebec1ebe05eb16fdfaddfa2079f14466079d027924e2757ac464f",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/L720/output/selected.npz": "43017e7051326b1265577c4527791c729f322ece64d856be5dc45733cf69f718",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/S180/output/F0.npz": "61a5b6e1b8dbd1e732d7aa542a6f1ef9218d7e9328b9e1f43d4f6b229a281073",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/S180/output/gate.json": "cde00101d264b74e2f914a4fbf9ec08c9ad80ce0c8a237f11b38cf5db904646b",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/S180/output/result.json": "c47ea7b07d124eb64784cedbad50f524d251f6035875ed2c9a5117fc6f8d67fd",
+    "runs/peft_lora_only_diagnostic_v1/forecast/jena_s30001_r1/S180/output/selected.npz": "43017e7051326b1265577c4527791c729f322ece64d856be5dc45733cf69f718",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30000_r0/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30000_r0/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30000_r0/output/result.json": "f0a9e5a9a61e76d0c731540f3e9d2efee1e0f3ad32e41b386f19e1ea5a36fc4e",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30001_r0/output/gate.json": "d2b4854ad959f9dafc06cb73ed9ce8d7573966157083abe3f32fa64a1de51acf",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30001_r0/output/initial_val.npz": "4f50280bbe2b3e6a6abd8315302fab64c27ee5b45ea47a47b6a2810f1ee5ec77",
+    "runs/peft_lora_only_diagnostic_v1/gate/bmra_s30001_r0/output/result.json": "c9559ba7e2eedf396bbe56b8ff399aff3ee64f22078e83ae8422ea8abac836b6",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30000_r0/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30000_r0/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30000_r0/output/result.json": "9ee83439905bd35313c8e18181a13334d8a04ee45b45e1bba2c999c330dda1a5",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30001_r0/output/gate.json": "490ecb81ac0aab8d188dd4c03575ae565466bb87c91ffa792b481ac9ab4fa45b",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30001_r0/output/initial_val.npz": "0f3bffea5fcce2008e31daefbff1650a5948842ded1b1d0e389a98a01fee56fd",
+    "runs/peft_lora_only_diagnostic_v1/gate/jena_s30001_r0/output/result.json": "59c692d4838babd461d03e208228c2573c635daec1fd7ba42a8f5e9a9fa06686"
+  },
+  "trainable_categories": {
+    "LoRA": 1179648,
+    "native_backbone": 0,
+    "native_output_head": 0,
+    "residual_MLP": 0,
+    "other": 0
+  }
+}

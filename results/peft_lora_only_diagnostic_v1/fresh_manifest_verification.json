@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "source_hashes_verified": [
+    "data/uci_household_power/household_power_consumption.txt",
+    "data_external/bdg2_coarse_supervision_v1/raw/electricity.csv",
+    "data_external/bdg2_coarse_supervision_v1/raw/metadata.csv"
+  ],
+  "BDG2_per_target_window_checks": {
+    "train": {
+      "origins": 90,
+      "minimum_per_target_finite_fraction": 0.9583333333333334
+    },
+    "val": {
+      "origins": 30,
+      "minimum_per_target_finite_fraction": 0.9583333333333334
+    },
+    "e1": {
+      "origins": 40,
+      "minimum_per_target_finite_fraction": 1.0
+    },
+    "e2": {
+      "origins": 40,
+      "minimum_per_target_finite_fraction": 0.9375
+    }
+  },
+  "both_split_lengths_verified": true,
+  "target_performance_computed": false,
+  "household_limit": "Raw hash and split geometry independently checked; missing-window scan remains manifest preparer evidence."
+}

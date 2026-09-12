@@ -1,0 +1,6 @@
+{
+  "action": "gate",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\CODING\\proj\\mltimeseries\\experiments\\peft_lora_only_diagnostic_v1\\run.py\", line 70, in main\n    execute('gate', index)\n  File \"E:\\CODING\\proj\\mltimeseries\\experiments\\peft_lora_only_diagnostic_v1\\run.py\", line 51, in execute\n    admission(RUN, f'{stage}/{job[\"key\"]}/{budget}')\n  File \"E:\\CODING\\proj\\mltimeseries\\experiments\\hospital_shared_strength_v1\\resume_monitored.py\", line 44, in admission\n    with (log / 'admission.jsonl').open('a', encoding='utf-8') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\anaconda3\\envs\\mlts\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\CODING\\\\proj\\\\mltimeseries\\\\runs\\\\peft_lora_only_diagnostic_v1\\\\admission.jsonl'\n",
+  "seconds": 0.22040740001830272,
+  "artifacts_preserved": true
+}

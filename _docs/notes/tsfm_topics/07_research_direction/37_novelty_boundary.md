@@ -4,7 +4,7 @@
 
 ## 현재 판정
 
-[판정] **`UNKNOWN` — 좁은 characterization 후보 A는 유지하되 novelty gate의 무조건 PASS는 보류한다.** 확인한 원문에서는 아래 세 estimand를 capacity-matched head/F0 대조와 함께 chronological replication으로 연결한 직접 동일 실험을 찾지 못했다. 이것은 신규성의 증명이 아니다. 특히 필수 근접 선행 Time-PEFT의 공식 채택·초록·저자 구현은 확인했으나 본문/부록을 확보하지 못했으므로, 이를 읽지 않고 동일 주장의 부재를 확정할 수 없다. 접근 실패를 `NOVELTY_GATE_FAIL`로 바꾸지도 않는다.
+[판정] **`UNKNOWN` — 좁은 characterization 후보 A는 유지하되 novelty gate의 무조건 PASS는 보류한다.** 확인한 원문에서는 아래 세 estimand를 capacity-matched head/F0 대조와 함께 chronological replication으로 연결한 직접 동일 실험을 찾지 못했다. 이것은 신규성의 증명이 아니다. [확인] 2026-09-12 사용자 제공 Time-PEFT 20쪽 원문을 확보하여 아래 경계를 갱신했다. UNKNOWN은 더 이상 본문 미확보를 뜻하지 않으며, 좁은 질문의 독창성·충분한 독립 실증이 아직 확정되지 않았다는 뜻이다.
 
 [판정] 넓은 주장인 “fine-tuning은 OOD에서 나빠질 수 있다”, “data signal로 적응 여부를 판단한다”, “adapter를 동적으로 동결/선택한다”, “validation 중요도를 측정한다”, “과거 오류로 다음 예측을 보정한다”는 단독 novelty 후보에서 제외한다. 아래 선행들과 직접 겹친다. 새 method 진입은 이 감사로 승인되지 않는다.
 
@@ -37,19 +37,19 @@ chronological transfer change = G_D(selected-on-V model) - G_V(selected-on-V mod
 
 1. paper — [확인] *Time-PEFT: Temporal and Multichannel Complexity-Based Fine-Tuning for Time-Series Foundation Models*.
 2. venue/year — [확인] ICML 2026 공식 [poster](https://icml.cc/virtual/2026/poster/61767), [공식 목록](https://icml.cc/Downloads/2026). [OpenReview 논문](https://openreview.net/forum?id=n8seTOinYs).
-3. backbone — [확인] 저자 [TimePEFT 저장소](https://github.com/kaist-dmlab/TimePEFT)는 MOMENT-base를 명시한다.
+3. backbone — [확인] 원문 p.6 §5.1.2, p.15 §D.1.2: MOMENT small/base, UniTS, Chronos-bolt-small, TTM-r2. 본 실험의 Chronos/TTM은 encoder 사용, zero-shot은 원래 encoder-decoder 사용. Appendix A Fig.8은 원래 경로의 baseline도 제시한다. Chronos2와 동일 모델이 아니다.
 4. adaptation target — [확인] 복잡한 target dataset의 forecasting 성능 개선.
 5. PEFT mechanism — [확인] 저자 설명은 frequency top-k filtering adapter와 multichannel adapter를 제시한다.
-6. adaptation 결정 시점 — [확인] 데이터 복잡도를 fine-tuning 이득의 proxy로 제안한다. [미검증] 실제 실행 결정의 정확한 시점·threshold·훈련/검증 정보 계약은 본문 미확보.
+6. adaptation 결정 시점 — [확인] p.4 Fig.4 및 §4는 dataset complexity와 fine-tuning 이득을 연결한다. p.12 Algorithm1은 주어진 target dataset의 fine-tuning 절차다. [미검증] 이 내용을 우리의 V→next-D update-utility selector와 동일시할 근거는 없다.
 7. signal — [확인] spectral entropy 기반 temporal complexity, channel information flow 기반 multichannel complexity.
-8. chronological future utility 직접 평가 — [미검증] 저장소가 val/test metric을 구분하지만 이것만으로 V gain→next-D stability 실험을 확인할 수 없다.
-9. contribution/update utility 구분 — [미검증] 본문·부록 확인 전 UNKNOWN.
-10. freezing/rank allocation — [미검증] 저자 개요에 근거해 없음으로 확정하지 않는다.
+8. chronological future utility 직접 평가 — [확인] p.6 §5.1, p.16 §D.2, Tables2/6–9는 forecasting 성능과 horizon별 비교다. [판정] 이를 capacity-matched WIDE/F0 대조의 반복 future-period utility 검증으로 부르지 않는다.
+9. contribution/update utility 구분 — [확인] p.12 Algorithm1은 LoRA·frequency·channel·head를 공동 최적화한다. [미검증] 현재 제거기여 C와 후속 업데이트가치 U를 분리한 동일 계약의 증거는 확인하지 못했다.
+10. freezing/rank allocation — [확인] p.16 §D.1.3: LoRA rank8/scale32, q/k/v 또는 TTM fc1/fc2, 나머지 backbone frozen, forecast head 공동 학습. 우리의 native-head-frozen LoRA-only와 다르다.
 11. TSFM 특화 요소 — [확인] 시간적 주파수 복잡도와 채널 의존성을 이용하는 adapter 설계.
-12. 겹치는 주장 — [판정] “어떤 데이터가 fine-tuning을 필요로 하는지 예측한다”와 “시계열 signal로 PEFT를 정한다”는 강하게 중복된다.
-13. 남는 gap — [미검증] capacity-matched output 대조와 C/U의 chronological 분리 여부를 원문에서 확인해야만 좁은 gap을 확정할 수 있다.
+12. 겹치는 주장 — [판정] “어떤 dataset에 PEFT가 필요한지 처음 연구”, “HeadOnly보다 LoRA가 좋은 경우를 처음 발견”, “temporal/multichannel complexity 기반 PEFT가 새로움”, “frequency/channel adapter 자체가 새 방향”은 금지한다. p.4 Fig.3–4, p.6 §5.1.3, p.7 Table2, p.12 Fig.8에서 이미 직접 다룬다.
+13. 남는 gap — [판정] 현재 좁은 질문은 capacity-matched WIDE vs internal LoRA, F0 대비 실제 adaptation value, native-path/head 보존 LoRA-only, chronological future의 value 유지다. [미검증] 이 조합의 최초성은 아직 증명되지 않았다. p.16 §D.2.2 자체가 encoder-only 변경의 손해와 원래 경로 보존 결과를 논하므로 native path 중요성 자체도 최초 주장하지 않는다.
 
-[확인] 2026-09-11 접근 기록: 공식 poster→OpenReview 링크 확인, PDF와 public api2 요청은 challenge/HTTP 403. 저자 홈페이지의 PDF 링크도 같은 OpenReview이며 PPT/Poster는 비어 있었다. 저자 웹사이트 공개 파일 목록·TimePEFT 공개 파일 목록에는 별도 PDF를 찾지 못했다. [판정] 학회 채택은 확인, 세부 novelty boundary는 UNKNOWN을 유지한다. 저자 초록의 개선율을 현재 Chronos2 실험과 수치 비교하지 않는다.
+[확인] 2026-09-11 온라인 접근 실패 기록은 역사로 보존한다. 2026-09-12 로컬 Downloads의 `21386_Time_PEFT_Temporal_and_M.pdf`(20쪽)에서 원문을 확인했다. p.6 §5.1.3 및 p.16 §D.1.3은 zero-shot 외 baseline 모두 forecast head를 학습한다고 명시한다. p.12 Algorithm1도 같은 계약이다. 이 PDF는 저장소에 복사하거나 commit하지 않았다. [판정] 위 본문 근거를 이번 LoRA-only 수치 결과와 섞지 않으며 논문 초록의 개선율을 Chronos2 pinball 결과와 수치 비교하지 않는다.
 
 ## 2. LoRA+
 
@@ -223,4 +223,4 @@ chronological transfer change = G_D(selected-on-V model) - G_V(selected-on-V mod
 
 [판정] `NOVELTY_GATE_FAIL` 전환 조건: Time-PEFT 또는 다른 근접 원문이 (i) capacity-matched head/F0, (ii) V-local versus next-period adaptation gain, (iii) same-state adapter contribution versus subsequent update/freeze utility를 **실질적으로 같은 질문으로 직접 검증**했고, 이번 연구가 독립 범위 확장 이상의 추가 기여를 제시하지 못하는 경우다. 표면적으로 같은 “stability/importance/future” 단어만으로 fail을 결정하지 않는다.
 
-[미검증] 지금 남은 문헌의 정확한 빈칸은 Time-PEFT 본문/부록, TimeTic 채택 상태, TRACE 최종 출판 metadata와 검토본의 일치다. [판정] 가장 먼저 닫을 것은 Time-PEFT 본문으로 C/U 및 chronological evaluation의 중복 여부를 확인하는 일이다. 이 빈칸을 GPU 성능 실험이나 새 method로 보충할 수 없다.
+[확인] Time-PEFT 원문 확보·주요 baseline/학습 계약 확인은 2026-09-12 닫았다. [미검증] 남는 항목은 좁은 실증 조합의 충분한 독창성, TimeTic 채택 상태, TRACE 최종 출판 metadata와 검토본의 일치다. [판정] Time-PEFT의 complexity·HeadOnly/LoRA·native architecture 논의를 반영해 claim을 좁히며, 이번 개발 진단의 성공 여부를 novelty PASS로 대체하지 않는다.

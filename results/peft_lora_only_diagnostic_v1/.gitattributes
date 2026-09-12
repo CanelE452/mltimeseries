@@ -1,0 +1,2 @@
+# Retain the original pre-launch plan's bytes as forensic evidence.
+prelaunch_plan.json -text whitespace=cr-at-eol

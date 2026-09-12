@@ -1,6 +1,8 @@
 # 연구 후보 스크린과 다음 방향
 
-- [37. PEFT 논문 claim·gate와 story map](37_peft_paper_claim_gate_20260911.md) — [판정] 분석 논문 A를 조건부 primary로 고정. [확인] 기존 핵심 수치936개 재검산 통과, 새 GPU 실행0. [novelty 경계](37_novelty_boundary.md)는 필수 근접 원문 미확보로 UNKNOWN이며, [최종 readiness·노출 감사·Stage A 초안](../../../../results/peft_paper_closure_v1/PAPER_READINESS.md)에서 실행 자격과 미해결 증거를 구분한다.
+- [38. Native-path LoRA-only 진단](38_lora_only_diagnostic_20260912.md) — [확인] 16fit/8D/4zero-update gate 완료. 모든8cell/view에서 LoRA-only와 JOINT가 F0보다 나빠 CASE C. LoRA-only는 JOINT보다7/8에서 좋지만 BMRA seed30001 S180은 반대. [판정] 추가 head만으로 손해 설명 불가; fresh 검증 우선. BDG2 Bull READY, Household post-P1 BLOCKED. Fresh 학습0.
+
+- [37. PEFT 논문 claim·gate와 story map](37_peft_paper_claim_gate_20260911.md) — [판정] 분석 논문 A를 조건부 primary로 고정. [확인] 기존 핵심 수치936개 재검산 통과, 당시 새 GPU 실행0. [novelty 경계](37_novelty_boundary.md)는 2026-09-12 Time-PEFT 원문을 반영했으며, 좁은 신규성과 독립 실증은 미확정이다. [readiness·노출 감사·Stage A 초안](../../../../results/peft_paper_closure_v1/PAPER_READINESS.md)에서 실행 자격과 미해결 증거를 구분한다.
 
 - [36. 순서 의존성 PEFT 준비 검증 결과](36_dependence_phase0_results_20260911.md) — 현재 설계 STOP/GPU 0회. 전/역 대조가 값 부호 반전과 동등하고, 마지막 값의 이차식으로 Bayes 예측을 표현함을 확인. 시간 관계 PEFT 필요성 식별에 부족해 72fit·adapter·외부 검증 미진입. [원래 계획 보존](36_dependence_peft_paper_plan_20260911.md).
 

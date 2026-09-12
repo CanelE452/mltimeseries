@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "fit_count": 16,
+  "forecast_count": 8,
+  "old_evidence_audit": {
+    "passed": true,
+    "study35_hash_count": 59,
+    "closure_hash_count": 486,
+    "old_rows_recomputed": 32,
+    "old_V_selection_verified": true,
+    "study35_plan_sha256": "33959c5c95e8a2cc91e7d278150bf008cfeb5d210025f7fc52dcda18ded19406",
+    "selection_sha256": "24bba947995e31092f580f8858f4e11e7dfc54abad1747c6857a0bcbf70a0cee",
+    "closure_sha256": "5695623dcd80794fc8d334d79a08b201b156e7d53965077a856cf427288ff92d"
+  },
+  "independent_selection_recheck": true,
+  "arithmetic_csv_json_consistent": true,
+  "new_artifact_hashes_verified": 396,
+  "python_syntax": "PASS",
+  "figures": [
+    "01_loss_ratios.png",
+    "02_contrasts.png"
+  ],
+  "related_tests": {
+    "command": ".venv-peft/Scripts/python.exe -m pytest tests/test_peft_verifier.py tests/test_peft_adaptation_scope_data.py -q --import-mode=importlib",
+    "observed_result": "14 passed in 4.36s"
+  },
+  "fresh_manifest_reproducer": {
+    "script": "results/peft_paper_closure_v1/prepare_fresh_stage_a_candidates.py",
+    "observed_exit_code": 0,
+    "observed_result": "VERIFY PASS; Household BLOCKED / BDG2 Bull READY"
+  },
+  "fresh_training_count": 0,
+  "branch": "main"
+}

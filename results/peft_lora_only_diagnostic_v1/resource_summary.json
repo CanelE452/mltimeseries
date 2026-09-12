@@ -1,0 +1,18 @@
+{
+  "guard_count": 28,
+  "all_guards_completed": true,
+  "fit_count": 16,
+  "forecast_count": 8,
+  "zero_update_gate_count": 4,
+  "guard_wall_seconds_sum": 2335.016,
+  "fit_wall_seconds_sum": 2098.4313932000077,
+  "fit_trajectory_seconds_sum": 2045.1342321999255,
+  "peak_gpu_allocated_bytes": 992444928,
+  "peak_gpu_reserved_bytes": 1010827264,
+  "sampled_device_memory_mib": 2053.0,
+  "min_available_ram_gib": 12.748497009277344,
+  "min_available_commit_gib": 9.33645248413086,
+  "completed_run_wall_seconds": 2419.3542170999863,
+  "wall_from_initial_plan_to_last_forecast_seconds": 2957.420989,
+  "timing_scope": "Initial plan creation through last forecast; includes admission wait/cleanup, excludes earlier source audit and later reporting."
+}

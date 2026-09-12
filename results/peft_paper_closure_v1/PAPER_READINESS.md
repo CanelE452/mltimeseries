@@ -2,6 +2,16 @@
 
 [판정] **MORE_INDEPENDENT_EVIDENCE_REQUIRED**
 
+## 2026-09-12 보완
+
+[확인] Time-PEFT 20쪽 원문을 확보하여 [novelty 경계](../../_docs/notes/tsfm_topics/07_research_direction/37_novelty_boundary.md)를 갱신했다. UNKNOWN의 이유는 더 이상 본문 미확보가 아니다. HeadOnly/LoRA/FullFT·complexity·frequency/channel adapter·native architecture 보존 논의는 기존 선행의 범위다.
+
+[판정] [Target-blind fresh manifest](fresh_stage_a_candidate_manifest.md)는 BDG2 Bull Office READY, Household post-P1 BLOCKED로 1/2 준비 상태다. 별도 sealed final reserve는 확보되지 않았고 pretraining overlap은 UNKNOWN이다. 이후 fresh 계획에는 native-head-frozen LORA_ONLY를 포함하되, 기존 Stage A 초안은 아직 executable 계약으로 바뀌지 않았다. 이번 요청에서 fresh Stage A 학습은 실행하지 않는다.
+
+[판정] Study35 노출 구간의 LoRA-only 진단은 독립 실증을 대신하지 않으며 readiness를 승격하지 않는다. 아래는 2026-09-11 closure 당시의 비용·branch·가용성 기록이다. 당시 JSON/검증 receipt는 역사적 snapshot으로 보존한다.
+
+## 2026-09-11 closure 기록
+
 [판정] Primary는 **A — characterization / analysis**다. 이번 작업은 기존 근거를 재구성하고 논문 종료 규칙을 고정한 감사 단계까지 수행했다. 논문 준비 완료, 현상 재현 실패, novelty 중복 확정 중 어느 것도 선언하지 않는다. **novelty UNKNOWN과 인증된 fresh/final manifest 부재 때문에 Stage A를 실행하지 않았다.** 이는 사용자 승인 부족이 아니라 요청한 상류 gate의 미충족이다.
 
 ## 이번에 확인한 것

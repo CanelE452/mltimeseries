@@ -1,0 +1,4430 @@
+{
+  "guards": [
+    {
+      "started_at": "2026-09-12T08:26:56.070954+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "0",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30000_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 33568,
+      "child_create_time": 1789201616.1450615,
+      "finished_at": "2026-09-12T08:29:19.503410+00:00",
+      "elapsed_seconds": 143.438,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:29:24.667016+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "1",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30000_r1\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11188,
+      "child_create_time": 1789201764.7236855,
+      "finished_at": "2026-09-12T08:31:48.095588+00:00",
+      "elapsed_seconds": 143.421,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:31:53.246989+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "2",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30000_r2\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 12256,
+      "child_create_time": 1789201913.3052511,
+      "finished_at": "2026-09-12T08:34:14.556484+00:00",
+      "elapsed_seconds": 141.312,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:34:19.710705+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "3",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30000_r3\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 20128,
+      "child_create_time": 1789202059.76612,
+      "finished_at": "2026-09-12T08:36:47.208599+00:00",
+      "elapsed_seconds": 147.5,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:36:52.369364+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "4",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30001_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 11540,
+      "child_create_time": 1789202212.4353163,
+      "finished_at": "2026-09-12T08:39:01.593593+00:00",
+      "elapsed_seconds": 129.218,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:39:06.744748+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "5",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30001_r1\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 21436,
+      "child_create_time": 1789202346.800394,
+      "finished_at": "2026-09-12T08:41:15.964882+00:00",
+      "elapsed_seconds": 129.218,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:41:21.113295+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "6",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30001_r2\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 35212,
+      "child_create_time": 1789202481.182505,
+      "finished_at": "2026-09-12T08:43:42.420135+00:00",
+      "elapsed_seconds": 141.313,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:43:47.591578+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "7",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\bmra_s30001_r3\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 18676,
+      "child_create_time": 1789202627.656473,
+      "finished_at": "2026-09-12T08:45:56.861010+00:00",
+      "elapsed_seconds": 129.266,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:46:02.016529+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "8",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30000_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 2012,
+      "child_create_time": 1789202762.0822392,
+      "finished_at": "2026-09-12T08:48:25.450039+00:00",
+      "elapsed_seconds": 143.438,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:48:30.602617+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "9",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30000_r1\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 1956,
+      "child_create_time": 1789202910.6564853,
+      "finished_at": "2026-09-12T08:50:54.040077+00:00",
+      "elapsed_seconds": 143.438,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:50:59.189372+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "10",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30000_r2\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 32172,
+      "child_create_time": 1789203059.2499416,
+      "finished_at": "2026-09-12T08:53:20.529243+00:00",
+      "elapsed_seconds": 141.344,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:53:25.685881+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "11",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30000_r3\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 16896,
+      "child_create_time": 1789203205.7522218,
+      "finished_at": "2026-09-12T08:55:47.035345+00:00",
+      "elapsed_seconds": 141.344,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:55:52.186056+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "12",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30001_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 33704,
+      "child_create_time": 1789203352.2450032,
+      "finished_at": "2026-09-12T08:58:13.559250+00:00",
+      "elapsed_seconds": 141.375,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:58:18.711844+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "13",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30001_r1\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5976,
+      "child_create_time": 1789203498.781212,
+      "finished_at": "2026-09-12T09:00:38.052049+00:00",
+      "elapsed_seconds": 139.344,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:00:43.198599+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "14",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30001_r2\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 20940,
+      "child_create_time": 1789203643.2541316,
+      "finished_at": "2026-09-12T09:02:52.471086+00:00",
+      "elapsed_seconds": 129.265,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:02:57.618645+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "15",
+        "--stage",
+        "fit",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\fit\\jena_s30001_r3\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 3960,
+      "child_create_time": 1789203777.6821504,
+      "finished_at": "2026-09-12T09:05:06.944059+00:00",
+      "elapsed_seconds": 129.312,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:05:12.678603+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "3",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\bmra_s30000_r3\\L720\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 22952,
+      "child_create_time": 1789203912.7365656,
+      "finished_at": "2026-09-12T09:05:22.801390+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:05:27.946999+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "3",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\bmra_s30000_r3\\S180\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 5420,
+      "child_create_time": 1789203928.0031989,
+      "finished_at": "2026-09-12T09:05:38.068750+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:05:43.220263+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "4",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\bmra_s30001_r0\\L720\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 30036,
+      "child_create_time": 1789203943.2802403,
+      "finished_at": "2026-09-12T09:05:53.342165+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:05:58.485452+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "7",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\bmra_s30001_r3\\S180\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 34732,
+      "child_create_time": 1789203958.5497408,
+      "finished_at": "2026-09-12T09:06:08.615276+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:06:13.761768+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "11",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\jena_s30000_r3\\L720\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 28412,
+      "child_create_time": 1789203973.8205965,
+      "finished_at": "2026-09-12T09:06:23.883072+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:06:29.041002+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "11",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\jena_s30000_r3\\S180\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 31940,
+      "child_create_time": 1789203989.108077,
+      "finished_at": "2026-09-12T09:06:39.169229+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:06:44.321946+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "13",
+        "--stage",
+        "forecast",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\jena_s30001_r1\\L720\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 30204,
+      "child_create_time": 1789204004.381399,
+      "finished_at": "2026-09-12T09:06:54.444444+00:00",
+      "elapsed_seconds": 10.109,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T09:06:59.585743+00:00",
+      "guard_pid": 29628,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "13",
+        "--stage",
+        "forecast",
+        "--budget",
+        "S180",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\forecast\\jena_s30001_r1\\S180\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 34612,
+      "child_create_time": 1789204019.6430316,
+      "finished_at": "2026-09-12T09:07:09.702215+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:25:44.841280+00:00",
+      "guard_pid": 17632,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "0",
+        "--stage",
+        "gate",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\gate\\bmra_s30000_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 21524,
+      "child_create_time": 1789201544.9155471,
+      "finished_at": "2026-09-12T08:25:54.981903+00:00",
+      "elapsed_seconds": 10.141,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:26:00.137468+00:00",
+      "guard_pid": 17632,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "4",
+        "--stage",
+        "gate",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\gate\\bmra_s30001_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 3400,
+      "child_create_time": 1789201560.2077365,
+      "finished_at": "2026-09-12T08:26:10.281485+00:00",
+      "elapsed_seconds": 10.141,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:26:15.446029+00:00",
+      "guard_pid": 17632,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "8",
+        "--stage",
+        "gate",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\gate\\jena_s30000_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 23200,
+      "child_create_time": 1789201575.4989245,
+      "finished_at": "2026-09-12T08:26:25.566773+00:00",
+      "elapsed_seconds": 10.125,
+      "reasons": []
+    },
+    {
+      "started_at": "2026-09-12T08:26:30.714752+00:00",
+      "guard_pid": 17632,
+      "command": [
+        "E:\\CODING\\proj\\mltimeseries\\.venv-peft\\Scripts\\python.exe",
+        "-m",
+        "experiments.peft_lora_only_diagnostic_v1.fit",
+        "--index",
+        "12",
+        "--stage",
+        "gate",
+        "--budget",
+        "L720",
+        "--output",
+        "E:\\CODING\\proj\\mltimeseries\\runs\\peft_lora_only_diagnostic_v1\\gate\\jena_s30001_r0\\output"
+      ],
+      "cwd": "E:\\CODING\\proj\\mltimeseries",
+      "require_gpu": true,
+      "thresholds": {
+        "min_available_ram_gib": 5.0,
+        "min_available_commit_gib": 6.0,
+        "max_child_rss_gib": 8.0,
+        "max_git_processes": 32,
+        "max_gpu_memory_mib": 10500.0,
+        "max_gpu_temperature_c": 85.0
+      },
+      "completed": true,
+      "returncode": 0,
+      "state": "completed",
+      "child_pid": 28576,
+      "child_create_time": 1789201590.7690787,
+      "finished_at": "2026-09-12T08:26:40.836938+00:00",
+      "elapsed_seconds": 10.11,
+      "reasons": []
+    }
+  ],
+  "samples": [
+    {
+      "timestamp": "2026-09-12T08:26:56.143340+00:00",
+      "available_ram_gib": 14.728866577148438,
+      "available_commit_gib": 14.252079010009766,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 852.0,
+          "temperature_c": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:06.286936+00:00",
+      "available_ram_gib": 13.027976989746094,
+      "available_commit_gib": 10.874397277832031,
+      "child_tree_rss_gib": 1.6652641296386719,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2004.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:16.385779+00:00",
+      "available_ram_gib": 12.748497009277344,
+      "available_commit_gib": 9.33645248413086,
+      "child_tree_rss_gib": 1.6691322326660156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:26.471482+00:00",
+      "available_ram_gib": 13.179924011230469,
+      "available_commit_gib": 11.0145263671875,
+      "child_tree_rss_gib": 1.6690940856933594,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2009.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:36.560241+00:00",
+      "available_ram_gib": 13.172428131103516,
+      "available_commit_gib": 10.99593734741211,
+      "child_tree_rss_gib": 1.6705856323242188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2005.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:46.651512+00:00",
+      "available_ram_gib": 13.192924499511719,
+      "available_commit_gib": 11.032447814941406,
+      "child_tree_rss_gib": 1.6629791259765625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:27:56.741844+00:00",
+      "available_ram_gib": 13.210277557373047,
+      "available_commit_gib": 11.049995422363281,
+      "child_tree_rss_gib": 1.6629257202148438,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2002.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:06.838696+00:00",
+      "available_ram_gib": 13.234817504882812,
+      "available_commit_gib": 11.082611083984375,
+      "child_tree_rss_gib": 1.6629295349121094,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:16.925484+00:00",
+      "available_ram_gib": 13.210323333740234,
+      "available_commit_gib": 11.046501159667969,
+      "child_tree_rss_gib": 1.66339111328125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:27.015580+00:00",
+      "available_ram_gib": 13.216590881347656,
+      "available_commit_gib": 11.056365966796875,
+      "child_tree_rss_gib": 1.6633949279785156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2002.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:37.110087+00:00",
+      "available_ram_gib": 13.197654724121094,
+      "available_commit_gib": 11.041854858398438,
+      "child_tree_rss_gib": 1.6633949279785156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:47.204094+00:00",
+      "available_ram_gib": 13.21530532836914,
+      "available_commit_gib": 11.047462463378906,
+      "child_tree_rss_gib": 1.6634025573730469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:28:57.299231+00:00",
+      "available_ram_gib": 13.242759704589844,
+      "available_commit_gib": 11.08047103881836,
+      "child_tree_rss_gib": 1.6634025573730469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2010.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:07.399317+00:00",
+      "available_ram_gib": 13.200725555419922,
+      "available_commit_gib": 11.03183364868164,
+      "child_tree_rss_gib": 1.6634025573730469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:17.502972+00:00",
+      "available_ram_gib": 13.16299819946289,
+      "available_commit_gib": 10.965850830078125,
+      "child_tree_rss_gib": 1.6813125610351562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:19.503410+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:29:24.722489+00:00",
+      "available_ram_gib": 14.894874572753906,
+      "available_commit_gib": 14.396312713623047,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 852.0,
+          "temperature_c": 50.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:34.868952+00:00",
+      "available_ram_gib": 13.218524932861328,
+      "available_commit_gib": 11.042304992675781,
+      "child_tree_rss_gib": 1.6679649353027344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2001.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:44.969131+00:00",
+      "available_ram_gib": 13.180038452148438,
+      "available_commit_gib": 11.002967834472656,
+      "child_tree_rss_gib": 1.6703567504882812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:29:55.068860+00:00",
+      "available_ram_gib": 13.214282989501953,
+      "available_commit_gib": 11.045215606689453,
+      "child_tree_rss_gib": 1.670318603515625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:05.158212+00:00",
+      "available_ram_gib": 13.195812225341797,
+      "available_commit_gib": 11.008712768554688,
+      "child_tree_rss_gib": 1.6703834533691406,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2025.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:15.246290+00:00",
+      "available_ram_gib": 13.166770935058594,
+      "available_commit_gib": 10.974170684814453,
+      "child_tree_rss_gib": 1.6703872680664062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2033.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:25.342527+00:00",
+      "available_ram_gib": 13.170196533203125,
+      "available_commit_gib": 10.999004364013672,
+      "child_tree_rss_gib": 1.670318603515625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:35.432056+00:00",
+      "available_ram_gib": 13.14566421508789,
+      "available_commit_gib": 10.966537475585938,
+      "child_tree_rss_gib": 1.6703224182128906,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:45.539419+00:00",
+      "available_ram_gib": 13.106220245361328,
+      "available_commit_gib": 10.904544830322266,
+      "child_tree_rss_gib": 1.6703262329101562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:30:55.640335+00:00",
+      "available_ram_gib": 13.11014175415039,
+      "available_commit_gib": 10.906322479248047,
+      "child_tree_rss_gib": 1.6703300476074219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2021.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:05.730500+00:00",
+      "available_ram_gib": 13.14352798461914,
+      "available_commit_gib": 10.958953857421875,
+      "child_tree_rss_gib": 1.6703300476074219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:15.826534+00:00",
+      "available_ram_gib": 13.166061401367188,
+      "available_commit_gib": 10.978431701660156,
+      "child_tree_rss_gib": 1.6703376770019531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:25.920620+00:00",
+      "available_ram_gib": 13.185012817382812,
+      "available_commit_gib": 11.01107406616211,
+      "child_tree_rss_gib": 1.6703376770019531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:36.011114+00:00",
+      "available_ram_gib": 13.195831298828125,
+      "available_commit_gib": 11.025775909423828,
+      "child_tree_rss_gib": 1.6703376770019531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:46.094534+00:00",
+      "available_ram_gib": 14.914363861083984,
+      "available_commit_gib": 14.419063568115234,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 868.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:31:48.095588+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:31:53.304208+00:00",
+      "available_ram_gib": 14.91802978515625,
+      "available_commit_gib": 14.421875,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 862.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:03.450119+00:00",
+      "available_ram_gib": 13.15890121459961,
+      "available_commit_gib": 10.972209930419922,
+      "child_tree_rss_gib": 1.6666336059570312,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2021.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:13.548814+00:00",
+      "available_ram_gib": 13.435604095458984,
+      "available_commit_gib": 10.983577728271484,
+      "child_tree_rss_gib": 1.6694374084472656,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:23.633016+00:00",
+      "available_ram_gib": 13.41921615600586,
+      "available_commit_gib": 10.978633880615234,
+      "child_tree_rss_gib": 1.6694602966308594,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:33.728094+00:00",
+      "available_ram_gib": 13.451961517333984,
+      "available_commit_gib": 11.02084732055664,
+      "child_tree_rss_gib": 1.670440673828125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:43.817468+00:00",
+      "available_ram_gib": 13.42538070678711,
+      "available_commit_gib": 11.016521453857422,
+      "child_tree_rss_gib": 1.66094970703125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:32:53.906586+00:00",
+      "available_ram_gib": 13.402484893798828,
+      "available_commit_gib": 11.038337707519531,
+      "child_tree_rss_gib": 1.6611251831054688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:04.005385+00:00",
+      "available_ram_gib": 13.429534912109375,
+      "available_commit_gib": 11.04571533203125,
+      "child_tree_rss_gib": 1.6611289978027344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:14.094109+00:00",
+      "available_ram_gib": 13.432048797607422,
+      "available_commit_gib": 11.050277709960938,
+      "child_tree_rss_gib": 1.6611518859863281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:24.192986+00:00",
+      "available_ram_gib": 13.433399200439453,
+      "available_commit_gib": 11.042716979980469,
+      "child_tree_rss_gib": 1.6611557006835938,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:34.278386+00:00",
+      "available_ram_gib": 13.399673461914062,
+      "available_commit_gib": 11.003089904785156,
+      "child_tree_rss_gib": 1.6611557006835938,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:44.364830+00:00",
+      "available_ram_gib": 13.405128479003906,
+      "available_commit_gib": 11.006645202636719,
+      "child_tree_rss_gib": 1.6611709594726562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:33:54.449878+00:00",
+      "available_ram_gib": 13.426498413085938,
+      "available_commit_gib": 11.026359558105469,
+      "child_tree_rss_gib": 1.6611709594726562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:34:04.531240+00:00",
+      "available_ram_gib": 13.467422485351562,
+      "available_commit_gib": 11.072223663330078,
+      "child_tree_rss_gib": 1.6611709594726562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:34:14.556484+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:34:19.764866+00:00",
+      "available_ram_gib": 15.066692352294922,
+      "available_commit_gib": 14.390071868896484,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 865.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:34:29.915141+00:00",
+      "available_ram_gib": 13.351184844970703,
+      "available_commit_gib": 10.980537414550781,
+      "child_tree_rss_gib": 1.6685333251953125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:34:40.016715+00:00",
+      "available_ram_gib": 13.356666564941406,
+      "available_commit_gib": 10.981620788574219,
+      "child_tree_rss_gib": 1.6690597534179688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2017.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:34:50.104582+00:00",
+      "available_ram_gib": 13.372055053710938,
+      "available_commit_gib": 11.004402160644531,
+      "child_tree_rss_gib": 1.6690292358398438,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:00.196700+00:00",
+      "available_ram_gib": 13.380123138427734,
+      "available_commit_gib": 11.0057373046875,
+      "child_tree_rss_gib": 1.6705093383789062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:10.299319+00:00",
+      "available_ram_gib": 13.364990234375,
+      "available_commit_gib": 10.989948272705078,
+      "child_tree_rss_gib": 1.671417236328125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:20.392287+00:00",
+      "available_ram_gib": 13.370990753173828,
+      "available_commit_gib": 10.995140075683594,
+      "child_tree_rss_gib": 1.6713638305664062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:30.480730+00:00",
+      "available_ram_gib": 13.351669311523438,
+      "available_commit_gib": 10.977046966552734,
+      "child_tree_rss_gib": 1.6613693237304688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:40.577979+00:00",
+      "available_ram_gib": 13.350303649902344,
+      "available_commit_gib": 10.997406005859375,
+      "child_tree_rss_gib": 1.6616134643554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:35:50.689023+00:00",
+      "available_ram_gib": 13.314910888671875,
+      "available_commit_gib": 10.9576416015625,
+      "child_tree_rss_gib": 1.6616134643554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:00.797930+00:00",
+      "available_ram_gib": 13.280303955078125,
+      "available_commit_gib": 10.925960540771484,
+      "child_tree_rss_gib": 1.6616134643554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:10.895117+00:00",
+      "available_ram_gib": 13.314445495605469,
+      "available_commit_gib": 10.966163635253906,
+      "child_tree_rss_gib": 1.6616134643554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2017.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:20.985307+00:00",
+      "available_ram_gib": 13.347232818603516,
+      "available_commit_gib": 10.992084503173828,
+      "child_tree_rss_gib": 1.66162109375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2021.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:31.093366+00:00",
+      "available_ram_gib": 13.25588607788086,
+      "available_commit_gib": 10.883071899414062,
+      "child_tree_rss_gib": 1.66162109375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:41.194396+00:00",
+      "available_ram_gib": 13.254337310791016,
+      "available_commit_gib": 10.892070770263672,
+      "child_tree_rss_gib": 1.6615867614746094,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:36:47.208599+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:36:52.434052+00:00",
+      "available_ram_gib": 14.995121002197266,
+      "available_commit_gib": 14.322307586669922,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 862.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:02.583058+00:00",
+      "available_ram_gib": 13.33349609375,
+      "available_commit_gib": 10.996879577636719,
+      "child_tree_rss_gib": 1.6687355041503906,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:12.663283+00:00",
+      "available_ram_gib": 13.344146728515625,
+      "available_commit_gib": 10.998226165771484,
+      "child_tree_rss_gib": 1.6692657470703125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:22.755474+00:00",
+      "available_ram_gib": 13.341617584228516,
+      "available_commit_gib": 10.994544982910156,
+      "child_tree_rss_gib": 1.669219970703125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:32.851983+00:00",
+      "available_ram_gib": 13.328651428222656,
+      "available_commit_gib": 10.994239807128906,
+      "child_tree_rss_gib": 1.669708251953125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2011.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:42.939760+00:00",
+      "available_ram_gib": 13.319831848144531,
+      "available_commit_gib": 10.976417541503906,
+      "child_tree_rss_gib": 1.6697235107421875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:37:53.034040+00:00",
+      "available_ram_gib": 13.333438873291016,
+      "available_commit_gib": 10.98556137084961,
+      "child_tree_rss_gib": 1.6696548461914062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:03.128482+00:00",
+      "available_ram_gib": 13.298603057861328,
+      "available_commit_gib": 10.946807861328125,
+      "child_tree_rss_gib": 1.6696586608886719,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:13.215148+00:00",
+      "available_ram_gib": 13.320693969726562,
+      "available_commit_gib": 10.970611572265625,
+      "child_tree_rss_gib": 1.6696662902832031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:23.300805+00:00",
+      "available_ram_gib": 13.250934600830078,
+      "available_commit_gib": 10.881710052490234,
+      "child_tree_rss_gib": 1.6696662902832031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:33.397541+00:00",
+      "available_ram_gib": 13.239025115966797,
+      "available_commit_gib": 10.876731872558594,
+      "child_tree_rss_gib": 1.6696739196777344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2009.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:43.489156+00:00",
+      "available_ram_gib": 13.305488586425781,
+      "available_commit_gib": 10.951103210449219,
+      "child_tree_rss_gib": 1.6696739196777344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:38:53.573126+00:00",
+      "available_ram_gib": 13.318714141845703,
+      "available_commit_gib": 10.978191375732422,
+      "child_tree_rss_gib": 1.6696739196777344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:01.593593+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:39:06.799186+00:00",
+      "available_ram_gib": 15.070884704589844,
+      "available_commit_gib": 14.40240478515625,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 860.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:16.943972+00:00",
+      "available_ram_gib": 13.347908020019531,
+      "available_commit_gib": 10.993972778320312,
+      "child_tree_rss_gib": 1.6678810119628906,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2013.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:27.031523+00:00",
+      "available_ram_gib": 13.346424102783203,
+      "available_commit_gib": 10.999385833740234,
+      "child_tree_rss_gib": 1.6684417724609375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:37.117870+00:00",
+      "available_ram_gib": 13.318450927734375,
+      "available_commit_gib": 10.971336364746094,
+      "child_tree_rss_gib": 1.6683998107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:47.210146+00:00",
+      "available_ram_gib": 13.34207534790039,
+      "available_commit_gib": 10.989387512207031,
+      "child_tree_rss_gib": 1.6689262390136719,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:39:57.294823+00:00",
+      "available_ram_gib": 13.340221405029297,
+      "available_commit_gib": 10.991657257080078,
+      "child_tree_rss_gib": 1.6689262390136719,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:07.381845+00:00",
+      "available_ram_gib": 13.330131530761719,
+      "available_commit_gib": 10.97833251953125,
+      "child_tree_rss_gib": 1.6688613891601562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2017.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:17.475114+00:00",
+      "available_ram_gib": 13.32415771484375,
+      "available_commit_gib": 10.985588073730469,
+      "child_tree_rss_gib": 1.6688613891601562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:27.568818+00:00",
+      "available_ram_gib": 13.33803939819336,
+      "available_commit_gib": 10.99905776977539,
+      "child_tree_rss_gib": 1.6688690185546875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:37.671686+00:00",
+      "available_ram_gib": 13.337688446044922,
+      "available_commit_gib": 10.995147705078125,
+      "child_tree_rss_gib": 1.6688690185546875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:47.761696+00:00",
+      "available_ram_gib": 13.339088439941406,
+      "available_commit_gib": 10.998725891113281,
+      "child_tree_rss_gib": 1.6688766479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:40:57.856333+00:00",
+      "available_ram_gib": 13.343070983886719,
+      "available_commit_gib": 11.003700256347656,
+      "child_tree_rss_gib": 1.6688766479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:41:07.946160+00:00",
+      "available_ram_gib": 13.30166244506836,
+      "available_commit_gib": 10.944374084472656,
+      "child_tree_rss_gib": 1.6688766479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:41:15.964882+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:41:21.180615+00:00",
+      "available_ram_gib": 15.010116577148438,
+      "available_commit_gib": 14.341438293457031,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 858.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:41:31.325269+00:00",
+      "available_ram_gib": 13.292724609375,
+      "available_commit_gib": 10.942535400390625,
+      "child_tree_rss_gib": 1.6665534973144531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:41:41.408156+00:00",
+      "available_ram_gib": 13.310775756835938,
+      "available_commit_gib": 10.959449768066406,
+      "child_tree_rss_gib": 1.6694526672363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:41:51.502024+00:00",
+      "available_ram_gib": 13.298545837402344,
+      "available_commit_gib": 10.946063995361328,
+      "child_tree_rss_gib": 1.6694221496582031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:01.593778+00:00",
+      "available_ram_gib": 13.317028045654297,
+      "available_commit_gib": 10.97341537475586,
+      "child_tree_rss_gib": 1.6694908142089844,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2010.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:11.686757+00:00",
+      "available_ram_gib": 13.335506439208984,
+      "available_commit_gib": 11.002727508544922,
+      "child_tree_rss_gib": 1.6695022583007812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:21.769701+00:00",
+      "available_ram_gib": 13.343818664550781,
+      "available_commit_gib": 11.006114959716797,
+      "child_tree_rss_gib": 1.6694374084472656,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:31.870453+00:00",
+      "available_ram_gib": 13.33599853515625,
+      "available_commit_gib": 10.994850158691406,
+      "child_tree_rss_gib": 1.6594429016113281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2012.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:41.953481+00:00",
+      "available_ram_gib": 13.461006164550781,
+      "available_commit_gib": 11.123870849609375,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:42:52.041242+00:00",
+      "available_ram_gib": 13.44186782836914,
+      "available_commit_gib": 11.108234405517578,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:02.131071+00:00",
+      "available_ram_gib": 13.453216552734375,
+      "available_commit_gib": 11.125175476074219,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:12.213453+00:00",
+      "available_ram_gib": 13.383777618408203,
+      "available_commit_gib": 11.041954040527344,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2016.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:22.304353+00:00",
+      "available_ram_gib": 13.35516357421875,
+      "available_commit_gib": 11.026317596435547,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:32.393684+00:00",
+      "available_ram_gib": 13.373664855957031,
+      "available_commit_gib": 11.044124603271484,
+      "child_tree_rss_gib": 1.6596870422363281,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2008.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:42.420135+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:43:47.655014+00:00",
+      "available_ram_gib": 15.058975219726562,
+      "available_commit_gib": 14.393974304199219,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 859.0,
+          "temperature_c": 51.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:43:57.790343+00:00",
+      "available_ram_gib": 13.32944107055664,
+      "available_commit_gib": 10.975757598876953,
+      "child_tree_rss_gib": 1.6679725646972656,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:07.883947+00:00",
+      "available_ram_gib": 13.297882080078125,
+      "available_commit_gib": 10.93240737915039,
+      "child_tree_rss_gib": 1.6689567565917969,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:17.978129+00:00",
+      "available_ram_gib": 13.308502197265625,
+      "available_commit_gib": 10.949756622314453,
+      "child_tree_rss_gib": 1.6689262390136719,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:28.073365+00:00",
+      "available_ram_gib": 13.317920684814453,
+      "available_commit_gib": 10.959075927734375,
+      "child_tree_rss_gib": 1.6693763732910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:38.166730+00:00",
+      "available_ram_gib": 13.348114013671875,
+      "available_commit_gib": 11.000251770019531,
+      "child_tree_rss_gib": 1.669464111328125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:48.268352+00:00",
+      "available_ram_gib": 13.360122680664062,
+      "available_commit_gib": 11.020057678222656,
+      "child_tree_rss_gib": 1.6594123840332031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2009.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:44:58.362603+00:00",
+      "available_ram_gib": 13.577713012695312,
+      "available_commit_gib": 10.988555908203125,
+      "child_tree_rss_gib": 1.6596603393554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2010.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:08.460452+00:00",
+      "available_ram_gib": 13.576210021972656,
+      "available_commit_gib": 10.979911804199219,
+      "child_tree_rss_gib": 1.6596603393554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2007.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:18.556469+00:00",
+      "available_ram_gib": 13.559577941894531,
+      "available_commit_gib": 10.95261001586914,
+      "child_tree_rss_gib": 1.6596603393554688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2017.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:28.647995+00:00",
+      "available_ram_gib": 13.560253143310547,
+      "available_commit_gib": 10.968433380126953,
+      "child_tree_rss_gib": 1.65966796875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:38.745378+00:00",
+      "available_ram_gib": 13.54678726196289,
+      "available_commit_gib": 10.922801971435547,
+      "child_tree_rss_gib": 1.65966796875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2028.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:48.839588+00:00",
+      "available_ram_gib": 13.561737060546875,
+      "available_commit_gib": 10.938674926757812,
+      "child_tree_rss_gib": 1.65966796875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2028.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:45:56.861010+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:46:02.080898+00:00",
+      "available_ram_gib": 15.252269744873047,
+      "available_commit_gib": 14.358638763427734,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 865.0,
+          "temperature_c": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:46:12.227652+00:00",
+      "available_ram_gib": 13.549713134765625,
+      "available_commit_gib": 10.974739074707031,
+      "child_tree_rss_gib": 1.6661300659179688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2006.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:46:22.314750+00:00",
+      "available_ram_gib": 13.570697784423828,
+      "available_commit_gib": 10.987159729003906,
+      "child_tree_rss_gib": 1.66845703125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:46:32.417450+00:00",
+      "available_ram_gib": 13.554851531982422,
+      "available_commit_gib": 10.967151641845703,
+      "child_tree_rss_gib": 1.6684150695800781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:46:42.513075+00:00",
+      "available_ram_gib": 13.569591522216797,
+      "available_commit_gib": 10.986774444580078,
+      "child_tree_rss_gib": 1.6704254150390625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:46:52.603257+00:00",
+      "available_ram_gib": 13.550121307373047,
+      "available_commit_gib": 10.973857879638672,
+      "child_tree_rss_gib": 1.6707344055175781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:02.690393+00:00",
+      "available_ram_gib": 13.532955169677734,
+      "available_commit_gib": 10.947601318359375,
+      "child_tree_rss_gib": 1.6708946228027344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:12.786409+00:00",
+      "available_ram_gib": 13.531898498535156,
+      "available_commit_gib": 10.945636749267578,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:22.893810+00:00",
+      "available_ram_gib": 13.52975082397461,
+      "available_commit_gib": 10.942638397216797,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:32.993788+00:00",
+      "available_ram_gib": 13.5772705078125,
+      "available_commit_gib": 11.002899169921875,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:43.086173+00:00",
+      "available_ram_gib": 13.579010009765625,
+      "available_commit_gib": 11.004371643066406,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:47:53.176033+00:00",
+      "available_ram_gib": 13.55581283569336,
+      "available_commit_gib": 10.983306884765625,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:03.258462+00:00",
+      "available_ram_gib": 13.546085357666016,
+      "available_commit_gib": 10.966651916503906,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2015.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:13.349583+00:00",
+      "available_ram_gib": 13.556209564208984,
+      "available_commit_gib": 10.980743408203125,
+      "child_tree_rss_gib": 1.6708984375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:23.449554+00:00",
+      "available_ram_gib": 13.525333404541016,
+      "available_commit_gib": 10.930740356445312,
+      "child_tree_rss_gib": 1.6815071105957031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:25.450039+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:48:30.653917+00:00",
+      "available_ram_gib": 15.246768951416016,
+      "available_commit_gib": 14.353778839111328,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 865.0,
+          "temperature_c": 51.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:40.799342+00:00",
+      "available_ram_gib": 13.4954833984375,
+      "available_commit_gib": 10.918655395507812,
+      "child_tree_rss_gib": 1.6664695739746094,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2025.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:48:50.901315+00:00",
+      "available_ram_gib": 13.514522552490234,
+      "available_commit_gib": 10.922321319580078,
+      "child_tree_rss_gib": 1.6693115234375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2028.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:01.014610+00:00",
+      "available_ram_gib": 13.339424133300781,
+      "available_commit_gib": 10.43472671508789,
+      "child_tree_rss_gib": 1.6693534851074219,
+      "git_process_count": 1,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2040.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:11.111214+00:00",
+      "available_ram_gib": 13.499244689941406,
+      "available_commit_gib": 10.929424285888672,
+      "child_tree_rss_gib": 1.6699104309082031,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2020.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:21.203238+00:00",
+      "available_ram_gib": 13.513618469238281,
+      "available_commit_gib": 10.942485809326172,
+      "child_tree_rss_gib": 1.6603927612304688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2016.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:31.304412+00:00",
+      "available_ram_gib": 13.521522521972656,
+      "available_commit_gib": 10.960060119628906,
+      "child_tree_rss_gib": 1.66058349609375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2014.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:41.399905+00:00",
+      "available_ram_gib": 13.514259338378906,
+      "available_commit_gib": 10.943244934082031,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:49:51.493639+00:00",
+      "available_ram_gib": 13.542491912841797,
+      "available_commit_gib": 10.966529846191406,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:01.585767+00:00",
+      "available_ram_gib": 13.519390106201172,
+      "available_commit_gib": 10.935188293457031,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:11.679155+00:00",
+      "available_ram_gib": 13.535308837890625,
+      "available_commit_gib": 10.945571899414062,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:21.765117+00:00",
+      "available_ram_gib": 13.538406372070312,
+      "available_commit_gib": 10.95125961303711,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:31.857488+00:00",
+      "available_ram_gib": 13.550006866455078,
+      "available_commit_gib": 10.978607177734375,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:41.946097+00:00",
+      "available_ram_gib": 13.535934448242188,
+      "available_commit_gib": 10.9588623046875,
+      "child_tree_rss_gib": 1.6605873107910156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:52.038473+00:00",
+      "available_ram_gib": 13.506206512451172,
+      "available_commit_gib": 10.91971206665039,
+      "child_tree_rss_gib": 1.6820297241210938,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2022.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:50:54.040077+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:50:59.247329+00:00",
+      "available_ram_gib": 15.22848892211914,
+      "available_commit_gib": 14.329017639160156,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 873.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:09.394363+00:00",
+      "available_ram_gib": 13.527366638183594,
+      "available_commit_gib": 10.849037170410156,
+      "child_tree_rss_gib": 1.6665763854980469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2053.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:19.488070+00:00",
+      "available_ram_gib": 13.519573211669922,
+      "available_commit_gib": 10.932632446289062,
+      "child_tree_rss_gib": 1.6694107055664062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2031.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:29.588418+00:00",
+      "available_ram_gib": 13.506500244140625,
+      "available_commit_gib": 10.92477035522461,
+      "child_tree_rss_gib": 1.6693687438964844,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:39.679507+00:00",
+      "available_ram_gib": 13.490348815917969,
+      "available_commit_gib": 10.889286041259766,
+      "child_tree_rss_gib": 1.6703414916992188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2028.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:49.761761+00:00",
+      "available_ram_gib": 13.494701385498047,
+      "available_commit_gib": 10.903861999511719,
+      "child_tree_rss_gib": 1.6703414916992188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:51:59.851637+00:00",
+      "available_ram_gib": 13.483951568603516,
+      "available_commit_gib": 10.90701675415039,
+      "child_tree_rss_gib": 1.6703453063964844,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:52:09.944327+00:00",
+      "available_ram_gib": 13.504295349121094,
+      "available_commit_gib": 10.933387756347656,
+      "child_tree_rss_gib": 1.67034912109375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:52:20.035847+00:00",
+      "available_ram_gib": 13.509246826171875,
+      "available_commit_gib": 10.947792053222656,
+      "child_tree_rss_gib": 1.6601028442382812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:52:30.122443+00:00",
+      "available_ram_gib": 13.512935638427734,
+      "available_commit_gib": 10.95144271850586,
+      "child_tree_rss_gib": 1.6601066589355469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:52:40.206974+00:00",
+      "available_ram_gib": 13.798431396484375,
+      "available_commit_gib": 10.966094970703125,
+      "child_tree_rss_gib": 1.6601028442382812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:52:50.307857+00:00",
+      "available_ram_gib": 13.778167724609375,
+      "available_commit_gib": 10.945240020751953,
+      "child_tree_rss_gib": 1.6613349914550781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2032.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:00.410208+00:00",
+      "available_ram_gib": 13.753044128417969,
+      "available_commit_gib": 10.934513092041016,
+      "child_tree_rss_gib": 1.6613349914550781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2034.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:10.498490+00:00",
+      "available_ram_gib": 13.730335235595703,
+      "available_commit_gib": 10.908851623535156,
+      "child_tree_rss_gib": 1.6613349914550781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:20.529243+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:53:25.750167+00:00",
+      "available_ram_gib": 15.353057861328125,
+      "available_commit_gib": 14.249675750732422,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 874.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:35.888698+00:00",
+      "available_ram_gib": 13.712608337402344,
+      "available_commit_gib": 10.945648193359375,
+      "child_tree_rss_gib": 1.6685028076171875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:45.985600+00:00",
+      "available_ram_gib": 13.708168029785156,
+      "available_commit_gib": 10.942474365234375,
+      "child_tree_rss_gib": 1.6690521240234375,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:53:56.089457+00:00",
+      "available_ram_gib": 13.674800872802734,
+      "available_commit_gib": 10.901756286621094,
+      "child_tree_rss_gib": 1.6690139770507812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2046.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:06.183234+00:00",
+      "available_ram_gib": 13.644519805908203,
+      "available_commit_gib": 10.879684448242188,
+      "child_tree_rss_gib": 1.6695480346679688,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2034.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:16.286163+00:00",
+      "available_ram_gib": 13.639274597167969,
+      "available_commit_gib": 10.87716293334961,
+      "child_tree_rss_gib": 1.6695594787597656,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2034.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:26.373515+00:00",
+      "available_ram_gib": 13.652503967285156,
+      "available_commit_gib": 10.875789642333984,
+      "child_tree_rss_gib": 1.6699447631835938,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2038.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:36.461837+00:00",
+      "available_ram_gib": 13.639484405517578,
+      "available_commit_gib": 10.852130889892578,
+      "child_tree_rss_gib": 1.6699485778808594,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2037.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:46.544592+00:00",
+      "available_ram_gib": 13.63641357421875,
+      "available_commit_gib": 10.867721557617188,
+      "child_tree_rss_gib": 1.6699485778808594,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:54:56.638310+00:00",
+      "available_ram_gib": 13.65152359008789,
+      "available_commit_gib": 10.86233139038086,
+      "child_tree_rss_gib": 1.6699485778808594,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2032.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:55:06.729786+00:00",
+      "available_ram_gib": 13.71255874633789,
+      "available_commit_gib": 10.950191497802734,
+      "child_tree_rss_gib": 1.6589736938476562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:55:16.825803+00:00",
+      "available_ram_gib": 13.711307525634766,
+      "available_commit_gib": 10.95541000366211,
+      "child_tree_rss_gib": 1.6592178344726562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:55:26.910515+00:00",
+      "available_ram_gib": 13.714775085449219,
+      "available_commit_gib": 10.95589828491211,
+      "child_tree_rss_gib": 1.6592216491699219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:55:37.007999+00:00",
+      "available_ram_gib": 13.720382690429688,
+      "available_commit_gib": 10.961833953857422,
+      "child_tree_rss_gib": 1.6592216491699219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:55:47.035345+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:55:52.243359+00:00",
+      "available_ram_gib": 15.431636810302734,
+      "available_commit_gib": 14.336894989013672,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 874.0,
+          "temperature_c": 51.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:02.395143+00:00",
+      "available_ram_gib": 13.651275634765625,
+      "available_commit_gib": 10.8519287109375,
+      "child_tree_rss_gib": 1.6681365966796875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2032.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:12.492286+00:00",
+      "available_ram_gib": 13.660533905029297,
+      "available_commit_gib": 10.874156951904297,
+      "child_tree_rss_gib": 1.6686592102050781,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:22.581335+00:00",
+      "available_ram_gib": 13.650005340576172,
+      "available_commit_gib": 10.855663299560547,
+      "child_tree_rss_gib": 1.6686210632324219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:32.682784+00:00",
+      "available_ram_gib": 13.695930480957031,
+      "available_commit_gib": 10.9259033203125,
+      "child_tree_rss_gib": 1.6696739196777344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:42.781357+00:00",
+      "available_ram_gib": 13.692974090576172,
+      "available_commit_gib": 10.923137664794922,
+      "child_tree_rss_gib": 1.670135498046875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:56:52.871817+00:00",
+      "available_ram_gib": 13.688518524169922,
+      "available_commit_gib": 10.918106079101562,
+      "child_tree_rss_gib": 1.6700782775878906,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:02.960697+00:00",
+      "available_ram_gib": 13.697452545166016,
+      "available_commit_gib": 10.92599105834961,
+      "child_tree_rss_gib": 1.6700820922851562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:13.060767+00:00",
+      "available_ram_gib": 13.681468963623047,
+      "available_commit_gib": 10.904369354248047,
+      "child_tree_rss_gib": 1.6700820922851562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2033.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:23.160241+00:00",
+      "available_ram_gib": 13.670551300048828,
+      "available_commit_gib": 10.900775909423828,
+      "child_tree_rss_gib": 1.6700859069824219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:33.256948+00:00",
+      "available_ram_gib": 13.595573425292969,
+      "available_commit_gib": 10.796241760253906,
+      "child_tree_rss_gib": 1.6700859069824219,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:43.348232+00:00",
+      "available_ram_gib": 13.613285064697266,
+      "available_commit_gib": 10.814613342285156,
+      "child_tree_rss_gib": 1.6700935363769531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:57:53.441820+00:00",
+      "available_ram_gib": 13.634021759033203,
+      "available_commit_gib": 10.836109161376953,
+      "child_tree_rss_gib": 1.6700973510742188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:03.533413+00:00",
+      "available_ram_gib": 13.682880401611328,
+      "available_commit_gib": 10.920612335205078,
+      "child_tree_rss_gib": 1.6700973510742188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:13.559250+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:58:18.778978+00:00",
+      "available_ram_gib": 15.382247924804688,
+      "available_commit_gib": 14.284828186035156,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 874.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:28.929639+00:00",
+      "available_ram_gib": 13.6947021484375,
+      "available_commit_gib": 10.910453796386719,
+      "child_tree_rss_gib": 1.66650390625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:39.021111+00:00",
+      "available_ram_gib": 13.699596405029297,
+      "available_commit_gib": 10.916526794433594,
+      "child_tree_rss_gib": 1.6684036254882812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:49.111092+00:00",
+      "available_ram_gib": 13.698299407958984,
+      "available_commit_gib": 10.917686462402344,
+      "child_tree_rss_gib": 1.6683578491210938,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:58:59.195920+00:00",
+      "available_ram_gib": 13.677436828613281,
+      "available_commit_gib": 10.906356811523438,
+      "child_tree_rss_gib": 1.6703872680664062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:09.293261+00:00",
+      "available_ram_gib": 13.662437438964844,
+      "available_commit_gib": 10.867584228515625,
+      "child_tree_rss_gib": 1.6708488464355469,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2032.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:19.387825+00:00",
+      "available_ram_gib": 13.66802978515625,
+      "available_commit_gib": 10.89352035522461,
+      "child_tree_rss_gib": 1.6608161926269531,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:29.479794+00:00",
+      "available_ram_gib": 13.667625427246094,
+      "available_commit_gib": 10.89657211303711,
+      "child_tree_rss_gib": 1.6608200073242188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:39.575912+00:00",
+      "available_ram_gib": 13.70711898803711,
+      "available_commit_gib": 10.944538116455078,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:49.664322+00:00",
+      "available_ram_gib": 13.698230743408203,
+      "available_commit_gib": 10.936580657958984,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:59:59.753935+00:00",
+      "available_ram_gib": 14.017730712890625,
+      "available_commit_gib": 10.934123992919922,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:00:09.850161+00:00",
+      "available_ram_gib": 14.023822784423828,
+      "available_commit_gib": 10.939189910888672,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:00:19.941080+00:00",
+      "available_ram_gib": 13.98257827758789,
+      "available_commit_gib": 10.891510009765625,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2035.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:00:30.030587+00:00",
+      "available_ram_gib": 13.991619110107422,
+      "available_commit_gib": 10.915351867675781,
+      "child_tree_rss_gib": 1.6610641479492188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:00:38.052049+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:00:43.252823+00:00",
+      "available_ram_gib": 15.597846984863281,
+      "available_commit_gib": 14.245037078857422,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:00:53.383498+00:00",
+      "available_ram_gib": 13.900943756103516,
+      "available_commit_gib": 10.874919891357422,
+      "child_tree_rss_gib": 1.6666221618652344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:03.496691+00:00",
+      "available_ram_gib": 13.931835174560547,
+      "available_commit_gib": 10.920246124267578,
+      "child_tree_rss_gib": 1.6687889099121094,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:13.616367+00:00",
+      "available_ram_gib": 13.936729431152344,
+      "available_commit_gib": 10.92813491821289,
+      "child_tree_rss_gib": 1.6687469482421875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2020.0,
+          "temperature_c": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:23.702864+00:00",
+      "available_ram_gib": 13.917236328125,
+      "available_commit_gib": 10.899459838867188,
+      "child_tree_rss_gib": 1.6688232421875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2028.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:33.793120+00:00",
+      "available_ram_gib": 13.930046081542969,
+      "available_commit_gib": 10.920341491699219,
+      "child_tree_rss_gib": 1.6688232421875,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:43.889202+00:00",
+      "available_ram_gib": 13.924659729003906,
+      "available_commit_gib": 10.912479400634766,
+      "child_tree_rss_gib": 1.6691627502441406,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:01:53.985948+00:00",
+      "available_ram_gib": 13.917236328125,
+      "available_commit_gib": 10.906208038330078,
+      "child_tree_rss_gib": 1.6691665649414062,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:04.075293+00:00",
+      "available_ram_gib": 13.919384002685547,
+      "available_commit_gib": 10.91451644897461,
+      "child_tree_rss_gib": 1.6587448120117188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:14.170283+00:00",
+      "available_ram_gib": 13.9178466796875,
+      "available_commit_gib": 10.9124755859375,
+      "child_tree_rss_gib": 1.6587448120117188,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:24.259820+00:00",
+      "available_ram_gib": 13.907207489013672,
+      "available_commit_gib": 10.89486312866211,
+      "child_tree_rss_gib": 1.65899658203125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2019.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:34.352217+00:00",
+      "available_ram_gib": 13.941486358642578,
+      "available_commit_gib": 10.935840606689453,
+      "child_tree_rss_gib": 1.6590003967285156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:44.450752+00:00",
+      "available_ram_gib": 13.949848175048828,
+      "available_commit_gib": 10.952339172363281,
+      "child_tree_rss_gib": 1.65899658203125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:02:52.471086+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:02:57.680609+00:00",
+      "available_ram_gib": 15.63153076171875,
+      "available_commit_gib": 14.29745864868164,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:07.823616+00:00",
+      "available_ram_gib": 13.903179168701172,
+      "available_commit_gib": 10.895042419433594,
+      "child_tree_rss_gib": 1.6669082641601562,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:17.928782+00:00",
+      "available_ram_gib": 13.924507141113281,
+      "available_commit_gib": 10.918998718261719,
+      "child_tree_rss_gib": 1.6686363220214844,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:28.015880+00:00",
+      "available_ram_gib": 13.905895233154297,
+      "available_commit_gib": 10.882511138916016,
+      "child_tree_rss_gib": 1.6685943603515625,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2033.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:38.122347+00:00",
+      "available_ram_gib": 13.875732421875,
+      "available_commit_gib": 10.846672058105469,
+      "child_tree_rss_gib": 1.6691017150878906,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:48.222134+00:00",
+      "available_ram_gib": 13.883983612060547,
+      "available_commit_gib": 10.863170623779297,
+      "child_tree_rss_gib": 1.6695518493652344,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:03:58.334144+00:00",
+      "available_ram_gib": 13.881351470947266,
+      "available_commit_gib": 10.85415267944336,
+      "child_tree_rss_gib": 1.6694984436035156,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:08.427897+00:00",
+      "available_ram_gib": 13.903308868408203,
+      "available_commit_gib": 10.895164489746094,
+      "child_tree_rss_gib": 1.6695022583007812,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:18.532328+00:00",
+      "available_ram_gib": 13.858142852783203,
+      "available_commit_gib": 10.848186492919922,
+      "child_tree_rss_gib": 1.6590118408203125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2032.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:28.618683+00:00",
+      "available_ram_gib": 13.866321563720703,
+      "available_commit_gib": 10.868820190429688,
+      "child_tree_rss_gib": 1.6590118408203125,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2023.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:38.728750+00:00",
+      "available_ram_gib": 13.862640380859375,
+      "available_commit_gib": 10.87957763671875,
+      "child_tree_rss_gib": 1.6592636108398438,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:48.828123+00:00",
+      "available_ram_gib": 13.870769500732422,
+      "available_commit_gib": 10.887054443359375,
+      "child_tree_rss_gib": 1.6592636108398438,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:04:58.923101+00:00",
+      "available_ram_gib": 13.89693832397461,
+      "available_commit_gib": 10.910633087158203,
+      "child_tree_rss_gib": 1.6592636108398438,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 2024.0,
+          "temperature_c": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:05:06.944059+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:05:12.735505+00:00",
+      "available_ram_gib": 15.572555541992188,
+      "available_commit_gib": 14.237537384033203,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:05:22.801390+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:05:28.001450+00:00",
+      "available_ram_gib": 15.56036376953125,
+      "available_commit_gib": 14.224632263183594,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 885.0,
+          "temperature_c": 50.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:05:38.068750+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:05:43.278771+00:00",
+      "available_ram_gib": 15.595268249511719,
+      "available_commit_gib": 14.282493591308594,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 48.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:05:53.342165+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:05:58.547988+00:00",
+      "available_ram_gib": 15.587657928466797,
+      "available_commit_gib": 14.277107238769531,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 47.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:06:08.615276+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:06:13.819010+00:00",
+      "available_ram_gib": 15.590560913085938,
+      "available_commit_gib": 14.279224395751953,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 878.0,
+          "temperature_c": 47.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:06:23.883072+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:06:29.106762+00:00",
+      "available_ram_gib": 15.575672149658203,
+      "available_commit_gib": 14.2672119140625,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 46.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:06:39.169229+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:06:44.380079+00:00",
+      "available_ram_gib": 15.55416488647461,
+      "available_commit_gib": 14.235771179199219,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 45.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:06:54.444444+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T09:06:59.641317+00:00",
+      "available_ram_gib": 15.569160461425781,
+      "available_commit_gib": 14.256858825683594,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 875.0,
+          "temperature_c": 45.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T09:07:09.702215+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:25:44.914282+00:00",
+      "available_ram_gib": 14.602169036865234,
+      "available_commit_gib": 14.011127471923828,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 876.0,
+          "temperature_c": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:25:54.981903+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:26:00.206625+00:00",
+      "available_ram_gib": 14.69424819946289,
+      "available_commit_gib": 14.1739501953125,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 857.0,
+          "temperature_c": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:26:10.281485+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:26:15.497060+00:00",
+      "available_ram_gib": 14.696372985839844,
+      "available_commit_gib": 14.201557159423828,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 856.0,
+          "temperature_c": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:26:25.566773+00:00",
+      "event": "finish",
+      "state": "completed"
+    },
+    {
+      "timestamp": "2026-09-12T08:26:30.767876+00:00",
+      "available_ram_gib": 14.713798522949219,
+      "available_commit_gib": 14.230220794677734,
+      "child_tree_rss_gib": 0.0,
+      "git_process_count": 0,
+      "gpus": [
+        {
+          "index": 0,
+          "memory_used_mib": 852.0,
+          "temperature_c": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-12T08:26:40.836938+00:00",
+      "event": "finish",
+      "state": "completed"
+    }
+  ]
+}

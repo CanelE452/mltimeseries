@@ -1,0 +1,5 @@
+# Preserve the measured bytes: sources are LF, the generated plan is CRLF.
+*.py text eol=lf
+PURPOSE.md text eol=lf
+plan.json -text whitespace=cr-at-eol
+.gitattributes text eol=lf
