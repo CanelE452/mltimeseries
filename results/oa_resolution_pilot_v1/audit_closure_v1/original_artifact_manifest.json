@@ -1,0 +1,90 @@
+{
+  "audited_base_sha": "a4956c502795125ab6173a706fab28ef6126bfd9",
+  "n_files": 21,
+  "files": {
+    "STATUS.md": {
+      "sha256": "eff334877f6434d5dbdd67559c3e8e397fd630f0cbc5777958287b371607224f",
+      "bytes": 15403
+    },
+    "execution_spec.json": {
+      "sha256": "91922106fa42caf9d4fd14f248c8155b03b96a63be1f46817d69eca2d7f0878f",
+      "bytes": 3109
+    },
+    "execution_spec.sha256": {
+      "sha256": "16e8fc17b3af4bd130565ac6d09401dc11f8045fb41a1da96262b3b6c1691cb3",
+      "bytes": 66
+    },
+    "metrics.csv": {
+      "sha256": "9fd49bee7733cfd2d976f4972c10cb80d0125e7dcef27ac460da5ff534b48cab",
+      "bytes": 3873
+    },
+    "primary_contrasts.json": {
+      "sha256": "6a45638cc8d63d8c4299ba2a3ad7f763ad6cfd779599080544763d44dac1294d",
+      "bytes": 19129
+    },
+    "bootstrap.json": {
+      "sha256": "dae4c4db1716463a472f408ef2562b13c4010d28c0fceda645dd306458b27491",
+      "bytes": 7005
+    },
+    "verdict.json": {
+      "sha256": "bd8b261a6e39924448c3c5a0e6ac1cbb53dae250e5f7b4296e247af88a2c9f65",
+      "bytes": 2941
+    },
+    "fit_manifest.csv": {
+      "sha256": "ac8b198949cec4dcd88281122d906dd0f0ed2496ff08abdad5419aeac2aebfd9",
+      "bytes": 2367
+    },
+    "training_curves_summary.csv": {
+      "sha256": "91e585b3901495ac1d0ac8882ae264db351b35f7f69eba4d84b87fde5b3488b9",
+      "bytes": 11930
+    },
+    "mechanism_diagnostics.json": {
+      "sha256": "9bb0ccf327313170a50bfa6a0c0abe6785ee2803682c26fd50567e14af3faf5d",
+      "bytes": 18144
+    },
+    "reconstruction_quality.json": {
+      "sha256": "1ed3e84c3b7492b0ee9da69660c27155b44fe725a11fff5f1de65b96ccd83a58",
+      "bytes": 14707
+    },
+    "flowstate_reference.json": {
+      "sha256": "b8cba31195c1fda4d2f63c287d7841035a2734d3d8fa9585c1870e628e87b42e",
+      "bytes": 14296
+    },
+    "unit_contract.json": {
+      "sha256": "fc760d7b1785b9178f118b3bbb7f320c24d6b4b8a0a48185f0c7eac8e191d734",
+      "bytes": 2513
+    },
+    "learning_anchors.json": {
+      "sha256": "2cfcc75c5435cbc3bea89bc0ef9753277ee73f63c07441d87f54d5f501a3f45e",
+      "bytes": 696
+    },
+    "measurement_semantics.json": {
+      "sha256": "b4ffcdbb52c1f38420d90e15153c0aca70f23eea3e4ade63cd4489795cd3524e",
+      "bytes": 12502
+    },
+    "data_manifest.json": {
+      "sha256": "f0d47c1bd4be45deb9e156c5417271fa9c67f1b1029cc11d88dafa790af91159",
+      "bytes": 5509
+    },
+    "figures/captions.md": {
+      "sha256": "295f44ce430427f335365a3d85e9c811a4c10ee26eadc0d7043b9ce19c1ee636",
+      "bytes": 3513
+    },
+    "figures/fig1_o_vs_m_unseen_interpolation.png": {
+      "sha256": "b5f89bb2a2b48c9498d4eecd7528bafdbd4c3a5ce292dbec1d881866ce35b1bf",
+      "bytes": 348469
+    },
+    "figures/fig2_arms_by_resolution_role.png": {
+      "sha256": "16d7f6fe059eeeec6f2155ffa240ca4a3f55efa77dca6ef4cb5e2a5f8e975973",
+      "bytes": 281991
+    },
+    "figures/fig3_training_curves.png": {
+      "sha256": "8492b00c1cbc9213fd7e0df8bbf928cb8c39c057192e1c59ea81e0a9ef2d46d1",
+      "bytes": 473592
+    },
+    "figures/fig4_accuracy_vs_cost.png": {
+      "sha256": "77d172c89614afc3aa59944e5c5dc45c52ecee2750b6d375d799bb0c60a6e98b",
+      "bytes": 283778
+    }
+  }
+}

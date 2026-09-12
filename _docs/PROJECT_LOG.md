@@ -87,7 +87,7 @@ Native 출력 LoRA를 제외해도 이번 성능이 유지되지만 파라미터
 ## 계열 현황
 
 - **01_forecast_query_tokenization:** 27/27 fit 완료, `INCONCLUSIVE`. 주요 대조 macro −0.037% [−0.128%, +0.033%], 사전 문턱+1.0%, 8조건 중3개 통과(09-06). [초기 노트](notes/tsfm_topics/01_initial_topics/01_forecast_query_tokenization.md).
-- **02_observation_aware_resolution:** 작은 target-trained 모델의 interval-integrated Fourier 표현 pilot 및 감사 완료. `INCONCLUSIVE` / `STOP_SCALING_CURRENT_INTERVAL_INTEGRATED_FOURIER_O` / 넓은 질문 `OPEN_NOT_DIRECTLY_TESTED`. 본 결과는 현재 작업트리에 없고 commit `4c6c805`의 OA 결과·audit에 보존돼 있다. FM PEFT·한 시퀀스 안의 이종 관측 연산·관측 likelihood는 미시험이다. [실행 이력](history/2026-09-06.md), [초기 노트](notes/tsfm_topics/01_initial_topics/02_observation_aware_resolution.md). Dry-run 판정을 본 결과와 혼동하지 않는다.
+- **02_observation_aware_resolution:** 작은 target-trained 모델의 interval-integrated Fourier 표현 pilot 및 감사 완료. `INCONCLUSIVE` / `STOP_SCALING_CURRENT_INTERVAL_INTEGRATED_FOURIER_O` / 넓은 질문 `OPEN_NOT_DIRECTLY_TESTED`. 본 결과와 감사 산출물은 `experiments/oa_resolution_pilot_v1/` 및 `results/oa_resolution_pilot_v1/`에 통합돼 있다. FM PEFT·한 시퀀스 안의 이종 관측 연산·관측 likelihood는 미시험이다. [실행 이력](history/2026-09-06.md), [초기 노트](notes/tsfm_topics/01_initial_topics/02_observation_aware_resolution.md). Dry-run 판정을 본 결과와 혼동하지 않는다.
 - **03_uncertain_future_covariates:** ECMWF/ENS GB2019–21와 BMRA8농장, 7방법×3seed=21fit 완료(09-07). `NO_INCREMENTAL_PATH_VALUE`: P 대 D−1.194%/95%CI[−2.252,−0.270], P 대 S−2.046%/[−3.726,−0.555]. 평균 예보 M이 가장 좋았다. [실제 결과](../results/uncertain_covariate_path_pilot_v1/STATUS.md), [판정](../results/uncertain_covariate_path_pilot_v1/verdict.json), [실행 이력](history/2026-09-07.md). 모든 방법은 같은 target-history FM cache를 사용했고 미래 날씨는 외부 adapter가 처리했다. 약50배 차이는 adapter-only 지연이며 K회 backbone 압축 실험이 아니다. 실제 발행·계량 공개 지연을 완전히 검증한 배포 결과도 아니다.
 
 09-08 후속 후보 검토에서 기존 02/03의 완료 기록과 이 인덱스가 어긋난 것을 확인해 정정했다. 이미 평가한 원천·기간을 다시 미사용 holdout으로 취급하거나 같은 표현을 새 후보처럼 재실행하지 않는다.
@@ -186,7 +186,13 @@ dossier 에 있는 그대로 옮긴다. 연구 기회가 남아 있다고 증명
 [노트의 §12.8 다음 행동 후보](notes/tsfm_topics/01_initial_topics/01_forecast_query_tokenization.md)에
 선택지가 정리돼 있다 — 이 계열을 계속할지 접을지는 아직 정해지지 않았다.
 
-2·3번 계열이나 dossier 의 5개 후보 연구군으로 넘어가는 경우, 연구군을 고르기 전에
+2번 계열(관측 방식 인지형 해상도 전이)의 1차 파일럿도 `INCONCLUSIVE`로 끝났다. 이쪽은
+사전등록 주 대조가 명확히 실패했으므로(Go/No-Go 6개 중 4개 실패) 노트의
+["다음 결정"](notes/tsfm_topics/02_observation_aware_resolution.md)에서 이 방법의
+확대를 중단하고 다른 후보 주제로 이동할 것을 제안한다 — Phase-2(pretrained model 이식)는
+제안하지 않는다.
+
+3번 계열이나 dossier 의 5개 후보 연구군으로 넘어가는 경우, 연구군을 고르기 전에
 dossier 의 "비교의 필수 구분" 절을 먼저 읽는다.
 
 ### 2026-09-08 문제 중심 PEFT 사전조사18

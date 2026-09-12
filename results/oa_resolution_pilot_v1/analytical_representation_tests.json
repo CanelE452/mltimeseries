@@ -1,0 +1,13 @@
+{
+  "n_random_intervals": 100,
+  "max_abs_error_vs_dense_quadrature": 2.727312126138415e-10,
+  "tolerance": 1e-05,
+  "passes": true,
+  "shrinking_support_gap_to_centre_value": {
+    "1.0": 0.2552033117795218,
+    "0.01": 3.0684873498776355e-05,
+    "0.0001": 3.0534537120985306e-09,
+    "1e-06": 3.0531133177191805e-13
+  },
+  "converges_to_centre_value": true
+}

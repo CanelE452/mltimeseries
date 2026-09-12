@@ -1,0 +1,230 @@
+{
+  "FLOWSTATE_RESAMPLED": {
+    "status": "VALID_REFERENCE_WITH_LIMITS",
+    "information_condition": "MODEL_WEIGHTS_ZERO_SHOT + TARGET_VALIDATION_TUNED_PREPROCESSOR -- the FlowState weights never saw these series, but the reconstruction lambda feeding them was chosen on target validation data, so the pipeline is not target-data-free.",
+    "reconstruction_lambda": {
+      "jena": 100.0,
+      "uci": 100.0
+    }
+  },
+  "FLOWSTATE_NATIVE_RATE": {
+    "jena": {
+      "INTERVAL_MEAN": {
+        "status": "SEMANTICALLY_VALID_WHERE_THE_GRID_TILES_THE_HOUR",
+        "cells": [
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.15426560732871974
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 0.5,
+            "mse60": 0.15683890586574328
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 1.0,
+            "mse60": 0.165905884956116
+          }
+        ]
+      },
+      "END_BIN": {
+        "status": "INVALID_FOR_CORE_HOURLY_MEAN_METRIC",
+        "reason": "Averaging END_BIN forecasts cannot equal the hourly mean at any r: only the last base bin of each report interval is predicted, so r-1 of every r bins never enter the average. Even a perfect END_BIN forecaster is biased against this metric.",
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 876,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.1541497516849814,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 0.5,
+            "mse60": 0.15505818226566054,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 876,
+            "scale_factor": 1.0,
+            "mse60": 0.15493141679458966,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          }
+        ]
+      }
+    },
+    "uci": {
+      "INTERVAL_MEAN": {
+        "status": "SEMANTICALLY_VALID_WHERE_THE_GRID_TILES_THE_HOUR",
+        "cells": [
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.3514417243558307
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 0.5,
+            "mse60": 0.34087100139884063
+          },
+          {
+            "operation": "INTERVAL_MEAN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 1.0,
+            "mse60": 0.33501389876816623
+          }
+        ]
+      },
+      "END_BIN": {
+        "status": "INVALID_FOR_CORE_HOURLY_MEAN_METRIC",
+        "reason": "Averaging END_BIN forecasts cannot equal the hourly mean at any r: only the last base bin of each report interval is predicted, so r-1 of every r bins never enter the average. Even a perfect END_BIN forecaster is biased against this metric.",
+        "cells": [
+          {
+            "operation": "END_BIN",
+            "r": 2,
+            "role": "SEEN",
+            "n_keys": 1032,
+            "scale_factor": 0.3333333333333333,
+            "mse60": 0.35535261335298995,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 3,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 0.5,
+            "mse60": 0.34919973353082817,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          },
+          {
+            "operation": "END_BIN",
+            "r": 6,
+            "role": "UNSEEN_INTERPOLATION",
+            "n_keys": 1032,
+            "scale_factor": 1.0,
+            "mse60": 0.3756118079488592,
+            "note": "HISTORICAL_NUMBER_NOT_COMPARABLE"
+          }
+        ]
+      }
+    }
+  },
+  "counterexample": [
+    {
+      "r": 2,
+      "base_bins": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "true_hourly_mean": 3.5,
+      "perfect_END_BIN_predictions": [
+        2.0,
+        4.0,
+        6.0
+      ],
+      "END_BIN_average": 4.0,
+      "END_BIN_bias": 0.5,
+      "perfect_INTERVAL_MEAN_predictions": [
+        1.5,
+        3.5,
+        5.5
+      ],
+      "INTERVAL_MEAN_average": 3.5
+    },
+    {
+      "r": 3,
+      "base_bins": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "true_hourly_mean": 3.5,
+      "perfect_END_BIN_predictions": [
+        3.0,
+        6.0
+      ],
+      "END_BIN_average": 4.5,
+      "END_BIN_bias": 1.0,
+      "perfect_INTERVAL_MEAN_predictions": [
+        2.0,
+        5.0
+      ],
+      "INTERVAL_MEAN_average": 3.5
+    },
+    {
+      "r": 6,
+      "base_bins": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "true_hourly_mean": 3.5,
+      "perfect_END_BIN_predictions": [
+        6.0
+      ],
+      "END_BIN_average": 6.0,
+      "END_BIN_bias": 2.5,
+      "perfect_INTERVAL_MEAN_predictions": [
+        3.5
+      ],
+      "INTERVAL_MEAN_average": 3.5
+    }
+  ],
+  "contract_function": {
+    "name": "can_form_hourly_mean_from_native(operation, r)",
+    "INTERVAL_MEAN": {
+      "2": true,
+      "3": true,
+      "4": false,
+      "6": true,
+      "8": false,
+      "12": false
+    },
+    "END_BIN": {
+      "2": false,
+      "3": false,
+      "4": false,
+      "6": false,
+      "8": false,
+      "12": false
+    }
+  }
+}

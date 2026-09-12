@@ -1,0 +1,11 @@
+{
+  "allowed_statement": "The explicit scalar width channel showed little sensitivity under the WIDTH_MISMATCH diagnostic.",
+  "withdrawn_statement": "The model does not use interval width.",
+  "why": "Resolution is available to the arms through the token count, the token spacing, the time basis and the operation embedding, so a flat width channel does not establish that interval width is unused.",
+  "end_bin_rows_are_uninformative": "For END_BIN the support is one base bin at every r, so the injected width equals the true width and the variant is the identity by construction.",
+  "max_abs_sensitivity_pct_interval_mean": 0.08794644286012065,
+  "per_arm_max_abs_pct": {
+    "M": 0.08794644286012065,
+    "O": 0.07598989721825378
+  }
+}

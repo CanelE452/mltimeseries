@@ -1,0 +1,184 @@
+{
+  "what_this_diagnostic_shows": "A trained O model's predictions change when its inputs are re-encoded with the centre basis at inference. That is sensitivity to a train/inference representation mismatch.",
+  "what_it_does_not_show": "It does not show that the integrated basis is superior to the centre basis, because the comparison is between a model and a corrupted version of itself, not between two models each trained on its own representation.",
+  "per_condition": [
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 2,
+      "wrong_support_sensitivity_pct": -0.5470888648306138,
+      "O_vs_M_pct": -0.13271206927611967
+    },
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 3,
+      "wrong_support_sensitivity_pct": -0.1005299319944919,
+      "O_vs_M_pct": -0.4372624725005325
+    },
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 4,
+      "wrong_support_sensitivity_pct": -0.3585995678872689,
+      "O_vs_M_pct": -0.2046373604546181
+    },
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 6,
+      "wrong_support_sensitivity_pct": 0.3247886205292483,
+      "O_vs_M_pct": -0.6402725181280822
+    },
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 8,
+      "wrong_support_sensitivity_pct": -0.14773145701849622,
+      "O_vs_M_pct": -0.5403028677701815
+    },
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 12,
+      "wrong_support_sensitivity_pct": 0.5347326616124026,
+      "O_vs_M_pct": -0.4774783673836547
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 2,
+      "wrong_support_sensitivity_pct": 0.4212823677649524,
+      "O_vs_M_pct": -0.09683077592359535
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 3,
+      "wrong_support_sensitivity_pct": 1.5607779644857267,
+      "O_vs_M_pct": 0.9369252823202778
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 4,
+      "wrong_support_sensitivity_pct": 0.5748724432933727,
+      "O_vs_M_pct": -0.6105575507627803
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 6,
+      "wrong_support_sensitivity_pct": -0.09459165014219506,
+      "O_vs_M_pct": -0.4155473980243185
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 8,
+      "wrong_support_sensitivity_pct": 7.93282791787041,
+      "O_vs_M_pct": -0.5636776506575014
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 12,
+      "wrong_support_sensitivity_pct": 7.807676816383924,
+      "O_vs_M_pct": 7.4361191069231225
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 2,
+      "wrong_support_sensitivity_pct": 0.05064884622594246,
+      "O_vs_M_pct": 0.11268764061733716
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 3,
+      "wrong_support_sensitivity_pct": 0.10023861484669272,
+      "O_vs_M_pct": 0.12329104429884552
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 4,
+      "wrong_support_sensitivity_pct": 0.05823820454684547,
+      "O_vs_M_pct": 0.04531928981452715
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 6,
+      "wrong_support_sensitivity_pct": 0.07491823734304681,
+      "O_vs_M_pct": 0.09698792041472615
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 8,
+      "wrong_support_sensitivity_pct": 0.02677940970159387,
+      "O_vs_M_pct": 0.1163458302909981
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 12,
+      "wrong_support_sensitivity_pct": -0.03374129619840294,
+      "O_vs_M_pct": 0.04904821183540076
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 2,
+      "wrong_support_sensitivity_pct": 0.04262066024224853,
+      "O_vs_M_pct": -0.07355134776527716
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 3,
+      "wrong_support_sensitivity_pct": 0.18349977496830983,
+      "O_vs_M_pct": 0.009486476338826932
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 4,
+      "wrong_support_sensitivity_pct": 0.03265927444247585,
+      "O_vs_M_pct": -0.006599693669784301
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 6,
+      "wrong_support_sensitivity_pct": 0.1357723436718139,
+      "O_vs_M_pct": -0.0631730982306955
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 8,
+      "wrong_support_sensitivity_pct": 0.6508924944003236,
+      "O_vs_M_pct": -0.22604251152078536
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 12,
+      "wrong_support_sensitivity_pct": 0.9993269027011364,
+      "O_vs_M_pct": 0.031824265912960836
+    }
+  ],
+  "direct_counterexamples": [
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 8,
+      "wrong_support_sensitivity_pct": 7.93282791787041,
+      "O_vs_M_pct": -0.5636776506575014
+    }
+  ],
+  "counterexample_reading": "Where sensitivity is large yet O vs M is not positive, representation dependence and predictive superiority come apart in the same cell."
+}

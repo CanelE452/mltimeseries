@@ -1,0 +1,407 @@
+{
+  "purpose": "Section 40: check the simple baseline was not crippled. R's reconstruction is compared against the true base-grid history it never sees, at the selected lambda and at the weakest candidate, on 200 test windows of the first channel.",
+  "selected_lambda": {
+    "jena": 100.0,
+    "uci": 100.0
+  },
+  "datasets": {
+    "jena": {
+      "channel": "temperature",
+      "n_windows": 200,
+      "true_base_grid_std": 0.90951872037593,
+      "rows": [
+        {
+          "r": 2,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.010021856776780705,
+          "observation_refit_rmse": 3.7730388180253277e-06,
+          "reconstruction_std": 0.9093922745596021
+        },
+        {
+          "r": 2,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.029277183451870765,
+          "observation_refit_rmse": 0.02903347706583571,
+          "reconstruction_std": 0.9082693826497763
+        },
+        {
+          "r": 2,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.008503979377110761,
+          "observation_refit_rmse": 4.987544620395072e-06,
+          "reconstruction_std": 0.9094808137659042
+        },
+        {
+          "r": 2,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.029323201799468804,
+          "observation_refit_rmse": 0.026977799199519068,
+          "reconstruction_std": 0.9083602147077212
+        },
+        {
+          "r": 3,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.016375757010835948,
+          "observation_refit_rmse": 1.8086880928230926e-06,
+          "reconstruction_std": 0.9097096608172848
+        },
+        {
+          "r": 3,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.031554300279451386,
+          "observation_refit_rmse": 0.03068792516817429,
+          "reconstruction_std": 0.9083434809437105
+        },
+        {
+          "r": 3,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.0134334656623205,
+          "observation_refit_rmse": 2.553648260122096e-06,
+          "reconstruction_std": 0.9094310454449542
+        },
+        {
+          "r": 3,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.03153707512692948,
+          "observation_refit_rmse": 0.026934143128997938,
+          "reconstruction_std": 0.9081092611894648
+        },
+        {
+          "r": 4,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.021959024631737416,
+          "observation_refit_rmse": 9.719643412796224e-07,
+          "reconstruction_std": 0.9093711098402931
+        },
+        {
+          "r": 4,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.03374396064349327,
+          "observation_refit_rmse": 0.031265025948878804,
+          "reconstruction_std": 0.9078387309853052
+        },
+        {
+          "r": 4,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.017528861457086074,
+          "observation_refit_rmse": 1.290481861661401e-06,
+          "reconstruction_std": 0.9093698900773195
+        },
+        {
+          "r": 4,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.03333344604288314,
+          "observation_refit_rmse": 0.02658115426409598,
+          "reconstruction_std": 0.9078833030081741
+        },
+        {
+          "r": 6,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.030190381241427016,
+          "observation_refit_rmse": 3.612044692474369e-07,
+          "reconstruction_std": 0.9092256697431466
+        },
+        {
+          "r": 6,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.03794718180086783,
+          "observation_refit_rmse": 0.03169043128805587,
+          "reconstruction_std": 0.9073542669909466
+        },
+        {
+          "r": 6,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.023197502638997624,
+          "observation_refit_rmse": 4.5145336178875327e-07,
+          "reconstruction_std": 0.9092758176030556
+        },
+        {
+          "r": 6,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.03633719809680764,
+          "observation_refit_rmse": 0.02587067947125939,
+          "reconstruction_std": 0.9074930571043587
+        },
+        {
+          "r": 8,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.03664069676428283,
+          "observation_refit_rmse": 1.6970969879181145e-07,
+          "reconstruction_std": 0.9102249549589682
+        },
+        {
+          "r": 8,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.042189363433129685,
+          "observation_refit_rmse": 0.029952978679520754,
+          "reconstruction_std": 0.9080364638067794
+        },
+        {
+          "r": 8,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.02714382527058791,
+          "observation_refit_rmse": 2.3047425623097967e-07,
+          "reconstruction_std": 0.9092072231358174
+        },
+        {
+          "r": 8,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.038998530388148676,
+          "observation_refit_rmse": 0.025442638291812387,
+          "reconstruction_std": 0.9071468766636803
+        },
+        {
+          "r": 12,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.04962406516005737,
+          "observation_refit_rmse": 6.910377600554817e-08,
+          "reconstruction_std": 0.9090351287453761
+        },
+        {
+          "r": 12,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.052426990664771474,
+          "observation_refit_rmse": 0.026635559983977708,
+          "reconstruction_std": 0.9067708741980971
+        },
+        {
+          "r": 12,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.03552924357002968,
+          "observation_refit_rmse": 9.553549418789592e-08,
+          "reconstruction_std": 0.9088807138042438
+        },
+        {
+          "r": 12,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.044423261018387276,
+          "observation_refit_rmse": 0.023643425757626842,
+          "reconstruction_std": 0.906393486249248
+        }
+      ]
+    },
+    "uci": {
+      "channel": "global_active_power",
+      "n_windows": 200,
+      "true_base_grid_std": 0.8637161606772581,
+      "rows": [
+        {
+          "r": 2,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.22916904681194936,
+          "observation_refit_rmse": 6.395940238139001e-05,
+          "reconstruction_std": 0.849552771159385
+        },
+        {
+          "r": 2,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.38738203818430705,
+          "observation_refit_rmse": 0.3735598655575289,
+          "reconstruction_std": 0.738030072228029
+        },
+        {
+          "r": 2,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.19026822833781967,
+          "observation_refit_rmse": 8.19431250706319e-05,
+          "reconstruction_std": 0.8445761479367264
+        },
+        {
+          "r": 2,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.3844140545438069,
+          "observation_refit_rmse": 0.32218049399384363,
+          "reconstruction_std": 0.7387981812762131
+        },
+        {
+          "r": 3,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.311932900818037,
+          "observation_refit_rmse": 2.7042890922308688e-05,
+          "reconstruction_std": 0.8577643889238947
+        },
+        {
+          "r": 3,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.4062107872065974,
+          "observation_refit_rmse": 0.3828705716143297,
+          "reconstruction_std": 0.7420118600210024
+        },
+        {
+          "r": 3,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.24972270236852281,
+          "observation_refit_rmse": 3.332191256536066e-05,
+          "reconstruction_std": 0.8317874734060735
+        },
+        {
+          "r": 3,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.39806796841032266,
+          "observation_refit_rmse": 0.29476905707747625,
+          "reconstruction_std": 0.730117335792146
+        },
+        {
+          "r": 4,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.37090106544896106,
+          "observation_refit_rmse": 1.3691609691284645e-05,
+          "reconstruction_std": 0.8559797991039697
+        },
+        {
+          "r": 4,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.4253200618652761,
+          "observation_refit_rmse": 0.37362279749552885,
+          "reconstruction_std": 0.7394150083126823
+        },
+        {
+          "r": 4,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.29041425060036974,
+          "observation_refit_rmse": 1.7877872624383568e-05,
+          "reconstruction_std": 0.8182956623601587
+        },
+        {
+          "r": 4,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.4088722109237281,
+          "observation_refit_rmse": 0.26999926290670323,
+          "reconstruction_std": 0.7230384953625895
+        },
+        {
+          "r": 6,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.4690714642044187,
+          "observation_refit_rmse": 4.596190599819038e-06,
+          "reconstruction_std": 0.874468282254597
+        },
+        {
+          "r": 6,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.46254740687010987,
+          "observation_refit_rmse": 0.35607075423211654,
+          "reconstruction_std": 0.7551464098963325
+        },
+        {
+          "r": 6,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.3516184811581934,
+          "observation_refit_rmse": 5.162642930562621e-06,
+          "reconstruction_std": 0.7973948680653481
+        },
+        {
+          "r": 6,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.42527683749450146,
+          "observation_refit_rmse": 0.2304768904173901,
+          "reconstruction_std": 0.7125536131512122
+        },
+        {
+          "r": 8,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.5283244883890066,
+          "observation_refit_rmse": 2.0164597403007354e-06,
+          "reconstruction_std": 0.8591507055025361
+        },
+        {
+          "r": 8,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.5094447518833193,
+          "observation_refit_rmse": 0.3090480136939779,
+          "reconstruction_std": 0.7597508134667776
+        },
+        {
+          "r": 8,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.3806856385494444,
+          "observation_refit_rmse": 2.3598963047230233e-06,
+          "reconstruction_std": 0.7829811765082709
+        },
+        {
+          "r": 8,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.43898353961322145,
+          "observation_refit_rmse": 0.206293199768744,
+          "reconstruction_std": 0.7043968152180056
+        },
+        {
+          "r": 12,
+          "operation": "END_BIN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.6263524228610744,
+          "observation_refit_rmse": 7.389385623120558e-07,
+          "reconstruction_std": 0.9066520440687642
+        },
+        {
+          "r": 12,
+          "operation": "END_BIN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.5864202848202481,
+          "observation_refit_rmse": 0.2557700110374465,
+          "reconstruction_std": 0.8119662382397204
+        },
+        {
+          "r": 12,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 0.0001,
+          "reconstruction_rmse_vs_true_base_grid": 0.4296302398323991,
+          "observation_refit_rmse": 7.192478238030622e-07,
+          "reconstruction_std": 0.7595271200722999
+        },
+        {
+          "r": 12,
+          "operation": "INTERVAL_MEAN",
+          "lambda": 100.0,
+          "reconstruction_rmse_vs_true_base_grid": 0.4630445336251303,
+          "observation_refit_rmse": 0.15903503552837914,
+          "reconstruction_std": 0.6945826620808649
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "all_four_cells": [
+    {
+      "dataset": "jena",
+      "operation": "END_BIN",
+      "r": 12,
+      "ri_pct": -0.4774783673836547
+    },
+    {
+      "dataset": "jena",
+      "operation": "INTERVAL_MEAN",
+      "r": 12,
+      "ri_pct": 7.4361191069231225
+    },
+    {
+      "dataset": "uci",
+      "operation": "END_BIN",
+      "r": 12,
+      "ri_pct": 0.04904821183540076
+    },
+    {
+      "dataset": "uci",
+      "operation": "INTERVAL_MEAN",
+      "r": 12,
+      "ri_pct": 0.031824265912960836
+    }
+  ],
+  "macro_all_pct": 1.7598783043219575,
+  "dominant_cell": {
+    "dataset": "jena",
+    "operation": "INTERVAL_MEAN",
+    "r": 12,
+    "ri_pct": 7.4361191069231225
+  },
+  "macro_excluding_dominant_pct": -0.13220196321176436,
+  "metrics_csv_vs_per_seed_mean": {
+    "per_seed_mean": {
+      "R": 0.16242079634688944,
+      "M": 0.1813656857596787,
+      "O": 0.1678791173475011
+    },
+    "stored_in_metrics_csv": {
+      "R": 0.1624207963468894,
+      "M": 0.1813656857596786,
+      "O": 0.167879117347501
+    },
+    "max_abs_delta": 1.1102230246251565e-16,
+    "aggregate_is_consistent": true
+  },
+  "interpretation": "The extrapolation macro is carried by one cell. Removing it leaves a macro of the opposite sign and near zero. This is an exploratory unseen-extrapolation observation, not evidence that the representation works at wide support in general.",
+  "status_md_r_column_provenance": {
+    "parsed_from": "results/oa_resolution_pilot_v1/STATUS.md",
+    "matched_at_decimals": 5,
+    "per_seed": {
+      "2026090601": {
+        "printed": {
+          "M": 0.17568,
+          "O": 0.16782,
+          "R": 0.14457
+        },
+        "correct_INTERVAL_MEAN": {
+          "R": 0.16107990741251021,
+          "M": 0.1756820162352136,
+          "O": 0.167822178495807
+        },
+        "END_BIN_same_r_and_seed": {
+          "R": 0.14457276472449063,
+          "M": 0.1514776321019702,
+          "O": 0.15231768281394628
+        },
+        "printed_R_matches_INTERVAL_MEAN": false,
+        "printed_R_matches_END_BIN": true,
+        "printed_M_matches_INTERVAL_MEAN": true,
+        "printed_O_matches_INTERVAL_MEAN": true
+      },
+      "2026090602": {
+        "printed": {
+          "M": 0.18705,
+          "O": 0.16794,
+          "R": 0.14936
+        },
+        "correct_INTERVAL_MEAN": {
+          "R": 0.1637616852812687,
+          "M": 0.18704935528414385,
+          "O": 0.16793605619919522
+        },
+        "END_BIN_same_r_and_seed": {
+          "R": 0.14935811617900457,
+          "M": 0.1511366854777936,
+          "O": 0.1517415526688664
+        },
+        "printed_R_matches_INTERVAL_MEAN": false,
+        "printed_R_matches_END_BIN": true,
+        "printed_M_matches_INTERVAL_MEAN": true,
+        "printed_O_matches_INTERVAL_MEAN": true
+      }
+    },
+    "diagnosis": "The R column was taken from the END_BIN row at the same r and seed, while M and O came from INTERVAL_MEAN as intended.",
+    "r_column_wrong": true,
+    "m_and_o_columns_correct": true,
+    "scope": "REPORTING_CELL_MAPPING_BUG_ONLY"
+  }
+}
