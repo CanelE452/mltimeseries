@@ -1,0 +1,120 @@
+{
+  "question": "why was the 32-token model not faster than the 64-token dense model?",
+  "per_config": {
+    "U_B32": {
+      "tokens_encoded": 32,
+      "total_parameters": 1538992,
+      "tokenizer_parameters": 0,
+      "model_call_median_ms_b64": 2.019599996856414,
+      "end_to_end_median_ms_b64": 2.1239999987301417,
+      "throughput_windows_per_s_b64": 31689.44350347519,
+      "peak_allocated_mib_b64": 39.66748046875,
+      "end_to_end_vs_DENSE_pct": 7.817258755011602,
+      "peak_memory_vs_DENSE_pct": -13.108722391571737
+    },
+    "I_B32": {
+      "tokens_encoded": 32,
+      "total_parameters": 1563697,
+      "tokenizer_parameters": 24705,
+      "model_call_median_ms_b64": 2.47740000122576,
+      "end_to_end_median_ms_b64": 2.48835000093095,
+      "throughput_windows_per_s_b64": 25833.53514504492,
+      "peak_allocated_mib_b64": 39.8095703125,
+      "end_to_end_vs_DENSE_pct": 26.312182713655453,
+      "peak_memory_vs_DENSE_pct": -12.79747580084496
+    },
+    "C_B32": {
+      "tokens_encoded": 32,
+      "total_parameters": 1563697,
+      "tokenizer_parameters": 24705,
+      "model_call_median_ms_b64": 2.52609999733977,
+      "end_to_end_median_ms_b64": 2.733499997702893,
+      "throughput_windows_per_s_b64": 25335.497433750937,
+      "peak_allocated_mib_b64": 39.8095703125,
+      "end_to_end_vs_DENSE_pct": 38.75634497898177,
+      "peak_memory_vs_DENSE_pct": -12.79747580084496
+    },
+    "H_STATIC_B32": {
+      "tokens_encoded": 32,
+      "total_parameters": 1539120,
+      "tokenizer_parameters": 128,
+      "model_call_median_ms_b64": 2.062399998976616,
+      "end_to_end_median_ms_b64": 2.1866999995836522,
+      "throughput_windows_per_s_b64": 31031.80761819116,
+      "peak_allocated_mib_b64": 39.66796875,
+      "end_to_end_vs_DENSE_pct": 10.99999991320557,
+      "peak_memory_vs_DENSE_pct": -13.107652815658588
+    },
+    "R_B32": {
+      "tokens_encoded": 32,
+      "total_parameters": 1563697,
+      "tokenizer_parameters": 24705,
+      "model_call_median_ms_b64": 2.5432000002183486,
+      "end_to_end_median_ms_b64": 2.6270500020473264,
+      "throughput_windows_per_s_b64": 25165.146270252135,
+      "peak_allocated_mib_b64": 39.8095703125,
+      "end_to_end_vs_DENSE_pct": 33.35279190321538,
+      "peak_memory_vs_DENSE_pct": -12.79747580084496
+    },
+    "DENSE_B64": {
+      "tokens_encoded": 64,
+      "total_parameters": 1538992,
+      "tokenizer_parameters": 0,
+      "model_call_median_ms_b64": 1.8209500012744684,
+      "end_to_end_median_ms_b64": 1.9700000011653174,
+      "throughput_windows_per_s_b64": 35146.489445183506,
+      "peak_allocated_mib_b64": 45.65185546875,
+      "end_to_end_vs_DENSE_pct": 0.0,
+      "peak_memory_vs_DENSE_pct": 0.0
+    }
+  },
+  "U_has_no_scorer": true,
+  "U_also_slower_than_DENSE": true,
+  "U_vs_DENSE_end_to_end_pct": 7.817258755011602,
+  "C_vs_DENSE_end_to_end_pct": 38.75634497898177,
+  "reading": "The content scorer costs about six times what halving the token count saves in the encoder at this width, which is why C is the slowest configuration. Whether compression alone, without a scorer, is faster or slower than no compression is not settled by these measurements: the two runs disagree in sign on a difference of a few percent.",
+  "scope": "Measured on a 1.5M parameter model at batch 64 on one RTX 4070. It says nothing about whether token compression pays off in a larger backbone, where attention is a much larger share of the cost.",
+  "forbidden_generalizations": [
+    "token compression is inherently slow",
+    "C would also be slower inside a foundation model"
+  ],
+  "microprofile": {
+    "kind": "DIAGNOSTIC_PROFILE_ONLY",
+    "per_stage_median_ms": {
+      "U_B32": {
+        "embed": 0.04610000178217888,
+        "pool": 0.03520000245771371,
+        "encoder": 0.6218000016815495,
+        "unmerge_readout_head": 0.10080000356538221,
+        "total_forward": 0.9677000016381498
+      },
+      "C_B32": {
+        "embed": 0.04339999577496201,
+        "pool": 0.28795000253012404,
+        "encoder": 0.6192999971972313,
+        "unmerge_readout_head": 0.10130000009667128,
+        "total_forward": 1.1956500020460226
+      },
+      "DENSE_B64": {
+        "embed": 0.050900001951958984,
+        "pool": 0.0044000043999403715,
+        "encoder": 0.6619000014325138,
+        "unmerge_readout_head": 0.08070000330917537,
+        "total_forward": 0.9807000024011359
+      }
+    },
+    "encoder_saving_from_halving_tokens_ms": 0.040099999750964344,
+    "uniform_pool_cost_ms": 0.03520000245771371,
+    "scorer_extra_cost_ms": 0.25275000007241033,
+    "extra_decode_cost_of_unmerge_ms": 0.02010000025620684,
+    "what_it_shows": "Halving the token count saves about 0.04 ms in the encoder at this width, while the content scorer alone adds about 0.25 ms. The scorer cost is the clear and repeatable part of why C is the slowest configuration."
+  },
+  "measurement_disagreement": {
+    "issue": "the two measurements disagree on whether uniform pooling is slower than dense",
+    "efficiency_csv_U_vs_DENSE_end_to_end_pct": 7.817258755011602,
+    "microprofile_U_total_ms": 0.9677000016381498,
+    "microprofile_DENSE_total_ms": 0.9807000024011359,
+    "microprofile_says_U_slower": false,
+    "resolution": "The sign of the U versus DENSE gap flips between the stored measurement and the longer micro-profile, and both differences are a few percent. That ordering is therefore not established. Only the ordering that survives both measurements is reported as a finding: C is the slowest configuration, and the scorer is the reason."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "role": "native reference rows, not a performance contest",
+  "chronos2": {
+    "status": "COMPLETE",
+    "point_forecast_type": "median",
+    "condition": "pretrained, evaluated zero-shot, scored at the 0.5 quantile, while the core arms were trained on each target for squared error"
+  },
+  "tirex2": {
+    "status": "PARTIAL_HORIZON_UNSUPPORTED",
+    "device": "cpu",
+    "max_supported_prediction_length": 320,
+    "condition": "H=336 is not available from the current public checkpoint, which caps prediction length at 320, so only H=96 has a reference row; run on CPU"
+  },
+  "not_rerun_in_this_audit": true,
+  "forbidden_readings": [
+    "the pilot is worse than these models, therefore the topic failed",
+    "the pilot beat these models, therefore it is state of the art"
+  ],
+  "strong_dynamic_baseline": {
+    "status": "MISSING_STRONG_DYNAMIC_BASELINE",
+    "statement": "No official implementation of Local Merging, byte pair encoding for time series, TimeSqueeze or PATK was located within the search timebox, so no strong dynamic-tokenization baseline was run under the same contract.",
+    "forbidden_readings": [
+      "official implementations do not exist",
+      "this pilot is better than recent dynamic tokenization methods"
+    ]
+  }
+}

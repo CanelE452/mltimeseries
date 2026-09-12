@@ -1,0 +1,32 @@
+{
+  "question": "Q5 - what does the I-only 8-seed study say about the C-I paired effect?",
+  "source": "results/hq_token_pilot_v1/seed_noise_floor.json (unmodified)",
+  "I_absolute_seed_variability": {
+    "ETTm2": {
+      "mean_validation_mse": 0.19924083024444167,
+      "sd": 0.01006170387834807,
+      "sd_pct_of_mean": 5.050021055425092,
+      "n_seeds": 8
+    },
+    "weather": {
+      "mean_validation_mse": 0.4313735015923066,
+      "sd": 0.004128453906142763,
+      "sd_pct_of_mean": 0.9570485648524112,
+      "n_seeds": 8
+    },
+    "electricity": {
+      "mean_validation_mse": 0.15290802985560548,
+      "sd": 0.0011925195955644447,
+      "sd_pct_of_mean": 0.7798933755739107,
+      "n_seeds": 8
+    }
+  },
+  "worst_I_seed_sd_pct": 5.050021055425092,
+  "paired_CI_effect_seed_variability_estimated": false,
+  "reason": "extra seeds exist only for I",
+  "core_pair_seed_count": 2,
+  "what_can_be_said": "The absolute validation MSE of arm I varies noticeably across seeds, most on ETTm2.",
+  "what_cannot_be_said": "The seed-to-seed variability of the paired C minus I difference was not measured. C and I share their initial state and their data schedule within a seed, so the paired difference could be far more stable than either arm's absolute level, or less so. The 8-seed study was run on I alone and cannot distinguish these.",
+  "explicitly_withdrawn_statement": "An earlier report said the 1 percent gate was outside the resolution of the experiment because seed noise reached 5.05 percent. That inference does not follow from an I-only study.",
+  "not_done_here": "No additional seeds were trained for this audit."
+}

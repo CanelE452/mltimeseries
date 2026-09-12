@@ -1,0 +1,158 @@
+{
+  "question": "Q1 - do the contrasts recomputed from metrics.csv match contrasts.json?",
+  "method": "metrics.csv read directly; seeds averaged per cell before the ratio; macro is the equal-weight mean of the six dataset x horizon cells. No code from experiments/ was imported.",
+  "absolute_tolerance": 1e-10,
+  "status": "ARITHMETIC_REPRODUCTION_OK",
+  "max_abs_difference_pct_points": 2.220446049250313e-14,
+  "differences": [],
+  "recomputed": {
+    "C_vs_I": {
+      "treat": "C",
+      "ref": "I",
+      "seeds_used": [
+        2026090601,
+        2026090602
+      ],
+      "cells": {
+        "ETTm2|96": -0.01888059026291522,
+        "ETTm2|336": -0.23429066419955458,
+        "weather|96": 0.029503901974403668,
+        "weather|336": -0.039926680126067815,
+        "electricity|96": 0.03230898961337214,
+        "electricity|336": 0.006960225644381257
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": -0.1265856272312349,
+        "weather": -0.0052113890758320736,
+        "electricity": 0.0196346076288767
+      },
+      "per_seed_macro": {
+        "2026090601": -0.07202014917790563,
+        "2026090602": 0.005908315563426155
+      },
+      "macro": -0.03738746955939676
+    },
+    "C_vs_H_STATIC": {
+      "treat": "C",
+      "ref": "H_STATIC",
+      "seeds_used": [
+        2026090601,
+        2026090602
+      ],
+      "cells": {
+        "ETTm2|96": 3.911725671846511,
+        "ETTm2|336": -1.222684919417727,
+        "weather|96": 3.767826231914251,
+        "weather|336": 1.3745553794875076,
+        "electricity|96": 2.301189418932925,
+        "electricity|336": 1.2146579463705787
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 1.344520376214392,
+        "weather": 2.571190805700879,
+        "electricity": 1.757923682651752
+      },
+      "per_seed_macro": {
+        "2026090601": 2.4957473307802456,
+        "2026090602": 1.2078532792050087
+      },
+      "macro": 1.8912116215223411
+    },
+    "C_vs_R": {
+      "treat": "C",
+      "ref": "R",
+      "seeds_used": [
+        2026090601
+      ],
+      "cells": {
+        "ETTm2|96": -0.01941088656696177,
+        "ETTm2|336": 0.05032048240031228,
+        "weather|96": -0.0010477765935990035,
+        "weather|336": -0.08339442381886109,
+        "electricity|96": 0.002732281663475611,
+        "electricity|336": 0.0012708096859159745
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 0.015454797916675256,
+        "weather": -0.042221100206230044,
+        "electricity": 0.0020015456746957927
+      },
+      "per_seed_macro": {
+        "2026090601": -0.008254918871619665
+      },
+      "macro": -0.008254918871619665
+    },
+    "C_vs_U": {
+      "treat": "C",
+      "ref": "U",
+      "seeds_used": [
+        2026090601
+      ],
+      "cells": {
+        "ETTm2|96": 9.272516920001683,
+        "ETTm2|336": 1.182333664627011,
+        "weather|96": 2.428965446398623,
+        "weather|336": -0.618003039739623,
+        "electricity|96": 3.232072854746726,
+        "electricity|336": 1.5353262849863714
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 5.227425292314347,
+        "weather": 0.9054812033295001,
+        "electricity": 2.3836995698665486
+      },
+      "per_seed_macro": {
+        "2026090601": 2.838868688503465
+      },
+      "macro": 2.838868688503465
+    },
+    "C_vs_DENSE": {
+      "treat": "C",
+      "ref": "DENSE",
+      "seeds_used": [
+        2026090601
+      ],
+      "cells": {
+        "ETTm2|96": 3.841083861082184,
+        "ETTm2|336": 2.0949323508013595,
+        "weather|96": -0.31054514684418777,
+        "weather|336": -1.7278297822168165,
+        "electricity|96": -6.264096514730033,
+        "electricity|336": -3.4725005994602043
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 2.968008105941772,
+        "weather": -1.0191874645305021,
+        "electricity": -4.868298557095119
+      },
+      "per_seed_macro": {
+        "2026090601": -0.9731593052279496
+      },
+      "macro": -0.9731593052279496
+    },
+    "DENSE_vs_U": {
+      "treat": "DENSE",
+      "ref": "U",
+      "seeds_used": [
+        2026090601
+      ],
+      "cells": {
+        "ETTm2|96": 5.6483925537106465,
+        "ETTm2|336": -0.9321260973377266,
+        "weather|96": 2.731029513629357,
+        "weather|336": 1.0909765251584935,
+        "electricity|96": 8.936385553478477,
+        "electricity|336": 4.839765981718913
+      },
+      "per_dataset_horizon_mean": {
+        "ETTm2": 2.35813322818646,
+        "weather": 1.9110030193939254,
+        "electricity": 6.8880757675986946
+      },
+      "per_seed_macro": {
+        "2026090601": 3.71907067172636
+      },
+      "macro": 3.71907067172636
+    }
+  }
+}

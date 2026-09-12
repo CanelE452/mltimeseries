@@ -1,0 +1,47 @@
+{
+  "note": "Called a sampling exposure ratio and not an epoch: training windows are sliding and overlap heavily, so a ratio below one does not mean a correspondingly small amount of distinct signal was seen.",
+  "per_dataset": {
+    "ETTm2": {
+      "train_origins": 33201,
+      "n_channels": 7,
+      "eligible_channel_origin_pairs": 232407,
+      "windows_drawn": 192000,
+      "sampling_exposure_ratio": 0.8261369063754535,
+      "position_labels": [
+        "EARLY_BEST"
+      ],
+      "last_interval_labels": [
+        "LAST_INTERVAL_WORSENING"
+      ]
+    },
+    "weather": {
+      "train_origins": 35528,
+      "n_channels": 21,
+      "eligible_channel_origin_pairs": 746088,
+      "windows_drawn": 192000,
+      "sampling_exposure_ratio": 0.25734229742336023,
+      "position_labels": [
+        "INTERIOR_BEST",
+        "LATE_BEST"
+      ],
+      "last_interval_labels": [
+        "LAST_INTERVAL_IMPROVING",
+        "LAST_INTERVAL_WORSENING"
+      ]
+    },
+    "electricity": {
+      "train_origins": 17053,
+      "n_channels": 321,
+      "eligible_channel_origin_pairs": 5474013,
+      "windows_drawn": 192000,
+      "sampling_exposure_ratio": 0.03507481622714451,
+      "position_labels": [
+        "LATE_BEST"
+      ],
+      "last_interval_labels": [
+        "LAST_INTERVAL_IMPROVING"
+      ]
+    }
+  },
+  "reading_rule": "A small exposure ratio is only evidence of an insufficient budget when the validation curve was still improving at the last checkpoint. The labels are given next to the ratio for that reason."
+}

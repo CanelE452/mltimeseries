@@ -1,0 +1,7 @@
+dataset,model_seed,schedule_sha256_I,schedule_sha256_C,schedule_sha256_R,all_identical
+ETTm2,2026090601,2f32300ba3fd59d7,2f32300ba3fd59d7,2f32300ba3fd59d7,True
+ETTm2,2026090602,10acb5253c65b47d,10acb5253c65b47d,,True
+weather,2026090601,7e74e25a54b43886,7e74e25a54b43886,7e74e25a54b43886,True
+weather,2026090602,76820d834defce31,76820d834defce31,,True
+electricity,2026090601,de625dbbeb69b698,de625dbbeb69b698,de625dbbeb69b698,True
+electricity,2026090602,16b26d16ebc9e0be,16b26d16ebc9e0be,,True

@@ -1,0 +1,38 @@
+{
+  "captured_before_audit": {
+    "STATUS.md": "a3b243cbbacdd2dd7ec9d558072a94e4320279dee0e46ca6b9b6dbbfb21a65b6",
+    "verdict.json": "22c5587801ed7f39887efab3e0fc9309ac9f3a290e7ef262bd18347c9658b14c",
+    "execution_spec.json": "5640e72140efab5cc3914f9cac8724271c502a107a2f27e41b6325dcb2d7d455",
+    "execution_spec.sha256": "e73a77374e5f490eea52500fc31bd8b8969d7204a198905ea8a23f12e49fbaba",
+    "metrics.csv": "770a5851df89e1fae147157f8fc32496ab3e3fbd491e79d4d798ad2fa6b007e2",
+    "contrasts.json": "c22020e79cda7eed633bc4d3af0d56143c515f29cc461aaa29d94d61e1b136a0",
+    "bootstrap.json": "14fd7cd57ddf872bb40a0da8902504773af301df82e7584f2c0c8dff1711f28b",
+    "diagnostics.json": "1f9fa3fd6c5c2d5c981976ebeea3487b67339fe27cae94fd65a722335dbdb251",
+    "efficiency.csv": "649a89acb83a4424aed385792ab63d6401759f3d39c29d12f203020e7b43134b",
+    "fit_manifest.csv": "3e83bc783e9be16af62b858bb6259194b0d6a114af9334b6a6d27de38eaf912a",
+    "mechanism_capacity_check.json": "bb5b065e7b79923c1f4cbe4480e00c01f19f5bc57748adb1009f4727d4fe7d82",
+    "seed_noise_floor.json": "7bb7d0672a06ae90b57d5fcb3a93daa09d32d61d3de7c2d844c2e445224ae111",
+    "optional_references.json": "171a6a7db3bb9e45ea29f85403851a96b297355137061f596a1f0dcd245f1d67",
+    "data_manifest.json": "9f89b007096e83217388aacf50d815b3389b05347cf6f4b26d782582179ee028",
+    "environment.json": "693744e28d17d44e88105146f2bed4c59dd2e8b8a404ccdfbc8d8ee5f8a7c5ce",
+    "figures/captions.md": "978fba6f12476c143be41adbff5c42df51916e107b0f9382d42ebc8882002e54",
+    "figures/fig1_primary_contrast.png": "0804d172e935b0c04edd70aafa69429c88c4035903f46066397597ec36cb3a5d",
+    "figures/fig2_accuracy_vs_latency.png": "7e89f10926a24b5751d3ed012b1bdb9d0afed15d699b43b9008f2dbd5c1c8f61",
+    "figures/fig3_pooling_weights.png": "7931872775fb3427b3702df9908d7144e60fde51172ea51b28d01f476c2ed22b"
+  },
+  "git_at_capture": {
+    "HEAD": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+    "branch": "hq-token-pilot-v1-audit-closure",
+    "origin_main": "36b01d2b84df16f03447a8e214723fc61ae147fd",
+    "remote": "https://github.com/CanelE452/mltimeseries.git",
+    "status_porcelain": [
+      "?? _docs/history/.pending.md",
+      "?? results/hq_token_pilot_v1/audit_closure_v1/",
+      "?? results/hq_token_pilot_v1_dryrun/",
+      "?? scripts/audit_hq_token_pilot_v1.py",
+      "?? scripts/audit_microprofile_hq_token_pilot_v1.py",
+      "?? scripts/audit_status_hq_token_pilot_v1.py"
+    ]
+  },
+  "policy": "Every file listed here is treated as a historical scientific artifact. The audit re-hashes them at the end and stops hard if any changed."
+}

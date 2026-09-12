@@ -1,0 +1,32 @@
+{
+  "question": "Q7 - what exactly did this implementation have the freedom to do?",
+  "source_read": "experiments/hq_token_pilot_v1/model.py at commit 36b01d2",
+  "structure": {
+    "input": "1024 samples, 64 non-overlapping patches of 16",
+    "grouping": "32 fixed adjacent groups, group g is patches (2g, 2g+1)",
+    "per_group_output": "exactly one token, a convex combination of the two patch embeddings",
+    "group_size_r": 2,
+    "encoder": "3 pre-layernorm transformer layers, width 128, 4 heads, FFN 256",
+    "decoder": "tokens repeated back to 64 slots, flattened, Linear(8192,128), GELU, concat horizon embedding, Linear(256,336)",
+    "total_parameters_C": 1563697
+  },
+  "what_C_could_do": [
+    "change the relative mixture of the two patches inside each adjacent pair",
+    "make that mixture depend jointly on content and on the requested horizon"
+  ],
+  "what_C_could_not_do": [
+    "assign more tokens to one stretch of history and fewer to another",
+    "move a group boundary",
+    "drop an unimportant group entirely",
+    "represent a long quiet stretch with one token and a busy stretch with several",
+    "select non-local or non-contiguous regions of the history",
+    "vary the total token budget with the horizon"
+  ],
+  "horizon_paths": {
+    "I": "history -> content-only scorer (query is a zero vector) -> pooling -> encoder -> readout -> concat true horizon embedding -> head",
+    "C": "history plus true horizon embedding in the scorer -> horizon-conditioned pooling -> encoder -> readout -> concat true horizon embedding -> head",
+    "shared_module_confound": "Both paths use the same HorizonEmbed module. In C its parameters receive gradient from the scorer and from the decoder; in I only from the decoder. The two arms therefore differ by slightly more than the presence of a horizon query. This does not flatter the current negative result, but it would be a real confound for any future positive one and should be separated before a positive result is believed.",
+    "encoder_side_channel": "In C the pooling weights depend on the horizon, so the merged tokens themselves carry horizon information into the encoder, which they cannot in I. H_STATIC shares that property while ignoring content, which is why the C versus H_STATIC contrast rather than C versus I carries that part of the identification."
+  },
+  "scope_of_any_conclusion": "Results apply to fixed adjacent grouping at r=2, one token per group, a 1.5M parameter model, context 1024, horizons 96 and 336, token budget 32, and the training budget actually used."
+}

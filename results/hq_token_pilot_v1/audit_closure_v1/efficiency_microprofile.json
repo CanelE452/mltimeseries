@@ -1,0 +1,94 @@
+{
+  "kind": "DIAGNOSTIC_PROFILE_ONLY",
+  "device": "cuda",
+  "batch": 64,
+  "horizon": 336,
+  "warm_runs": 100,
+  "timed_runs": 500,
+  "weights": "randomly initialized; this measures graph cost, not accuracy",
+  "configs": {
+    "U_B32": {
+      "embed": {
+        "median_ms": 0.04610000178217888,
+        "p90_ms": 0.0470000013592653
+      },
+      "pool": {
+        "median_ms": 0.03520000245771371,
+        "p90_ms": 0.060610002401517704
+      },
+      "encoder": {
+        "median_ms": 0.6218000016815495,
+        "p90_ms": 0.7204399982583709
+      },
+      "unmerge_readout_head": {
+        "median_ms": 0.10080000356538221,
+        "p90_ms": 0.12124999702791692
+      },
+      "total_forward": {
+        "median_ms": 0.9677000016381498,
+        "p90_ms": 1.2224700054503048
+      },
+      "tokens_into_encoder": 32,
+      "parameters": 1538992
+    },
+    "C_B32": {
+      "embed": {
+        "median_ms": 0.04339999577496201,
+        "p90_ms": 0.0484000047435984
+      },
+      "pool": {
+        "median_ms": 0.28795000253012404,
+        "p90_ms": 0.6281100017076824
+      },
+      "encoder": {
+        "median_ms": 0.6192999971972313,
+        "p90_ms": 0.7345500001974871
+      },
+      "unmerge_readout_head": {
+        "median_ms": 0.10130000009667128,
+        "p90_ms": 0.1128100004279986
+      },
+      "total_forward": {
+        "median_ms": 1.1956500020460226,
+        "p90_ms": 1.3309400019352327
+      },
+      "tokens_into_encoder": 32,
+      "parameters": 1563697
+    },
+    "DENSE_B64": {
+      "embed": {
+        "median_ms": 0.050900001951958984,
+        "p90_ms": 0.10961000443785451
+      },
+      "pool": {
+        "median_ms": 0.0044000043999403715,
+        "p90_ms": 0.0045000051613897085
+      },
+      "encoder": {
+        "median_ms": 0.6619000014325138,
+        "p90_ms": 0.9193099991534837
+      },
+      "unmerge_readout_head": {
+        "median_ms": 0.08070000330917537,
+        "p90_ms": 0.08240000170189887
+      },
+      "total_forward": {
+        "median_ms": 0.9807000024011359,
+        "p90_ms": 1.411150004423689
+      },
+      "tokens_into_encoder": 64,
+      "parameters": 1538992
+    }
+  },
+  "reading": {
+    "encoder_saving_32_vs_64_tokens_ms": 0.040099999750964344,
+    "pool_cost_uniform_ms": 0.03520000245771371,
+    "pool_cost_content_scorer_ms": 0.28795000253012404,
+    "scorer_extra_over_uniform_ms": 0.25275000007241033,
+    "decode_cost_compressed_ms": 0.10080000356538221,
+    "decode_cost_dense_ms": 0.08070000330917537,
+    "note": "Uniform pooling runs no scorer, so its pool stage is the pure cost of grouping, weighting and summing. Comparing that plus the extra decode work against what the shorter encoder saves shows whether compression can pay for itself at this width.",
+    "scope": "one RTX-class GPU, 1.5M parameter model, batch 64. Not a statement about larger backbones."
+  },
+  "wall_seconds": 4.0965540409088135
+}
